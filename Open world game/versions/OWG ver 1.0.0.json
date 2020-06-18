@@ -1,0 +1,496 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 98,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adMobAppId": "",
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "linuxExecutableFilename": "",
+    "macExecutableFilename": "",
+    "orientation": "landscape",
+    "packageName": "com.example.openworldgame",
+    "projectFile": "C:\\Users\\Unekwu\\Desktop\\Open world game\\versions\\OWG ver 1.0.0.json",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "winExecutableFilename": "",
+    "winExecutableIconFile": "",
+    "name": "Open World Game",
+    "author": "GDevelop Community",
+    "windowWidth": 1500,
+    "windowHeight": 700,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "showGDevelopSplash": false
+    },
+    "extensions": [
+      {
+        "name": "BuiltinObject"
+      },
+      {
+        "name": "BuiltinAudio"
+      },
+      {
+        "name": "BuiltinVariables"
+      },
+      {
+        "name": "BuiltinTime"
+      },
+      {
+        "name": "BuiltinMouse"
+      },
+      {
+        "name": "BuiltinKeyboard"
+      },
+      {
+        "name": "BuiltinJoystick"
+      },
+      {
+        "name": "BuiltinCamera"
+      },
+      {
+        "name": "BuiltinWindow"
+      },
+      {
+        "name": "BuiltinFile"
+      },
+      {
+        "name": "BuiltinNetwork"
+      },
+      {
+        "name": "BuiltinScene"
+      },
+      {
+        "name": "BuiltinAdvanced"
+      },
+      {
+        "name": "Sprite"
+      },
+      {
+        "name": "BuiltinCommonInstructions"
+      },
+      {
+        "name": "BuiltinCommonConversions"
+      },
+      {
+        "name": "BuiltinStringInstructions"
+      },
+      {
+        "name": "BuiltinMathematicalTools"
+      },
+      {
+        "name": "BuiltinExternalLayouts"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "tile_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_04.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../tiles/tile_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\tiles\\tile_01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/tile_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\tile_01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/tile_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\tile_02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/tile_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\tile_03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tiles/tile_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiles\\tile_04.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_234.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_234.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_260.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_260.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_145.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_145.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_118.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_118.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_147.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_147.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_122.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_122.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_233.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_233.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_261.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_261.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_119.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_119.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_146.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_146.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_321.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_321.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_297.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_297.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_323.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_323.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_270.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_270.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_42.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_441.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_441.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Open world game  assets/topdown-shooter/PNG/Tiles/tile_466.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Open world game  assets\\topdown-shooter\\PNG\\Tiles\\tile_466.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_102.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_102.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_21.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_104.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_104.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_49.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_103.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_103.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_77.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_77.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_440.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_440.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_466.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_466.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_46.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_148.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_148.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_360.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_360.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/intros"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/settings"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/openworld"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/nikos_house"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
