@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\src\\game.json",
+    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -856,6 +856,24 @@
         "name": "rpgTile142.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "weapon_gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "weapon_gun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/manBlue_gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\manBlue_gun.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1241,7 +1259,7 @@
         "gridWidth": 70,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5
+        "zoomFactor": 0.346
       },
       "objectsGroups": [],
       "variables": [
@@ -9520,6 +9538,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "gun1",
+          "width": 0,
+          "x": 70,
+          "y": 1400,
+          "zOrder": 103,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -9730,7 +9763,13 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "versions\\manBlue_stand.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 34,
+                          "y": 34
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9759,7 +9798,13 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "versions\\manBlue_stand.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 34,
+                          "y": 34
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -9776,6 +9821,41 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "versions\\manBlue_hold.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 34,
+                          "y": 34
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Gun1",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "versions\\manBlue_gun.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10705,6 +10785,51 @@
               ]
             }
           ]
+        },
+        {
+          "name": "gun1",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "weapon_gun.png",
+                      "points": [
+                        {
+                          "name": "Shoot",
+                          "x": 19,
+                          "y": 5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 5
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 5
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -11120,6 +11245,15 @@
             "includeConfig": 0
           },
           "target": "Niko"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "GunSystem"
         }
       ],
       "layers": [
@@ -17042,6 +17176,18 @@
                     "TopDownMovement"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Niko",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -17073,6 +17219,18 @@
                   "parameters": [
                     "Placeholder",
                     "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Animation"
+                  },
+                  "parameters": [
+                    "Niko",
+                    "=",
+                    "2"
                   ],
                   "subInstructions": []
                 }
@@ -17605,6 +17763,49 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [],
+          "events": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Overworld",
+      "lastChangeTimeStamp": 0,
+      "name": "GunSystem",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Niko",
+                "gun1",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Niko",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         }
       ]
