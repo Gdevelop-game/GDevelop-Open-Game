@@ -30,9 +30,9 @@ jobs:
         rm -rf Project
         git clone https://github.com/Gdevelop-game/GDevelop-Open-Game .
         mv ./src ./Project
-        mkdir Exported
         npm i
-        node ./index.js
+        npm link
+        gdexport -b -p "./Project/src/game.json"
       
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
