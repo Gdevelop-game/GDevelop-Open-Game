@@ -2,5 +2,42 @@
   "associatedLayout": "Overworld",
   "lastChangeTimeStamp": 0,
   "name": "GunSystem",
-  "events": []
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Niko",
+            "gun1",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangeAnimation"
+          },
+          "parameters": [
+            "Niko",
+            "=",
+            "2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ]
 }
