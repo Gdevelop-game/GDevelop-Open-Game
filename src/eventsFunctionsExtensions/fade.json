@@ -1,0 +1,212 @@
+{
+  "author": "THE GEM TUTORIALS",
+  "description": "",
+  "extensionNamespace": "",
+  "fullName": "Fade",
+  "name": "fade",
+  "shortDescription": "Fades a sprite",
+  "tags": "",
+  "version": "1.0.0",
+  "eventsFunctions": [
+    {
+      "description": "fade out",
+      "fullName": "Fade out",
+      "functionType": "Action",
+      "name": "Fadeout",
+      "sentence": "Fade out _PARAM1_  ",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::SetOpacity"
+              },
+              "parameters": [
+                "Object",
+                "+",
+                "TimeDelta()*80"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::Opacity"
+              },
+              "parameters": [
+                "Object",
+                ">=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "GetArgumentAsString(\"Scene\")",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Object",
+          "longDescription": "",
+          "name": "Object",
+          "optional": false,
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Next scene",
+          "longDescription": "",
+          "name": "",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "sceneName"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "object has faded out",
+      "fullName": "Faded out",
+      "functionType": "Condition",
+      "name": "Fadedout",
+      "sentence": " _PARAM1_ has faded out ",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::Opacity"
+              },
+              "parameters": [
+                "Object",
+                ">=",
+                "255"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Object",
+          "longDescription": "",
+          "name": "Object",
+          "optional": false,
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        },
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Next scene",
+          "longDescription": "",
+          "name": "",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "sceneName"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "fade in",
+      "fullName": "Fade in",
+      "functionType": "Action",
+      "name": "Fadein",
+      "sentence": "Fade in _PARAM1_  ",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TiledSpriteObject::SetOpacity"
+              },
+              "parameters": [
+                "Object",
+                "-",
+                "TimeDelta()*80"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Object",
+          "longDescription": "",
+          "name": "Object",
+          "optional": false,
+          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
+          "type": "objectList"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}

@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Menu",
-  "name": "Menu",
+  "mangledName": "Settings",
+  "name": "Settings",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -32,21 +32,6 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "TODO: Make menu",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -58,20 +43,7 @@
       "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Overworld\"",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
+      "actions": [],
       "events": []
     }
   ],
