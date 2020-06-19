@@ -706,13 +706,24 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "AddForceVersPos"
+                    "value": "SetAngle"
                   },
                   "parameters": [
                     "Bullet",
-                    "MouseX(\"\", 0)",
-                    "MouseY(\"\", 0)",
-                    "200",
+                    "=",
+                    "Placeholder.Angle()"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "Placeholder.Angle()",
+                    "800",
                     "1"
                   ],
                   "subInstructions": []
@@ -781,6 +792,18 @@
                     "Gun_holding",
                     "=",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "gun1",
+                    "=",
+                    "Placeholder.Angle()"
                   ],
                   "subInstructions": []
                 }
