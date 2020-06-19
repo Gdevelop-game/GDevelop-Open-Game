@@ -168,96 +168,6 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Animation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "Animation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [],
           "events": []
@@ -469,6 +379,29 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "RotateTowardPosition"
+          },
+          "parameters": [
+            "Niko",
+            "MouseX(\"\", 0)",
+            "MouseY(\"\", 0)",
+            "0",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ]
 }
