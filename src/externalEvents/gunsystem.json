@@ -15,7 +15,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Collision",
+      "comment": "Gun pick up system",
       "comment2": ""
     },
     {
@@ -79,6 +79,21 @@
     {
       "disabled": false,
       "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Collision Stuff",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -123,12 +138,12 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "gun stuff",
+      "comment": "Gun shooting and Gun drop system",
       "comment2": ""
     },
     {
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
