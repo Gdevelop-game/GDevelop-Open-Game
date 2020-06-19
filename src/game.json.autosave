@@ -874,6 +874,15 @@
         "name": "versions\\manBlue_gun.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "bullet_placeholder-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bullet_placeholder-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1259,7 +1268,7 @@
         "gridWidth": 70,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.346
+        "zoomFactor": 0.226
       },
       "objectsGroups": [],
       "variables": [
@@ -9701,6 +9710,7 @@
           "behaviors": [
             {
               "name": "TopDownMovement",
+              "rotateObject": false,
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
@@ -9708,8 +9718,7 @@
               "angularMaxSpeed": 500,
               "deceleration": 800,
               "ignoreDefaultControls": true,
-              "maxSpeed": 200,
-              "rotateObject": true
+              "maxSpeed": 200
             }
           ],
           "animations": [
@@ -9766,8 +9775,8 @@
                       "points": [
                         {
                           "name": "Point",
-                          "x": 34,
-                          "y": 34
+                          "x": 47,
+                          "y": 30
                         }
                       ],
                       "originPoint": {
@@ -9801,8 +9810,8 @@
                       "points": [
                         {
                           "name": "Point",
-                          "x": 34,
-                          "y": 34
+                          "x": 47,
+                          "y": 30
                         }
                       ],
                       "originPoint": {
@@ -9824,8 +9833,8 @@
                       "points": [
                         {
                           "name": "Point",
-                          "x": 34,
-                          "y": 34
+                          "x": 47,
+                          "y": 30
                         }
                       ],
                       "originPoint": {
@@ -9856,7 +9865,13 @@
                     {
                       "hasCustomCollisionMask": false,
                       "image": "versions\\manBlue_gun.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 47,
+                          "y": 30
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -10824,6 +10839,64 @@
                         "y": 5
                       },
                       "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bullet",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "bullet_placeholder",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bullet_placeholder-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 8,
+                        "y": 8
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 8,
+                        "y": 8
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 13,
+                            "y": 3
+                          },
+                          {
+                            "x": 13,
+                            "y": 13
+                          },
+                          {
+                            "x": 3,
+                            "y": 13
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -17165,96 +17238,6 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [],
               "events": []
@@ -17466,6 +17449,29 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Niko",
+                "MouseX(\"\", 0)",
+                "MouseY(\"\", 0)",
+                "0",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ]
     },
@@ -17807,6 +17813,48 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "Niko",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            }
+          ]
         }
       ]
     }
