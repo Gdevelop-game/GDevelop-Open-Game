@@ -1,6 +1,6 @@
 # GDevelop Open Game  
 
-This Repository is an Attempt to create a GTA-like game using **GDevelop**. The name is likely to change later on. Moereover,
+This Repositry is an Attempt to create a GTA-like game using **GDevelop**. The name is likely to change later on. Moereover,
 we are likely to work in teams rather than individually so your performance/contribution will be a major factor.
 
 ### I am pumped for this, how can I contribute?

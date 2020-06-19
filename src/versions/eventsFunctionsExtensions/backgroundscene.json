@@ -1,0 +1,179 @@
+{
+  "author": "",
+  "description": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "name": "BackgroundScene",
+  "shortDescription": "",
+  "tags": "",
+  "version": "",
+  "eventsFunctions": [
+    {
+      "description": "",
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onFirstSceneLoaded",
+      "sentence": "",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "_RoomManager__RoomsRegistered",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "_RoomManager__RoomsRegistered",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BackgroundScene::loadBGScene"
+              },
+              "parameters": [
+                "",
+                "\"Rooms\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Loads a scene in the background",
+      "fullName": "Load a scene in the background",
+      "functionType": "Action",
+      "name": "loadBGScene",
+      "sentence": "Load the scene _PARAM1_ in the background",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\nconst name = eventsFunctionContext.getArgument(\"sceneName\");\n\nfor(let layout of runtimeGame.getGameData().layouts) {\n    if(layout.name === name) {\n        const newScene = new gdjs.RuntimeScene(runtimeGame);\n        newScene.loadFromScene(layout);\n        runtimeGame.scenes[name] = newScene;\n        newScene.onPause(); // Scene is paused for now\n        break;\n    }\n}\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Name of the scene to load",
+          "longDescription": "",
+          "name": "sceneName",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "sceneName"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Pasues the current scene and switches to a background loaded scene.",
+      "fullName": "Pause scene and go to background scene",
+      "functionType": "Action",
+      "name": "switchToBGScene",
+      "sentence": "Pause current scene and go to background scene _PARAM1_",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\nconst name = eventsFunctionContext.getArgument(\"sceneName\");\nconst newScene = runtimeGame.scenes[name];\n\nif(newScene) {\n    runtimeScene.onPause();\n    newScene.onResume();\n    runtimeGame._sceneStack._stack.push(newScene);\n}\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Background Scene name to switch to",
+          "longDescription": "",
+          "name": "sceneName",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "sceneName"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Brings the current Scene back in background and switch back to the previous scene",
+      "fullName": "Switch back to previous scene",
+      "functionType": "Action",
+      "name": "switchBack",
+      "sentence": "Switch back to paused scene",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\n\nif (runtimeGame._sceneStack._stack.length <= 1) return null;\n\nruntimeGame._sceneStack._stack.pop();\n\n// Tell the new current scene it's being resumed\nconst currentScene = runtimeGame._sceneStack._stack[runtimeGame._sceneStack._stack.length - 1];\nif (currentScene) {\n    currentScene.onResume();\n}\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}
