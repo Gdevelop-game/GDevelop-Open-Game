@@ -28,8 +28,7 @@ jobs:
         git clone https://github.com/arthuro555/gdexporter
         cd gdexporter
         rm -rf Project
-        git clone https://github.com/Gdevelop-game/GDevelop-Open-Game .
-        mv ./src ./Project
+        git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
         npm i
         npm link
         gdexport -b -p "./Project/src/game.json"
