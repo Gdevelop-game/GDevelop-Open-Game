@@ -22,9 +22,18 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.5
+    "zoomFactor": 0.26
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "delete_bullet_stuff",
+      "objects": [
+        {
+          "name": "roof_tops"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "fade",
@@ -10072,15 +10081,6 @@
         "includeConfig": 0
       },
       "target": "Niko"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "GunSystem"
     }
   ],
   "layers": [
