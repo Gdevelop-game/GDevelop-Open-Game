@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.346
+    "zoomFactor": 0.226
   },
   "objectsGroups": [],
   "variables": [
@@ -8464,6 +8464,7 @@
       "behaviors": [
         {
           "name": "TopDownMovement",
+          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
           "allowDiagonals": true,
@@ -8471,8 +8472,7 @@
           "angularMaxSpeed": 500,
           "deceleration": 800,
           "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "rotateObject": true
+          "maxSpeed": 200
         }
       ],
       "animations": [
@@ -8529,8 +8529,8 @@
                   "points": [
                     {
                       "name": "Point",
-                      "x": 34,
-                      "y": 34
+                      "x": 47,
+                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -8564,8 +8564,8 @@
                   "points": [
                     {
                       "name": "Point",
-                      "x": 34,
-                      "y": 34
+                      "x": 47,
+                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -8587,8 +8587,8 @@
                   "points": [
                     {
                       "name": "Point",
-                      "x": 34,
-                      "y": 34
+                      "x": 47,
+                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -8619,7 +8619,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_gun.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Point",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
