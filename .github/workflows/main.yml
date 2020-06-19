@@ -42,3 +42,5 @@ jobs:
         committer: Auto Builder
         # Commit message
         commit_message: Auto Built nightly game build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
