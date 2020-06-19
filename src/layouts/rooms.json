@@ -24,7 +24,25 @@
     "windowMask": true,
     "zoomFactor": 0.404
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "delete_bullet_stuff",
+      "objects": [
+        {
+          "name": "walls"
+        },
+        {
+          "name": "flower"
+        },
+        {
+          "name": "furniture"
+        },
+        {
+          "name": "kitchen"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -5676,15 +5694,6 @@
         "includeConfig": 0
       },
       "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "GunSystem"
     }
   ],
   "layers": [
