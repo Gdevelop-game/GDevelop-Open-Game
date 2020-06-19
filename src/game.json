@@ -13,8 +13,8 @@
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
     "orientation": "landscape",
-    "packageName": "com.gdevelopComunity.gdopengame",
-    "projectFile": "D:\\Users\\pc\\Community-game\\src\\game.json",
+    "packageName": "com.gdevelopComunity.gdgame",
+    "projectFile": "C:\\Users\\Unekwu\\Desktop\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -23,8 +23,8 @@
     "winExecutableIconFile": "",
     "name": "GDevelop Open Game",
     "author": "GDevelop Community",
-    "windowWidth": 800,
-    "windowHeight": 600,
+    "windowWidth": 1500,
+    "windowHeight": 700,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -109,11 +109,769 @@
         "name": "placeholder-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_234.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_234.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_260.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_260.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_145.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_145.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_118.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_118.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_147.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_147.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_122.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_122.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_233.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_233.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_261.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_261.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_119.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_119.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_146.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_146.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_148.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_148.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_121.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_121.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_149.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_149.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_321.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_321.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_297.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_297.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_323.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_323.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_270.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_270.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_269.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_269.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_102.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_102.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_21.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_104.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_104.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_49.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_103.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_103.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_77.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_77.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_501.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_501.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_502.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_502.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_504.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_504.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_505.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_505.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_534.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_534.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_483.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_483.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_46.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_441.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_441.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_440.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_440.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_466.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_466.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/manBlue_stand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\manBlue_stand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/manBlue_hold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\manBlue_hold.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_240.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_240.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/placeholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\placeholder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_01.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_02.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_03.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_04.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_37.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_41.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_91.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_91.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_62.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_36.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_35.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_93.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_93.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_66.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_66.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_63.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_64.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_95.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_95.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_38.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/tile_68.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\tile_68.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile106.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile106.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile119.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile119.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile120.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile143.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile143.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile124.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile124.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect849.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect849.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect943.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect943.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rpgTile1192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rpgTile1192.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rpgTile137.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rpgTile137.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rpgTile138.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rpgTile138.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/rpgTile141.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\rpgTile141.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect943g.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect943g.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect933.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect933.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect933-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect933-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect943g-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect943g-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "roof_tops-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "roof_tops-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rect933-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rect933-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_06.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_06.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_05.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "door1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "door1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fade_tiled_sprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fade_tiled_sprite-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rpgTile142.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rpgTile142.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "height": 700,
+      "name": "fade_tiled_sprite",
+      "tags": "",
+      "texture": "fade_tiled_sprite-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 1500,
+      "variables": [],
+      "behaviors": []
+    }
+  ],
   "objectsGroups": [],
   "variables": [
     {
@@ -146,6 +904,10 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/settings"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/overworld"
     },
     {
@@ -157,8 +919,25 @@
       "referenceTo": "/layouts/functionsincludes"
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/niko"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/global"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/fade"
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/fade"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/roommanager"
