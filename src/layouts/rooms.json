@@ -5225,40 +5225,21 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
-                  "image": "bullet_placeholder-1.png",
+                  "hasCustomCollisionMask": false,
+                  "image": "BulletPlaceholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 3
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 3
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 13
-                      },
-                      {
-                        "x": 3,
-                        "y": 13
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
                 }
               ]
             }
