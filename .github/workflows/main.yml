@@ -67,7 +67,7 @@ jobs:
         run: |
           cd gdexporter/Exported
           npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -wml
+          ./node_modules/.bin/electron-builder -ml
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
@@ -92,7 +92,7 @@ jobs:
         run: |
           cd gdexporter/Exported
           npm i --save-dev electron-builder
-          .\node_modules\.bin\electron-builder.cmd -wml
+          .\node_modules\.bin\electron-builder.cmd -w portable
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
