@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.25
+    "zoomFactor": 0.082
   },
   "objectsGroups": [
     {
@@ -8389,21 +8389,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "crossair",
-      "width": 0,
-      "x": 420,
-      "y": 280,
-      "zOrder": 105,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -8864,6 +8849,21 @@
           "value": 5
         }
       ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 3360,
+      "y": -350,
+      "zOrder": 107,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -10184,6 +10184,45 @@
       ]
     },
     {
+      "name": "crossair",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "crossair_black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 15.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "gun1",
       "tags": "",
       "type": "Sprite",
@@ -10229,7 +10268,7 @@
       ]
     },
     {
-      "name": "Bullet",
+      "name": "bullet",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -10251,46 +10290,7 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "crossair",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "crossair_black.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 16,
-                    "y": 15.5
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -10950,7 +10950,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11188,15 +11188,6 @@
             "includeConfig": 0
           },
           "target": "Global"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "crossair"
         }
       ],
       "parameters": []
