@@ -1,0 +1,30 @@
+{
+  "associatedLayout": "Overworld",
+  "lastChangeTimeStamp": 0,
+  "name": "crossair",
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "crossair",
+            "=",
+            "MouseX()",
+            "=",
+            "MouseY()"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ]
+}

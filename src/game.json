@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -101,15 +101,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "placeholder-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "placeholder-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
       {
         "alwaysLoaded": false,
         "file": "versions/tile_234.png",
@@ -706,24 +697,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "rect849.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect849.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect943.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect943.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "rpgTile1192.png",
         "kind": "image",
         "metadata": "",
@@ -755,33 +728,6 @@
         "kind": "image",
         "metadata": "",
         "name": "versions\\rpgTile141.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect943g.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect943g.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect933.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect933.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect933-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect933-1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -859,15 +805,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "BulletPlaceholder.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "BulletPlaceholder.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "weapon_gun.png",
         "kind": "image",
         "metadata": "",
@@ -881,6 +818,78 @@
         "kind": "image",
         "metadata": "",
         "name": "versions\\manBlue_gun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_322.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_322.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_484.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_484.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_535.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_535.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "crossair_black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crossair_black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/green_button00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\green_button00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/green_button01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\green_button01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/blue_button07.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\blue_button07.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/blue_button08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\blue_button08.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -922,10 +931,6 @@
     {
       "name": "Gun_holding",
       "value": "0"
-    },
-    {
-      "name": "Rotate_towards_mouse",
-      "value": "0"
     }
   ],
   "layouts": [
@@ -966,6 +971,26 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/fade"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/crossair"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/north_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/east_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/south_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/west_doors"
     }
   ],
   "eventsFunctionsExtensions": [

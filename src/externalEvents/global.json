@@ -130,6 +130,25 @@
       },
       "comment": "events above can also be used to activate fullscreen for now till we get a working settings menu.",
       "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "doors"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ]
 }
