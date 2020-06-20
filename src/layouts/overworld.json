@@ -7739,8 +7739,8 @@
       "locked": false,
       "name": "Niko",
       "width": 0,
-      "x": 210,
-      "y": 1400,
+      "x": 100,
+      "y": 1090,
       "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
@@ -8310,21 +8310,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "gun1",
-      "width": 0,
-      "x": 70,
-      "y": 1400,
-      "zOrder": 103,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -8474,14 +8459,14 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 500,
           "deceleration": 800,
           "ignoreDefaultControls": true,
-          "maxSpeed": 200
+          "maxSpeed": 200,
+          "rotateObject": true
         }
       ],
       "animations": [
@@ -8535,17 +8520,11 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 24,
-                    "y": 22
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -8570,17 +8549,11 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 24,
-                    "y": 22
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -8593,52 +8566,11 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_hold.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
                     "x": 0,
                     "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Gun1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_gun.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -9563,90 +9495,7 @@
           ]
         }
       ]
-    },
-    {
-      "name": "gun1",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "weapon_gun.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 19,
-                      "y": 5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Bullet",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "bullet_placeholder",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "BulletPlaceholder.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
+
     }
   ],
   "events": [
