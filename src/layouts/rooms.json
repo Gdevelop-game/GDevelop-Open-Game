@@ -21,23 +21,23 @@
     "gridR": 158,
     "gridWidth": 70,
     "snap": true,
-    "windowMask": true,
+    "windowMask": false,
     "zoomFactor": 0.404
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [
     {
-      "angle": 0,
+      "angle": -90,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 490,
-      "y": 280,
-      "zOrder": 1,
+      "x": 140,
+      "y": -870,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -51,7 +51,7 @@
       "name": "walls",
       "width": 70,
       "x": 490,
-      "y": 420,
+      "y": -660,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -63,15 +63,15 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -90,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 490,
-      "y": 210,
+      "x": 70,
+      "y": -520,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -90,49 +90,9 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 560,
-      "y": 560,
+      "x": -210,
+      "y": -520,
       "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 490,
-      "y": 490,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 490,
-      "y": 560,
-      "zOrder": 1,
       "numberProperties": [
         {
           "name": "animation",
@@ -150,8 +110,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 630,
-      "y": 560,
+      "x": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -170,8 +130,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 700,
-      "y": 560,
+      "x": -70,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -190,8 +150,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 770,
-      "y": 560,
+      "x": 0,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -210,8 +170,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 840,
-      "y": 560,
+      "x": 70,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -231,7 +191,7 @@
       "name": "walls",
       "width": 70,
       "x": 910,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -251,7 +211,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -271,7 +231,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": 490,
+      "y": -590,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -291,7 +251,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": 420,
+      "y": -660,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -311,7 +271,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": 350,
+      "y": -730,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -331,7 +291,7 @@
       "name": "walls",
       "width": 70,
       "x": 560,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -350,8 +310,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 630,
-      "y": 210,
+      "x": 0,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -363,15 +323,15 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 90,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 700,
-      "y": 210,
+      "x": 70,
+      "y": -730,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -391,7 +351,7 @@
       "name": "walls",
       "width": 70,
       "x": 840,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -411,7 +371,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -431,7 +391,7 @@
       "name": "walls",
       "width": 70,
       "x": 1050,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -451,7 +411,7 @@
       "name": "walls",
       "width": 70,
       "x": 1120,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -471,7 +431,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -491,7 +451,7 @@
       "name": "walls",
       "width": 70,
       "x": 1190,
-      "y": 210,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -511,7 +471,7 @@
       "name": "walls",
       "width": 70,
       "x": 1050,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -531,7 +491,7 @@
       "name": "walls",
       "width": 70,
       "x": 1120,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -551,7 +511,7 @@
       "name": "walls",
       "width": 70,
       "x": 1190,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -571,7 +531,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 560,
+      "y": -520,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -591,7 +551,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 280,
+      "y": -800,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -611,7 +571,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 350,
+      "y": -730,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -631,7 +591,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 420,
+      "y": -660,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -651,32 +611,12 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 490,
+      "y": -590,
       "zOrder": 1,
       "numberProperties": [
         {
           "name": "animation",
           "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": -90,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "kitchen",
-      "width": 70,
-      "x": 1190,
-      "y": 280,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
         }
       ],
       "stringProperties": [],
@@ -691,7 +631,7 @@
       "name": "kitchen",
       "width": 70,
       "x": 1050,
-      "y": 493,
+      "y": -587,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -711,29 +651,9 @@
       "name": "kitchen",
       "width": 70,
       "x": 1120,
-      "y": 493,
+      "y": -587,
       "zOrder": 3,
       "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "kitchen",
-      "width": 70,
-      "x": 1190,
-      "y": 493,
-      "zOrder": 3,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -746,7 +666,7 @@
       "name": "floor",
       "width": 70,
       "x": 1120,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -761,7 +681,7 @@
       "name": "floor",
       "width": 70,
       "x": 1190,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -776,7 +696,7 @@
       "name": "floor",
       "width": 70,
       "x": 1050,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -791,7 +711,7 @@
       "name": "floor",
       "width": 70,
       "x": 1120,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -806,7 +726,7 @@
       "name": "floor",
       "width": 70,
       "x": 1190,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -821,7 +741,7 @@
       "name": "floor",
       "width": 70,
       "x": 1050,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -836,7 +756,7 @@
       "name": "floor",
       "width": 70,
       "x": 1190,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -851,7 +771,7 @@
       "name": "floor",
       "width": 70,
       "x": 1120,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -866,7 +786,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 280,
+      "y": -800,
       "zOrder": 3,
       "numberProperties": [
         {
@@ -886,7 +806,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 350,
+      "y": -730,
       "zOrder": 5,
       "numberProperties": [
         {
@@ -906,7 +826,7 @@
       "name": "floor",
       "width": 70,
       "x": 1260,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -921,7 +841,7 @@
       "name": "floor",
       "width": 70,
       "x": 490,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -941,7 +861,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -961,7 +881,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 210,
+      "y": -870,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -981,7 +901,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1001,7 +921,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1021,7 +941,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1041,7 +961,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1061,7 +981,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1081,7 +1001,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1101,7 +1021,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1121,7 +1041,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1141,7 +1061,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1161,7 +1081,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 210,
+      "y": -870,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1181,7 +1101,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1201,7 +1121,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1221,7 +1141,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1241,7 +1161,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1261,7 +1181,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1281,7 +1201,7 @@
       "name": "floor",
       "width": 70,
       "x": 490,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1301,7 +1221,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1321,7 +1241,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 280,
+      "y": -800,
       "zOrder": -2,
       "numberProperties": [
         {
@@ -1341,7 +1261,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1361,7 +1281,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1381,7 +1301,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1401,7 +1321,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1421,7 +1341,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 210,
+      "y": -870,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1441,7 +1361,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1461,7 +1381,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1481,7 +1401,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1501,7 +1421,7 @@
       "name": "floor",
       "width": 70,
       "x": 490,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1521,7 +1441,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1541,7 +1461,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1561,7 +1481,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1581,7 +1501,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1601,27 +1521,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 350,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 700,
-      "y": 280,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1641,7 +1541,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 420,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1661,7 +1561,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1681,7 +1581,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1701,7 +1601,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1721,7 +1621,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1741,7 +1641,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1761,7 +1661,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1781,7 +1681,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1801,7 +1701,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1821,7 +1721,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1841,7 +1741,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 350,
+      "y": -730,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1861,7 +1761,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -1881,7 +1781,7 @@
       "name": "floor",
       "width": 70,
       "x": 1190,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -1896,7 +1796,7 @@
       "name": "floor",
       "width": 70,
       "x": 1120,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -1911,22 +1811,22 @@
       "name": "floor",
       "width": 70,
       "x": 1050,
-      "y": 490,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": -180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 560,
-      "y": 70,
+      "x": -140,
+      "y": -1150,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -1938,15 +1838,15 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": -180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 560,
-      "y": 0,
+      "x": -70,
+      "y": -1150,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -1958,15 +1858,15 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 630,
-      "y": 0,
+      "x": -140,
+      "y": -1080,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -1978,15 +1878,15 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": -180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 700,
-      "y": 0,
+      "x": -70,
+      "y": -1010,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -1998,15 +1898,15 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 630,
-      "y": 70,
+      "x": -70,
+      "y": -1080,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -2018,15 +1918,15 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
+      "angle": -180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 700,
-      "y": 70,
+      "x": -140,
+      "y": -1010,
       "zOrder": 6,
       "numberProperties": [
         {
@@ -2046,7 +1946,7 @@
       "name": "walls",
       "width": 70,
       "x": 490,
-      "y": 140,
+      "y": -940,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2066,7 +1966,7 @@
       "name": "walls",
       "width": 70,
       "x": 490,
-      "y": 70,
+      "y": -1010,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2086,7 +1986,7 @@
       "name": "walls",
       "width": 70,
       "x": 490,
-      "y": 0,
+      "y": -1080,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2105,8 +2005,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 490,
-      "y": -70,
+      "x": -210,
+      "y": -660,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2125,9 +2025,9 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 490,
-      "y": -140,
-      "zOrder": 1,
+      "x": -210,
+      "y": -1220,
+      "zOrder": 2,
       "numberProperties": [
         {
           "name": "animation",
@@ -2146,7 +2046,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2166,7 +2066,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2186,7 +2086,7 @@
       "name": "floor",
       "width": 70,
       "x": 630,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2206,7 +2106,7 @@
       "name": "floor",
       "width": 70,
       "x": 560,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2218,15 +2118,15 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 910,
-      "y": 210,
+      "x": 70,
+      "y": -870,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2246,7 +2146,7 @@
       "name": "walls",
       "width": 70,
       "x": 910,
-      "y": 140,
+      "y": -940,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2266,7 +2166,7 @@
       "name": "walls",
       "width": 70,
       "x": 910,
-      "y": 0,
+      "y": -1080,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2286,7 +2186,7 @@
       "name": "walls",
       "width": 70,
       "x": 560,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2306,7 +2206,7 @@
       "name": "walls",
       "width": 70,
       "x": 630,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2326,7 +2226,7 @@
       "name": "walls",
       "width": 70,
       "x": 700,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2346,7 +2246,7 @@
       "name": "walls",
       "width": 70,
       "x": 770,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2366,7 +2266,7 @@
       "name": "walls",
       "width": 70,
       "x": 840,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2386,7 +2286,7 @@
       "name": "walls",
       "width": 70,
       "x": 910,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2398,15 +2298,15 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -180,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 910,
-      "y": -70,
+      "x": 70,
+      "y": -660,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2426,7 +2326,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2446,7 +2346,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2466,7 +2366,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2486,7 +2386,7 @@
       "name": "floor",
       "width": 70,
       "x": 1050,
-      "y": 280,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -2500,8 +2400,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1050,
-      "y": 0,
+      "x": -140,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2521,7 +2421,7 @@
       "name": "floor",
       "width": 70,
       "x": 1050,
-      "y": -70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2541,7 +2441,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 140,
+      "y": -940,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2561,7 +2461,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 70,
+      "y": -1010,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2581,7 +2481,7 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": 0,
+      "y": -1080,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2601,7 +2501,67 @@
       "name": "floor",
       "width": 70,
       "x": 980,
-      "y": -70,
+      "y": -1150,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -590,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -660,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2621,7 +2581,7 @@
       "name": "floor",
       "width": 70,
       "x": 1120,
-      "y": 140,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2640,8 +2600,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1120,
-      "y": 70,
+      "x": 0,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2660,8 +2620,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1120,
-      "y": 0,
+      "x": 0,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2680,28 +2640,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1120,
-      "y": -70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1190,
-      "y": 140,
+      "x": 0,
+      "y": -800,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2721,7 +2661,7 @@
       "name": "floor",
       "width": 70,
       "x": 1190,
-      "y": 70,
+      "y": -1150,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2740,8 +2680,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1190,
-      "y": 0,
+      "x": -140,
+      "y": -590,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2760,48 +2700,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1190,
-      "y": -70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1050,
-      "y": 140,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1050,
-      "y": 70,
+      "x": -140,
+      "y": -660,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -2821,7 +2721,7 @@
       "name": "walls",
       "width": 70,
       "x": 980,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2841,7 +2741,7 @@
       "name": "walls",
       "width": 70,
       "x": 1050,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2861,7 +2761,7 @@
       "name": "walls",
       "width": 70,
       "x": 1120,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2881,7 +2781,7 @@
       "name": "walls",
       "width": 70,
       "x": 1190,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2901,7 +2801,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": -140,
+      "y": -1220,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -2921,7 +2821,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": -70,
+      "y": -1150,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2941,7 +2841,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 0,
+      "y": -1080,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2961,7 +2861,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 70,
+      "y": -1010,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -2981,7 +2881,7 @@
       "name": "walls",
       "width": 70,
       "x": 1260,
-      "y": 140,
+      "y": -940,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -3000,8 +2900,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 910,
-      "y": 70,
+      "x": 490,
+      "y": -730,
       "zOrder": 11,
       "numberProperties": [
         {
@@ -3021,7 +2921,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": -70,
+      "y": -1150,
       "zOrder": 11,
       "numberProperties": [
         {
@@ -3041,7 +2941,7 @@
       "name": "floor",
       "width": 70,
       "x": 910,
-      "y": 0,
+      "y": -1080,
       "zOrder": 11,
       "numberProperties": [
         {
@@ -3061,7 +2961,7 @@
       "name": "walls",
       "width": 70,
       "x": 910,
-      "y": 70,
+      "y": -1010,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -3081,7 +2981,7 @@
       "name": "floor",
       "width": 70,
       "x": 700,
-      "y": 210,
+      "y": -870,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -3101,7 +3001,7 @@
       "name": "floor",
       "width": 70,
       "x": 770,
-      "y": 210,
+      "y": -870,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -3121,7 +3021,7 @@
       "name": "floor",
       "width": 70,
       "x": 840,
-      "y": 210,
+      "y": -870,
       "zOrder": 14,
       "numberProperties": [
         {
@@ -3133,15 +3033,30 @@
       "initialVariables": []
     },
     {
-      "angle": 230,
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Niko",
+      "width": 0,
+      "x": 70,
+      "y": -940,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 804,
-      "y": 453,
+      "x": 210,
+      "y": -940,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -3153,15 +3068,15 @@
       "initialVariables": []
     },
     {
-      "angle": 230,
+      "angle": 360,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 760,
-      "y": 400,
+      "x": 280,
+      "y": -940,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -3173,15 +3088,15 @@
       "initialVariables": []
     },
     {
-      "angle": 230,
+      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 716,
-      "y": 348,
+      "x": 350,
+      "y": -940,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -3193,15 +3108,15 @@
       "initialVariables": []
     },
     {
-      "angle": 403,
+      "angle": 540,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 560,
-      "y": 490,
+      "x": 280,
+      "y": -1150,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -3220,23 +3135,23 @@
       "locked": false,
       "name": "flower",
       "width": 70,
-      "x": 840,
-      "y": 501,
+      "x": 350,
+      "y": -1150,
       "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 230,
+      "angle": 270,
       "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 674,
-      "y": 474,
+      "x": 280,
+      "y": -1010,
       "zOrder": 16,
       "numberProperties": [
         {
@@ -3256,7 +3171,7 @@
       "name": "Placeholder",
       "width": 0,
       "x": 588,
-      "y": 364,
+      "y": -716,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -3271,7 +3186,7 @@
       "name": "door1out",
       "width": 20,
       "x": 490,
-      "y": 315,
+      "y": -765,
       "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
@@ -3301,8 +3216,28 @@
       "name": "floor",
       "width": 70,
       "x": 490,
-      "y": 280,
+      "y": -800,
       "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -730,
+      "zOrder": 2,
       "numberProperties": [
         {
           "name": "animation",
@@ -3321,27 +3256,7 @@
       "name": "floor",
       "width": 70,
       "x": 490,
-      "y": 350,
-      "zOrder": 20,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 490,
-      "y": 420,
+      "y": -660,
       "zOrder": 20,
       "numberProperties": [
         {
@@ -3354,31 +3269,2646 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 70,
       "layer": "",
       "locked": false,
-      "name": "Niko",
-      "width": 0,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
       "x": 210,
-      "y": 70,
-      "zOrder": 21,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -660,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -660,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -660,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -660,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -660,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 0,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -140,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 0,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -140,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 0,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -140,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 0,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -140,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 420,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 350,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 280,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 210,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 630,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 560,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 700,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 770,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 840,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 210,
+      "y": -1220,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 140,
+      "y": -1220,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 280,
+      "y": -1220,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 350,
+      "y": -1220,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -140,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -70,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 0,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 70,
+      "y": -590,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 140,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 210,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 280,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 350,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -1010,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -1080,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -1150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 230,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 804,
+      "y": -627,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 230,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 760,
+      "y": -680,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 230,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 716,
+      "y": -732,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 270,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 0,
+      "y": -1150,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 403,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 560,
+      "y": -590,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 630,
+      "y": -1080,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 700,
+      "y": -1080,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 700,
+      "y": -1010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 630,
+      "y": -1010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 560,
+      "y": -1010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 560,
+      "y": -1080,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "width": 70,
+      "x": 840,
+      "y": -579,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 70,
       "layer": "",
       "locked": false,
-      "name": "gun1",
-      "width": 0,
-      "x": 770,
-      "y": 140,
-      "zOrder": 22,
+      "name": "flower",
+      "width": 70,
+      "x": 210,
+      "y": -1150,
+      "zOrder": 17,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 230,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 674,
+      "y": -606,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 630,
+      "y": -870,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -140,
+      "y": -870,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -70,
+      "y": -870,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -520,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -590,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 420,
+      "y": -520,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 420,
+      "y": -1220,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -1220,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -940,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 910,
+      "y": -870,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 700,
+      "y": -800,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -660,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 700,
+      "y": -870,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1120,
+      "y": -1010,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1050,
+      "y": -1010,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1050,
+      "y": -1080,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1120,
+      "y": -1080,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1190,
+      "y": -1080,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1190,
+      "y": -1010,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1190,
+      "y": -940,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1120,
+      "y": -940,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 1050,
+      "y": -940,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 910,
+      "y": -1150,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -870,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 490,
+      "y": -800,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "width": 70,
+      "x": 1190,
+      "y": -587,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 140,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": -210,
+      "y": -730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 0,
+      "y": -730,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -70,
+      "y": -730,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": -140,
+      "y": -730,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 70,
+      "y": -800,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 70,
+      "y": -660,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "width": 70,
+      "x": 1190,
+      "y": -800,
+      "zOrder": 3,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -4969,144 +7499,6 @@
       ]
     },
     {
-      "name": "Niko",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.3,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_hold.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Gun1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_gun.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "door1out",
       "tags": "",
       "type": "Sprite",
@@ -5146,7 +7538,7 @@
       ]
     },
     {
-      "name": "gun1",
+      "name": "Niko",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -5163,84 +7555,66 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "weapon_gun.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 19,
-                      "y": 5
-                    }
-                  ],
+                  "image": "versions\\manBlue_stand.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 5
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 5
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Bullet",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
+        },
         {
-          "name": "bullet_placeholder",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": true,
-                  "image": "bullet_placeholder-1.png",
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_stand.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
-                    "x": 8,
-                    "y": 8
+                    "x": 0,
+                    "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 13
-                      },
-                      {
-                        "x": 3,
-                        "y": 13
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_hold.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -5695,15 +8069,6 @@
         "includeConfig": 0
       },
       "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "GunSystem"
     }
   ],
   "layers": [
