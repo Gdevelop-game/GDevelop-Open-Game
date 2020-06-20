@@ -7731,7 +7731,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 8
+          "value": 1
         }
       ],
       "stringProperties": [],
@@ -7841,7 +7841,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 9
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8041,7 +8041,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 8
+          "value": 1
         }
       ],
       "stringProperties": [],
@@ -8121,7 +8121,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 9
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8862,6 +8862,86 @@
         {
           "name": "animation",
           "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 418,
+      "x": 280,
+      "y": 1114,
+      "zOrder": 11,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 11,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 408,
+      "x": 286,
+      "y": 1104,
+      "zOrder": 25,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 276,
+      "x": -140,
+      "y": 1114,
+      "zOrder": 11,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 11,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 270,
+      "x": -135,
+      "y": 1103,
+      "zOrder": 25,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
         }
       ],
       "stringProperties": [],
@@ -10391,7 +10471,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Roof_tops",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10562,7 +10642,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10609,7 +10689,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10644,7 +10724,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10943,7 +11023,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "To Remove: Tests for teleporting to room",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11148,7 +11228,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
