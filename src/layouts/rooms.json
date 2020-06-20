@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": true,
-    "zoomFactor": 0.404
+    "zoomFactor": 0.356
   },
   "objectsGroups": [
     {
@@ -5030,65 +5030,6 @@
           ]
         },
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.3,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_hold.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-
           "name": "",
           "useMultipleDirections": false,
           "directions": [
