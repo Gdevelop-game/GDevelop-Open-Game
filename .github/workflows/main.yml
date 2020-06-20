@@ -64,11 +64,10 @@ jobs:
           node bin/cli.js -b electron -p "./Project/src/game.json"
           
       - name: Build Electron app
-        uses: samuelmeuli/action-electron-builder@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          app_root: gdexporter/Exported
-          package_root: gdexporter/Exported
+        run: |
+          cd gdexporter/Exported
+          npm i --dev electron-builder
+          ./node_modules/.bin/electron-builder -wml
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
@@ -90,11 +89,10 @@ jobs:
           node bin/cli.js -b electron -p "./Project/src/game.json"
           
       - name: Build Electron app
-        uses: samuelmeuli/action-electron-builder@v1
-        with:
-          github_token: ${{ secrets.github_token }}
-          app_root: gdexporter/Exported
-          package_root: gdexporter/Exported
+        run: |
+          cd gdexporter/Exported
+          npm i --dev electron-builder
+          .\node_modules\.bin\electron-builder.cmd -wml
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
