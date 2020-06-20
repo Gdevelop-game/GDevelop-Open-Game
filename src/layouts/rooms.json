@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": true,
-    "zoomFactor": 0.4
+    "zoomFactor": 0.352
   },
   "objectsGroups": [
     {
@@ -6275,6 +6275,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 1120,
+      "y": 0,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -8252,7 +8267,7 @@
       ]
     },
     {
-      "name": "Bullet",
+      "name": "bullet",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -8368,6 +8383,45 @@
       ]
     },
     {
+      "name": "crossair",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "crossair_black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 15.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "bold": true,
       "italic": false,
       "name": "room2",
@@ -8428,7 +8482,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Room Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8562,7 +8616,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roomfade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8743,7 +8797,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Rooms_Global",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
