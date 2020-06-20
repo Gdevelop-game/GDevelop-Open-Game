@@ -17,4 +17,4 @@ we are likely to work in teams rather than individually so your performance/cont
 
 * [GDevelop forums](https://forum.gdevelop-app.com) and [Discord chat](https://discord.gg/rjdYHvj).
 * [GDevelop homepage](https://gdevelop-app.com) ([open-source](https://github.com/4ian/GDevelop-website))
-* [GDevelop wiki (documentation)](http://wiki.compilgames.net)
+* [GDevelop wiki (documentation)](http://wiki.compilgames.net/doku.php/gdevelop5/start)
