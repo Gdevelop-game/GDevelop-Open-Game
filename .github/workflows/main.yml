@@ -61,8 +61,7 @@ jobs:
           rm -rf Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           npm i
-          npm link
-          gdexport -b electron -p "./Project/src/game.json"
+          node bin/cli.js -b electron -p "./Project/src/game.json"
           
       - name: Build Electron app
         uses: samuelmeuli/action-electron-builder@v1
