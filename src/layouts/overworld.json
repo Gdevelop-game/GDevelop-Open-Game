@@ -22,21 +22,82 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.38
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
-      "name": "delete_bullet_stuff",
+      "name": "bullet_obstacles",
       "objects": [
         {
           "name": "roof_tops"
         }
       ]
+    },
+    {
+      "name": "doors",
+      "objects": [
+        {
+          "name": "door2"
+        },
+        {
+          "name": "door1"
+        },
+        {
+          "name": "door3"
+        }
+      ]
+    },
+    {
+      "name": "North_doors",
+      "objects": [
+        {
+          "name": "door2"
+        },
+        {
+          "name": "door1"
+        }
+      ]
+    },
+    {
+      "name": "West_doors",
+      "objects": [
+        {
+          "name": "door3"
+        }
+      ]
+    },
+    {
+      "name": "South_doors",
+      "objects": []
+    },
+    {
+      "name": "East_doors",
+      "objects": []
     }
   ],
   "variables": [
     {
       "name": "fade",
+      "value": ""
+    },
+    {
+      "name": "walk_in_west",
+      "value": ""
+    },
+    {
+      "name": "walk_in_north",
+      "value": ""
+    },
+    {
+      "name": "separate",
+      "value": ""
+    },
+    {
+      "name": "walk_in_south",
+      "value": ""
+    },
+    {
+      "name": "walk_in_east",
       "value": ""
     }
   ],
@@ -7116,7 +7177,7 @@
       "customSize": true,
       "height": 1190,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "grass_tiled",
       "width": 3500,
       "x": -4270,
@@ -7664,7 +7725,7 @@
       "locked": false,
       "name": "roof_tops",
       "width": 140,
-      "x": 420,
+      "x": 280,
       "y": 980,
       "zOrder": 8,
       "numberProperties": [
@@ -7704,7 +7765,7 @@
       "locked": false,
       "name": "roof_tops",
       "width": 140,
-      "x": 420,
+      "x": 280,
       "y": 840,
       "zOrder": 8,
       "numberProperties": [
@@ -7733,13 +7794,28 @@
     },
     {
       "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Niko",
+      "width": 0,
+      "x": 210,
+      "y": 1400,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": true,
       "height": 6,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
-      "width": 276,
-      "x": 420,
+      "width": 418,
+      "x": 280,
       "y": 700,
       "zOrder": 11,
       "numberProperties": [
@@ -7779,7 +7855,7 @@
       "locked": false,
       "name": "roof_tops",
       "width": 140,
-      "x": 420,
+      "x": 280,
       "y": 700,
       "zOrder": 8,
       "numberProperties": [
@@ -7798,9 +7874,9 @@
       "layer": "",
       "locked": false,
       "name": "roof_tops",
-      "width": 259,
-      "x": 426,
-      "y": 706,
+      "width": 401,
+      "x": 288,
+      "y": 705,
       "zOrder": 25,
       "numberProperties": [
         {
@@ -7819,7 +7895,7 @@
       "locked": false,
       "name": "sand",
       "width": 70,
-      "x": 560,
+      "x": 490,
       "y": 1120,
       "zOrder": 26,
       "numberProperties": [],
@@ -7834,7 +7910,7 @@
       "locked": false,
       "name": "sand",
       "width": 70,
-      "x": 490,
+      "x": 420,
       "y": 1120,
       "zOrder": 26,
       "numberProperties": [
@@ -7854,7 +7930,7 @@
       "locked": false,
       "name": "sand",
       "width": 70,
-      "x": 560,
+      "x": 490,
       "y": 1190,
       "zOrder": 26,
       "numberProperties": [],
@@ -7869,7 +7945,7 @@
       "locked": false,
       "name": "sand",
       "width": 70,
-      "x": 490,
+      "x": 420,
       "y": 1190,
       "zOrder": 26,
       "numberProperties": [
@@ -7884,13 +7960,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 16,
+      "height": 160,
       "layer": "",
       "locked": false,
       "name": "door1",
       "width": 140,
-      "x": 490,
-      "y": 1120,
+      "x": 420,
+      "y": 980,
       "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
@@ -8283,29 +8359,14 @@
     },
     {
       "angle": 0,
-      "customSize": true,
-      "height": 16,
-      "layer": "",
-      "locked": false,
-      "name": "door1",
-      "width": 140,
-      "x": -70,
-      "y": 1120,
-      "zOrder": 101,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "",
       "locked": false,
       "name": "gun1",
       "width": 0,
-      "x": -140,
-      "y": 1470,
+      "x": 70,
+      "y": 1400,
       "zOrder": 103,
       "numberProperties": [],
       "stringProperties": [],
@@ -8313,16 +8374,496 @@
     },
     {
       "angle": 0,
+      "customSize": true,
+      "height": 160,
+      "layer": "",
+      "locked": false,
+      "name": "door2",
+      "width": 140,
+      "x": -70,
+      "y": 980,
+      "zOrder": 104,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
       "customSize": false,
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "Niko",
+      "name": "crossair",
       "width": 0,
-      "x": 140,
-      "y": 1260,
-      "zOrder": 104,
+      "x": 420,
+      "y": 280,
+      "zOrder": 105,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1050,
+      "y": 1470,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1050,
+      "y": 1330,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1260,
+      "y": 1470,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 347,
+      "x": -1260,
+      "y": 1330,
+      "zOrder": 11,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1260,
+      "y": 1330,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 11,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 340,
+      "x": -1254,
+      "y": 1336,
+      "zOrder": 25,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1050,
+      "y": 1610,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": -1260,
+      "y": 1610,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 11,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 340,
+      "x": -1254,
+      "y": 1734,
+      "zOrder": 25,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 347,
+      "x": -1260,
+      "y": 1744,
+      "zOrder": 11,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1330,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1400,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1470,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1540,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1610,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 70,
+      "x": -1120,
+      "y": 1680,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -840,
+      "y": 1470,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -840,
+      "y": 1540,
+      "zOrder": 26,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -910,
+      "y": 1470,
+      "zOrder": 26,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -910,
+      "y": 1540,
+      "zOrder": 26,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "door3",
+      "width": 160,
+      "x": -1050,
+      "y": 1470,
+      "zOrder": 106,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": 420,
+      "y": 700,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": 420,
+      "y": 840,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "width": 140,
+      "x": 420,
+      "y": 980,
+      "zOrder": 8,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -8474,14 +9015,14 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "rotateObject": false,
           "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 500,
           "deceleration": 800,
           "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "rotateObject": true
+          "maxSpeed": 200
         }
       ],
       "animations": [
@@ -8497,6 +9038,144 @@
                   "hasCustomCollisionMask": false,
                   "image": "versions\\placeholder.png",
                   "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Niko",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_stand.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.3,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_stand.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_hold.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_gun.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -9320,189 +9999,6 @@
       ]
     },
     {
-      "name": "Niko",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.3,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_hold.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Gun1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_gun.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 22
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "gun1",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "weapon_gun.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 19,
-                      "y": 5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "sand",
       "tags": "",
       "type": "Sprite",
@@ -9571,7 +10067,7 @@
       ]
     },
     {
-      "name": "Bullet",
+      "name": "door3",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -9579,7 +10075,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet_placeholder",
+          "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -9588,39 +10084,59 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "BulletPlaceholder.png",
+                  "image": "door1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 3
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 3
+                    "y": 0
                   },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 3
-                      },
-                      {
-                        "x": 13,
-                        "y": 13
-                      },
-                      {
-                        "x": 3,
-                        "y": 13
-                      }
-                    ]
-                  ]
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "door2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "door1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -9652,6 +10168,129 @@
                     "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gun1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "weapon_gun.png",
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 19,
+                      "y": 5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bullet",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "bullet_placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "BulletPlaceholder.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 3
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "crossair",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "crossair_black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 15.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -9715,6 +10354,38 @@
       "comment2": ""
     },
     {
+      "disabled": true,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "BackgroundScene::loadBGScene"
+          },
+          "parameters": [
+            "",
+            "\"Overworld\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -9729,7 +10400,20 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "separate",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -9750,8 +10434,123 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "West_doors",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "North_doors",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "South_doors",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "East_doors",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Placeholder",
+                "TopDownMovement",
+                "=",
+                "200"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "separate",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "roof_tops",
+                "+",
+                "Niko.ZOrder()"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         }
       ],
@@ -9764,7 +10563,89 @@
       "creationTime": 0,
       "disabled": false,
       "folded": true,
-      "name": "room1fade",
+      "name": "grass",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "grass_tiled",
+                "=",
+                "-11"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "sand",
+                "=",
+                "-10"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
+      "name": "roads",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "road",
+                "=",
+                "-10"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
+      "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -9776,20 +10657,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "door1",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "KeyPressed"
               },
               "parameters": [
@@ -9797,6 +10664,71 @@
                 "Return"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "West_doors",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "North_doors",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "East_doors",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "South_doors",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
@@ -9809,6 +10741,54 @@
                 "fade",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_west",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_north",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_south",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_east",
+                "=",
+                "1"
               ],
               "subInstructions": []
             }
@@ -9988,20 +10968,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "door1",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
@@ -10016,71 +10982,224 @@
             {
               "type": {
                 "inverted": false,
-                "value": "RoomManager::goToRoom"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "",
-                "1",
-                ""
+                "walk_in_north",
+                "=",
+                "2"
               ],
               "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "KeyPressed"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "",
-                "Num2"
+                "walk_in_west",
+                "=",
+                "2"
               ],
               "subInstructions": []
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "inverted": false,
-                "value": "RoomManager::goToRoom"
+                "value": "ModVarScene"
               },
               "parameters": [
-                "",
-                "2",
-                ""
+                "walk_in_south",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_east",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "door1",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RoomManager::goToRoom"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "door2",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RoomManager::goToRoom"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "door3",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RoomManager::goToRoom"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "parameters": []
     },
     {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Niko"
+      "folded": true,
+      "name": "Links",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Niko"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "North_doors"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "West_doors"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Global"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "crossair"
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
