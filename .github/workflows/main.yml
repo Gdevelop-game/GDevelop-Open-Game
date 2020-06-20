@@ -63,13 +63,13 @@ jobs:
         run: |
           cd gdexporter/Exported
           npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -l
+          ./node_modules/.bin/electron-builder -l AppImage
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
-          path: gdexporter/Exported/dist/*.*
+          path: gdexporter/Exported/dist/*.AppImage
           
   build_for_mac:
     runs-on: macos-latest
@@ -89,13 +89,13 @@ jobs:
         run: |
           cd gdexporter/Exported
           npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -m
+          ./node_modules/.bin/electron-builder -m dmg
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
-          path: gdexporter/Exported/dist/*.*
+          path: gdexporter/Exported/dist/*.dmg
           
   build_for_windows:
     runs-on: windows-latest
@@ -120,4 +120,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
-          path: gdexporter/Exported/dist/*.*
+          path: gdexporter/Exported/dist/*.exe
