@@ -22,9 +22,30 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.404
+    "zoomFactor": 0.308
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "delete_bullet_stuff",
+      "objects": [
+        {
+          "name": "walls"
+        },
+        {
+          "name": "flower"
+        },
+        {
+          "name": "furniture"
+        },
+        {
+          "name": "kitchen"
+        },
+        {
+          "name": "door1out"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -3034,21 +3055,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Niko",
-      "width": 0,
-      "x": 70,
-      "y": -940,
-      "zOrder": 15,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
@@ -5911,6 +5917,21 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Niko",
+      "width": 0,
+      "x": -560,
+      "y": -1120,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -7556,11 +7577,17 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_stand.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 24,
+                    "y": 22
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -7585,11 +7612,17 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_stand.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 24,
+                    "y": 22
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -7602,11 +7635,52 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_hold.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
+                    "x": 24,
+                    "y": 22
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_gun.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 24,
+                    "y": 22
                   },
                   "centerPoint": {
                     "automatic": true,
