@@ -84,7 +84,7 @@ jobs:
         run: |
           git clone https://github.com/arthuro555/gdexporter
           cd gdexporter
-          rmdir Project
+          rd /s /q Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           npm i
           node bin/cli.js -b electron -p "./Project/src/game.json"
