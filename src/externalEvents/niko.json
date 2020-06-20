@@ -469,29 +469,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "RotateTowardPosition"
-          },
-          "parameters": [
-            "Niko",
-            "MouseX(\"\", 0)",
-            "MouseY(\"\", 0)",
-            "0",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
     }
   ]
 }
