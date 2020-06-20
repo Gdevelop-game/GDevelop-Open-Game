@@ -45,7 +45,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-  build_for_pc:
+  build_for_linux_mac:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -59,6 +59,32 @@ jobs:
           git clone https://github.com/arthuro555/gdexporter
           cd gdexporter
           rm -rf Project
+          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
+          npm i
+          node bin/cli.js -b electron -p "./Project/src/game.json"
+          
+      - name: Build Electron app
+        uses: samuelmeuli/action-electron-builder@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          app_root: gdexporter/Exported
+          package_root: gdexporter/Exported
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          # Upload all potential executables
+          path: gdexporter/Exported/dist/*.*
+          
+  build_for_windows:
+    runs-on: windows-latest
+      
+    steps:
+      - name: Build with GDexport
+        run: |
+          git clone https://github.com/arthuro555/gdexporter
+          cd gdexporter
+          rmdir Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           npm i
           node bin/cli.js -b electron -p "./Project/src/game.json"
