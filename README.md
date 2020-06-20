@@ -8,6 +8,11 @@ we are likely to work in teams rather than individually so your performance/cont
 * Firstly thanks a lot for your interest in this project! This is not an easy task and hence we would love to have you onboard with us.
 * For starters, you can join our [discord chanel](https://discord.gg/xKCf8et), you will be guided on how to contribute to the game.
 
+### Development Roadmap
+
+* Project Roadmap on [Trello](https://trello.com/invite/b/sdQnetbP/24b4ed2522985c241bf71061f5091693/gdevelop-community-game), for a global view of the features that could be added. Please vote and comment here for new features/requests.
+* [GitHub issue page](https://github.com/Gdevelop-game/GDevelop-Open-Game/issues), for technical issues and bugs.
+
 ## Other Links/Refrences
 
 * [GDevelop forums](https://forum.gdevelop-app.com) and [Discord chat](https://discord.gg/rjdYHvj).
