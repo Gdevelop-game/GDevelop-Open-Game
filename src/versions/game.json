@@ -13,8 +13,8 @@
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
     "orientation": "landscape",
-    "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\src\\game.json",
+    "packageName": "com.gdevelopComunity.gdopengame",
+    "projectFile": "C:\\Users\\y0shi\\Documents\\GDevelop projects\\GDevelop-Open-Game-master\\src\\versions\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -23,8 +23,8 @@
     "winExecutableIconFile": "",
     "name": "GDevelop Open Game",
     "author": "GDevelop Community",
-    "windowWidth": 1500,
-    "windowHeight": 700,
+    "windowWidth": 800,
+    "windowHeight": 600,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -109,6 +109,42 @@
         "name": "placeholder-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "green_button00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "green_button00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "green_button01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "green_button01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "blue_button07.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "blue_button07.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "blue_button08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "blue_button08.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -133,6 +169,22 @@
           ]
         }
       ]
+    },
+    {
+      "name": "soundsetting",
+      "value": "toggled"
+    },
+    {
+      "name": "Volume",
+      "value": "100"
+    },
+    {
+      "name": "shadowsetting",
+      "value": "toggled"
+    },
+    {
+      "name": "fullscreen",
+      "value": "toggled"
     }
   ],
   "layouts": [
@@ -161,12 +213,7 @@
       "referenceTo": "/layouts/functionsincludes"
     }
   ],
-  "externalEvents": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/niko"
-    }
-  ],
+  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
