@@ -11,7 +11,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build_and_deploy_to_pages:
+  build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     
@@ -19,11 +19,11 @@ jobs:
     steps:
     
     # Set Up Node
-    - name: Setup Node.js
+    - name: Setup Node.js environment
       uses: actions/setup-node@v1.4.2
 
     # Runs a set of commands using the runners shell
-    - name: Build with GDexport
+    - name: Run a multi-line script
       run: |
         git clone https://github.com/arthuro555/gdexporter
         cd gdexporter
@@ -33,7 +33,7 @@ jobs:
         npm link
         gdexport -b -p "./Project/src/game.json"
       
-    - name: Upload to GitHub Pages
+    - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
       with:
         # Build directory to deploy
@@ -44,80 +44,3 @@ jobs:
         commit_message: Auto Built nightly game build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-  build_for_linux:
-    runs-on: ubuntu-latest
-        
-    steps:
-      
-      - name: Build with GDexport
-        run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
-          
-      - name: Build Electron app
-        run: |
-          cd gdexporter/Exported
-          npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -l AppImage
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          # Upload all potential executables
-          path: gdexporter/Exported/dist/*.AppImage
-          
-  build_for_mac:
-    runs-on: macos-latest
-        
-    steps:
-      
-      - name: Build with GDexport
-        run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
-          
-      - name: Build Electron app
-        run: |
-          cd gdexporter/Exported
-          npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -m dmg
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          # Upload all potential executables
-          path: gdexporter/Exported/dist/*.dmg
-          
-  build_for_windows:
-    runs-on: windows-latest
-      
-    steps:
-      - name: Build with GDexport
-        run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          Remove-Item -Recurse -Force Project
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
-          
-      - name: Build Electron app
-        run: |
-          cd gdexporter/Exported
-          npm i --save-dev electron-builder
-          .\node_modules\.bin\electron-builder.cmd -w portable
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          # Upload all potential executables
-          path: gdexporter/Exported/dist/*.exe

@@ -182,13 +182,13 @@
             },
             {
               "type": {
-                "inverted": true,
-                "value": "Animation"
+                "inverted": false,
+                "value": "VarGlobal"
               },
               "parameters": [
-                "Niko",
+                "Gun_holding",
                 "=",
-                "2"
+                "0"
               ],
               "subInstructions": []
             }
@@ -227,13 +227,13 @@
             },
             {
               "type": {
-                "inverted": true,
-                "value": "Animation"
+                "inverted": false,
+                "value": "VarGlobal"
               },
               "parameters": [
-                "Niko",
+                "Gun_holding",
                 "=",
-                "2"
+                "0"
               ],
               "subInstructions": []
             }
@@ -476,8 +476,8 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
-      "name": "Gun system ",
+      "folded": true,
+      "name": "GunSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -493,7 +493,171 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Gun pick up system",
+          "comment": "If `Rotate_mouse` do ....",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Rotate_mouse",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Top down veiw movment rotate = False",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::RotateObject"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "TopDownMovement",
+                    "yes"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Rotate_mouse",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Placeholder",
+                "MouseX(\"\", 0)",
+                "MouseY(\"\", 0)",
+                "0",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Top down veiw movment rotate = False",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::RotateObject"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "TopDownMovement",
+                    "no"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Pick up the gun",
           "comment2": ""
         },
         {
@@ -507,11 +671,23 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "Niko",
+                "Placeholder",
                 "gun1",
                 "",
                 "",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "0"
               ],
               "subInstructions": []
             },
@@ -528,18 +704,25 @@
             },
             {
               "type": {
-                "inverted": true,
-                "value": "Animation"
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "Niko",
-                "=",
-                "2"
-              ],
+              "parameters": [],
               "subInstructions": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "gun1",
+                ""
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -551,17 +734,6 @@
                 "1"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun1",
-                ""
-              ],
-              "subInstructions": []
             }
           ],
           "events": []
@@ -578,7 +750,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Collision Handling",
+          "comment": "If holding an gun(0 is not holding) do ....",
           "comment2": ""
         },
         {
@@ -589,68 +761,169 @@
             {
               "type": {
                 "inverted": false,
-                "value": "CollisionNP"
+                "value": "VarGlobal"
               },
               "parameters": [
-                "Bullet",
-                "bullet_obstacles",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "Bullet",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Gun shooting and Gun drop system",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Animation"
-              },
-              "parameters": [
-                "Niko",
+                "Gun_holding",
                 "=",
-                "2"
+                "0"
               ],
               "subInstructions": []
             }
           ],
           "actions": [],
           "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Change animation and `Rotate_mouse` ",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Rotate_mouse",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Niko",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Change animation and `Rotate_mouse` ",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Rotate_mouse",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "Niko",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Shoot gun",
+              "comment2": ""
+            },
             {
               "disabled": false,
               "folded": false,
@@ -684,10 +957,10 @@
                   },
                   "parameters": [
                     "",
-                    "Bullet",
+                    "bullet",
                     "Niko.PointX(\"shoot\")",
                     "Niko.PointY(\"shoot\")",
-                    ""
+                    "\"\""
                   ],
                   "subInstructions": []
                 },
@@ -697,9 +970,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "Bullet",
+                    "bullet",
                     "=",
-                    "103"
+                    "70000"
                   ],
                   "subInstructions": []
                 },
@@ -709,7 +982,7 @@
                     "value": "SetAngle"
                   },
                   "parameters": [
-                    "Bullet",
+                    "bullet",
                     "=",
                     "Placeholder.Angle()"
                   ],
@@ -721,7 +994,7 @@
                     "value": "AddForceAL"
                   },
                   "parameters": [
-                    "Bullet",
+                    "bullet",
                     "Placeholder.Angle()",
                     "800",
                     "1"
@@ -730,6 +1003,21 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Drop gun",
+              "comment2": ""
             },
             {
               "disabled": false,
@@ -744,6 +1032,18 @@
                   "parameters": [
                     "",
                     "q"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionPoint"
+                  },
+                  "parameters": [
+                    "bullet_obstacles",
+                    "Niko.PointX(\"shoot\")",
+                    "Niko.PointY(\"shoot\")"
                   ],
                   "subInstructions": []
                 },
@@ -767,7 +1067,7 @@
                     "gun1",
                     "Niko.PointX(\"shoot\")",
                     "Niko.PointY(\"shoot\")",
-                    ""
+                    "\"\""
                   ],
                   "subInstructions": []
                 },
@@ -779,19 +1079,7 @@
                   "parameters": [
                     "gun1",
                     "=",
-                    "103"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Gun_holding",
-                    "=",
-                    "0"
+                    "70000"
                   ],
                   "subInstructions": []
                 },
@@ -806,136 +1094,26 @@
                     "Placeholder.Angle()"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Gun_holding",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
             }
           ]
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Gun holding",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_holding",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_holding",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "parameters": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "RotateTowardPosition"
-          },
-          "parameters": [
-            "Placeholder",
-            "MouseX(\"\", 0)",
-            "MouseY(\"\", 0)",
-            "0",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
     }
   ]
 }
