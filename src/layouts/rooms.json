@@ -21,8 +21,8 @@
     "gridR": 158,
     "gridWidth": 70,
     "snap": true,
-    "windowMask": true,
-    "zoomFactor": 0.4
+    "windowMask": false,
+    "zoomFactor": 0.322
   },
   "objectsGroups": [
     {
@@ -3419,7 +3419,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 1960,
+      "x": 2030,
       "y": 350,
       "zOrder": 1,
       "numberProperties": [],
@@ -3434,53 +3434,13 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 1960,
+      "x": 2030,
       "y": 490,
       "zOrder": 1,
       "numberProperties": [
         {
           "name": "animation",
           "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2030,
-      "y": 560,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 1960,
-      "y": 560,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
         }
       ],
       "stringProperties": [],
@@ -3501,6 +3461,26 @@
         {
           "name": "animation",
           "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2030,
+      "y": 560,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -3594,86 +3574,6 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
-      "y": 560,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 6
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2520,
-      "y": 350,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2590,
-      "y": 210,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2660,
-      "y": 210,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
       "x": 2450,
       "y": 560,
       "zOrder": 2,
@@ -3700,6 +3600,86 @@
       "numberProperties": [
         {
           "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2590,
+      "y": 350,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2660,
+      "y": 210,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2730,
+      "y": 210,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2520,
+      "y": 560,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
           "value": 5
         }
       ],
@@ -3735,6 +3715,26 @@
       "name": "walls",
       "width": 70,
       "x": 2730,
+      "y": 560,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2800,
       "y": 560,
       "zOrder": 2,
       "numberProperties": [
@@ -3754,7 +3754,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 280,
       "zOrder": 1,
       "numberProperties": [
@@ -3774,7 +3774,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 350,
       "zOrder": 1,
       "numberProperties": [
@@ -3794,7 +3794,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 420,
       "zOrder": 1,
       "numberProperties": [
@@ -3814,7 +3814,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 490,
       "zOrder": 1,
       "numberProperties": [
@@ -3834,7 +3834,7 @@
       "locked": false,
       "name": "kitchen",
       "width": 70,
-      "x": 2660,
+      "x": 2730,
       "y": 490,
       "zOrder": 3,
       "numberProperties": [
@@ -3854,7 +3854,7 @@
       "locked": false,
       "name": "kitchen",
       "width": 70,
-      "x": 2660,
+      "x": 2730,
       "y": 420,
       "zOrder": 3,
       "numberProperties": [
@@ -3874,21 +3874,6 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2590,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
       "x": 2660,
       "y": 280,
       "zOrder": 4,
@@ -3904,8 +3889,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2590,
-      "y": 350,
+      "x": 2730,
+      "y": 280,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -3921,6 +3906,36 @@
       "width": 70,
       "x": 2660,
       "y": 350,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2730,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2730,
+      "y": 420,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -3950,21 +3965,6 @@
       "name": "floor",
       "width": 70,
       "x": 2590,
-      "y": 420,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2520,
       "y": 280,
       "zOrder": 3,
       "numberProperties": [
@@ -3984,7 +3984,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 350,
       "zOrder": 5,
       "numberProperties": [
@@ -4004,7 +4004,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [],
@@ -4019,7 +4019,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2170,
+      "x": 2240,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [
@@ -4039,7 +4039,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": 210,
       "zOrder": 4,
       "numberProperties": [
@@ -4059,7 +4059,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [
@@ -4079,288 +4079,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": 140,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": 420,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
-      "y": -70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2030,
-      "y": 350,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 0,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": 350,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2100,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 210,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 490,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2030,
-      "y": 420,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 140,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
-      "y": 490,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 350,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1960,
-      "y": 350,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -4380,6 +4100,286 @@
       "name": "floor",
       "width": 70,
       "x": 2450,
+      "y": 420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 280,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2310,
+      "y": -70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2100,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": 0,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2450,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2170,
+      "y": 280,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": 210,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 490,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2100,
+      "y": 420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": 140,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2310,
+      "y": 490,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2030,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2520,
       "y": 280,
       "zOrder": -2,
       "numberProperties": [
@@ -4399,7 +4399,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": 70,
       "zOrder": 4,
       "numberProperties": [
@@ -4419,7 +4419,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2170,
+      "x": 2240,
       "y": 490,
       "zOrder": 4,
       "numberProperties": [
@@ -4439,7 +4439,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 350,
       "zOrder": 4,
       "numberProperties": [
@@ -4459,7 +4459,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [
@@ -4479,7 +4479,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": 210,
       "zOrder": 4,
       "numberProperties": [
@@ -4499,7 +4499,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2170,
+      "x": 2240,
       "y": 70,
       "zOrder": 4,
       "numberProperties": [
@@ -4519,188 +4519,8 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2380,
+      "x": 2450,
       "y": 490,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1960,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
-      "y": 0,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": -70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 0,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 350,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 420,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": -70,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -4720,7 +4540,7 @@
       "name": "floor",
       "width": 70,
       "x": 2030,
-      "y": 490,
+      "y": 280,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -4740,7 +4560,7 @@
       "name": "floor",
       "width": 70,
       "x": 2310,
-      "y": 140,
+      "y": 0,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -4760,7 +4580,127 @@
       "name": "floor",
       "width": 70,
       "x": 2450,
+      "y": 280,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": -70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 0,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
       "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": 280,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": -70,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -4799,7 +4739,107 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2030,
+      "x": 2380,
+      "y": 140,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2520,
+      "y": 350,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2170,
+      "y": 490,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2100,
+      "y": 280,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2310,
       "y": 280,
       "zOrder": 4,
       "numberProperties": [
@@ -4820,46 +4860,6 @@
       "name": "floor",
       "width": 70,
       "x": 2310,
-      "y": 70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
-      "y": 280,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
       "y": 350,
       "zOrder": 4,
       "numberProperties": [
@@ -4879,7 +4879,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2660,
+      "x": 2730,
       "y": 490,
       "zOrder": 4,
       "numberProperties": [],
@@ -4894,7 +4894,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2590,
+      "x": 2660,
       "y": 490,
       "zOrder": 4,
       "numberProperties": [],
@@ -4909,7 +4909,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": -70,
       "zOrder": 6,
       "numberProperties": [
@@ -4929,7 +4929,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": 0,
       "zOrder": 6,
       "numberProperties": [
@@ -4949,7 +4949,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2380,
+      "x": 2450,
       "y": 0,
       "zOrder": 6,
       "numberProperties": [
@@ -4969,7 +4969,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": 0,
       "zOrder": 6,
       "numberProperties": [
@@ -4989,7 +4989,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2380,
+      "x": 2450,
       "y": -70,
       "zOrder": 6,
       "numberProperties": [
@@ -5009,7 +5009,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": -70,
       "zOrder": 6,
       "numberProperties": [
@@ -5029,7 +5029,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 140,
       "zOrder": 1,
       "numberProperties": [
@@ -5049,423 +5049,8 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
-      "y": 70,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 1960,
-      "y": 210,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
       "x": 2170,
-      "y": -140,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2240,
-      "y": -140,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2310,
-      "y": -140,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": -70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": 0,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
       "y": 70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2380,
-      "y": -140,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2450,
-      "y": -140,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2520,
-      "y": 70,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2520,
-      "y": 140,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2170,
-      "y": 210,
-      "zOrder": 14,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2240,
-      "y": 210,
-      "zOrder": 14,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2310,
-      "y": 210,
-      "zOrder": 14,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 4
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "furniture",
-      "width": 70,
-      "x": 2240,
-      "y": 490,
-      "zOrder": 16,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 8
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "furniture",
-      "width": 70,
-      "x": 2380,
-      "y": 490,
-      "zOrder": 16,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 10
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "flower",
-      "width": 70,
-      "x": 2450,
-      "y": 490,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "",
-      "locked": false,
-      "name": "furniture",
-      "width": 40,
-      "x": 2175,
-      "y": 496,
-      "zOrder": 16,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 13
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1960,
-      "y": 350,
-      "zOrder": 20,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 180,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 1960,
-      "y": 420,
-      "zOrder": 20,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 1960,
-      "y": 280,
       "zOrder": 1,
       "numberProperties": [
         {
@@ -5486,6 +5071,421 @@
       "width": 70,
       "x": 2030,
       "y": 210,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2240,
+      "y": -140,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2310,
+      "y": -140,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2380,
+      "y": -140,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2450,
+      "y": -70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2450,
+      "y": 0,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2450,
+      "y": 70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2450,
+      "y": -140,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2520,
+      "y": -140,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2590,
+      "y": 70,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2590,
+      "y": 140,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2240,
+      "y": 210,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2310,
+      "y": 210,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2380,
+      "y": 210,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 2310,
+      "y": 490,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 70,
+      "x": 2450,
+      "y": 490,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "width": 70,
+      "x": 2520,
+      "y": 490,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "width": 40,
+      "x": 2245,
+      "y": 496,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2030,
+      "y": 350,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2030,
+      "y": 420,
+      "zOrder": 20,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2030,
+      "y": 280,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2100,
+      "y": 210,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -5504,7 +5504,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2730,
+      "x": 2800,
       "y": 210,
       "zOrder": 2,
       "numberProperties": [
@@ -5524,7 +5524,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 0,
       "zOrder": 1,
       "numberProperties": [
@@ -5544,7 +5544,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": -140,
       "zOrder": 1,
       "numberProperties": [
@@ -5564,7 +5564,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": -70,
       "zOrder": 1,
       "numberProperties": [
@@ -5584,7 +5584,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 210,
       "zOrder": 2,
       "numberProperties": [
@@ -5604,7 +5604,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": -70,
       "zOrder": 1,
       "numberProperties": [
@@ -5624,7 +5624,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 0,
       "zOrder": 1,
       "numberProperties": [
@@ -5644,7 +5644,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": 210,
       "zOrder": 2,
       "numberProperties": [
@@ -5664,33 +5664,13 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 210,
       "zOrder": 2,
       "numberProperties": [
         {
           "name": "animation",
           "value": 10
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "walls",
-      "width": 70,
-      "x": 2310,
-      "y": 210,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
         }
       ],
       "stringProperties": [],
@@ -5720,11 +5700,31 @@
       "angle": 0,
       "customSize": true,
       "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "width": 70,
+      "x": 2450,
+      "y": 210,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
       "layer": "floor",
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": -70,
       "zOrder": 4,
       "numberProperties": [
@@ -5744,7 +5744,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": 0,
       "zOrder": 4,
       "numberProperties": [
@@ -5764,66 +5764,6 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2450,
-      "y": 70,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2380,
-      "y": 140,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
-      "x": 2520,
-      "y": 140,
-      "zOrder": 4,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "floor",
-      "locked": false,
-      "name": "floor",
-      "width": 70,
       "x": 2520,
       "y": 70,
       "zOrder": 4,
@@ -5845,6 +5785,66 @@
       "name": "floor",
       "width": 70,
       "x": 2450,
+      "y": 140,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2590,
+      "y": 140,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2590,
+      "y": 70,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "floor",
+      "locked": false,
+      "name": "floor",
+      "width": 70,
+      "x": 2520,
       "y": 140,
       "zOrder": 4,
       "numberProperties": [
@@ -5864,7 +5864,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2240,
+      "x": 2310,
       "y": -70,
       "zOrder": 16,
       "numberProperties": [
@@ -5884,7 +5884,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": 210,
       "zOrder": 2,
       "numberProperties": [
@@ -5904,7 +5904,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 490,
       "zOrder": 1,
       "numberProperties": [
@@ -5924,7 +5924,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 420,
       "zOrder": 1,
       "numberProperties": [
@@ -5944,7 +5944,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 280,
       "zOrder": -3,
       "numberProperties": [
@@ -5964,7 +5964,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": 350,
       "zOrder": 4,
       "numberProperties": [
@@ -5984,7 +5984,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": 490,
       "zOrder": 4,
       "numberProperties": [
@@ -6004,7 +6004,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 2450,
+      "x": 2520,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [
@@ -6024,7 +6024,7 @@
       "locked": false,
       "name": "walls",
       "width": 70,
-      "x": 2520,
+      "x": 2590,
       "y": -140,
       "zOrder": 2,
       "numberProperties": [
@@ -6044,7 +6044,7 @@
       "locked": false,
       "name": "kitchen",
       "width": 70,
-      "x": 2660,
+      "x": 2730,
       "y": 350,
       "zOrder": 3,
       "numberProperties": [
@@ -6064,7 +6064,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": 280,
       "zOrder": 16,
       "numberProperties": [
@@ -6084,7 +6084,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": 280,
       "zOrder": 30,
       "numberProperties": [
@@ -6104,7 +6104,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2310,
+      "x": 2380,
       "y": 490,
       "zOrder": 16,
       "numberProperties": [
@@ -6124,7 +6124,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1960,
+      "x": 2030,
       "y": 490,
       "zOrder": 20,
       "numberProperties": [
@@ -6144,7 +6144,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1960,
+      "x": 2030,
       "y": 420,
       "zOrder": 4,
       "numberProperties": [
@@ -6164,7 +6164,7 @@
       "locked": false,
       "name": "floor",
       "width": 70,
-      "x": 1960,
+      "x": 2030,
       "y": 490,
       "zOrder": 4,
       "numberProperties": [
@@ -6184,7 +6184,7 @@
       "locked": false,
       "name": "furniture",
       "width": 40,
-      "x": 2465,
+      "x": 2535,
       "y": 507,
       "zOrder": 16,
       "numberProperties": [
@@ -6204,7 +6204,7 @@
       "locked": false,
       "name": "flower",
       "width": 70,
-      "x": 2161,
+      "x": 2231,
       "y": 481,
       "zOrder": 17,
       "numberProperties": [],
@@ -6219,7 +6219,7 @@
       "locked": false,
       "name": "furniture",
       "width": 70,
-      "x": 2100,
+      "x": 2170,
       "y": 420,
       "zOrder": 16,
       "numberProperties": [
@@ -6233,45 +6233,75 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "room1",
-      "width": 0,
-      "x": 997,
-      "y": 560,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "room2",
-      "width": 0,
-      "x": 2542,
-      "y": 560,
-      "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 210,
       "layer": "",
       "locked": false,
       "name": "room2out",
       "width": 27,
-      "x": 1960,
+      "x": 2030,
       "y": 350,
       "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ammo",
+      "width": 0,
+      "x": 770,
+      "y": 280,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ammo",
+      "width": 0,
+      "x": 840,
+      "y": 350,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "AmmoText",
+      "width": 0,
+      "x": 0,
+      "y": 630,
+      "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8252,7 +8282,7 @@
       ]
     },
     {
-      "name": "Bullet",
+      "name": "bullet",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -8302,6 +8332,45 @@
                       }
                     ]
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ammo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "bullet_placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "BulletPlaceholder.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
                 }
               ]
             }
@@ -8368,28 +8437,67 @@
       ]
     },
     {
-      "bold": true,
+      "name": "crossair",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "crossair_black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 15.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": false,
       "italic": false,
-      "name": "room2",
+      "name": "AmmoText",
       "smoothed": true,
-      "tags": "room numbering",
+      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "2",
+      "string": "Ammo: [number]",
       "font": "",
-      "characterSize": 50,
+      "characterSize": 30,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 156,
+        "g": 156,
+        "r": 156
       }
     },
     {
       "bold": true,
       "italic": false,
-      "name": "room1",
+      "name": "roomIndic",
       "smoothed": true,
       "tags": "room numbering",
       "type": "TextObject::Text",
@@ -8428,7 +8536,124 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
+      "name": "Debug Room Numbers",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SystemInfo::IsPreview"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "iteration",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "iteration",
+                    "=",
+                    "RoomManager::allRooms() + 1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "roomIndic",
+                    "RoomManager::getX(Variable(iteration))",
+                    "RoomManager::getY(Variable(iteration))",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "roomIndic",
+                    "=",
+                    "ToString(Variable(iteration))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "iteration",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
       "name": "Room Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8562,7 +8787,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roomfade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8743,7 +8968,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Rooms_Global",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8818,6 +9043,23 @@
         "includeConfig": 0
       },
       "target": "GunSystem"
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Crossair"
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": []
     }
   ],
   "layers": [
@@ -8842,6 +9084,12 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "name": "GUI",
+      "visibility": true,
+      "cameras": [],
       "effects": []
     },
     {

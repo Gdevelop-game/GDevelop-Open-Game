@@ -58,7 +58,7 @@
               "parameters": [
                 "",
                 "2",
-                "2030",
+                "2100",
                 "420",
                 ""
               ],
@@ -160,6 +160,18 @@
                 "_RoomManager__Rooms[\"id\" + ToString(GetArgumentAsNumber(\"id\"))].y",
                 "=",
                 "GetArgumentAsNumber(\"y\")"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "_RoomManager__RoomsNumber",
+                "+",
+                "1"
               ],
               "subInstructions": []
             }
@@ -281,6 +293,51 @@
           "type": "expression"
         }
       ],
+      "objectGroups": []
+    },
+    {
+      "description": "Returns the number of rooms",
+      "fullName": "Get All Rooms",
+      "functionType": "Expression",
+      "name": "allRooms",
+      "sentence": "",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "GlobalVariable(_RoomManager__RoomsNumber)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": [],
       "objectGroups": []
     }
   ],

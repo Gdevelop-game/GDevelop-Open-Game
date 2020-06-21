@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Documents\\GitHub\\GDevelop-Open-Game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -892,6 +892,168 @@
         "name": "versions\\blue_button08.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BulletPlaceholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BulletPlaceholder.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fenceRed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fenceRed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fenceYellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fenceYellow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonLong_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonLong_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonLong_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonLong_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "arrowBeige_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrowBeige_right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "arrowBeige_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrowBeige_left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonSquare_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonSquare_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonSquare_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonSquare_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (21).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (21).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (27).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (27).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (23).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (23).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (22).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (22).png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -931,6 +1093,14 @@
     {
       "name": "Gun_holding",
       "value": "0"
+    },
+    {
+      "name": "Rotate_mouse",
+      "value": "0"
+    },
+    {
+      "name": "Ammo",
+      "value": "4"
     }
   ],
   "layouts": [
@@ -974,10 +1144,9 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/crossair"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
+<<<<<<< Updated upstream
+      "referenceTo": "/externalEvents/doors"
+=======
       "referenceTo": "/externalEvents/north_doors"
     },
     {
@@ -991,6 +1160,11 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/west_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/crossair"
+>>>>>>> Stashed changes
     }
   ],
   "eventsFunctionsExtensions": [
@@ -1005,6 +1179,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/backgroundscene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
   "externalLayouts": [],

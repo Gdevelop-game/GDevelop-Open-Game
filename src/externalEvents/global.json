@@ -33,7 +33,16 @@
           "subInstructions": []
         }
       ],
-      "events": []
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "runtimeScene.getRenderer()._pixiRenderer.cursorStyles = {\n    \"default\": \"auto\",\n    \"hover-btn\": \"pointer\"\n}\nruntimeScene.getRenderer()._pixiRenderer.view.style.cursor = \"url('crossair_black.png'), pointer\";\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ]
     },
     {
       "disabled": false,
