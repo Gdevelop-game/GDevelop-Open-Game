@@ -12,7 +12,7 @@
   "title": "",
   "v": 0,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": true,
-    "windowMask": true,
-    "zoomFactor": 0.4
+    "snap": false,
+    "windowMask": false,
+    "zoomFactor": 0.244
   },
   "objectsGroups": [
     {
@@ -6233,36 +6233,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "room1",
-      "width": 0,
-      "x": 997,
-      "y": 560,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "room2",
-      "width": 0,
-      "x": 2542,
-      "y": 560,
-      "zOrder": 24,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 210,
       "layer": "",
@@ -6272,6 +6242,21 @@
       "x": 1960,
       "y": 350,
       "zOrder": 25,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 1120,
+      "y": 0,
+      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8252,7 +8237,7 @@
       ]
     },
     {
-      "name": "Bullet",
+      "name": "bullet",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -8368,28 +8353,48 @@
       ]
     },
     {
-      "bold": true,
-      "italic": false,
-      "name": "room2",
-      "smoothed": true,
-      "tags": "room numbering",
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "crossair",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [],
-      "string": "2",
-      "font": "",
-      "characterSize": 50,
-      "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
-      }
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "crossair_black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 15.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "bold": true,
       "italic": false,
-      "name": "room1",
+      "name": "roomIndic",
       "smoothed": true,
       "tags": "room numbering",
       "type": "TextObject::Text",
@@ -8429,6 +8434,123 @@
       "creationTime": 0,
       "disabled": false,
       "folded": false,
+      "name": "Debug Room Numbers",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SystemInfo::IsPreview"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "iteration",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "infiniteLoopWarning": true,
+              "type": "BuiltinCommonInstructions::While",
+              "whileConditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "iteration",
+                    "=",
+                    "RoomManager::allRooms() + 1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "roomIndic",
+                    "RoomManager::getX(Variable(iteration))",
+                    "RoomManager::getY(Variable(iteration))",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "roomIndic",
+                    "=",
+                    "ToString(Variable(iteration))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "iteration",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
       "name": "Room Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8562,7 +8684,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roomfade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8743,7 +8865,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Rooms_Global",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

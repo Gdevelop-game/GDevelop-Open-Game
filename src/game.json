@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Documents\\GitHub\\GDevelop-Open-Game\\src\\game.json",
+    "projectFile": "D:\\Users\\pc\\Community-game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -892,6 +892,15 @@
         "name": "versions\\blue_button08.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BulletPlaceholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BulletPlaceholder.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -930,6 +939,10 @@
     },
     {
       "name": "Gun_holding",
+      "value": "0"
+    },
+    {
+      "name": "Rotate_mouse",
       "value": "0"
     }
   ],
@@ -974,10 +987,6 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/crossair"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/north_doors"
     },
     {
@@ -1005,6 +1014,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/backgroundscene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
   "externalLayouts": [],
