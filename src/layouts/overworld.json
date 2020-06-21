@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.5
+    "zoomFactor": 0.164
   },
   "objectsGroups": [
     {
@@ -8860,8 +8860,8 @@
       "locked": false,
       "name": "crossair",
       "width": 0,
-      "x": 3360,
-      "y": -350,
+      "x": 0,
+      "y": 0,
       "zOrder": 107,
       "numberProperties": [],
       "stringProperties": [],
@@ -10796,7 +10796,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Roof_tops",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10967,7 +10967,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11014,7 +11014,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11049,7 +11049,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11348,14 +11348,14 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "To Remove: Tests for teleporting to room",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11553,7 +11553,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11593,6 +11593,15 @@
             "includeConfig": 0
           },
           "target": "Global"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "CrossAir"
         }
       ],
       "parameters": []
