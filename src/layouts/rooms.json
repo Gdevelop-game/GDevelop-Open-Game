@@ -12,7 +12,7 @@
   "title": "",
   "v": 0,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.244
+    "zoomFactor": 0.322
   },
   "objectsGroups": [
     {
@@ -6254,9 +6254,54 @@
       "locked": false,
       "name": "crossair",
       "width": 0,
-      "x": 1120,
+      "x": 0,
       "y": 0,
       "zOrder": 31,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ammo",
+      "width": 0,
+      "x": 770,
+      "y": 280,
+      "zOrder": 32,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ammo",
+      "width": 0,
+      "x": 840,
+      "y": 350,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "AmmoText",
+      "width": 0,
+      "x": 0,
+      "y": 630,
+      "zOrder": 34,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8295,6 +8340,45 @@
       ]
     },
     {
+      "name": "ammo",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "bullet_placeholder",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "BulletPlaceholder.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "flower",
       "tags": "",
       "type": "Sprite",
@@ -8392,6 +8476,25 @@
       ]
     },
     {
+      "bold": false,
+      "italic": false,
+      "name": "AmmoText",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Ammo: [number]",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 156,
+        "g": 156,
+        "r": 156
+      }
+    },
+    {
       "bold": true,
       "italic": false,
       "name": "roomIndic",
@@ -8433,7 +8536,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Debug Room Numbers",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8964,6 +9067,12 @@
           "width": 0
         }
       ],
+      "effects": []
+    },
+    {
+      "name": "GUI",
+      "visibility": true,
+      "cameras": [],
       "effects": []
     },
     {
