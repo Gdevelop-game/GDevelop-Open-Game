@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.244
+    "zoomFactor": 0.73
   },
   "objectsGroups": [
     {
@@ -6254,8 +6254,8 @@
       "locked": false,
       "name": "crossair",
       "width": 0,
-      "x": 1120,
-      "y": 0,
+      "x": 1151,
+      "y": 414,
       "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
@@ -8433,7 +8433,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Debug Room Numbers",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8940,6 +8940,15 @@
         "includeConfig": 0
       },
       "target": "GunSystem"
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "CrossAir"
     }
   ],
   "layers": [
