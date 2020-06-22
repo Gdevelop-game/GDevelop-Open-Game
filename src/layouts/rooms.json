@@ -8146,13 +8146,37 @@
           ]
         },
         {
-          "name": "",
+          "name": "Gun2",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
               "timeBetweenFrames": 0.08,
-              "sprites": []
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_machine.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
             }
           ]
         }
@@ -8259,6 +8283,51 @@
                     {
                       "name": "Shoot",
                       "x": 19,
+                      "y": 5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gun2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "weapon_machine.png",
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 32,
                       "y": 5
                     }
                   ],

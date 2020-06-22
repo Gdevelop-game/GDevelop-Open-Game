@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.38
+    "zoomFactor": 0.644
   },
   "objectsGroups": [
     {
@@ -9331,6 +9331,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "gun2",
+      "width": 0,
+      "x": 70,
+      "y": 1470,
+      "zOrder": 112,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -9634,6 +9649,41 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "versions\\manBlue_gun.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\manBlue_machine.png",
                   "points": [
                     {
                       "name": "shoot",
@@ -10733,6 +10783,51 @@
       ]
     },
     {
+      "name": "gun2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "weapon_machine.png",
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 32,
+                      "y": 5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "ammo",
       "tags": "",
       "type": "Sprite",
@@ -11671,7 +11766,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
