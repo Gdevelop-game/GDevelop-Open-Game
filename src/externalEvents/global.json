@@ -33,16 +33,7 @@
           "subInstructions": []
         }
       ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "runtimeScene.getRenderer()._pixiRenderer.cursorStyles = {\n    \"default\": \"auto\",\n    \"hover-btn\": \"pointer\"\n}\nruntimeScene.getRenderer()._pixiRenderer.view.style.cursor = \"url('crossair_black.png'), pointer\";\n",
-          "parameterObjects": "",
-          "useStrict": true
-        }
-      ]
+      "events": []
     },
     {
       "disabled": false,
@@ -153,6 +144,39 @@
           },
           "parameters": [
             "doors"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": true,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Foliage",
+            "-",
+            "Fences.ZOrder()"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "grass_tiled",
+            "=",
+            "-200"
           ],
           "subInstructions": []
         }

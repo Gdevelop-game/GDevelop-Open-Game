@@ -21,8 +21,8 @@
     "gridR": 158,
     "gridWidth": 32,
     "snap": true,
-    "windowMask": false,
-    "zoomFactor": 0.664
+    "windowMask": true,
+    "zoomFactor": 0.464
   },
   "objectsGroups": [],
   "variables": [
@@ -52,7 +52,7 @@
       "locked": false,
       "name": "settingshadows",
       "width": 0,
-      "x": 36,
+      "x": 272,
       "y": 202,
       "zOrder": 1,
       "numberProperties": [],
@@ -67,7 +67,7 @@
       "locked": false,
       "name": "shadows",
       "width": 0,
-      "x": 71,
+      "x": 307,
       "y": 215,
       "zOrder": 2,
       "numberProperties": [],
@@ -82,8 +82,8 @@
       "locked": false,
       "name": "Settings",
       "width": 0,
-      "x": 293,
-      "y": 35,
+      "x": 488,
+      "y": 29,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,7 +102,7 @@
       "locked": false,
       "name": "settingsound",
       "width": 0,
-      "x": 299,
+      "x": 535,
       "y": 202,
       "zOrder": 4,
       "numberProperties": [],
@@ -117,7 +117,7 @@
       "locked": false,
       "name": "sound",
       "width": 0,
-      "x": 348,
+      "x": 584,
       "y": 215,
       "zOrder": 5,
       "numberProperties": [],
@@ -132,7 +132,7 @@
       "locked": false,
       "name": "settingfullscreen",
       "width": 0,
-      "x": 558,
+      "x": 794,
       "y": 201,
       "zOrder": 6,
       "numberProperties": [],
@@ -147,7 +147,7 @@
       "locked": false,
       "name": "Fullscreen",
       "width": 0,
-      "x": 589,
+      "x": 825,
       "y": 213,
       "zOrder": 7,
       "numberProperties": [],
@@ -162,7 +162,7 @@
       "locked": false,
       "name": "Volume",
       "width": 0,
-      "x": 312,
+      "x": 528,
       "y": 321,
       "zOrder": 8,
       "numberProperties": [],
@@ -177,7 +177,7 @@
       "locked": false,
       "name": "volplus",
       "width": 0,
-      "x": 548,
+      "x": 764,
       "y": 424,
       "zOrder": 9,
       "numberProperties": [],
@@ -192,7 +192,7 @@
       "locked": false,
       "name": "volminus",
       "width": 0,
-      "x": 238,
+      "x": 454,
       "y": 425,
       "zOrder": 10,
       "numberProperties": [],
@@ -207,39 +207,9 @@
       "locked": false,
       "name": "volumevolume",
       "width": 0,
-      "x": 403,
-      "y": 437,
+      "x": 617,
+      "y": 422,
       "zOrder": 11,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "plus",
-      "width": 0,
-      "x": 566,
-      "y": 435,
-      "zOrder": 12,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "minus",
-      "width": 0,
-      "x": 258,
-      "y": 435,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -294,7 +264,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button00.png",
+                  "image": "buttonLong_beige.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -323,7 +293,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button01.png",
+                  "image": "buttonLong_beige_pressed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -392,7 +362,7 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "Settings",
+      "string": "SETTINGS",
       "font": "",
       "characterSize": 59,
       "color": {
@@ -419,7 +389,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button00.png",
+                  "image": "buttonLong_beige.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -448,7 +418,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button01.png",
+                  "image": "buttonLong_beige_pressed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -506,7 +476,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button00.png",
+                  "image": "buttonLong_beige.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -535,7 +505,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\green_button01.png",
+                  "image": "buttonLong_beige_pressed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -593,7 +563,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button07.png",
+                  "image": "arrowBeige_right.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -661,7 +631,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button07.png",
+                  "image": "arrowBeige_left.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -729,7 +699,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button07.png",
+                  "image": "buttonSquare_beige.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -758,7 +728,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button08.png",
+                  "image": "buttonSquare_beige_pressed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1724,40 +1694,6 @@
                 ""
               ],
               "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volplus",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volplus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
             },
             {
               "type": {
@@ -1818,40 +1754,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volplus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volplus",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "parameters": []
@@ -1867,74 +1769,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volminus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volminus",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volminus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volminus",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
         {
           "disabled": false,
           "folded": false,
