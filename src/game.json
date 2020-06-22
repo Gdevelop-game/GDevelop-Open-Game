@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Documents\\GitHub\\GDevelop-Open-Game\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -904,10 +904,19 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "sand.png",
+        "file": "weapon_machine.png",
         "kind": "image",
         "metadata": "",
-        "name": "sand.png",
+        "name": "weapon_machine.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/manBlue_machine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\manBlue_machine.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -931,55 +940,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "buttonLong_beige.png",
+        "file": "sand.png",
         "kind": "image",
         "metadata": "",
-        "name": "buttonLong_beige.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "buttonLong_beige_pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "buttonLong_beige_pressed.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "arrowBeige_right.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "arrowBeige_right.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "arrowBeige_left.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "arrowBeige_left.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "buttonSquare_beige.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "buttonSquare_beige.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "buttonSquare_beige_pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "buttonSquare_beige_pressed.png",
+        "name": "sand.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -990,7 +954,7 @@
         "metadata": "",
         "name": "element (21).png",
         "smoothed": true,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -999,7 +963,7 @@
         "metadata": "",
         "name": "element (2).png",
         "smoothed": true,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -1008,7 +972,7 @@
         "metadata": "",
         "name": "element (27).png",
         "smoothed": true,
-        "userAdded": true
+        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -1035,7 +999,7 @@
         "metadata": "",
         "name": "element (5).png",
         "smoothed": true,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1052,24 +1016,6 @@
         "kind": "image",
         "metadata": "",
         "name": "element (22).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "treeLarge.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "treeLarge.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "treeSmall.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "treeSmall.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -1115,6 +1061,10 @@
     {
       "name": "Rotate_mouse",
       "value": "0"
+    },
+    {
+      "name": "Ammo",
+      "value": "4"
     }
   ],
   "layouts": [
@@ -1158,23 +1108,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/north_doors"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/east_doors"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/south_doors"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/west_doors"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/crossair"
+      "referenceTo": "/externalEvents/doors"
     }
   ],
   "eventsFunctionsExtensions": [
