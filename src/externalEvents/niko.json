@@ -583,7 +583,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "GunSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -940,7 +940,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1029,7 +1029,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1179,6 +1179,20 @@
                     "Niko.PointX(\"shoot\")",
                     "Niko.PointY(\"shoot\")",
                     "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\gun_shot_1.wav",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 },
