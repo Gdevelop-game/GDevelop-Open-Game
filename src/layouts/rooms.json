@@ -8856,7 +8856,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "roomfade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8895,6 +8895,14 @@
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         },
         {
@@ -8968,6 +8976,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "niko_movement",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
