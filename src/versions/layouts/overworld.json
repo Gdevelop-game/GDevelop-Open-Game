@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Intro",
-  "name": "Intro",
+  "mangledName": "Overworld",
+  "name": "Overworld",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -22,7 +22,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.568
+    "zoomFactor": 1
   },
   "objectsGroups": [],
   "variables": [],
@@ -32,15 +32,6 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -50,51 +41,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "TODO: Make intro with our splash screens (and possibly begin loading stuff in background)",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Menu\"",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Extensions are only exported when present in a scene",
+      "comment": "TODO: Make overworld",
       "comment2": ""
     },
     {
@@ -104,11 +51,12 @@
       "conditions": [
         {
           "type": {
-            "inverted": true,
-            "value": "Toujours"
+            "inverted": false,
+            "value": "KeyPressed"
           },
           "parameters": [
-            ""
+            "",
+            "Num1"
           ],
           "subInstructions": []
         }
@@ -117,13 +65,44 @@
         {
           "type": {
             "inverted": false,
-            "value": "RoomManager::registerRoom"
+            "value": "RoomManager::goToRoom"
           },
           "parameters": [
             "",
-            "-1",
-            "0",
-            "0",
+            "1",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Num2"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "RoomManager::goToRoom"
+          },
+          "parameters": [
+            "",
+            "2",
             ""
           ],
           "subInstructions": []

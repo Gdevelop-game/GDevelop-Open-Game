@@ -21,8 +21,8 @@
     "gridR": 158,
     "gridWidth": 32,
     "snap": true,
-    "windowMask": true,
-    "zoomFactor": 0.464
+    "windowMask": false,
+    "zoomFactor": 0.664
   },
   "objectsGroups": [],
   "variables": [
@@ -52,7 +52,7 @@
       "locked": false,
       "name": "settingshadows",
       "width": 0,
-      "x": 272,
+      "x": 36,
       "y": 202,
       "zOrder": 1,
       "numberProperties": [],
@@ -67,7 +67,7 @@
       "locked": false,
       "name": "shadows",
       "width": 0,
-      "x": 307,
+      "x": 71,
       "y": 215,
       "zOrder": 2,
       "numberProperties": [],
@@ -82,8 +82,8 @@
       "locked": false,
       "name": "Settings",
       "width": 0,
-      "x": 488,
-      "y": 29,
+      "x": 293,
+      "y": 35,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,7 +102,7 @@
       "locked": false,
       "name": "settingsound",
       "width": 0,
-      "x": 535,
+      "x": 299,
       "y": 202,
       "zOrder": 4,
       "numberProperties": [],
@@ -117,7 +117,7 @@
       "locked": false,
       "name": "sound",
       "width": 0,
-      "x": 584,
+      "x": 348,
       "y": 215,
       "zOrder": 5,
       "numberProperties": [],
@@ -132,7 +132,7 @@
       "locked": false,
       "name": "settingfullscreen",
       "width": 0,
-      "x": 794,
+      "x": 558,
       "y": 201,
       "zOrder": 6,
       "numberProperties": [],
@@ -147,7 +147,7 @@
       "locked": false,
       "name": "Fullscreen",
       "width": 0,
-      "x": 825,
+      "x": 589,
       "y": 213,
       "zOrder": 7,
       "numberProperties": [],
@@ -162,7 +162,7 @@
       "locked": false,
       "name": "Volume",
       "width": 0,
-      "x": 528,
+      "x": 312,
       "y": 321,
       "zOrder": 8,
       "numberProperties": [],
@@ -177,7 +177,7 @@
       "locked": false,
       "name": "volplus",
       "width": 0,
-      "x": 764,
+      "x": 548,
       "y": 424,
       "zOrder": 9,
       "numberProperties": [],
@@ -192,7 +192,7 @@
       "locked": false,
       "name": "volminus",
       "width": 0,
-      "x": 454,
+      "x": 238,
       "y": 425,
       "zOrder": 10,
       "numberProperties": [],
@@ -207,9 +207,39 @@
       "locked": false,
       "name": "volumevolume",
       "width": 0,
-      "x": 617,
-      "y": 422,
+      "x": 403,
+      "y": 437,
       "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "plus",
+      "width": 0,
+      "x": 566,
+      "y": 435,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "minus",
+      "width": 0,
+      "x": 258,
+      "y": 435,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -264,7 +294,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige.png",
+                  "image": "green_button00.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -293,7 +323,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige_pressed.png",
+                  "image": "green_button01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -362,7 +392,7 @@
       "underlined": false,
       "variables": [],
       "behaviors": [],
-      "string": "SETTINGS",
+      "string": "Settings",
       "font": "",
       "characterSize": 59,
       "color": {
@@ -380,7 +410,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "pressed",
+          "name": "nopressed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -389,7 +419,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige.png",
+                  "image": "green_button00.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -409,7 +439,7 @@
           ]
         },
         {
-          "name": "nopressed",
+          "name": "pressed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -418,7 +448,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige_pressed.png",
+                  "image": "green_button01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -476,7 +506,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige.png",
+                  "image": "green_button00.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -505,7 +535,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonLong_beige_pressed.png",
+                  "image": "green_button01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -563,7 +593,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "arrowBeige_right.png",
+                  "image": "blue_button07.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -592,7 +622,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button08.png",
+                  "image": "blue_button08.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -631,7 +661,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "arrowBeige_left.png",
+                  "image": "blue_button07.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -660,7 +690,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\blue_button08.png",
+                  "image": "blue_button08.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -699,7 +729,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonSquare_beige.png",
+                  "image": "blue_button07.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -728,7 +758,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "buttonSquare_beige_pressed.png",
+                  "image": "blue_button08.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -827,291 +857,6 @@
     }
   ],
   "events": [
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": true,
-      "name": "General",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "volumevolume",
-                "=",
-                "GlobalVariableString(Volume)"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Volume",
-                "=",
-                "100"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModGlobalVolume"
-              },
-              "parameters": [
-                "",
-                "=",
-                "100"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "volumevolume",
-                "=",
-                "\"100\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Volume",
-                "=",
-                "100"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Volume",
-                ">",
-                "100"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModGlobalVolume"
-              },
-              "parameters": [
-                "",
-                "=",
-                "100"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "volumevolume",
-                "=",
-                "\"100\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Volume",
-                "=",
-                "100"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "back",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "back",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "back",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "back",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "back",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Menu\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "parameters": []
-    },
     {
       "colorB": 228,
       "colorG": 176,
@@ -1694,6 +1439,40 @@
                 ""
               ],
               "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "volplus",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "volplus",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
             },
             {
               "type": {
@@ -1754,6 +1533,40 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "volplus",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "volplus",
+                "\"nopressed\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "parameters": []
@@ -1769,6 +1582,74 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "volminus",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "volminus",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "volminus",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "volminus",
+                "\"nopressed\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -2150,6 +2031,268 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "volumevolume",
+            "=",
+            "GlobalVariableString(Volume)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "Volume",
+            "=",
+            "100"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "100"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "volumevolume",
+            "=",
+            "\"100\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Volume",
+            "=",
+            "100"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarGlobal"
+          },
+          "parameters": [
+            "Volume",
+            ">",
+            "100"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "100"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "volumevolume",
+            "=",
+            "\"100\""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Volume",
+            "=",
+            "100"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "back",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "back",
+            "\"pressed\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "back",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SetAnimationName"
+          },
+          "parameters": [
+            "back",
+            "\"nopressed\""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SourisSurObjet"
+          },
+          "parameters": [
+            "back",
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "MouseButtonReleased"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Menu\"",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ],
   "layers": [

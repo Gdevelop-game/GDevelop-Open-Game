@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Intro",
-  "name": "Intro",
+  "mangledName": "Menu",
+  "name": "Menu",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -22,22 +22,13 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.568
+    "zoomFactor": 1
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [],
   "objects": [],
   "events": [
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
     {
       "disabled": false,
       "folded": false,
@@ -50,7 +41,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "TODO: Make intro with our splash screens (and possibly begin loading stuff in background)",
+      "comment": "TODO: Make menu",
       "comment2": ""
     },
     {
@@ -66,65 +57,8 @@
           },
           "parameters": [
             "",
-            "\"Menu\"",
+            "\"Overworld\"",
             "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Extensions are only exported when present in a scene",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "Toujours"
-          },
-          "parameters": [
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "RoomManager::registerRoom"
-          },
-          "parameters": [
-            "",
-            "-1",
-            "0",
-            "0",
-            ""
           ],
           "subInstructions": []
         }

@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "D:\\Users\\pc\\Community-game\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Documents\\GitHub\\GDevelop-Open-Game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -101,15 +101,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "placeholder-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "placeholder-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
       {
         "alwaysLoaded": false,
         "file": "versions/tile_234.png",
@@ -706,24 +697,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "rect849.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect849.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect943.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect943.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "rpgTile1192.png",
         "kind": "image",
         "metadata": "",
@@ -755,33 +728,6 @@
         "kind": "image",
         "metadata": "",
         "name": "versions\\rpgTile141.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect943g.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect943g.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect933.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect933.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "rect933-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rect933-1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -877,19 +823,73 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "bullet_placeholder-1.png",
+        "file": "tile_322.png",
         "kind": "image",
         "metadata": "",
-        "name": "bullet_placeholder-1.png",
+        "name": "tile_322.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "bullet_placeholder-1-0.png",
+        "file": "tile_484.png",
         "kind": "image",
         "metadata": "",
-        "name": "bullet_placeholder-1-0.png",
+        "name": "tile_484.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "tile_535.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_535.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "crossair_black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "crossair_black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/green_button00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\green_button00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/green_button01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\green_button01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/blue_button07.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\blue_button07.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/blue_button08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\blue_button08.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -899,6 +899,177 @@
         "kind": "image",
         "metadata": "",
         "name": "BulletPlaceholder.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fenceRed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fenceRed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fenceYellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fenceYellow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonLong_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonLong_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonLong_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonLong_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "arrowBeige_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrowBeige_right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "arrowBeige_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "arrowBeige_left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonSquare_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonSquare_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "buttonSquare_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "buttonSquare_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (21).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (21).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (27).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (27).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (23).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (23).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "element (22).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "element (22).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "treeLarge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "treeLarge.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "treeSmall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "treeSmall.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -942,7 +1113,7 @@
       "value": "0"
     },
     {
-      "name": "Rotate_towards_mouse",
+      "name": "Rotate_mouse",
       "value": "0"
     }
   ],
@@ -984,6 +1155,26 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/fade"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/north_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/east_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/south_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/west_doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/crossair"
     }
   ],
   "eventsFunctionsExtensions": [
@@ -998,6 +1189,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/backgroundscene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
   "externalLayouts": [],

@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Intro",
-  "name": "Intro",
+  "mangledName": "FunctionsIncludes",
+  "name": "FunctionsIncludes",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
@@ -22,7 +22,7 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.568
+    "zoomFactor": 1
   },
   "objectsGroups": [],
   "variables": [],
@@ -32,15 +32,6 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -50,51 +41,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "TODO: Make intro with our splash screens (and possibly begin loading stuff in background)",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Menu\"",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Extensions are only exported when present in a scene",
+      "comment": "This scene only exists for the purpose of including extensions, as Instructions in extensions are only exported when used in a scene",
       "comment2": ""
     },
     {
@@ -117,13 +64,60 @@
         {
           "type": {
             "inverted": false,
+            "value": "BackgroundScene::loadBGScene"
+          },
+          "parameters": [
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BackgroundScene::switchBack"
+          },
+          "parameters": [
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BackgroundScene::switchToBGScene"
+          },
+          "parameters": [
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "RoomManager::goToRoom"
+          },
+          "parameters": [
+            "",
+            "",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "RoomManager::registerRoom"
           },
           "parameters": [
             "",
-            "-1",
-            "0",
-            "0",
+            "",
+            "",
+            "",
             ""
           ],
           "subInstructions": []
