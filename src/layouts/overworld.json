@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.5
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
@@ -7964,13 +7964,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 145,
+      "height": 210,
       "layer": "",
       "locked": false,
       "name": "door1",
       "width": 140,
       "x": 420,
-      "y": 840,
+      "y": 780,
       "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
@@ -8379,13 +8379,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 145,
+      "height": 210,
       "layer": "",
       "locked": false,
       "name": "door2",
       "width": 140,
       "x": -280,
-      "y": 840,
+      "y": 780,
       "zOrder": 104,
       "numberProperties": [],
       "stringProperties": [],
@@ -8728,8 +8728,8 @@
       "layer": "",
       "locked": false,
       "name": "door3",
-      "width": 145,
-      "x": -1190,
+      "width": 220,
+      "x": -1260,
       "y": 1330,
       "zOrder": 106,
       "numberProperties": [],
@@ -8793,21 +8793,6 @@
           "value": 5
         }
       ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "crossair",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 107,
-      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -9148,8 +9133,8 @@
       "layer": "",
       "locked": false,
       "name": "door3",
-      "width": 145,
-      "x": -1190,
+      "width": 220,
+      "x": -1260,
       "y": 1960,
       "zOrder": 106,
       "numberProperties": [],
@@ -20470,6 +20455,21 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": true,
+      "name": "AmmoText2",
+      "width": 0,
+      "x": 2,
+      "y": 578,
+      "zOrder": 117,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -22595,6 +22595,25 @@
     {
       "bold": false,
       "italic": false,
+      "name": "AmmoText2",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Ammo: [number]",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 156,
+        "g": 156,
+        "r": 156
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
       "name": "AmmoText",
       "smoothed": true,
       "tags": "",
@@ -22896,11 +22915,129 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
+      "folded": true,
+      "name": "Links",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "doors"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Niko"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "doors"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Global"
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
       "folded": false,
       "name": "Roof_tops",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_north",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_west",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_south",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "walk_in_east",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -22993,75 +23130,54 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "CollisionNP"
+                "inverted": false,
+                "value": "VarScene"
               },
               "parameters": [
-                "Placeholder",
-                "West_doors",
-                "",
-                "",
-                ""
+                "walk_in_north",
+                "=",
+                "2"
               ],
               "subInstructions": []
             },
             {
               "type": {
-                "inverted": true,
-                "value": "CollisionNP"
+                "inverted": false,
+                "value": "VarScene"
               },
               "parameters": [
-                "Placeholder",
-                "North_doors",
-                "",
-                "",
-                ""
+                "walk_in_south",
+                "=",
+                "2"
               ],
               "subInstructions": []
             },
             {
               "type": {
-                "inverted": true,
-                "value": "CollisionNP"
+                "inverted": false,
+                "value": "VarScene"
               },
               "parameters": [
-                "Placeholder",
-                "South_doors",
-                "",
-                "",
-                ""
+                "walk_in_east",
+                "=",
+                "2"
               ],
               "subInstructions": []
             },
             {
               "type": {
-                "inverted": true,
-                "value": "CollisionNP"
+                "inverted": false,
+                "value": "VarScene"
               },
               "parameters": [
-                "Placeholder",
-                "East_doors",
-                "",
-                "",
-                ""
+                "walk_in_west",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "200"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -23118,7 +23234,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -23165,7 +23281,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -23200,7 +23316,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -23213,17 +23329,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Return"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
@@ -23231,13 +23336,9 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "SceneJustResumed"
                   },
                   "parameters": [
-                    "Placeholder",
-                    "West_doors",
-                    "",
-                    "",
                     ""
                   ],
                   "subInstructions": []
@@ -23245,46 +23346,22 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "CollisionNP"
+                    "value": "DepartScene"
                   },
                   "parameters": [
-                    "Placeholder",
-                    "North_doors",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "East_doors",
-                    "",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "South_doors",
-                    "",
-                    "",
                     ""
                   ],
                   "subInstructions": []
                 }
               ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -23296,18 +23373,6 @@
               "parameters": [
                 "fade",
                 "=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_west",
-                "=",
                 "1"
               ],
               "subInstructions": []
@@ -23315,48 +23380,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ShowLayer"
               },
               "parameters": [
-                "walk_in_north",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_south",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_east",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "niko_movement",
-                "=",
-                "0"
+                "",
+                "\"fade\""
               ],
               "subInstructions": []
             }
@@ -23392,68 +23420,6 @@
                 "fade_tiled_sprite",
                 "\"New scene\"",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneJustResumed"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"fade\""
               ],
               "subInstructions": []
             }
@@ -23512,7 +23478,7 @@
       "creationTime": 0,
       "disabled": false,
       "folded": false,
-      "name": "To Remove: Tests for teleporting to room",
+      "name": "Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -23539,63 +23505,22 @@
                 "value": "VarScene"
               },
               "parameters": [
-                "fade",
+                "niko_movement",
                 "=",
                 "0"
               ],
               "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_north",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "walk_in_west",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_south",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "walk_in_east",
-                "=",
-                "2"
-              ],
+              "parameters": [],
               "subInstructions": []
             }
           ],
+          "actions": [],
           "events": [
             {
               "disabled": false,
@@ -23609,10 +23534,22 @@
                   },
                   "parameters": [
                     "Placeholder",
-                    "door1",
+                    "North_doors",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "walk_in_north",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -23621,17 +23558,126 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "RoomManager::goToRoom"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "",
-                    "1",
-                    ""
+                    "walk_in_north",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door1",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -23645,10 +23691,22 @@
                   },
                   "parameters": [
                     "Placeholder",
-                    "door2",
+                    "South_doors",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "walk_in_south",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -23657,17 +23715,126 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "RoomManager::goToRoom"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "",
-                    "2",
-                    ""
+                    "walk_in_south",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door1",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -23681,10 +23848,22 @@
                   },
                   "parameters": [
                     "Placeholder",
-                    "door3",
+                    "East_doors",
                     "",
                     "",
                     ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "walk_in_east",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -23693,60 +23872,293 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "RoomManager::goToRoom"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "",
-                    "2",
-                    ""
+                    "walk_in_east",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door1",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Placeholder",
+                    "West_doors",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "walk_in_west",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "walk_in_west",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door1",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door2",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Placeholder",
+                        "door3",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RoomManager::goToRoom"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             }
           ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Links",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Niko"
         },
         {
           "disabled": false,
           "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "doors"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Global"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
         }
       ],
       "parameters": []

@@ -29,7 +29,7 @@
               "parameters": [
                 "Object",
                 "+",
-                "TimeDelta()*80"
+                "TimeDelta()*100"
               ],
               "subInstructions": []
             }
@@ -96,67 +96,6 @@
       "objectGroups": []
     },
     {
-      "description": "object has faded out",
-      "fullName": "Faded out",
-      "functionType": "Condition",
-      "name": "Fadedout",
-      "sentence": " _PARAM1_ has faded out ",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "TiledSpriteObject::Opacity"
-              },
-              "parameters": [
-                "Object",
-                ">=",
-                "255"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        }
-      ],
-      "parameters": [
-        {
-          "codeOnly": false,
-          "defaultValue": "",
-          "description": "Object",
-          "longDescription": "",
-          "name": "Object",
-          "optional": false,
-          "supplementaryInformation": "TiledSpriteObject::TiledSprite",
-          "type": "objectList"
-        },
-        {
-          "codeOnly": false,
-          "defaultValue": "",
-          "description": "Next scene",
-          "longDescription": "",
-          "name": "",
-          "optional": false,
-          "supplementaryInformation": "",
-          "type": "sceneName"
-        }
-      ],
-      "objectGroups": []
-    },
-    {
       "description": "fade in",
       "fullName": "Fade in",
       "functionType": "Action",
@@ -177,7 +116,7 @@
               "parameters": [
                 "Object",
                 "-",
-                "TimeDelta()*80"
+                "TimeDelta()*100"
               ],
               "subInstructions": []
             }

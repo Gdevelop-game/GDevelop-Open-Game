@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "Rooms",
+  "associatedLayout": "Overworld",
   "lastChangeTimeStamp": 0,
   "name": "Niko",
   "events": [
@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -68,7 +68,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -379,6 +379,74 @@
       "creationTime": 0,
       "disabled": false,
       "folded": true,
+      "name": "Placeholders",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Niko",
+                "=",
+                "Placeholder.X()",
+                "=",
+                "Placeholder.Y()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Niko",
+                "=",
+                "Placeholder.Angle()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Placeholder"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
       "name": "collision",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -434,73 +502,6 @@
                 "Placeholder",
                 "flower",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": true,
-      "name": "Placeholders",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "Placeholder"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "Placeholder.X()",
-                "=",
-                "Placeholder.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "Placeholder.Angle()"
               ],
               "subInstructions": []
             }
@@ -849,6 +850,14 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
@@ -1050,6 +1059,37 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gun1_shoot\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1152,9 +1192,21 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun_1_Ammo",
                     "!=",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "0.45",
+                    "\"gun1_shoot\""
                   ],
                   "subInstructions": []
                 },
@@ -1189,7 +1241,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\gun_shot_1.wav",
+                    "assets\\PistolShotNoReverb1.wav",
                     "",
                     "",
                     ""
@@ -1239,9 +1291,20 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun_1_Ammo",
                     "-",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"gun1_shoot\""
                   ],
                   "subInstructions": []
                 }
@@ -1512,7 +1575,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun_2_Ammo",
                     "!=",
                     "0"
                   ],
@@ -1589,7 +1652,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun_2_Ammo",
                     "-",
                     "1"
                   ],
@@ -1603,6 +1666,20 @@
                   "parameters": [
                     "",
                     "\"gun2_shoot\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\RifleShotNoReverb1.wav",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -1790,9 +1867,21 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Ammo",
+                "Gun_1_Ammo",
                 "+",
-                "2"
+                "2000000"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Gun_2_Ammo",
+                "+",
+                "2000000"
               ],
               "subInstructions": []
             },
@@ -1814,6 +1903,116 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_2_Ammo",
+                "<=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisBouton"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\RifleShutter1.wav",
+                "",
+                "50",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_1_Ammo",
+                "<=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisBouton"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Shutter3.wav",
+                "",
+                "50",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -1824,7 +2023,19 @@
               "parameters": [
                 "AmmoText",
                 "=",
-                "\"Ammo: \" + GlobalVariableString(Ammo)"
+                "\"Gun 2 Ammo: \" + GlobalVariableString(Gun_2_Ammo)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "AmmoText2",
+                "=",
+                "\"Gun 1 Ammo: \" + GlobalVariableString(Gun_1_Ammo)"
               ],
               "subInstructions": []
             }

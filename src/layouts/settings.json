@@ -858,15 +858,6 @@
   ],
   "events": [
     {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
@@ -2313,6 +2304,29 @@
               "events": []
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
+      "name": "Links",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Global"
         }
       ],
       "parameters": []

@@ -1050,6 +1050,62 @@
         "metadata": "",
         "name": "assets\\gun_shot_1.wav",
         "userAdded": true
+      },
+      {
+        "file": "assets/DoorOpening_0.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\DoorOpening_0.wav",
+        "userAdded": false
+      },
+      {
+        "file": "assets/DoorClosing_0.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\DoorClosing_0.wav",
+        "userAdded": true
+      },
+      {
+        "file": "assets/PistolShotNoReverb1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\PistolShotNoReverb1.wav",
+        "userAdded": false
+      },
+      {
+        "file": "assets/RifleShotNoReverb1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\RifleShotNoReverb1.wav",
+        "userAdded": true
+      },
+      {
+        "file": "assets/RifleShutter1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\RifleShutter1.wav",
+        "userAdded": false
+      },
+      {
+        "file": "assets/Shutter2.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Shutter2.wav",
+        "userAdded": true
+      },
+      {
+        "file": "assets/Shutter1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Shutter1.wav",
+        "userAdded": true
+      },
+      {
+        "file": "assets/Shutter3.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Shutter3.wav",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1095,8 +1151,12 @@
       "value": "0"
     },
     {
-      "name": "Ammo",
-      "value": "4"
+      "name": "Gun_1_Ammo",
+      "value": ""
+    },
+    {
+      "name": "Gun_2_Ammo",
+      "value": ""
     }
   ],
   "layouts": [
@@ -1133,10 +1193,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/global"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/fade"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
