@@ -1106,6 +1106,60 @@
         "metadata": "",
         "name": "assets\\Shutter3.wav",
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/rpgTile029.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\rpgTile029.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/element (78).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\element (78).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/element (77).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\element (77).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/element (65).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\element (65).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ball_basket2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ball_basket2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ball_basket4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ball_basket4.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1200,6 +1254,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/bounce"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/fade"
