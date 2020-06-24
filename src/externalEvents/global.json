@@ -17,18 +17,6 @@
             ""
           ],
           "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "VarGlobalTxt"
-          },
-          "parameters": [
-            "fullscreen",
-            "=",
-            "\"toggled\""
-          ],
-          "subInstructions": []
         }
       ],
       "actions": [
@@ -40,59 +28,6 @@
           "parameters": [
             "",
             "yes",
-            "no"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "runtimeScene.getRenderer()._pixiRenderer.cursorStyles = {\n    \"default\": \"auto\",\n    \"hover-btn\": \"pointer\"\n}\nruntimeScene.getRenderer()._pixiRenderer.view.style.cursor = \"url('crossair_black.png'), pointer\";\n",
-          "parameterObjects": "",
-          "useStrict": true
-        }
-      ]
-    },
-    {
-      "disabled": false,
-      "folded": true,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "VarGlobalTxt"
-          },
-          "parameters": [
-            "fullscreen",
-            "=",
-            "\"untoggled\""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "SetFullScreen"
-          },
-          "parameters": [
-            "",
-            "no",
             "no"
           ],
           "subInstructions": []
