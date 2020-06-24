@@ -525,7 +525,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1342,7 +1342,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Gun_1_Ammo",
+                    "Ammo",
                     "!=",
                     "0"
                   ],
@@ -1441,7 +1441,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Gun_1_Ammo",
+                    "Ammo",
                     "-",
                     "1"
                   ],
@@ -1725,7 +1725,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Gun_2_Ammo",
+                    "Ammo",
                     "!=",
                     "0"
                   ],
@@ -1802,7 +1802,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Gun_2_Ammo",
+                    "Ammo",
                     "-",
                     "1"
                   ],
@@ -2017,21 +2017,9 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Gun_1_Ammo",
+                "Ammo",
                 "+",
-                "2000000"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Gun_2_Ammo",
-                "+",
-                "2000000"
+                "2"
               ],
               "subInstructions": []
             },
@@ -2053,140 +2041,6 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_2_Ammo",
-                "<=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisBouton"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_holding",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\RifleShutter1.wav",
-                "",
-                "50",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_1_Ammo",
-                "<=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisBouton"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_holding",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\Shutter3.wav",
-                "",
-                "50",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -2197,19 +2051,7 @@
               "parameters": [
                 "AmmoText",
                 "=",
-                "\"Gun 2 Ammo: \" + GlobalVariableString(Gun_2_Ammo)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "AmmoText2",
-                "=",
-                "\"Gun 1 Ammo: \" + GlobalVariableString(Gun_1_Ammo)"
+                "\"Ammo: \" + GlobalVariableString(Ammo)"
               ],
               "subInstructions": []
             }
