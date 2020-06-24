@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\src\\game.json",
+    "projectFile": "D:\\Users\\pc\\Community-game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -1160,6 +1160,42 @@
         "name": "assets\\ball_basket4.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/blue_button0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\blue_button0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/blue_button1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\blue_button1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/red_button0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\red_button0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/red_button1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\red_button1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1205,8 +1241,28 @@
       "value": "0"
     },
     {
-      "name": "Ammo",
-      "value": "4"
+      "name": "Gun_1_Ammo",
+      "value": ""
+    },
+    {
+      "name": "Gun_2_Ammo",
+      "value": ""
+    },
+    {
+      "name": "soundsetting",
+      "value": "toggled"
+    },
+    {
+      "name": "shadowsetting",
+      "value": "toggled"
+    },
+    {
+      "name": "Volume",
+      "value": "toggled"
+    },
+    {
+      "name": "fullscreen",
+      "value": "toggled"
     }
   ],
   "layouts": [
