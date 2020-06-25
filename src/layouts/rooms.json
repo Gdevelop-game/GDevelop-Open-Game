@@ -6200,6 +6200,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flame_thrower_fire_collision",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 201,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -7928,6 +7943,11 @@
                       "name": "shoot",
                       "x": 47,
                       "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -7963,6 +7983,11 @@
                       "name": "shoot",
                       "x": 47,
                       "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -7986,6 +8011,11 @@
                       "name": "shoot",
                       "x": 47,
                       "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -8021,6 +8051,11 @@
                       "name": "shoot",
                       "x": 47,
                       "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -8056,6 +8091,51 @@
                       "name": "shoot",
                       "x": 47,
                       "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "versions\\ManBlue_flame thrower place holder.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 47,
+                      "y": 30
+                    },
+                    {
+                      "name": "flame_thrower_collision",
+                      "x": 27.5,
+                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -8246,6 +8326,51 @@
       ]
     },
     {
+      "name": "gun3",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "flame thrower place holder.png",
+                  "points": [
+                    {
+                      "name": "Shoot",
+                      "x": 32,
+                      "y": 5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "bullet",
       "tags": "",
       "type": "Sprite",
@@ -8333,6 +8458,45 @@
                     "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flame_thrower_fire_collision",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "flame thrower fire collision.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 16
                   },
                   "customCollisionMask": []
                 }
