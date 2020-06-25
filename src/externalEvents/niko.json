@@ -744,7 +744,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "GunSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1101,7 +1101,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1190,7 +1190,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1313,7 +1313,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun1_ammo",
                     "!=",
                     "0"
                   ],
@@ -1400,7 +1400,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun1_ammo",
                     "-",
                     "1"
                   ],
@@ -1519,7 +1519,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1673,7 +1673,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun2_ammo",
                     "!=",
                     "0"
                   ],
@@ -1750,7 +1750,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Ammo",
+                    "Gun2_ammo",
                     "-",
                     "1"
                   ],
@@ -1938,6 +1938,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -1951,7 +1963,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Ammo",
+                "Gun1_ammo",
                 "+",
                 "2"
               ],
@@ -1975,7 +1987,110 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "ammo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Gun2_ammo",
+                "+",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "ammo",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -1985,7 +2100,41 @@
               "parameters": [
                 "AmmoText",
                 "=",
-                "\"Ammo: \" + GlobalVariableString(Ammo)"
+                "\"Ammo: \" + GlobalVariableString(Gun1_ammo)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Gun_holding",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "AmmoText",
+                "=",
+                "\"Ammo: \" + GlobalVariableString(Gun2_ammo)"
               ],
               "subInstructions": []
             }
