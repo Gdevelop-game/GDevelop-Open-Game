@@ -2112,6 +2112,21 @@
             {
               "disabled": false,
               "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Shoot gun",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2137,21 +2152,6 @@
                 }
               ],
               "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Shoot gun",
-              "comment2": ""
             },
             {
               "disabled": false,
@@ -2206,12 +2206,11 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarGlobalTxt"
+                    "value": "SourisBouton"
                   },
                   "parameters": [
-                    "Gun3_in_use",
-                    "=",
-                    "\"True\""
+                    "",
+                    "Left"
                   ],
                   "subInstructions": []
                 }
@@ -2296,14 +2295,21 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
+                    "inverted": true,
+                    "value": "SourisBouton"
                   },
                   "parameters": [
-                    "Gun3_in_use",
-                    "=",
-                    "\"False\""
+                    "",
+                    "Left"
                   ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
                   "subInstructions": []
                 }
               ],
@@ -2360,84 +2366,6 @@
                     "Gun3_in_use",
                     "=",
                     "\"True\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisBouton"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "Gun3_ammo",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "Gun3_in_use",
-                    "=",
-                    "\"False\""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "Gun3_in_use",
-                    "=",
-                    "\"False\""
                   ],
                   "subInstructions": []
                 }
