@@ -36,10 +36,9 @@ gdjs.LoadingScreenPixiRenderer.prototype.render = function(percent) {
   var screenBorder = 10;
 
   this._madeByText.position.x =
-    this._pixiRenderer.width / 2 - this._madeWithText.width / 2;
+    this._pixiRenderer.width / 2 - this._madeByText.width / 2;
   this._madeByText.position.y =
     this._pixiRenderer.height / 2 -
-    this._splashImage.height / 2 -
     this._madeByText.height -
     20;
 
