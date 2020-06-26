@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -68,7 +68,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -266,7 +266,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "animation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -378,7 +378,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "collision",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -457,7 +457,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Placeholders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -535,7 +535,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -744,7 +744,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "GunSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2045,7 +2045,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2256,17 +2256,6 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "flame_thrower_fire_collision",
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Montre"
-                  },
-                  "parameters": [
                     "flame_thrower_fire",
                     ""
                   ],
@@ -2408,16 +2397,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision"
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
