@@ -56,7 +56,7 @@ jobs:
           
       - name: Build Electron app
         run: |
-          cd gdexporter/Exported
+          cd Project/build/gdExported
           npm i --save-dev electron-builder
           ./node_modules/.bin/electron-builder -l AppImage
           
@@ -80,7 +80,7 @@ jobs:
           
       - name: Build Electron app
         run: |
-          cd gdexporter/Exported
+          cd Project/build/gdExported
           npm i --save-dev electron-builder
           ./node_modules/.bin/electron-builder -m dmg
           
@@ -103,7 +103,7 @@ jobs:
           
       - name: Build Electron app
         run: |
-          cd gdexporter/Exported
+          cd Project/build/gdExported
           npm i --save-dev electron-builder
           .\node_modules\.bin\electron-builder.cmd -w portable
           
