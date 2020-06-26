@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.25
+    "zoomFactor": 0.4826
   },
   "objectsGroups": [
     {
@@ -30898,6 +30898,21 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flame_thrower_fire",
+      "width": 0,
+      "x": 350,
+      "y": 1400,
+      "zOrder": 1239,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -33423,6 +33438,63 @@
           ]
         }
       ]
+    },
+    {
+      "additive": true,
+      "alphaParam": "Mutable",
+      "angleParam": "Mutable",
+      "blueParam": "Random",
+      "destroyWhenNoParticles": false,
+      "emissionEditionSimpleMode": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 20,
+      "emitterForceMax": 300,
+      "emitterForceMin": 230,
+      "emitterXDirection": 0,
+      "emitterYDirection": 1,
+      "emitterZDirection": 0,
+      "flow": 120,
+      "friction": 2,
+      "gravityEditionSimpleMode": true,
+      "greenParam": "Random",
+      "maxParticleNb": 3000000,
+      "name": "flame_thrower_fire",
+      "particleAlpha1": 200,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 168,
+      "particleBlue2": 8,
+      "particleEditionSimpleMode": true,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGravityZ": 0,
+      "particleGreen1": 245,
+      "particleGreen2": 43,
+      "particleLifeTimeMax": 0.5,
+      "particleLifeTimeMin": 0.2,
+      "particleRed1": 255,
+      "particleRed2": 214,
+      "particleSize1": 40,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "redParam": "Enabled",
+      "rendererParam1": 3,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "sizeParam": "Mutable",
+      "tags": "",
+      "tank": -1,
+      "textureParticleName": "assets\\particles\\FireParticle.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 5,
+      "variables": [],
+      "behaviors": []
     }
   ],
   "events": [
@@ -34746,7 +34818,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
