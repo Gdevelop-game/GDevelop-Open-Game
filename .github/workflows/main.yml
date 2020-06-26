@@ -25,19 +25,16 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Build with GDexport
       run: |
-        git clone https://github.com/arthuro555/gdexporter
-        cd gdexporter
-        rm -rf Project
         git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-        npm i
-        npm link
-        gdexport -b -p "./Project/src/game.json"
+        cd Project/build
+        yarn
+        yarn build
       
     - name: Upload to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
       with:
         # Build directory to deploy
-        build_dir: gdexporter/Exported
+        build_dir: Project/build/gdExport
         # The committer name and email address
         committer: Auto Builder
         # Commit message
@@ -52,12 +49,10 @@ jobs:
       
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
@@ -78,12 +73,10 @@ jobs:
       
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
@@ -103,12 +96,10 @@ jobs:
     steps:
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          Remove-Item -Recurse -Force Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
