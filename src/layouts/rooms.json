@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 1
+    "zoomFactor": 0.736
   },
   "objectsGroups": [
     {
@@ -7834,7 +7834,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "Gun3",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -7846,7 +7846,7 @@
                   "image": "assets\\character\\Player\\flamethrowerplayer.png",
                   "points": [
                     {
-                      "name": "flame_thrower_collision",
+                      "name": "f_t_collision",
                       "x": 65.5,
                       "y": 31
                     }
@@ -8246,13 +8246,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 16
                   },
                   "customCollisionMask": []
                 }

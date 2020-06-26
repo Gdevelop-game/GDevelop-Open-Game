@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\GDevelop-Open-Game-master (7)\\GDevelop-Open-Game-master\\src\\game.json",
+    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -2269,6 +2269,7 @@
         "userAdded": false
       },
       {
+        "alwaysLoaded": false,
         "file": "assets/Interior/electronic/tile_534.png",
         "kind": "image",
         "metadata": "",
@@ -2349,6 +2350,14 @@
     {
       "name": "Gun2_ammo",
       "value": "4"
+    },
+    {
+      "name": "Gun3_ammo",
+      "value": "4"
+    },
+    {
+      "name": "Gun3_trigger_once",
+      "value": "\"False\""
     }
   ],
   "layouts": [

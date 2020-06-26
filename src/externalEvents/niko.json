@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -68,7 +68,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -266,7 +266,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "animation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -378,7 +378,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "collision",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -457,7 +457,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Placeholders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -535,7 +535,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -775,6 +775,16 @@
                 "flame_thrower_fire_collision"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "flame_thrower_fire"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -793,9 +803,9 @@
               "parameters": [
                 "flame_thrower_fire_collision",
                 "=",
-                "Niko.PointX(\"flame_thrower_collision\")",
+                "Niko.PointX(\"f_t_collision\")",
                 "=",
-                "Niko.PointY(\"flame_thrower_collision\")"
+                "Niko.PointY(\"f_t_collision\")"
               ],
               "subInstructions": []
             },
@@ -806,6 +816,18 @@
               },
               "parameters": [
                 "flame_thrower_fire_collision",
+                "=",
+                "Placeholder.Angle()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "flame_thrower_fire",
                 "=",
                 "Placeholder.Angle()"
               ],
@@ -2200,7 +2222,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2211,6 +2233,18 @@
                   "parameters": [
                     "",
                     "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Gun3_ammo",
+                    "!=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -2334,14 +2368,35 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisBouton"
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisBouton"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Gun3_ammo",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 },
                 {
                   "type": {
@@ -2370,51 +2425,6 @@
                   },
                   "parameters": [
                     "flame_thrower_fire"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SourisBouton"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "Gun3_ammo",
-                    "!=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "Gun3_in_use",
-                    "=",
-                    "\"True\""
                   ],
                   "subInstructions": []
                 }
