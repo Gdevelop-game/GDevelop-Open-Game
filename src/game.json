@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\GDevelop-Open-Game-master (7)\\GDevelop-Open-Game-master\\src\\game.json",
+    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -1241,6 +1241,33 @@
         "name": "assets\\rooftops\\roof_4.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "versions/ManBlue_flame thrower place holder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "versions\\ManBlue_flame thrower place holder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flame thrower place holder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flame thrower place holder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "flame thrower fire collision.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "flame thrower fire collision.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1292,6 +1319,18 @@
     {
       "name": "Gun2_ammo",
       "value": "4"
+    },
+    {
+      "name": "Gun3_ammo",
+      "value": "4"
+    },
+    {
+      "name": "Gun3_in_use",
+      "value": "\"False\""
+    },
+    {
+      "name": "Gun3_trigger_once",
+      "value": "\"False\""
     }
   ],
   "layouts": [
