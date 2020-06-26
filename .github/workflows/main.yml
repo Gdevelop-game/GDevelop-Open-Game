@@ -6,7 +6,7 @@ name: Auto Build
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ refactor-build-system ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,19 +25,16 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Build with GDexport
       run: |
-        git clone https://github.com/arthuro555/gdexporter
-        cd gdexporter
-        rm -rf Project
         git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-        npm i
-        npm link
-        gdexport -b -p "./Project/src/game.json"
+        cd Project/build
+        yarn
+        yarn build
       
     - name: Upload to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
       with:
         # Build directory to deploy
-        build_dir: gdexporter/Exported
+        build_dir: Project/build/gdExport
         # The committer name and email address
         committer: Auto Builder
         # Commit message
