@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Desktop\\codealt\\GDevelop-Open-Game-master (7)\\GDevelop-Open-Game-master\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -1244,30 +1244,930 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "versions/ManBlue_flame thrower place holder.png",
+        "file": "assets/foliage/grass/tile_01.png",
         "kind": "image",
         "metadata": "",
-        "name": "versions\\ManBlue_flame thrower place holder.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "flame thrower place holder.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "flame thrower place holder.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "flame thrower fire collision.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "flame thrower fire collision.png",
+        "name": "assets\\foliage\\grass\\tile_01.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/grass/tile_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\grass\\tile_02.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/grass/tile_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\grass\\tile_03.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/grass/tile_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\grass\\tile_04.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/placeholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\placeholder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/manBlue_stand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\manBlue_stand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/manBlue_hold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\manBlue_hold.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/manBlue_gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\manBlue_gun.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/manBlue_machine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\manBlue_machine.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_37.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_41.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_91.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_91.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_62.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_35.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_93.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_93.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_66.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_66.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_63.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_64.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_38.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_68.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_68.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road/tile_95.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road\\tile_95.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/rooftop/roof_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\rooftop\\roof_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/rooftop/roof_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\rooftop\\roof_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/rooftop/roof_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\rooftop\\roof_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/rooftop/roof_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\rooftop\\roof_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/sand/tile_06.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\sand\\tile_06.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/sand/tile_05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\sand\\tile_05.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/side_walk/sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\side_walk\\sand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprite_objects/door.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprite_objects\\door.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/crossair/crossair_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\crossair\\crossair_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapons/gun/weapon_gun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\weapons\\gun\\weapon_gun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapons/gun/weapon_machine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\weapons\\gun\\weapon_machine.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapons/bullet/BulletPlaceholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\weapons\\bullet\\BulletPlaceholder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (21).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (21).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (2).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (27).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (27).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (1).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (9).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (9).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (5).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (23).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (23).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fence/element (22).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fence\\element (22).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road_block/fenceRed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road_block\\fenceRed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/road_block/fenceYellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Road\\road_block\\fenceYellow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/tree/treeLarge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\tree\\treeLarge.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/tree/treeSmall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\tree\\treeSmall.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/water/water_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\water\\water_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sport/ball/ball_basket2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sport\\ball\\ball_basket2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sport/ball/ball_basket4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sport\\ball\\ball_basket4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sport/post/element (77).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sport\\post\\element (77).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sport/post/element (65).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sport\\post\\element (65).png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprite_objects/fade_tiled_sprite-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sprite_objects\\fade_tiled_sprite-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/buttonLong_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/buttonLong_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/buttonSquare_beige.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\buttonSquare_beige.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/buttonSquare_beige_pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\buttonSquare_beige_pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/arrowBeige_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\arrowBeige_right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/buttons/beige/arrowBeige_left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\buttons\\beige\\arrowBeige_left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_260.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_260.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_145.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_145.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_118.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_118.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_147.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_147.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_120.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_122.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_122.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_233.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_233.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_261.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_261.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_119.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_119.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_146.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_146.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_148.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_148.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_121.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_121.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_149.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_149.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_234.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_234.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_321.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_321.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_297.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_297.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_323.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_323.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_269.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_269.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_270.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_270.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/kitchen/tile_322.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\kitchen\\tile_322.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_102.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_102.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_21.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_104.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_104.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_49.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_103.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_103.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_76.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_77.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_77.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/bed/tile_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\bed\\tile_50.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/chair/tile_501.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\chair\\tile_501.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/chair/tile_502.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\chair\\tile_502.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/chair/tile_504.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\chair\\tile_504.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/chair/tile_505.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\chair\\tile_505.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/carpet/tile_511.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\carpet\\tile_511.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/table/tile_483.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\table\\tile_483.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/furniture/carpet/tile_484.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\furniture\\carpet\\tile_484.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/floor/tile_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\floor\\tile_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/floor/tile_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\floor\\tile_46.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_466.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_466.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_440.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_440.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/walls/tile_441.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\walls\\tile_441.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Interior/floor/tile_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Interior\\floor\\tile_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/flower/tile_240.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\flower\\tile_240.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/tree/tile_183.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\tree\\tile_183.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/foliage/tree/tile_186.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\foliage\\tree\\tile_186.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1277,7 +2177,7 @@
       "height": 700,
       "name": "fade_tiled_sprite",
       "tags": "",
-      "texture": "fade_tiled_sprite-1.png",
+      "texture": "assets\\sprite_objects\\fade_tiled_sprite-1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 1500,
       "variables": [],
@@ -1319,14 +2219,6 @@
     {
       "name": "Gun2_ammo",
       "value": "4"
-    },
-    {
-      "name": "Gun3_ammo",
-      "value": "4"
-    },
-    {
-      "name": "Gun3_trigger_once",
-      "value": "\"False\""
     }
   ],
   "layouts": [

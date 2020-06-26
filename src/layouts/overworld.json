@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.226
+    "zoomFactor": 0.5
   },
   "objectsGroups": [
     {
@@ -7853,7 +7853,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 16
+          "value": 3
         }
       ],
       "stringProperties": [],
@@ -7873,7 +7873,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 14
+          "value": 1
         }
       ],
       "stringProperties": [],
@@ -17690,7 +17690,7 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 17,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17700,12 +17700,17 @@
       "x": 140,
       "y": 1050,
       "zOrder": 116,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -11,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17718,14 +17723,14 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 2
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 20,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17735,12 +17740,17 @@
       "x": 140,
       "y": 490,
       "zOrder": 116,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 11,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17753,7 +17763,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -17770,12 +17780,17 @@
       "x": 140,
       "y": 770,
       "zOrder": 116,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 20,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17788,14 +17803,14 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 3
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 11,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17805,12 +17820,17 @@
       "x": -840,
       "y": 630,
       "zOrder": 116,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 17,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17823,14 +17843,14 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 3
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": -11,
       "customSize": true,
       "height": 140,
       "layer": "",
@@ -17840,7 +17860,12 @@
       "x": -840,
       "y": 910,
       "zOrder": 116,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -17858,7 +17883,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 1
+          "value": 3
         }
       ],
       "stringProperties": [],
@@ -24323,7 +24348,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 13
+          "value": 0
         }
       ],
       "stringProperties": [],
@@ -24343,7 +24368,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 13
+          "value": 0
         }
       ],
       "stringProperties": [],
@@ -24363,7 +24388,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 13
+          "value": 0
         }
       ],
       "stringProperties": [],
@@ -24383,39 +24408,9 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 13
+          "value": 0
         }
       ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "gun3",
-      "width": 0,
-      "x": 70,
-      "y": 1330,
-      "zOrder": 121,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "flame_thrower_fire_collision",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 122,
-      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -24439,7 +24434,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_01.png",
+                  "image": "assets\\foliage\\grass\\tile_01.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24468,7 +24463,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_02.png",
+                  "image": "assets\\foliage\\grass\\tile_02.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24497,7 +24492,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_03.png",
+                  "image": "assets\\foliage\\grass\\tile_03.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24526,7 +24521,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_04.png",
+                  "image": "assets\\foliage\\grass\\tile_04.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24551,7 +24546,7 @@
       "height": 32,
       "name": "grass_tiled",
       "tags": "",
-      "texture": "versions\\tile_01.png",
+      "texture": "assets\\foliage\\grass\\tile_01.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -24588,7 +24583,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\placeholder.png",
+                  "image": "assets\\character\\Player\\placeholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24627,19 +24622,8 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
-                    }
-                  ],
+                  "image": "assets\\character\\Player\\manBlue_stand.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -24667,17 +24651,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_stand.png",
+                  "image": "assets\\character\\Player\\manBlue_stand.png",
                   "points": [
                     {
                       "name": "shoot",
                       "x": 47,
                       "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -24695,17 +24674,12 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_hold.png",
+                  "image": "assets\\character\\Player\\manBlue_hold.png",
                   "points": [
                     {
                       "name": "shoot",
                       "x": 47,
                       "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -24735,17 +24709,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_gun.png",
+                  "image": "assets\\character\\Player\\manBlue_gun.png",
                   "points": [
                     {
                       "name": "shoot",
                       "x": 47,
                       "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -24775,57 +24744,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\manBlue_machine.png",
+                  "image": "assets\\character\\Player\\manBlue_machine.png",
                   "points": [
                     {
                       "name": "shoot",
                       "x": 47,
                       "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Gun3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\ManBlue_flame thrower place holder.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    },
-                    {
-                      "name": "flame_thrower_collision",
-                      "x": 27.5,
-                      "y": 21.5
                     }
                   ],
                   "originPoint": {
@@ -24865,7 +24789,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_40.png",
+                  "image": "assets\\Road\\road\\tile_40.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24894,7 +24818,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_37.png",
+                  "image": "assets\\Road\\road\\tile_37.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24923,7 +24847,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_41.png",
+                  "image": "assets\\Road\\road\\tile_41.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24952,7 +24876,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_91.png",
+                  "image": "assets\\Road\\road\\tile_91.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -24981,7 +24905,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_62.png",
+                  "image": "assets\\Road\\road\\tile_62.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25010,7 +24934,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_36.png",
+                  "image": "assets\\Road\\road\\tile_36.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25039,7 +24963,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_35.png",
+                  "image": "assets\\Road\\road\\tile_35.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25068,7 +24992,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_93.png",
+                  "image": "assets\\Road\\road\\tile_93.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25097,7 +25021,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_66.png",
+                  "image": "assets\\Road\\road\\tile_66.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25126,7 +25050,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_63.png",
+                  "image": "assets\\Road\\road\\tile_63.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25155,7 +25079,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_64.png",
+                  "image": "assets\\Road\\road\\tile_64.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25184,7 +25108,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_95.png",
+                  "image": "assets\\Road\\road\\tile_95.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25213,7 +25137,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_38.png",
+                  "image": "assets\\Road\\road\\tile_38.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25242,7 +25166,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\tile_68.png",
+                  "image": "assets\\Road\\road\\tile_68.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25281,7 +25205,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile106.png",
+                  "image": "assets\\rooftop\\roof_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25310,7 +25234,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile119.png",
+                  "image": "assets\\rooftop\\roof_2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25339,7 +25263,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile120.png",
+                  "image": "assets\\rooftop\\roof_3.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25368,384 +25292,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile143.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rpgTile141",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile141.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "versions\\rpgTile124.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rect943g",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rect943g-1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rpgTile1192.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rpgTile137.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rpgTile138.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "rect933",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rect933-1-0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "roof_tops",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "roof_tops-1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "rpgTile142.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftops\\roof_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftops\\roof_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftops\\roof_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftops\\roof_4.png",
+                  "image": "assets\\rooftop\\roof_4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25784,7 +25331,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "tile_06.png",
+                  "image": "assets\\Road\\sand\\tile_06.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25813,7 +25360,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "tile_05.png",
+                  "image": "assets\\Road\\sand\\tile_05.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25842,7 +25389,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "sand.png",
+                  "image": "assets\\Road\\side_walk\\sand.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25881,7 +25428,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "door1.png",
+                  "image": "assets\\sprite_objects\\door.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25920,7 +25467,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "door1.png",
+                  "image": "assets\\sprite_objects\\door.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25959,7 +25506,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "door1.png",
+                  "image": "assets\\sprite_objects\\door.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -25998,12 +25545,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "crossair_black.png",
+                  "image": "assets\\crossair\\crossair_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16,
-                    "y": 15.5
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -26037,7 +25584,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "weapon_gun.png",
+                  "image": "assets\\weapons\\gun\\weapon_gun.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -26082,7 +25629,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "weapon_machine.png",
+                  "image": "assets\\weapons\\gun\\weapon_machine.png",
                   "points": [
                     {
                       "name": "Shoot",
@@ -26100,90 +25647,6 @@
                     "name": "centre",
                     "x": 0,
                     "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "gun3",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "flame thrower place holder.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 32,
-                      "y": 5
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "flame_thrower_fire_collision",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "flame thrower fire collision.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 16
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 16
                   },
                   "customCollisionMask": []
                 }
@@ -26211,7 +25674,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "BulletPlaceholder.png",
+                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26250,7 +25713,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (21).png",
+                  "image": "assets\\fence\\element (21).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26298,7 +25761,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (2).png",
+                  "image": "assets\\fence\\element (2).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26346,7 +25809,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (27).png",
+                  "image": "assets\\fence\\element (27).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26412,7 +25875,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (1).png",
+                  "image": "assets\\fence\\element (1).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26460,7 +25923,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (9).png",
+                  "image": "assets\\fence\\element (9).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26526,7 +25989,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (5).png",
+                  "image": "assets\\fence\\element (5).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26592,7 +26055,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (23).png",
+                  "image": "assets\\fence\\element (23).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26658,7 +26121,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "element (22).png",
+                  "image": "assets\\fence\\element (22).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26716,7 +26179,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "fenceRed.png",
+                  "image": "assets\\Road\\road_block\\fenceRed.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26745,7 +26208,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "fenceYellow.png",
+                  "image": "assets\\Road\\road_block\\fenceYellow.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26784,7 +26247,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "BulletPlaceholder.png",
+                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26842,7 +26305,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "treeLarge.png",
+                  "image": "assets\\foliage\\tree\\treeLarge.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26890,7 +26353,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "treeSmall.png",
+                  "image": "assets\\foliage\\tree\\treeSmall.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26927,6 +26390,64 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\foliage\\tree\\tile_183.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31,
+                    "y": 33.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 32,
+                    "y": 32.5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\foliage\\tree\\tile_186.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31,
+                    "y": 32.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -26948,7 +26469,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "door1.png",
+                  "image": "assets\\sprite_objects\\door.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -26973,7 +26494,7 @@
       "height": 32,
       "name": "Water",
       "tags": "",
-      "texture": "assets\\rpgTile029.png",
+      "texture": "assets\\water\\water_1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -27007,7 +26528,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ball_basket2.png",
+                  "image": "assets\\sport\\ball\\ball_basket2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -27071,7 +26592,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\ball_basket4.png",
+                  "image": "assets\\sport\\ball\\ball_basket4.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -27168,7 +26689,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\element (77).png",
+                  "image": "assets\\sport\\post\\element (77).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -27197,7 +26718,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\element (65).png",
+                  "image": "assets\\sport\\post\\element (65).png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
