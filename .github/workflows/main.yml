@@ -6,7 +6,7 @@ name: Auto Build
 # events but only for the master branch
 on:
   push:
-    branches: [ refactor-build-system ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,7 +25,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Build with GDexport
       run: |
-        git clone --single-branch --branch refactor-build-system https://github.com/Gdevelop-game/GDevelop-Open-Game Project
+        git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
         cd Project/build
         yarn
         yarn build
@@ -49,12 +49,10 @@ jobs:
       
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
@@ -75,12 +73,10 @@ jobs:
       
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          rm -rf Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
@@ -100,12 +96,10 @@ jobs:
     steps:
       - name: Build with GDexport
         run: |
-          git clone https://github.com/arthuro555/gdexporter
-          cd gdexporter
-          Remove-Item -Recurse -Force Project
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          npm i
-          node bin/cli.js -b electron -p "./Project/src/game.json"
+          cd Project/build
+          yarn
+          yarn build
           
       - name: Build Electron app
         run: |
