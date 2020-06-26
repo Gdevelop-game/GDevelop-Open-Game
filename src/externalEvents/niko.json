@@ -2156,6 +2156,7 @@
             {
               "disabled": false,
               "folded": false,
+
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2295,6 +2296,7 @@
               "conditions": [
                 {
                   "type": {
+
                     "inverted": true,
                     "value": "SourisBouton"
                   },
@@ -2365,6 +2367,7 @@
                   "parameters": [
                     "Gun3_in_use",
                     "=",
+
                     "\"True\""
                   ],
                   "subInstructions": []
