@@ -4,8 +4,8 @@
   "description": "Build pipeline for GDevelop-Open-Game",
   "main": "build.js",
   "scripts": {
-    "start": "node build.js",
-    "build": "node build.js"
+    "web-build": "node build_web.js",
+	"electron-build": "node build_electron.js"
   },
   "repository": {
     "type": "git",

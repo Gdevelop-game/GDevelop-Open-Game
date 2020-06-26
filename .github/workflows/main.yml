@@ -28,7 +28,7 @@ jobs:
         git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
         cd Project/build
         yarn
-        yarn build
+        yarn web-build
       
     - name: Upload to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
@@ -52,7 +52,7 @@ jobs:
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
           yarn
-          yarn build
+          yarn electron-build
           
       - name: Build Electron app
         run: |
@@ -76,7 +76,7 @@ jobs:
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
           yarn
-          yarn build
+          yarn electron-build
           
       - name: Build Electron app
         run: |
@@ -99,7 +99,7 @@ jobs:
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
           yarn
-          yarn build
+          yarn electron-build
           
       - name: Build Electron app
         run: |
