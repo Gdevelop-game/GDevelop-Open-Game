@@ -744,7 +744,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "GunSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2045,7 +2045,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2187,7 +2187,7 @@
                   },
                   "parameters": [
                     "",
-                    "1",
+                    "2",
                     "\"gun3_ammo\""
                   ],
                   "subInstructions": []
@@ -2198,7 +2198,7 @@
                     "value": "VarGlobalTxt"
                   },
                   "parameters": [
-                    "Gun3_trigger_once",
+                    "Gun3_trigger",
                     "=",
                     "\"True\""
                   ],
@@ -2267,7 +2267,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Gun3_trigger_once",
+                    "Gun3_trigger",
                     "=",
                     "\"True\""
                   ],
@@ -2315,7 +2315,7 @@
                       },
                       "parameters": [
                         "",
-                        "1",
+                        "2",
                         "\"gun3_ammo\""
                       ],
                       "subInstructions": []
@@ -2330,7 +2330,7 @@
                       "parameters": [
                         "Gun3_ammo",
                         "-",
-                        "0.50"
+                        "1"
                       ],
                       "subInstructions": []
                     },
