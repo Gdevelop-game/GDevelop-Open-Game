@@ -776,7 +776,7 @@
       "width": 70,
       "x": 1120,
       "y": 280,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -791,7 +791,7 @@
       "width": 70,
       "x": 1190,
       "y": 280,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -806,7 +806,7 @@
       "width": 70,
       "x": 1050,
       "y": 350,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -821,7 +821,7 @@
       "width": 70,
       "x": 1120,
       "y": 350,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -836,7 +836,7 @@
       "width": 70,
       "x": 1190,
       "y": 350,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -851,7 +851,7 @@
       "width": 70,
       "x": 1050,
       "y": 420,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -866,7 +866,7 @@
       "width": 70,
       "x": 1190,
       "y": 420,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -881,7 +881,7 @@
       "width": 70,
       "x": 1120,
       "y": 420,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1896,7 +1896,7 @@
       "width": 70,
       "x": 1190,
       "y": 490,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1911,7 +1911,7 @@
       "width": 70,
       "x": 1120,
       "y": 490,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1926,7 +1926,7 @@
       "width": 70,
       "x": 1050,
       "y": 490,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2501,7 +2501,7 @@
       "width": 70,
       "x": 1050,
       "y": 280,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3826,7 +3826,7 @@
       "width": 70,
       "x": 2590,
       "y": 280,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3841,7 +3841,7 @@
       "width": 70,
       "x": 2660,
       "y": 280,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3856,7 +3856,7 @@
       "width": 70,
       "x": 2590,
       "y": 350,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3871,7 +3871,7 @@
       "width": 70,
       "x": 2660,
       "y": 350,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3886,7 +3886,7 @@
       "width": 70,
       "x": 2660,
       "y": 420,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3901,7 +3901,7 @@
       "width": 70,
       "x": 2590,
       "y": 420,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4796,7 +4796,7 @@
       "width": 70,
       "x": 2660,
       "y": 490,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4811,7 +4811,7 @@
       "width": 70,
       "x": 2590,
       "y": 490,
-      "zOrder": 4,
+      "zOrder": -12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -6197,6 +6197,21 @@
       "x": 350,
       "y": 70,
       "zOrder": 201,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 560,
+      "y": 350,
+      "zOrder": 202,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8381,7 +8396,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\gun_placeholder\\weapon_gun_place_holder.png",
+                  "image": "assets\\weapons\\gun\\weapon_sniper.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
