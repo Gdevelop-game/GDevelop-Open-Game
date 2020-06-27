@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.428
+    "zoomFactor": 1
   },
   "objectsGroups": [
     {
@@ -26452,13 +26452,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 550,
+      "height": 560,
       "layer": "",
       "locked": false,
       "name": "ground_1",
       "width": 1680,
       "x": -910,
-      "y": -210,
+      "y": -214,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -33758,6 +33758,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 0,
+      "y": 1190,
+      "zOrder": 1242,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -34147,12 +34162,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\gun_placeholder\\manBlue_gun_place_holder.png",
+                  "image": "assets\\character\\Player\\manBlue_sniper.png",
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 48,
-                      "y": 33
+                      "x": 75,
+                      "y": 34
                     }
                   ],
                   "originPoint": {
@@ -34161,10 +34176,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 17,
+                    "y": 22
                   },
                   "customCollisionMask": []
                 }
@@ -35005,6 +35020,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "crosshair010",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\crossair\\crosshair_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -35104,18 +35148,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\gun_placeholder\\weapon_gun_place_holder.png",
+                  "image": "assets\\weapons\\gun\\weapon_sniper.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 5
+                    "y": 3.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 5
+                    "y": 3.5
                   },
                   "customCollisionMask": []
                 }
@@ -36234,7 +36278,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\sport\\post\\element (77).png",
                   "points": [],
                   "originPoint": {
@@ -36248,7 +36292,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 14
+                      },
+                      {
+                        "x": 64,
+                        "y": 25
+                      },
+                      {
+                        "x": 64,
+                        "y": 40
+                      },
+                      {
+                        "x": 31,
+                        "y": 49
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -37713,7 +37776,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -37759,6 +37822,19 @@
                 "sports_equipments_movable",
                 "Bounce",
                 "roof_tops",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Bounce::Bounce::BounceOff"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Bounce",
+                "sports_equipments",
                 ""
               ],
               "subInstructions": []
