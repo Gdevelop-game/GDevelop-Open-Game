@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.736
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
@@ -701,7 +701,7 @@
       "width": 70,
       "x": 1190,
       "y": 280,
-      "zOrder": 3,
+      "zOrder": 45,
       "numberProperties": [
         {
           "name": "animation",
@@ -721,7 +721,7 @@
       "width": 70,
       "x": 1050,
       "y": 493,
-      "zOrder": 3,
+      "zOrder": 45,
       "numberProperties": [
         {
           "name": "animation",
@@ -741,7 +741,7 @@
       "width": 70,
       "x": 1120,
       "y": 493,
-      "zOrder": 3,
+      "zOrder": 45,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -756,7 +756,7 @@
       "width": 70,
       "x": 1190,
       "y": 493,
-      "zOrder": 3,
+      "zOrder": 45,
       "numberProperties": [
         {
           "name": "animation",
@@ -3786,7 +3786,7 @@
       "width": 70,
       "x": 2660,
       "y": 490,
-      "zOrder": 3,
+      "zOrder": 50,
       "numberProperties": [
         {
           "name": "animation",
@@ -3806,7 +3806,7 @@
       "width": 70,
       "x": 2660,
       "y": 420,
-      "zOrder": 3,
+      "zOrder": 50,
       "numberProperties": [
         {
           "name": "animation",
@@ -5941,7 +5941,7 @@
       "width": 70,
       "x": 2660,
       "y": 350,
-      "zOrder": 3,
+      "zOrder": 50,
       "numberProperties": [
         {
           "name": "animation",
@@ -6194,8 +6194,8 @@
       "locked": false,
       "name": "Niko",
       "width": 0,
-      "x": 350,
-      "y": 70,
+      "x": 630,
+      "y": 350,
       "zOrder": 201,
       "numberProperties": [],
       "stringProperties": [],
@@ -6212,6 +6212,36 @@
       "x": 560,
       "y": 350,
       "zOrder": 202,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flame_thrower_fire",
+      "width": 0,
+      "x": 560,
+      "y": 420,
+      "zOrder": 203,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flame_thrower_fire_collision",
+      "width": 0,
+      "x": 140,
+      "y": 280,
+      "zOrder": 204,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7881,12 +7911,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\gun_placeholder\\manBlue_gun_place_holder.png",
+                  "image": "assets\\character\\Player\\manBlue_sniper.png",
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 48,
-                      "y": 33
+                      "x": 75,
+                      "y": 34
                     }
                   ],
                   "originPoint": {
@@ -7895,10 +7925,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 17,
+                    "y": 22
                   },
                   "customCollisionMask": []
                 }
@@ -9245,7 +9275,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Rooms_Global",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
