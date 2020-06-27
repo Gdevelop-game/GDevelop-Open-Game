@@ -2299,6 +2299,24 @@
         "metadata": "",
         "name": "assets\\sound\\door_sound\\DoorClosing_0.wav",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gun_placeholder/manBlue_gun_place_holder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\gun_placeholder\\manBlue_gun_place_holder.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gun_placeholder/weapon_gun_place_holder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\gun_placeholder\\weapon_gun_place_holder.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2353,10 +2371,18 @@
     },
     {
       "name": "Gun3_ammo",
+      "value": "5"
+    },
+    {
+      "name": "Gun3_trigger",
+      "value": "\"False\""
+    },
+    {
+      "name": "Gun4_ammo",
       "value": "4"
     },
     {
-      "name": "Gun3_trigger_once",
+      "name": "Gun4_trigger",
       "value": "\"False\""
     }
   ],

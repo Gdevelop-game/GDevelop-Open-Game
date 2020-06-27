@@ -7716,13 +7716,7 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\character\\Player\\manBlue_stand.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -7739,13 +7733,7 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\character\\Player\\manBlue_hold.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 47,
-                      "y": 30
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -7861,6 +7849,41 @@
                     "name": "centre",
                     "x": 17,
                     "y": 21
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\gun_placeholder\\manBlue_gun_place_holder.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 48,
+                      "y": 33
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -8168,13 +8191,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 5
                   },
                   "customCollisionMask": []
                 }
@@ -8281,13 +8304,7 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\gun\\weapon_gun.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 19,
-                      "y": 5
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -8326,13 +8343,46 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\gun\\weapon_machine.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 32,
-                      "y": 5
-                    }
-                  ],
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gun4",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\gun_placeholder\\weapon_gun_place_holder.png",
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
