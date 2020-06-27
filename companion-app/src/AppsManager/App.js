@@ -1,9 +1,11 @@
 /**
  * Base Interface defining an App.
+ * @interface
  */
 class App {
     /**
      * The name of the App
+     * @type {string}
      */
     name = "None";
 
