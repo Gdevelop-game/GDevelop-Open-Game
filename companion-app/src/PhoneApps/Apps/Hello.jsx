@@ -1,6 +1,9 @@
 import React from 'react';
 import App from '../App';
+
+import { Typography } from 'antd';
 import {PlayCircleOutlined} from '@ant-design/icons';
+const {Title} = Typography;
 
 export default class Hello extends App {
     name = "Hello World";
@@ -14,6 +17,12 @@ export default class Hello extends App {
     };
 
     getComponent() {
-        return <p>Hello World!</p>;
+        return (
+            <div style={{
+                alignText: "center"
+            }}>
+                <Title level={2}>Hello World!</Title>
+            </div>
+        );
     };
 }
