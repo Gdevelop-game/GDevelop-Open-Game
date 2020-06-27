@@ -1,28 +1,30 @@
-import React, {useState} from 'react';
-import {Cascader} from 'antd';
+import React from 'react';
+import {Row, Col} from 'antd';
+import appManager from '../AppsManager/AppsManager';
 
 export function Main() {
-    const options = [
-        {
-            value: "true",
-            label: "Yes"
-        },
-        {
-            value: "false",
-            label: "No"
-        },
-        {
-            value: "none",
-            label: "Oof", 
-            disabled: true
+    let appList = [];
+    let count = 0;
+    while(count < appManager.length) {
+        let rowContent = [];
+        for(let i = 0; i<4; i++) {
+            if(appManager[count] !== undefined)
+                rowContent.push(
+                    <Col 
+                      className="gutter-row" 
+                      span={6}
+                      key={count}
+                    >
+                        {appManager[count++].getIcon()}
+                    </Col>
+                );
         }
-    ];
-    const [option, setOption] = useState("none");
-    return ( 
-        <div>
-            <p>Hi</p>
-            <p>Option is: {option}</p>
-            <Cascader options={options} onChange={setOption} />
-        </div>
-    );
+        appList.push(
+            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+                {rowContent}
+            </Row>
+        );
+    }
+    
+    return appList;
 }
