@@ -24,8 +24,10 @@ export default class AppsLister extends Component<Props> {
                             key={count}
                             onClick={() => this.props.setApp(c)}
                         >
-                            {appManager[count].getIcon()}
-                            <p>{appManager[count++].name}</p>
+                            <div style={{textAlign: "center"}}>
+                                {appManager[count].getIcon()}
+                                <p>{appManager[count++].name}</p>
+                            </div>
                         </Col>
                     );
             }
