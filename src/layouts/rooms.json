@@ -8168,13 +8168,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 5
                   },
                   "customCollisionMask": []
                 }
@@ -8281,13 +8281,7 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\gun\\weapon_gun.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 19,
-                      "y": 5
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -8326,13 +8320,7 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\gun\\weapon_machine.png",
-                  "points": [
-                    {
-                      "name": "Shoot",
-                      "x": 32,
-                      "y": 5
-                    }
-                  ],
+                  "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
