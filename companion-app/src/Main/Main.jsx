@@ -13,8 +13,8 @@ export function Main() {
                 {currentApp === -1 && <AppList appManager={appManager} setApp={setApp}/>}
                 {currentApp !== -1 && appManager[currentApp].getComponent()}
             </div>
-            <Button onClick={() => setApp(-1)} style={{"bottom": "0px", position: "fixed"}} block>
-                <HomeFilled />
+            <Button onClick={() => setApp(-1)} style={{bottom: "0px", position: "fixed", width: "100%", height: "10%"}}>
+                <HomeFilled  style={{fontSize: "40px"}}/>
             </Button>
         </div>
     );
