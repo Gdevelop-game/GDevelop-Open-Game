@@ -1,28 +1,19 @@
 import React, {useState} from 'react';
-import {Cascader} from 'antd';
+import { Button } from 'antd';
+
+import AppList from '../AppsManager/AppsLister.tsx';
+import appManager from '../AppsManager/AppsManager';
 
 export function Main() {
-    const options = [
-        {
-            value: "true",
-            label: "Yes"
-        },
-        {
-            value: "false",
-            label: "No"
-        },
-        {
-            value: "none",
-            label: "Oof", 
-            disabled: true
-        }
-    ];
-    const [option, setOption] = useState("none");
-    return ( 
+    const [currentApp, setApp] = useState(-1);
+
+    return (
         <div>
-            <p>Hi</p>
-            <p>Option is: {option}</p>
-            <Cascader options={options} onChange={setOption} />
+            <div>
+                {currentApp === -1 && <AppList appManager={appManager} setApp={setApp}/>}
+                {currentApp !== -1 && appManager[currentApp].getComponent()}
+            </div>
+            <Button onClick={() => setApp(-1)} style={{"bottom": "0px", position: "fixed"}} block>Menu</Button>
         </div>
     );
 }
