@@ -3,6 +3,7 @@ import Maps from './Apps/Maps';
 
 /**
  * This contains all the apps.
+ * @type {Array<App>}
  */
 export default [
     new Hello(),

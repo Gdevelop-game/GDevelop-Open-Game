@@ -1,30 +1,15 @@
-import React from 'react';
-import {Row, Col} from 'antd';
+import React, {useState} from 'react';
+import { Button } from 'antd';
+
+import AppList from '../AppsManager/AppsLister.tsx';
 import appManager from '../AppsManager/AppsManager';
 
 export function Main() {
-    let appList = [];
-    let count = 0;
-    while(count < appManager.length) {
-        let rowContent = [];
-        for(let i = 0; i<4; i++) {
-            if(appManager[count] !== undefined)
-                rowContent.push(
-                    <Col 
-                      className="gutter-row" 
-                      span={6}
-                      key={count}
-                    >
-                        {appManager[count++].getIcon()}
-                    </Col>
-                );
-        }
-        appList.push(
-            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                {rowContent}
-            </Row>
-        );
-    }
-    
-    return appList;
+    const [currentApp, setApp] = useState(-1);
+
+    return <div>
+        {currentApp === -1 && <AppList appManager={appManager} setApp={setApp}/>}
+        {currentApp !== -1 && appManager[currentApp].getComponent()}
+        <Button onClick={() => setApp(-1)}>Menu</Button>
+    </div>;
 }
