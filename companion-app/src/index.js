@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Main} from './Main/Main';
 import * as serviceWorker from './serviceWorker';
 
+// Ant design CSS
 import 'antd/dist/antd.css';
 
 ReactDOM.render(
