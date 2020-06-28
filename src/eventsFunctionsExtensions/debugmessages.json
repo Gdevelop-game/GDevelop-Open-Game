@@ -37,6 +37,36 @@
         }
       ],
       "objectGroups": []
+    },
+    {
+      "description": "Prompts for a value (only works on browser)",
+      "fullName": "Prompt for a value",
+      "functionType": "StringExpression",
+      "name": "prompt",
+      "sentence": "",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = prompt(eventsFunctionContext.getArgument(\"q\"));\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Prompt Question",
+          "longDescription": "",
+          "name": "q",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
     }
   ],
   "eventsBasedBehaviors": []

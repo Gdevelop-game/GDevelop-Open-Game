@@ -68,7 +68,7 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "let game = runtimeScene.getGame();\neventsFunctionContext.returnValue = false;\nlet event = eventsFunctionContext.getArgument(\"eventName\");\n\nif(typeof game.connection === \"undefined\" || typeof game.pdata === \"undefined\") return; \nif(event in game.pdata) {\n    eventsFunctionContext.returnValue = true;\n    game.eventData = game.pdata[event];\n    delete game.pdata[event];\n}",
+          "inlineCode": "let game = runtimeScene.getGame();\neventsFunctionContext.returnValue = false;\nlet event = eventsFunctionContext.getArgument(\"eventName\");\n\nif(typeof game.connection === \"undefined\" || typeof game.pdata === \"undefined\") return; \nif(event in game.pdata) {\n    eventsFunctionContext.returnValue = true;\n    game.eventData = game.pdata[event];\n    delete game.pdata[event];\n}\n",
           "parameterObjects": "",
           "useStrict": true
         }
