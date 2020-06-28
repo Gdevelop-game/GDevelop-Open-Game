@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.25
+    "zoomFactor": 0.226
   },
   "objectsGroups": [
     {
@@ -6245,6 +6245,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "reloading",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 205,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -8509,7 +8524,12 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "bullet",
+          "value": "0"
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -8697,6 +8717,25 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "reloading",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "reloading",
+      "font": "",
+      "characterSize": 50,
+      "color": {
+        "b": 112,
+        "g": 112,
+        "r": 112
+      }
     },
     {
       "bold": false,

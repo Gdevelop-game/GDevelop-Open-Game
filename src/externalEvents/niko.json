@@ -817,7 +817,7 @@
       "creationTime": 0,
       "disabled": false,
       "folded": false,
-      "name": "GunSystem",
+      "name": "WeapomSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -861,6 +861,16 @@
             {
               "type": {
                 "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "reloading"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
@@ -872,11 +882,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ResetTimer"
+                "value": "ModVarSceneTxt"
               },
               "parameters": [
-                "flame_thrower_fire_collision",
-                "\"gun4_shoot\""
+                "gun4_shoot",
+                "=",
+                "\"False\""
               ],
               "subInstructions": []
             }
@@ -1134,7 +1145,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "0"
               ],
@@ -1178,7 +1189,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "1"
               ],
@@ -1212,7 +1223,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "0"
               ],
@@ -1256,7 +1267,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "2"
               ],
@@ -1290,7 +1301,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "0"
               ],
@@ -1334,7 +1345,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "3"
               ],
@@ -1368,7 +1379,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "0"
               ],
@@ -1412,7 +1423,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "4"
               ],
@@ -1438,7 +1449,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1447,7 +1458,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "0"
               ],
@@ -1539,7 +1550,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1548,7 +1559,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "1"
               ],
@@ -1766,6 +1777,19 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -1880,7 +1904,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1889,7 +1913,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "2"
               ],
@@ -2139,6 +2163,19 @@
                     "\"gun2_shoot\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2253,7 +2290,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2262,7 +2299,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "3"
               ],
@@ -2702,7 +2739,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2711,7 +2748,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "4"
               ],
@@ -2870,6 +2907,18 @@
                         "\"gun4_shoot\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "gun4_shoot",
+                        "=",
+                        "\"True\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
@@ -2939,11 +2988,145 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "bullet",
+                        "bullet",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ResetTimer"
                       },
                       "parameters": [
                         "",
                         "\"gun4_shoot\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "gun4_shoot",
+                        "=",
+                        "\"False\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "bullet",
+                        "Niko.PointX(\"shoot\")",
+                        "Niko.PointY(\"shoot\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "bullet",
+                        "=",
+                        "70000"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "bullet",
+                        "=",
+                        "Placeholder.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "bullet",
+                        "Placeholder.Angle()",
+                        "800",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "Gun4_ammo",
+                        "-",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "bullet",
+                        "bullet",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"gun4_shoot\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "gun4_shoot",
+                        "=",
+                        "\"True\""
                       ],
                       "subInstructions": []
                     }
@@ -3057,6 +3240,126 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "reloading",
+              "comment2": ""
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "5",
+                    "\"gun4_shoot\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "gun4_shoot",
+                    "=",
+                    "\"True\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "reloading",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "5",
+                    "\"gun4_shoot\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "gun4_shoot",
+                    "=",
+                    "\"True\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "reloading"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             }
           ]
         },
@@ -3111,7 +3414,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "1"
               ],
@@ -3189,7 +3492,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "2"
               ],
@@ -3267,7 +3570,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "3"
               ],
@@ -3345,7 +3648,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "4"
               ],
@@ -3398,7 +3701,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "1"
               ],
@@ -3466,7 +3769,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "3"
               ],
@@ -3500,7 +3803,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "4"
               ],
@@ -3522,6 +3825,198 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "bullet",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": true,
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "bullet",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "\"delete1\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "\"delete1\"",
+                    "0.5"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bullet",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "\"delete1\"",
+                    "0.6"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bullet",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "\"delete1\"",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bullet",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "parameters": []
