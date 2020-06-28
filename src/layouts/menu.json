@@ -20,7 +20,7 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 32,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
     "zoomFactor": 0.5288
   },
@@ -37,7 +37,7 @@
       "width": 0,
       "x": 886,
       "y": 286,
-      "zOrder": 1,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -52,7 +52,7 @@
       "width": 0,
       "x": 923,
       "y": 296,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -66,8 +66,8 @@
       "name": "ButtonQuitGame",
       "width": 0,
       "x": 888,
-      "y": 370,
-      "zOrder": 3,
+      "y": 446,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -81,8 +81,8 @@
       "name": "TextQuitGame",
       "width": 0,
       "x": 937,
-      "y": 381,
-      "zOrder": 4,
+      "y": 457,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -101,6 +101,36 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ButtonSettings",
+      "width": 0,
+      "x": 890,
+      "y": 368,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "TextSettings",
+      "width": 0,
+      "x": 953,
+      "y": 381,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -110,10 +140,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "unpressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -142,7 +182,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -260,15 +300,25 @@
       }
     },
     {
-      "name": "ButtonQuitGame",
+      "name": "ButtonSettings",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "unpressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -297,7 +347,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -326,6 +376,103 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ButtonQuitGame",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "TextSettings",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Settings",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     },
     {
       "bold": false,
@@ -374,220 +521,103 @@
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
             "inverted": false,
-            "value": "MouseButtonReleased"
+            "value": "Button::InteractiveButton::isClicked"
           },
           "parameters": [
-            "",
-            "Left"
+            "ButtonBeginGame",
+            "InteractiveButton",
+            ""
           ],
           "subInstructions": []
         }
       ],
-      "actions": [],
-      "events": [
+      "actions": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ButtonBeginGame",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Overworld\"",
+            "yes"
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Overworld\"",
-                "yes"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ButtonQuitGame",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Quit"
-              },
-              "parameters": [
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "ButtonBeginGame",
-                "\"unpressed\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "ButtonQuitGame",
-                "\"unpressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "subInstructions": []
         }
-      ]
+      ],
+      "events": []
     },
     {
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
             "inverted": false,
-            "value": "SourisBouton"
+            "value": "Button::InteractiveButton::isClicked"
           },
           "parameters": [
-            "",
-            "Left"
+            "ButtonSettings",
+            "InteractiveButton",
+            ""
           ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": [],
           "subInstructions": []
         }
       ],
-      "actions": [],
-      "events": [
+      "actions": [
         {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ButtonQuitGame",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
+          "type": {
+            "inverted": false,
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Settings\"",
+            "yes"
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "ButtonQuitGame",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "ButtonBeginGame",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "ButtonBeginGame",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
+          "subInstructions": []
         }
-      ]
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Button::InteractiveButton::isClicked"
+          },
+          "parameters": [
+            "ButtonQuitGame",
+            "InteractiveButton",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Quit"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
     }
   ],
   "layers": [
@@ -609,5 +639,10 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "InteractiveButton",
+      "type": "Button::InteractiveButton"
+    }
+  ]
 }

@@ -1,16 +1,16 @@
 {
-  "b": 0,
+  "b": 209,
   "disableInputWhenNotFocused": true,
   "mangledName": "Settings",
   "name": "Settings",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 0,
+  "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 0,
+  "v": 209,
   "uiSettings": {
     "grid": false,
     "gridB": 255,
@@ -273,6 +273,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "crossair",
+      "width": 0,
+      "x": 902,
+      "y": 168,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -282,10 +297,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "nopressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -314,7 +339,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -358,9 +383,9 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -377,9 +402,9 @@
       "font": "",
       "characterSize": 59,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -396,9 +421,9 @@
       "font": "",
       "characterSize": 59,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -407,10 +432,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "pressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -439,7 +474,7 @@
           ]
         },
         {
-          "name": "nopressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -483,13 +518,13 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
-      "name": "settingfullscreen",
+      "name": "crossair",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -497,7 +532,85 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "nopressed",
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\crossair\\crossair_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "crosshair010",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\crossair\\crosshair_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "settingfullscreen",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -526,7 +639,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -570,9 +683,9 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -581,10 +694,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "nopressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -613,7 +736,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -649,10 +772,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "nopressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -681,7 +814,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -717,10 +850,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "up",
+          "ANIMATION_OVER": "over",
+          "ANIMATION_DOWN": "down",
+          "ANIMATION_DISABLED": "disabled",
+          "ENABLED": true
+        }
+      ],
       "animations": [
         {
-          "name": "nopressed",
+          "name": "up",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -749,7 +892,7 @@
           ]
         },
         {
-          "name": "pressed",
+          "name": "down",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -812,9 +955,9 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -831,9 +974,9 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     },
     {
@@ -850,9 +993,9 @@
       "font": "",
       "characterSize": 20,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     }
   ],
@@ -863,7 +1006,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "General",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1024,92 +1167,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "back",
-                "",
-                "",
+                "InteractiveButton",
                 ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "back",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "back",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "back",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "back",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
               ],
               "subInstructions": []
             }
@@ -1139,7 +1202,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Shadows",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1152,101 +1215,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "settingshadows",
-                "",
-                "",
+                "InteractiveButton",
                 ""
               ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingshadows",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingshadows",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingshadows",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingshadows",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -1416,7 +1391,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Sound",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1429,101 +1404,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "settingsound",
-                "",
-                "",
+                "InteractiveButton",
                 ""
               ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingsound",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingsound",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingsound",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingsound",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -1693,7 +1580,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "VolumePlus",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1706,67 +1593,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "volplus",
-                "",
-                "",
+                "InteractiveButton",
                 ""
               ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volplus",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volplus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -1809,40 +1642,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volplus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volplus",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "parameters": []
@@ -1853,7 +1652,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "VolumeMinus",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1866,101 +1665,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "volminus",
-                "",
-                "",
+                "InteractiveButton",
                 ""
               ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volminus",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volminus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volminus",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "volminus",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -2013,7 +1724,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Fullscreen",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2026,101 +1737,13 @@
             {
               "type": {
                 "inverted": false,
-                "value": "SourisSurObjet"
+                "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "settingfullscreen",
-                "",
-                "",
+                "InteractiveButton",
                 ""
               ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingfullscreen",
-                "\"pressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingfullscreen",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "settingfullscreen",
-                "\"nopressed\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "settingfullscreen",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -2314,7 +1937,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2351,5 +1974,10 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "InteractiveButton",
+      "type": "Button::InteractiveButton"
+    }
+  ]
 }
