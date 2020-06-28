@@ -1,0 +1,92 @@
+{
+  "author": "",
+  "description": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "name": "CompanionAppCommunication",
+  "shortDescription": "",
+  "tags": "",
+  "version": "",
+  "eventsFunctions": [
+    {
+      "description": "",
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onFirstSceneLoaded",
+      "sentence": "",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "let s = document.createElement(\"script\");\ns.src = \"https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js\";\ndocument.body.appendChild(s);\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Connects to companion app via connection code",
+      "fullName": "Connect to companion app",
+      "functionType": "Action",
+      "name": "connectToCompanion",
+      "sentence": "Connect to companion app with code _PARAM1_",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "let game = runtimeScene.getGame();\nwindow.game = game;\nif(Peer) {\n    game.p = new Peer();\n    game.p.on(\"open\", ()=> {\n        game.connection = game.p.connect(eventsFunctionContext.getArgument(\"id\"));\n        game.pdata = {};\n        game.connection.on(\"data\", (data) => {\n            game.pdata[data.type] = data.payload;\n        });\n    });\n}\n",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Connection Code",
+          "longDescription": "",
+          "name": "id",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "When an event is sent by the app",
+      "fullName": "On Event",
+      "functionType": "Condition",
+      "name": "onEventType",
+      "sentence": "On event _PARAM1_ sent by companion",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "let game = runtimeScene.getGame();\neventsFunctionContext.returnValue = false;\nlet event = eventsFunctionContext.getArgument(\"eventName\");\n\nif(typeof game.connection === \"undefined\" || typeof game.pdata === \"undefined\") return; \nif(event in game.pdata) {\n    eventsFunctionContext.returnValue = true;\n    game.eventData = game.pdata[event];\n    delete game.pdata[event];\n}",
+          "parameterObjects": "",
+          "useStrict": true
+        }
+      ],
+      "parameters": [
+        {
+          "codeOnly": false,
+          "defaultValue": "",
+          "description": "Event name",
+          "longDescription": "",
+          "name": "eventName",
+          "optional": false,
+          "supplementaryInformation": "",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": []
+}
