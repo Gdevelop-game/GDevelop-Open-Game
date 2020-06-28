@@ -1,21 +1,43 @@
 import React, {useState} from 'react';
-import { Button } from 'antd';
-import {HomeFilled} from '@ant-design/icons';
+
+import Connect from '../Components/Connect';
+import MenuButton from '../Components/MenuButton';
 import AppList from '../PhoneApps/AppsLister.tsx';
 import appManager from '../PhoneApps/AppsManager';
 
 export function Main() {
     const [currentApp, setApp] = useState(-1);
+    const [connected, setConnected] = useState(false); 
+    const [connection, setConnection] = useState(null);
+
+    let app;
+    if(currentApp === -1) {
+        app = <AppList appManager={appManager} setApp={setApp}/>;
+    } else {
+        app = appManager[currentApp].getComponent({connection: connection});
+    }
 
     return (
         <div>
-            <div>
-                {currentApp === -1 && <AppList appManager={appManager} setApp={setApp}/>}
-                {currentApp !== -1 && appManager[currentApp].getComponent()}
-            </div>
-            <Button onClick={() => setApp(-1)} style={{bottom: "0px", position: "fixed", width: "100%", height: "10%"}}>
-                <HomeFilled  style={{fontSize: "40px"}}/>
-            </Button>
+            {connected &&
+                <div>
+                    <div>
+                        {app}
+                    </div>
+                    <MenuButton
+                        onClick={() => setApp(-1)}
+                    />
+                </div>
+            }
+            {!connected &&
+                <Connect
+                    onConnectionEstablished={(connection) => {
+                        setConnection(connection);
+                        setConnected(true);
+                    }}
+                    onConnectionLost={() => setConnected(false)}
+                />
+            }
         </div>
     );
 }
