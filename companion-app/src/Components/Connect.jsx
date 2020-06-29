@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Spin } from 'antd';
 import PeerJS from 'peerjs';
 
 export default class Login extends Component {
     state = {
-        peerID: 0,
+        peerID: false,
         peer: new PeerJS(),
     }
 
@@ -20,14 +21,13 @@ export default class Login extends Component {
         return (
             <div style={{textAlign: "center"}}>
                 <h1>Connection To Game</h1>
-                {this.state.peerID ?
+                {this.state.peerID &&
                     <div>
                         <h2>Press "C" on your game to initiate the pairing process</h2>
                         <h4>Then, enter this code on the game: <b>{this.state.peerID}</b></h4>
                     </div>
-                :
-                    <p>Connecting with the server...</p>
                 }
+                <Spin tip={this.state.peerID ? "Waiting for connection..." : "Connecting to server..."} style={{marginTop: 40}}/>
             </div>
         )
     }
