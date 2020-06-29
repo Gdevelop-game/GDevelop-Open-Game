@@ -5,6 +5,8 @@ import MenuButton from '../Components/MenuButton';
 import AppList from '../PhoneApps/AppsLister.tsx';
 import appManager from '../PhoneApps/AppsManager';
 
+import {message} from 'antd';
+
 export function Main() {
     const [currentApp, setApp] = useState(-1);
     const [connected, setConnected] = useState(false); 
@@ -35,7 +37,10 @@ export function Main() {
                         setConnection(connection);
                         setConnected(true);
                     }}
-                    onConnectionLost={() => setConnected(false)}
+                    onConnectionLost={(error) => {
+                        setConnected(false);
+                        message.error(error ? "Disconnected from Game. Reason: " + error : "Disconnected from Game.");
+                    }}
                 />
             }
         </div>

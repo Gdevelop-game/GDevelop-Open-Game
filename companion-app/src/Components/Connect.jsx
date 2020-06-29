@@ -13,8 +13,16 @@ export default class Login extends Component {
         this.state.peer.on('connection', (connection) => {
             this.props.onConnectionEstablished(connection);
             connection.on("close", this.props.onConnectionLost);
+            connection.on("error", (error) => {
+                console.error(error);
+                this.props.onConnectionLost(error);
+            });
         });
         this.state.peer.on("close", this.props.onConnectionLost);
+        this.state.peer.on("error", (error) => {
+            console.error(error);
+            this.props.onConnectionLost(error);
+        });
     }
     
     render(){
