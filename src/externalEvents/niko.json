@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3270,6 +3270,16 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "reloading"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3816,7 +3826,7 @@
                 "value": "VarGlobal"
               },
               "parameters": [
-                "Gun_holding",
+                "Weapon_holding",
                 "=",
                 "2"
               ],
@@ -3953,6 +3963,49 @@
                   "parameters": [
                     "bullet",
                     "\"delete1\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "bullet",
+                    "=",
+                    "4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "bullet",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
