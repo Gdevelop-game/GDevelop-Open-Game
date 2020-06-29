@@ -25,8 +25,12 @@ require("gdexporter").exporter("../src/game.json", "gdExport", buildType)
 .then(() => {
 	console.log("Adding Service Worker for caching");
     fs.copySync(
-	  "./pwa/sw.js", 
-	  exportPath + "/sw.js"
+	  "./pwa/sw-web.js", 
+	  exportPath + "/sw-web.js"
+    );
+	fs.copySync(
+	  "./pwa/sw-local.js", 
+	  exportPath + "/sw-local.js"
     );
 	let script = dom.window.document.createElement("script");
 	script.innerHTML = `if ('serviceWorker' in navigator) {
@@ -39,8 +43,11 @@ require("gdexporter").exporter("../src/game.json", "gdExport", buildType)
 		if (currentPath.length > 1)
 		  currentPath = currentPath[0];
 		  
-		  
-		navigator.serviceWorker.register(currentPath + 'sw.js');
+		if(window.matchMedia('(display-mode: standalone)').matches) {
+			navigator.serviceWorker.register(currentPath + 'sw-local.js');
+		} else {
+			navigator.serviceWorker.register(currentPath + 'sw-web.js');
+		}
 	  });
 	}`
 	dom.window.document.body.insertBefore(script, dom.window.document.body.firstChild);
