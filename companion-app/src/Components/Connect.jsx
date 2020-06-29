@@ -25,7 +25,10 @@ export default class Login extends Component {
         });
     }
     
-    render(){
+    render() {
+        if(typeof RTCPeerConnection === 'undefined') 
+            return <h1>Sorry, your device/browser is not compatible.</h1>;
+        
         return (
             <div style={{textAlign: "center"}}>
                 <h1>Connection To Game</h1>
