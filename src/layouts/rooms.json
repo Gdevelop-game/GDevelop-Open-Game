@@ -13662,6 +13662,45 @@
       ]
     },
     {
+      "name": "gun5",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\gun\\rocket_launcher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "additive": true,
       "alphaParam": "Mutable",
       "angleParam": "Mutable",
@@ -13807,6 +13846,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "bullet3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -13819,7 +13887,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet1",
+          "name": "ammo1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13848,7 +13916,7 @@
           ]
         },
         {
-          "name": "bullet2",
+          "name": "ammo2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13877,7 +13945,7 @@
           ]
         },
         {
-          "name": "bullet3",
+          "name": "ammo3",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13898,6 +13966,35 @@
                     "name": "centre",
                     "x": 0,
                     "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ammo4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
                   },
                   "customCollisionMask": []
                 }

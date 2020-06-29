@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.25
+    "zoomFactor": 0.658
   },
   "objectsGroups": [
     {
@@ -22555,8 +22555,8 @@
       "locked": false,
       "name": "gun3",
       "width": 0,
-      "x": -250,
-      "y": 1500,
+      "x": 70,
+      "y": 1540,
       "zOrder": 121,
       "numberProperties": [],
       "stringProperties": [],
@@ -33745,8 +33745,8 @@
       "locked": false,
       "name": "gun4",
       "width": 0,
-      "x": -70,
-      "y": 1540,
+      "x": 70,
+      "y": 1330,
       "zOrder": 1240,
       "numberProperties": [],
       "stringProperties": [],
@@ -35836,6 +35836,41 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "gun5",
+      "width": 0,
+      "x": 70,
+      "y": 1610,
+      "zOrder": 1246,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "ammo",
+      "width": 0,
+      "x": -140,
+      "y": 1470,
+      "zOrder": 1247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -36229,7 +36264,7 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 75,
+                      "x": 34,
                       "y": 34
                     }
                   ],
@@ -36243,6 +36278,41 @@
                     "name": "centre",
                     "x": 17,
                     "y": 22
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun5",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 72,
+                      "y": 35
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -37379,6 +37449,45 @@
       ]
     },
     {
+      "name": "gun5",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\gun\\rocket_launcher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "ammo",
       "tags": "",
       "type": "Sprite",
@@ -37466,6 +37575,35 @@
                     "name": "centre",
                     "x": 0,
                     "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ammo4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
                   },
                   "customCollisionMask": []
                 }
@@ -38073,6 +38211,35 @@
                     "name": "centre",
                     "x": 0,
                     "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bullet3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
                   },
                   "customCollisionMask": []
                 }
