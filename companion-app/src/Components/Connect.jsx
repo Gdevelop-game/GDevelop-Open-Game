@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Spin } from 'antd';
 import PeerJS from 'peerjs';
 
 export default class Login extends Component {
@@ -28,6 +29,7 @@ export default class Login extends Component {
                 :
                     <p>Connecting with the server...</p>
                 }
+                <Spin tip="Waiting for connection..." style={{marginTop: 40}}/>
             </div>
         )
     }
