@@ -21,7 +21,10 @@ export default class Login extends Component {
             <div style={{textAlign: "center"}}>
                 <h1>Connection To Game</h1>
                 {this.state.peerID ?
-                    <p>Enter this code on the game: <b>{this.state.peerID}</b></p>
+                    <div>
+                        <h2>Press "C" on your game to initiate the pairing process</h2>
+                        <h4>Then, enter this code on the game: <b>{this.state.peerID}</b></h4>
+                    </div>
                 :
                     <p>Connecting with the server...</p>
                 }

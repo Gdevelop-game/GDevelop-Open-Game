@@ -5,7 +5,7 @@ import { Button } from 'antd';
 import {SmileOutlined} from '@ant-design/icons';
 
 export default class Hello extends App {
-    name = "Hello World";
+    name = "Say Hi";
 
     getIcon() {
         return (
