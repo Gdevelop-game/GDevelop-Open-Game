@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.658
+    "zoomFactor": 0.274
   },
   "objectsGroups": [
     {
@@ -12565,7 +12565,12 @@
         }
       ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Id",
+          "value": "1"
+        }
+      ]
     },
     {
       "angle": 0,
@@ -36264,7 +36269,7 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 34,
+                      "x": 73,
                       "y": 34
                     }
                   ],
@@ -37618,7 +37623,12 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Id",
+          "value": "0"
+        }
+      ],
       "behaviors": [],
       "animations": [
         {

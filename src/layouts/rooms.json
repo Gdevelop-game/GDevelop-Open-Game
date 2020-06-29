@@ -6251,21 +6251,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "GUI",
-      "locked": false,
-      "name": "reloading",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 205,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
@@ -10948,6 +10933,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "reloading",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 207,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -13032,7 +13032,7 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 75,
+                      "x": 73,
                       "y": 34
                     }
                   ],
@@ -13046,6 +13046,41 @@
                     "name": "centre",
                     "x": 17,
                     "y": 22
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun5",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 72,
+                      "y": 35
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
