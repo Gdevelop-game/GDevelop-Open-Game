@@ -849,7 +849,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "WeapomSystem",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3456,6 +3456,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "ammo",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3528,6 +3540,18 @@
                 "Weapon_holding",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "ammo",
+                "=",
+                "0"
               ],
               "subInstructions": []
             },
@@ -3612,6 +3636,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "ammo",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
@@ -3684,6 +3720,18 @@
                 "Weapon_holding",
                 "=",
                 "4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "ammo",
+                "=",
+                "1"
               ],
               "subInstructions": []
             },

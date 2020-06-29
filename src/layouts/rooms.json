@@ -13732,7 +13732,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet_placeholder",
+          "name": "bullet1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13741,7 +13741,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
+                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -13778,6 +13778,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "bullet2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -13790,7 +13819,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet_placeholder",
+          "name": "bullet1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13799,18 +13828,76 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
+                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 0
+                    "y": 5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 0
+                    "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bullet2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 3
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "bullet3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletBlueSilver_outline.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 3
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 3
                   },
                   "customCollisionMask": []
                 }
