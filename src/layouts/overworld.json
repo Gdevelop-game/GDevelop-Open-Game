@@ -124,6 +124,14 @@
     {
       "name": "basketball",
       "value": ""
+    },
+    {
+      "name": "phone",
+      "value": ""
+    },
+    {
+      "name": "using_phone",
+      "value": ""
     }
   ],
   "instances": [
@@ -39056,69 +39064,144 @@
       }
     },
     {
-      "name": "tazer_hitbox",
+      "name": "Phone",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.1429,
+              "looping": false,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=0.png",
+                  "image": "assets\\character\\Player\\phone\\phone_lock.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 2.5
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 2.5
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\phone_unlock.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\phone_apps.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "pointer_2.1png.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 24,
+                    "y": 24.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=1.png",
+                  "image": "pointer_2.2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 2.5
+                    "x": 24,
+                    "y": 24.5
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 2.5
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 2.5
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -39208,7 +39291,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "doors"
+          "target": "phone"
         },
         {
           "disabled": false,
@@ -40999,6 +41082,14 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
+      "events": []
     }
   ],
   "layers": [
@@ -41040,6 +41131,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

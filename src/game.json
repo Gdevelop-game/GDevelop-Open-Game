@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.gdevelopComunity.gdgame",
-    "projectFile": "C:\\Users\\mark7\\OneDrive\\Documents\\GDevelop projects\\Gdevelop Game\\GDevelop-Open-Game\\src\\game.json",
+    "projectFile": "C:\\Users\\Unekwu\\Downloads\\GDevelop-Open-Game-master (10)\\GDevelop-Open-Game-master\\src\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -2572,64 +2572,136 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/weapons/mele/tazer.png",
+        "file": "lock.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\weapons\\mele\\tazer.png",
+        "name": "lock.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_tazer.png",
+        "file": "unlock.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_tazer.png",
+        "name": "unlock.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprite_objects/Tazer_Hitbox/tazer_hitbox=0.png",
+        "file": "apps.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\sprite_objects\\Tazer_Hitbox\\tazer_hitbox=0.png",
+        "name": "apps.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=0.png",
+        "file": "pointer_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=0.png",
+        "name": "pointer_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=1.png",
+        "file": "pointer_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=1.png",
+        "name": "pointer_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=2.png",
+        "file": "lock1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=2.png",
+        "name": "lock1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/weapons/energy.png",
+        "file": "phone3.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\weapons\\energy.png",
+        "name": "phone3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "unlock2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "unlock2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "apps2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "apps2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pointer_2.1png.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pointer_2.1png.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pointer_2.2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pointer_2.2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/phone/apps2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\phone\\apps2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/phone/phone_unlock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\phone\\phone_unlock.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/phone/phone_lock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\phone\\phone_lock.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/Player/phone/phone_apps.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\character\\Player\\phone\\phone_apps.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -2743,6 +2815,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/doors"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/phone"
     }
   ],
   "eventsFunctionsExtensions": [
