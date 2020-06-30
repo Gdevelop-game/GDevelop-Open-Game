@@ -6251,21 +6251,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "GUI",
-      "locked": false,
-      "name": "reloading",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 205,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 70,
       "layer": "",
@@ -10948,6 +10933,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "reloading",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 207,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -13032,7 +13032,7 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 75,
+                      "x": 73,
                       "y": 34
                     }
                   ],
@@ -13046,6 +13046,41 @@
                     "name": "centre",
                     "x": 17,
                     "y": 22
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun5",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 72,
+                      "y": 35
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -13662,6 +13697,45 @@
       ]
     },
     {
+      "name": "gun5",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\gun\\rocket_launcher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 6
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "additive": true,
       "alphaParam": "Mutable",
       "angleParam": "Mutable",
@@ -13807,6 +13881,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "bullet3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -13819,7 +13922,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet1",
+          "name": "ammo1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13848,7 +13951,7 @@
           ]
         },
         {
-          "name": "bullet2",
+          "name": "ammo2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13877,7 +13980,7 @@
           ]
         },
         {
-          "name": "bullet3",
+          "name": "ammo3",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -13898,6 +14001,35 @@
                     "name": "centre",
                     "x": 0,
                     "y": 3
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ammo4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 10
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 10
                   },
                   "customCollisionMask": []
                 }
