@@ -21,8 +21,8 @@
     "gridR": 158,
     "gridWidth": 70,
     "snap": true,
-    "windowMask": true,
-    "zoomFactor": 0.274
+    "windowMask": false,
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
@@ -123,14 +123,6 @@
     },
     {
       "name": "basketball",
-      "value": ""
-    },
-    {
-      "name": "phone",
-      "value": ""
-    },
-    {
-      "name": "using_phone",
       "value": ""
     }
   ],
@@ -8146,12 +8138,7 @@
       "x": -70,
       "y": 1330,
       "zOrder": 108,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -8166,12 +8153,7 @@
       "x": -140,
       "y": 1400,
       "zOrder": 109,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -12573,12 +12555,7 @@
         }
       ],
       "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Id",
-          "value": "1"
-        }
-      ]
+      "initialVariables": []
     },
     {
       "angle": 0,
@@ -22568,8 +22545,8 @@
       "locked": false,
       "name": "gun3",
       "width": 0,
-      "x": 70,
-      "y": 1540,
+      "x": -250,
+      "y": 1500,
       "zOrder": 121,
       "numberProperties": [],
       "stringProperties": [],
@@ -33758,8 +33735,8 @@
       "locked": false,
       "name": "gun4",
       "width": 0,
-      "x": 70,
-      "y": 1330,
+      "x": -70,
+      "y": 1540,
       "zOrder": 1240,
       "numberProperties": [],
       "stringProperties": [],
@@ -33776,12 +33753,7 @@
       "x": -140,
       "y": 1330,
       "zOrder": 1241,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -35849,41 +35821,6 @@
       ],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "gun5",
-      "width": 0,
-      "x": 70,
-      "y": 1610,
-      "zOrder": 1246,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "ammo",
-      "width": 0,
-      "x": -140,
-      "y": 1470,
-      "zOrder": 1247,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -36277,7 +36214,7 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 73,
+                      "x": 75,
                       "y": 34
                     }
                   ],
@@ -36291,41 +36228,6 @@
                     "name": "centre",
                     "x": 17,
                     "y": 22
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Gun5",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
-                  "points": [
-                    {
-                      "name": "shoot",
-                      "x": 72,
-                      "y": 35
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -37462,45 +37364,6 @@
       ]
     },
     {
-      "name": "gun5",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\gun\\rocket_launcher.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 6
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 6
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "ammo",
       "tags": "",
       "type": "Sprite",
@@ -37509,7 +37372,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "ammo1",
+          "name": "bullet_placeholder",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -37518,105 +37381,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
+                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 5
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletBlueSilver_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo4",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 10
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 10
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -37631,12 +37407,7 @@
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Id",
-          "value": "0"
-        }
-      ],
+      "variables": [],
       "behaviors": [],
       "animations": [
         {
@@ -38179,7 +37950,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "bullet1",
+          "name": "bullet_placeholder",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -38188,76 +37959,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
+                  "image": "assets\\weapons\\bullet\\BulletPlaceholder.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 5
+                    "y": 0
                   },
                   "centerPoint": {
-                    "automatic": false,
+                    "automatic": true,
                     "name": "centre",
                     "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "bullet2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "bullet3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline_.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 10
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 10
+                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -38919,154 +38632,6 @@
         "g": 112,
         "r": 112
       }
-    },
-    {
-      "name": "Phone",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_unlock.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_apps.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.5,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "pointer_2.1png.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 24.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "pointer_2.2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 24,
-                    "y": 24.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "events": [
@@ -39148,7 +38713,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "phone"
+          "target": "doors"
         },
         {
           "disabled": false,
@@ -39962,7 +39527,7 @@
                       },
                       "parameters": [
                         "",
-                        "4",
+                        "2",
                         ""
                       ],
                       "subInstructions": []
@@ -40199,7 +39764,7 @@
                       },
                       "parameters": [
                         "",
-                        "4",
+                        "2",
                         ""
                       ],
                       "subInstructions": []
@@ -40436,7 +40001,7 @@
                       },
                       "parameters": [
                         "",
-                        "4",
+                        "2",
                         ""
                       ],
                       "subInstructions": []
@@ -40673,7 +40238,7 @@
                       },
                       "parameters": [
                         "",
-                        "4",
+                        "2",
                         ""
                       ],
                       "subInstructions": []
@@ -40939,14 +40504,6 @@
         }
       ],
       "parameters": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
     }
   ],
   "layers": [
@@ -40988,10 +40545,6 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-    },
-    {
-      "name": "Tween",
-      "type": "Tween::TweenBehavior"
     }
   ]
 }
