@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.322
+    "zoomFactor": 0.274
   },
   "objectsGroups": [
     {
@@ -37517,6 +37517,79 @@
                     "name": "centre",
                     "x": 0,
                     "y": 5
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tazer_hitbox",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1429,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 2.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 2.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 2.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 2.5
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 2.5
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 2.5
                   },
                   "customCollisionMask": []
                 }
