@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.298
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
@@ -14676,21 +14676,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "GUI",
-      "locked": false,
-      "name": "Wheel_info",
-      "width": 0,
-      "x": 0,
-      "y": 560,
-      "zOrder": 209,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -17111,45 +17096,6 @@
       ]
     },
     {
-      "name": "energy",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "ammo1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\energy.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Placeholder",
       "tags": "",
       "type": "Sprite",
@@ -17629,25 +17575,6 @@
           ]
         }
       ]
-    },
-    {
-      "bold": false,
-      "italic": false,
-      "name": "Wheel_info",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "behaviors": [],
-      "string": "Wheel using: [number]",
-      "font": "",
-      "characterSize": 30,
-      "color": {
-        "b": 156,
-        "g": 156,
-        "r": 156
-      }
     },
     {
       "additive": true,
