@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.274
+    "zoomFactor": 0.418
   },
   "objectsGroups": [
     {
@@ -35914,6 +35914,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "Wheel_info",
+      "width": 0,
+      "x": 0,
+      "y": 560,
+      "zOrder": 1250,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -39283,6 +39298,25 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Wheel_info",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Wheel using: [number]",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 156,
+        "g": 156,
+        "r": 156
+      }
     }
   ],
   "events": [
