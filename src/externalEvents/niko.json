@@ -5843,6 +5843,18 @@
                 "\"Wheel using: \" + GlobalVariableString(Wheel_stuff.wheel)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Wheel_info2",
+                "=",
+                "\"Wheel old: \" + GlobalVariableString(Wheel_stuff.old wheel)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -5953,7 +5965,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5979,36 +5991,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Wheel_stuff.old wheel",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "VarGlobal"
                   },
                   "parameters": [
@@ -6025,11 +6007,33 @@
                   },
                   "parameters": [
                     "Wheel_stuff.wheel2",
-                    "!=",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Weapon_holding",
+                    "=",
                     "0"
                   ],
                   "subInstructions": []
-                },
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -6046,9 +6050,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Weapon_holding",
+                    "Wheel_stuff.old wheel",
                     "=",
-                    "0"
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -6160,6 +6164,18 @@
                     "q"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Wheel_stuff.wheel1",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -6182,7 +6198,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6200,36 +6216,6 @@
           ],
           "actions": [],
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Wheel_stuff.old wheel",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -6268,8 +6254,8 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel1",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
@@ -6301,15 +6287,37 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel3",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Weapon_holding",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -6326,9 +6334,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Weapon_holding",
+                    "Wheel_stuff.old wheel",
                     "=",
-                    "0"
+                    "2"
                   ],
                   "subInstructions": []
                 }
@@ -6440,6 +6448,18 @@
                     "q"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Wheel_stuff.wheel2",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -6462,7 +6482,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6480,36 +6500,6 @@
           ],
           "actions": [],
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Wheel_stuff.old wheel",
-                    "=",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -6548,8 +6538,8 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel2",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
@@ -6581,15 +6571,37 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel4",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Weapon_holding",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -6606,9 +6618,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Weapon_holding",
+                    "Wheel_stuff.old wheel",
                     "=",
-                    "0"
+                    "3"
                   ],
                   "subInstructions": []
                 }
@@ -6720,6 +6732,18 @@
                     "q"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Wheel_stuff.wheel3",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -6742,7 +6766,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6760,36 +6784,6 @@
           ],
           "actions": [],
           "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Wheel_stuff.old wheel",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
             {
               "disabled": false,
               "folded": false,
@@ -6828,8 +6822,8 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel3",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
@@ -6861,15 +6855,37 @@
                           },
                           "parameters": [
                             "Wheel_stuff.wheel5",
-                            "!=",
-                            "0"
+                            "=",
+                            "GlobalVariable(Weapon_holding)"
                           ],
                           "subInstructions": []
                         }
                       ]
                     }
                   ]
-                },
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Weapon_holding",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -6886,9 +6902,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Weapon_holding",
+                    "Wheel_stuff.old wheel",
                     "=",
-                    "0"
+                    "5"
                   ],
                   "subInstructions": []
                 }
@@ -7000,6 +7016,18 @@
                     "q"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Wheel_stuff.wheel4",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -7022,7 +7050,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7048,36 +7076,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": [],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "Wheel_stuff.old wheel",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "VarGlobal"
                   },
                   "parameters": [
@@ -7094,11 +7092,33 @@
                   },
                   "parameters": [
                     "Wheel_stuff.wheel4",
-                    "!=",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Weapon_holding",
+                    "=",
                     "0"
                   ],
                   "subInstructions": []
-                },
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "inverted": false,
@@ -7115,9 +7135,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Weapon_holding",
+                    "Wheel_stuff.old wheel",
                     "=",
-                    "0"
+                    "5"
                   ],
                   "subInstructions": []
                 }
@@ -7227,6 +7247,18 @@
                   "parameters": [
                     "",
                     "q"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Wheel_stuff.wheel5",
+                    "=",
+                    "GlobalVariable(Weapon_holding)"
                   ],
                   "subInstructions": []
                 }

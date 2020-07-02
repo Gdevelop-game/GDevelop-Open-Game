@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.226
+    "zoomFactor": 0.538
   },
   "objectsGroups": [
     {
@@ -35929,6 +35929,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "Wheel_info2",
+      "width": 0,
+      "x": 0,
+      "y": 490,
+      "zOrder": 1251,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -39302,6 +39317,25 @@
     {
       "bold": false,
       "italic": false,
+      "name": "Wheel_info2",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Wheel old: [number]",
+      "font": "",
+      "characterSize": 30,
+      "color": {
+        "b": 156,
+        "g": 156,
+        "r": 156
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
       "name": "Wheel_info",
       "smoothed": true,
       "tags": "",
@@ -39948,7 +39982,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -40960,7 +40994,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
