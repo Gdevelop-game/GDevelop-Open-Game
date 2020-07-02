@@ -2029,7 +2029,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -2415,7 +2415,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -2502,7 +2502,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2827,7 +2827,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -3381,7 +3381,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -4057,7 +4057,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -4314,7 +4314,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4672,7 +4672,7 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
                     "",
@@ -5821,7 +5821,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Weapon system wheel",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5841,18 +5841,6 @@
                 "Wheel_info",
                 "=",
                 "\"Wheel using: \" + GlobalVariableString(Wheel_stuff.wheel)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Wheel_info2",
-                "=",
-                "\"Wheel old: \" + GlobalVariableString(Wheel_stuff.old wheel)"
               ],
               "subInstructions": []
             }
@@ -5965,7 +5953,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6210,7 +6198,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6465,23 +6453,23 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "q"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "VarGlobal"
                   },
                   "parameters": [
                     "Wheel_stuff.wheel2",
                     "=",
                     "GlobalVariable(Weapon_holding)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
                   ],
                   "subInstructions": []
                 }
@@ -6506,7 +6494,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6802,7 +6790,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7098,7 +7086,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
