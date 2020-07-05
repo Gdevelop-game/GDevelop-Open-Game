@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.586
+    "zoomFactor": 0.13
   },
   "objectsGroups": [
     {
@@ -131,6 +131,10 @@
     },
     {
       "name": "using_phone",
+      "value": ""
+    },
+    {
+      "name": "phone_time",
       "value": ""
     }
   ],
@@ -7645,7 +7649,7 @@
       "customSize": true,
       "height": 280,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "grass_tiled",
       "width": 2730,
       "x": -2870,
@@ -7974,7 +7978,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -7994,7 +7998,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8014,7 +8018,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8034,7 +8038,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8094,7 +8098,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8114,7 +8118,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8134,7 +8138,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -8154,7 +8158,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11354,7 +11358,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11374,7 +11378,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11394,7 +11398,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11414,7 +11418,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11634,7 +11638,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11654,7 +11658,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11674,7 +11678,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -11694,7 +11698,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -26651,7 +26655,12 @@
       "x": -2100,
       "y": 560,
       "zOrder": 26,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -38603,88 +38612,8 @@
       "locked": false,
       "name": "Fences",
       "width": 70,
-      "x": 4186.02,
-      "y": 2289.11,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "width": 70,
-      "x": 4186.02,
-      "y": 2219.11,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "width": 70,
-      "x": 4186.02,
-      "y": 2149.11,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "width": 70,
       "x": 2900,
       "y": 1080,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "width": 70,
-      "x": 4186.02,
-      "y": 2359.11,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -47965,7 +47894,7 @@
       "customSize": true,
       "height": 350,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "grass_tiled",
       "width": 2100,
       "x": -140,
@@ -55942,6 +55871,52 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_phone_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_phone_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -59871,6 +59846,205 @@
       "width": 32,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "name": "phone_wifi",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\wifi_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 2
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\wifi_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\wifi_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 8
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\wifi_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 11
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "phone_battery",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\phone_battery.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "phone_time",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "00:00",
+      "font": "",
+      "characterSize": 14,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
     }
   ],
   "events": [

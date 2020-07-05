@@ -415,7 +415,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "animation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -447,6 +447,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "phone",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -459,6 +471,16 @@
                 "Niko",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayAnimation"
+              },
+              "parameters": [
+                "Niko"
               ],
               "subInstructions": []
             }
@@ -492,6 +514,18 @@
                 "0"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "phone",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -504,6 +538,16 @@
                 "Niko",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayAnimation"
+              },
+              "parameters": [
+                "Niko"
               ],
               "subInstructions": []
             }
