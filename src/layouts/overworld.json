@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.49
+    "zoomFactor": 0.034
   },
   "objectsGroups": [
     {
@@ -48677,7 +48677,7 @@
       "locked": false,
       "name": "road_block",
       "width": 0,
-      "x": -3234,
+      "x": -3232,
       "y": 6300,
       "zOrder": 12610,
       "numberProperties": [],
@@ -48762,11 +48762,11 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 2590,
+      "height": 9380,
       "layer": "",
       "locked": true,
       "name": "grass_tiled",
-      "width": 8610,
+      "width": 10710,
       "x": -5950,
       "y": 7490,
       "zOrder": -11,
@@ -48794,7 +48794,7 @@
       "customSize": true,
       "height": 2940,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "Water",
       "width": 2310,
       "x": -6090,
@@ -55329,7 +55329,7 @@
       "width": 70,
       "x": -2940,
       "y": 7630,
-      "zOrder": 5,
+      "zOrder": 4,
       "numberProperties": [
         {
           "name": "animation",
@@ -55346,10 +55346,10 @@
       "layer": "",
       "locked": false,
       "name": "road_3",
-      "width": 4270,
+      "width": 7420,
       "x": -2870,
       "y": 7630,
-      "zOrder": 12617,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -55361,10 +55361,10 @@
       "layer": "",
       "locked": false,
       "name": "road_3",
-      "width": 2450,
-      "x": -5950,
+      "width": 1820,
+      "x": -5320,
       "y": 7630,
-      "zOrder": 12617,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -55379,13 +55379,9283 @@
       "width": 70,
       "x": -3500,
       "y": 7630,
-      "zOrder": 5,
+      "zOrder": 4,
       "numberProperties": [
         {
           "name": "animation",
           "value": 8
         }
       ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 1890,
+      "x": -5320,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 3920,
+      "x": -2940,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6090,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -5530,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2100,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 140,
+      "x": 770,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2100,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 140,
+      "x": 980,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 2940,
+      "x": 1120,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 5950,
+      "x": -5250,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 6090,
+      "x": -5320,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1540,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 700,
+      "y": 8260,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 2940,
+      "x": 1120,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 1540,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 1120,
+      "y": 8260,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 2800,
+      "x": 1190,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6160,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": 4340,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 8960,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 4550,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 5250,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 3990,
+      "y": 8260,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 5530,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": 4270,
+      "y": 8120,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1680,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": 910,
+      "y": 8120,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 1820,
+      "x": -5180,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 2940,
+      "x": 1190,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 3990,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 700,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6370,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -5810,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 490,
+      "x": -5810,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5320,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 1120,
+      "y": 8190,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5880,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 8960,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": -5880,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 5250,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": -5320,
+      "y": 8260,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 5670,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": -5600,
+      "y": 8120,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4550,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 6790,
+      "x": -2800,
+      "y": 13510,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 2450,
+      "x": -5250,
+      "y": 13510,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 2450,
+      "x": -5320,
+      "y": 13580,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 4060,
+      "x": -2870,
+      "y": 13580,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 3080,
+      "x": 1190,
+      "y": 13580,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 6720,
+      "x": -5530,
+      "y": 13860,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 3080,
+      "x": 1190,
+      "y": 13860,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 6650,
+      "x": -5390,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 2870,
+      "x": 1260,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 5600,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": 4060,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 4620,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 3990,
+      "y": 8260,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 9240,
+      "x": -5250,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 6790,
+      "x": -2800,
+      "y": 16100,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 2450,
+      "x": -5250,
+      "y": 16100,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 2450,
+      "x": -5320,
+      "y": 16170,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 4060,
+      "x": -2870,
+      "y": 16170,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 2870,
+      "x": 1190,
+      "y": 16170,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 7000,
+      "x": -5810,
+      "y": 16450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 3360,
+      "x": 1190,
+      "y": 16450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 6650,
+      "x": -5390,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 2870,
+      "x": 1260,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "width": 10360,
+      "x": -5810,
+      "y": 16660,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2380,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -5810,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 1960,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": -5320,
+      "y": 14140,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2310,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -5530,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2380,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": 4340,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1960,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "width": 70,
+      "x": 3990,
+      "y": 14140,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2310,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": 4060,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2240,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": -5600,
+      "y": 14000,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2240,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": 4270,
+      "y": 14000,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 280,
+      "x": 4060,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4130,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 8050,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4200,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 3990,
+      "y": 13510,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 13650,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4130,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 13930,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": 4340,
+      "y": 13860,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 13720,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4200,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 13860,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 3990,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 13930,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 13650,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5460,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5530,
+      "y": 13790,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 13720,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 13860,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5320,
+      "y": 14070,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5320,
+      "y": 13510,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3220,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "width": 70,
+      "x": -3220,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3220,
+      "y": 7770,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3220,
+      "y": 7840,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3150,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3290,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -3430,
+      "y": 7840,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 210,
+      "x": -3150,
+      "y": 7840,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3360,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 3780,
+      "x": -3010,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -3080,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 910,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 770,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 1120,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 910,
+      "y": 8050,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 840,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 910,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "width": 210,
+      "x": -5390,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5460,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 8050,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 280,
+      "x": -5600,
+      "y": 7700,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5530,
+      "y": 7910,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 7980,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 16240,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5460,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5530,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5600,
+      "y": 16310,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5320,
+      "y": 16100,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": -5880,
+      "y": 16660,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 3990,
+      "y": 16100,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4550,
+      "y": 16660,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 16240,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4130,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4270,
+      "y": 16310,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "width": 70,
+      "x": 4200,
+      "y": 16380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6790,
+      "layer": "",
+      "locked": false,
+      "name": "beach_sand_1",
+      "width": 630,
+      "x": -6580,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 6790,
+      "layer": "",
+      "locked": false,
+      "name": "beach_sand_2",
+      "width": 70,
+      "x": -6650,
+      "y": 7630,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6650,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6650,
+      "y": 7560,
+      "zOrder": 12644,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6580,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6510,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6090,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6090,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6510,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6580,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1680,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1750,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1610,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1470,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1540,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1330,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1400,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1260,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1120,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1190,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 980,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1050,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 910,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 770,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 840,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 630,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 700,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 560,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 420,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 490,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 280,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 350,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 210,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 70,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 140,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -70,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 0,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -140,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -280,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -210,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -420,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -350,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -490,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -630,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -560,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -770,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -700,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -840,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -980,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -910,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1120,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1050,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1190,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1330,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1260,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1470,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1400,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1540,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1680,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1610,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1820,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1750,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1890,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2030,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -1960,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2170,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2100,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2240,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2380,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2310,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2520,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2450,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2590,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2730,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2660,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -2800,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4620,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4690,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4550,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4480,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4340,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4410,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4200,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4270,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4130,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3990,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4060,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3850,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3920,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3780,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3640,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3710,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3500,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3570,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3430,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3290,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3360,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3150,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3220,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3080,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2940,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 3010,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2800,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2870,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2730,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2590,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2660,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2450,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2520,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2380,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2240,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2310,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2100,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2170,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 2030,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1890,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1960,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 1820,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3990,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3920,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4060,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4200,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4130,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4340,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4270,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4410,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4550,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4480,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4690,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4620,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4760,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4900,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4830,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5040,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -4970,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5110,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5250,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5180,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5390,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5320,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5460,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5600,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5530,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5740,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5670,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5810,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5950,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -5880,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 7490,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3640,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3780,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3710,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -3850,
+      "y": 7420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9450,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9380,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9310,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9240,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9170,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9100,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9030,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8960,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8890,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8820,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8750,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8680,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8610,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8540,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8470,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8400,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8330,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8260,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8190,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8120,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 8050,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7980,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7910,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7840,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7770,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7490,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7560,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7630,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 7700,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11270,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11200,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11130,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11060,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10990,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10920,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10850,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10780,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10710,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10640,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10570,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10500,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10430,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10360,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10290,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10220,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10150,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10080,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 10010,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9940,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9870,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9800,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9730,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9520,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9590,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 9660,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11550,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11480,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11410,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11340,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13370,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13300,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13230,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13160,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13090,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13020,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12950,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12880,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12810,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12740,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12670,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12600,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12530,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12460,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12390,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12320,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12250,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12180,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12110,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 12040,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11970,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11900,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11830,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11620,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11690,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 11760,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13650,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13580,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13510,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13440,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15470,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15400,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15330,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15260,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15190,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15120,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15050,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14980,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14910,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14840,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14770,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14700,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14630,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14560,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14490,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14420,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14350,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14280,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14210,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14140,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14070,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 14000,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13930,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13720,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13790,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 13860,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15750,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15680,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15610,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15540,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16800,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16730,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16660,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16590,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16520,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16450,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16380,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16310,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16240,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16170,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16100,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 16030,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15820,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15890,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 4760,
+      "y": 15960,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14910,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14770,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14840,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14630,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14700,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14560,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14490,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15400,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15260,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15330,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15120,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15190,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15050,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 14980,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15890,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15750,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15820,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15610,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15680,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15540,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15470,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16380,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16240,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16310,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16100,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16170,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16030,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 15960,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16730,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16800,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16590,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16660,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16520,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6020,
+      "y": 16450,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6300,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6370,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6440,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6160,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6230,
+      "y": 7560,
+      "zOrder": 12643,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6440,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6370,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6300,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6230,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -6160,
+      "y": 14420,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 9450,
+      "layer": "",
+      "locked": false,
+      "name": "Water",
+      "width": 2170,
+      "x": -8120,
+      "y": 7420,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2940,
+      "layer": "",
+      "locked": false,
+      "name": "Water",
+      "width": 2100,
+      "x": 2660,
+      "y": 4550,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 15610,
+      "layer": "",
+      "locked": true,
+      "name": "Water",
+      "width": 3430,
+      "x": 4760,
+      "y": 1260,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3290,
+      "layer": "",
+      "locked": false,
+      "name": "Water",
+      "width": 70,
+      "x": 4690,
+      "y": 1260,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2590,
+      "layer": "",
+      "locked": false,
+      "name": "Water",
+      "width": 2030,
+      "x": -8120,
+      "y": 4830,
+      "zOrder": 12645,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 7350,
+      "x": -2730,
+      "y": 7490,
+      "zOrder": 12646,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 9240,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": 4620,
+      "y": 7490,
+      "zOrder": 12647,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 2310,
+      "x": -5950,
+      "y": 7490,
+      "zOrder": 12648,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": -3640,
+      "y": 7560,
+      "zOrder": 12649,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": -2870,
+      "y": 7560,
+      "zOrder": 12650,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 5950,
+      "x": -5250,
+      "y": 8260,
+      "zOrder": 12651,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 2800,
+      "x": 1190,
+      "y": 8260,
+      "zOrder": 12652,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 5110,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": 3850,
+      "y": 8400,
+      "zOrder": 12653,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 9100,
+      "x": -5250,
+      "y": 13370,
+      "zOrder": 12654,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 4970,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": -5250,
+      "y": 8400,
+      "zOrder": 12655,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 9240,
+      "x": -5250,
+      "y": 14140,
+      "zOrder": 12656,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1820,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": 3850,
+      "y": 14280,
+      "zOrder": 12657,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1820,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 140,
+      "x": -5250,
+      "y": 14280,
+      "zOrder": 12658,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "sand_1",
+      "width": 8960,
+      "x": -5110,
+      "y": 15960,
+      "zOrder": 12659,
+      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -56866,6 +66136,122 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\Road\\map_edge\\tile_14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\Road\\map_edge\\tile_18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\Road\\map_edge\\tile_17.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\Road\\map_edge\\tile_19.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\Road\\map_edge\\tile_20.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -60045,6 +69431,46 @@
         "g": 255,
         "r": 255
       }
+    },
+    {
+      "height": 32,
+      "name": "road_4",
+      "tags": "",
+      "texture": "assets\\Road\\road\\tile_63-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 32,
+      "name": "beach_sand_1",
+      "tags": "",
+      "texture": "assets\\Road\\map_edge\\tile_15.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 32,
+      "name": "beach_sand_2",
+      "tags": "",
+      "texture": "assets\\Road\\map_edge\\tile_19.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 32,
+      "name": "sand_1",
+      "tags": "",
+      "texture": "assets\\Road\\side_walk\\sand.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
     }
   ],
   "events": [
