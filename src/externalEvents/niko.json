@@ -9,7 +9,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "hide",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -42,7 +42,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -749,7 +749,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "leaves",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1256,7 +1256,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2169,7 +2169,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2306,6 +2306,18 @@
                   "parameters": [
                     "Gun1_ammo",
                     "!=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
                     "0"
                   ],
                   "subInstructions": []
@@ -2698,6 +2710,18 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
@@ -2909,7 +2933,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3024,7 +3048,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3035,6 +3059,18 @@
                   "parameters": [
                     "",
                     "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -3506,6 +3542,18 @@
                   "parameters": [
                     "Gun4_ammo",
                     "!=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
                     "0"
                   ],
                   "subInstructions": []
@@ -4189,6 +4237,18 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": [],
@@ -4836,7 +4896,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4847,6 +4907,18 @@
                   "parameters": [
                     "",
                     "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
