@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.058
+    "zoomFactor": 0.562
   },
   "objectsGroups": [
     {
@@ -67084,7 +67084,7 @@
       "width": 630,
       "x": -8470,
       "y": 15400,
-      "zOrder": 1,
+      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -69598,7 +69598,7 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 4
+          "value": 5
         }
       ],
       "stringProperties": [],
@@ -69609,10 +69609,10 @@
       "customSize": true,
       "height": 910,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "Water",
       "width": 1190,
-      "x": -7140,
+      "x": -7210,
       "y": 16800,
       "zOrder": 12,
       "numberProperties": [],
@@ -69646,6 +69646,46 @@
       "y": 7490,
       "zOrder": 12643474,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -7070,
+      "y": 16940,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": -7070,
+      "y": 17010,
+      "zOrder": 12616,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -74878,7 +74918,7 @@
               "parameters": [
                 "grass_tiled",
                 "=",
-                "-11"
+                "-50"
               ],
               "subInstructions": []
             },
@@ -74903,6 +74943,54 @@
                 "Water",
                 "=",
                 "-100"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "sand_2",
+                "=",
+                "-11"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "sand_1",
+                "=",
+                "-11"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "beach_sand_2",
+                "=",
+                "-11"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "beach_sand_1",
+                "=",
+                "-11"
               ],
               "subInstructions": []
             }
