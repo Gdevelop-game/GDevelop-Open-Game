@@ -217,7 +217,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "swimming",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -405,18 +405,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "10"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "TopDownMovementBehavior::MaxSpeed"
               },
               "parameters": [
@@ -449,18 +437,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "9"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -575,32 +551,7 @@
                 "value": "BuiltinCommonInstructions::And"
               },
               "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "!=",
-                    "10"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "!=",
-                    "9"
-                  ],
-                  "subInstructions": []
-                }
-              ]
+              "subInstructions": []
             },
             {
               "type": {
@@ -839,7 +790,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "animation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -897,30 +848,7 @@
               "subInstructions": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlayAnimation"
-              },
-              "parameters": [
-                "Niko"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "actions": [],
           "events": []
         },
         {
@@ -976,30 +904,7 @@
               "subInstructions": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "PlayAnimation"
-              },
-              "parameters": [
-                "Niko"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "actions": [],
           "events": []
         },
         {
@@ -1118,32 +1023,6 @@
                 "Placeholder"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "Placeholder.X()",
-                "=",
-                "Placeholder.Y()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "Placeholder.Angle()"
-              ],
-              "subInstructions": []
             }
           ],
           "events": []
@@ -1172,20 +1051,7 @@
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "flame_thrower_fire",
-                "=",
-                "Niko.ZOrder()"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "actions": [],
           "events": []
         }
       ],
@@ -1704,7 +1570,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1811,20 +1677,6 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "flame_thrower_fire_collision",
-                "=",
-                "Niko.PointX(\"f_t_collision\")",
-                "=",
-                "Niko.PointY(\"f_t_collision\")"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -2579,18 +2431,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Cache"
                   },
                   "parameters": [
@@ -2690,18 +2530,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -2790,20 +2618,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -2916,18 +2730,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -2936,20 +2738,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun1",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -3087,18 +2875,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "3"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -3191,20 +2967,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -3314,18 +3076,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -3334,20 +3084,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun2",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -3448,18 +3184,6 @@
                     "Rotate_mouse",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "4"
                   ],
                   "subInstructions": []
                 },
@@ -3738,18 +3462,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -3758,20 +3470,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun3",
-                    "Niko.PointX(\"f_t_collision\")",
-                    "Niko.PointY(\"f_t_collision\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -3926,18 +3624,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -4061,20 +3747,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Niko.PointX(\"shoot\")",
-                        "Niko.PointY(\"shoot\")",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4167,20 +3839,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Niko.PointX(\"shoot\")",
-                        "Niko.PointY(\"shoot\")",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4304,18 +3962,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -4324,20 +3970,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun4",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -4614,18 +4246,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "6"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -4749,20 +4369,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Niko.PointX(\"shoot\")",
-                        "Niko.PointY(\"shoot\")",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4855,20 +4461,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Niko.PointX(\"shoot\")",
-                        "Niko.PointY(\"shoot\")",
-                        "\"\""
-                      ],
-                      "subInstructions": []
-                    },
                     {
                       "type": {
                         "inverted": false,
@@ -4992,18 +4584,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -5012,20 +4592,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun5",
-                    "Niko.PointX(\"shoot\")",
-                    "Niko.PointY(\"shoot\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -5302,18 +4868,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "7"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "Montre"
                   },
                   "parameters": [
@@ -5416,20 +4970,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "tazer_hitbox",
-                        "=",
-                        "Niko.PointX(\"hitbox\")",
-                        "=",
-                        "Niko.PointY(\"hitbox\")"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
@@ -5456,20 +4996,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "tazer_hitbox",
-                            "Niko.PointX(\"hitbox\")",
-                            "Niko.PointY(\"hitbox\")",
-                            "\"\""
-                          ],
-                          "subInstructions": []
-                        },
                         {
                           "type": {
                             "inverted": false,
@@ -5619,18 +5145,6 @@
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Niko.PointX(\"hitbox\")",
-                    "Niko.PointY(\"hitbox\")"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
                     "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
@@ -5639,20 +5153,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "mele1",
-                    "Niko.PointX(\"hitbox\")",
-                    "Niko.PointY(\"hitbox\")",
-                    "\"\""
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
