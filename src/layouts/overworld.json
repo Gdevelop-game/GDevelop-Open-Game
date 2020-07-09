@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.274
+    "zoomFactor": 0.37
   },
   "objectsGroups": [
     {
@@ -85,7 +85,11 @@
     },
     {
       "name": "East_doors",
-      "objects": []
+      "objects": [
+        {
+          "name": "door6"
+        }
+      ]
     }
   ],
   "variables": [
@@ -70819,7 +70823,337 @@
       "width": 70,
       "x": 3220,
       "y": 1120,
-      "zOrder": 12643487,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 280,
+      "x": -2800,
+      "y": 3640,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": -2590,
+      "y": 3360,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 2170,
+      "x": -2520,
+      "y": 3360,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 210,
+      "x": 3220,
+      "y": 1120,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1680,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": 3360,
+      "y": -560,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 4690,
+      "x": -1330,
+      "y": -560,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": -1330,
+      "y": -490,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 2030,
+      "x": -3290,
+      "y": -280,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2380,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": -3290,
+      "y": -210,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 560,
+      "x": -3850,
+      "y": 2100,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1540,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": -3850,
+      "y": 2170,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 210,
+      "x": -3780,
+      "y": 3640,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 4270,
+      "x": -7840,
+      "y": 7420,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 7420,
+      "x": -2730,
+      "y": 7420,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Water_cover",
+      "width": 70,
+      "x": -350,
+      "y": 3430,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 420,
+      "y": 2240,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 490,
+      "y": 2240,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "width": 70,
+      "x": 560,
+      "y": 2240,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "door6",
+      "width": 210,
+      "x": 1940,
+      "y": 1120,
+      "zOrder": 12643488,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "trash_movable",
+      "width": 70,
+      "x": 2310,
+      "y": 2380,
+      "zOrder": 1254,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "trash_movable",
+      "width": 70,
+      "x": 2520,
+      "y": 2100,
+      "zOrder": 1254,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -72645,6 +72979,84 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\Road\\map_edge\\tile_20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "d",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\door.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "door6",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\door.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -76272,7 +76684,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -76366,6 +76778,18 @@
                 "-11"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Water_cover",
+                "=",
+                "-100"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -76379,7 +76803,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -76399,6 +76823,79 @@
                 "road",
                 "=",
                 "-10"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebugMessages::popup"
+              },
+              "parameters": [
+                "",
+                "\"GAME CONTROLS\nw = move up\na  = move left\ns = move down\nd = move right\n\nup = phone out\ndown = phone in \nreturn = unlock phone & enter houses\n\ne = pick gun\nq = drop gun\n\np = show controls\n\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "p"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebugMessages::popup"
+              },
+              "parameters": [
+                "",
+                "\"GAME CONTROLS\nw = move up\na  = move left\ns = move down\nd = move right\n\nup = phone out\ndown = phone in \nreturn = unlock phone & enter houses\n\ne = pick gun\nq = drop gun\n\np = show controls\n\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -76575,7 +77072,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -76803,7 +77300,7 @@
                       },
                       "parameters": [
                         "",
-                        "2",
+                        "5",
                         ""
                       ],
                       "subInstructions": []
@@ -77040,7 +77537,7 @@
                       },
                       "parameters": [
                         "",
-                        "2",
+                        "5",
                         ""
                       ],
                       "subInstructions": []
@@ -77277,7 +77774,7 @@
                       },
                       "parameters": [
                         "",
-                        "2",
+                        "5",
                         ""
                       ],
                       "subInstructions": []
@@ -77514,7 +78011,7 @@
                       },
                       "parameters": [
                         "",
-                        "2",
+                        "5",
                         ""
                       ],
                       "subInstructions": []
@@ -77587,7 +78084,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -77754,6 +78251,18 @@
               },
               "parameters": [
                 "sports_equipments_movable"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebugMessages::popup"
+              },
+              "parameters": [
+                "",
+                "\"the basetball is still under development\"",
+                ""
               ],
               "subInstructions": []
             }
