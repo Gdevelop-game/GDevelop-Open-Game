@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.226
+    "zoomFactor": 0.154
   },
   "objectsGroups": [
     {
@@ -71542,7 +71542,7 @@
           ]
         },
         {
-          "name": "Gun5",
+          "name": "Gun5-loaded",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -71551,12 +71551,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
+                  "image": "assets\\character\\Player\\Rocket_launcher_loaded.png",
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 72,
-                      "y": 35
+                      "x": 52,
+                      "y": 28
                     }
                   ],
                   "originPoint": {
@@ -71612,7 +71612,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "phone",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -71658,7 +71658,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "swim1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -71772,7 +71772,7 @@
           ]
         },
         {
-          "name": "",
+          "name": "swim2",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -71868,6 +71868,41 @@
                   "hasCustomCollisionMask": false,
                   "image": "assets\\character\\Player\\manBlue_swim_5.png",
                   "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "gun5 unloaded",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\Rocket_launcher_unloaded.png",
+                  "points": [
+                    {
+                      "name": "shoot",
+                      "x": 52,
+                      "y": 28
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -73683,18 +73718,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\gun\\rocket_launcher.png",
+                  "image": "assets\\weapons\\gun\\Rocket_launcher_item.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 6
+                    "y": 7
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 6
+                    "y": 7
                   },
                   "customCollisionMask": []
                 }
