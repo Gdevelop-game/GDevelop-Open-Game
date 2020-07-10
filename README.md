@@ -1,5 +1,5 @@
 # GDevelop Open Game  
-[![TOP.GG Badge](https://discord.com/api/guilds/614777317733957632/widget.png?style=shield)](https://discord.com/channels/723151718283477042/723311586349023312) 
+[![TOP.GG Badge](https://discord.com/api/guilds/723151718283477042/widget.png?style=shield)](https://discord.gg/PVET9HJ) 
 
 
 [![GitHub stars](https://img.shields.io/github/stars/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=Stars)](https://github.com/Gdevelop-game/GDevelop-Open-Game/) 
