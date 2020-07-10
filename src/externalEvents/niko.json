@@ -2516,7 +2516,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2627,7 +2627,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2993,7 +2993,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3391,7 +3391,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3506,7 +3506,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3637,6 +3637,57 @@
                       "parameters": [
                         "flame_thrower_fire_collision",
                         "\"gun3_ammo\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "flame_thrower_fire_collision",
+                        "bullet_obstacles",
+                        "",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CreateByName"
+                      },
+                      "parameters": [
+                        "",
+                        "flame_thrower_fire_secondary",
+                        "\"flame_thrower_fire_secondary\"",
+                        "bullet_obstacles.X() + 22",
+                        "bullet_obstacles.Y() + 22",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "flame_thrower_fire_secondary",
+                        "=",
+                        "222"
                       ],
                       "subInstructions": []
                     }
@@ -6517,7 +6568,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "bullet",
           "conditions": [],
@@ -6817,7 +6868,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Weapon system wheel",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
