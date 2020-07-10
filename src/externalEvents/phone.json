@@ -820,18 +820,6 @@
                 "40"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimationSpeedScale"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "0.3"
-              ],
-              "subInstructions": []
             }
           ],
           "events": []
@@ -873,18 +861,6 @@
                 "TopDownMovement",
                 "=",
                 "200"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimationSpeedScale"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "2"
               ],
               "subInstructions": []
             }
@@ -1143,20 +1119,7 @@
               "subInstructions": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Niko",
-                "=",
-                "8"
-              ],
-              "subInstructions": []
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "disabled": false,
@@ -1175,18 +1138,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PlayAnimation"
-                  },
-                  "parameters": [
-                    "Niko"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             },
             {
@@ -1206,30 +1158,7 @@
                   "subInstructions": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PauseAnimation"
-                  },
-                  "parameters": [
-                    "Niko"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ChangeSprite"
-                  },
-                  "parameters": [
-                    "Niko",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             }
           ]
