@@ -1,4 +1,5 @@
 # GDevelop Open Game  
+[![GitHub stars](https://img.shields.io/github/stars/ahmadawais/shades-of-purple-hyper.svg?style=social&label=Stars)](https://github.com/Gdevelop-game/GDevelop-Open-Game/) 
 [![Auto Build](https://github.com/Gdevelop-game/GDevelop-Open-Game/workflows/Auto%20Build/badge.svg)  ](https://gdevelop-game.github.io/GDevelop-Open-Game/)
 
 This Repository is an Attempt to create a GTA-like game using **GDevelop**. The name is likely to change later on. Moereover,
