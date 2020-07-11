@@ -19,7 +19,7 @@ To download the pc version, go on [github actions's auto build workflow](https:/
 ### I am pumped for this, how can I contribute?
 
 * Firstly thanks a lot for your interest in this project! This is not an easy task and hence we would love to have you onboard with us.
-* For starters, you can join our [discord channel](https://discord.gg/xKCf8et), you will be guided on how to contribute to the game.
+* For starters, you can join our [discord channel](https://discord.gg/PVET9HJ), you will be guided on how to contribute to the game.
 
 ### Development Roadmap
 
