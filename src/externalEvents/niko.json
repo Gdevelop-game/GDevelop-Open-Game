@@ -3646,6 +3646,21 @@
                 {
                   "disabled": false,
                   "folded": false,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If fire in collision with burnable object, set it on fire",
+                  "comment2": ""
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3673,8 +3688,8 @@
                         "",
                         "flame_thrower_fire_secondary",
                         "\"flame_thrower_fire_secondary\"",
-                        "bullet_obstacles.X() + 22",
-                        "bullet_obstacles.Y() + 22",
+                        "flame_thrower_fire_collision.PointX(\"CenterBurning\")",
+                        "flame_thrower_fire_collision.PointY(\"CenterBurning\")",
                         ""
                       ],
                       "subInstructions": []
