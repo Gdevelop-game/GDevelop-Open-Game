@@ -2516,7 +2516,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2627,7 +2627,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2993,7 +2993,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3391,7 +3391,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3506,7 +3506,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3690,7 +3690,7 @@
                         "\"flame_thrower_fire_secondary\"",
                         "flame_thrower_fire_collision.PointX(\"CenterBurning\")",
                         "flame_thrower_fire_collision.PointY(\"CenterBurning\")",
-                        ""
+                        "\"\""
                       ],
                       "subInstructions": []
                     },
@@ -3703,6 +3703,18 @@
                         "flame_thrower_fire_secondary",
                         "=",
                         "222"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "flame_thrower_fire_secondary",
+                        "=",
+                        "Placeholder.Angle()"
                       ],
                       "subInstructions": []
                     }
