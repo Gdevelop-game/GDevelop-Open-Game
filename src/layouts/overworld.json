@@ -73305,7 +73305,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\sprite_objects\\flame thrower fire collision.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "CenterBurning",
+                      "x": 50,
+                      "y": 16
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
