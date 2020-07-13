@@ -7193,7 +7193,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -7238,7 +7238,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "b"
                   ],
                   "subInstructions": []
                 },
@@ -7501,7 +7501,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -7546,7 +7546,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "b"
                   ],
                   "subInstructions": []
                 },
@@ -7809,7 +7809,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -7854,7 +7854,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "b"
                   ],
                   "subInstructions": []
                 },
@@ -8117,7 +8117,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -8162,7 +8162,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "b"
                   ],
                   "subInstructions": []
                 },
@@ -8374,7 +8374,7 @@
                   },
                   "parameters": [
                     "",
-                    "Left"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -8431,7 +8431,7 @@
                   },
                   "parameters": [
                     "",
-                    "Right"
+                    "b"
                   ],
                   "subInstructions": []
                 },
@@ -8454,6 +8454,18 @@
                   },
                   "parameters": [
                     "Weapon_holding",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "using_phone",
                     "=",
                     "0"
                   ],
@@ -8522,6 +8534,211 @@
               "events": []
             }
           ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Wheel_stuff.wheel",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Wheel_stuff.wheel",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Wheel_stuff.wheel",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Wheel_stuff.wheel",
+                "=",
+                "4"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Num5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Wheel_stuff.wheel",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "parameters": []
