@@ -61,6 +61,18 @@
               },
               "parameters": [],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Weapon_holding",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
