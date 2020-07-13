@@ -22,7 +22,7 @@
     "gridWidth": 32,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.5288
+    "zoomFactor": 0.6456
   },
   "objectsGroups": [],
   "variables": [],
@@ -32,10 +32,10 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "ButtonBeginGame",
       "width": 0,
-      "x": 886,
+      "x": 900,
       "y": 286,
       "zOrder": 2,
       "numberProperties": [],
@@ -50,8 +50,8 @@
       "locked": false,
       "name": "TextBeginGame",
       "width": 0,
-      "x": 923,
-      "y": 296,
+      "x": 939,
+      "y": 297,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -62,10 +62,10 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "ButtonQuitGame",
       "width": 0,
-      "x": 888,
+      "x": 900,
       "y": 446,
       "zOrder": 2,
       "numberProperties": [],
@@ -80,7 +80,7 @@
       "locked": false,
       "name": "TextQuitGame",
       "width": 0,
-      "x": 937,
+      "x": 947,
       "y": 457,
       "zOrder": 3,
       "numberProperties": [],
@@ -107,10 +107,10 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "ButtonSettings",
       "width": 0,
-      "x": 890,
+      "x": 900,
       "y": 368,
       "zOrder": 2,
       "numberProperties": [],
@@ -125,8 +125,8 @@
       "locked": false,
       "name": "TextSettings",
       "width": 0,
-      "x": 953,
-      "y": 381,
+      "x": 957,
+      "y": 379,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -141,6 +141,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -289,7 +298,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 3,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 3,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Begin Game",
       "font": "",
       "characterSize": 20,
@@ -306,6 +325,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -384,6 +412,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -464,7 +501,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Settings",
       "font": "",
       "characterSize": 20,
@@ -483,7 +530,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 2,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Quit Game",
       "font": "",
       "characterSize": 20,
@@ -640,6 +697,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "InteractiveButton",
       "type": "Button::InteractiveButton"

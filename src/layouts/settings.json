@@ -19,8 +19,8 @@
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
-    "gridWidth": 32,
-    "snap": true,
+    "gridWidth": 375,
+    "snap": false,
     "windowMask": false,
     "zoomFactor": 0.394
   },
@@ -52,8 +52,8 @@
       "locked": false,
       "name": "settingshadows",
       "width": 0,
-      "x": 169,
-      "y": 202,
+      "x": 281,
+      "y": 200,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -67,8 +67,8 @@
       "locked": false,
       "name": "shadows",
       "width": 0,
-      "x": 204,
-      "y": 215,
+      "x": 314,
+      "y": 212,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -82,8 +82,8 @@
       "locked": false,
       "name": "Settings",
       "width": 0,
-      "x": 426,
-      "y": 35,
+      "x": 637,
+      "y": 24,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -102,8 +102,8 @@
       "locked": false,
       "name": "settingsound",
       "width": 0,
-      "x": 432,
-      "y": 202,
+      "x": 657,
+      "y": 200,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -117,8 +117,8 @@
       "locked": false,
       "name": "sound",
       "width": 0,
-      "x": 481,
-      "y": 215,
+      "x": 705,
+      "y": 212,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -132,8 +132,8 @@
       "locked": false,
       "name": "settingfullscreen",
       "width": 0,
-      "x": 691,
-      "y": 201,
+      "x": 1031,
+      "y": 200,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -147,8 +147,8 @@
       "locked": false,
       "name": "Fullscreen",
       "width": 0,
-      "x": 722,
-      "y": 213,
+      "x": 1057,
+      "y": 212,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -162,8 +162,8 @@
       "locked": false,
       "name": "Volume",
       "width": 0,
-      "x": 445,
-      "y": 321,
+      "x": 646,
+      "y": 318,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -177,8 +177,8 @@
       "locked": false,
       "name": "volplus",
       "width": 0,
-      "x": 681,
-      "y": 424,
+      "x": 999,
+      "y": 429,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -192,7 +192,7 @@
       "locked": false,
       "name": "volminus",
       "width": 0,
-      "x": 371,
+      "x": 488,
       "y": 425,
       "zOrder": 10,
       "numberProperties": [],
@@ -207,8 +207,8 @@
       "locked": false,
       "name": "volumevolume",
       "width": 0,
-      "x": 536,
-      "y": 437,
+      "x": 749,
+      "y": 434,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -222,8 +222,8 @@
       "locked": false,
       "name": "plus",
       "width": 0,
-      "x": 682,
-      "y": 464,
+      "x": 1005,
+      "y": 469,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -237,8 +237,8 @@
       "locked": false,
       "name": "minus",
       "width": 0,
-      "x": 380,
-      "y": 456,
+      "x": 499,
+      "y": 469,
       "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
@@ -246,14 +246,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 100,
       "layer": "",
       "locked": false,
       "name": "back",
-      "width": 0,
+      "width": 101,
       "x": 14,
-      "y": 543,
+      "y": 582,
       "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
@@ -267,8 +267,8 @@
       "locked": false,
       "name": "goback",
       "width": 0,
-      "x": 32,
-      "y": 555,
+      "x": 53,
+      "y": 611,
       "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
@@ -288,6 +288,36 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "settingshadows",
+      "width": 0,
+      "x": 281,
+      "y": 200,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "settingshadows",
+      "width": 0,
+      "x": 281,
+      "y": 200,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -298,6 +328,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -378,7 +417,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Shadows: On",
       "font": "",
       "characterSize": 20,
@@ -397,7 +446,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Volume",
       "font": "",
       "characterSize": 59,
@@ -416,7 +475,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Settings",
       "font": "",
       "characterSize": 59,
@@ -433,6 +502,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -513,7 +591,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Sound: On",
       "font": "",
       "characterSize": 20,
@@ -599,6 +687,15 @@
       "variables": [],
       "behaviors": [
         {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
+        {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
           "ANIMATION_UP": "up",
@@ -678,7 +775,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "Fullscreen: On",
       "font": "",
       "characterSize": 20,
@@ -695,6 +802,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -774,6 +890,15 @@
       "variables": [],
       "behaviors": [
         {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
+        {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
           "ANIMATION_UP": "up",
@@ -851,6 +976,15 @@
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
@@ -931,8 +1065,18 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
-      "string": "",
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
+      "string": "<Volume>",
       "font": "",
       "characterSize": 20,
       "color": {
@@ -950,7 +1094,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "-",
       "font": "",
       "characterSize": 20,
@@ -969,7 +1123,17 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 3,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 3,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "+",
       "font": "",
       "characterSize": 20,
@@ -980,7 +1144,7 @@
       }
     },
     {
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "goback",
       "smoothed": true,
@@ -988,10 +1152,20 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 2,
+          "type": "AnchorBehavior::AnchorBehavior"
+        }
+      ],
       "string": "<",
       "font": "",
-      "characterSize": 20,
+      "characterSize": 30,
       "color": {
         "b": 0,
         "g": 0,
@@ -1997,6 +2171,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "InteractiveButton",
       "type": "Button::InteractiveButton"
