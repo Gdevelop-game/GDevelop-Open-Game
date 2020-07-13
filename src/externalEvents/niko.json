@@ -446,6 +446,18 @@
                 "2"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "godmod",
+                "!=",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -611,6 +623,18 @@
                 "using_phone",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "godmod",
+                "!=",
+                "1"
               ],
               "subInstructions": []
             }
@@ -1423,7 +1447,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1487,7 +1511,20 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "godmod",
+                "!=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -1497,6 +1534,41 @@
               "parameters": [
                 "",
                 "Variable(Camera_zoom)",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "godmod",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "0.5",
                 "",
                 ""
               ],
