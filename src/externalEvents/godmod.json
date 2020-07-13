@@ -1,0 +1,130 @@
+{
+  "associatedLayout": "Overworld",
+  "lastChangeTimeStamp": 0,
+  "name": "Godmod",
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "Home"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "godmod",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "KeyReleased"
+          },
+          "parameters": [
+            "",
+            "End"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarScene"
+          },
+          "parameters": [
+            "godmod",
+            "=",
+            "0"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "VarScene"
+          },
+          "parameters": [
+            "godmod",
+            "=",
+            "1"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Placeholder",
+            "TopDownMovement",
+            "=",
+            "500"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": true,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Placeholder",
+            "TopDownMovement",
+            "=",
+            "5000"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ]
+}
