@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.442
+    "zoomFactor": 1.018
   },
   "objectsGroups": [
     {
@@ -71140,6 +71140,26 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "weapon_icons",
+      "width": 0,
+      "x": 1170,
+      "y": 67,
+      "zOrder": 12643489,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -76378,6 +76398,114 @@
                     "automatic": true,
                     "name": "centre",
                     "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "weapon_icons",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": []
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\weapon_icons\\tazer_icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 73,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 73,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\weapon_icons\\sniper_icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 73,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 73,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\weapon_icons\\rocket_launcher_icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 73,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 73,
                     "y": 0
                   },
                   "customCollisionMask": []

@@ -1447,7 +1447,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1776,7 +1776,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2648,7 +2648,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2664,7 +2664,20 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "weapon_icons",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -4089,7 +4102,20 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "weapon_icons",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -4777,7 +4803,20 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "weapon_icons",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
@@ -5524,7 +5563,20 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "weapon_icons",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": [
             {
               "disabled": false,
