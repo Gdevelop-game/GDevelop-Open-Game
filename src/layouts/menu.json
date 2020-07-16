@@ -95,8 +95,8 @@
       "locked": false,
       "name": "crossair",
       "width": 0,
-      "x": 665,
-      "y": 196,
+      "x": 621,
+      "y": 211,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -553,19 +553,23 @@
   ],
   "events": [
     {
-      "disabled": false,
+      "disabled": true,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "TODO: Make menu",
-      "comment2": ""
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Toujours"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": []
     },
     {
       "disabled": false,
