@@ -161,6 +161,17 @@
             "4"
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "Placeholder",
+            "TopDownMovement"
+          ],
+          "subInstructions": []
         }
       ],
       "actions": [
@@ -226,6 +237,14 @@
           "subInstructions": []
         }
       ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [],
       "events": []
     },
     {
