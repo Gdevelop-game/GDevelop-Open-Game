@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.226
+    "zoomFactor": 0.706
   },
   "objectsGroups": [
     {
@@ -83990,16 +83990,16 @@
       "emissionEditionSimpleMode": true,
       "emitterAngleA": 0,
       "emitterAngleB": 22,
-      "emitterForceMax": 300,
+      "emitterForceMax": 200,
       "emitterForceMin": 45,
       "emitterXDirection": 0,
       "emitterYDirection": 1,
       "emitterZDirection": 0,
       "flow": -1,
-      "friction": 7,
+      "friction": 10,
       "gravityEditionSimpleMode": true,
       "greenParam": "Random",
-      "maxParticleNb": 100,
+      "maxParticleNb": 80,
       "name": "shooting_effect",
       "particleAlpha1": 204,
       "particleAlpha2": 0,
@@ -84106,7 +84106,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
