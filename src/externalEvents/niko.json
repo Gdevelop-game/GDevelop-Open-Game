@@ -1776,7 +1776,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4456,6 +4456,44 @@
                         "\"gun4_shoot\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "shooting_effect_sniper",
+                        "Niko.PointX(\"shoot\")",
+                        "Niko.PointY(\"shoot\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "shooting_effect_sniper",
+                        "=",
+                        "Placeholder.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "shooting_effect_sniper",
+                        "=",
+                        "70000"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4575,6 +4613,44 @@
                         "gun4_shoot",
                         "=",
                         "\"True\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "shooting_effect_sniper",
+                        "Niko.PointX(\"shoot\")",
+                        "Niko.PointY(\"shoot\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "shooting_effect_sniper",
+                        "=",
+                        "Placeholder.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "shooting_effect_sniper",
+                        "=",
+                        "70000"
                       ],
                       "subInstructions": []
                     }
@@ -4863,7 +4939,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5157,6 +5233,44 @@
                         "\"gun5_shoot\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "shooting_effect_rocket",
+                        "Niko.PointX(\"shoot\")",
+                        "Niko.PointY(\"shoot\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "shooting_effect_rocket",
+                        "=",
+                        "Placeholder.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "shooting_effect_rocket",
+                        "=",
+                        "70000"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -5276,6 +5390,44 @@
                         "gun5_shoot",
                         "=",
                         "\"True\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "shooting_effect_rocket",
+                        "Niko.PointX(\"shoot\")",
+                        "Niko.PointY(\"shoot\")",
+                        "\"\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "shooting_effect_rocket",
+                        "=",
+                        "Placeholder.Angle()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "shooting_effect_rocket",
+                        "=",
+                        "70000"
                       ],
                       "subInstructions": []
                     }
