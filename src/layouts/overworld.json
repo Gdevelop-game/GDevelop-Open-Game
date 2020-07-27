@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.13
+    "zoomFactor": 0.298
   },
   "objectsGroups": [
     {
@@ -81875,7 +81875,13 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Bullet_destroy",
+                      "x": 11,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -81904,17 +81910,23 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Bullet_destroy",
+                      "x": 11,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 3
+                    "y": 5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 3
+                    "y": 5
                   },
                   "customCollisionMask": []
                 }
@@ -81933,17 +81945,23 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\weapons\\bullet\\Rocket.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "Bullet_destroy",
+                      "x": 11,
+                      "y": 3
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 3
+                    "y": 5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 3
+                    "y": 5
                   },
                   "customCollisionMask": []
                 }
@@ -84012,8 +84030,8 @@
       "particleBlue1": 97,
       "particleBlue2": 167,
       "particleEditionSimpleMode": true,
-      "particleGravityX": 0,
-      "particleGravityY": 0,
+      "particleGravityX": 100,
+      "particleGravityY": 100,
       "particleGravityZ": 0,
       "particleGreen1": 97,
       "particleGreen2": 167,
@@ -84069,8 +84087,8 @@
       "particleBlue1": 97,
       "particleBlue2": 167,
       "particleEditionSimpleMode": true,
-      "particleGravityX": 0,
-      "particleGravityY": 0,
+      "particleGravityX": 100,
+      "particleGravityY": 100,
       "particleGravityZ": 0,
       "particleGreen1": 97,
       "particleGreen2": 167,
@@ -84078,6 +84096,63 @@
       "particleLifeTimeMin": 0.5,
       "particleRed1": 99,
       "particleRed2": 167,
+      "particleSize1": 100,
+      "particleSize2": 100,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "redParam": "Enabled",
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Point",
+      "sizeParam": "Mutable",
+      "tags": "",
+      "tank": 45,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 1,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "additive": false,
+      "alphaParam": "Mutable",
+      "angleParam": "Mutable",
+      "blueParam": "Random",
+      "destroyWhenNoParticles": true,
+      "emissionEditionSimpleMode": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 90,
+      "emitterForceMax": 200,
+      "emitterForceMin": 45,
+      "emitterXDirection": 0,
+      "emitterYDirection": 1,
+      "emitterZDirection": 0,
+      "flow": -1,
+      "friction": 10,
+      "gravityEditionSimpleMode": true,
+      "greenParam": "Random",
+      "maxParticleNb": 80,
+      "name": "Bullet_destroy",
+      "particleAlpha1": 204,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 4,
+      "particleBlue2": 4,
+      "particleEditionSimpleMode": true,
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGravityZ": 0,
+      "particleGreen1": 175,
+      "particleGreen2": 219,
+      "particleLifeTimeMax": 0.8,
+      "particleLifeTimeMin": 0.5,
+      "particleRed1": 175,
+      "particleRed2": 240,
       "particleSize1": 100,
       "particleSize2": 100,
       "particleSizeRandomness1": 0,
@@ -84126,8 +84201,8 @@
       "particleBlue1": 97,
       "particleBlue2": 167,
       "particleEditionSimpleMode": true,
-      "particleGravityX": 0,
-      "particleGravityY": 0,
+      "particleGravityX": 100,
+      "particleGravityY": 100,
       "particleGravityZ": 0,
       "particleGreen1": 97,
       "particleGreen2": 167,
@@ -86197,6 +86272,82 @@
       "conditions": [],
       "actions": [],
       "events": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": true,
+      "name": "Bullet collision.",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bullet",
+                "bullet_obstacles",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bullet_destroy",
+                "bullet.PointX(\"Bullet_destroy\")",
+                "bullet.PointY(\"Bullet_destroy\")",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Bullet_destroy",
+                "(bullet.Angle())-180",
+                "0",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
