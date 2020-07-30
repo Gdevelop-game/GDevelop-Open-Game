@@ -1730,9 +1730,9 @@
               "parameters": [
                 "flame_thrower_fire_collision",
                 "=",
-                "Niko.PointX(\"\\\"\\\\\"f_t_collision\\\\\"\\\"\")",
+                "Niko.PointX(\"\\\"\\\\\"\\\\\\\"f_t_collision\\\\\\\"\\\\\"\\\"\")",
                 "=",
-                "Niko.PointY(\"\\\"\\\\\"f_t_collision\\\\\"\\\"\")"
+                "Niko.PointY(\"\\\"\\\\\"\\\\\\\"f_t_collision\\\\\\\"\\\\\"\\\"\")"
               ],
               "subInstructions": []
             },
@@ -2782,8 +2782,8 @@
                   "parameters": [
                     "",
                     "bullet",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -2872,8 +2872,8 @@
                   "parameters": [
                     "",
                     "shooting_effect",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -2943,8 +2943,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -2966,8 +2966,8 @@
                   "parameters": [
                     "",
                     "gun1",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -3221,8 +3221,8 @@
                   "parameters": [
                     "",
                     "bullet",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -3308,8 +3308,8 @@
                   "parameters": [
                     "",
                     "shooting_effect",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -3379,8 +3379,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -3402,8 +3402,8 @@
                   "parameters": [
                     "",
                     "gun2",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -3748,8 +3748,8 @@
                         "",
                         "flame_thrower_fire_secondary",
                         "\"flame_thrower_fire_secondary\"",
-                        "flame_thrower_fire_collision.PointX(\"\\\"\\\\\"CenterBurning\\\\\"\\\"\")",
-                        "flame_thrower_fire_collision.PointY(\"\\\"\\\\\"CenterBurning\\\\\"\\\"\")",
+                        "flame_thrower_fire_collision.PointX(\"\\\"\\\\\"\\\\\\\"CenterBurning\\\\\\\"\\\\\"\\\"\")",
+                        "flame_thrower_fire_collision.PointY(\"\\\"\\\\\"\\\\\\\"CenterBurning\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -3881,8 +3881,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -3904,8 +3904,8 @@
                   "parameters": [
                     "",
                     "gun3",
-                    "Niko.PointX(\"\\\"\\\\\"f_t_collision\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"f_t_collision\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"f_t_collision\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"f_t_collision\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -4217,8 +4217,8 @@
                       "parameters": [
                         "",
                         "bullet",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -4304,8 +4304,8 @@
                       "parameters": [
                         "",
                         "shooting_effect_sniper",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -4364,8 +4364,8 @@
                       "parameters": [
                         "",
                         "bullet",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -4463,8 +4463,8 @@
                       "parameters": [
                         "",
                         "shooting_effect_sniper",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -4536,8 +4536,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -4559,8 +4559,8 @@
                   "parameters": [
                     "",
                     "gun4",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -4994,8 +4994,8 @@
                       "parameters": [
                         "",
                         "bullet",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -5081,8 +5081,8 @@
                       "parameters": [
                         "",
                         "shooting_effect_rocket",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -5141,8 +5141,8 @@
                       "parameters": [
                         "",
                         "bullet",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -5240,8 +5240,8 @@
                       "parameters": [
                         "",
                         "shooting_effect_rocket",
-                        "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                        "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                         "\"\""
                       ],
                       "subInstructions": []
@@ -5313,8 +5313,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -5336,8 +5336,8 @@
                   "parameters": [
                     "",
                     "gun5",
-                    "Niko.PointX(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"shoot\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"shoot\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -5809,9 +5809,9 @@
                       "parameters": [
                         "tazer_hitbox",
                         "=",
-                        "Niko.PointX(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
+                        "Niko.PointX(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
                         "=",
-                        "Niko.PointY(\"\\\"\\\\\"hitbox\\\\\"\\\"\")"
+                        "Niko.PointY(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")"
                       ],
                       "subInstructions": []
                     },
@@ -5852,8 +5852,8 @@
                           "parameters": [
                             "",
                             "tazer_hitbox",
-                            "Niko.PointX(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
-                            "Niko.PointY(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
+                            "Niko.PointX(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
+                            "Niko.PointY(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
                             "\"\""
                           ],
                           "subInstructions": []
@@ -6012,8 +6012,8 @@
                   },
                   "parameters": [
                     "bullet_obstacles",
-                    "Niko.PointX(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"hitbox\\\\\"\\\"\")"
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")"
                   ],
                   "subInstructions": []
                 },
@@ -6035,8 +6035,8 @@
                   "parameters": [
                     "",
                     "mele1",
-                    "Niko.PointX(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
-                    "Niko.PointY(\"\\\"\\\\\"hitbox\\\\\"\\\"\")",
+                    "Niko.PointX(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
+                    "Niko.PointY(\"\\\"\\\\\"\\\\\\\"hitbox\\\\\\\"\\\\\"\\\"\")",
                     "\"\""
                   ],
                   "subInstructions": []
@@ -6146,8 +6146,8 @@
               "parameters": [
                 "Bullet_collision_destroy",
                 "Bullet_collision_destroy",
-                "bullet.PointX(\"\\\"\\\\\"Bullet_destroy\\\\\"\\\"\")",
-                "bullet.PointY(\"\\\"\\\\\"Bullet_destroy\\\\\"\\\"\")",
+                "bullet.PointX(\"\\\"\\\\\"\\\\\\\"Bullet_destroy\\\\\\\"\\\\\"\\\"\")",
+                "bullet.PointY(\"\\\"\\\\\"\\\\\\\"Bullet_destroy\\\\\\\"\\\\\"\\\"\")",
                 "\"\""
               ],
               "subInstructions": []
@@ -6227,8 +6227,8 @@
               "parameters": [
                 "Bullet_collision_destroy",
                 "Bullet_collision_destroy_rocket",
-                "bullet.PointX(\"\\\"\\\\\"Bullet_destroy\\\\\"\\\"\")",
-                "bullet.PointY(\"\\\"\\\\\"Bullet_destroy\\\\\"\\\"\")",
+                "bullet.PointX(\"\\\"\\\\\"\\\\\\\"Bullet_destroy\\\\\\\"\\\\\"\\\"\")",
+                "bullet.PointY(\"\\\"\\\\\"\\\\\\\"Bullet_destroy\\\\\\\"\\\\\"\\\"\")",
                 "\"\""
               ],
               "subInstructions": []
