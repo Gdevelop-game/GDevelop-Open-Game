@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.106
+    "zoomFactor": 0.394
   },
   "objectsGroups": [
     {
@@ -8669,8 +8669,8 @@
       "name": "AmmoText",
       "persistentUuid": "9f827c04-49af-448b-8657-4d6e8925c4ed",
       "width": 0,
-      "x": 0,
-      "y": 630,
+      "x": -5110,
+      "y": -5530,
       "zOrder": 111,
       "numberProperties": [],
       "stringProperties": [],
@@ -83112,6 +83112,38 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "Health",
+      "persistentUuid": "51c740a3-2016-4425-8029-6911b124bb8b",
+      "width": 0,
+      "x": 0,
+      "y": 70,
+      "zOrder": 12643517,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "Wasted",
+      "persistentUuid": "6fa0aa86-bcd0-4d28-9673-c03735228e51",
+      "width": 0,
+      "x": 420,
+      "y": 280,
+      "zOrder": 12643518,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -89019,6 +89051,42 @@
       "zoneRadius": 1,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "Health",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "100",
+      "font": "",
+      "characterSize": 64,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      }
+    },
+    {
+      "name": "Wasted",
+      "tags": "",
+      "type": "BBText::BBText",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "text": "[shadow=black][outline=red][b]WASTED[/b][/outline][/shadow]",
+        "opacity": 255,
+        "fontSize": 95,
+        "visible": true,
+        "color": "#000000",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": false
+      }
     }
   ],
   "events": [
@@ -89088,7 +89156,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89643,7 +89711,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
