@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.106
+    "zoomFactor": 0.562
   },
   "objectsGroups": [
     {
@@ -23507,8 +23507,8 @@
       "name": "roof_tops",
       "persistentUuid": "a99a4ec2-138d-4e94-9c27-c4e417bb0bd9",
       "width": 0,
-      "x": 280,
-      "y": 560,
+      "x": -490,
+      "y": 140,
       "zOrder": 120,
       "numberProperties": [
         {
@@ -83112,6 +83112,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "mele2",
+      "persistentUuid": "f2d8b3e7-d85f-4b6a-accd-8b5be3676f03",
+      "width": 0,
+      "x": 210,
+      "y": 1540,
+      "zOrder": 12643520,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -83886,6 +83902,41 @@
                       "name": "shoot",
                       "x": 52,
                       "y": 28
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "knife ",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a1.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 53.5,
+                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -89019,6 +89070,130 @@
       "zoneRadius": 1,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "name": "Slash1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\weapons\\slash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31.7756,
+                    "y": 12.9545
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 31.321,
+                    "y": 12.9545
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.0288,
+                        "y": 3.68421
+                      },
+                      {
+                        "x": 34.7656,
+                        "y": 0
+                      },
+                      {
+                        "x": 58.1867,
+                        "y": 15
+                      },
+                      {
+                        "x": 33.9762,
+                        "y": 4.47368
+                      },
+                      {
+                        "x": 19.7656,
+                        "y": 6.84211
+                      },
+                      {
+                        "x": 3.97615,
+                        "y": 18.1579
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mele2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\weapons\\mele\\knife.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 14.6402,
+                        "y": 10.6061
+                      },
+                      {
+                        "x": 22,
+                        "y": 22
+                      },
+                      {
+                        "x": 10.0947,
+                        "y": 15.1515
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -89147,7 +89322,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Roof_tops",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89416,7 +89591,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89535,7 +89710,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89804,7 +89979,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -90816,7 +90991,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
