@@ -15,15 +15,17 @@ export default class Hello extends App {
         );
     };
 
-    getComponent(props) {
-        return (
-            <div style={{
-                alignText: "center"
-            }}>
-                <Button 
-                    onClick={() => props.connection.send({type: "SayHi"})}
-                >Say Hello</Button>
-            </div>
-        );
-    };
+  getComponent({sendEvent}) {
+    return (
+      <div
+        style={{
+          alignText: "center",
+        }}
+      >
+        <Button onClick={() => sendEvent("SayHi")}>
+          Say Hello
+        </Button>
+      </div>
+    );
+  }
 }

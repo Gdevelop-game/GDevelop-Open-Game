@@ -12,12 +12,19 @@ export function Main() {
     const [connected, setConnected] = useState(false); 
     const [connection, setConnection] = useState(null);
 
-    let app;
-    if(currentApp === -1) {
-        app = <AppList appManager={appManager} setApp={setApp}/>;
-    } else {
-        app = appManager[currentApp].getComponent({connection: connection});
-    }
+  const app =
+    currentApp < 0 ? (
+      <AppList appManager={AppManager} setApp={setApp} />
+    ) : (
+      AppManager[currentApp].getComponent({
+        connection: connection,
+        sendEvent: (eventName, data) =>
+          connection?.send({
+            eventName,
+            data: data ? JSON.stringify(data) : "",
+          }),
+      })
+    );
 
     return (
         <div>
