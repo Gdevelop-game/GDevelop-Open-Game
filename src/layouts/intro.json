@@ -22,22 +22,13 @@
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.352
+    "zoomFactor": 0.3216
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [],
   "objects": [],
   "events": [
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
-    },
     {
       "disabled": false,
       "folded": false,
@@ -62,69 +53,20 @@
         {
           "type": {
             "inverted": false,
+            "value": "P2P::UseDefaultBroker"
+          },
+          "parameters": [],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
             "value": "Scene"
           },
           "parameters": [
             "",
-            "\"Menu\"",
+            "\"Overworld\"",
             "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Extensions are only exported when present in a scene",
-      "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "Toujours"
-          },
-          "parameters": [
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "RoomManager::registerRoom"
-          },
-          "parameters": [
-            "",
-            "-1",
-            "0",
-            "0",
-            ""
           ],
           "subInstructions": []
         }
@@ -134,6 +76,11 @@
   ],
   "layers": [
     {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
       "name": "",
       "visibility": true,
       "cameras": [

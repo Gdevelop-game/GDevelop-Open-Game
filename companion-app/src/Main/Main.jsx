@@ -16,7 +16,14 @@ export function Main() {
     currentApp < 0 ? (
       <AppList appManager={AppManager} setApp={setApp} />
     ) : (
-      AppManager[currentApp].getComponent({ connection: connection })
+      AppManager[currentApp].getComponent({
+        connection: connection,
+        sendEvent: (eventName, data) =>
+          connection?.send({
+            eventName,
+            data: data ? JSON.stringify(data) : "",
+          }),
+      })
     );
 
   return (

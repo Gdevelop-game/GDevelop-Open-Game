@@ -11,14 +11,14 @@ export default class Hello extends App {
     return <SmileOutlined style={{ fontSize: 70 }} />;
   }
 
-  getComponent(props) {
+  getComponent({sendEvent}) {
     return (
       <div
         style={{
           alignText: "center",
         }}
       >
-        <Button onClick={() => props.connection.send({ type: "SayHi" })}>
+        <Button onClick={() => sendEvent("SayHi")}>
           Say Hello
         </Button>
       </div>
