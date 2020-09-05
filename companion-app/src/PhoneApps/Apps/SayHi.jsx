@@ -1,19 +1,15 @@
-import React from 'react';
-import App from '../App';
+import React from "react";
+import App from "../App";
 
-import { Button } from 'antd';
-import {SmileOutlined} from '@ant-design/icons';
+import { Button } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 
 export default class Hello extends App {
-    name = "Say Hi";
+  name = "Say Hi";
 
-    getIcon() {
-        return (
-            <SmileOutlined
-                style={{fontSize: 70}}
-            />
-        );
-    };
+  getIcon() {
+    return <SmileOutlined style={{ fontSize: 70 }} />;
+  }
 
   getComponent({sendEvent}) {
     return (
