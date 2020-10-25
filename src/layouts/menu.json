@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 32,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.6456
+    "zoomFactor": 0.472
   },
   "objectsGroups": [],
   "variables": [],
@@ -32,11 +32,28 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": true,
-      "name": "ButtonBeginGame",
+      "locked": false,
+      "name": "playbutton",
+      "persistentUuid": "8ae935b1-868f-4e17-8bb2-a38b1521ae2b",
       "width": 0,
-      "x": 900,
-      "y": 286,
+      "x": 604,
+      "y": 182,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "play",
+      "persistentUuid": "fe7b3b9c-6cad-4a78-9dbf-ac08cd379592",
+      "width": 0,
+      "x": 668,
+      "y": 189,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -48,40 +65,11 @@
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "TextBeginGame",
+      "name": "settingsbut",
+      "persistentUuid": "ea99a2ff-4556-4d45-a655-91286d1a83a9",
       "width": 0,
-      "x": 939,
-      "y": 297,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": true,
-      "name": "ButtonQuitGame",
-      "width": 0,
-      "x": 900,
-      "y": 446,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "TextQuitGame",
-      "width": 0,
-      "x": 947,
-      "y": 457,
+      "x": 604,
+      "y": 267,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -93,10 +81,27 @@
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "crossair",
+      "name": "settings",
+      "persistentUuid": "6c693cc4-42d4-4cc2-a1d5-61f06a8acb32",
       "width": 0,
-      "x": 621,
-      "y": 211,
+      "x": 641,
+      "y": 274,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "howtoplay",
+      "persistentUuid": "2f7f2dd4-914b-4333-9556-78ecb2cb7d58",
+      "width": 0,
+      "x": 604,
+      "y": 362,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -107,12 +112,13 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": true,
-      "name": "ButtonSettings",
+      "locked": false,
+      "name": "howtoplaytext",
+      "persistentUuid": "6b199fec-0bde-4383-8dd9-737f737bbf72",
       "width": 0,
-      "x": 900,
-      "y": 368,
-      "zOrder": 2,
+      "x": 614,
+      "y": 371,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -123,11 +129,12 @@
       "height": 0,
       "layer": "",
       "locked": false,
-      "name": "TextSettings",
+      "name": "crossair",
+      "persistentUuid": "d135f761-905c-4fbb-a05a-04c0fb3646a1",
       "width": 0,
-      "x": 957,
-      "y": 379,
-      "zOrder": 3,
+      "x": 507,
+      "y": 298,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -135,34 +142,25 @@
   ],
   "objects": [
     {
-      "name": "ButtonBeginGame",
+      "name": "howtoplay",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 3,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 3
-        },
-        {
           "name": "InteractiveButton",
           "type": "Button::InteractiveButton",
-          "ANIMATION_UP": "up",
-          "ANIMATION_OVER": "over",
-          "ANIMATION_DOWN": "down",
-          "ANIMATION_DISABLED": "disabled",
+          "ANIMATION_UP": "unpressed",
+          "ANIMATION_OVER": "pressed",
+          "ANIMATION_DOWN": "pressed",
+          "ANIMATION_DISABLED": "pressed",
           "ENABLED": true
         }
       ],
       "animations": [
         {
-          "name": "up",
+          "name": "unpressed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -191,7 +189,7 @@
           ]
         },
         {
-          "name": "down",
+          "name": "pressed",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -222,354 +220,759 @@
       ]
     },
     {
-      "name": "crossair",
+      "name": "settingsbut",
       "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "unpressed",
+          "ANIMATION_OVER": "pressed",
+          "ANIMATION_DOWN": "pressed",
+          "ANIMATION_DISABLED": "pressed",
+          "ENABLED": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "unpressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "playbutton",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [
+        {
+          "name": "InteractiveButton",
+          "type": "Button::InteractiveButton",
+          "ANIMATION_UP": "unpressed",
+          "ANIMATION_OVER": "pressed",
+          "ANIMATION_DOWN": "pressed",
+          "ANIMATION_DISABLED": "pressed",
+          "ENABLED": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "unpressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pressed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "howtoplaytext",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crossair_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "crosshair010",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crosshair_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bold": false,
-      "italic": false,
-      "name": "TextBeginGame",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 3,
-          "leftEdgeAnchor": 3,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 3,
-          "topEdgeAnchor": 3
-        }
-      ],
-      "string": "Begin Game",
+      "string": "How To Play",
       "font": "",
-      "characterSize": 20,
+      "characterSize": 30,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "name": "ButtonSettings",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 3,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 3
-        },
-        {
-          "name": "InteractiveButton",
-          "type": "Button::InteractiveButton",
-          "ANIMATION_UP": "up",
-          "ANIMATION_OVER": "over",
-          "ANIMATION_DOWN": "down",
-          "ANIMATION_DISABLED": "disabled",
-          "ENABLED": true
-        }
-      ],
-      "animations": [
-        {
-          "name": "up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "ButtonQuitGame",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 3,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 3
-        },
-        {
-          "name": "InteractiveButton",
-          "type": "Button::InteractiveButton",
-          "ANIMATION_UP": "up",
-          "ANIMATION_OVER": "over",
-          "ANIMATION_DOWN": "down",
-          "ANIMATION_DISABLED": "disabled",
-          "ENABLED": true
-        }
-      ],
-      "animations": [
-        {
-          "name": "up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\UI\\buttons\\beige\\buttonLong_beige_pressed.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "bold": false,
+      "bold": true,
       "italic": false,
-      "name": "TextSettings",
+      "name": "settings",
       "smoothed": true,
       "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 3,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 3
-        }
-      ],
+      "behaviors": [],
       "string": "Settings",
       "font": "",
-      "characterSize": 20,
+      "characterSize": 30,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     },
     {
-      "bold": false,
+      "bold": true,
       "italic": false,
-      "name": "TextQuitGame",
+      "name": "play",
       "smoothed": true,
       "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 2,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 3
-        }
-      ],
-      "string": "Quit Game",
+      "behaviors": [],
+      "string": "Play",
       "font": "",
-      "characterSize": 20,
+      "characterSize": 30,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "b": 255,
+        "g": 255,
+        "r": 255
       }
     }
   ],
   "events": [
     {
-      "disabled": true,
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "name": "How to play",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "inverted": false,
-            "value": "Toujours"
-          },
-          "parameters": [
-            ""
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "howtoplay",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
           ],
-          "subInstructions": []
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "howtoplay",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "howtoplaytext",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "howtoplay",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "howtoplay",
+                "\"unpressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "howtoplaytext",
+                "\"255;255;255\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isEnabled"
+              },
+              "parameters": [
+                "howtoplay",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "howtoplay",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "howtoplaytext",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isClicked"
+              },
+              "parameters": [
+                "howtoplay",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DebugMessages::popup"
+              },
+              "parameters": [
+                "",
+                "\"GAME CONTROLS\nw = move up\na  = move left\ns = move down\nd = move right\n\npageup = phone out\npagedown = phone in \nreturn = unlock phone & enter houses\n\ne = pick gun\nq = drop gun\n\nv = add to weapon wheel\nb = hold weapon on wheel\n\np = show controls\n\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
-      "actions": [],
-      "events": []
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": false,
+      "name": "Play",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "playbutton",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "playbutton",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "play",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "playbutton",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "playbutton",
+                "\"unpressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "play",
+                "\"255;255;255\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isEnabled"
+              },
+              "parameters": [
+                "playbutton",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "playbutton",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "play",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isClicked"
+              },
+              "parameters": [
+                "playbutton",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Overworld\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": false,
+      "folded": false,
+      "name": "Settings",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "settingsbut",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "settingsbut",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "settings",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isHover"
+              },
+              "parameters": [
+                "settingsbut",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "settingsbut",
+                "\"unpressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "settings",
+                "\"255;255;255\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Button::InteractiveButton::isEnabled"
+              },
+              "parameters": [
+                "settingsbut",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "settingsbut",
+                "\"pressed\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "settings",
+                "\"71;71;71\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Button::InteractiveButton::isClicked"
+              },
+              "parameters": [
+                "settingsbut",
+                "InteractiveButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Settings\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "parameters": []
     },
     {
       "disabled": false,
@@ -579,106 +982,6 @@
         "includeConfig": 0
       },
       "target": "Global"
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Button::InteractiveButton::isClicked"
-          },
-          "parameters": [
-            "ButtonBeginGame",
-            "InteractiveButton",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Overworld\"",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Button::InteractiveButton::isClicked"
-          },
-          "parameters": [
-            "ButtonSettings",
-            "InteractiveButton",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Settings\"",
-            "yes"
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Button::InteractiveButton::isClicked"
-          },
-          "parameters": [
-            "ButtonQuitGame",
-            "InteractiveButton",
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "inverted": false,
-            "value": "Quit"
-          },
-          "parameters": [
-            ""
-          ],
-          "subInstructions": []
-        }
-      ],
-      "events": []
     }
   ],
   "layers": [
@@ -701,10 +1004,6 @@
     }
   ],
   "behaviorsSharedData": [
-    {
-      "name": "Anchor",
-      "type": "AnchorBehavior::AnchorBehavior"
-    },
     {
       "name": "InteractiveButton",
       "type": "Button::InteractiveButton"

@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.562
+    "zoomFactor": 0.394
   },
   "objectsGroups": [
     {
@@ -8669,8 +8669,8 @@
       "name": "AmmoText",
       "persistentUuid": "9f827c04-49af-448b-8657-4d6e8925c4ed",
       "width": 0,
-      "x": 0,
-      "y": 630,
+      "x": -5110,
+      "y": -5530,
       "zOrder": 111,
       "numberProperties": [],
       "stringProperties": [],
@@ -23507,8 +23507,8 @@
       "name": "roof_tops",
       "persistentUuid": "a99a4ec2-138d-4e94-9c27-c4e417bb0bd9",
       "width": 0,
-      "x": -490,
-      "y": 140,
+      "x": 280,
+      "y": 560,
       "zOrder": 120,
       "numberProperties": [
         {
@@ -83117,14 +83117,30 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
+      "layer": "GUI",
       "locked": false,
-      "name": "mele2",
-      "persistentUuid": "f2d8b3e7-d85f-4b6a-accd-8b5be3676f03",
+      "name": "Health",
+      "persistentUuid": "51c740a3-2016-4425-8029-6911b124bb8b",
       "width": 0,
-      "x": 210,
-      "y": 1540,
-      "zOrder": 12643520,
+      "x": 0,
+      "y": 70,
+      "zOrder": 12643517,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "Wasted",
+      "persistentUuid": "6fa0aa86-bcd0-4d28-9673-c03735228e51",
+      "width": 0,
+      "x": 420,
+      "y": 280,
+      "zOrder": 12643518,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -83902,41 +83918,6 @@
                       "name": "shoot",
                       "x": 52,
                       "y": 28
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "knife ",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\knife_a1.png",
-                  "points": [
-                    {
-                      "name": "slash",
-                      "x": 53.5,
-                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -89072,128 +89053,40 @@
       "behaviors": []
     },
     {
-      "name": "Slash1",
+      "bold": false,
+      "italic": false,
+      "name": "Health",
+      "smoothed": true,
       "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
       "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\weapons\\slash.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31.7756,
-                    "y": 12.9545
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 31.321,
-                    "y": 12.9545
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15.0288,
-                        "y": 3.68421
-                      },
-                      {
-                        "x": 34.7656,
-                        "y": 0
-                      },
-                      {
-                        "x": 58.1867,
-                        "y": 15
-                      },
-                      {
-                        "x": 33.9762,
-                        "y": 4.47368
-                      },
-                      {
-                        "x": 19.7656,
-                        "y": 6.84211
-                      },
-                      {
-                        "x": 3.97615,
-                        "y": 18.1579
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "string": "100",
+      "font": "",
+      "characterSize": 64,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 255
+      }
     },
     {
-      "name": "mele2",
+      "name": "Wasted",
       "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
+      "type": "BBText::BBText",
       "variables": [],
       "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\weapons\\mele\\knife.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 14.6402,
-                        "y": 10.6061
-                      },
-                      {
-                        "x": 22,
-                        "y": 22
-                      },
-                      {
-                        "x": 10.0947,
-                        "y": 15.1515
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "content": {
+        "text": "[shadow=black][outline=red][b]WASTED[/b][/outline][/shadow]",
+        "opacity": 255,
+        "fontSize": 95,
+        "visible": true,
+        "color": "#000000",
+        "fontFamily": "Arial",
+        "align": "left",
+        "wordWrap": false
+      }
     }
   ],
   "events": [
@@ -89263,7 +89156,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89322,7 +89215,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Roof_tops",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89591,7 +89484,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "grass",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89710,7 +89603,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "roads",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89818,7 +89711,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89979,7 +89872,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -90991,7 +90884,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -91244,11 +91137,6 @@
   ],
   "layers": [
     {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
       "name": "",
       "visibility": true,
       "cameras": [
@@ -91266,22 +91154,12 @@
       "effects": []
     },
     {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
       "name": "GUI",
       "visibility": true,
       "cameras": [],
       "effects": []
     },
     {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
       "name": "fade",
       "visibility": false,
       "cameras": [],

@@ -18,6 +18,16 @@
             "Num9"
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SystemInfo::IsPreview"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
         }
       ],
       "actions": [
@@ -49,6 +59,16 @@
           "parameters": [
             "",
             "Num0"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SystemInfo::IsPreview"
+          },
+          "parameters": [
+            ""
           ],
           "subInstructions": []
         }
@@ -85,6 +105,16 @@
             "1"
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "SystemInfo::IsPreview"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
         }
       ],
       "actions": [
@@ -98,6 +128,54 @@
             "TopDownMovement",
             "=",
             "500"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Gun1_ammo",
+            "=",
+            "345634656"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Gun2_ammo",
+            "=",
+            "345634656"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Gun3_ammo",
+            "=",
+            "345634656"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "Gun5_ammo",
+            "=",
+            "345634656"
           ],
           "subInstructions": []
         }
