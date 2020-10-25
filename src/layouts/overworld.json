@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.394
+    "zoomFactor": 0.058
   },
   "objectsGroups": [
     {
@@ -77282,7 +77282,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 3220,
+      "height": 2310,
       "layer": "",
       "locked": false,
       "name": "road_2",
@@ -77524,7 +77524,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 8890,
+      "height": 2380,
       "layer": "",
       "locked": false,
       "name": "road",
@@ -78009,7 +78009,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 8470,
+      "height": 2170,
       "layer": "",
       "locked": false,
       "name": "road",
@@ -78405,7 +78405,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 4970,
+      "height": 2030,
       "layer": "",
       "locked": false,
       "name": "road_1",
@@ -79386,9 +79386,9 @@
       "locked": false,
       "name": "road_4",
       "persistentUuid": "225eb31f-5dc9-43a4-895f-a9bcb55f7230",
-      "width": 1890,
-      "x": -700,
-      "y": 23520,
+      "width": 4270,
+      "x": -5390,
+      "y": 23590,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -83142,6 +83142,343 @@
       "y": 280,
       "zOrder": 12643518,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "1597d8aa-519a-4a90-b5f5-d79c0f65aa99",
+      "width": 70,
+      "x": -1120,
+      "y": 23590,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "b07ba268-47f9-4eec-affc-19e4741989f8",
+      "width": 70,
+      "x": -5600,
+      "y": 23590,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "9b1af817-12d7-4ad5-9b60-f4a081e08992",
+      "width": 70,
+      "x": -5460,
+      "y": 23590,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 2870,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "cbcf16c6-43bd-47cd-b055-3077fa54c258",
+      "width": 210,
+      "x": -5530,
+      "y": 20300,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3430,
+      "layer": "",
+      "locked": false,
+      "name": "road_2",
+      "persistentUuid": "63561e49-821b-41d5-9b95-ce215003aa66",
+      "width": 70,
+      "x": -5600,
+      "y": 20440,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_4",
+      "persistentUuid": "298e41cd-ca92-41a0-8912-4200cd7ec77c",
+      "width": 4270,
+      "x": -5390,
+      "y": 20230,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "9e8d2910-b4be-49cc-84f9-8d78204c4c0a",
+      "width": 70,
+      "x": -1120,
+      "y": 20230,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "0f326e38-5d58-4e49-b8c8-864a8afc8381",
+      "width": 4340,
+      "x": -5530,
+      "y": 20020,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "07c382fa-2d4e-4db5-8914-0fc0cc22fd45",
+      "width": 70,
+      "x": -5600,
+      "y": 20230,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "3b989393-18ae-460f-ac54-e539ecaf54c2",
+      "width": 70,
+      "x": -5600,
+      "y": 20370,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "2b4d2929-d173-44c8-98b0-d776aec5629a",
+      "width": 70,
+      "x": -5600,
+      "y": 20090,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "c7132451-123c-4d51-9888-aa6ff1c5d546",
+      "width": 70,
+      "x": -5460,
+      "y": 20230,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "dd69c66b-b54a-42d9-a984-75fcca462397",
+      "width": 4340,
+      "x": -5320,
+      "y": 20300,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "d2dcf62e-eca2-468e-8275-7af94ec9a089",
+      "width": 70,
+      "x": -1260,
+      "y": 19950,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road_3",
+      "persistentUuid": "18621a8a-eed1-423e-a75b-90c2fc25488e",
+      "width": 3990,
+      "x": -5250,
+      "y": 19950,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 2030,
+      "layer": "",
+      "locked": false,
+      "name": "road_1",
+      "persistentUuid": "b269aba8-6276-4fd0-aee1-6359c4022a6c",
+      "width": 70,
+      "x": -5320,
+      "y": 17920,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "road",
+      "persistentUuid": "8aba3efd-e13c-436f-bd6f-049173afbd35",
+      "width": 70,
+      "x": -5320,
+      "y": 19950,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -91137,6 +91474,11 @@
   ],
   "layers": [
     {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
       "name": "",
       "visibility": true,
       "cameras": [
@@ -91154,12 +91496,22 @@
       "effects": []
     },
     {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
       "name": "GUI",
       "visibility": true,
       "cameras": [],
       "effects": []
     },
     {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
       "name": "fade",
       "visibility": false,
       "cameras": [],
