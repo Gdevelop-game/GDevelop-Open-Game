@@ -427,12 +427,10 @@
         {
           "type": {
             "inverted": false,
-            "value": "CompanionAppCommunication::connectToCompanion"
+            "value": "P2P::Connect"
           },
           "parameters": [
-            "",
-            "DebugMessages::prompt(\"Enter the Companion app connection ID\")",
-            ""
+            "DebugMessages::prompt(\"Enter the Companion app connection ID\")"
           ],
           "subInstructions": []
         }
@@ -447,12 +445,11 @@
         {
           "type": {
             "inverted": false,
-            "value": "CompanionAppCommunication::onEventType"
+            "value": "P2P::OnEvent"
           },
           "parameters": [
-            "",
             "\"SayHi\"",
-            ""
+            "yes"
           ],
           "subInstructions": []
         }
