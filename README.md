@@ -6,6 +6,8 @@
 
 [![GitHub watchers](https://img.shields.io/github/watchers/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=watch)](https://github.com/Gdevelop-game/GDevelop-Open-Game/)
 
+[![GitHub forks](https://img.shields.io/github/forks/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=forks)](https://github.com/Gdevelop-game/GDevelop-Open-Game/)
+
 [![Auto Build](https://github.com/Gdevelop-game/GDevelop-Open-Game/workflows/Auto%20Build/badge.svg)  ](https://gdevelop-game.github.io/GDevelop-Open-Game/)
 
 This Repository is an Attempt to create a GTA-like game using **GDevelop 5** game engine. The name is likely to change later on. Moereover,
