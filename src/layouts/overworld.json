@@ -8,7 +8,7 @@
   "oglZNear": 1,
   "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 209,
   "uiSettings": {
@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.562
+    "zoomFactor": 0.25
   },
   "objectsGroups": [
     {
@@ -59,6 +59,17 @@
         },
         {
           "name": "door5"
+        }
+      ]
+    },
+    {
+      "name": "roomOut",
+      "objects": [
+        {
+          "name": "room1out"
+        },
+        {
+          "name": "room2out"
         }
       ]
     },
@@ -8082,22 +8093,6 @@
       "x": -474,
       "y": 1561,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Niko",
-      "persistentUuid": "70a36631-69a6-4c00-a464-a6e16d80fb3e",
-      "width": 0,
-      "x": -108,
-      "y": 1519,
-      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -83128,6 +83123,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Niko",
+      "persistentUuid": "b45e2162-e514-4cfa-8e54-1dfeb587493b",
+      "width": 0,
+      "x": -108,
+      "y": 1519,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -83277,14 +83288,14 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "rotateObject": false,
-          "acceleration": 400,
-          "allowDiagonals": true,
+          "acceleration": 9999,
           "angleOffset": 0,
+          "deceleration": 9999,
+          "maxSpeed": 200,
+          "rotateObject": false,
+          "allowDiagonals": true,
           "angularMaxSpeed": 500,
-          "deceleration": 800,
-          "ignoreDefaultControls": true,
-          "maxSpeed": 200
+          "ignoreDefaultControls": true
         }
       ],
       "animations": [
@@ -89194,6 +89205,25 @@
           ]
         }
       ]
+    },
+    {
+      "bold": true,
+      "italic": false,
+      "name": "varChecker",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "varChecker",
+      "font": "",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
     }
   ],
   "events": [
@@ -89263,7 +89293,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89275,16 +89305,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Godmod"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "phone"
+          "target": "Global"
         },
         {
           "disabled": false,
@@ -89302,7 +89323,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "doors"
+          "target": "roomLogic"
         },
         {
           "disabled": false,
@@ -89311,7 +89332,25 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "Global"
+          "target": "phone"
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Godmod"
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "doors"
         }
       ],
       "parameters": []
@@ -89818,7 +89857,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "fade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -89978,7 +90017,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
+      "disabled": true,
       "folded": true,
       "name": "Teleportation",
       "source": "",
@@ -89986,7 +90025,7 @@
       "events": [
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -90026,7 +90065,7 @@
           "events": [
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -90991,7 +91030,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "sports_equipments_movable",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

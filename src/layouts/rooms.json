@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.658
+    "zoomFactor": 0.274
   },
   "objectsGroups": [
     {
@@ -3422,38 +3422,6 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "",
-      "locked": false,
-      "name": "Placeholder",
-      "persistentUuid": "a30a58a5-ccd8-49ab-b536-cdf1fe3ff02a",
-      "width": 0,
-      "x": 420,
-      "y": 140,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 138,
-      "layer": "",
-      "locked": false,
-      "name": "room1out",
-      "persistentUuid": "3d2ca0ae-a7e9-4e1e-ba72-26306ec66b41",
-      "width": 20,
-      "x": 490,
-      "y": 315,
-      "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
       "layer": "fade",
       "locked": false,
       "name": "fade_tiled_sprite",
@@ -6487,8 +6455,8 @@
       "name": "crossair",
       "persistentUuid": "17eb0375-5132-4694-b344-c489559dd83f",
       "width": 0,
-      "x": 560,
-      "y": 350,
+      "x": 905,
+      "y": 336,
       "zOrder": 202,
       "numberProperties": [],
       "stringProperties": [],
@@ -11428,22 +11396,6 @@
           "value": 13
         }
       ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 201,
-      "layer": "",
-      "locked": false,
-      "name": "room3out",
-      "persistentUuid": "3cecd3fc-e99f-40e9-b21d-2285af6894b6",
-      "width": 28,
-      "x": 210,
-      "y": 1540,
-      "zOrder": 206,
-      "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
@@ -21013,9 +20965,57 @@
       "name": "Niko",
       "persistentUuid": "5cb6196f-fa34-4eb9-a71b-35d19bd21122",
       "width": 0,
-      "x": 210,
-      "y": 140,
+      "x": 272,
+      "y": 379,
       "zOrder": 282,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Placeholder",
+      "persistentUuid": "838f7fff-10f8-4dfe-a895-066b52ddc94b",
+      "width": 0,
+      "x": 216,
+      "y": 82,
+      "zOrder": 283,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 188,
+      "layer": "",
+      "locked": false,
+      "name": "room1out",
+      "persistentUuid": "7b8f8770-3f42-4386-8bf5-4ca0c9f8cbdd",
+      "width": 21,
+      "x": 212,
+      "y": 1548,
+      "zOrder": 284,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 177,
+      "layer": "",
+      "locked": false,
+      "name": "room2out",
+      "persistentUuid": "ec5f4dcd-5aa1-4d77-844a-42dc03b939f4",
+      "width": 21,
+      "x": 492,
+      "y": 300,
+      "zOrder": 285,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -23598,248 +23598,6 @@
       "behaviors": []
     },
     {
-      "name": "floor",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\floor\\tile_11.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\floor\\tile_46.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\walls\\tile_441.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\walls\\tile_440.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\walls\\tile_466.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\floor\\tile_12.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\floor\\tile_45.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Interior\\floor\\tile_42.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "energy",
       "tags": "",
       "type": "Sprite",
@@ -24087,45 +23845,6 @@
       ]
     },
     {
-      "name": "room2out",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\door.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "gun3",
       "tags": "",
       "type": "Sprite",
@@ -24155,45 +23874,6 @@
                     "name": "centre",
                     "x": 0,
                     "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "room1out",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\door.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
                   },
                   "customCollisionMask": []
                 }
@@ -25482,12 +25162,80 @@
       "creationTime": 0,
       "disabled": false,
       "folded": false,
-      "name": "Debug Room Numbers",
+      "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Godmod"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "phone"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Niko"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "roomLogic"
+        },
+        {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "doors"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Global"
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "disabled": true,
+      "folded": true,
+      "name": "Debug Room Numbers",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "disabled": true,
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -25597,8 +25345,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
+      "disabled": true,
+      "folded": true,
       "name": "Room Teleportation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -25731,7 +25479,7 @@
           "comment2": ""
         },
         {
-          "disabled": true,
+          "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -25772,8 +25520,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
+      "disabled": true,
+      "folded": true,
       "name": "Roomfade",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -25973,8 +25721,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
+      "disabled": true,
+      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -25995,6 +25743,15 @@
           "include": {
             "includeConfig": 0
           },
+          "target": "Niko"
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
           "target": "phone"
         }
       ],
@@ -26005,8 +25762,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
+      "disabled": true,
+      "folded": true,
       "name": "Rooms_Global",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
