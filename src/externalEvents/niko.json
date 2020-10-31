@@ -863,7 +863,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": false,
+      "folded": true,
       "name": "Screen Shake",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4270,7 +4270,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4833,7 +4833,7 @@
         },
         {
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5738,7 +5738,7 @@
             },
             {
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6157,6 +6157,30 @@
                   },
                   "parameters": [],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "5",
+                    "\"gun5_shoot\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "gun5_shoot",
+                    "=",
+                    "\"True\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -6171,6 +6195,18 @@
                     "Niko.PointX(\"shoot\")",
                     "Niko.PointY(\"shoot\")",
                     "\"\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeAnimation"
+                  },
+                  "parameters": [
+                    "gun5",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
