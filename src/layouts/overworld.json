@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.122
+    "zoomFactor": 0.706
   },
   "objectsGroups": [
     {
@@ -84807,6 +84807,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "weaponholding",
+      "persistentUuid": "13d249b9-06b6-4f5a-b593-79789f2fe2f6",
+      "width": 0,
+      "x": 0,
+      "y": 420,
+      "zOrder": 12643549,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -87422,6 +87438,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\weapons\\gun\\Rocket_launcher_item - rocket out.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -88301,6 +88346,25 @@
       "string": "Ammo: [number]",
       "font": "",
       "characterSize": 30,
+      "color": {
+        "b": 156,
+        "g": 156,
+        "r": 156
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "weaponholding",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "weapon: [weapon]",
+      "font": "",
+      "characterSize": 20,
       "color": {
         "b": 156,
         "g": 156,
