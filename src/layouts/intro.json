@@ -1,16 +1,16 @@
 {
-  "b": 209,
+  "b": 0,
   "disableInputWhenNotFocused": true,
   "mangledName": "Intro",
   "name": "Intro",
   "oglFOV": 90,
   "oglZFar": 500,
   "oglZNear": 1,
-  "r": 209,
+  "r": 27,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 209,
+  "v": 0,
   "uiSettings": {
     "grid": false,
     "gridB": 255,
@@ -26,8 +26,150 @@
   },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 88,
+      "layer": "",
+      "locked": false,
+      "name": "Title",
+      "persistentUuid": "15ddcaad-842e-49d4-b86e-26620ffcbadf",
+      "width": 1163,
+      "x": 208,
+      "y": 224,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 51,
+      "layer": "",
+      "locked": false,
+      "name": "Subtext",
+      "persistentUuid": "9f86d607-c295-4985-8338-27e94f2a6b08",
+      "width": 1131,
+      "x": 212,
+      "y": 341,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "startPrompt",
+      "persistentUuid": "2fd665e8-e235-4ae0-91c5-642f44ea6c97",
+      "width": 0,
+      "x": 625,
+      "y": 473,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "versionCode",
+      "persistentUuid": "c4c75baf-3a91-4473-b409-094726c2b88d",
+      "width": 0,
+      "x": 1311,
+      "y": 647,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "bold": true,
+      "italic": false,
+      "name": "Title",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Open-GTA (GDevelop Open Game)",
+      "font": "",
+      "characterSize": 70,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "bold": false,
+      "italic": true,
+      "name": "Subtext",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Work-In-Progress made with love by the GDevelop Community",
+      "font": "",
+      "characterSize": 40,
+      "color": {
+        "b": 63,
+        "g": 204,
+        "r": 28
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "startPrompt",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Insert Coin",
+      "font": "",
+      "characterSize": 40,
+      "color": {
+        "b": 28,
+        "g": 231,
+        "r": 248
+      }
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "versionCode",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "behaviors": [],
+      "string": "Ver: Pre-Alpha",
+      "font": "",
+      "characterSize": 20,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    }
+  ],
   "events": [
     {
       "disabled": false,
