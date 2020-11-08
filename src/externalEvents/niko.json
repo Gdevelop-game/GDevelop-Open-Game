@@ -217,7 +217,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": false,
-      "folded": true,
+      "folded": false,
       "name": "swimming",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -249,6 +249,20 @@
               "parameters": [
                 "Placeholder",
                 "TopDownMovement"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "World_tiles",
+                "",
+                "",
+                ""
               ],
               "subInstructions": []
             }
@@ -298,6 +312,20 @@
                 "TopDownMovement"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "World_tiles",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -323,12 +351,12 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
+                "inverted": false,
                 "value": "CollisionNP"
               },
               "parameters": [
                 "Placeholder",
-                "Water",
+                "World_tiles",
                 "",
                 "",
                 ""
