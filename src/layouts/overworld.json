@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.706
+    "zoomFactor": 0.346
   },
   "objectsGroups": [
     {
@@ -84823,6 +84823,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "mele2",
+      "persistentUuid": "09afe30b-b74c-417f-a4d0-68548d755fec",
+      "width": 0,
+      "x": 70,
+      "y": 1330,
+      "zOrder": 12643551,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -85597,6 +85613,41 @@
                       "name": "shoot",
                       "x": 52,
                       "y": 28
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mele2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a1.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 51,
+                      "y": 30
                     }
                   ],
                   "originPoint": {
@@ -87502,6 +87553,130 @@
                     "y": 4
                   },
                   "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mele2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\weapons\\mele\\knife.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 14.6402,
+                        "y": 10.6061
+                      },
+                      {
+                        "x": 22,
+                        "y": 22
+                      },
+                      {
+                        "x": 10.0947,
+                        "y": 15.1515
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slash1",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\weapons\\slash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 31.7756,
+                    "y": 12.9545
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 31.321,
+                    "y": 12.9545
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 15.0288,
+                        "y": 3.68421
+                      },
+                      {
+                        "x": 34.7656,
+                        "y": 0
+                      },
+                      {
+                        "x": 58.1867,
+                        "y": 15
+                      },
+                      {
+                        "x": 33.9762,
+                        "y": 4.47368
+                      },
+                      {
+                        "x": 19.7656,
+                        "y": 6.84211
+                      },
+                      {
+                        "x": 3.97615,
+                        "y": 18.1579
+                      }
+                    ]
+                  ]
                 }
               ]
             }

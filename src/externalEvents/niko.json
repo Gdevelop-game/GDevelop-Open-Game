@@ -3624,6 +3624,20 @@
                   },
                   "parameters": [],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -4087,6 +4101,20 @@
                     "\"gun2_shoot\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -4467,7 +4495,7 @@
             },
             {
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4502,6 +4530,20 @@
                     "Gun3_ammo",
                     "!=",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4740,6 +4782,20 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": [],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
+                  ],
                   "subInstructions": []
                 }
               ],
@@ -5110,6 +5166,20 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": [],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
+                  ],
                   "subInstructions": []
                 }
               ],
@@ -6309,6 +6379,20 @@
                     "\"True\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "flame_thrower_fire_collision",
+                    "bullet_obstacles",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -7139,7 +7223,7 @@
               "parameters": [
                 "weaponholding",
                 "=",
-                "\"weapon: gun6\""
+                "\"weapon: mele2\""
               ],
               "subInstructions": []
             }
@@ -7667,6 +7751,17 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Slash1",
+                    "tazer_hitbox"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -7687,6 +7782,84 @@
           },
           "comment": "if bullets collide with \"bullet obstacles\"",
           "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Distance"
+              },
+              "parameters": [
+                "bullet",
+                "Fences",
+                "15",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arreter"
+              },
+              "parameters": [
+                "bullet"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Arret"
+              },
+              "parameters": [
+                "bullet"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "bullet",
+                "Fences",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                "="
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -7717,14 +7890,6 @@
                 "=",
                 "1"
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -7811,14 +7976,6 @@
                 "2"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
             }
           ],
           "actions": [
@@ -7903,14 +8060,6 @@
                 "=",
                 "4"
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -8008,14 +8157,6 @@
                 "=",
                 "0"
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -8991,7 +9132,7 @@
         },
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "bullet",
           "conditions": [],
