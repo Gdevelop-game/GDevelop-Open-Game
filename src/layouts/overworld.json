@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.13
+    "zoomFactor": 0.322
   },
   "objectsGroups": [
     {
@@ -93081,21 +93081,7 @@
       "name": "GUI",
       "visibility": true,
       "cameras": [],
-      "effects": [
-        {
-          "effectType": "AdvancedBloom",
-          "name": "Effect",
-          "doubleParameters": {
-            "bloomScale": 0.7,
-            "blur": 4,
-            "brightness": 0.7,
-            "quality": 7,
-            "threshold": 0.5
-          },
-          "stringParameters": {},
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     },
     {
       "ambientLightColorB": 200,
