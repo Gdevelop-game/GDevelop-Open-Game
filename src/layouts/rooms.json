@@ -12,7 +12,7 @@
   "title": "",
   "v": 0,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,9 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.202
+    "zoomFactor": 0.322
   },
   "objectsGroups": [
     {
@@ -7613,7 +7613,7 @@
       "persistentUuid": "ebbdeb02-65f7-48f4-a265-9c42095bc320",
       "width": 70,
       "x": 1050,
-      "y": 1890,
+      "y": 3290,
       "zOrder": 4,
       "numberProperties": [
         {
@@ -21019,6 +21019,5818 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "c9ba5ce8-ee97-4e69-8d84-85fcd3750780",
+      "width": 1190,
+      "x": 3430,
+      "y": 2240,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "f676f78d-3172-49c1-9cec-0e43fa0b61fd",
+      "width": 70,
+      "x": 3360,
+      "y": 2240,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 490,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "1138a496-ff22-4797-924e-ae308efc3c32",
+      "width": 70,
+      "x": 3360,
+      "y": 2590,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "b2aeb7ff-2c1f-4758-ba61-3a136fa82ddc",
+      "width": 70,
+      "x": 3360,
+      "y": 3080,
+      "zOrder": 286,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "600adaf2-363c-4ba1-b3c1-1a514f70a7ae",
+      "width": 350,
+      "x": 3430,
+      "y": 3080,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "bd96f49f-d24e-4d22-bd72-465479c8c470",
+      "width": 70,
+      "x": 3780,
+      "y": 3080,
+      "zOrder": 287,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "d5edab9b-4ff7-4e31-a2c0-c2023c6be0fe",
+      "width": 70,
+      "x": 4060,
+      "y": 3080,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "87d83384-e8e5-4e94-ba5e-fb26c8adba4b",
+      "width": 70,
+      "x": 4130,
+      "y": 2660,
+      "zOrder": 290,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "988b6d89-96c7-4145-a845-ceaacd142d8b",
+      "width": 70,
+      "x": 4620,
+      "y": 2240,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "aeffcd83-0b74-4191-9cb2-a0c6cb9fbb79",
+      "width": 70,
+      "x": 4620,
+      "y": 2310,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "95d1a411-bc5d-4c93-9e55-4f1fd1f12b02",
+      "width": 70,
+      "x": 4620,
+      "y": 2660,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "ae6e9b89-ebf6-495a-bfef-6fa4804cfc94",
+      "width": 420,
+      "x": 4200,
+      "y": 2660,
+      "zOrder": 293,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 840,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor",
+      "persistentUuid": "b99477f5-0cc3-4412-a04a-971dc298310e",
+      "width": 1190,
+      "x": 3430,
+      "y": 2310,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "40c14d26-8c9f-4432-a337-144f7c0d7276",
+      "width": 70,
+      "x": 4200,
+      "y": 2380,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "ee6dab4d-ae15-4790-8512-89ba08e70468",
+      "width": 70,
+      "x": 4200,
+      "y": 2520,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "8b04dfec-2a53-43ba-b7ad-30fc8549b337",
+      "width": 70,
+      "x": 4200,
+      "y": 2450,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 17
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "2059d59e-ba18-4adf-b97d-28caaf2ea72b",
+      "width": 70,
+      "x": 4340,
+      "y": 2590,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a633b2f6-1b6a-46ab-9dd3-7c18f37edff1",
+      "width": 70,
+      "x": 4410,
+      "y": 2590,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "0e743676-ddb5-476f-a0ee-1746542813dd",
+      "width": 70,
+      "x": 4340,
+      "y": 2310,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "7dd95e80-c168-4f10-a716-a5b3a3c066d4",
+      "width": 70,
+      "x": 4410,
+      "y": 2310,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "979b11cb-aa20-4fa4-aaa3-388561170450",
+      "width": 0,
+      "x": 4550,
+      "y": 2450,
+      "zOrder": 262,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a9259600-46be-4ce3-ac54-65175f655013",
+      "width": 70,
+      "x": 3575,
+      "y": 2700,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a3eaec3a-b4a5-44b4-9acc-173174f6c71c",
+      "width": 140,
+      "x": 3538,
+      "y": 2758,
+      "zOrder": 35,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 21
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "7f93b456-4f94-4ca4-bf8a-a252b7bf88c8",
+      "width": 70,
+      "x": 3501,
+      "y": 2828,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "13eb0ffa-e5ed-4d2d-aa39-65b3b09941d4",
+      "width": 70,
+      "x": 3501,
+      "y": 2758,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a3fe06a2-6222-4675-9867-7a629e685599",
+      "width": 70,
+      "x": 3646,
+      "y": 2758,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1200e3a1-b951-42cc-8944-e4c26f08711d",
+      "width": 70,
+      "x": 3646,
+      "y": 2828,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "8bf63887-4060-4c6f-b94a-1dcbd0489878",
+      "width": 70,
+      "x": 3572,
+      "y": 2884,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "4b1f003a-b682-435a-a4f3-00dab245f00a",
+      "width": 70,
+      "x": 3360,
+      "y": 2520,
+      "zOrder": 294,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "30938a28-72af-46c7-ac9a-9ec56cf0bc1c",
+      "width": 70,
+      "x": 3360,
+      "y": 2310,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "a1845947-73a0-433e-8931-f65572a8a2d0",
+      "width": 350,
+      "x": 3430,
+      "y": 2520,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "6d90c856-8eb2-4115-b7b4-4910f70bd7ff",
+      "width": 70,
+      "x": 3780,
+      "y": 2520,
+      "zOrder": 287,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "7e576957-cf48-4424-acad-c1429520a7da",
+      "width": 70,
+      "x": 3430,
+      "y": 2310,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "7ccbf64c-4083-422a-b115-9710b130a783",
+      "width": 70,
+      "x": 3500,
+      "y": 2310,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "470c0e59-4b28-48a2-96aa-2f291d56a170",
+      "width": 70,
+      "x": 3570,
+      "y": 2310,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "97ce7ee6-ed55-4a2f-9abc-793dab238a08",
+      "width": 70,
+      "x": 3640,
+      "y": 2310,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "5885a083-c3dc-4273-b167-81678edd9ee8",
+      "width": 70,
+      "x": 3710,
+      "y": 2310,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "d90edec6-5c6f-4cc8-ba4d-c15b41298987",
+      "width": 70,
+      "x": 3710,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "31322c49-0959-4681-89e4-016fee643d60",
+      "width": 70,
+      "x": 3640,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "28ff668e-a0a1-46ed-9405-a6abff97ba97",
+      "width": 70,
+      "x": 3500,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "3d5d3632-fc27-42f8-b1b7-6592a95fe949",
+      "width": 70,
+      "x": 3570,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "17243cda-5fdb-4d16-877b-b71c9d587e3d",
+      "width": 70,
+      "x": 3430,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "e371395c-7a81-446e-a096-919e6f710b85",
+      "width": 70,
+      "x": 3430,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "383fcb2b-0b77-4911-9d04-653f8bc88496",
+      "width": 70,
+      "x": 3500,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "6ba77adf-1ea3-469b-91b0-0da65a33ede8",
+      "width": 70,
+      "x": 3570,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "58f1acea-dbc2-4ddd-a02d-31b14b464430",
+      "width": 70,
+      "x": 3640,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "c6464947-bb5e-4a78-9d65-dba42fa3973d",
+      "width": 70,
+      "x": 3710,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "7ff67ed0-229c-4eff-b7b3-ca21b892b64f",
+      "width": 70,
+      "x": 3780,
+      "y": 2450,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "4d3c6af1-d6fb-4470-9270-8908bf124a93",
+      "width": 70,
+      "x": 3780,
+      "y": 2310,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "a2aab55a-68ee-4d19-ad05-6342a6ae240e",
+      "width": 70,
+      "x": 3780,
+      "y": 2380,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "e2b4a0ff-7d5c-4ebb-8dac-f19f78d58e5c",
+      "width": 70,
+      "x": 3780,
+      "y": 2450,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "ce4db660-d5c3-43c4-8cc9-63421d2c80a2",
+      "width": 70,
+      "x": 3430,
+      "y": 2310,
+      "zOrder": 100,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "b963cdb1-0090-4a9a-b2e7-358202d3914a",
+      "width": 70,
+      "x": 3430,
+      "y": 2590,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 70,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "2c74aa9f-3009-482d-839f-9464e2a5516f",
+      "width": 70,
+      "x": 3710,
+      "y": 3010,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "6e77e7b0-0d9d-4f16-bfd3-f6bca951a851",
+      "width": 70,
+      "x": 4550,
+      "y": 2450,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "9b7e38e5-fbc0-4021-ac2e-7b402fa04c6a",
+      "width": 70,
+      "x": 3780,
+      "y": 2800,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "b42278ea-f468-4c0c-b9bd-429de15a2fbf",
+      "width": 70,
+      "x": 3780,
+      "y": 2730,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "8482a9f5-3154-4ed7-8813-2cf04bf15551",
+      "width": 0,
+      "x": 4549.46,
+      "y": 2387.99,
+      "zOrder": 271,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "f645bc79-3c30-488b-a04b-0a983b530c23",
+      "width": 0,
+      "x": 4549.46,
+      "y": 2528.93,
+      "zOrder": 271,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "564f7162-e2e8-40cb-a6d1-3899ffb12e88",
+      "width": 70,
+      "x": 4620,
+      "y": 3080,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "c5816fcd-1f69-46e4-908c-dcec17fe9138",
+      "width": 70,
+      "x": 4620,
+      "y": 2730,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "78b30559-8b49-4a88-ad4f-11e7b2cc6aeb",
+      "width": 70,
+      "x": 4130,
+      "y": 3080,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "14e1116a-3a90-4d2d-be49-85a84e479ce3",
+      "width": 420,
+      "x": 4200,
+      "y": 3080,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "055c055d-245b-44fe-936a-66569de60983",
+      "width": 70,
+      "x": 4130,
+      "y": 2940,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "9fdf0bac-9c52-4b80-baa4-595e7957c01d",
+      "width": 70,
+      "x": 4130,
+      "y": 2870,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "cd54905d-0feb-425b-a3a6-f8efd0b27149",
+      "width": 70,
+      "x": 4130,
+      "y": 2730,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "d02ccbca-2a01-4e89-b18b-880d122cd6e5",
+      "width": 70,
+      "x": 4200,
+      "y": 2940,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "6cbb894a-80b5-41f3-bfe2-c73b752989c5",
+      "width": 70,
+      "x": 4270,
+      "y": 2940,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "4e752bee-307e-4cae-8118-136895252957",
+      "width": 70,
+      "x": 4340,
+      "y": 2940,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "12760856-4d83-46e4-ae56-fd5ce64e1e2c",
+      "width": 70,
+      "x": 4340,
+      "y": 3010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "fbf3874c-52d1-4093-b800-3adbb9de5c70",
+      "width": 70,
+      "x": 4270,
+      "y": 3010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "4afbd525-60d6-4142-b6ec-34e4884f6a8d",
+      "width": 70,
+      "x": 4200,
+      "y": 3010,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 70,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "00c0b2fa-b892-4543-bf29-59c1aa55a1d4",
+      "width": 70,
+      "x": 4550,
+      "y": 2730,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "624cc69c-e9c2-4f98-a0b0-ea346da71f1a",
+      "width": 70,
+      "x": 4480,
+      "y": 2730,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 40,
+      "customSize": true,
+      "height": 50,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "466d42a4-e8fb-44c2-af12-3649dd6b7838",
+      "width": 50,
+      "x": 4480,
+      "y": 2800,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 19
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -70,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "9eef5792-e16f-4cfb-b9dd-a0a69ba9e5d5",
+      "width": 0,
+      "x": 4536,
+      "y": 2990,
+      "zOrder": 262,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -70,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "4505e1a8-e8bd-4ca9-8417-856269084c38",
+      "width": 70,
+      "x": 4536,
+      "y": 2990,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "da6fcf6f-24d3-4685-93d4-74ba445c156f",
+      "width": 70,
+      "x": 1820,
+      "y": 2590,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "197fcb91-3da0-4679-b1e6-95c51f32e202",
+      "width": 70,
+      "x": 1820,
+      "y": 3500,
+      "zOrder": 286,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "c33b653f-9c70-4ef5-acd4-df1563515609",
+      "width": 70,
+      "x": 2870,
+      "y": 2240,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "5616a92a-4bca-43ea-958d-16d034eaa73c",
+      "width": 70,
+      "x": 2870,
+      "y": 3500,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 770,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "27d10840-2810-4b7d-85f4-d38d9d7f9668",
+      "width": 70,
+      "x": 2870,
+      "y": 2310,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "34a01116-5752-478e-9801-29e55e687549",
+      "width": 350,
+      "x": 1890,
+      "y": 2590,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "02c2a90b-16a0-4184-b291-2fc4266d0de6",
+      "width": 70,
+      "x": 2240,
+      "y": 2240,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "21be10c7-9447-418c-a7c8-aa42bb4bf62c",
+      "width": 560,
+      "x": 2310,
+      "y": 2240,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "569faf64-452c-4f14-82e0-d2f3fdb1907d",
+      "width": 70,
+      "x": 2240,
+      "y": 2310,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8f755a99-4901-4ad3-bafa-09eccdf9a66e",
+      "width": 70,
+      "x": 1820,
+      "y": 2660,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "f55955f9-a683-43ef-a0b2-cd9f200869c1",
+      "width": 70,
+      "x": 2240,
+      "y": 2590,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "6990a8aa-755d-4dc2-b1cd-4a6333a9fa93",
+      "width": 280,
+      "x": 2310,
+      "y": 2590,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "ea9d29e6-6a9a-469b-ab84-c9a8b5beffb6",
+      "width": 350,
+      "x": 1890,
+      "y": 3500,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "0e22809b-ae08-4558-8889-2a1bb34bad67",
+      "width": 210,
+      "x": 2660,
+      "y": 3500,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "a0c79deb-e940-4527-be5e-f4f85dd641f2",
+      "width": 70,
+      "x": 2240,
+      "y": 3500,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "d46f27f1-835e-4a1b-bd57-5bc586b4291c",
+      "width": 70,
+      "x": 2520,
+      "y": 3500,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 980,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor_dark",
+      "persistentUuid": "798e9697-eca2-4310-a9ae-9cf67f6b8355",
+      "width": 1120,
+      "x": 1820,
+      "y": 2590,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor_dark",
+      "persistentUuid": "0d95e5da-4d15-4d6d-a352-e04884437c2c",
+      "width": 560,
+      "x": 2310,
+      "y": 2310,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "775c2dd3-6e69-49b8-8075-e47c936f236c",
+      "width": 70,
+      "x": 2181,
+      "y": 2729,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "13211fb0-c968-4846-9498-0c4232cc5db0",
+      "width": 70,
+      "x": 2181,
+      "y": 2799,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1800ac0d-f457-4fa7-a974-147e701c884c",
+      "width": 70,
+      "x": 2181,
+      "y": 2869,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "84061bca-0841-4066-bd81-1cfc8b585d39",
+      "width": 70,
+      "x": 2058,
+      "y": 2928,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "38ad9705-d0ea-472a-9345-7ef40c464b6b",
+      "width": 70,
+      "x": 1988,
+      "y": 2928,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1c3e60fc-0607-403e-9403-4f622a334031",
+      "width": 70,
+      "x": 1918,
+      "y": 2777,
+      "zOrder": 30,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "061c3004-958d-4fa6-8563-eb923fa52de0",
+      "width": 70,
+      "x": 1918,
+      "y": 2777,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "0a83ee93-4ebd-45c8-b77a-e712cfd66b7a",
+      "width": 70,
+      "x": 2030,
+      "y": 3179,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "c7bdc34a-bbb2-4f2c-90fa-42b9fa9f1b81",
+      "width": 70,
+      "x": 2101,
+      "y": 3237,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "22113808-03a0-4c28-8812-fde845d27a08",
+      "width": 70,
+      "x": 2101,
+      "y": 3307,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "c40d93da-4346-4188-b345-2a7c5e8a174e",
+      "width": 140,
+      "x": 1993,
+      "y": 3237,
+      "zOrder": 35,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 21
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "3c4db02d-36cc-4094-a740-5c389acffb76",
+      "width": 70,
+      "x": 2027,
+      "y": 3363,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "19483094-0076-4047-ac91-d9e829bb32a1",
+      "width": 70,
+      "x": 1956,
+      "y": 3307,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "74946752-f6b7-4740-a5ae-1362a2d04e07",
+      "width": 70,
+      "x": 1956,
+      "y": 3237,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "9497456b-0bc7-4342-b8d6-55897444b713",
+      "width": 70,
+      "x": 1820,
+      "y": 3010,
+      "zOrder": 294,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 420,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "ac83ac67-3e6d-40b7-bd37-8e4aace9f6e1",
+      "width": 70,
+      "x": 1820,
+      "y": 3080,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "905c465b-ecdb-4126-a7ef-ceee2d399a39",
+      "width": 350,
+      "x": 1890,
+      "y": 3010,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "49316bec-ee03-4ded-8f46-5eab7a30f66d",
+      "width": 70,
+      "x": 2240,
+      "y": 3010,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "74d3d3b6-fa0e-4cfe-82ba-23945afbf26a",
+      "width": 70,
+      "x": 1889,
+      "y": 3438,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "dcc06820-a42d-4484-90e7-0141cf47930f",
+      "width": 70,
+      "x": 2800,
+      "y": 3010,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "4637035d-3c50-4361-9e68-fb9d971ea397",
+      "width": 70,
+      "x": 2520,
+      "y": 2660,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "0d88c3c6-26c6-4ae7-b509-0307b430a63d",
+      "width": 70,
+      "x": 2590,
+      "y": 2590,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8ad28146-4d18-4c01-83e3-4cecd30dff9a",
+      "width": 70,
+      "x": 2590,
+      "y": 2660,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "512291db-2d62-4332-acaf-e4dc6c374ade",
+      "width": 70,
+      "x": 2590,
+      "y": 2870,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "7977c8b0-6710-42d7-9380-bbcb61930064",
+      "width": 70,
+      "x": 2870,
+      "y": 3080,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "38155c46-c85d-41a5-a5c7-b471d405a806",
+      "width": 70,
+      "x": 2870,
+      "y": 3150,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "581d4d04-2d57-4228-998f-4784a66e4fe9",
+      "width": 70,
+      "x": 2590,
+      "y": 3500,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "99351ebb-6c8e-4f4a-baa2-f8835f066ac6",
+      "width": 70,
+      "x": 2590,
+      "y": 3360,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "4ef9d654-bd35-4fc6-9480-8d184c5e7216",
+      "width": 210,
+      "x": 2660,
+      "y": 3080,
+      "zOrder": 293,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8d308ed4-feab-4d9c-8479-23038a182d92",
+      "width": 70,
+      "x": 2590,
+      "y": 3290,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "d4906007-c420-4901-88d9-e2b112fe6d36",
+      "width": 70,
+      "x": 2590,
+      "y": 3080,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "Grey_floor_tiled",
+      "persistentUuid": "1af62462-8740-44a6-a920-7a120c0750f9",
+      "width": 210,
+      "x": 2660,
+      "y": 3150,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "457aa1af-c2bc-45b9-b789-cab3a3338c38",
+      "width": 70,
+      "x": 2800,
+      "y": 3430,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "8ea711b8-b127-43f6-b84e-7f4386128a21",
+      "width": 70,
+      "x": 2800,
+      "y": 3360,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "8e9d85f1-f675-429c-9eb6-f66e891f295a",
+      "width": 70,
+      "x": 2800,
+      "y": 3290,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "b5887b3c-cd35-4d64-8ca9-71cd58157a09",
+      "width": 70,
+      "x": 2800,
+      "y": 3220,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "6800dce0-399c-4701-a64b-9a6cffffc0c7",
+      "width": 70,
+      "x": 2800,
+      "y": 3150,
+      "zOrder": 100,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "3f0f4743-bc24-4b12-801a-bfee333012fc",
+      "width": 70,
+      "x": 2800,
+      "y": 3150,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "4f325a20-c5c0-4560-b777-80f11730e129",
+      "width": 70,
+      "x": 2310,
+      "y": 2380,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "2923ab99-a665-495b-a586-b5016a56ceb5",
+      "width": 70,
+      "x": 2310,
+      "y": 2450,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "22316b78-3129-47a9-8868-629690cfc781",
+      "width": 70,
+      "x": 2380,
+      "y": 2450,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "210fc99f-e5a5-4414-bc49-7aba02654924",
+      "width": 70,
+      "x": 2450,
+      "y": 2450,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "631c0d8e-7802-4833-8fe9-1645d79e7cd7",
+      "width": 70,
+      "x": 2380,
+      "y": 2380,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "25fdeb0c-1c6e-4bef-be20-f559863a63c3",
+      "width": 70,
+      "x": 2450,
+      "y": 2380,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "5c958615-fe68-4981-9431-f138ebb08a9c",
+      "width": 70,
+      "x": 2310,
+      "y": 2520,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1254f2c8-c9bb-4ede-b024-0f495fe8d30e",
+      "width": 70,
+      "x": 2310,
+      "y": 2520,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1241358e-e700-44ff-8f34-ef30e0addadf",
+      "width": 70,
+      "x": 2310,
+      "y": 2310,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "39eb54b9-113c-4617-93a6-199313179433",
+      "width": 70,
+      "x": 2310,
+      "y": 2310,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "aaa4fd0d-d20d-4dc0-b64b-5ea7eb53a18b",
+      "width": 70,
+      "x": 2730,
+      "y": 2310,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "cf067b8c-7c47-4226-bfd3-e6c224f96a86",
+      "width": 70,
+      "x": 2730,
+      "y": 2367,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8ea362e6-107a-40b4-b380-1aa22f24c7cc",
+      "width": 70,
+      "x": 2660,
+      "y": 2590,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "77e47111-7ac7-4171-88e6-01ca4167bfe3",
+      "width": 70,
+      "x": 280,
+      "y": 2590,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "23d5e77d-3376-40d5-8e51-defd889a9ccc",
+      "width": 70,
+      "x": 1190,
+      "y": 3500,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "736d10e9-0d1b-4c96-8cad-4b4fa538bf2b",
+      "width": 70,
+      "x": 280,
+      "y": 3500,
+      "zOrder": 286,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "4d1eeae6-d251-4ca8-b8a2-b3377ca3b5c0",
+      "width": 70,
+      "x": 1190,
+      "y": 2590,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "2ea338da-63f8-454e-83d1-8c4a22a3fd8d",
+      "width": 560,
+      "x": 350,
+      "y": 2590,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "2ee9b3e0-fd05-40be-bb57-60ec98b8037a",
+      "width": 210,
+      "x": 70,
+      "y": 2660,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "1b340ea7-8414-43ad-9367-e60842e862be",
+      "width": 70,
+      "x": 0,
+      "y": 2660,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "78ad3f15-d8b2-4cd3-87f0-6e987343381e",
+      "width": 70,
+      "x": 0,
+      "y": 2730,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8ae3df79-8b47-4323-8698-a30b0fe123fe",
+      "width": 70,
+      "x": 0,
+      "y": 3010,
+      "zOrder": 286,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "c8e6a956-0993-4271-951e-05cd57b53e77",
+      "width": 210,
+      "x": 70,
+      "y": 3010,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "adcd5bb9-3871-4ac7-9ef5-99b6b66a8325",
+      "width": 70,
+      "x": 280,
+      "y": 3010,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "e01d275f-f33c-4dde-af1a-32df14ea4f1d",
+      "width": 70,
+      "x": 280,
+      "y": 2660,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "6ace8185-fa95-43c0-a179-0b5ae2b7a3c6",
+      "width": 70,
+      "x": 280,
+      "y": 2730,
+      "zOrder": 13,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "f71e6702-ed7c-4799-95a9-e5b540ee986a",
+      "width": 70,
+      "x": 280,
+      "y": 2940,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "0a447bf7-7c9f-4f73-80eb-a8d04e559712",
+      "width": 70,
+      "x": 280,
+      "y": 3150,
+      "zOrder": 1,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 840,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "95b7b156-7d42-404b-9b9d-81d8323651bf",
+      "width": 70,
+      "x": 1190,
+      "y": 2660,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "da15ff62-4135-4b35-8621-6698c5b0798e",
+      "width": 350,
+      "x": 350,
+      "y": 3500,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "698b4c3b-9a12-4307-b8ed-c100c21dadea",
+      "width": 70,
+      "x": 700,
+      "y": 3500,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "e808b2d3-4688-41e6-8deb-5d0c11fdbae3",
+      "width": 140,
+      "x": 1050,
+      "y": 3500,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "474ae3e0-57bc-4911-8c35-9c0fbd86e916",
+      "width": 70,
+      "x": 910,
+      "y": 3500,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "Grey_floor_tiled",
+      "persistentUuid": "05819116-6582-4c75-bf6c-d7a5cc5f1fde",
+      "width": 280,
+      "x": 70,
+      "y": 2730,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "08ae459b-27b6-48f7-b6a2-312eb86941ab",
+      "width": 70,
+      "x": 70,
+      "y": 2730,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "8e1aa817-f1d2-4439-afe9-372aca6b3dc0",
+      "width": 70,
+      "x": 70,
+      "y": 2800,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "32084239-5ea5-4ce1-ab69-0cac4dc34ae2",
+      "width": 70,
+      "x": 70,
+      "y": 2870,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "e2d28972-643b-402e-b196-8aae13ef59c8",
+      "width": 70,
+      "x": 70,
+      "y": 2940,
+      "zOrder": 100,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "291429a3-e574-41b6-852c-22947022ddf8",
+      "width": 70,
+      "x": 70,
+      "y": 2940,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "237c65e1-167d-41a8-8196-04dbd0a341b5",
+      "width": 70,
+      "x": 910,
+      "y": 2590,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "bf0d27af-35e2-4dd2-b76c-178cb37d05c8",
+      "width": 210,
+      "x": 980,
+      "y": 2590,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "76d684cc-72c1-4da8-a712-a218886f91c5",
+      "width": 70,
+      "x": 910,
+      "y": 2660,
+      "zOrder": 18,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "60c253d6-9917-48d4-825e-ec29f028e403",
+      "width": 70,
+      "x": 910,
+      "y": 2940,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "5d9cd5f4-fb4f-4522-ab92-15f119d32df4",
+      "width": 70,
+      "x": 1120,
+      "y": 2660,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "9a2c2574-313f-4b4a-ada5-6fc9d32f08c1",
+      "width": 70,
+      "x": 1050,
+      "y": 2730,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "895a356f-0358-4a97-812b-fa18224eec8e",
+      "width": 70,
+      "x": 1120,
+      "y": 2800,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "7b5c8a3e-82d0-4f31-949d-9253307d1b25",
+      "width": 70,
+      "x": 1050,
+      "y": 2800,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "b710b458-a58d-4de3-9841-a80052efeb30",
+      "width": 70,
+      "x": 1120,
+      "y": 2730,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "eeece8fb-a9fc-4429-b1b2-909dd92df8f5",
+      "width": 70,
+      "x": 1050,
+      "y": 2660,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "adea10b7-8dea-41d3-a8a2-bdea3511e4b5",
+      "width": 70,
+      "x": 980,
+      "y": 2660,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "4ebf06b4-537c-4a9c-8155-d484f21c2315",
+      "width": 70,
+      "x": 980,
+      "y": 2660,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 240,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "202786e8-4a71-4c68-ab3e-b8943020832e",
+      "width": 70,
+      "x": 826,
+      "y": 2674,
+      "zOrder": 30,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 240,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a85763cd-5212-4034-a717-0448b914d341",
+      "width": 70,
+      "x": 826,
+      "y": 2674,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "e901505e-1685-4fa1-be51-f0260cdbf9d8",
+      "width": 70,
+      "x": 770,
+      "y": 2870,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "898ebc01-0b50-41e8-951a-9f2447a397d2",
+      "width": 70,
+      "x": 700,
+      "y": 2870,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "425e0e8d-e9ec-4733-b958-42b17cef4dff",
+      "width": 70,
+      "x": 630,
+      "y": 2730,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 19
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "c469b0bb-5f8a-4963-8331-e4305efc298c",
+      "width": 70,
+      "x": 481,
+      "y": 3188,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "98a23410-a17c-4fda-b866-957dc9e4fd9f",
+      "width": 70,
+      "x": 552,
+      "y": 3246,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "f5901a3b-1b6c-4aca-aaf7-2f0bbace8c3a",
+      "width": 70,
+      "x": 552,
+      "y": 3316,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "cec3d4b4-b5d0-4c8f-9b5b-dc2a7219a56e",
+      "width": 140,
+      "x": 444,
+      "y": 3246,
+      "zOrder": 35,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 21
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "d7526131-8c7a-4a56-b68c-ac28711589ca",
+      "width": 70,
+      "x": 478,
+      "y": 3372,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a566c2c2-0892-4ca9-abed-62294e26750e",
+      "width": 70,
+      "x": 407,
+      "y": 3316,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "2341b9a8-b8e9-4a21-baac-2684a4ba3ca4",
+      "width": 70,
+      "x": 407,
+      "y": 3246,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "bfb41509-2936-403f-8bb6-0181a02de7c9",
+      "width": 70,
+      "x": 980,
+      "y": 3500,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "941364ec-da40-4c42-bbb3-13f7df38fc30",
+      "width": 70,
+      "x": 980,
+      "y": 3290,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "8e102d70-99f4-44a9-9d68-de777c4bc51b",
+      "width": 70,
+      "x": 980,
+      "y": 3220,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "8fe329c0-7b72-4e3f-8ffc-174fae1dc08c",
+      "width": 70,
+      "x": 1120,
+      "y": 3290,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "56dd99a3-c69c-46fd-ac67-ef5ad513867e",
+      "width": 70,
+      "x": 1050,
+      "y": 3360,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "67656edf-8861-424e-86b3-3ba193dbf6d3",
+      "width": 70,
+      "x": 1120,
+      "y": 3360,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "92c3bb43-e430-417d-9a62-b4fb452c4874",
+      "width": 70,
+      "x": 1050,
+      "y": 3430,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "873d5d74-1cd1-460e-abbf-92c4f8111014",
+      "width": 70,
+      "x": 1120,
+      "y": 3430,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "3986af42-c74c-4d66-9c7f-9133388ba686",
+      "width": 70,
+      "x": 280,
+      "y": 3080,
+      "zOrder": 294,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 11
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "186015a5-5b64-46b1-842e-e6b287cd0dc1",
+      "width": 280,
+      "x": 350,
+      "y": 3080,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "76e60764-8fbc-43e6-a7e1-9ff9820bab8c",
+      "width": 70,
+      "x": 630,
+      "y": 3080,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 910,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor_dark",
+      "persistentUuid": "68f8e56b-34c1-4f72-8191-7ba7c01589e1",
+      "width": 910,
+      "x": 350,
+      "y": 2660,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "3e96d033-81a2-487c-b2c2-4aebac45ad37",
+      "width": 70,
+      "x": 4550,
+      "y": 3920,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 9
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "12ef1cf8-54ed-4d7e-8e8c-45864663f9e4",
+      "width": 700,
+      "x": 3850,
+      "y": 3920,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "c0f41a30-79c3-4b4e-912d-429c9061d5d5",
+      "width": 70,
+      "x": 3500,
+      "y": 3920,
+      "zOrder": 211,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 980,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "ce22ed01-4b85-40d0-9b1b-e5b3d5f5ae7f",
+      "width": 70,
+      "x": 3500,
+      "y": 3990,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "b67541ff-830d-494b-ab4f-7683216c4c54",
+      "width": 70,
+      "x": 4550,
+      "y": 4340,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "cd6dda9e-1254-4604-945f-29d56e8c91fa",
+      "width": 70,
+      "x": 3500,
+      "y": 4970,
+      "zOrder": 286,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "3451dd4a-8b3b-46f7-9f8a-1d1716860df6",
+      "width": 70,
+      "x": 4550,
+      "y": 4970,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 10
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "a2530963-0fae-4ad6-9c7b-b981f398494f",
+      "width": 280,
+      "x": 3570,
+      "y": 4970,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "56cf4d5c-e499-4329-ac90-566e90d4df70",
+      "width": 70,
+      "x": 3920,
+      "y": 4970,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "67f24a51-18fc-447e-be74-3cf04b31333f",
+      "width": 210,
+      "x": 4340,
+      "y": 4970,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "094f95c3-c4f3-478e-ba31-18e58f0dadf9",
+      "width": 70,
+      "x": 4130,
+      "y": 4970,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1050,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor_dark",
+      "persistentUuid": "1244bb01-8e57-456a-bdd0-09825107aa88",
+      "width": 700,
+      "x": 3850,
+      "y": 3990,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "1f8dfcb3-a796-46b6-89ed-69313eb1bc92",
+      "width": 70,
+      "x": 3780,
+      "y": 3920,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "9f3f116a-6553-4300-9969-94337083437d",
+      "width": 70,
+      "x": 3780,
+      "y": 3990,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "4c5875a2-766f-47d4-8d12-fa5c69a5d9cc",
+      "width": 70,
+      "x": 3780,
+      "y": 4270,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "42421c7d-8b5d-4bde-a5e8-3a8cfc3b7067",
+      "width": 210,
+      "x": 3570,
+      "y": 3920,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 770,
+      "layer": "",
+      "locked": false,
+      "name": "Wooden_floor_dark",
+      "persistentUuid": "1bd444e0-eb31-4a23-b5c0-b00f99896d71",
+      "width": 280,
+      "x": 3570,
+      "y": 4270,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "Grey_floor_tiled",
+      "persistentUuid": "36d7e9c5-bc86-4956-8f37-29260b65998e",
+      "width": 210,
+      "x": 3570,
+      "y": 3990,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "5f442d12-3ab2-4f1f-99e5-8e9738147fd2",
+      "width": 70,
+      "x": 3710,
+      "y": 3990,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "1b90183f-827f-4655-a4f2-f44abd56ed68",
+      "width": 70,
+      "x": 3710,
+      "y": 4060,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "92ea64dd-bada-4203-8e5e-0a2989c9f036",
+      "width": 70,
+      "x": 3710,
+      "y": 4130,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "kitchen",
+      "persistentUuid": "306758df-9e19-4abc-9734-76e1e916b5a1",
+      "width": 70,
+      "x": 3710,
+      "y": 4200,
+      "zOrder": 50,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "004a16ec-3e30-41cb-9340-26e253d52ca9",
+      "width": 70,
+      "x": 4480,
+      "y": 4130,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "eda6f1ea-a7a0-4b11-b33f-f28f9fcbcb6d",
+      "width": 70,
+      "x": 4480,
+      "y": 4060,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "bb76653a-a594-4373-8215-712f6a6de9db",
+      "width": 70,
+      "x": 4410,
+      "y": 4130,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a6a34250-ac6e-4049-8dd7-68ca5aea4ac4",
+      "width": 70,
+      "x": 4410,
+      "y": 4060,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "bf7c007e-1635-4be3-b2e9-f083275c56fe",
+      "width": 70,
+      "x": 4340,
+      "y": 4060,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "dbafdb67-90cd-4088-9208-f42f2dd98405",
+      "width": 70,
+      "x": 4340,
+      "y": 4130,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "2db49129-7c4e-4d00-9b1b-c32129ed14bc",
+      "width": 70,
+      "x": 4550,
+      "y": 4270,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 280,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "d5027d02-86fe-4bc2-aa88-222e615583a6",
+      "width": 70,
+      "x": 4550,
+      "y": 3990,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "09cdea9d-fb82-4645-950d-5734e4c516ba",
+      "width": 420,
+      "x": 4130,
+      "y": 4270,
+      "zOrder": 293,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "5cdb15ec-5c3d-4eea-85bc-4833743fb2fb",
+      "width": 70,
+      "x": 4060,
+      "y": 4270,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "37e1021f-7e86-4c1f-af3f-1a7137d2975e",
+      "width": 0,
+      "x": 4480,
+      "y": 4200,
+      "zOrder": 270,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "31cdca98-c4f5-4580-8b54-31526fcf933a",
+      "width": 70,
+      "x": 4480,
+      "y": 3990,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "df5cfc5b-a237-46b6-92d6-0432d77fd599",
+      "width": 70,
+      "x": 4480,
+      "y": 4200,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "flower",
+      "persistentUuid": "76ce7776-c5c9-4231-b0d8-25d30819fc0a",
+      "width": 0,
+      "x": 4480,
+      "y": 3990,
+      "zOrder": 270,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "74585e19-1c5e-41bf-b187-1b740d54e193",
+      "width": 70,
+      "x": 4130,
+      "y": 3990,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 40,
+      "customSize": true,
+      "height": 50,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "0f987118-7555-40ba-b8a1-a64002251048",
+      "width": 50,
+      "x": 4060,
+      "y": 3990,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 19
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "7ea298d0-e3d7-4853-8aed-e75fd5601aeb",
+      "width": 70,
+      "x": 4338,
+      "y": 4396,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "81e1ee22-020e-4a2f-a446-9f1dd532ad18",
+      "width": 140,
+      "x": 4301,
+      "y": 4454,
+      "zOrder": 35,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 21
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a9134440-287d-4e46-808e-c0b15220da4f",
+      "width": 70,
+      "x": 4264,
+      "y": 4524,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "c154072f-ffc8-489e-8a38-6e68c34ccb31",
+      "width": 70,
+      "x": 4264,
+      "y": 4454,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "f5c066b6-8549-4c0c-b3f2-4e73c5dd88d3",
+      "width": 70,
+      "x": 4409,
+      "y": 4454,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "1d09867b-3653-4f33-8103-ba382803138c",
+      "width": 70,
+      "x": 4409,
+      "y": 4524,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "41ffec36-f8f8-4a18-9769-a4485a15be61",
+      "width": 70,
+      "x": 4335,
+      "y": 4580,
+      "zOrder": 21,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 22
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "1df3351a-4ac7-43e4-8e07-01388d376150",
+      "width": 70,
+      "x": 4550,
+      "y": 4690,
+      "zOrder": 292,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 13
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "7f02221b-0b2c-4562-96a5-6f10d91e30ad",
+      "width": 210,
+      "x": 4340,
+      "y": 4690,
+      "zOrder": 293,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "429c1978-6f9d-43e3-a043-f69e236c2891",
+      "width": 70,
+      "x": 4130,
+      "y": 4690,
+      "zOrder": 289,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 210,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "e5b9bfe2-10ed-4560-bd92-ce9089635fb9",
+      "width": 70,
+      "x": 4550,
+      "y": 4760,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "2ad80e72-3fe2-4da2-9a8f-dbbb32a1f2ac",
+      "width": 70,
+      "x": 3640,
+      "y": 4620,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 180,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "c9d74ef6-ec2f-469e-a601-422ff70a6235",
+      "width": 70,
+      "x": 3710,
+      "y": 4620,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "81a7cb43-d246-47be-84a5-80df53db9165",
+      "width": 70,
+      "x": 3780,
+      "y": 4830,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 16
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a93df84f-3d65-42e4-b0c4-a97f66938028",
+      "width": 70,
+      "x": 3780,
+      "y": 4760,
+      "zOrder": 16,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 18
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "42ced599-4ff0-4627-b3e7-f66aaf447c07",
+      "width": 70,
+      "x": 3570,
+      "y": 4796,
+      "zOrder": 30,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "furniture",
+      "persistentUuid": "a30bfb2f-6803-462d-b1a3-fea395b67fff",
+      "width": 70,
+      "x": 3570,
+      "y": 4796,
+      "zOrder": 22,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "6901ae4b-af3f-4257-93e4-5ae73ee27f14",
+      "width": 70,
+      "x": 4410,
+      "y": 4760,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "57ee38c8-975d-4f1a-a8ba-76c303faba6a",
+      "width": 70,
+      "x": 4480,
+      "y": 4760,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "728854d1-25a5-433d-a0b6-982ab3ce0a38",
+      "width": 70,
+      "x": 4410,
+      "y": 4830,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "47435270-f0d4-457a-b45a-081222cd1e56",
+      "width": 70,
+      "x": 4480,
+      "y": 4830,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "cc208698-f85a-4ca9-be67-aae858ce9129",
+      "width": 70,
+      "x": 4410,
+      "y": 4900,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "10757183-b9fb-4e22-809b-f3e9c4b54e72",
+      "width": 70,
+      "x": 4480,
+      "y": 4900,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "0cef3551-65b4-4f70-818b-bb43fe57c800",
+      "width": 70,
+      "x": 4340,
+      "y": 4760,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "86063643-7a05-4bfe-aa61-2fbf6de7af47",
+      "width": 70,
+      "x": 4340,
+      "y": 4830,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "7b369c33-5148-4594-b2cc-1eba1f885e90",
+      "width": 70,
+      "x": 4340,
+      "y": 4900,
+      "zOrder": 4,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "7ca90a6e-bca8-483a-99a2-68c3ce1e501d",
+      "width": 70,
+      "x": 4270,
+      "y": 4690,
+      "zOrder": 291,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 12
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "d6cbadc2-fa24-49df-b278-d7b2241e9bab",
+      "width": 70,
+      "x": 4200,
+      "y": 4690,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "fcf29a18-3267-46e8-b869-42b5f8a8a032",
+      "width": 70,
+      "x": 4270,
+      "y": 4970,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "9f260004-df25-41a7-9cef-8b23abfb616e",
+      "width": 70,
+      "x": 4270,
+      "y": 4760,
+      "zOrder": 14,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 7
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "20437a9b-fdf0-4102-bf22-7237a08f1adf",
+      "width": 70,
+      "x": 4270,
+      "y": 4900,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "e36883c5-0e57-46dd-a23c-b123b8e954fc",
+      "width": 70,
+      "x": 4200,
+      "y": 4970,
+      "zOrder": 284,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "70beba79-257b-47d4-972a-77edf2ac8037",
+      "width": 70,
+      "x": 3850,
+      "y": 4970,
+      "zOrder": 247,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 6
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 350,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "7931d5b2-315c-4cb3-8620-08e7ae1a85d0",
+      "width": 70,
+      "x": 3850,
+      "y": 4620,
+      "zOrder": 285,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "walls",
+      "persistentUuid": "ecfadca2-013d-4a63-a6ef-7d476ee9c684",
+      "width": 70,
+      "x": 3850,
+      "y": 4550,
+      "zOrder": 295,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "floor",
+      "persistentUuid": "5d5358c6-1327-4c91-976c-d9e68a30eac4",
+      "width": 70,
+      "x": 1050,
+      "y": 1890,
+      "zOrder": -12,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 5
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -25457,6 +31269,36 @@
         "g": 255,
         "r": 255
       }
+    },
+    {
+      "height": 70,
+      "name": "Wooden_floor",
+      "tags": "",
+      "texture": "assets/Interior/floor/tile_100.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 70,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 70,
+      "name": "Wooden_floor_dark",
+      "tags": "",
+      "texture": "assets/Interior/floor/tile_46.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 70,
+      "variables": [],
+      "behaviors": []
+    },
+    {
+      "height": 70,
+      "name": "Grey_floor_tiled",
+      "tags": "",
+      "texture": "assets/Interior/floor/tile_11.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 70,
+      "variables": [],
+      "behaviors": []
     }
   ],
   "events": [

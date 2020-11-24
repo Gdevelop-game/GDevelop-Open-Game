@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.346
+    "zoomFactor": 0.37
   },
   "objectsGroups": [
     {
@@ -152,6 +152,10 @@
     },
     {
       "name": "godmod",
+      "value": ""
+    },
+    {
+      "name": "Died_effects_tween",
       "value": ""
     }
   ],
@@ -83130,22 +83134,6 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "GUI",
-      "locked": false,
-      "name": "Wasted",
-      "persistentUuid": "6fa0aa86-bcd0-4d28-9673-c03735228e51",
-      "width": 0,
-      "x": 420,
-      "y": 280,
-      "zOrder": 12643518,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 90,
       "customSize": true,
       "height": 70,
@@ -84836,6 +84824,22 @@
       "x": 70,
       "y": 1330,
       "zOrder": 12643551,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "GUI",
+      "locked": false,
+      "name": "You_lose",
+      "persistentUuid": "f744036a-8f49-422b-a95e-88395ebaf4df",
+      "width": 0,
+      "x": 375,
+      "y": 280,
+      "zOrder": 12643552,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -90974,20 +90978,36 @@
       }
     },
     {
-      "name": "Wasted",
+      "bold": true,
+      "italic": false,
+      "name": "You_lose",
+      "smoothed": true,
       "tags": "",
-      "type": "BBText::BBText",
+      "type": "TextObject::Text",
+      "underlined": false,
       "variables": [],
-      "behaviors": [],
-      "content": {
-        "text": "[shadow=black][outline=red][b]WASTED[/b][/outline][/shadow]",
-        "opacity": 255,
-        "fontSize": 95,
-        "visible": true,
-        "color": "#000000",
-        "fontFamily": "Arial",
-        "align": "left",
-        "wordWrap": false
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 1,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "WASTED",
+      "font": "assets\\fonts\\Kenney Rocket Square.ttf",
+      "characterSize": 95,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
       }
     }
   ],
@@ -93028,7 +93048,29 @@
           "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "BlackAndWhite",
+          "name": "Effect",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "ZoomBlur",
+          "name": "Effect2",
+          "doubleParameters": {
+            "centerX": 0.5,
+            "centerY": 0.5,
+            "innerRadius": 0,
+            "strength": 0.3
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 200,
@@ -93054,6 +93096,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "Bounce",
       "type": "Bounce::Bounce"
