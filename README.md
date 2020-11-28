@@ -2,6 +2,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=Stars)](https://github.com/Gdevelop-game/GDevelop-Open-Game/) 
 [![GitHub watchers](https://img.shields.io/github/watchers/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=watch)](https://github.com/Gdevelop-game/GDevelop-Open-Game/) 
 [![GitHub forks](https://img.shields.io/github/forks/GDevelop-game/GDevelop-Open-Game.svg?style=social&label=forks)](https://github.com/Gdevelop-game/GDevelop-Open-Game/) 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=GDevelop-game.GDevelop-Open-Game)
+
+
 
 [![TOP.GG Badge](https://discord.com/api/guilds/723151718283477042/widget.png?style=shield)](https://discord.gg/PVET9HJ) 
 [![Auto Build](https://github.com/Gdevelop-game/GDevelop-Open-Game/workflows/Auto%20Build/badge.svg)  ](https://gdevelop-game.github.io/GDevelop-Open-Game/) 
@@ -46,6 +49,10 @@ To download the pc version, go on [github actions's auto build workflow](https:/
     <td align="center"><a href="#"><img src="https://avatars3.githubusercontent.com/u/2051955?s=60&v=4" width="100px;" alt=""/><br /><sub><b> Amaral paulera (Paulo)</b></sub></a><br /></a></td>
     <td align="center"><a href="#"><img src="https://avatars0.githubusercontent.com/u/50866504?s=60&v=4" width="100px;" alt=""/><br /><sub><b>RTBRuhan (RTBRuhan)</b></sub></a><br /></a></td>
     <td align="center"><a href="#"><img src="https://avatars3.githubusercontent.com/u/1670670?s=60&v=4" width="100px;" alt=""/><br /><sub><b> Bouh (Aurélien Vivet)</b></sub></a><br /></a></td>
+    <tr/>
+    <tr>
+    <td align="center"><a href="#"><img src="https://avatars2.githubusercontent.com/u/73597906?s=60&v=4" width="100px;" alt=""/><br /><sub><b>Midhil457 (Midhil457)</b></sub></a><br /></a></td>
+    
 </table>
 
 ## Other Links/References
