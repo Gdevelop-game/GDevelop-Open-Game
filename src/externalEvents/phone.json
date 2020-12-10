@@ -57,14 +57,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "VarGlobal"
               },
               "parameters": [
@@ -72,6 +64,14 @@
                 "=",
                 "0"
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -110,7 +110,7 @@
               "parameters": [
                 "",
                 "phone_wifi",
-                "Phone.X() + 75",
+                "Phone.X() + 125",
                 "848",
                 "\"GUI\""
               ],
@@ -124,7 +124,7 @@
               "parameters": [
                 "",
                 "phone_battery",
-                "Phone.X() + 93",
+                "Phone.X() + 138",
                 "838",
                 "\"GUI\""
               ],
@@ -138,7 +138,7 @@
               "parameters": [
                 "",
                 "phone_time",
-                "Phone.X() + 121",
+                "Phone.X() + 10",
                 "836",
                 "\"GUI\""
               ],
@@ -153,6 +153,17 @@
                 "using_phone",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"switch_on\""
               ],
               "subInstructions": []
             }
@@ -189,7 +200,7 @@
                     "phone_wifi",
                     "Tween",
                     "\"phone\"",
-                    "402",
+                    "405",
                     "\"easeInSine\"",
                     "2200",
                     ""
@@ -205,7 +216,7 @@
                     "phone_battery",
                     "Tween",
                     "\"phone\"",
-                    "391",
+                    "394",
                     "\"easeInSine\"",
                     "2200",
                     ""
@@ -221,7 +232,7 @@
                     "phone_time",
                     "Tween",
                     "\"phone\"",
-                    "388",
+                    "391.5",
                     "\"easeInSine\"",
                     "2200",
                     ""
@@ -232,6 +243,50 @@
               "events": []
             }
           ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PosY"
+              },
+              "parameters": [
+                "Phone",
+                "=",
+                "360"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Thumb",
+                "Phone.X() + 150",
+                "740",
+                "\"GUI\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -284,6 +339,18 @@
                 "Phone",
                 "=",
                 "162673"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Thumb",
+                "+",
+                "Phone.ZOrder()"
               ],
               "subInstructions": []
             }
@@ -499,7 +566,7 @@
                     "phone_battery",
                     "Tween",
                     "\"phone\"",
-                    "938",
+                    "936",
                     "\"easeOutSine\"",
                     "2200",
                     ""
@@ -521,8 +588,27 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Thumb",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
               "events": []
             }
           ]
@@ -573,7 +659,7 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "0"
+                "1"
               ],
               "subInstructions": []
             }
@@ -626,7 +712,7 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "0"
+                "1"
               ],
               "subInstructions": []
             }
@@ -679,7 +765,7 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "0"
+                "1"
               ],
               "subInstructions": []
             }
@@ -732,7 +818,7 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "0"
+                "1"
               ],
               "subInstructions": []
             }
@@ -933,32 +1019,150 @@
                 "1"
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyPressed"
-              },
-              "parameters": [
-                "",
-                "Return"
-              ],
-              "subInstructions": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"switch_on\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "phone_page",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Timer"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "\"switch_on\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "phone_page",
+                    "!=",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "phone_page",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
+                "value": "VarScene"
               },
               "parameters": [
-                "Phone",
+                "phone_page",
                 "=",
                 "1"
               ],
               "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "inverted": false,
@@ -1024,7 +1228,84 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "1"
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "phone_page",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Phone",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Phone_status_bar"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "phone_page",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "Phone_status_bar",
+                ""
               ],
               "subInstructions": []
             }
@@ -1045,6 +1326,40 @@
                 "phone_page",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Phone",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "phone_page",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
@@ -1140,6 +1455,18 @@
                 "10"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"None\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1194,9 +1521,41 @@
                 "1"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"Right\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Thumb",
+                "\"Swipe_timer\""
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -1227,8 +1586,178 @@
                 "1"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"Left\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Thumb",
+                "\"Swipe_timer\""
+              ],
+              "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectTimer"
+              },
+              "parameters": [
+                "Thumb",
+                "\"Swipe_timer\"",
+                "0.3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"None\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"Right\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Thumb",
+                "-25",
+                "90",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"None\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Thumb",
+                "-35",
+                "100",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "Swipe",
+                "=",
+                "\"Left\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Thumb",
+                "-45",
+                "90",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         },
         {
@@ -1324,7 +1853,7 @@
               "parameters": [
                 "phone_page",
                 "=",
-                "1"
+                "2"
               ],
               "subInstructions": []
             },
@@ -1417,7 +1946,19 @@
                 "=",
                 "Phone.X() + 35",
                 "=",
-                "446"
+                "433"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }
@@ -1451,9 +1992,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 85",
+                "Phone.X() + 86",
                 "=",
-                "446"
+                "433"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "1"
               ],
               "subInstructions": []
             }
@@ -1487,9 +2040,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 135",
+                "Phone.X() + 138",
                 "=",
-                "446"
+                "433"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
@@ -1525,7 +2090,19 @@
                 "=",
                 "Phone.X() +35",
                 "=",
-                "496"
+                "487"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "0"
               ],
               "subInstructions": []
             }
@@ -1559,9 +2136,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 85",
+                "Phone.X() + 86",
                 "=",
-                "496"
+                "487"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "3"
               ],
               "subInstructions": []
             }
@@ -1595,9 +2184,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 135",
+                "Phone.X() + 138",
                 "=",
-                "496"
+                "487"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "4"
               ],
               "subInstructions": []
             }
@@ -1633,7 +2234,19 @@
                 "=",
                 "Phone.X() +35",
                 "=",
-                "546"
+                "541"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "5"
               ],
               "subInstructions": []
             }
@@ -1667,9 +2280,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 85",
+                "Phone.X() + 86",
                 "=",
-                "546"
+                "541"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "6"
               ],
               "subInstructions": []
             }
@@ -1703,9 +2328,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 135",
+                "Phone.X() + 138",
                 "=",
-                "546"
+                "541"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "5"
               ],
               "subInstructions": []
             }
@@ -1739,9 +2376,21 @@
               "parameters": [
                 "Pointer",
                 "=",
-                "Phone.X() + 85",
+                "Phone.X() + 86",
                 "=",
-                "600"
+                "595"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "Pointer",
+                "=",
+                "6"
               ],
               "subInstructions": []
             }
