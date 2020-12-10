@@ -12,7 +12,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
@@ -20,9 +20,13 @@
     "gridOffsetY": 0,
     "gridR": 158,
     "gridWidth": 70,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
+    "zoomFactor": 0.154
+  },
+  "objectsGroups": [
     {
+      "name": "bullet_obstacles",
       "objects": [
         {
           "name": "roof_tops"
@@ -93,20 +97,6 @@
       "objects": [
         {
           "name": "door6"
-        }
-      ]
-    },
-    {
-      "name": "Phone_status_bar",
-      "objects": [
-        {
-          "name": "phone_battery"
-        },
-        {
-          "name": "phone_wifi"
-        },
-        {
-          "name": "phone_time"
         }
       ]
     }
@@ -90450,142 +90440,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_off.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.0625,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\character\\Player\\phone\\phone_lock.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_lock_6.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -90614,7 +90473,36 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_app.png",
+                  "image": "assets\\character\\Player\\phone\\phone_unlock.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\phone\\phone_apps.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -91647,41 +91535,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 23.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
                   "image": "assets\\character\\Player\\phone\\pointer_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 25,
-                    "y": 23.5
+                    "y": 24.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -91690,143 +91549,15 @@
                     "y": 0
                   },
                   "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
+                },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_3.png",
+                  "image": "assets\\character\\Player\\phone\\pointer_2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
                     "x": 25,
-                    "y": 23.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 23.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 23.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 23.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_7.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 25,
-                    "y": 23.5
+                    "y": 24.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -92448,45 +92179,6 @@
         "g": 0,
         "r": 0
       }
-    },
-    {
-      "name": "Thumb",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\thumb_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 15.5,
-                    "y": 129.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 15.5,
-                    "y": 129.5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "events": [
