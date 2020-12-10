@@ -3,7 +3,9 @@
   "description": "",
   "extensionNamespace": "",
   "fullName": "",
+  "iconUrl": "",
   "name": "BackgroundScene",
+  "previewIconUrl": "",
   "shortDescription": "",
   "tags": "",
   "version": "",
@@ -93,7 +95,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\nconst name = eventsFunctionContext.getArgument(\"sceneName\");\n\nfor(let layout of runtimeGame.getGameData().layouts) {\n    if(layout.name === name) {\n        const newScene = new gdjs.RuntimeScene(runtimeGame);\n        newScene.loadFromScene(layout);\n        runtimeGame.scenes[name] = newScene;\n        newScene.onPause(); // Scene is paused for now\n        break;\n    }\n}\n",
           "parameterObjects": "",
-          "useStrict": true
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [
@@ -123,7 +126,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\nconst name = eventsFunctionContext.getArgument(\"sceneName\");\nconst newScene = runtimeGame.scenes[name];\n\nif(newScene) {\n    runtimeScene.onPause();\n    newScene.onResume();\n    runtimeGame._sceneStack._stack.push(newScene);\n}\n",
           "parameterObjects": "",
-          "useStrict": true
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [
@@ -168,7 +172,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "const runtimeGame = runtimeScene.getGame();\nruntimeGame.scenes = runtimeGame.scenes || {};\n\nif (runtimeGame._sceneStack._stack.length <= 1) return null;\n\nruntimeGame._sceneStack._stack.pop();\n\n// Tell the new current scene it's being resumed\nconst currentScene = runtimeGame._sceneStack._stack[runtimeGame._sceneStack._stack.length - 1];\nif (currentScene) {\n    currentScene.onResume();\n}\n",
           "parameterObjects": "",
-          "useStrict": true
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [],

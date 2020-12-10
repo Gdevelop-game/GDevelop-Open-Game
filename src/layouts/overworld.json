@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.226
+    "zoomFactor": 0.154
   },
   "objectsGroups": [
     {
@@ -2738,7 +2738,7 @@
       "customSize": true,
       "height": 1540,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "grass_tiled",
       "persistentUuid": "c38221e3-81b6-4f60-be8c-82142ce7e875",
       "width": 1820,
@@ -2754,7 +2754,7 @@
       "customSize": true,
       "height": 1260,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "grass_tiled",
       "persistentUuid": "5479aea4-68c2-4946-99fb-9f20a0caa108",
       "width": 3360,
@@ -8225,55 +8225,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 210,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "4e812b69-5a12-4e22-ba1c-a240bebf9e91",
-      "width": 140,
-      "x": -560,
-      "y": 630,
-      "zOrder": 13,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 210,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "f96e4766-b631-4e90-ab0e-4f80ce881d3c",
-      "width": 140,
-      "x": -700,
-      "y": 630,
-      "zOrder": 13,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "height": 70,
       "layer": "",
       "locked": false,
       "name": "sand",
       "persistentUuid": "2a73a07c-8c3e-410d-b7ed-654e7a743421",
       "width": 70,
-      "x": -280,
+      "x": -420,
       "y": 980,
       "zOrder": 26,
       "numberProperties": [
@@ -8294,7 +8252,7 @@
       "name": "sand",
       "persistentUuid": "34ec7312-1e01-466e-934d-6e6681a1bfa8",
       "width": 70,
-      "x": -210,
+      "x": -350,
       "y": 980,
       "zOrder": 26,
       "numberProperties": [
@@ -8315,7 +8273,7 @@
       "name": "sand",
       "persistentUuid": "e5312fa9-8f99-4a73-b164-c7146adc157c",
       "width": 70,
-      "x": -280,
+      "x": -420,
       "y": 1050,
       "zOrder": 26,
       "numberProperties": [
@@ -8336,7 +8294,7 @@
       "name": "sand",
       "persistentUuid": "5a7122a8-a2ef-407f-bc64-8794b1693e16",
       "width": 70,
-      "x": -210,
+      "x": -350,
       "y": 1050,
       "zOrder": 26,
       "numberProperties": [
@@ -8367,14 +8325,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 210,
+      "height": 248,
       "layer": "",
       "locked": false,
       "name": "door2",
       "persistentUuid": "f1e66476-0a86-45c4-883b-68568d63d87e",
       "width": 140,
-      "x": -280,
-      "y": 780,
+      "x": -420,
+      "y": 770,
       "zOrder": 104,
       "numberProperties": [],
       "stringProperties": [],
@@ -8459,48 +8417,6 @@
         {
           "name": "animation",
           "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 140,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "7f356254-bc0d-47bb-8f49-970e4d2333ef",
-      "width": 140,
-      "x": 420,
-      "y": 700,
-      "zOrder": 8,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 90,
-      "customSize": true,
-      "height": 140,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "24c3b475-9d85-487a-8528-e8c0ba748dc5",
-      "width": 140,
-      "x": 420,
-      "y": 840,
-      "zOrder": 8,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 5
         }
       ],
       "stringProperties": [],
@@ -14312,7 +14228,7 @@
       "name": "Fences",
       "persistentUuid": "5bc65b1a-208e-489a-81d5-3a6152acfbed",
       "width": 70,
-      "x": -460,
+      "x": -179,
       "y": 1080,
       "zOrder": 115,
       "numberProperties": [
@@ -14396,7 +14312,7 @@
       "name": "Fences",
       "persistentUuid": "dae20420-327f-4f2c-850d-2c5e94d3b732",
       "width": 70,
-      "x": -180,
+      "x": -310,
       "y": 1080,
       "zOrder": 115,
       "numberProperties": [],
@@ -14412,7 +14328,7 @@
       "name": "Fences",
       "persistentUuid": "afb42eed-95a1-4dcf-b337-05b7b87f81e6",
       "width": 70,
-      "x": -320,
+      "x": -461,
       "y": 1080,
       "zOrder": 115,
       "numberProperties": [
@@ -18381,7 +18297,7 @@
       "name": "Fences",
       "persistentUuid": "929b5ac9-59ae-4827-99ca-52e86d399794",
       "width": 70,
-      "x": -390,
+      "x": -249,
       "y": 1080,
       "zOrder": 115,
       "numberProperties": [
@@ -23504,14 +23420,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 420,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
       "persistentUuid": "a99a4ec2-138d-4e94-9c27-c4e417bb0bd9",
-      "width": 0,
-      "x": 280,
+      "width": 490,
+      "x": 210,
       "y": 560,
       "zOrder": 120,
       "numberProperties": [
@@ -23525,36 +23441,36 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 490,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
       "persistentUuid": "863a46f7-41e7-473e-8b57-f537cc46a4f6",
-      "width": 0,
-      "x": -1470,
-      "y": 1190,
+      "width": 560,
+      "x": -1540,
+      "y": 1136,
       "zOrder": 120,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 0
+          "value": 2
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "angle": -90,
+      "customSize": true,
+      "height": 490,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
       "persistentUuid": "c760740e-c3b5-4ca5-9652-f8d5cfa5b8d0",
-      "width": 0,
-      "x": -1470,
-      "y": 1820,
+      "width": 490,
+      "x": -1540,
+      "y": 1750,
       "zOrder": 120,
       "numberProperties": [
         {
@@ -23568,19 +23484,19 @@
     {
       "angle": 0,
       "customSize": false,
-      "height": 0,
+      "height": 420,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
       "persistentUuid": "e3012678-1b46-402f-a141-3532c55a7d0e",
-      "width": 0,
-      "x": -490,
+      "width": 560,
+      "x": -700,
       "y": 560,
-      "zOrder": 5,
+      "zOrder": 120,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 0
+          "value": 1
         }
       ],
       "stringProperties": [],
@@ -23588,62 +23504,20 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 490,
       "layer": "",
       "locked": false,
       "name": "roof_tops",
       "persistentUuid": "b6e96a1f-d06e-4ab1-b49f-49dc34a24024",
-      "width": 0,
-      "x": -2520,
+      "width": 630,
+      "x": -2590,
       "y": 1540,
       "zOrder": 12,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": -90,
-      "customSize": true,
-      "height": 210,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "4393ace7-fdcd-4410-9789-21f0bd2e30f4",
-      "width": 140,
-      "x": -2380,
-      "y": 1890,
-      "zOrder": 13,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": -90,
-      "customSize": true,
-      "height": 210,
-      "layer": "",
-      "locked": false,
-      "name": "roof_tops",
-      "persistentUuid": "5c6123ae-d57b-4022-a5c7-db0ee6e014b9",
-      "width": 140,
-      "x": -2380,
-      "y": 1893,
-      "zOrder": 13,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
+          "value": 2
         }
       ],
       "stringProperties": [],
@@ -35786,7 +35660,7 @@
       "name": "door4",
       "persistentUuid": "ae1505bc-1af2-4d85-adcb-edc32b757a0a",
       "width": 220,
-      "x": -1260,
+      "x": -1190,
       "y": 1960,
       "zOrder": 1244,
       "numberProperties": [],
@@ -35802,7 +35676,7 @@
       "name": "door4",
       "persistentUuid": "a90ae9b0-79ac-47d0-8faf-2c8eacc1b2c2",
       "width": 220,
-      "x": -1260,
+      "x": -1190,
       "y": 1330,
       "zOrder": 1244,
       "numberProperties": [],
@@ -37612,28 +37486,28 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": -90,
       "customSize": true,
-      "height": 630,
+      "height": 560,
       "layer": "",
-      "locked": false,
+      "locked": true,
       "name": "roof_tops",
       "persistentUuid": "a78de224-c727-43d1-ab49-e1257514b75f",
-      "width": 700,
-      "x": 2030,
-      "y": 70,
+      "width": 770,
+      "x": 1890,
+      "y": 1011,
       "zOrder": 1251,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 7
+          "value": 3
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": 0,
       "customSize": true,
       "height": 490,
       "layer": "",
@@ -37641,13 +37515,13 @@
       "name": "roof_tops",
       "persistentUuid": "cf3e5a1f-e14f-46a9-9c84-121bd8fb070e",
       "width": 630,
-      "x": 1960,
-      "y": 1050,
+      "x": 1820,
+      "y": 45,
       "zOrder": 1251,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 6
+          "value": 16
         }
       ],
       "stringProperties": [],
@@ -40605,7 +40479,7 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
+      "angle": 90,
       "customSize": true,
       "height": 70,
       "layer": "",
@@ -40614,54 +40488,12 @@
       "persistentUuid": "703fdde6-2050-4fa4-856e-b85284f6996e",
       "width": 70,
       "x": 1640,
-      "y": 1570,
+      "y": 1598,
       "zOrder": 115,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "persistentUuid": "1478f30b-7503-461e-9ea5-9decf73fcf4c",
-      "width": 70,
-      "x": 1640,
-      "y": 1500,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "persistentUuid": "da452c08-2e23-44dd-8b98-e5aa754e47c7",
-      "width": 70,
-      "x": 1640,
-      "y": 1430,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
+          "value": 0
         }
       ],
       "stringProperties": [],
@@ -40678,27 +40510,6 @@
       "width": 70,
       "x": 1640,
       "y": 1640,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "persistentUuid": "ddd9a7ed-4293-43b7-8543-1de0cbbce567",
-      "width": 70,
-      "x": 1640,
-      "y": 940,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -40752,27 +40563,6 @@
       "initialVariables": []
     },
     {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "locked": false,
-      "name": "Fences",
-      "persistentUuid": "438d72bd-c8a0-46f4-bb07-856674079261",
-      "width": 70,
-      "x": 1640,
-      "y": 1010,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 90,
       "customSize": true,
       "height": 70,
@@ -40782,7 +40572,7 @@
       "persistentUuid": "27ef65da-eded-43f3-94b5-10d769e8a421",
       "width": 70,
       "x": 1640,
-      "y": 1290,
+      "y": 1259,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -40803,7 +40593,7 @@
       "persistentUuid": "4ec95727-e908-4bd3-b387-7a088f2d76a4",
       "width": 70,
       "x": 1640,
-      "y": 1080,
+      "y": 980,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -41286,7 +41076,7 @@
       "persistentUuid": "910e5a86-7a57-46ff-a5ce-bdd42a094b3a",
       "width": 70,
       "x": 1680,
-      "y": 1190,
+      "y": 1563,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41306,8 +41096,8 @@
       "name": "sand",
       "persistentUuid": "3c898e9b-2202-4950-a5b6-cdb31db630c8",
       "width": 70,
-      "x": 1750,
-      "y": 1260,
+      "x": 1820,
+      "y": 1495,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41327,8 +41117,8 @@
       "name": "sand",
       "persistentUuid": "5d88c9e5-94b3-4239-8489-8ef27a11dc50",
       "width": 70,
-      "x": 1750,
-      "y": 1190,
+      "x": 1680,
+      "y": 1495,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41348,8 +41138,8 @@
       "name": "sand",
       "persistentUuid": "15598824-aa7b-407c-bb2c-cee76aaa7782",
       "width": 70,
-      "x": 1680,
-      "y": 1260,
+      "x": 1750,
+      "y": 1563,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41370,7 +41160,7 @@
       "persistentUuid": "65b69922-ed59-4e10-ae2c-10bfceb0eaf1",
       "width": 70,
       "x": 1890,
-      "y": 1190,
+      "y": 1563,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41391,7 +41181,7 @@
       "persistentUuid": "f0ff9cf6-97fa-41f2-bb18-18861c2b9dfb",
       "width": 70,
       "x": 1820,
-      "y": 1190,
+      "y": 1425,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41411,8 +41201,8 @@
       "name": "sand",
       "persistentUuid": "db4bd46e-8dee-461f-bc19-0fa9a03bb795",
       "width": 70,
-      "x": 1890,
-      "y": 1260,
+      "x": 1960,
+      "y": 1563,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41432,8 +41222,8 @@
       "name": "sand",
       "persistentUuid": "daf91861-b6ba-4e1e-a176-748bb2dd6a52",
       "width": 70,
-      "x": 1820,
-      "y": 1260,
+      "x": 1960,
+      "y": 1425,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41453,8 +41243,8 @@
       "name": "sand",
       "persistentUuid": "2fccca62-a84e-472b-b954-9bee063c2a6f",
       "width": 70,
-      "x": 1820,
-      "y": 1120,
+      "x": 1750,
+      "y": 1495,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41474,8 +41264,8 @@
       "name": "sand",
       "persistentUuid": "b2d28a9d-d10e-416d-95c6-4163c2b215dc",
       "width": 70,
-      "x": 1890,
-      "y": 1120,
+      "x": 1680,
+      "y": 1425,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41495,8 +41285,8 @@
       "name": "sand",
       "persistentUuid": "0e019c3c-e3e2-4c16-b9a3-a702a96d7854",
       "width": 70,
-      "x": 1750,
-      "y": 1120,
+      "x": 1820,
+      "y": 1563,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41516,8 +41306,8 @@
       "name": "sand",
       "persistentUuid": "4350553f-34e9-45b0-8b96-fcf672aa2158",
       "width": 70,
-      "x": 1680,
-      "y": 1120,
+      "x": 1890,
+      "y": 1495,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41538,7 +41328,7 @@
       "persistentUuid": "aac11c90-9d76-4193-9c07-10ab73620297",
       "width": 70,
       "x": 1640,
-      "y": 1360,
+      "y": 1330,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -41558,8 +41348,8 @@
       "name": "sand",
       "persistentUuid": "6078343a-d421-474a-ba9d-678bfe5a4ffb",
       "width": 70,
-      "x": 1960,
-      "y": 1190,
+      "x": 1890,
+      "y": 1425,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41580,7 +41370,7 @@
       "persistentUuid": "54cde620-fdbf-4813-8cc9-2751218fcd99",
       "width": 70,
       "x": 1960,
-      "y": 1260,
+      "y": 1495,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -41600,8 +41390,8 @@
       "name": "sand",
       "persistentUuid": "bf0f90f0-dc77-4bcc-8daa-7338d7c64c4c",
       "width": 70,
-      "x": 1960,
-      "y": 1120,
+      "x": 1750,
+      "y": 1425,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -42159,7 +41949,7 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": -90,
       "customSize": true,
       "height": 350,
       "layer": "",
@@ -42168,12 +41958,12 @@
       "persistentUuid": "d6253d36-bdf8-4efb-b317-ba4cb19ffdfa",
       "width": 420,
       "x": 1120,
-      "y": 2240,
+      "y": 2206,
       "zOrder": 1251,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 5
+          "value": 20
         }
       ],
       "stringProperties": [],
@@ -42184,7 +41974,7 @@
       "customSize": true,
       "height": 770,
       "layer": "",
-      "locked": true,
+      "locked": false,
       "name": "roof_tops",
       "persistentUuid": "bf27579c-0a57-408d-bfa1-41ddb79cc37e",
       "width": 770,
@@ -42194,14 +41984,14 @@
       "numberProperties": [
         {
           "name": "animation",
-          "value": 4
+          "value": 21
         }
       ],
       "stringProperties": [],
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": -90,
       "customSize": true,
       "height": 350,
       "layer": "",
@@ -42210,12 +42000,12 @@
       "persistentUuid": "db30fcc8-72c4-416e-a867-1bb4e3623c66",
       "width": 420,
       "x": 1120,
-      "y": 2660,
+      "y": 2696,
       "zOrder": 1251,
       "numberProperties": [
         {
           "name": "animation",
-          "value": 5
+          "value": 20
         }
       ],
       "stringProperties": [],
@@ -44646,7 +44436,7 @@
       "persistentUuid": "b6f9e88f-caed-4be8-806a-8441460cec6d",
       "width": 70,
       "x": 1050,
-      "y": 2730,
+      "y": 2870,
       "zOrder": 114,
       "numberProperties": [
         {
@@ -74471,8 +74261,8 @@
       "name": "door6",
       "persistentUuid": "8ece76a5-613d-4db9-b23a-7ce3e0967b21",
       "width": 210,
-      "x": 1940,
-      "y": 1120,
+      "x": 1976,
+      "y": 1424,
       "zOrder": 12643488,
       "numberProperties": [],
       "stringProperties": [],
@@ -85237,6 +85027,615 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "58cc9494-f76e-419e-a750-9e6da0ca5e75",
+      "width": 70,
+      "x": -350,
+      "y": 910,
+      "zOrder": 26,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "d58d9460-b387-4492-a55c-dba88f7ff3ba",
+      "width": 70,
+      "x": -420,
+      "y": 910,
+      "zOrder": 26,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Fences",
+      "persistentUuid": "a5554d45-5db8-4cfc-a728-575ce1994410",
+      "width": 70,
+      "x": 1640,
+      "y": 1400,
+      "zOrder": 115,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "Fences",
+      "persistentUuid": "1cae9adb-0e1f-49a6-b356-9fe2ffa583c2",
+      "width": 70,
+      "x": 1640,
+      "y": 915,
+      "zOrder": 115,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "345ac238-ff8e-4cd0-9756-b5635f98d0fd",
+      "width": 70,
+      "x": 980,
+      "y": 2870,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "3a9c81f5-6ce5-4110-80ff-b5eae750fd74",
+      "width": 70,
+      "x": 910,
+      "y": 2870,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "651dbeae-6175-4928-b682-c852b3f5f614",
+      "width": 70,
+      "x": 1120,
+      "y": 2800,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "ffe2b7a4-f113-4733-abac-64bc2a3bb076",
+      "width": 70,
+      "x": 1120,
+      "y": 2870,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "fc0ce82a-273c-4f5c-9f61-1711f6b94fe9",
+      "width": 70,
+      "x": 1120,
+      "y": 2310,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "e6b1b4a6-f3d1-4932-af7f-69eeabd61223",
+      "width": 70,
+      "x": 1120,
+      "y": 2380,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "height": 420,
+      "layer": "",
+      "locked": false,
+      "name": "roof_tops",
+      "persistentUuid": "2798453c-44dc-4c8a-ab11-3323c319208f",
+      "width": 700,
+      "x": 2380,
+      "y": 210,
+      "zOrder": 1251,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 14
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "623486a1-8059-4c46-91c0-966809986b28",
+      "width": 70,
+      "x": 2240,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "4b106e41-38de-4d01-94e0-8f973bd20173",
+      "width": 70,
+      "x": 2380,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "47029d90-8496-4c07-b515-51778d919b7f",
+      "width": 70,
+      "x": 2310,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "6682f9fe-6576-461c-a9ca-7378edcd5cbc",
+      "width": 70,
+      "x": 2310,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "b9c1c227-5375-49be-b951-fd4258fee26c",
+      "width": 70,
+      "x": 2380,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "4a92e828-79bb-4204-a37e-d32d3671e8b3",
+      "width": 70,
+      "x": 2240,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "d08577db-26ec-4413-8a9f-0f23eb8b4e7f",
+      "width": 70,
+      "x": 2450,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "a7daf820-8d97-411e-8992-b6dad61b317f",
+      "width": 70,
+      "x": 2450,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "71af0bf3-e1ea-4f91-8966-952ff471bcac",
+      "width": 70,
+      "x": 1960,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "c04b8699-2f82-4215-9a0c-f2204cc17563",
+      "width": 70,
+      "x": 2100,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "d282d0c3-37b2-4555-bfc8-93e42eb558d2",
+      "width": 70,
+      "x": 2030,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "e47c1687-f5b0-4fe8-a7b9-dcf07f753307",
+      "width": 70,
+      "x": 2030,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "6436ca14-2e2f-4ba2-9f6b-a1e30d360719",
+      "width": 70,
+      "x": 2100,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "31b1d168-9ff2-4707-b5fb-22fa28c40900",
+      "width": 70,
+      "x": 1960,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "4dd8479d-1024-454a-b16a-2542fb166c10",
+      "width": 70,
+      "x": 2170,
+      "y": 615,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "985bd60b-c9e4-4c22-a538-de8f99edc077",
+      "width": 70,
+      "x": 2170,
+      "y": 545,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "3a79b1d9-3edb-4637-91dd-f5d662db0dcf",
+      "width": 70,
+      "x": 1960,
+      "y": 490,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 70,
+      "layer": "",
+      "locked": false,
+      "name": "sand",
+      "persistentUuid": "a3fd7634-1d5d-46ae-8bac-662948a151a4",
+      "width": 70,
+      "x": 2030,
+      "y": 490,
+      "zOrder": 114,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 3
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -86501,7 +86900,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftop\\roof_1.png",
+                  "image": "assets\\rooftop\\roof_26.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -86530,7 +86929,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftop\\roof_2.png",
+                  "image": "assets\\rooftop\\roof_27.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -86559,7 +86958,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftop\\roof_3.png",
+                  "image": "assets\\rooftop\\roof_28.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -86588,7 +86987,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\rooftop\\roof_4.png",
+                  "image": "assets\\rooftop\\roof_29.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -87090,6 +87489,64 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "assets\\rooftop\\roof_25.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\rooftop\\roof_30.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\rooftop\\roof_8.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
