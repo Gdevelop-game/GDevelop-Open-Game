@@ -6,7 +6,10 @@ name: Auto Build
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+  schedule:
+    - cron: "0 2 * * 1-5"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,8 +22,8 @@ jobs:
     steps:
     
     # Set Up Node
-    - name: Setup Node.js
-      uses: actions/setup-node@v1.4.2
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.2
 
     # Runs a set of commands using the runners shell
     - name: Build with GDexport
@@ -31,7 +34,7 @@ jobs:
         yarn web-build
       
     - name: Upload to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2.0.1
+      uses: crazy-max/ghaction-github-pages@v2.2.0
       with:
         # Build directory to deploy
         build_dir: Project/build/gdExport
