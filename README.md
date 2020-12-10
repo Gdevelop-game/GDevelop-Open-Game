@@ -6,6 +6,8 @@
 [![TOP.GG Badge](https://discord.com/api/guilds/723151718283477042/widget.png?style=shield)](https://discord.gg/PVET9HJ) 
 [![Auto Build](https://github.com/Gdevelop-game/GDevelop-Open-Game/workflows/Auto%20Build/badge.svg)  ](https://gdevelop-game.github.io/GDevelop-Open-Game/) 
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N61UP36)
+
 This Repository is an Attempt to create a GTA-like game using **GDevelop 5** game engine. The name is likely to change later on. Moereover,
 we are likely to work in teams rather than individually so your performance/contribution will be a major factor.
 
