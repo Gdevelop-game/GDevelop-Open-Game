@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 1.018
+    "zoomFactor": 1.042
   },
   "objectsGroups": [
     {
@@ -97,6 +97,20 @@
       "objects": [
         {
           "name": "door6"
+        }
+      ]
+    },
+    {
+      "name": "Phone_status_bar",
+      "objects": [
+        {
+          "name": "phone_battery"
+        },
+        {
+          "name": "phone_wifi"
+        },
+        {
+          "name": "phone_time"
         }
       ]
     }
@@ -91175,12 +91189,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "timeBetweenFrames": 0.0714,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer_1.png",
+                  "image": "assets\\character\\Player\\phone\\pointer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -91204,12 +91218,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.0714,
+              "looping": false,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\pointer.png",
+                  "image": "assets\\character\\Player\\phone\\pointer_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
