@@ -3,7 +3,9 @@
   "description": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
   "extensionNamespace": "",
   "fullName": "Time formatting",
+  "iconUrl": "",
   "name": "TimeFormatter",
+  "previewIconUrl": "",
   "shortDescription": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
   "tags": "time, timer, format, hours, minutes, seconds",
   "version": "0.0.1",
@@ -21,7 +23,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "//custom function in custom fonction ~~Woow~~\r\nvar format_time = function (time_second) {\r\n    date = new Date(null);\r\n    date.setSeconds(time_second);\r\n    if (time_second >= 3600) {\r\n        return date.toISOString().substr(11, 8); // MM:SS\r\n    } else {\r\n        return date.toISOString().substr(14, 5); // HH:MM:SS\r\n    }\r\n}\r\n\r\neventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument(\"TimeInSeconds\"));",
           "parameterObjects": "",
-          "useStrict": false
+          "useStrict": false,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [

@@ -3,7 +3,9 @@
   "description": "",
   "extensionNamespace": "",
   "fullName": "",
+  "iconUrl": "",
   "name": "DebugMessages",
+  "previewIconUrl": "",
   "shortDescription": "",
   "tags": "",
   "version": "",
@@ -21,7 +23,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "alert(eventsFunctionContext.getArgument(\"message\"));",
           "parameterObjects": "",
-          "useStrict": true
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [
@@ -51,7 +54,8 @@
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "eventsFunctionContext.returnValue = prompt(eventsFunctionContext.getArgument(\"q\"));\n",
           "parameterObjects": "",
-          "useStrict": true
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": [
