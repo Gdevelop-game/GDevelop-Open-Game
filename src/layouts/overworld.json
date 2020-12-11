@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 1.042
+    "zoomFactor": 0.5
   },
   "objectsGroups": [
     {
@@ -85485,11 +85485,11 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.3,
+              "timeBetweenFrames": 0.25,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_stand.png",
+                  "image": "assets\\character\\Player\\manBlue_walk_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -85506,7 +85506,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_hold.png",
+                  "image": "assets\\character\\Player\\manBlue_walk_2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
