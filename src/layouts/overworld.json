@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 1.042
+    "zoomFactor": 0.01
   },
   "objectsGroups": [
     {
@@ -85251,6 +85251,70 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 66290,
+      "layer": "",
+      "locked": false,
+      "name": "World_border",
+      "persistentUuid": "bf3888e3-be94-47b2-8adf-92204cf8b044",
+      "width": 140,
+      "x": -29050,
+      "y": -19460,
+      "zOrder": 12643562,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "World_border",
+      "persistentUuid": "cc915ba1-87bd-4809-a3f5-ea6f0ca0ba74",
+      "width": 64890,
+      "x": -28910,
+      "y": 46690,
+      "zOrder": 12643563,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 140,
+      "layer": "",
+      "locked": false,
+      "name": "World_border",
+      "persistentUuid": "95059f85-5770-43aa-8d50-2d243d9e6ec7",
+      "width": 64890,
+      "x": -28910,
+      "y": -19460,
+      "zOrder": 12643563,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 66010,
+      "layer": "",
+      "locked": false,
+      "name": "World_border",
+      "persistentUuid": "9f517489-63f4-4871-a68b-108a0be15052",
+      "width": 140,
+      "x": 35840,
+      "y": -19320,
+      "zOrder": 12643564,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -92034,6 +92098,16 @@
           ]
         }
       ]
+    },
+    {
+      "height": 32,
+      "name": "World_border",
+      "tags": "",
+      "texture": "assets/sprite_objects/NewFile-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "behaviors": []
     }
   ],
   "events": [
@@ -92199,6 +92273,16 @@
                 "walk_in_east",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "World_border"
               ],
               "subInstructions": []
             }
