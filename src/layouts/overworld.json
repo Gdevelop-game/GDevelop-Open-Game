@@ -22,7 +22,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 1.042
+    "zoomFactor": 0.73
   },
   "objectsGroups": [
     {
@@ -8371,9 +8371,9 @@
       "name": "gun1",
       "persistentUuid": "5a448040-cb9c-49d6-8597-63790fc6f3fb",
       "width": 0,
-      "x": 70,
-      "y": 1400,
-      "zOrder": 103,
+      "x": 98,
+      "y": 1194,
+      "zOrder": 121,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -85489,7 +85489,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_stand.png",
+                  "image": "assets\\character\\Player\\manBlue_walk_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -85506,7 +85506,7 @@
                 },
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\manBlue_hold.png",
+                  "image": "assets\\character\\Player\\manBlue_walk_2.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -85539,8 +85539,8 @@
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 46,
-                      "y": 36
+                      "x": 58,
+                      "y": 42
                     }
                   ],
                   "originPoint": {
@@ -85551,8 +85551,8 @@
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 17,
-                    "y": 21
+                    "x": 19,
+                    "y": 26
                   },
                   "customCollisionMask": []
                 }
@@ -85675,12 +85675,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\Rocket_launcher_loaded.png",
+                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 52,
-                      "y": 28
+                      "x": 100,
+                      "y": 45
                     }
                   ],
                   "originPoint": {
@@ -85689,10 +85689,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 25,
+                    "y": 27
                   },
                   "customCollisionMask": []
                 }
@@ -85753,10 +85753,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 19,
+                    "y": 27
                   },
                   "customCollisionMask": []
                 },
@@ -85770,10 +85770,44 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
+                    "x": 19,
+                    "y": 27
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_phone_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 24,
+                    "y": 27
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\manBlue_phone_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 19,
+                    "y": 27
                   },
                   "customCollisionMask": []
                 }
@@ -86019,12 +86053,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\Rocket_launcher_unloaded.png",
+                  "image": "assets\\character\\Player\\manBlue_rocketlauncher.png",
                   "points": [
                     {
                       "name": "shoot",
-                      "x": 52,
-                      "y": 28
+                      "x": 101,
+                      "y": 45
                     }
                   ],
                   "originPoint": {
@@ -86033,10 +86067,10 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": 22,
+                    "y": 27
                   },
                   "customCollisionMask": []
                 }
@@ -86068,10 +86102,102 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
+                    "x": 18,
+                    "y": 26
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a2.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 51,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 19,
+                    "y": 26
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a3.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 51,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 18,
+                    "y": 26
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a4.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 51,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 18,
+                    "y": 26
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\character\\Player\\knife_a5.png",
+                  "points": [
+                    {
+                      "name": "slash",
+                      "x": 51,
+                      "y": 30
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 18,
+                    "y": 26
                   },
                   "customCollisionMask": []
                 }
@@ -88313,14 +88439,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": -15,
+                    "y": 5
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
-                    "x": 0,
-                    "y": 0
+                    "x": -15,
+                    "y": 4.85294
                   },
                   "customCollisionMask": [
                     [
@@ -89212,7 +89338,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\Rocket.png",
+                  "image": "assets\\weapons\\bullet\\rocket_launcher_bullet.png",
                   "points": [
                     {
                       "name": "effects_bullet",
