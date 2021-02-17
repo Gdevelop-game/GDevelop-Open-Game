@@ -3,12 +3,20 @@
   "description": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
   "extensionNamespace": "",
   "fullName": "Time formatting",
+  "helpPath": "",
   "iconUrl": "",
   "name": "TimeFormatter",
   "previewIconUrl": "",
   "shortDescription": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
-  "tags": "time, timer, format, hours, minutes, seconds",
   "version": "0.0.1",
+  "tags": [
+    "time",
+    "timer",
+    "format",
+    "hours",
+    "minutes",
+    "seconds"
+  ],
   "eventsFunctions": [
     {
       "description": "Format time in seconds to HH:MM:SS",
