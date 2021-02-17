@@ -1,0 +1,26 @@
+{
+  "name": "gdevelop-open-game",
+  "version": "1.0.0",
+  "description": "Build pipeline for GDevelop-Open-Game",
+  "private": true,
+  "scripts": {
+    "build": "gdexport -p ../src/game.json -o ./gdExport",
+    "electron-build": "npm run build -- -b electron"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gdevelop-game/GDevelop-Open-Game.git"
+  },
+  "author": "arthuro555",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/Gdevelop-game/GDevelop-Open-Game/issues"
+  },
+  "homepage": "https://github.com/Gdevelop-game/GDevelop-Open-Game#readme",
+  "dependencies": {
+    "@gdexporter/plugin-better-loading-screen": "^1.0.0",
+    "@gdexporter/plugin-manifest": "^1.0.0",
+    "@gdexporter/plugin-offline": "^1.0.0",
+    "gdexporter": "^3.2.3"
+  }
+}
