@@ -19,8 +19,8 @@ jobs:
       run: |
         git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
         cd Project/build
-        yarn
-        yarn web-build
+        npm i
+        npm run build
       
     - name: Upload to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
@@ -43,8 +43,8 @@ jobs:
         run: |
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
-          yarn
-          yarn electron-build
+          npm i
+          npm run electron-build
           
       - name: Build Electron app
         run: |
@@ -56,6 +56,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
+          name: linux
           path: Project/build/gdExport/dist/*.AppImage
           
   build_for_mac:
@@ -67,8 +68,8 @@ jobs:
         run: |
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
-          yarn
-          yarn electron-build
+          npm i
+          npm run electron-build
           
       - name: Build Electron app
         run: |
@@ -80,6 +81,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
+          name: mac
           path: Project/build/gdExport/dist/*.dmg
           
   build_for_windows:
@@ -90,8 +92,8 @@ jobs:
         run: |
           git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
           cd Project/build
-          yarn
-          yarn electron-build
+          npm i
+          npm run electron-build
           
       - name: Build Electron app
         run: |
@@ -103,4 +105,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
+          name: windows
           path: Project/build/gdExport/dist/*.exe
