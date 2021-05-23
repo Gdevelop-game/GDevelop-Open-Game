@@ -16,14 +16,14 @@ we are likely to work in teams rather than individually so your performance/cont
 
 ### Trying the game out
 
-The game is being automatically built on every commit to master. Try it out here: [Gdevelop Open Game](https://gdevelop-game.github.io/GDevelop-Open-Game).  
+The game is being automatically built on every commit to master. Try it out here: [GDevelop Open Game Preview](https://gdevelop-game.github.io/GDevelop-Open-Game).  
 To download the pc version, go on [github actions's auto build workflow](https://github.com/Gdevelop-game/GDevelop-Open-Game/actions?query=workflow%3A%22Auto+Build%22), click on the commit of your choice and press artifacts to download the builds.
 
 ### I am pumped for this, how can I contribute?
 
 * Firstly thanks a lot for your interest in this project! This is not an easy task and hence we would love to have you onboard with us.
 * For starters, you can join our [discord channel](https://discord.gg/PVET9HJ), you will be guided on how to contribute to the game.
-* The game project can be found in src/Game.json
+* The game project can be found in src/game.json
 
 ### Development Roadmap
 
