@@ -19,10 +19,11 @@
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
+    "gridType": "rectangular",
     "gridWidth": 32,
     "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.01
+    "zoomFactor": 0.4777499999999978
   },
   "objectsGroups": [],
   "variables": [],
@@ -41,17 +42,8 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "This scene only exists for the purpose of including extensions, as Instructions in extensions are only exported when used in a scene",
+      "comment": "This scene only exists to workaround an exporter bug, it should not be delted or switched to.",
       "comment2": ""
-    },
-    {
-      "disabled": false,
-      "folded": false,
-      "type": "BuiltinCommonInstructions::Link",
-      "include": {
-        "includeConfig": 0
-      },
-      "target": "Global"
     },
     {
       "disabled": false,
@@ -125,18 +117,6 @@
           "parameters": [
             "",
             "",
-            "",
-            "",
-            ""
-          ],
-          "subInstructions": []
-        },
-        {
-          "type": {
-            "inverted": false,
-            "value": "CompanionAppCommunication::connectToCompanion"
-          },
-          "parameters": [
             "",
             "",
             ""

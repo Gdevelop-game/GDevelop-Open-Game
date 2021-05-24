@@ -2,22 +2,24 @@
   "author": "",
   "description": "",
   "extensionNamespace": "",
-  "fullName": "",
+  "fullName": "Debug messages",
   "helpPath": "",
-  "iconUrl": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWJ1ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNCwxMkgxMFYxMEgxNE0xNCwxNkgxMFYxNEgxNE0yMCw4SDE3LjE5QzE2Ljc0LDcuMjIgMTYuMTIsNi41NSAxNS4zNyw2LjA0TDE3LDQuNDFMMTUuNTksM0wxMy40Miw1LjE3QzEyLjk2LDUuMDYgMTIuNSw1IDEyLDVDMTEuNSw1IDExLjA0LDUuMDYgMTAuNTksNS4xN0w4LjQxLDNMNyw0LjQxTDguNjIsNi4wNEM3Ljg4LDYuNTUgNy4yNiw3LjIyIDYuODEsOEg0VjEwSDYuMDlDNi4wNCwxMC4zMyA2LDEwLjY2IDYsMTFWMTJINFYxNEg2VjE1QzYsMTUuMzQgNi4wNCwxNS42NyA2LjA5LDE2SDRWMThINi44MUM3Ljg1LDE5Ljc5IDkuNzgsMjEgMTIsMjFDMTQuMjIsMjEgMTYuMTUsMTkuNzkgMTcuMTksMThIMjBWMTZIMTcuOTFDMTcuOTYsMTUuNjcgMTgsMTUuMzQgMTgsMTVWMTRIMjBWMTJIMThWMTFDMTgsMTAuNjYgMTcuOTYsMTAuMzMgMTcuOTEsMTBIMjBWOFoiIC8+PC9zdmc+",
   "name": "DebugMessages",
-  "previewIconUrl": "",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/bug.svg",
   "shortDescription": "",
   "version": "",
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "Popup an alert with message",
       "fullName": "Popup a message",
       "functionType": "Action",
       "name": "popup",
+      "private": false,
       "sentence": "Popup message _PARAM1_",
       "events": [
         {
@@ -49,6 +51,7 @@
       "fullName": "Prompt for a value",
       "functionType": "StringExpression",
       "name": "prompt",
+      "private": false,
       "sentence": "",
       "events": [
         {

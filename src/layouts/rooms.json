@@ -12,15 +12,16 @@
   "title": "",
   "v": 0,
   "uiSettings": {
-    "grid": true,
+    "grid": false,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
+    "gridType": "rectangular",
     "gridWidth": 70,
-    "snap": true,
+    "snap": false,
     "windowMask": false,
     "zoomFactor": 0.322
   },
@@ -66,6 +67,7 @@
   "variables": [
     {
       "name": "swimming",
+      "type": "string",
       "value": ""
     }
   ],
@@ -3446,22 +3448,6 @@
       "x": 490,
       "y": 315,
       "zOrder": 19,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "fade",
-      "locked": false,
-      "name": "fade_tiled_sprite",
-      "persistentUuid": "b8b6a3c3-d715-4872-be4a-658afc06c81a",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -26831,6 +26817,22 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1890,
+      "layer": "Fade",
+      "locked": false,
+      "name": "Transitions",
+      "persistentUuid": "207d60f3-0f67-4356-baee-09aac503e6cb",
+      "width": 3150,
+      "x": 0,
+      "y": 0,
+      "zOrder": 296,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -29389,7 +29391,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -30305,7 +30307,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -30333,6 +30335,7 @@
       "variables": [
         {
           "name": "bullet",
+          "type": "string",
           "value": "0"
         }
       ],
@@ -31149,40 +31152,40 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.7756,
-                    "y": 12.9545
+                    "x": 31.77560043334961,
+                    "y": 12.954500198364258
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 31.321,
-                    "y": 12.9545
+                    "x": 31.320999145507812,
+                    "y": 12.954500198364258
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15.0288,
-                        "y": 3.68421
+                        "x": 15.028800010681152,
+                        "y": 3.6842100620269775
                       },
                       {
-                        "x": 34.7656,
+                        "x": 34.76559829711914,
                         "y": 0
                       },
                       {
-                        "x": 58.1867,
+                        "x": 58.18669891357422,
                         "y": 15
                       },
                       {
-                        "x": 33.9762,
-                        "y": 4.47368
+                        "x": 33.976200103759766,
+                        "y": 4.473680019378662
                       },
                       {
-                        "x": 19.7656,
-                        "y": 6.84211
+                        "x": 19.765600204467773,
+                        "y": 6.8421101570129395
                       },
                       {
-                        "x": 3.97615,
-                        "y": 18.1579
+                        "x": 3.9761500358581543,
+                        "y": 18.157899856567383
                       }
                     ]
                   ]
@@ -31231,16 +31234,16 @@
                         "y": 0
                       },
                       {
-                        "x": 14.6402,
-                        "y": 10.6061
+                        "x": 14.640199661254883,
+                        "y": 10.606100082397461
                       },
                       {
                         "x": 22,
                         "y": 22
                       },
                       {
-                        "x": 10.0947,
-                        "y": 15.1515
+                        "x": 10.09469985961914,
+                        "y": 15.15149974822998
                       }
                     ]
                   ]
@@ -31305,32 +31308,49 @@
     {
       "disabled": false,
       "folded": false,
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "please specify what room you are building by placing a text object with the room number on it and announcing the location on the server or github.",
-      "comment2": ""
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Debug Room Numbers",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "Placeholder",
+            "=",
+            "RoomManager::getX(GlobalVariable(currentRoomID))",
+            "=",
+            "RoomManager::getY(GlobalVariable(currentRoomID))"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "Cache"
+          },
+          "parameters": [
+            "exit_rooms"
+          ],
+          "subInstructions": []
+        }
+      ],
       "events": [
         {
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -31342,14 +31362,6 @@
                 ""
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
             }
           ],
           "actions": [
@@ -31359,7 +31371,7 @@
                 "value": "ModVarScene"
               },
               "parameters": [
-                "iteration",
+                "i",
                 "=",
                 "1"
               ],
@@ -31379,9 +31391,9 @@
                     "value": "VarScene"
                   },
                   "parameters": [
-                    "iteration",
+                    "i",
                     "=",
-                    "RoomManager::allRooms() + 1"
+                    "RoomManager::roomNumbers() + 1"
                   ],
                   "subInstructions": []
                 }
@@ -31420,7 +31432,7 @@
                     "value": "ModVarScene"
                   },
                   "parameters": [
-                    "iteration",
+                    "i",
                     "+",
                     "1"
                   ],
@@ -31431,8 +31443,16 @@
             }
           ]
         }
-      ],
-      "parameters": []
+      ]
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Link",
+      "include": {
+        "includeConfig": 0
+      },
+      "target": "Game"
     },
     {
       "colorB": 228,
@@ -31463,124 +31483,13 @@
                 ""
               ],
               "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TiledSpriteObject::Opacity"
-              },
-              "parameters": [
-                "fade_tiled_sprite",
-                ">",
-                "250"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
             }
           ],
           "actions": [
             {
               "type": {
                 "inverted": false,
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Placeholder",
-                "=",
-                "room1out.Angle()"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BackgroundScene::switchBack"
-              },
-              "parameters": [
-                "",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "niko_movement",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": true,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Placeholder",
-                "=",
-                "room1out.Angle()"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Put the player at the right position when room loaded",
-          "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "SceneJustResumed"
+                "value": "PopScene"
               },
               "parameters": [
                 ""
@@ -31588,320 +31497,7 @@
               "subInstructions": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Placeholder",
-                "=",
-                "RoomManager::getX(GlobalVariable(currentRoomID))",
-                "=",
-                "RoomManager::getY(GlobalVariable(currentRoomID))"
-              ],
-              "subInstructions": []
-            }
-          ],
           "events": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Roomfade",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "exit_rooms",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "fade::Fadeout"
-              },
-              "parameters": [
-                "",
-                "fade_tiled_sprite",
-                "\"New scene\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SceneJustResumed"
-                  },
-                  "parameters": [
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "niko_movement",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ShowLayer"
-              },
-              "parameters": [
-                "",
-                "\"fade\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "fade::Fadein"
-              },
-              "parameters": [
-                "",
-                "fade_tiled_sprite",
-                "\"New scene\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Links",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Global"
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "phone"
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Rooms_Global",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Cache"
-              },
-              "parameters": [
-                "exit_rooms"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "VarScene"
-              },
-              "parameters": [
-                "fade",
-                "=",
-                "1"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Link",
-              "include": {
-                "includeConfig": 0
-              },
-              "target": "Niko"
-            }
-          ]
         }
       ],
       "parameters": []
@@ -31947,8 +31543,8 @@
       "ambientLightColorR": 200,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
-      "name": "fade",
-      "visibility": false,
+      "name": "Fade",
+      "visibility": true,
       "cameras": [],
       "effects": []
     }

@@ -1,23 +1,25 @@
 {
-  "author": "",
+  "author": "Arthur Pacaud (arthuro555)",
   "description": "",
   "extensionNamespace": "",
   "fullName": "Room Manager",
   "helpPath": "",
-  "iconUrl": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMSwyMyAxLDkgMTYsMSAzMSw5IDMxLDIzICIvPg0KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxNiwxNSAxLDIzIDE2LDMxIDMxLDIzICIvPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMTYsMSAxNiwxNSAyMSw5IDI0LDE1IDI2LDEzIDMxLDIzICIvPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTYuOSwxNS45bDMuOC0yLjJjMC44LTAuNCwxLjMtMS4zLDEuMy0yLjJ2LTAuMWMwLTEuOS0yLjEtMy4xLTMuOC0yLjFsMCwwQzcuNSw5LjcsNywxMC41LDcsMTEuNFYxM2wtMS4zLDAuNg0KCUM1LjMsMTMuOSw1LDE0LjMsNSwxNC44djBDNSwxNS44LDYuMSwxNi40LDYuOSwxNS45eiIvPg0KPC9zdmc+DQo=",
   "name": "RoomManager",
-  "previewIconUrl": "",
-  "shortDescription": "Manages going into rooms",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Virtual Reality/Virtual Reality_3d_room_vr_scene.svg",
+  "shortDescription": "Manages multiple rooms in one scene",
   "version": "",
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "",
       "fullName": "",
       "functionType": "Action",
       "name": "onFirstSceneLoaded",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -123,6 +125,7 @@
       "fullName": "Go To Room",
       "functionType": "Action",
       "name": "goToRoom",
+      "private": false,
       "sentence": "Teleport player to room _PARAM1_",
       "events": [
         {
@@ -134,12 +137,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "BackgroundScene::switchToBGScene"
+                "value": "PushScene"
               },
               "parameters": [
                 "",
-                "\"Rooms\"",
-                ""
+                "\"Rooms\""
               ],
               "subInstructions": []
             },
@@ -178,6 +180,7 @@
       "fullName": "Register a Room",
       "functionType": "Action",
       "name": "registerRoom",
+      "private": true,
       "sentence": "Register room _PARAM1_ with X = _PARAM2_ and Y = _PARAM3_",
       "events": [
         {
@@ -265,6 +268,7 @@
       "fullName": "",
       "functionType": "Expression",
       "name": "getY",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -306,6 +310,7 @@
       "fullName": "",
       "functionType": "Expression",
       "name": "getX",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -344,26 +349,12 @@
     },
     {
       "description": "Returns the number of rooms",
-      "fullName": "Get All Rooms",
+      "fullName": "Get rooms number",
       "functionType": "Expression",
-      "name": "allRooms",
+      "name": "roomNumbers",
+      "private": false,
       "sentence": "",
       "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "",
-          "comment2": ""
-        },
         {
           "disabled": false,
           "folded": false,
@@ -376,7 +367,7 @@
                 "value": "SetReturnNumber"
               },
               "parameters": [
-                "GlobalVariable(_RoomManager__RoomsNumber)"
+                "GlobalVariableChildCount(_RoomManager__RoomsNumber)"
               ],
               "subInstructions": []
             }
