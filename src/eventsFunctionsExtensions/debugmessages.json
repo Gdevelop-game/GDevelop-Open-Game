@@ -12,12 +12,14 @@
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "Popup an alert with message",
       "fullName": "Popup a message",
       "functionType": "Action",
       "name": "popup",
+      "private": false,
       "sentence": "Popup message _PARAM1_",
       "events": [
         {
@@ -49,6 +51,7 @@
       "fullName": "Prompt for a value",
       "functionType": "StringExpression",
       "name": "prompt",
+      "private": false,
       "sentence": "",
       "events": [
         {

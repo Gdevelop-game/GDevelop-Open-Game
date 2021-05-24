@@ -17,12 +17,14 @@
     "minutes",
     "seconds"
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "Format time in seconds to HH:MM:SS",
       "fullName": "Format time in seconds to HH:MM:SS",
       "functionType": "StringExpression",
       "name": "SecondsToHHMMSS",
+      "private": false,
       "sentence": "Format time _PARAM1_ to HH:MM:SS in _PARAM2_",
       "events": [
         {

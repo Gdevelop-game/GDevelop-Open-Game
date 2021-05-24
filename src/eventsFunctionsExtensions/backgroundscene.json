@@ -12,12 +12,14 @@
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "",
       "fullName": "",
       "functionType": "Action",
       "name": "onFirstSceneLoaded",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -75,6 +77,7 @@
       "fullName": "Load a scene in the background",
       "functionType": "Action",
       "name": "loadBGScene",
+      "private": false,
       "sentence": "Load the scene _PARAM1_ in the background",
       "events": [
         {
@@ -121,6 +124,7 @@
       "fullName": "Pause scene and go to background scene",
       "functionType": "Action",
       "name": "switchToBGScene",
+      "private": false,
       "sentence": "Pause current scene and go to background scene _PARAM1_",
       "events": [
         {
@@ -152,6 +156,7 @@
       "fullName": "Switch back to previous scene",
       "functionType": "Action",
       "name": "switchBack",
+      "private": false,
       "sentence": "Switch back to paused scene",
       "events": [
         {

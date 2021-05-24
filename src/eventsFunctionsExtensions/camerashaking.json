@@ -19,12 +19,14 @@
     "Position",
     "Rotate"
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "Shake the camera on the specified layer.\n\nChoose which style of shake you want:\nUsePosition = Shake the X and Y position of the camera\nUsePosition = Shake the rotation of the camera\nUseZoom = Shake the zoom level of the camera",
       "fullName": "Camera Shake",
       "functionType": "Action",
       "name": "CameraShake",
+      "private": false,
       "sentence": "Shake camera #_PARAM4_ on _PARAM3_ layer with amplitude _PARAM1_ on X axis and _PARAM2_ on Y axis for _PARAM5_ seconds.  Use Position? _PARAM6_ Use Angle? _PARAM7_ Use Zoom? _PARAM8_ ",
       "events": [
         {
@@ -643,6 +645,7 @@
       "fullName": "",
       "functionType": "Action",
       "name": "onScenePostEvents",
+      "private": false,
       "sentence": "",
       "events": [
         {

@@ -30,65 +30,6 @@
       "showGDevelopSplash": false
     },
     "extensionProperties": [],
-    "extensions": [
-      {
-        "name": "BuiltinObject"
-      },
-      {
-        "name": "BuiltinAudio"
-      },
-      {
-        "name": "BuiltinVariables"
-      },
-      {
-        "name": "BuiltinTime"
-      },
-      {
-        "name": "BuiltinMouse"
-      },
-      {
-        "name": "BuiltinKeyboard"
-      },
-      {
-        "name": "BuiltinJoystick"
-      },
-      {
-        "name": "BuiltinCamera"
-      },
-      {
-        "name": "BuiltinWindow"
-      },
-      {
-        "name": "BuiltinFile"
-      },
-      {
-        "name": "BuiltinNetwork"
-      },
-      {
-        "name": "BuiltinScene"
-      },
-      {
-        "name": "BuiltinAdvanced"
-      },
-      {
-        "name": "Sprite"
-      },
-      {
-        "name": "BuiltinCommonInstructions"
-      },
-      {
-        "name": "BuiltinCommonConversions"
-      },
-      {
-        "name": "BuiltinStringInstructions"
-      },
-      {
-        "name": "BuiltinMathematicalTools"
-      },
-      {
-        "name": "BuiltinExternalLayouts"
-      }
-    ],
     "platforms": [
       {
         "name": "GDevelop JS platform"
@@ -1057,6 +998,8 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\sound\\door_sound\\DoorOpening_0.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
         "userAdded": false
       },
       {
@@ -1064,6 +1007,8 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\sound\\door_sound\\DoorClosing_0.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
         "userAdded": true
       },
       {
@@ -2456,6 +2401,72 @@
         "name": "assets\\character\\Player\\manBlue_phone_2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap/Overworld/Tileset_Image/tiles_sheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Tileset_Image\\tiles_sheet.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "game.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "game.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/Overworld/Overworld.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Overworld.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/Overworld/Tileset/Tileset.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Tileset\\Tileset.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/Overworld/Overworld2.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Overworld2.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/Overworld/ship+shooter.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\ship+shooter.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/tilemap/Overworld/Tileset/ship+shooter.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Tileset\\ship+shooter.json",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tilemap/Overworld/Tileset_Image/ship+shooter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tilemap\\Overworld\\Tileset_Image\\ship+shooter.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2544,16 +2555,20 @@
   "variables": [
     {
       "name": "_RoomManager__Rooms",
+      "type": "structure",
       "children": [
         {
           "name": "invalid",
+          "type": "structure",
           "children": [
             {
               "name": "x",
+              "type": "string",
               "value": "0"
             },
             {
               "name": "y",
+              "type": "string",
               "value": "0"
             }
           ]
@@ -2562,91 +2577,113 @@
     },
     {
       "name": "Weapon_holding",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "Rotate_mouse",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "Gun1_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun2_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun3_ammo",
+      "type": "string",
       "value": "5"
     },
     {
       "name": "Gun3_trigger",
+      "type": "string",
       "value": "\"False\""
     },
     {
       "name": "Gun4_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun5_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "mele1_energy",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Wheel_stuff",
+      "type": "structure",
       "children": [
         {
           "name": "old wheel",
+          "type": "string",
           "value": "1"
         },
         {
           "name": "wheel",
+          "type": "string",
           "value": "1"
         },
         {
           "name": "wheel1",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel2",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel3",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel4",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel5",
+          "type": "string",
           "value": "0"
         }
       ]
     },
     {
       "name": "Old_weapon_holding",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "shadowsetting",
+      "type": "string",
       "value": "toggled"
     },
     {
       "name": "soundsetting",
+      "type": "string",
       "value": "toggled"
     },
     {
       "name": "Volume",
+      "type": "string",
       "value": "100"
     },
     {
       "name": "fullscreen",
+      "type": "string",
       "value": "toggled"
     }
   ],
@@ -2670,6 +2707,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/functionsincludes"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/overworld_rebuild"
     }
   ],
   "externalEvents": [

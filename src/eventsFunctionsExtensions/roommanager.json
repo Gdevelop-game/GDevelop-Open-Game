@@ -12,12 +12,14 @@
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "",
       "fullName": "",
       "functionType": "Action",
       "name": "onFirstSceneLoaded",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -123,6 +125,7 @@
       "fullName": "Go To Room",
       "functionType": "Action",
       "name": "goToRoom",
+      "private": false,
       "sentence": "Teleport player to room _PARAM1_",
       "events": [
         {
@@ -178,6 +181,7 @@
       "fullName": "Register a Room",
       "functionType": "Action",
       "name": "registerRoom",
+      "private": false,
       "sentence": "Register room _PARAM1_ with X = _PARAM2_ and Y = _PARAM3_",
       "events": [
         {
@@ -265,6 +269,7 @@
       "fullName": "",
       "functionType": "Expression",
       "name": "getY",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -306,6 +311,7 @@
       "fullName": "",
       "functionType": "Expression",
       "name": "getX",
+      "private": false,
       "sentence": "",
       "events": [
         {
@@ -347,6 +353,7 @@
       "fullName": "Get All Rooms",
       "functionType": "Expression",
       "name": "allRooms",
+      "private": false,
       "sentence": "",
       "events": [
         {

@@ -15,6 +15,7 @@
     "mouse",
     "key"
   ],
+  "dependencies": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
     {
@@ -28,6 +29,7 @@
           "fullName": "",
           "functionType": "Action",
           "name": "onCreated",
+          "private": false,
           "sentence": "",
           "events": [
             {
@@ -97,6 +99,7 @@
           "fullName": "",
           "functionType": "Action",
           "name": "doStepPreEvents",
+          "private": false,
           "sentence": "",
           "events": [
             {
@@ -501,6 +504,7 @@
           "fullName": "Clicked and released (full click)",
           "functionType": "Condition",
           "name": "isClicked",
+          "private": false,
           "sentence": "_PARAM0_ was clicked with mouse/touch",
           "events": [
             {
@@ -635,6 +639,7 @@
           "fullName": "Mouse is over",
           "functionType": "Condition",
           "name": "isHover",
+          "private": false,
           "sentence": "Cursor is over _PARAM0_",
           "events": [
             {
@@ -766,6 +771,7 @@
           "fullName": "Is down",
           "functionType": "Condition",
           "name": "isDown",
+          "private": false,
           "sentence": "_PARAM0_ is pressed down",
           "events": [
             {
@@ -900,6 +906,7 @@
           "fullName": "Is enabled",
           "functionType": "Condition",
           "name": "isEnabled",
+          "private": false,
           "sentence": "_PARAM0_ is enabled",
           "events": [
             {
@@ -994,6 +1001,7 @@
           "fullName": "Enable button",
           "functionType": "Action",
           "name": "setEnable",
+          "private": false,
           "sentence": "Enable button _PARAM0_",
           "events": [
             {
@@ -1047,6 +1055,7 @@
           "fullName": "Disable button",
           "functionType": "Action",
           "name": "setDisable",
+          "private": false,
           "sentence": "Disable button _PARAM0_",
           "events": [
             {
@@ -1100,6 +1109,7 @@
           "fullName": "",
           "functionType": "Action",
           "name": "doStepPostEvents",
+          "private": false,
           "sentence": "",
           "events": [
             {

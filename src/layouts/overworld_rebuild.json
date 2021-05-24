@@ -1,0 +1,92 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Overworld_95Rebuild",
+  "name": "Overworld_Rebuild",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridB": 255,
+    "gridG": 180,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridR": 158,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "snap": true,
+    "windowMask": false,
+    "zoomFactor": 0.059999999999999526
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "NewObject",
+      "persistentUuid": "a37dc7cb-2c52-4dd0-95b0-706944d49085",
+      "width": 0,
+      "x": -3293,
+      "y": -436,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "name": "NewObject",
+      "tags": "",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "assets\\tilemap\\Overworld\\Overworld.json",
+        "tilesetJsonFile": "assets\\tilemap\\Overworld\\Tileset\\Tileset.json",
+        "tilemapAtlasImage": "assets\\tilemap\\Overworld\\Tileset_Image\\tiles_sheet.png",
+        "displayMode": "visible",
+        "layerIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
+    }
+  ],
+  "events": [],
+  "layers": [
+    {
+      "ambientLightColorB": 30507136,
+      "ambientLightColorG": 32015104,
+      "ambientLightColorR": 0,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}

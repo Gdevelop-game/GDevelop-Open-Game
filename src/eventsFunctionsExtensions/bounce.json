@@ -13,6 +13,7 @@
     "bounce",
     "bullet"
   ],
+  "dependencies": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
     {
@@ -26,6 +27,7 @@
           "fullName": "Bounce off another object",
           "functionType": "Action",
           "name": "BounceOff",
+          "private": false,
           "sentence": "Bounce _PARAM0_ off _PARAM2_",
           "events": [
             {

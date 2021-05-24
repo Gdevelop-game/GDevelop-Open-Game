@@ -12,17 +12,18 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridB": 255,
     "gridG": 180,
     "gridHeight": 70,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
+    "gridType": "rectangular",
     "gridWidth": 70,
-    "snap": false,
+    "snap": true,
     "windowMask": false,
-    "zoomFactor": 0.73
+    "zoomFactor": 0.09000000000000026
   },
   "objectsGroups": [
     {
@@ -118,58 +119,72 @@
   "variables": [
     {
       "name": "fade",
+      "type": "string",
       "value": ""
     },
     {
       "name": "walk_in_west",
+      "type": "string",
       "value": ""
     },
     {
       "name": "walk_in_north",
+      "type": "string",
       "value": ""
     },
     {
       "name": "separate",
+      "type": "string",
       "value": ""
     },
     {
       "name": "walk_in_south",
+      "type": "string",
       "value": ""
     },
     {
       "name": "walk_in_east",
+      "type": "string",
       "value": ""
     },
     {
       "name": "niko_movement",
+      "type": "string",
       "value": ""
     },
     {
       "name": "Camera_zoom",
+      "type": "string",
       "value": ""
     },
     {
       "name": "basketball",
+      "type": "string",
       "value": ""
     },
     {
       "name": "phone",
+      "type": "string",
       "value": ""
     },
     {
       "name": "using_phone",
+      "type": "string",
       "value": ""
     },
     {
       "name": "phone_time",
+      "type": "string",
       "value": ""
     },
     {
       "name": "godmod",
+      "type": "string",
       "value": ""
     },
     {
       "name": "Died_effects_tween",
+      "type": "string",
       "value": ""
     }
   ],
@@ -8099,7 +8114,7 @@
       "width": 0,
       "x": -474,
       "y": 1561,
-      "zOrder": 9,
+      "zOrder": 9000000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -8115,7 +8130,7 @@
       "width": 0,
       "x": -108,
       "y": 1519,
-      "zOrder": 10,
+      "zOrder": 100000000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -13305,6 +13320,7 @@
       "initialVariables": [
         {
           "name": "Id",
+          "type": "string",
           "value": "1"
         }
       ]
@@ -85251,6 +85267,22 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "NewObject2",
+      "persistentUuid": "1a2e2945-d6eb-4619-895f-d97f9b856e07",
+      "width": 0,
+      "x": -4200,
+      "y": -1750,
+      "zOrder": 125675,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -85389,6 +85421,22 @@
       "width": 32,
       "variables": [],
       "behaviors": []
+    },
+    {
+      "name": "NewObject2",
+      "tags": "",
+      "type": "TileMap::TileMap",
+      "variables": [],
+      "behaviors": [],
+      "content": {
+        "tilemapJsonFile": "assets\\tilemap\\Overworld\\Overworld.json",
+        "tilesetJsonFile": "assets\\tilemap\\Overworld\\Tileset\\ship+shooter.json",
+        "tilemapAtlasImage": "assets\\tilemap\\Overworld\\Tileset_Image\\ship+shooter.png",
+        "displayMode": "all",
+        "layerIndex": 0,
+        "animationSpeedScale": 1,
+        "animationFps": 4
+      }
     },
     {
       "name": "Placeholder",
@@ -86773,38 +86821,38 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 4.50521,
-                        "y": 1.66667
+                        "x": 4.505209922790527,
+                        "y": 1.6666699647903442
                       },
                       {
-                        "x": 189.505,
+                        "x": 189.5050048828125,
                         "y": 0
                       },
                       {
-                        "x": 184.505,
-                        "y": 378.333
+                        "x": 184.5050048828125,
+                        "y": 378.3330078125
                       },
                       {
-                        "x": -0.494792,
+                        "x": -0.49479201436042786,
                         "y": 375
                       }
                     ],
                     [
                       {
-                        "x": 194.505,
+                        "x": 194.5050048828125,
                         "y": 100
                       },
                       {
-                        "x": 464.505,
-                        "y": 108.333
+                        "x": 464.5050048828125,
+                        "y": 108.33300018310547
                       },
                       {
-                        "x": 467.839,
-                        "y": 271.667
+                        "x": 467.8389892578125,
+                        "y": 271.6669921875
                       },
                       {
-                        "x": 187.839,
-                        "y": 276.667
+                        "x": 187.83900451660156,
+                        "y": 276.6669921875
                       }
                     ]
                   ]
@@ -88446,7 +88494,7 @@
                     "automatic": false,
                     "name": "centre",
                     "x": -15,
-                    "y": 4.85294
+                    "y": 4.852940082550049
                   },
                   "customCollisionMask": [
                     [
@@ -88455,16 +88503,16 @@
                         "y": 0
                       },
                       {
-                        "x": 14.6402,
-                        "y": 10.6061
+                        "x": 14.640199661254883,
+                        "y": 10.606100082397461
                       },
                       {
                         "x": 22,
                         "y": 22
                       },
                       {
-                        "x": 10.0947,
-                        "y": 15.1515
+                        "x": 10.09469985961914,
+                        "y": 15.15149974822998
                       }
                     ]
                   ]
@@ -88497,40 +88545,40 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.7756,
-                    "y": 12.9545
+                    "x": 31.77560043334961,
+                    "y": 12.954500198364258
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 31.321,
-                    "y": 12.9545
+                    "x": 31.320999145507812,
+                    "y": 12.954500198364258
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15.0288,
-                        "y": 3.68421
+                        "x": 15.028800010681152,
+                        "y": 3.6842100620269775
                       },
                       {
-                        "x": 34.7656,
+                        "x": 34.76559829711914,
                         "y": 0
                       },
                       {
-                        "x": 58.1867,
+                        "x": 58.18669891357422,
                         "y": 15
                       },
                       {
-                        "x": 33.9762,
-                        "y": 4.47368
+                        "x": 33.976200103759766,
+                        "y": 4.473680019378662
                       },
                       {
-                        "x": 19.7656,
-                        "y": 6.84211
+                        "x": 19.765600204467773,
+                        "y": 6.8421101570129395
                       },
                       {
-                        "x": 3.97615,
-                        "y": 18.1579
+                        "x": 3.9761500358581543,
+                        "y": 18.157899856567383
                       }
                     ]
                   ]
@@ -88714,6 +88762,7 @@
       "variables": [
         {
           "name": "Id",
+          "type": "string",
           "value": "0"
         }
       ],
@@ -88745,20 +88794,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26.1213,
-                        "y": 26.4706
+                        "x": 26.121299743652344,
+                        "y": 26.470600128173828
                       },
                       {
-                        "x": 63.4743,
-                        "y": 26.4706
+                        "x": 63.474300384521484,
+                        "y": 26.470600128173828
                       },
                       {
-                        "x": 63.7684,
-                        "y": 37.0588
+                        "x": 63.76839828491211,
+                        "y": 37.058799743652344
                       },
                       {
-                        "x": 26.7096,
-                        "y": 37.6471
+                        "x": 26.7096004486084,
+                        "y": 37.647098541259766
                       }
                     ]
                   ]
@@ -88793,19 +88842,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0.238971,
+                        "x": 0.23897099494934082,
                         "y": 26
                       },
                       {
-                        "x": 63.7684,
+                        "x": 63.76839828491211,
                         "y": 26
                       },
                       {
-                        "x": 63.4743,
+                        "x": 63.474300384521484,
                         "y": 37
                       },
                       {
-                        "x": 0.238971,
+                        "x": 0.23897099494934082,
                         "y": 37
                       }
                     ]
@@ -89253,6 +89302,7 @@
       "variables": [
         {
           "name": "bullet",
+          "type": "string",
           "value": "0"
         }
       ],
@@ -89272,8 +89322,8 @@
                   "points": [
                     {
                       "name": "effects_bullet",
-                      "x": 18.1134,
-                      "y": 2.96296
+                      "x": 18.113399505615234,
+                      "y": 2.9629600048065186
                     }
                   ],
                   "originPoint": {
@@ -89307,8 +89357,8 @@
                   "points": [
                     {
                       "name": "effects_bullet",
-                      "x": 18.1134,
-                      "y": 2.96296
+                      "x": 18.113399505615234,
+                      "y": 2.9629600048065186
                     }
                   ],
                   "originPoint": {
@@ -89342,8 +89392,8 @@
                   "points": [
                     {
                       "name": "effects_bullet",
-                      "x": 31.9567,
-                      "y": 3.86364
+                      "x": 31.95669937133789,
+                      "y": 3.863640069961548
                     }
                   ],
                   "originPoint": {
@@ -89696,8 +89746,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8.78397,
-                    "y": 9.02174
+                    "x": 8.78396987915039,
+                    "y": 9.021739959716797
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -89708,48 +89758,48 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17.4286,
-                        "y": 12.8571
+                        "x": 17.428600311279297,
+                        "y": 12.857099533081055
                       },
                       {
-                        "x": 14.5714,
-                        "y": 16.7143
+                        "x": 14.571399688720703,
+                        "y": 16.71430015563965
                       },
                       {
-                        "x": 9.57143,
-                        "y": 17.8571
+                        "x": 9.571430206298828,
+                        "y": 17.857099533081055
                       },
                       {
-                        "x": 3.71429,
-                        "y": 16.4286
+                        "x": 3.714289903640747,
+                        "y": 16.428600311279297
                       },
                       {
-                        "x": 0.571429,
+                        "x": 0.5714290142059326,
                         "y": 12
                       },
                       {
-                        "x": 0.571429,
-                        "y": 6.85714
+                        "x": 0.5714290142059326,
+                        "y": 6.857140064239502
                       },
                       {
-                        "x": 2.28571,
-                        "y": 2.57143
+                        "x": 2.285710096359253,
+                        "y": 2.571429967880249
                       },
                       {
-                        "x": 6.71429,
-                        "y": 0.714286
+                        "x": 6.714290142059326,
+                        "y": 0.7142860293388367
                       },
                       {
                         "x": 11,
-                        "y": 0.285714
+                        "y": 0.2857140004634857
                       },
                       {
-                        "x": 15.2857,
-                        "y": 2.85714
+                        "x": 15.285699844360352,
+                        "y": 2.857140064239502
                       },
                       {
-                        "x": 17.8571,
-                        "y": 6.14286
+                        "x": 17.857099533081055,
+                        "y": 6.142859935760498
                       }
                     ]
                   ]
@@ -89760,8 +89810,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 8.78397,
-                    "y": 9.02174
+                    "x": 8.78396987915039,
+                    "y": 9.021739959716797
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -89772,48 +89822,48 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17.4286,
-                        "y": 12.8571
+                        "x": 17.428600311279297,
+                        "y": 12.857099533081055
                       },
                       {
-                        "x": 14.5714,
-                        "y": 16.7143
+                        "x": 14.571399688720703,
+                        "y": 16.71430015563965
                       },
                       {
-                        "x": 9.57143,
-                        "y": 17.8571
+                        "x": 9.571430206298828,
+                        "y": 17.857099533081055
                       },
                       {
-                        "x": 3.71429,
-                        "y": 16.4286
+                        "x": 3.714289903640747,
+                        "y": 16.428600311279297
                       },
                       {
-                        "x": 0.571429,
+                        "x": 0.5714290142059326,
                         "y": 12
                       },
                       {
-                        "x": 0.571429,
-                        "y": 6.85714
+                        "x": 0.5714290142059326,
+                        "y": 6.857140064239502
                       },
                       {
-                        "x": 2.28571,
-                        "y": 2.57143
+                        "x": 2.285710096359253,
+                        "y": 2.571429967880249
                       },
                       {
-                        "x": 6.71429,
-                        "y": 0.714286
+                        "x": 6.714290142059326,
+                        "y": 0.7142860293388367
                       },
                       {
                         "x": 11,
-                        "y": 0.285714
+                        "y": 0.2857140004634857
                       },
                       {
-                        "x": 15.2857,
-                        "y": 2.85714
+                        "x": 15.285699844360352,
+                        "y": 2.857140064239502
                       },
                       {
-                        "x": 17.8571,
-                        "y": 6.14286
+                        "x": 17.857099533081055,
+                        "y": 6.142859935760498
                       }
                     ]
                   ]
@@ -90008,7 +90058,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -90065,7 +90115,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -91821,7 +91871,7 @@
       "particleGravityZ": 0,
       "particleGreen1": 166,
       "particleGreen2": 159,
-      "particleLifeTimeMax": 0.8,
+      "particleLifeTimeMax": 0.800000011920929,
       "particleLifeTimeMin": 0.5,
       "particleRed1": 245,
       "particleRed2": 173,

@@ -19,6 +19,7 @@
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
+    "gridType": "rectangular",
     "gridWidth": 70,
     "snap": true,
     "windowMask": false,
@@ -66,6 +67,7 @@
   "variables": [
     {
       "name": "swimming",
+      "type": "string",
       "value": ""
     }
   ],
@@ -29389,7 +29391,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -30305,7 +30307,7 @@
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
-      "particleLifeTimeMin": 0.2,
+      "particleLifeTimeMin": 0.20000000298023224,
       "particleRed1": 255,
       "particleRed2": 214,
       "particleSize1": 40,
@@ -30333,6 +30335,7 @@
       "variables": [
         {
           "name": "bullet",
+          "type": "string",
           "value": "0"
         }
       ],
@@ -31149,40 +31152,40 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 31.7756,
-                    "y": 12.9545
+                    "x": 31.77560043334961,
+                    "y": 12.954500198364258
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 31.321,
-                    "y": 12.9545
+                    "x": 31.320999145507812,
+                    "y": 12.954500198364258
                   },
                   "customCollisionMask": [
                     [
                       {
-                        "x": 15.0288,
-                        "y": 3.68421
+                        "x": 15.028800010681152,
+                        "y": 3.6842100620269775
                       },
                       {
-                        "x": 34.7656,
+                        "x": 34.76559829711914,
                         "y": 0
                       },
                       {
-                        "x": 58.1867,
+                        "x": 58.18669891357422,
                         "y": 15
                       },
                       {
-                        "x": 33.9762,
-                        "y": 4.47368
+                        "x": 33.976200103759766,
+                        "y": 4.473680019378662
                       },
                       {
-                        "x": 19.7656,
-                        "y": 6.84211
+                        "x": 19.765600204467773,
+                        "y": 6.8421101570129395
                       },
                       {
-                        "x": 3.97615,
-                        "y": 18.1579
+                        "x": 3.9761500358581543,
+                        "y": 18.157899856567383
                       }
                     ]
                   ]
@@ -31231,16 +31234,16 @@
                         "y": 0
                       },
                       {
-                        "x": 14.6402,
-                        "y": 10.6061
+                        "x": 14.640199661254883,
+                        "y": 10.606100082397461
                       },
                       {
                         "x": 22,
                         "y": 22
                       },
                       {
-                        "x": 10.0947,
-                        "y": 15.1515
+                        "x": 10.09469985961914,
+                        "y": 15.15149974822998
                       }
                     ]
                   ]

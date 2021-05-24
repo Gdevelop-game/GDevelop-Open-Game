@@ -12,12 +12,14 @@
   "tags": [
     ""
   ],
+  "dependencies": [],
   "eventsFunctions": [
     {
       "description": "fade out",
       "fullName": "Fade out",
       "functionType": "Action",
       "name": "Fadeout",
+      "private": false,
       "sentence": "Fade out _PARAM1_  ",
       "events": [
         {
@@ -105,6 +107,7 @@
       "fullName": "Fade in",
       "functionType": "Action",
       "name": "Fadein",
+      "private": false,
       "sentence": "Fade in _PARAM1_  ",
       "events": [
         {
