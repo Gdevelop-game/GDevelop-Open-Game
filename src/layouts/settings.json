@@ -19,27 +19,32 @@
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridR": 158,
+    "gridType": "rectangular",
     "gridWidth": 375,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.466
+    "zoomFactor": 0.5537499999999994
   },
   "objectsGroups": [],
   "variables": [
     {
       "name": "ShadowSettingChanged",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "SoundSettingChanged",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "FullScreen",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "volume",
+      "type": "string",
       "value": "0"
     }
   ],
@@ -93,6 +98,7 @@
       "initialVariables": [
         {
           "name": "shadowtemp",
+          "type": "string",
           "value": "on"
         }
       ]

@@ -1,0 +1,146 @@
+{
+  "associatedLayout": "City1",
+  "lastChangeTimeStamp": 0,
+  "name": "Crossair",
+  "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "crossair",
+            "=",
+            "109087867987"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "crossair",
+            "=",
+            "MouseX(\"\", 0)",
+            "=",
+            "MouseY(\"\", 0)"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "CacheSouris"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Animation"
+          },
+          "parameters": [
+            "Niko",
+            "!=",
+            "4"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "TopDownMovementBehavior::IsMoving"
+          },
+          "parameters": [
+            "Placeholder",
+            "TopDownMovement"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "crossair",
+            "MouseX()",
+            "0",
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "crossair",
+            "MouseY()",
+            "0",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "Animation"
+          },
+          "parameters": [
+            "Niko",
+            "=",
+            "4"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "crossair",
+            "Niko.Direction()+90",
+            "0",
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    }
+  ]
+}

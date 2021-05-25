@@ -10,11 +10,10 @@
     "adaptGameResolutionAtRuntime": true,
     "folderProject": true,
     "orientation": "landscape",
-    "packageName": "com.gdevelopComunity.gdgame",
+    "packageName": "com.gdevelopcommunity.opengame",
     "projectUuid": "0ebc044a-8844-4a8e-8091-2edaba2852e0",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
-    "useDeprecatedZeroAsDefaultZOrder": true,
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "GDevelop Open Game",
@@ -30,65 +29,6 @@
       "showGDevelopSplash": false
     },
     "extensionProperties": [],
-    "extensions": [
-      {
-        "name": "BuiltinObject"
-      },
-      {
-        "name": "BuiltinAudio"
-      },
-      {
-        "name": "BuiltinVariables"
-      },
-      {
-        "name": "BuiltinTime"
-      },
-      {
-        "name": "BuiltinMouse"
-      },
-      {
-        "name": "BuiltinKeyboard"
-      },
-      {
-        "name": "BuiltinJoystick"
-      },
-      {
-        "name": "BuiltinCamera"
-      },
-      {
-        "name": "BuiltinWindow"
-      },
-      {
-        "name": "BuiltinFile"
-      },
-      {
-        "name": "BuiltinNetwork"
-      },
-      {
-        "name": "BuiltinScene"
-      },
-      {
-        "name": "BuiltinAdvanced"
-      },
-      {
-        "name": "Sprite"
-      },
-      {
-        "name": "BuiltinCommonInstructions"
-      },
-      {
-        "name": "BuiltinCommonConversions"
-      },
-      {
-        "name": "BuiltinStringInstructions"
-      },
-      {
-        "name": "BuiltinMathematicalTools"
-      },
-      {
-        "name": "BuiltinExternalLayouts"
-      }
-    ],
     "platforms": [
       {
         "name": "GDevelop JS platform"
@@ -1057,6 +997,8 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\sound\\door_sound\\DoorOpening_0.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
         "userAdded": false
       },
       {
@@ -1064,6 +1006,8 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets\\sound\\door_sound\\DoorClosing_0.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
         "userAdded": true
       },
       {
@@ -2530,30 +2474,57 @@
       ]
     },
     {
-      "height": 700,
-      "name": "fade_tiled_sprite",
+      "name": "Transitions",
       "tags": "",
-      "texture": "assets\\sprite_objects\\fade_tiled_sprite-1.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 1500,
+      "type": "PrimitiveDrawing::Drawer",
       "variables": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "name": "FlashTransitionPainter",
+          "type": "FlashTransitionPainter::FlashTransitionPainter",
+          "Timer": 1,
+          "Color": "255;255;255",
+          "Type": "",
+          "Backward": false,
+          "Forward": false,
+          "MaxOpacity": 255
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true
     }
   ],
   "objectsGroups": [],
   "variables": [
     {
       "name": "_RoomManager__Rooms",
+      "type": "structure",
       "children": [
         {
           "name": "invalid",
+          "type": "structure",
           "children": [
             {
               "name": "x",
+              "type": "string",
               "value": "0"
             },
             {
               "name": "y",
+              "type": "string",
               "value": "0"
             }
           ]
@@ -2562,91 +2533,113 @@
     },
     {
       "name": "Weapon_holding",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "Rotate_mouse",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "Gun1_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun2_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun3_ammo",
+      "type": "string",
       "value": "5"
     },
     {
       "name": "Gun3_trigger",
+      "type": "string",
       "value": "\"False\""
     },
     {
       "name": "Gun4_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Gun5_ammo",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "mele1_energy",
+      "type": "string",
       "value": "4"
     },
     {
       "name": "Wheel_stuff",
+      "type": "structure",
       "children": [
         {
           "name": "old wheel",
+          "type": "string",
           "value": "1"
         },
         {
           "name": "wheel",
+          "type": "string",
           "value": "1"
         },
         {
           "name": "wheel1",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel2",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel3",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel4",
+          "type": "string",
           "value": "0"
         },
         {
           "name": "wheel5",
+          "type": "string",
           "value": "0"
         }
       ]
     },
     {
       "name": "Old_weapon_holding",
+      "type": "string",
       "value": "0"
     },
     {
       "name": "shadowsetting",
+      "type": "string",
       "value": "toggled"
     },
     {
       "name": "soundsetting",
+      "type": "string",
       "value": "toggled"
     },
     {
       "name": "Volume",
+      "type": "string",
       "value": "100"
     },
     {
       "name": "fullscreen",
+      "type": "string",
       "value": "toggled"
     }
   ],
@@ -2657,7 +2650,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/overworld"
+      "referenceTo": "/layouts/city1"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2675,11 +2668,11 @@
   "externalEvents": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/niko"
+      "referenceTo": "/externalEvents/game"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/global"
+      "referenceTo": "/externalEvents/niko"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2691,13 +2684,25 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/godmod"
+      "referenceTo": "/externalEvents/appconnection"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/godmode"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/crossair"
     }
   ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/camerashaking"
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2718,10 +2723,6 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/roommanager"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/backgroundscene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
