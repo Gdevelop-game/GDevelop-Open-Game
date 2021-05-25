@@ -23,7 +23,7 @@
     "gridWidth": 70,
     "snap": false,
     "windowMask": false,
-    "zoomFactor": 0.07000000000000023
+    "zoomFactor": 0.03
   },
   "objectsGroups": [
     {
@@ -8112,8 +8112,8 @@
       "name": "Placeholder",
       "persistentUuid": "836a213c-8cdb-4941-9c4e-4bd98ce3f7a2",
       "width": 0,
-      "x": -474,
-      "y": 1561,
+      "x": 10790,
+      "y": 1045,
       "zOrder": 9000000,
       "numberProperties": [],
       "stringProperties": [],
@@ -85405,22 +85405,6 @@
       "width": 32,
       "variables": [],
       "behaviors": []
-    },
-    {
-      "name": "NewObject2",
-      "tags": "",
-      "type": "TileMap::TileMap",
-      "variables": [],
-      "behaviors": [],
-      "content": {
-        "tilemapJsonFile": "assets\\tilemap\\Overworld\\Overworld.json",
-        "tilesetJsonFile": "assets\\tilemap\\Overworld\\Tileset\\ship+shooter.json",
-        "tilemapAtlasImage": "assets\\tilemap\\Overworld\\Tileset_Image\\ship+shooter.png",
-        "displayMode": "all",
-        "layerIndex": 0,
-        "animationSpeedScale": 1,
-        "animationFps": 4
-      }
     },
     {
       "name": "Placeholder",
