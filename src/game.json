@@ -26,7 +26,20 @@
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "showGDevelopSplash": false
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
     },
     "extensionProperties": [],
     "platforms": [
@@ -2411,6 +2424,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -2478,6 +2492,7 @@
       "tags": "",
       "type": "PrimitiveDrawing::Drawer",
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "FlashTransitionPainter",
@@ -2729,6 +2744,15 @@
       "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/city2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/city3"
+    }
+  ],
   "externalSourceFiles": []
 }
