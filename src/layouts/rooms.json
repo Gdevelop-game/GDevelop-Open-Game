@@ -26842,6 +26842,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -27334,6 +27335,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -27537,6 +27539,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -28721,6 +28724,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29356,22 +29360,12 @@
     },
     {
       "additive": true,
-      "alphaParam": "Mutable",
-      "angleParam": "Mutable",
-      "blueParam": "Random",
       "destroyWhenNoParticles": false,
-      "emissionEditionSimpleMode": true,
       "emitterAngleA": 0,
       "emitterAngleB": 20,
       "emitterForceMax": 30,
       "emitterForceMin": 23,
-      "emitterXDirection": 0,
-      "emitterYDirection": 1,
-      "emitterZDirection": 0,
       "flow": 12,
-      "friction": 2,
-      "gravityEditionSimpleMode": true,
-      "greenParam": "Random",
       "maxParticleNb": 300000,
       "name": "flame_thrower_fire_secondary",
       "particleAlpha1": 200,
@@ -29384,10 +29378,8 @@
       "particleAngleRandomness2": 0,
       "particleBlue1": 168,
       "particleBlue2": 8,
-      "particleEditionSimpleMode": true,
       "particleGravityX": 0,
       "particleGravityY": 0,
-      "particleGravityZ": 0,
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
@@ -29398,17 +29390,16 @@
       "particleSize2": 100,
       "particleSizeRandomness1": 0,
       "particleSizeRandomness2": 0,
-      "redParam": "Enabled",
       "rendererParam1": 3,
       "rendererParam2": 1,
       "rendererType": "Quad",
-      "sizeParam": "Mutable",
       "tags": "",
       "tank": -1,
       "textureParticleName": "assets\\particles\\FireParticle.png",
       "type": "ParticleSystem::ParticleEmitter",
       "zoneRadius": 5,
       "variables": [],
+      "effects": [],
       "behaviors": []
     },
     {
@@ -29417,6 +29408,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29659,6 +29651,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29698,6 +29691,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "TopDownMovement",
@@ -29750,6 +29744,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29789,6 +29784,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29828,6 +29824,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29867,6 +29864,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29906,6 +29904,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29945,6 +29944,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -29984,6 +29984,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30023,6 +30024,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30062,6 +30064,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30101,6 +30104,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30140,6 +30144,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30179,6 +30184,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30218,6 +30224,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30260,6 +30267,7 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "string": "Wheel using: [number]",
       "font": "",
@@ -30272,22 +30280,12 @@
     },
     {
       "additive": true,
-      "alphaParam": "Mutable",
-      "angleParam": "Mutable",
-      "blueParam": "Random",
       "destroyWhenNoParticles": false,
-      "emissionEditionSimpleMode": true,
       "emitterAngleA": 0,
       "emitterAngleB": 20,
       "emitterForceMax": 300,
       "emitterForceMin": 230,
-      "emitterXDirection": 0,
-      "emitterYDirection": 1,
-      "emitterZDirection": 0,
       "flow": 120,
-      "friction": 2,
-      "gravityEditionSimpleMode": true,
-      "greenParam": "Random",
       "maxParticleNb": 3000000,
       "name": "flame_thrower_fire",
       "particleAlpha1": 200,
@@ -30300,10 +30298,8 @@
       "particleAngleRandomness2": 0,
       "particleBlue1": 168,
       "particleBlue2": 8,
-      "particleEditionSimpleMode": true,
       "particleGravityX": 0,
       "particleGravityY": 0,
-      "particleGravityZ": 0,
       "particleGreen1": 245,
       "particleGreen2": 43,
       "particleLifeTimeMax": 0.5,
@@ -30314,17 +30310,16 @@
       "particleSize2": 100,
       "particleSizeRandomness1": 0,
       "particleSizeRandomness2": 0,
-      "redParam": "Enabled",
       "rendererParam1": 3,
       "rendererParam2": 1,
       "rendererType": "Quad",
-      "sizeParam": "Mutable",
       "tags": "",
       "tank": -1,
       "textureParticleName": "assets\\particles\\FireParticle.png",
       "type": "ParticleSystem::ParticleEmitter",
       "zoneRadius": 5,
       "variables": [],
+      "effects": [],
       "behaviors": []
     },
     {
@@ -30339,6 +30334,7 @@
           "value": "0"
         }
       ],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30455,6 +30451,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30581,6 +30578,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30639,6 +30637,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -30770,6 +30769,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -30814,6 +30814,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -30853,6 +30854,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -31004,6 +31006,7 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -31028,6 +31031,7 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "string": "reloading",
       "font": "",
@@ -31047,6 +31051,7 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "string": "Ammo: [number]",
       "font": "",
@@ -31063,6 +31068,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -31136,6 +31142,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -31202,6 +31209,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -31263,6 +31271,7 @@
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "string": "1",
       "font": "",
@@ -31281,6 +31290,7 @@
       "type": "TiledSpriteObject::TiledSprite",
       "width": 70,
       "variables": [],
+      "effects": [],
       "behaviors": []
     },
     {
@@ -31291,6 +31301,7 @@
       "type": "TiledSpriteObject::TiledSprite",
       "width": 70,
       "variables": [],
+      "effects": [],
       "behaviors": []
     },
     {
@@ -31301,6 +31312,7 @@
       "type": "TiledSpriteObject::TiledSprite",
       "width": 70,
       "variables": [],
+      "effects": [],
       "behaviors": []
     }
   ],

@@ -11,6 +11,7 @@
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.gdevelopcommunity.opengame",
+    "pixelsRounding": false,
     "projectUuid": "0ebc044a-8844-4a8e-8091-2edaba2852e0",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
@@ -26,8 +27,22 @@
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "showGDevelopSplash": false
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
     },
+    "authorIds": [],
     "extensionProperties": [],
     "platforms": [
       {
@@ -2411,6 +2426,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -2478,6 +2494,7 @@
       "tags": "",
       "type": "PrimitiveDrawing::Drawer",
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "FlashTransitionPainter",
@@ -2651,6 +2668,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/city1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/city2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
