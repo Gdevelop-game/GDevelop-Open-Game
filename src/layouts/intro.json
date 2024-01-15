@@ -53,11 +53,21 @@
         },
         {
           "type": {
+            "value": "ModVarGlobalTxt"
+          },
+          "parameters": [
+            "sceneLoad",
+            "=",
+            "\"City1\""
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
             "",
-            "\"City1\"",
+            "\"Loading\"",
             "yes"
           ]
         }

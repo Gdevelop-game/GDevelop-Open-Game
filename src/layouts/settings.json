@@ -10,17 +10,16 @@
   "v": 209,
   "uiSettings": {
     "grid": false,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 375,
     "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 375,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": false,
-    "windowMask": false,
-    "zoomFactor": 0.5537499999999994
+    "zoomFactor": 0.5537499999999994,
+    "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
@@ -1407,11 +1406,21 @@
           "actions": [
             {
               "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "sceneLoad",
+                "=",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"Menu\"",
+                "\"Loading\"",
                 ""
               ]
             }
