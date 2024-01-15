@@ -8,89 +8,72 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Activate phone",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "KeyPressed"
               },
               "parameters": [
                 "",
                 "PageUp"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "swimming",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarGlobal"
               },
               "parameters": [
                 "Weapon_holding",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -99,12 +82,10 @@
                 "SceneWindowWidth() - 200",
                 "807",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -113,12 +94,10 @@
                 "Phone.X() + 125",
                 "848",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -127,12 +106,10 @@
                 "Phone.X() + 138",
                 "838",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -141,43 +118,35 @@
                 "Phone.X() + 10",
                 "836",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
                 "",
                 "\"switch_on\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -188,12 +157,10 @@
                     "\"easeInSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -204,12 +171,10 @@
                     "\"easeInSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -220,12 +185,10 @@
                     "\"easeInSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -236,44 +199,35 @@
                     "\"easeInSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PosY"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "360"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -282,125 +236,101 @@
                 "Phone.X() + 150",
                 "740",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "phone_battery",
                 "=",
                 "162673267"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "phone_wifi",
                 "=",
                 "162673267"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "phone_time",
                 "=",
                 "162673267"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "162673"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "Thumb",
                 "+",
                 "Phone.ZOrder()"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Timer"
               },
               "parameters": [
                 "",
                 "2",
                 "\"t\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "phone_wifi",
                 "=",
                 "RandomFloatInRange(0, 3)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
                 "",
                 "\"t\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -410,74 +340,61 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Deactivate phone",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
               "subInstructions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::And"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "KeyPressed"
                       },
                       "parameters": [
                         "",
                         "PageDown"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarScene"
                       },
                       "parameters": [
                         "phone",
                         "=",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::And"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarScene"
                       },
                       "parameters": [
                         "swimming",
                         "!=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ]
                 }
@@ -485,49 +402,40 @@
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -538,12 +446,10 @@
                     "\"easeOutSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -554,12 +460,10 @@
                     "\"easeOutSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -570,12 +474,10 @@
                     "\"easeOutSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Tween::AddObjectPositionYTween"
                   },
                   "parameters": [
@@ -586,252 +488,198 @@
                     "\"easeOutSine\"",
                     "2200",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Delete"
                   },
                   "parameters": [
                     "Thumb",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [],
-              "events": []
+              "actions": []
             }
           ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PosY"
               },
               "parameters": [
                 "Phone",
                 ">",
                 "900"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Delete"
               },
               "parameters": [
                 "Phone",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PosY"
               },
               "parameters": [
                 "phone_wifi",
                 ">",
                 "942"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Delete"
               },
               "parameters": [
                 "phone_wifi",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PosY"
               },
               "parameters": [
                 "phone_battery",
                 ">",
                 "931"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Delete"
               },
               "parameters": [
                 "phone_battery",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PosY"
               },
               "parameters": [
                 "phone_time",
                 ">",
                 "929"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Delete"
               },
               "parameters": [
                 "phone_time",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
+          "actions": []
         }
       ],
       "parameters": []
@@ -841,86 +689,68 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Phone general",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "godmod",
                 "!=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TopDownMovementBehavior::MaxSpeed"
               },
               "parameters": [
@@ -928,54 +758,43 @@
                 "TopDownMovement",
                 "=",
                 "40"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "godmod",
                 "!=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TopDownMovementBehavior::MaxSpeed"
               },
               "parameters": [
@@ -983,11 +802,9 @@
                 "TopDownMovement",
                 "=",
                 "200"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -997,35 +814,27 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Unlock phone",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1037,83 +846,68 @@
                     "",
                     "2",
                     "\"switch_on\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "phone_page",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Timer"
                   },
                   "parameters": [
                     "",
                     "2",
                     "\"switch_on\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "phone_page",
                     "!=",
                     "2"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "KeyReleased"
                       },
                       "parameters": [
                         "",
                         "Left"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "KeyReleased"
                       },
                       "parameters": [
                         "",
                         "Right"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ]
                 }
@@ -1121,264 +915,211 @@
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "phone_page",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
                 "",
                 "\"switch\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Timer"
               },
               "parameters": [
                 "",
                 "2",
                 "\"switch\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "using_phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Animation"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "Cache"
               },
               "parameters": [
                 "Phone_status_bar"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "!=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Montre"
               },
               "parameters": [
                 "Phone_status_bar",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -1388,287 +1129,228 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Pointer",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeWidth"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "42"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeHeight"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "42"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "10"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"None\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangePlan"
               },
               "parameters": [
                 "Pointer",
                 "+",
                 "Phone.ZOrder()"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "KeyReleased"
               },
               "parameters": [
                 "",
                 "Right"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_app",
                 "+",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"Right\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ResetObjectTimer"
               },
               "parameters": [
                 "Thumb",
                 "\"Swipe_timer\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [],
-              "events": []
+              "actions": []
             }
           ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "KeyReleased"
               },
               "parameters": [
                 "",
                 "Left"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_app",
                 "-",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"Left\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ResetObjectTimer"
               },
               "parameters": [
                 "Thumb",
                 "\"Swipe_timer\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ObjectTimer"
               },
               "parameters": [
                 "Thumb",
                 "\"Swipe_timer\"",
                 "0.3"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"None\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"Right\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "RotateTowardAngle"
               },
               "parameters": [
@@ -1676,34 +1358,27 @@
                 "-25",
                 "90",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"None\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "RotateTowardAngle"
               },
               "parameters": [
@@ -1711,34 +1386,27 @@
                 "-35",
                 "100",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarSceneTxt"
               },
               "parameters": [
                 "Swipe",
                 "=",
                 "\"Left\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "RotateTowardAngle"
               },
               "parameters": [
@@ -1746,130 +1414,102 @@
                 "-45",
                 "90",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
+          "actions": []
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 ">",
                 "10"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "<",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "10"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Animation"
               },
               "parameters": [
                 "Phone",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_page",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
@@ -1878,67 +1518,53 @@
                 "Phone.X() + 85",
                 "600",
                 "\"GUI\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Delete"
               },
               "parameters": [
                 "Pointer",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -1947,46 +1573,37 @@
                 "Phone.X() + 35",
                 "=",
                 "433"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -1995,46 +1612,37 @@
                 "Phone.X() + 86",
                 "=",
                 "433"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "3"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2043,46 +1651,37 @@
                 "Phone.X() + 138",
                 "=",
                 "433"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "2"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "4"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2091,46 +1690,37 @@
                 "Phone.X() +35",
                 "=",
                 "487"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "5"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2139,46 +1729,37 @@
                 "Phone.X() + 86",
                 "=",
                 "487"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "3"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "6"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2187,46 +1768,37 @@
                 "Phone.X() + 138",
                 "=",
                 "487"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "4"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "7"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2235,46 +1807,37 @@
                 "Phone.X() +35",
                 "=",
                 "541"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "5"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "8"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2283,46 +1846,37 @@
                 "Phone.X() + 86",
                 "=",
                 "541"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "6"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "9"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2331,46 +1885,37 @@
                 "Phone.X() + 138",
                 "=",
                 "541"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "5"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_app",
                 "=",
                 "10"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -2379,23 +1924,19 @@
                 "Phone.X() + 86",
                 "=",
                 "595"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Pointer",
                 "=",
                 "6"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -2405,91 +1946,72 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Alex animation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimation"
               },
               "parameters": [
                 "Niko",
                 "=",
                 "8"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimationSpeedScale"
               },
               "parameters": [
                 "Niko",
                 "=",
                 "0.1"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
                     "Placeholder",
                     "TopDownMovement"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "PlayAnimation"
                   },
                   "parameters": [
                     "Niko"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2500,79 +2022,63 @@
                   "parameters": [
                     "Placeholder",
                     "TopDownMovement"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "PauseAnimation"
                   },
                   "parameters": [
                     "Niko"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ChangeSprite"
                   },
                   "parameters": [
                     "Niko",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ChangeAnimationSpeedScale"
               },
               "parameters": [
                 "Niko",
                 "=",
                 "0.7"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
+          "actions": []
         }
       ],
       "parameters": []
@@ -2582,119 +2088,94 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Phone time",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Timer"
               },
               "parameters": [
                 "",
                 "1",
                 "\"phone_timer\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_time",
                 "+",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ResetTimer"
               },
               "parameters": [
                 "",
                 "\"phone_timer\""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "phone_time",
                 "=",
                 "TimeFormatter::SecondsToHHMMSS(Variable(phone_time))"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarScene"
               },
               "parameters": [
                 "phone_time",
                 ">=",
                 "1440"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": []
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "phone_time",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []

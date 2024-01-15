@@ -1,6 +1,6 @@
 {
   "author": "",
-  "description": "",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Debug messages",
   "helpPath": "",
@@ -9,9 +9,11 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/bug.svg",
   "shortDescription": "",
   "version": "",
+  "description": "",
   "tags": [
     ""
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [
     {
@@ -19,12 +21,9 @@
       "fullName": "Popup a message",
       "functionType": "Action",
       "name": "popup",
-      "private": false,
       "sentence": "Popup message _PARAM1_",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": "alert(eventsFunctionContext.getArgument(\"message\"));",
           "parameterObjects": "",
@@ -34,13 +33,8 @@
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The message to pop up",
-          "longDescription": "",
           "name": "message",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "string"
         }
       ],
@@ -51,33 +45,32 @@
       "fullName": "Prompt for a value",
       "functionType": "StringExpression",
       "name": "prompt",
-      "private": false,
       "sentence": "",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "eventsFunctionContext.returnValue = prompt(eventsFunctionContext.getArgument(\"q\"));\n",
+          "inlineCode": [
+            "eventsFunctionContext.returnValue = prompt(eventsFunctionContext.getArgument(\"q\"));",
+            ""
+          ],
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
         }
       ],
+      "expressionType": {
+        "type": "string"
+      },
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Prompt Question",
-          "longDescription": "",
           "name": "q",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "string"
         }
       ],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

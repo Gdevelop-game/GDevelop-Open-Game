@@ -3,9 +3,6 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "Intro",
   "name": "Intro",
-  "oglFOV": 90,
-  "oglZFar": 500,
-  "oglZNear": 1,
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -13,26 +10,26 @@
   "v": 209,
   "uiSettings": {
     "grid": false,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 32,
     "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 32,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": true,
-    "windowMask": false,
-    "zoomFactor": 0.2256
+    "zoomFactor": 0.2256,
+    "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [],
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "events": [
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -42,37 +39,29 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "TODO: Make intro with our splash screens",
-      "comment2": ""
+      "comment": "TODO: Make intro with our splash screens"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "P2P::UseDefaultBroker"
           },
-          "parameters": [],
-          "subInstructions": []
+          "parameters": []
         },
         {
           "type": {
-            "inverted": false,
             "value": "Scene"
           },
           "parameters": [
             "",
             "\"City1\"",
             "yes"
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     }
   ],
   "layers": [
@@ -80,9 +69,14 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -99,5 +93,34 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    }
+  ]
 }

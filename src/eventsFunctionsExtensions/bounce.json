@@ -1,6 +1,6 @@
 {
   "author": "@4ian",
-  "description": "Provides an action to make the object bounce from another object it just touched. Add a permanent force to the object and, when in collision with another one, use the action to make it bounce realistically.\n\nThis *won't work* with Physics engine or Platformer characters. This is working with objects that are moved using actions or behaviors using **the forces**.",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Bounce",
   "helpPath": "",
@@ -9,10 +9,16 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/volleyball.svg",
   "shortDescription": "Provides an action to make the object bounce from another object it just touched. Add a permanent force to the object and, when in collision with another one, use the action to make it bounce realistically.",
   "version": "0.0.1",
+  "description": [
+    "Provides an action to make the object bounce from another object it just touched. Add a permanent force to the object and, when in collision with another one, use the action to make it bounce realistically.",
+    "",
+    "This *won't work* with Physics engine or Platformer characters. This is working with objects that are moved using actions or behaviors using **the forces**."
+  ],
   "tags": [
     "bounce",
     "bullet"
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
@@ -27,12 +33,9 @@
           "fullName": "Bounce off another object",
           "functionType": "Action",
           "name": "BounceOff",
-          "private": false,
           "sentence": "Bounce _PARAM0_ off _PARAM2_",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -42,18 +45,14 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "To bounce the object realistically, we first separate it from the obstacle. The collision engine will do it by moving the object through the shortest \"normal vector\" of the edge that was collided.\nWe store the position of the object before being moved so that we know the angle of this \"normal vector\". Once we know it, we add a force in the direction of the normal vector, and we add the difference between the normal vector and the previous angle of movemement.",
-              "comment2": ""
+              "comment": "To bounce the object realistically, we first separate it from the obstacle. The collision engine will do it by moving the object through the shortest \"normal vector\" of the edge that was collided.\nWe store the position of the object before being moved so that we know the angle of this \"normal vector\". Once we know it, we add a force in the direction of the normal vector, and we add the difference between the normal vector and the previous angle of movemement."
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Bounce::Bounce::SetPropertyOldX"
                   },
                   "parameters": [
@@ -61,12 +60,10 @@
                     "Behavior",
                     "=",
                     "Object.X()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Bounce::Bounce::SetPropertyOldY"
                   },
                   "parameters": [
@@ -74,12 +71,10 @@
                     "Behavior",
                     "=",
                     "Object.Y()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Bounce::Bounce::SetPropertyOldForceAngle"
                   },
                   "parameters": [
@@ -87,12 +82,10 @@
                     "Behavior",
                     "=",
                     "Object.ForceAngle()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Bounce::Bounce::SetPropertyOldForceLength"
                   },
                   "parameters": [
@@ -100,58 +93,48 @@
                     "Behavior",
                     "=",
                     "Object.ForceLength()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SeparateFromObjects"
                   },
                   "parameters": [
                     "Object",
                     "Obstacle",
                     "yes"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Or"
                       },
                       "parameters": [],
                       "subInstructions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "PosX"
                           },
                           "parameters": [
                             "Object",
                             "!=",
                             "Object.Behavior::PropertyOldX()"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "PosY"
                           },
                           "parameters": [
                             "Object",
                             "!=",
                             "Object.Behavior::PropertyOldY()"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ]
                     }
@@ -159,7 +142,6 @@
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Bounce::Bounce::SetPropertyNormalAngle"
                       },
                       "parameters": [
@@ -167,22 +149,18 @@
                         "Behavior",
                         "=",
                         "ToDeg(atan2(Object.Y() - Object.Behavior::PropertyOldY(), Object.X() - Object.Behavior::PropertyOldX()))"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Arreter"
                       },
                       "parameters": [
                         "Object"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "AddForceAL"
                       },
                       "parameters": [
@@ -190,44 +168,28 @@
                         "Object.Behavior::PropertyNormalAngle()+AngleDifference(Object.Behavior::PropertyNormalAngle(), Object.Behavior::PropertyOldForceAngle()+180)",
                         "Object.Behavior::PropertyOldForceLength()",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Bounce::Bounce",
               "type": "behavior"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "The objects to bounce on",
-              "longDescription": "",
               "name": "Obstacle",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "objectList"
             }
           ],
@@ -240,6 +202,7 @@
           "type": "Number",
           "label": "",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "OldX"
@@ -249,6 +212,7 @@
           "type": "Number",
           "label": "",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "OldY"
@@ -258,6 +222,7 @@
           "type": "Number",
           "label": "",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "OldForceAngle"
@@ -267,6 +232,7 @@
           "type": "Number",
           "label": "",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "OldForceLength"
@@ -276,11 +242,14 @@
           "type": "Number",
           "label": "",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "NormalAngle"
         }
-      ]
+      ],
+      "sharedPropertyDescriptors": []
     }
-  ]
+  ],
+  "eventsBasedObjects": []
 }

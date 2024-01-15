@@ -1,6 +1,6 @@
 {
   "author": "Westboy31",
-  "description": "* __Paint effect:__Action to paint a color all over the screen for a period of time with specific effect.\neffect type:\n  * __Flash:__ is a monochrome color appear with fade then disappear with fade out.\n  * __Vertical:__ is a monochrome color comes from right side then comes back.\n  * __Horizontal:__ is a monochrome color come from top side then comes back.\n  * __Circular:__ is a circle which increases from the center and narrows.\n* __Paint effect ended:__ event when the paint effect ends.",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Flash and transition painter",
   "helpPath": "",
@@ -9,12 +9,22 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/movie-filter.svg",
   "shortDescription": "behavior for shape painter allows you to paint a color all over the screen for period of time with an effect (useful for simulate flash and transition effect).",
   "version": "1.0",
+  "description": [
+    "* __Paint effect:__Action to paint a color all over the screen for a period of time with specific effect.",
+    "effect type:",
+    "  * __Flash:__ is a monochrome color appear with fade then disappear with fade out.",
+    "  * __Vertical:__ is a monochrome color comes from right side then comes back.",
+    "  * __Horizontal:__ is a monochrome color come from top side then comes back.",
+    "  * __Circular:__ is a circle which increases from the center and narrows.",
+    "* __Paint effect ended:__ event when the paint effect ends."
+  ],
   "tags": [
     "Shape Painter",
     "Flash",
     "Transition",
     "Effect"
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
@@ -25,16 +35,12 @@
       "objectType": "PrimitiveDrawing::Drawer",
       "eventsFunctions": [
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "onCreated",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -44,49 +50,35 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "we don't want the effect starts when the game starts .",
-              "comment2": ""
+              "comment": "we don't want the effect starts when the game starts ."
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
                     "Object",
                     "Behavior",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "PrimitiveDrawing::Drawer",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "FlashTransitionPainter::FlashTransitionPainter",
               "type": "behavior"
             }
@@ -94,16 +86,12 @@
           "objectGroups": []
         },
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "doStepPostEvents",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -113,64 +101,50 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "avoid base parameter of painter that could make the extension doesn't work",
-              "comment2": ""
+              "comment": "avoid base parameter of painter that could make the extension doesn't work"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "PrimitiveDrawing::ClearBetweenFrames"
                   },
                   "parameters": [
                     "Object",
                     "yes"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "PrimitiveDrawing::OutlineSize"
                   },
                   "parameters": [
                     "Object",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ResetObjectTimer"
                   },
                   "parameters": [
                     "Object",
                     "\"_TimerEffect\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -180,18 +154,14 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Initialise position of painter \nincrement or decrement _TimeProgressionEffect depending on direction",
-              "comment2": ""
+              "comment": "Initialise position of painter \nincrement or decrement _TimeProgressionEffect depending on direction"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -200,23 +170,19 @@
                     "CameraX(Object.Layer(),0) - SceneWindowWidth()/2",
                     "=",
                     "CameraY(Object.Layer(),0) - SceneWindowHeight()/2"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "PrimitiveDrawing::FillColor"
                   },
                   "parameters": [
                     "Object",
                     "Object.Behavior::PropertyColor()"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -224,15 +190,11 @@
                     "_TimeProgressionEffect",
                     "+",
                     "(TimeDelta() / Object.Behavior::PropertyTimer())*Object.Variable(_ReverseDirection)"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -242,12 +204,9 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "here this the paints functions of different effect depending on the type chosen by the user\nwe try to detect the direction of the animation and its end",
-              "comment2": ""
+              "comment": "here this the paints functions of different effect depending on the type chosen by the user\nwe try to detect the direction of the animation and its end"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -257,24 +216,19 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 1 : it's the flash effect ",
-              "comment2": ""
+              "comment": "type 1 : it's the flash effect "
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Or"
                   },
                   "parameters": [],
                   "subInstructions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyType"
                       },
                       "parameters": [
@@ -282,12 +236,10 @@
                         "Behavior",
                         "=",
                         "\"\""
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyType"
                       },
                       "parameters": [
@@ -295,8 +247,7 @@
                         "Behavior",
                         "=",
                         "\"Flash\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ]
                 }
@@ -304,13 +255,10 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -318,14 +266,12 @@
                         "_OpacityFlash",
                         ">=",
                         "Object.Behavior::PropertyMaxOpacity()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -333,14 +279,11 @@
                         "_ReverseDirection",
                         "=",
                         "-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -351,36 +294,29 @@
                           "parameters": [
                             "Object",
                             "Behavior"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -388,35 +324,28 @@
                         "_OpacityFlash",
                         "<",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -424,24 +353,20 @@
                         "_OpacityFlash",
                         "=",
                         "lerp(0, Object.Behavior::PropertyMaxOpacity(), Object.Variable(_TimeProgressionEffect))"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::FillOpacity"
                       },
                       "parameters": [
                         "Object",
                         "=",
                         "Object.Variable(_OpacityFlash)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::Rectangle"
                       },
                       "parameters": [
@@ -450,17 +375,13 @@
                         "CameraY(Object.Layer(),0) - SceneWindowHeight()/2",
                         "SceneWindowWidth()",
                         "SceneWindowHeight()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -470,17 +391,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 2 : screen come from top then return",
-              "comment2": ""
+              "comment": "type 2 : screen come from top then return"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyType"
                   },
                   "parameters": [
@@ -488,20 +405,16 @@
                     "Behavior",
                     "=",
                     "\"Horizontal\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -509,14 +422,12 @@
                         "_ProgressiveWidth",
                         ">=",
                         "SceneWindowWidth()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -524,14 +435,11 @@
                         "_ReverseDirection",
                         "=",
                         "-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -542,36 +450,29 @@
                           "parameters": [
                             "Object",
                             "Behavior"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -579,35 +480,28 @@
                         "_ProgressiveWidth",
                         "<",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -615,12 +509,10 @@
                         "_SmoothEdge",
                         "=",
                         "10"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -628,12 +520,10 @@
                         "_SmoothEdgeOpacity",
                         "=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -641,22 +531,17 @@
                         "_ProgressiveWidth",
                         "=",
                         "lerp(0,SceneWindowWidth(),Object.Variable(_TimeProgressionEffect))"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "5",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -664,12 +549,10 @@
                         "_SmoothEdge",
                         "-",
                         "2"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -677,24 +560,20 @@
                         "_SmoothEdgeOpacity",
                         "+",
                         "51"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::FillOpacity"
                       },
                       "parameters": [
                         "Object",
                         "=",
                         "Object.Variable(_SmoothEdgeOpacity)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::Rectangle"
                       },
                       "parameters": [
@@ -703,17 +582,13 @@
                         "0",
                         "Object.Variable(_ProgressiveWidth) + Object.Variable(_SmoothEdge)",
                         "SceneWindowHeight()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -723,17 +598,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 3 : screen come from left then return",
-              "comment2": ""
+              "comment": "type 3 : screen come from left then return"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyType"
                   },
                   "parameters": [
@@ -741,20 +612,17 @@
                     "Behavior",
                     "=",
                     "\"Vertical\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -762,14 +630,12 @@
                         "_ProgressiveHeight",
                         ">=",
                         "SceneWindowHeight()"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -777,14 +643,11 @@
                         "_ReverseDirection",
                         "=",
                         "-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -795,36 +658,29 @@
                           "parameters": [
                             "Object",
                             "Behavior"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -832,35 +688,28 @@
                         "_ProgressiveHeight",
                         "<",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -868,12 +717,10 @@
                         "_SmoothEdge",
                         "=",
                         "10"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -881,12 +728,10 @@
                         "_SmoothEdgeOpacity",
                         "=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -894,22 +739,17 @@
                         "_ProgressiveHeight",
                         "=",
                         "lerp(0,SceneWindowHeight(),Object.Variable(_TimeProgressionEffect))"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "5",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -917,12 +757,10 @@
                         "_SmoothEdge",
                         "-",
                         "2"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -930,24 +768,20 @@
                         "_SmoothEdgeOpacity",
                         "+",
                         "51"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::FillOpacity"
                       },
                       "parameters": [
                         "Object",
                         "=",
                         "Object.Variable(_SmoothEdgeOpacity)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::Rectangle"
                       },
                       "parameters": [
@@ -956,17 +790,13 @@
                         "0",
                         "SceneWindowWidth()",
                         "Object.Variable(_ProgressiveHeight) + Object.Variable(_SmoothEdge)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -976,17 +806,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 4 : a circle scale up from the middle then scal down",
-              "comment2": ""
+              "comment": "type 4 : a circle scale up from the middle then scal down"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyType"
                   },
                   "parameters": [
@@ -994,20 +820,16 @@
                     "Behavior",
                     "=",
                     "\"Circular\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -1015,14 +837,12 @@
                         "_ProgressiveWidth",
                         ">=",
                         "(sqrt (pow(SceneWindowHeight(),2) + pow(SceneWindowWidth(),2) )) /2    "
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1030,14 +850,11 @@
                         "_ReverseDirection",
                         "=",
                         "-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -1048,36 +865,29 @@
                           "parameters": [
                             "Object",
                             "Behavior"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -1085,35 +895,28 @@
                         "_ProgressiveWidth",
                         "<",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1121,12 +924,10 @@
                         "_SmoothEdge",
                         "=",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1134,12 +935,10 @@
                         "_SmoothEdgeOpacity",
                         "=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1147,22 +946,17 @@
                         "_ProgressiveWidth",
                         "=",
                         "lerp(0,(sqrt (pow(SceneWindowHeight(),2) + pow(SceneWindowWidth(),2) ))/2    ,Object.Variable(_TimeProgressionEffect))"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "5",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1170,12 +964,10 @@
                         "_SmoothEdge",
                         "-",
                         "0.2"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1183,24 +975,20 @@
                         "_SmoothEdgeOpacity",
                         "+",
                         "51"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::FillOpacity"
                       },
                       "parameters": [
                         "Object",
                         "=",
                         "Object.Variable(_SmoothEdgeOpacity)"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "PrimitiveDrawing::Circle"
                       },
                       "parameters": [
@@ -1208,17 +996,13 @@
                         "SceneWindowWidth()/2",
                         "SceneWindowHeight()/2",
                         "Object.Variable(_ProgressiveWidth) + Object.Variable(_SmoothEdge)"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1228,28 +1012,19 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "The repeat 5 times is used to have clean and smooth edge , especially for circle\n",
-              "comment2": ""
+              "comment": "The repeat 5 times is used to have clean and smooth edge , especially for circle\n"
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "PrimitiveDrawing::Drawer",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "FlashTransitionPainter::FlashTransitionPainter",
               "type": "behavior"
             }
@@ -1257,16 +1032,12 @@
           "objectGroups": []
         },
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "onDeActivate",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1276,18 +1047,14 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Reset variable",
-              "comment2": ""
+              "comment": "Reset variable"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -1295,12 +1062,10 @@
                     "_OpacityFlash",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -1308,12 +1073,10 @@
                     "_ReverseDirection",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -1321,31 +1084,21 @@
                     "_TimeProgressionEffect",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "PrimitiveDrawing::Drawer",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "FlashTransitionPainter::FlashTransitionPainter",
               "type": "behavior"
             }
@@ -1357,12 +1110,9 @@
           "fullName": "Paint Effect",
           "functionType": "Action",
           "name": "PaintEffect",
-          "private": false,
           "sentence": "Paint effect type _PARAM4_ of _PARAM0_ with Color _PARAM2_ for _PARAM3_ seconds",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1372,21 +1122,16 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "initialise all variables and then activate the behavior .\nif user doesn't assign value to color and type , we take the last value registred .\nif user doesn't assign value to timer we take a default value (0.2) .",
-              "comment2": ""
+              "comment": "initialise all variables and then activate the behavior .\nif user doesn't assign value to color and type , we take the last value registred .\nif user doesn't assign value to timer we take a default value (0.2) ."
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 },
                 {
                   "type": {
@@ -1396,14 +1141,12 @@
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyTimer"
                   },
                   "parameters": [
@@ -1411,44 +1154,36 @@
                     "Behavior",
                     "=",
                     "GetArgumentAsNumber(\"Timer\")"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ResetObjectTimer"
                   },
                   "parameters": [
                     "Object",
                     "\"_TimerEffect\""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "StrEqual"
                       },
                       "parameters": [
                         "GetArgumentAsString(\"Type\")",
                         "!=",
                         "\"\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyType"
                       },
                       "parameters": [
@@ -1456,34 +1191,27 @@
                         "Behavior",
                         "=",
                         "GetArgumentAsString(\"Type\")"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "StrEqual"
                       },
                       "parameters": [
                         "GetArgumentAsString(\"Color\")",
                         "!=",
                         "\"\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyColor"
                       },
                       "parameters": [
@@ -1491,47 +1219,36 @@
                         "Behavior",
                         "=",
                         "GetArgumentAsString(\"Color\")"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "GetArgumentAsBoolean"
                       },
                       "parameters": [
                         "\"Forward\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyForward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         "yes"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1541,61 +1258,48 @@
                       },
                       "parameters": [
                         "\"Forward\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyForward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "GetArgumentAsBoolean"
                       },
                       "parameters": [
                         "\"Backward\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyBackward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         "yes"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1605,58 +1309,47 @@
                       },
                       "parameters": [
                         "\"Backward\""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyBackward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyForward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyTimer"
                       },
                       "parameters": [
@@ -1664,20 +1357,15 @@
                         "Behavior",
                         "=",
                         "GetArgumentAsNumber(\"Timer\")/2"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyTimer"
                       },
                       "parameters": [
@@ -1685,14 +1373,12 @@
                         "Behavior",
                         "=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyTimer"
                       },
                       "parameters": [
@@ -1700,15 +1386,11 @@
                         "Behavior",
                         "=",
                         "0.2"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -1719,25 +1401,21 @@
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
                       },
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1745,12 +1423,10 @@
                         "_ReverseDirection",
                         "=",
                         "-1"
-                      ],
-                      "subInstructions": []
+                      ]
                     },
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -1758,34 +1434,27 @@
                         "_TimeProgressionEffect",
                         "=",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Egal"
                       },
                       "parameters": [
                         "GetArgumentAsNumber(\"MaxOpacity\")",
                         "!=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyMaxOpacity"
                       },
                       "parameters": [
@@ -1793,115 +1462,70 @@
                         "Behavior",
                         "=",
                         "GetArgumentAsNumber(\"MaxOpacity\")"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
                         "Object",
                         "Behavior",
                         "yes"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "PrimitiveDrawing::Drawer",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "FlashTransitionPainter::FlashTransitionPainter",
               "type": "behavior"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Color.",
-              "longDescription": "",
               "name": "Color",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "color"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "How long time the color keep on screen.",
-              "longDescription": "",
               "name": "Timer",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "expression"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Type of effect (Flash , Horizontal ,  Vertical , Circular).",
-              "longDescription": "",
               "name": "Type",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "string"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Enable forward direction of the effect. ",
-              "longDescription": "",
               "name": "Forward",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "yesorno"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Enable backward direction of the effect.",
-              "longDescription": "",
               "name": "Backward",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "yesorno"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "The maximum of the opacity only for flash.",
-              "longDescription": "",
               "name": "MaxOpacity",
-              "optional": false,
-              "supplementaryInformation": "",
               "type": "expression"
             }
           ],
@@ -1912,12 +1536,9 @@
           "fullName": "Paint effect ended ",
           "functionType": "Condition",
           "name": "PaintEffectIsEnd",
-          "private": false,
           "sentence": "When paint effect of _PARAM0_ ends.",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1927,60 +1548,44 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "detect when the animation ends with a timer which is initialised in PaintEffect function",
-              "comment2": ""
+              "comment": "detect when the animation ends with a timer which is initialised in PaintEffect function"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ObjectTimer"
                   },
                   "parameters": [
                     "Object",
                     "\"_TimerEffect\"",
                     "Object.Behavior::PropertyTimer() - TimeDelta()"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "PrimitiveDrawing::Drawer",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "FlashTransitionPainter::FlashTransitionPainter",
               "type": "behavior"
             }
@@ -1994,6 +1599,7 @@
           "type": "Number",
           "label": "Timer",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "Timer"
@@ -2003,6 +1609,7 @@
           "type": "String",
           "label": "Color",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "Color"
@@ -2012,6 +1619,7 @@
           "type": "String",
           "label": "Type of effect ",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "Type"
@@ -2021,6 +1629,7 @@
           "type": "Boolean",
           "label": "Backward",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "Backward"
@@ -2030,6 +1639,7 @@
           "type": "Boolean",
           "label": "Forward",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "Forward"
@@ -2039,11 +1649,14 @@
           "type": "Number",
           "label": "The maximum of the opacity only for flash",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": true,
           "name": "MaxOpacity"
         }
-      ]
+      ],
+      "sharedPropertyDescriptors": []
     }
-  ]
+  ],
+  "eventsBasedObjects": []
 }

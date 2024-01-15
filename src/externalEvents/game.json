@@ -4,8 +4,6 @@
   "name": "Game",
   "events": [
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -13,8 +11,6 @@
       "target": "Doors"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -22,8 +18,6 @@
       "target": "Phone"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -31,8 +25,6 @@
       "target": "Niko"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -40,8 +32,6 @@
       "target": "Godmode"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -49,8 +39,6 @@
       "target": "AppConnection"
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Link",
       "include": {
         "includeConfig": 0
@@ -62,43 +50,35 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
       "folded": true,
       "name": "Global misc events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "BuiltinCommonInstructions::Or"
               },
               "parameters": [],
               "subInstructions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SceneJustResumed"
                   },
                   "parameters": [
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "DepartScene"
                   },
                   "parameters": [
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ]
             }
@@ -106,7 +86,6 @@
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
@@ -119,182 +98,143 @@
                 "yes",
                 "255",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
                 "niko_movement",
                 "=",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarGlobalTxt"
               },
               "parameters": [
                 "fullscreen",
                 "=",
                 "\"toggled\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetFullScreen"
               },
               "parameters": [
                 "",
                 "yes",
                 "no"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "VarGlobalTxt"
               },
               "parameters": [
                 "fullscreen",
                 "=",
                 "\"untoggled\""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetFullScreen"
               },
               "parameters": [
                 "",
                 "no",
                 "no"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Cache"
               },
               "parameters": [
                 "door"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TiledSpriteObject::XOffset"
               },
               "parameters": [
                 "Water",
                 "+",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "KeyPressed"
               },
               "parameters": [
                 "",
                 "Escape"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Quit"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
