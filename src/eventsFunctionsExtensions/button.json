@@ -1,6 +1,6 @@
 {
   "author": "Paulo Amaral (@paulera)",
-  "description": "Allows a Sprite to behave as a clickable button and optionally to be activated via keyboard.",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Button",
   "helpPath": "",
@@ -9,12 +9,14 @@
   "previewIconUrl": "",
   "shortDescription": "Allows a Sprite to behave as a clickable button and optionally to be activated via keyboard.",
   "version": "1.0",
+  "description": "Allows a Sprite to behave as a clickable button and optionally to be activated via keyboard.",
   "tags": [
     "button",
     "click",
     "mouse",
     "key"
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [],
   "eventsBasedBehaviors": [
@@ -25,16 +27,12 @@
       "objectType": "Sprite",
       "eventsFunctions": [
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "onCreated",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -44,18 +42,14 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Set the initial state of ClickCaptured:\n-1 = No capture whatsoever\n0 = The click started outside the object\n1 = The click started on the object",
-              "comment2": ""
+              "comment": "Set the initial state of ClickCaptured:\n-1 = No capture whatsoever\n0 = The click started outside the object\n1 = The click started on the object"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -63,31 +57,21 @@
                     "ClickCaptured",
                     "=",
                     "-1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -95,16 +79,12 @@
           "objectGroups": []
         },
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "doStepPreEvents",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -114,23 +94,18 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "If the behaviour have names set for the animation to use for various button states, apply it.",
-              "comment2": ""
+              "comment": "If the behaviour have names set for the animation to use for various button states, apply it."
             },
             {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "disabled": false,
-              "folded": false,
               "name": "Animation set",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -141,45 +116,37 @@
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "StrEqual"
                           },
                           "parameters": [
                             "Object.Behavior::PropertyANIMATION_DISABLED()",
                             "!=",
                             "\"\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetAnimationName"
                           },
                           "parameters": [
                             "Object",
                             "Object.Behavior::PropertyANIMATION_DISABLED()"
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "ModVarObjet"
                           },
                           "parameters": [
@@ -187,155 +154,124 @@
                             "ClickCaptured",
                             "=",
                             "-1"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "Button::InteractiveButton::PropertyENABLED"
                       },
                       "parameters": [
                         "Object",
                         "Behavior"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [],
                   "events": [
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "StrEqual"
                           },
                           "parameters": [
                             "Object.Behavior::PropertyANIMATION_UP()",
                             "!=",
                             "\"\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetAnimationName"
                           },
                           "parameters": [
                             "Object",
                             "Object.Behavior::PropertyANIMATION_UP()"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Button::InteractiveButton::isHover"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "StrEqual"
                           },
                           "parameters": [
                             "Object.Behavior::PropertyANIMATION_OVER()",
                             "!=",
                             "\"\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetAnimationName"
                           },
                           "parameters": [
                             "Object",
                             "Object.Behavior::PropertyANIMATION_OVER()"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     },
                     {
-                      "disabled": false,
-                      "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "Button::InteractiveButton::isDown"
                           },
                           "parameters": [
                             "Object",
                             "Behavior",
                             ""
-                          ],
-                          "subInstructions": []
+                          ]
                         },
                         {
                           "type": {
-                            "inverted": false,
                             "value": "StrEqual"
                           },
                           "parameters": [
                             "Object.Behavior::PropertyANIMATION_DOWN()",
                             "!=",
                             "\"\""
-                          ],
-                          "subInstructions": []
+                          ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "inverted": false,
                             "value": "SetAnimationName"
                           },
                           "parameters": [
                             "Object",
                             "Object.Behavior::PropertyANIMATION_DOWN()"
-                          ],
-                          "subInstructions": []
+                          ]
                         }
-                      ],
-                      "events": []
+                      ]
                     }
                   ]
                 }
@@ -343,8 +279,6 @@
               "parameters": []
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -354,17 +288,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "If there is no click captured but there was a touch, set ClickCaptured to indicate if it happened outside the object (0) or inside the object (1)",
-              "comment2": ""
+              "comment": "If there is no click captured but there was a touch, set ClickCaptured to indicate if it happened outside the object (0) or inside the object (1)"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -372,42 +302,34 @@
                     "ClickCaptured",
                     "=",
                     "-1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisBouton"
                   },
                   "parameters": [
                     "",
                     "Left"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "SourisSurObjet"
                       },
                       "parameters": [
@@ -415,14 +337,12 @@
                         "",
                         "",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -430,15 +350,11 @@
                         "ClickCaptured",
                         "=",
                         "1"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -451,14 +367,12 @@
                         "",
                         "",
                         ""
-                      ],
-                      "subInstructions": []
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -466,33 +380,23 @@
                         "ClickCaptured",
                         "=",
                         "0"
-                      ],
-                      "subInstructions": []
+                      ]
                     }
-                  ],
-                  "events": []
+                  ]
                 }
               ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -504,31 +408,23 @@
           "fullName": "Clicked and released (full click)",
           "functionType": "Condition",
           "name": "isClicked",
-          "private": false,
           "sentence": "_PARAM0_ was clicked with mouse/touch",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -538,17 +434,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "A full click is considered when it was started on the object (ClickCaptured ==1), and the mouse is released on the object.",
-              "comment2": ""
+              "comment": "A full click is considered when it was started on the object (ClickCaptured ==1), and the mouse is released on the object."
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
@@ -556,23 +448,19 @@
                     "",
                     "yes",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MouseButtonReleased"
                   },
                   "parameters": [
                     "",
                     "Left"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -580,54 +468,40 @@
                     "ClickCaptured",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -639,31 +513,23 @@
           "fullName": "Mouse is over",
           "functionType": "Condition",
           "name": "isHover",
-          "private": false,
           "sentence": "Cursor is over _PARAM0_",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -673,17 +539,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Can only consider hover effects if it happens when there is no Click happening (ClickCaptured == -1), or when the click started in the button without finishing (ClickCaptured == 1).\n\nCan't use in mobile device. On mobile, if the user drag the touch to the button and release on it, it is left in hover state.",
-              "comment2": ""
+              "comment": "Can only consider hover effects if it happens when there is no Click happening (ClickCaptured == -1), or when the click started in the button without finishing (ClickCaptured == 1).\n\nCan't use in mobile device. On mobile, if the user drag the touch to the button and release on it, it is left in hover state."
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
@@ -691,12 +553,10 @@
                     "",
                     "",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -704,62 +564,47 @@
                     "ClickCaptured",
                     "!=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
                     "inverted": true,
                     "value": "SystemInfo::IsMobile"
                   },
-                  "parameters": [],
-                  "subInstructions": []
+                  "parameters": []
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -771,31 +616,23 @@
           "fullName": "Is down",
           "functionType": "Condition",
           "name": "isDown",
-          "private": false,
           "sentence": "_PARAM0_ is pressed down",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -805,17 +642,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "To consider the button down event properly, need to check ClickCaptured state to make sure there is a click started on the button. Otherwise, it would respond to a drag event passing by (cursor on object + mouse button is down)",
-              "comment2": ""
+              "comment": "To consider the button down event properly, need to check ClickCaptured state to make sure there is a click started on the button. Otherwise, it would respond to a drag event passing by (cursor on object + mouse button is down)"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
@@ -823,23 +656,19 @@
                     "",
                     "yes",
                     ""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SourisBouton"
                   },
                   "parameters": [
                     "",
                     "Left"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -847,54 +676,40 @@
                     "ClickCaptured",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -906,43 +721,33 @@
           "fullName": "Is enabled",
           "functionType": "Condition",
           "name": "isEnabled",
-          "private": false,
           "sentence": "_PARAM0_ is enabled",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "True"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -953,43 +758,31 @@
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "SetReturnBoolean"
                   },
                   "parameters": [
                     "False"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -1001,49 +794,35 @@
           "fullName": "Enable button",
           "functionType": "Action",
           "name": "setEnable",
-          "private": false,
           "sentence": "Enable button _PARAM0_",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::SetPropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior",
                     "yes"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -1055,49 +834,35 @@
           "fullName": "Disable button",
           "functionType": "Action",
           "name": "setDisable",
-          "private": false,
           "sentence": "Disable button _PARAM0_",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::SetPropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior",
                     "no"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -1105,16 +870,12 @@
           "objectGroups": []
         },
         {
-          "description": "",
           "fullName": "",
           "functionType": "Action",
           "name": "doStepPostEvents",
-          "private": false,
           "sentence": "",
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1124,17 +885,13 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "If the mouse button is released during a captured click (0 or 1), set the state to no click captured (-1)",
-              "comment2": ""
+              "comment": "If the mouse button is released during a captured click (0 or 1), set the state to no click captured (-1)"
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarObjet"
                   },
                   "parameters": [
@@ -1142,36 +899,30 @@
                     "ClickCaptured",
                     ">",
                     "-1"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "MouseButtonReleased"
                   },
                   "parameters": [
                     "",
                     "Left"
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "Button::InteractiveButton::PropertyENABLED"
                   },
                   "parameters": [
                     "Object",
                     "Behavior"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -1179,31 +930,21 @@
                     "ClickCaptured",
                     "=",
                     "-1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ],
           "parameters": [
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Object",
-              "longDescription": "",
               "name": "Object",
-              "optional": false,
               "supplementaryInformation": "Sprite",
               "type": "object"
             },
             {
-              "codeOnly": false,
-              "defaultValue": "",
               "description": "Behavior",
-              "longDescription": "",
               "name": "Behavior",
-              "optional": false,
               "supplementaryInformation": "Button::InteractiveButton",
               "type": "behavior"
             }
@@ -1217,6 +958,7 @@
           "type": "String",
           "label": "Animation for idle state",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": false,
           "name": "ANIMATION_UP"
@@ -1226,6 +968,7 @@
           "type": "String",
           "label": "Animation for mouse over state",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": false,
           "name": "ANIMATION_OVER"
@@ -1235,6 +978,7 @@
           "type": "String",
           "label": "Animation for button down state",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": false,
           "name": "ANIMATION_DOWN"
@@ -1244,6 +988,7 @@
           "type": "String",
           "label": "Animation for button disabled",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": false,
           "name": "ANIMATION_DISABLED"
@@ -1253,11 +998,14 @@
           "type": "Boolean",
           "label": "Button is enabled",
           "description": "",
+          "group": "",
           "extraInformation": [],
           "hidden": false,
           "name": "ENABLED"
         }
-      ]
+      ],
+      "sharedPropertyDescriptors": []
     }
-  ]
+  ],
+  "eventsBasedObjects": []
 }

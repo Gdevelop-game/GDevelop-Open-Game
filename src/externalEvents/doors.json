@@ -4,24 +4,19 @@
   "name": "Doors",
   "events": [
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "KeyPressed"
           },
           "parameters": [
             "",
             "Return"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "CollisionNP"
           },
           "parameters": [
@@ -30,57 +25,47 @@
             "",
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "BuiltinCommonInstructions::Once"
           },
-          "parameters": [],
-          "subInstructions": []
+          "parameters": []
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "ModVarScene"
           },
           "parameters": [
             "niko_movement",
             "=",
             "0"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "ModVarScene"
           },
           "parameters": [
             "RoomID",
             "=",
             "door.Variable(Room)"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
             "door",
             "True"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "PlaySound"
           },
           "parameters": [
@@ -89,12 +74,10 @@
             "",
             "50",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
           },
           "parameters": [
@@ -107,45 +90,36 @@
             "no",
             "255",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "SceneVariableAsBoolean"
           },
           "parameters": [
             "door",
             "True"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
           },
           "parameters": [
             "Transitions",
             "FlashTransitionPainter",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "PlaySound"
           },
           "parameters": [
@@ -154,34 +128,28 @@
             "",
             "50",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "SetSceneVariableAsBoolean"
           },
           "parameters": [
             "door",
             "False"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "RoomManager::goToRoom"
           },
           "parameters": [
             "",
             "Variable(RoomID)",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     }
   ]
 }

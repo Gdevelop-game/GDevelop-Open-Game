@@ -3,9 +3,6 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "Settings",
   "name": "Settings",
-  "oglFOV": 90,
-  "oglZFar": 500,
-  "oglZNear": 1,
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -13,17 +10,16 @@
   "v": 209,
   "uiSettings": {
     "grid": false,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 375,
     "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 375,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": false,
-    "windowMask": false,
-    "zoomFactor": 0.5537499999999994
+    "zoomFactor": 0.5537499999999994,
+    "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
@@ -54,7 +50,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "settingshadows",
       "persistentUuid": "b7c46744-17e1-4a0a-b23c-3c5db950a653",
       "width": 0,
@@ -70,7 +65,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "shadows",
       "persistentUuid": "2f0c55c0-2527-424d-8b8b-2f598f7ef8bd",
       "width": 0,
@@ -86,7 +80,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "Settings",
       "persistentUuid": "9c494e04-e63b-48ab-8426-9c269158e3ff",
       "width": 0,
@@ -108,7 +101,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "settingsound",
       "persistentUuid": "fd41c3be-ca83-43ce-8d0d-e106e280d57b",
       "width": 0,
@@ -124,7 +116,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "sound",
       "persistentUuid": "27821ca7-97b5-4e56-ba34-8af2a0d472fe",
       "width": 0,
@@ -140,7 +131,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "settingfullscreen",
       "persistentUuid": "4564917a-f54a-41f2-802e-f3b7216f12d9",
       "width": 0,
@@ -156,7 +146,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "Fullscreen",
       "persistentUuid": "6a9fbf37-8f25-457d-82e7-559d6e40ab84",
       "width": 0,
@@ -172,7 +161,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "Volume",
       "persistentUuid": "2f308064-f62d-4b6c-9a8e-49efe1227a12",
       "width": 0,
@@ -188,7 +176,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "volplus",
       "persistentUuid": "756c5766-bbaf-4156-8c94-8118592ee0c0",
       "width": 0,
@@ -204,7 +191,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "volminus",
       "persistentUuid": "c7e8c13b-355e-4787-a6c2-bc0616081700",
       "width": 0,
@@ -220,7 +206,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "volumevolume",
       "persistentUuid": "be181311-9bf3-4731-9eb3-7fb61cbd7a33",
       "width": 0,
@@ -236,7 +221,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "plus",
       "persistentUuid": "33b72434-d279-4733-a0f5-1171aee438ed",
       "width": 0,
@@ -252,7 +236,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "minus",
       "persistentUuid": "fbf3ff87-5be7-4544-828d-b730a8241d92",
       "width": 0,
@@ -268,7 +251,6 @@
       "customSize": true,
       "height": 100,
       "layer": "",
-      "locked": false,
       "name": "back",
       "persistentUuid": "af73f201-b11d-46b7-9c1f-9b12bd235ed3",
       "width": 101,
@@ -284,7 +266,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "goback",
       "persistentUuid": "dcd2bff6-8d1a-4203-8507-cecd3ed38506",
       "width": 0,
@@ -300,7 +281,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "crossair",
       "persistentUuid": "4b0e12d9-8c15-47fc-98d6-445ed0d13f1b",
       "width": 0,
@@ -316,7 +296,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "settingshadows",
       "persistentUuid": "7dd87d04-9148-4d80-949c-fa9a62f4e41d",
       "width": 0,
@@ -332,7 +311,6 @@
       "customSize": false,
       "height": 0,
       "layer": "",
-      "locked": false,
       "name": "settingshadows",
       "persistentUuid": "0c763b1e-e126-4c31-9c9d-942f0f25124c",
       "width": 0,
@@ -346,11 +324,13 @@
   ],
   "objects": [
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "settingshadows",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -433,14 +413,15 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "shadows",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -454,6 +435,7 @@
       ],
       "string": "Shadows: On",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -462,14 +444,15 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "Volume",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -483,6 +466,7 @@
       ],
       "string": "Volume",
       "font": "",
+      "textAlignment": "",
       "characterSize": 59,
       "color": {
         "b": 0,
@@ -491,14 +475,15 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "Settings",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -512,6 +497,7 @@
       ],
       "string": "Settings",
       "font": "",
+      "textAlignment": "",
       "characterSize": 59,
       "color": {
         "b": 0,
@@ -520,11 +506,13 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "settingsound",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -607,14 +595,15 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "sound",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -628,6 +617,7 @@
       ],
       "string": "Sound: On",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -636,11 +626,13 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "crossair",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -704,11 +696,13 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "settingfullscreen",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -791,14 +785,15 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "Fullscreen",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -812,6 +807,7 @@
       ],
       "string": "Fullscreen: On",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -820,11 +816,13 @@
       }
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "volplus",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -907,11 +905,13 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "volminus",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -994,11 +994,13 @@
       ]
     },
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "back",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1081,14 +1083,15 @@
       ]
     },
     {
+      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "volumevolume",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1102,6 +1105,7 @@
       ],
       "string": "<Volume>",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 255,
@@ -1110,14 +1114,15 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "minus",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1131,6 +1136,7 @@
       ],
       "string": "-",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -1139,14 +1145,15 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": false,
       "italic": false,
       "name": "plus",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1160,6 +1167,7 @@
       ],
       "string": "+",
       "font": "",
+      "textAlignment": "",
       "characterSize": 20,
       "color": {
         "b": 0,
@@ -1168,14 +1176,15 @@
       }
     },
     {
+      "assetStoreId": "",
       "bold": true,
       "italic": false,
       "name": "goback",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Anchor",
@@ -1189,6 +1198,7 @@
       ],
       "string": "<",
       "font": "",
+      "textAlignment": "",
       "characterSize": 30,
       "color": {
         "b": 0,
@@ -1197,199 +1207,224 @@
       }
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "settingshadows"
+      },
+      {
+        "objectName": "shadows"
+      },
+      {
+        "objectName": "Volume"
+      },
+      {
+        "objectName": "Settings"
+      },
+      {
+        "objectName": "settingsound"
+      },
+      {
+        "objectName": "sound"
+      },
+      {
+        "objectName": "crossair"
+      },
+      {
+        "objectName": "settingfullscreen"
+      },
+      {
+        "objectName": "Fullscreen"
+      },
+      {
+        "objectName": "volplus"
+      },
+      {
+        "objectName": "volminus"
+      },
+      {
+        "objectName": "back"
+      },
+      {
+        "objectName": "volumevolume"
+      },
+      {
+        "objectName": "minus"
+      },
+      {
+        "objectName": "plus"
+      },
+      {
+        "objectName": "goback"
+      }
+    ]
+  },
   "events": [
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "General",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "DepartScene"
               },
               "parameters": [
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "volumevolume",
                 "=",
                 "GlobalVariableString(Volume)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarGlobal"
               },
               "parameters": [
                 "Volume",
                 "=",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModGlobalVolume"
               },
               "parameters": [
                 "",
                 "=",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "volumevolume",
                 "=",
                 "\"100\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "Volume",
                 "=",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "VarGlobal"
               },
               "parameters": [
                 "Volume",
                 ">",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModGlobalVolume"
               },
               "parameters": [
                 "",
                 "=",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "volumevolume",
                 "=",
                 "\"100\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "Volume",
                 "=",
                 "100"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "back",
                 "InteractiveButton",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "sceneLoad",
+                "=",
+                "\"Menu\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"Menu\"",
+                "\"Loading\"",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": []
@@ -1399,184 +1434,150 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Shadows",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "settingshadows",
                 "InteractiveButton",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "ShadowSettingChanged",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "shadowsetting",
                     "=",
                     "\"untoggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "ShadowSettingChanged",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
                     "shadows",
                     "=",
                     "\"Shadows: On\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "shadowsetting",
                     "=",
                     "\"toggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "ShadowSettingChanged",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "shadowsetting",
                     "=",
                     "\"toggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "ShadowSettingChanged",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
                     "shadows",
                     "=",
                     "\"Shadows: Off\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "shadowsetting",
                     "=",
                     "\"untoggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "ShadowSettingChanged",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         }
@@ -1588,184 +1589,150 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "Sound",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "settingsound",
                 "InteractiveButton",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarSceneTxt"
               },
               "parameters": [
                 "SoundSettingChanged",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "events": [
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "soundsetting",
                     "=",
                     "\"untoggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "SoundSettingChanged",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
                     "sound",
                     "=",
                     "\"Sound: On\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "soundsetting",
                     "=",
                     "\"toggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "SoundSettingChanged",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             },
             {
-              "disabled": false,
-              "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarGlobalTxt"
                   },
                   "parameters": [
                     "soundsetting",
                     "=",
                     "\"toggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "VarScene"
                   },
                   "parameters": [
                     "SoundSettingChanged",
                     "=",
                     "0"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "inverted": false,
                     "value": "TextObject::String"
                   },
                   "parameters": [
                     "sound",
                     "=",
                     "\"Sound: Off\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarGlobalTxt"
                   },
                   "parameters": [
                     "soundsetting",
                     "=",
                     "\"untoggled\""
-                  ],
-                  "subInstructions": []
+                  ]
                 },
                 {
                   "type": {
-                    "inverted": false,
                     "value": "ModVarScene"
                   },
                   "parameters": [
                     "SoundSettingChanged",
                     "=",
                     "1"
-                  ],
-                  "subInstructions": []
+                  ]
                 }
-              ],
-              "events": []
+              ]
             }
           ]
         }
@@ -1777,374 +1744,63 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
       "name": "VolumePlus",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Button::InteractiveButton::isClicked"
               },
               "parameters": [
                 "volplus",
                 "InteractiveButton",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModGlobalVolume"
               },
               "parameters": [
                 "",
                 "=",
                 "GlobalVariable(Volume)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "volumevolume",
                 "=",
                 "GlobalVariableString(Volume)"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "Volume",
                 "+",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "SetAnimationName"
               },
               "parameters": [
                 "volplus",
                 "\"down\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "VolumeMinus",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Button::InteractiveButton::isClicked"
-              },
-              "parameters": [
-                "volminus",
-                "InteractiveButton",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModGlobalVolume"
-              },
-              "parameters": [
-                "",
-                "=",
-                "GlobalVariable(Volume)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "volumevolume",
-                "=",
-                "GlobalVariableString(Volume)"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Volume",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "volplus",
-                "\"down\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "disabled": false,
-      "folded": false,
-      "name": "Fullscreen",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Button::InteractiveButton::isClicked"
-              },
-              "parameters": [
-                "settingfullscreen",
-                "InteractiveButton",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "FullScreen",
-                "=",
-                "0"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": [
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "fullscreen",
-                    "=",
-                    "\"untoggled\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "FullScreen",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Fullscreen",
-                    "=",
-                    "\"Fullscreen: On\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "fullscreen",
-                    "=",
-                    "\"toggled\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "FullScreen",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetFullScreen"
-                  },
-                  "parameters": [
-                    "",
-                    "yes",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobalTxt"
-                  },
-                  "parameters": [
-                    "fullscreen",
-                    "=",
-                    "\"toggled\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "FullScreen",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Fullscreen",
-                    "=",
-                    "\"Fullscreen: Off\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobalTxt"
-                  },
-                  "parameters": [
-                    "fullscreen",
-                    "=",
-                    "\"untoggled\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "FullScreen",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "SetFullScreen"
-                  },
-                  "parameters": [
-                    "",
-                    "no",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
+              ]
             }
           ]
         }
@@ -2156,15 +1812,254 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "disabled": false,
-      "folded": false,
+      "name": "VolumeMinus",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Button::InteractiveButton::isClicked"
+              },
+              "parameters": [
+                "volminus",
+                "InteractiveButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModGlobalVolume"
+              },
+              "parameters": [
+                "",
+                "=",
+                "GlobalVariable(Volume)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "volumevolume",
+                "=",
+                "GlobalVariableString(Volume)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Volume",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "volplus",
+                "\"down\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Fullscreen",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Button::InteractiveButton::isClicked"
+              },
+              "parameters": [
+                "settingfullscreen",
+                "InteractiveButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "FullScreen",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "=",
+                    "\"untoggled\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "FullScreen",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Fullscreen",
+                    "=",
+                    "\"Fullscreen: On\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "=",
+                    "\"toggled\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "FullScreen",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetFullScreen"
+                  },
+                  "parameters": [
+                    "",
+                    "yes",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "=",
+                    "\"toggled\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "FullScreen",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Fullscreen",
+                    "=",
+                    "\"Fullscreen: Off\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "=",
+                    "\"untoggled\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "FullScreen",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetFullScreen"
+                  },
+                  "parameters": [
+                    "",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Link",
           "include": {
             "includeConfig": 0
@@ -2180,9 +2075,14 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -2205,8 +2105,36 @@
       "type": "AnchorBehavior::AnchorBehavior"
     },
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "InteractiveButton",
       "type": "Button::InteractiveButton"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
     }
   ]
 }

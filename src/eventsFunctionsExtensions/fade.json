@@ -1,6 +1,6 @@
 {
   "author": "The Gem Dev",
-  "description": "",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Fade",
   "helpPath": "",
@@ -9,9 +9,11 @@
   "previewIconUrl": "",
   "shortDescription": "Fades a sprite",
   "version": "1.0.0",
+  "description": "",
   "tags": [
     ""
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [
     {
@@ -19,84 +21,62 @@
       "fullName": "Fade out",
       "functionType": "Action",
       "name": "Fadeout",
-      "private": false,
       "sentence": "Fade out _PARAM1_  ",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TiledSpriteObject::SetOpacity"
               },
               "parameters": [
                 "Object",
                 "+",
                 "TimeDelta()*100"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TiledSpriteObject::Opacity"
               },
               "parameters": [
                 "Object",
                 ">=",
                 "255"
-              ],
-              "subInstructions": []
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "Scene"
               },
               "parameters": [
                 "",
                 "GetArgumentAsString(\"Scene\")",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Object",
-          "longDescription": "",
           "name": "Object",
-          "optional": false,
           "supplementaryInformation": "TiledSpriteObject::TiledSprite",
           "type": "objectList"
         },
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Next scene",
-          "longDescription": "",
           "name": "",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "sceneName"
         }
       ],
@@ -107,47 +87,34 @@
       "fullName": "Fade in",
       "functionType": "Action",
       "name": "Fadein",
-      "private": false,
       "sentence": "Fade in _PARAM1_  ",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "TiledSpriteObject::SetOpacity"
               },
               "parameters": [
                 "Object",
                 "-",
                 "TimeDelta()*100"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
-          "events": []
+          "actions": []
         }
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Object",
-          "longDescription": "",
           "name": "Object",
-          "optional": false,
           "supplementaryInformation": "TiledSpriteObject::TiledSprite",
           "type": "objectList"
         }
@@ -155,5 +122,6 @@
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

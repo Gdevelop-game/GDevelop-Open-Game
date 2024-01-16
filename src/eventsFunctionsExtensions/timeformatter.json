@@ -1,6 +1,6 @@
 {
   "author": "@Bouh",
-  "description": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Time formatting",
   "helpPath": "",
@@ -9,6 +9,7 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/clock-digital.svg",
   "shortDescription": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
   "version": "0.0.1",
+  "description": "Expressions to transform time in seconds to format like HH:MM:SS. Ideal to display timers on screen.",
   "tags": [
     "time",
     "timer",
@@ -17,6 +18,7 @@
     "minutes",
     "seconds"
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [
     {
@@ -24,33 +26,42 @@
       "fullName": "Format time in seconds to HH:MM:SS",
       "functionType": "StringExpression",
       "name": "SecondsToHHMMSS",
-      "private": false,
       "sentence": "Format time _PARAM1_ to HH:MM:SS in _PARAM2_",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": "//custom function in custom fonction ~~Woow~~\r\nvar format_time = function (time_second) {\r\n    date = new Date(null);\r\n    date.setSeconds(time_second);\r\n    if (time_second >= 3600) {\r\n        return date.toISOString().substr(11, 8); // MM:SS\r\n    } else {\r\n        return date.toISOString().substr(14, 5); // HH:MM:SS\r\n    }\r\n}\r\n\r\neventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument(\"TimeInSeconds\"));",
+          "inlineCode": [
+            "//custom function in custom fonction ~~Woow~~\r",
+            "var format_time = function (time_second) {\r",
+            "    date = new Date(null);\r",
+            "    date.setSeconds(time_second);\r",
+            "    if (time_second >= 3600) {\r",
+            "        return date.toISOString().substr(11, 8); // MM:SS\r",
+            "    } else {\r",
+            "        return date.toISOString().substr(14, 5); // HH:MM:SS\r",
+            "    }\r",
+            "}\r",
+            "\r",
+            "eventsFunctionContext.returnValue = format_time(eventsFunctionContext.getArgument(\"TimeInSeconds\"));"
+          ],
           "parameterObjects": "",
           "useStrict": false,
           "eventsSheetExpanded": false
         }
       ],
+      "expressionType": {
+        "type": "string"
+      },
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "Time, in seconds",
-          "longDescription": "",
           "name": "TimeInSeconds",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

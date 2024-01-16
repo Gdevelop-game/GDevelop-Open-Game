@@ -8,15 +8,20 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": true,
     "orientation": "landscape",
     "packageName": "com.gdevelopcommunity.opengame",
+    "pixelsRounding": false,
     "projectUuid": "0ebc044a-8844-4a8e-8091-2edaba2852e0",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "GDevelop Open Game",
+    "description": "",
     "author": "GDevelop Community",
     "windowWidth": 1500,
     "windowHeight": 700,
@@ -26,8 +31,29 @@
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "showGDevelopSplash": false
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": false,
+      "showProgressBar": true
     },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
     "extensionProperties": [],
     "platforms": [
       {
@@ -999,6 +1025,7 @@
         "name": "assets\\sound\\door_sound\\DoorOpening_0.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       },
       {
@@ -1008,6 +1035,7 @@
         "name": "assets\\sound\\door_sound\\DoorClosing_0.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": true
       },
       {
@@ -2400,17 +2428,54 @@
         "name": "assets\\character\\Player\\manBlue_phone_2.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/tiledGreen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\placeholder\\tiledGreen.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
+          "name": "Flat Bar Red Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
       "name": "crossair",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -2474,10 +2539,11 @@
       ]
     },
     {
+      "assetStoreId": "",
       "name": "Transitions",
-      "tags": "",
       "type": "PrimitiveDrawing::Drawer",
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "FlashTransitionPainter",
@@ -2504,12 +2570,25 @@
         "r": 0
       },
       "absoluteCoordinates": false,
-      "clearBetweenFrames": true
+      "clearBetweenFrames": true,
+      "antialiasing": "none"
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "crossair"
+      },
+      {
+        "objectName": "Transitions"
+      }
+    ]
+  },
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "_RoomManager__Rooms",
       "type": "structure",
       "children": [
@@ -2530,6 +2609,12 @@
           ]
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "sceneLoad",
+      "type": "string",
+      "value": ""
     },
     {
       "name": "Weapon_holding",
@@ -2650,6 +2735,10 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/loading"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/city1"
     },
     {
@@ -2696,6 +2785,14 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/alignobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"

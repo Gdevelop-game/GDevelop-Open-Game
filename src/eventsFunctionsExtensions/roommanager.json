@@ -1,6 +1,6 @@
 {
   "author": "Arthur Pacaud (arthuro555)",
-  "description": "",
+  "category": "",
   "extensionNamespace": "",
   "fullName": "Room Manager",
   "helpPath": "",
@@ -9,22 +9,20 @@
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Virtual Reality/Virtual Reality_3d_room_vr_scene.svg",
   "shortDescription": "Manages multiple rooms in one scene",
   "version": "",
+  "description": "",
   "tags": [
     ""
   ],
+  "authorIds": [],
   "dependencies": [],
   "eventsFunctions": [
     {
-      "description": "",
       "fullName": "",
       "functionType": "Action",
       "name": "onFirstSceneLoaded",
-      "private": false,
       "sentence": "",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -34,18 +32,14 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Register rooms here",
-          "comment2": ""
+          "comment": "Register rooms here"
         },
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "RoomManager::registerRoom"
               },
               "parameters": [
@@ -54,12 +48,10 @@
                 "588",
                 "360",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "RoomManager::registerRoom"
               },
               "parameters": [
@@ -68,12 +60,10 @@
                 "2170",
                 "420",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "RoomManager::registerRoom"
               },
               "parameters": [
@@ -82,12 +72,10 @@
                 "320",
                 "1650",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "RoomManager::registerRoom"
               },
               "parameters": [
@@ -96,12 +84,10 @@
                 "2310",
                 "1260",
                 ""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "RoomManager::registerRoom"
               },
               "parameters": [
@@ -110,11 +96,9 @@
                 "3735",
                 "330",
                 ""
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": [],
@@ -125,51 +109,38 @@
       "fullName": "Go To Room",
       "functionType": "Action",
       "name": "goToRoom",
-      "private": false,
       "sentence": "Teleport player to room _PARAM1_",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "PushScene"
               },
               "parameters": [
                 "",
                 "\"Rooms\""
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "currentRoomID",
                 "=",
                 "GetArgumentAsNumber(\"id\")"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The Room ID",
-          "longDescription": "",
           "name": "id",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
@@ -184,164 +155,122 @@
       "sentence": "Register room _PARAM1_ with X = _PARAM2_ and Y = _PARAM3_",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "_RoomManager__Rooms[\"id\" + ToString(GetArgumentAsNumber(\"id\"))].x",
                 "=",
                 "GetArgumentAsNumber(\"x\")"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "_RoomManager__Rooms[\"id\" + ToString(GetArgumentAsNumber(\"id\"))].y",
                 "=",
                 "GetArgumentAsNumber(\"y\")"
-              ],
-              "subInstructions": []
+              ]
             },
             {
               "type": {
-                "inverted": false,
                 "value": "ModVarGlobal"
               },
               "parameters": [
                 "_RoomManager__RoomsNumber",
                 "+",
                 "1"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The Room ID",
-          "longDescription": "",
           "name": "id",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         },
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The X coordinate of the room entry point",
-          "longDescription": "",
           "name": "x",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         },
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The Y coordinate of the room entry point",
-          "longDescription": "",
           "name": "y",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
       "objectGroups": []
     },
     {
-      "description": "",
       "fullName": "",
       "functionType": "Expression",
       "name": "getY",
-      "private": false,
       "sentence": "",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetReturnNumber"
               },
               "parameters": [
                 "GlobalVariable(_RoomManager__Rooms[\"id\" + ToString(GetArgumentAsNumber(\"id\"))].y)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
+      "expressionType": {
+        "type": "expression"
+      },
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The Room ID",
-          "longDescription": "",
           "name": "id",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
       "objectGroups": []
     },
     {
-      "description": "",
       "fullName": "",
       "functionType": "Expression",
       "name": "getX",
-      "private": false,
       "sentence": "",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetReturnNumber"
               },
               "parameters": [
                 "GlobalVariable(_RoomManager__Rooms[\"id\" + ToString(GetArgumentAsNumber(\"id\"))].x)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
+      "expressionType": {
+        "type": "expression"
+      },
       "parameters": [
         {
-          "codeOnly": false,
-          "defaultValue": "",
           "description": "The Room ID",
-          "longDescription": "",
           "name": "id",
-          "optional": false,
-          "supplementaryInformation": "",
           "type": "expression"
         }
       ],
@@ -352,32 +281,30 @@
       "fullName": "Get rooms number",
       "functionType": "Expression",
       "name": "roomNumbers",
-      "private": false,
       "sentence": "",
       "events": [
         {
-          "disabled": false,
-          "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
               "type": {
-                "inverted": false,
                 "value": "SetReturnNumber"
               },
               "parameters": [
                 "GlobalVariableChildCount(_RoomManager__RoomsNumber)"
-              ],
-              "subInstructions": []
+              ]
             }
-          ],
-          "events": []
+          ]
         }
       ],
+      "expressionType": {
+        "type": "expression"
+      },
       "parameters": [],
       "objectGroups": []
     }
   ],
-  "eventsBasedBehaviors": []
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
 }

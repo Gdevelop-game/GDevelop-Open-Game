@@ -4,26 +4,21 @@
   "name": "Crossair",
   "events": [
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "ChangePlan"
           },
           "parameters": [
             "crossair",
             "=",
             "109087867987"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "MettreXY"
           },
           "parameters": [
@@ -32,38 +27,30 @@
             "MouseX(\"\", 0)",
             "=",
             "MouseY(\"\", 0)"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "CacheSouris"
           },
           "parameters": [
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "Animation"
           },
           "parameters": [
             "Niko",
             "!=",
             "4"
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
@@ -73,14 +60,12 @@
           "parameters": [
             "Placeholder",
             "TopDownMovement"
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -88,12 +73,10 @@
             "MouseX()",
             "0",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -101,34 +84,27 @@
             "MouseY()",
             "0",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "inverted": false,
             "value": "Animation"
           },
           "parameters": [
             "Niko",
             "=",
             "4"
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -136,11 +112,9 @@
             "Niko.Direction()+90",
             "0",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     }
   ]
 }

@@ -3,9 +3,6 @@
   "disableInputWhenNotFocused": true,
   "mangledName": "FunctionsIncludes",
   "name": "FunctionsIncludes",
-  "oglFOV": 90,
-  "oglZFar": 500,
-  "oglZNear": 1,
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -13,26 +10,26 @@
   "v": 209,
   "uiSettings": {
     "grid": false,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 32,
     "gridHeight": 32,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 32,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": true,
-    "windowMask": false,
-    "zoomFactor": 0.4777499999999978
+    "zoomFactor": 0.4777499999999978,
+    "windowMask": false
   },
   "objectsGroups": [],
   "variables": [],
   "instances": [],
   "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
   "events": [
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -42,12 +39,9 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "This scene only exists to workaround an exporter bug, it should not be delted or switched to.",
-      "comment2": ""
+      "comment": "This scene only exists to workaround an exporter bug, it should not be delted or switched to."
     },
     {
-      "disabled": false,
-      "folded": false,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -57,61 +51,51 @@
           },
           "parameters": [
             ""
-          ],
-          "subInstructions": []
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "inverted": false,
             "value": "BackgroundScene::loadBGScene"
           },
           "parameters": [
             "",
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "BackgroundScene::switchBack"
           },
           "parameters": [
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "BackgroundScene::switchToBGScene"
           },
           "parameters": [
             "",
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "RoomManager::goToRoom"
           },
           "parameters": [
             "",
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         },
         {
           "type": {
-            "inverted": false,
             "value": "RoomManager::registerRoom"
           },
           "parameters": [
@@ -120,11 +104,9 @@
             "",
             "",
             ""
-          ],
-          "subInstructions": []
+          ]
         }
-      ],
-      "events": []
+      ]
     }
   ],
   "layers": [
@@ -132,9 +114,14 @@
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
       "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -151,5 +138,34 @@
       "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlashTransitionPainter",
+      "type": "FlashTransitionPainter::FlashTransitionPainter"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    }
+  ]
 }
