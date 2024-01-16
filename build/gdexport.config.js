@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    require("@gdexporter/plugin-better-loading-screen"),
     {
       plugin: require("@gdexporter/plugin-manifest"),
       options: {
