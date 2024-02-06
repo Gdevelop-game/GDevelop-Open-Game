@@ -50,7 +50,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Global misc events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -206,6 +205,16 @@
               },
               "parameters": [
                 "Water",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Water_cover",
                 "+",
                 "1"
               ]
