@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City1",
+  "associatedLayout": "City",
   "lastChangeTimeStamp": 0,
   "name": "Crossair",
   "events": [
@@ -47,7 +47,7 @@
             "value": "Animation"
           },
           "parameters": [
-            "Niko",
+            "Player",
             "!=",
             "4"
           ]
@@ -96,7 +96,7 @@
             "value": "Animation"
           },
           "parameters": [
-            "Niko",
+            "Player",
             "=",
             "4"
           ]
@@ -109,7 +109,7 @@
           },
           "parameters": [
             "crossair",
-            "Niko.Direction()+90",
+            "Player.Direction() + 90",
             "0",
             ""
           ]

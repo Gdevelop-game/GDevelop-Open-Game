@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City1",
+  "associatedLayout": "City",
   "lastChangeTimeStamp": 0,
   "name": "Game",
   "events": [
@@ -22,7 +22,7 @@
       "include": {
         "includeConfig": 0
       },
-      "target": "Niko"
+      "target": "Player"
     },
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -50,7 +50,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Global misc events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -192,22 +191,6 @@
               },
               "parameters": [
                 "door"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "Water",
-                "+",
-                "1"
               ]
             }
           ]

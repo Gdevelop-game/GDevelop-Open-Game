@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City1",
+  "associatedLayout": "City",
   "lastChangeTimeStamp": 0,
   "name": "Phone",
   "events": [
@@ -21,7 +21,7 @@
               },
               "parameters": [
                 "",
-                "PageUp"
+                "Up"
               ]
             },
             {
@@ -147,57 +147,57 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "Phone",
                     "Tween",
                     "\"phone\"",
                     "360",
-                    "\"easeInSine\"",
-                    "2200",
+                    "\"easeInQuad\"",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_wifi",
                     "Tween",
                     "\"phone\"",
                     "405",
-                    "\"easeInSine\"",
-                    "2200",
+                    "\"easeInQuad\"",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_battery",
                     "Tween",
                     "\"phone\"",
                     "394",
-                    "\"easeInSine\"",
-                    "2200",
+                    "\"easeInQuad\"",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_time",
                     "Tween",
                     "\"phone\"",
                     "391.5",
-                    "\"easeInSine\"",
-                    "2200",
+                    "\"easeInQuad\"",
+                    "0.5",
                     ""
                   ]
                 }
@@ -365,7 +365,7 @@
                       },
                       "parameters": [
                         "",
-                        "PageDown"
+                        "Down"
                       ]
                     },
                     {
@@ -436,7 +436,7 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_wifi",
@@ -444,13 +444,13 @@
                     "\"phone\"",
                     "949",
                     "\"easeOutSine\"",
-                    "2200",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_time",
@@ -458,27 +458,27 @@
                     "\"phone\"",
                     "936",
                     "\"easeOutSine\"",
-                    "2200",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "phone_battery",
                     "Tween",
                     "\"phone\"",
                     "936",
-                    "\"easeOutSine\"",
-                    "2200",
+                    "\"linear\"",
+                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionYTween"
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
                     "Phone",
@@ -486,7 +486,7 @@
                     "\"phone\"",
                     "907",
                     "\"easeOutSine\"",
-                    "2200",
+                    "0.5",
                     ""
                   ]
                 },
@@ -1970,7 +1970,7 @@
                 "value": "ChangeAnimation"
               },
               "parameters": [
-                "Niko",
+                "Player",
                 "=",
                 "8"
               ]
@@ -1980,7 +1980,7 @@
                 "value": "ChangeAnimationSpeedScale"
               },
               "parameters": [
-                "Niko",
+                "Player",
                 "=",
                 "0.1"
               ]
@@ -2006,7 +2006,7 @@
                     "value": "PlayAnimation"
                   },
                   "parameters": [
-                    "Niko"
+                    "Player"
                   ]
                 }
               ]
@@ -2031,7 +2031,7 @@
                     "value": "PauseAnimation"
                   },
                   "parameters": [
-                    "Niko"
+                    "Player"
                   ]
                 },
                 {
@@ -2039,7 +2039,7 @@
                     "value": "ChangeSprite"
                   },
                   "parameters": [
-                    "Niko",
+                    "Player",
                     "=",
                     "0"
                   ]
@@ -2068,7 +2068,7 @@
                 "value": "ChangeAnimationSpeedScale"
               },
               "parameters": [
-                "Niko",
+                "Player",
                 "=",
                 "0.7"
               ]

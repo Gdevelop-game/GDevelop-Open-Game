@@ -1,8 +1,32 @@
 {
   "associatedLayout": "City",
   "lastChangeTimeStamp": 0,
-  "name": "Niko",
+  "name": "Player",
   "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Variables Documentation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Explain what the variable does here:\n\n\n\n"
+        }
+      ],
+      "parameters": []
+    },
     {
       "colorB": 228,
       "colorG": 176,

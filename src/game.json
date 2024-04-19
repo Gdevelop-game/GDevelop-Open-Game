@@ -2735,11 +2735,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/loading"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/city1"
+      "referenceTo": "/layouts/city"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2752,6 +2748,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/functionsincludes"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/loading"
     }
   ],
   "externalEvents": [
@@ -2761,7 +2761,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/niko"
+      "referenceTo": "/externalEvents/player"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -2782,9 +2782,25 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/crossair"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/sea"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/sports"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/alignobject"
@@ -2826,6 +2842,11 @@
       "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/city2"
+    }
+  ],
   "externalSourceFiles": []
 }
