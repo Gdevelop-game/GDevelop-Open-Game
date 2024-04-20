@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8503034095585174,
+    "zoomFactor": 0.24113360125461827,
     "windowMask": false
   },
   "objectsGroups": [
@@ -58199,111 +58199,6 @@
       }
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "Phone",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "folded": true,
-          "name": "swipe",
-          "type": "string",
-          "value": ""
-        }
-      ],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 0,
-            "thickness": 2
-          },
-          "stringParameters": {
-            "color": "0;0;0"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 2,
-          "topEdgeAnchor": 0,
-          "useLegacyBottomAndRightAnchors": false
-        },
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 1,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_off.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_app.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -59219,7 +59114,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_battery_0.png",
+                  "image": "assets/phone/battery/1_g14.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -59248,7 +59143,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_battery_1.png",
+                  "image": "assets/phone/battery/1_g15.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -59277,36 +59172,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_battery_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\character\\Player\\phone\\phone_battery_3.png",
+                  "image": "assets/phone/battery/1_g16.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -59329,7 +59195,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": true,
+      "bold": false,
       "italic": false,
       "name": "phone_time",
       "smoothed": true,
@@ -59362,14 +59228,14 @@
       "string": "00:00",
       "font": "",
       "textAlignment": "",
-      "characterSize": 18,
+      "characterSize": 15,
       "color": {
         "b": 255,
         "g": 255,
         "r": 255
       },
       "content": {
-        "bold": true,
+        "bold": false,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -59385,7 +59251,7 @@
         "text": "00:00",
         "font": "",
         "textAlignment": "",
-        "characterSize": 18,
+        "characterSize": 15,
         "color": "255;255;255"
       }
     },
@@ -61244,6 +61110,531 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "phoneFrame",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 1
+          },
+          "stringParameters": {
+            "color": "29;29;27"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 0,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "useLegacyBottomAndRightAnchors": false
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/frame/1.png",
+                  "points": [
+                    {
+                      "name": "1",
+                      "x": 50,
+                      "y": 370.5
+                    },
+                    {
+                      "name": "2",
+                      "x": 115,
+                      "y": 370.5
+                    },
+                    {
+                      "name": "3",
+                      "x": 180,
+                      "y": 370.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 224,
+                        "y": 0
+                      },
+                      {
+                        "x": 224,
+                        "y": 418
+                      },
+                      {
+                        "x": 0,
+                        "y": 418
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "phoneMask",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "ColorReplace",
+          "name": "Effect",
+          "doubleParameters": {
+            "epsilon": 0.4
+          },
+          "stringParameters": {
+            "newColor": "0;0;0",
+            "originalColor": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/frame/2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 215,
+                        "y": 0
+                      },
+                      {
+                        "x": 215,
+                        "y": 417
+                      },
+                      {
+                        "x": 0,
+                        "y": 417
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "phoneIcons",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "phone",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/apps/1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 28,
+                    "y": 28
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 56
+                      },
+                      {
+                        "x": 0,
+                        "y": 56
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "images",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/apps/2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 28,
+                    "y": 28
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 56
+                      },
+                      {
+                        "x": 0,
+                        "y": 56
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "camera",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/apps/3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 28,
+                    "y": 28
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 0
+                      },
+                      {
+                        "x": 56,
+                        "y": 56
+                      },
+                      {
+                        "x": 0,
+                        "y": 56
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "phoneWallpaper",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 100,
+          "RadiusY": 0,
+          "LoopDuration": 20,
+          "InitialTurningLeft": false,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": false,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 2.0247e-320,
+          "OldY": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/wallpaper/1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1025
+                      },
+                      {
+                        "x": 0,
+                        "y": 1025
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/wallpaper/2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1025
+                      },
+                      {
+                        "x": 0,
+                        "y": 1025
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/wallpaper/3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1025
+                      },
+                      {
+                        "x": 0,
+                        "y": 1025
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/phone/wallpaper/4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1
+                      },
+                      {
+                        "x": 1024,
+                        "y": 1025
+                      },
+                      {
+                        "x": 0,
+                        "y": 1025
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -61270,7 +61661,16 @@
                 "objectName": "Thumb"
               },
               {
-                "objectName": "Phone"
+                "objectName": "phoneIcons"
+              },
+              {
+                "objectName": "phoneFrame"
+              },
+              {
+                "objectName": "phoneMask"
+              },
+              {
+                "objectName": "phoneWallpaper"
               },
               {
                 "objectName": "phone_battery"
@@ -61630,6 +62030,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "ZOrders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -61765,6 +62166,199 @@
               ]
             }
           ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "IntroZoom",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "0.35",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"Vignetting\"",
+                "\"sepia\"",
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.35",
+                "",
+                "\"elastic\"",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"Vignetting\"",
+                "\"sepia\"",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.5",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"Vignetting\"",
+                "\"sepia\"",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.75",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"Vignetting\"",
+                "\"sepia\"",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "1",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ToggleGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Game.intro"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Game.Camera.Zoom",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
@@ -61921,6 +62515,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "EllipseMovement",
+      "type": "EllipseMovement::EllipseMovement"
     },
     {
       "name": "FlashTransitionPainter",

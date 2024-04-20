@@ -82,7 +82,7 @@
               },
               "parameters": [
                 "",
-                "Phone",
+                "phoneFrame",
                 "<",
                 "1"
               ]
@@ -138,10 +138,10 @@
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
-                    "Phone",
+                    "phoneFrame",
                     "Tween",
                     "\"phone\"",
-                    "SceneWindowHeight() - Phone.Height() - 30",
+                    "SceneWindowHeight() - phoneFrame.Height() - 30",
                     "\"easeOutQuad\"",
                     "0.4",
                     ""
@@ -154,19 +154,27 @@
                   "parameters": [
                     "Phone_status_bar",
                     "Sticker",
-                    "Phone",
+                    "phoneFrame",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Sticker::Sticker::Stick"
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
                   },
                   "parameters": [
-                    "Thumb",
-                    "Sticker",
-                    "Phone",
-                    ""
+                    "phoneWallpaper",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "phoneWallpaper",
+                    "=",
+                    "Random(phoneWallpaper.AnimationFrameCount() - 1)"
                   ]
                 }
               ]
@@ -177,231 +185,6 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "-15",
-                "90",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "15",
-                "90",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"None\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "0",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Thumb",
-                "\"Swipe_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"Right\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "Right"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Thumb",
-                "\"Swipe_timer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"Left\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Thumb",
-                    "=",
-                    "-15"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Angle"
-                  },
-                  "parameters": [
-                    "Thumb",
-                    "=",
-                    "15"
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarObjetTxt"
-              },
-              "parameters": [
-                "Phone",
-                "swipe",
-                "=",
-                "\"None\""
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
@@ -434,7 +217,7 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "Phone",
+                "phoneFrame",
                 "Tween",
                 "\"phone\"",
                 "SceneWindowHeight() + 30",
@@ -462,12 +245,149 @@
                 "False"
               ]
             }
-          ],
-          "events": [
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "phoneFrame",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "phoneIcons",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "phoneMask",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "phoneWallpaper",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "AppIcons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "phoneIcons",
+                "=",
+                "phoneFrame.PointX(phoneIcons.id)",
+                "=",
+                "phoneFrame.PointY(phoneIcons.id)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "phoneMask",
+                "=",
+                "phoneFrame.CenterX()",
+                "=",
+                "phoneFrame.CenterY()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::IsPlaying"
+              },
+              "parameters": [
+                "phoneFrame",
+                "Tween",
+                "\"phone\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "phoneWallpaper",
+                "=",
+                "phoneFrame.CenterX()",
+                "=",
+                "phoneFrame.CenterY() - 20"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SpriteMasking::Mask"
+              },
+              "parameters": [
+                "",
+                "phoneWallpaper",
+                "phoneMask",
+                ""
+              ]
             }
           ]
         }
