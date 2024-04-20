@@ -63,6 +63,10 @@ jobs:
     runs-on: macos-latest
         
     steps:
+
+      - name: Alias Python
+        run: |
+          ln -s /usr/bin/python3 /usr/bin/python
       
       - name: Build with GDexport
         run: |
