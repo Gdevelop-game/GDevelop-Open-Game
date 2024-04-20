@@ -71,7 +71,7 @@ jobs:
 
       - name: Set python path
         run: |
-          export PYTHON_PATH=/opt/homebrew/bin/python
+          export PYTHON_PATH=/opt/homebrew/bin/python3
       
       - name: Build with GDexport
         run: |
