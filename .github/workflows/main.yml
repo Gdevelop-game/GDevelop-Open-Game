@@ -63,6 +63,11 @@ jobs:
     runs-on: macos-latest
         
     steps:
+
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
       
       - name: Build with GDexport
         run: |
@@ -75,6 +80,7 @@ jobs:
         run: |
           cd Project/build/gdExport
           npm i --save-dev electron-builder
+          export PYTHON_PATH=/usr/bin/python3
           ./node_modules/.bin/electron-builder -m dmg
           
       - name: Upload a Build Artifact
