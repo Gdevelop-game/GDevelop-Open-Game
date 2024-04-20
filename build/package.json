@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Build pipeline for GDevelop-Open-Game",
   "private": true,
-  "build": {
-    "appId": "com.gdevelopcommunity.opengame",
-    "mac": {
-      "category": "your.app.category.game"
-    }
-  },
   "scripts": {
     "build": "gdexport -p ../src/game.json -o ./gdExport",
     "electron-build": "npm run build -- -b electron"
