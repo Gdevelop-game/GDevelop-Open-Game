@@ -1,13 +1,13 @@
 {
-  "b": 207,
+  "b": 232,
   "disableInputWhenNotFocused": true,
   "mangledName": "City",
   "name": "City",
-  "r": 99,
+  "r": 102,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
-  "v": 197,
+  "v": 165,
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.19117730236710667,
+    "zoomFactor": 0.7697766756365912,
     "windowMask": false
   },
   "objectsGroups": [
@@ -17190,8 +17190,8 @@
       "name": "foliage",
       "persistentUuid": "03be6f60-e612-4fee-8eda-38db86fac3f6",
       "width": 140,
-      "x": -792,
-      "y": 651,
+      "x": -830,
+      "y": 549,
       "zOrder": 116,
       "numberProperties": [
         {
@@ -17210,8 +17210,8 @@
       "name": "foliage",
       "persistentUuid": "74cf8db3-6136-4ba7-ad29-310960268231",
       "width": 140,
-      "x": -792,
-      "y": 931,
+      "x": -830,
+      "y": 969,
       "zOrder": 116,
       "numberProperties": [
         {
@@ -17230,8 +17230,8 @@
       "name": "foliage",
       "persistentUuid": "94f6e78c-1719-403f-a3c6-076f98bf4720",
       "width": 140,
-      "x": -792,
-      "y": 791,
+      "x": -772,
+      "y": 771,
       "zOrder": 116,
       "numberProperties": [
         {
@@ -54801,6 +54801,23 @@
       ],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": true,
+      "name": "Water",
+      "persistentUuid": "dc574f3c-0e4b-49aa-b47b-ad1ba2564ffe",
+      "sealed": true,
+      "width": 0,
+      "x": -10620,
+      "y": -7330,
+      "zOrder": -12643569,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -57577,6 +57594,12 @@
           "name": "Id",
           "type": "string",
           "value": "0"
+        },
+        {
+          "folded": true,
+          "name": "strength",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -58047,7 +58070,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -58597,11 +58639,11 @@
     },
     {
       "assetStoreId": "",
-      "height": 32,
+      "height": 20000,
       "name": "Water",
       "texture": "assets\\water\\water_1.png",
       "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
+      "width": 20000,
       "variables": [],
       "effects": [],
       "behaviors": []
@@ -59204,7 +59246,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -59216,7 +59277,7 @@
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
+                  "hasCustomCollisionMask": true,
                   "image": "assets\\deco\\deco_1.png",
                   "points": [],
                   "originPoint": {
@@ -59230,7 +59291,26 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 272,
+                        "y": 248
+                      },
+                      {
+                        "x": 357,
+                        "y": 258
+                      },
+                      {
+                        "x": 353,
+                        "y": 322
+                      },
+                      {
+                        "x": 269.5,
+                        "y": 307
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -59245,7 +59325,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "Shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [
         {
           "name": "Bounce",
@@ -60465,9 +60564,9 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 1,
           "name": "Anchor",
           "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 1,
           "leftEdgeAnchor": 0,
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 2,
@@ -61009,7 +61108,6 @@
           "value": ""
         },
         {
-          "folded": true,
           "name": "Movement",
           "type": "structure",
           "children": [
@@ -61018,22 +61116,94 @@
               "type": "structure",
               "children": [
                 {
-                  "folded": true,
-                  "name": "Acceleration",
-                  "type": "number",
-                  "value": 400
+                  "name": "run",
+                  "persistentUuid": "dbe1965b-d1af-415d-9e83-2e4312af1344",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Acceleration",
+                      "type": "number",
+                      "value": 600
+                    },
+                    {
+                      "folded": true,
+                      "name": "Deceleration",
+                      "type": "number",
+                      "value": 1000
+                    },
+                    {
+                      "folded": true,
+                      "name": "maxSpeed",
+                      "persistentUuid": "951b3641-c7f3-4740-be3a-9ce2e9e0f693",
+                      "type": "number",
+                      "value": 400
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleSwitchTime",
+                      "type": "number",
+                      "value": 200
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDelay",
+                      "type": "number",
+                      "value": 0.1
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDuration",
+                      "type": "number",
+                      "value": 0.2
+                    }
+                  ]
                 },
                 {
-                  "folded": true,
-                  "name": "Deceleration",
-                  "type": "number",
-                  "value": 800
-                },
-                {
-                  "folded": true,
-                  "name": "maxSpeed",
-                  "type": "number",
-                  "value": 300
+                  "name": "walk",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Acceleration",
+                      "type": "number",
+                      "value": 400
+                    },
+                    {
+                      "folded": true,
+                      "name": "Deceleration",
+                      "type": "number",
+                      "value": 800
+                    },
+                    {
+                      "folded": true,
+                      "name": "maxSpeed",
+                      "persistentUuid": "951b3641-c7f3-4740-be3a-9ce2e9e0f693",
+                      "type": "number",
+                      "value": 300
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleSwitchTime",
+                      "persistentUuid": "c6a43fd0-3cef-4009-bdcb-974b49edf1d1",
+                      "type": "number",
+                      "value": 1000
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDelay",
+                      "persistentUuid": "e725550c-0f72-4304-99c6-c8bb804277bb",
+                      "type": "number",
+                      "value": 0.2
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDuration",
+                      "persistentUuid": "5b2ef896-624b-46b8-9e33-3419d81e02eb",
+                      "type": "number",
+                      "value": 0.3
+                    }
+                  ]
                 }
               ]
             },
@@ -61041,18 +61211,6 @@
               "name": "canMove",
               "type": "boolean",
               "value": true
-            },
-            {
-              "folded": true,
-              "name": "handTweenDuration",
-              "type": "number",
-              "value": 0.3
-            },
-            {
-              "folded": true,
-              "name": "legTweenDuration",
-              "type": "number",
-              "value": 0.3
             }
           ]
         },
@@ -61124,6 +61282,24 @@
           },
           "booleanParameters": {
             "shadowOnly": false
+          }
+        },
+        {
+          "effectType": "Reflection",
+          "name": "breathing",
+          "doubleParameters": {
+            "alphaEnding": 1,
+            "alphaStart": 1,
+            "amplitudeEnding": 3,
+            "amplitudeStart": 0,
+            "animationSpeed": 1,
+            "boundary": 0,
+            "waveLengthEnding": 100,
+            "waveLengthStart": 60
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "mirror": false
           }
         }
       ],
@@ -62239,7 +62415,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "ZOrders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -62364,6 +62539,14 @@
                 "foliage",
                 "=",
                 "121"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Water_cover"
               ]
             }
           ]

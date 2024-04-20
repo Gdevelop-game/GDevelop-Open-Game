@@ -2916,6 +2916,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "Player",
       "type": "structure",
       "children": [
@@ -2943,6 +2944,18 @@
               "value": 0
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "debug",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "cameraControlType",
+          "type": "boolean",
+          "value": false
         }
       ]
     },

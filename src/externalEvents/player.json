@@ -232,6 +232,22 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "Body.Animation",
+                "\"info\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -245,11 +261,103 @@
           "comment": "Set the current state of the object variable \"animation\" of \"body\" to the current animation state, this can be used to get the current animation state of the body"
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "Body",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "!=",
+                    "\"phoneHold\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Animation",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Animation",
+                        "=",
+                        "\"run\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
+                "inverted": true,
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
@@ -273,23 +381,50 @@
                 "Body",
                 "Animation",
                 "=",
-                "\"walk\""
+                "\"idle\""
               ]
             }
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
                 "Body",
-                "TopDownMovement"
+                "Phone.active",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"phoneHold\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Body",
+                "Phone.active",
+                "False"
               ]
             },
             {
@@ -356,13 +491,32 @@
           "conditions": [
             {
               "type": {
-                "value": "VarObjetTxt"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "Body",
-                "Animation",
-                "=",
-                "\"walk\""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"run\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"walk\""
+                  ]
+                }
               ]
             }
           ],
@@ -414,7 +568,7 @@
                     "\"hand\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.handTweenDuration",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -428,7 +582,7 @@
                     "\"leg\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.handTweenDuration",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -437,7 +591,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.2"
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDelay"
                   ]
                 },
                 {
@@ -472,7 +626,7 @@
                     "\"hand\"",
                     "35",
                     "\"easeOutQuad\"",
-                    "Body.Movement.handTweenDuration",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -486,7 +640,7 @@
                     "\"leg\"",
                     "20",
                     "\"easeOutQuad\"",
-                    "Body.Movement.handTweenDuration",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -543,7 +697,7 @@
                 "\"leg\" + Body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.handTweenDuration",
+                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
               ]
             },
@@ -557,8 +711,290 @@
                 "\"hand\" + Body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.handTweenDuration",
+                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if player is holding his  phone bring out right hand and hide left hand "
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"phoneHold\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Body",
+                "TopDownMovement",
+                "=",
+                "Body.Movement.TopDownMovement.walk.maxSpeed - 200"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "type",
+                    "=",
+                    "\"R\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\" + Body.Animation",
+                    "35",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "=",
+                    "Body.Angle()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "type",
+                    "=",
+                    "\"L\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\" + Body.Animation",
+                    "0",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player is moving while holding his phone, shuffle legs to simulate walk"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Body",
+                        "\"switchWalkAngle\"",
+                        ">=",
+                        "Body.TopDownMovement::Speed() / Body.Movement.TopDownMovement.walk.shuffleSwitchTime"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "Tween",
+                        "\"leg\"",
+                        "0",
+                        "\"easeInQuad\"",
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDelay"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "angle",
+                        "+",
+                        "180"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "Tween",
+                        "\"leg\"",
+                        "20",
+                        "\"easeOutQuad\"",
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Body",
+                        "\"switchWalkAngle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player is not moving while holding his phone hide the legs"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "Tween",
+                    "\"leg\" + Body.Animation",
+                    "0",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -869,6 +1305,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": true,
+      "folded": true,
       "name": "Swimming",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1146,7 +1583,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1165,7 +1601,6 @@
           "comment": "Handle movement with \"wasd\" and only move when the object variable \"Movement.canMove\" of player is possible"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1182,105 +1617,274 @@
           "actions": [],
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
-                    "",
-                    "a"
+                    "debug.cameraControlType",
+                    "True"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "Body",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "a"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() - 90",
+                        "200",
+                        ""
+                      ]
+                    }
                   ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() + 90",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "w"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle()",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() + 180",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "RotateTowardPosition"
+                      },
+                      "parameters": [
+                        "Body",
+                        "CursorX()",
+                        "CursorY()",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
-                    "",
-                    "d"
+                    "debug.cameraControlType",
+                    "False"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "Body",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "a"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "w"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateUpKey"
-                  },
-                  "parameters": [
-                    "Body",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "w"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "folded": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "s"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateDownKey"
-                  },
-                  "parameters": [
-                    "Body",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateDownKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -1301,7 +1905,6 @@
           "comment": "Reveert to values set in the body ovject variable \"Body.Movement.TopDownMovement.*****\""
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1312,47 +1915,116 @@
                 "GodMode.active",
                 "False"
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Body",
-                "TopDownMovement",
-                "=",
-                "Body.Movement.TopDownMovement.maxSpeed"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"walk\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.walk.maxSpeed"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Deceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.walk.Deceleration"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Acceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.walk.Acceleration"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "TopDownMovementBehavior::Deceleration"
-              },
-              "parameters": [
-                "Body",
-                "TopDownMovement",
-                "=",
-                "Body.Movement.TopDownMovement.Deceleration"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"run\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.maxSpeed"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Deceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.Deceleration"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Acceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.Acceleration"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "TopDownMovementBehavior::Acceleration"
-              },
-              "parameters": [
-                "Body",
-                "TopDownMovement",
-                "=",
-                "Body.Movement.TopDownMovement.Acceleration"
-              ]
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -1371,6 +2043,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": true,
+      "folded": true,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6354,6 +7027,7 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": true,
+      "folded": true,
       "name": "Weapon system wheel",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8007,6 +8681,17 @@
           ]
         }
       ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Cursor",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
       "parameters": []
     }
   ]
