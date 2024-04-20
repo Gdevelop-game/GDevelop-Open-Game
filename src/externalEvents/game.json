@@ -378,7 +378,52 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "roofTops",
+                "Effect",
+                "\"Effect\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "deco",
+                "Effect",
+                "\"Effect\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "foliage",
+                "Effect",
+                "\"Effect\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "road_block",
+                "Effect",
+                "\"Effect\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
