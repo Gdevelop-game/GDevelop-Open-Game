@@ -6,35 +6,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 419,
-      "layer": "UI",
-      "name": "Phone",
-      "persistentUuid": "47079388-0dca-46e7-8a7a-0e97e38abf1f",
-      "width": 229,
-      "x": 1657,
-      "y": 626,
-      "zOrder": 1,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 15,
       "layer": "UI",
       "name": "phone_wifi",
       "persistentUuid": "5cc4231a-bc19-4320-8c4f-0e7b0eac031b",
       "width": 15,
-      "x": 1829,
-      "y": 687,
-      "zOrder": 2,
+      "x": 1850,
+      "y": 649,
+      "zOrder": 200,
       "numberProperties": [
         {
           "name": "animation",
@@ -48,30 +27,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 15,
-      "layer": "UI",
-      "name": "phone_battery",
-      "persistentUuid": "dcfc4f9b-3097-4216-8186-ed27184629e7",
-      "width": 30,
-      "x": 1848,
-      "y": 672,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 22,
       "layer": "UI",
       "name": "phone_time",
       "persistentUuid": "54fb08c4-adf2-4f4f-851b-490fe20f8b5b",
       "width": 48,
-      "x": 1666,
-      "y": 669,
-      "zOrder": 4,
+      "x": 1676,
+      "y": 634,
+      "zOrder": 200,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -80,13 +43,147 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
+      "keepRatio": true,
       "layer": "UI",
-      "name": "Thumb",
-      "persistentUuid": "f61cdfa5-c919-4d2f-958f-11caeaacba8b",
+      "name": "phoneFrame",
+      "persistentUuid": "2db890bf-e540-4bbc-be81-3b4f42a17f9e",
       "width": 0,
-      "x": 1772,
-      "y": 1132,
-      "zOrder": 50,
+      "x": 1656,
+      "y": 623,
+      "zOrder": 56,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phoneMask",
+      "persistentUuid": "fa91c432-5baa-4035-b7b0-e0557b9b2868",
+      "width": 0,
+      "x": 2154,
+      "y": 652,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phoneIcons",
+      "persistentUuid": "99878be0-df6b-4964-af72-9f9016bc445a",
+      "width": 0,
+      "x": 2338,
+      "y": 1033,
+      "zOrder": 53,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phoneIcons",
+      "persistentUuid": "a4d0bdb8-d1f3-4cb4-9354-5098ba24de1a",
+      "width": 0,
+      "x": 2198,
+      "y": 1033,
+      "zOrder": 53,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phoneIcons",
+      "persistentUuid": "c37195a3-88de-4744-b578-cbdd96a1119b",
+      "width": 0,
+      "x": 2274,
+      "y": 1033,
+      "zOrder": 53,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": -90,
+      "customSize": true,
+      "depth": 1,
+      "height": 11,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phone_battery",
+      "persistentUuid": "140b8479-44e8-4e36-baaf-7fb7fef2ae94",
+      "width": 16,
+      "x": 1834,
+      "y": 636,
+      "zOrder": 201,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "phoneWallpaper",
+      "persistentUuid": "68d0a48f-ed64-49b6-9873-b90b96b7956b",
+      "width": 0,
+      "x": 2545,
+      "y": 165,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -102,7 +199,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6846283916654102,
+    "zoomFactor": 3.3635792882521773,
     "windowMask": false
   }
 }
