@@ -3006,6 +3006,11 @@
       "type": "structure",
       "children": [
         {
+          "name": "active",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "folded": true,
           "name": "cameraControlType",
           "type": "boolean",
@@ -3152,9 +3157,17 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalEvents/foliage"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/debug"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/toggleswitch"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"

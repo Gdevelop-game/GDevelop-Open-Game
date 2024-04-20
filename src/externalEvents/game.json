@@ -8,7 +8,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -82,6 +81,13 @@
             "includeConfig": 0
           },
           "target": "Phone"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Debug"
         }
       ],
       "parameters": []
@@ -374,56 +380,6 @@
             }
           ],
           "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "roofTops",
-                "Effect",
-                "\"Effect\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "deco",
-                "Effect",
-                "\"Effect\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "foliage",
-                "Effect",
-                "\"Effect\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "road_block",
-                "Effect",
-                "\"Effect\"",
-                ""
-              ]
-            }
-          ]
         }
       ],
       "parameters": []
