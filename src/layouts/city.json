@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4528098091979962,
+    "zoomFactor": 0.8503034095585174,
     "windowMask": false
   },
   "objectsGroups": [
@@ -32943,7 +32943,7 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
-      "layer": "UI",
+      "layer": "Debug",
       "name": "reloading",
       "persistentUuid": "e6e95d11-2c24-4feb-97b7-26db247638a4",
       "width": 0,
@@ -54734,6 +54734,58 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debugToggle",
+      "persistentUuid": "405d6ded-99e2-4121-a8b1-1443f2202568",
+      "width": 0,
+      "x": 18,
+      "y": 96,
+      "zOrder": 12643569,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "info",
+          "type": "string",
+          "value": "hide Sea"
+        },
+        {
+          "folded": true,
+          "name": "id",
+          "type": "string",
+          "value": "sea"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debugToggle",
+      "persistentUuid": "f0e1911b-a40a-4d17-b752-4c88c231f1ac",
+      "width": 0,
+      "x": 18,
+      "y": 54,
+      "zOrder": 12643569,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "string",
+          "value": "shadow"
+        }
+      ]
     }
   ],
   "objects": [
@@ -58116,10 +58168,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "alpha",
+      "string": "debug menu -  \"h\" to toggle menu visibility",
       "font": "",
       "textAlignment": "",
-      "characterSize": 50,
+      "characterSize": 30,
       "color": {
         "b": 112,
         "g": 112,
@@ -58139,10 +58191,10 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "alpha",
+        "text": "debug menu -  \"h\" to toggle menu visibility",
         "font": "",
         "textAlignment": "",
-        "characterSize": 50,
+        "characterSize": 30,
         "color": "112;112;112"
       }
     },
@@ -61085,6 +61137,113 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "debugToggle",
+      "type": "PrimitiveDrawing::Drawer",
+      "variables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "folded": true,
+          "name": "info",
+          "type": "string",
+          "value": "enable Shadow"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ToggleSwitch",
+          "type": "ToggleSwitch::ToggleSwitch",
+          "ThumbRadius": 10,
+          "ActiveThumbColor": "24;119;211",
+          "ThumbOpacity": 255,
+          "TrackWidth": 20,
+          "TrackHeight": 14,
+          "InactiveTrackColor": "150;150;150",
+          "InactiveTrackOpacity": 255,
+          "ActiveTrackColor": "",
+          "ActiveTrackOpacity": 128,
+          "HaloRadius": 24,
+          "HaloOpacityHover": 32,
+          "HaloOpacityPressed": 64,
+          "ThumbOffset": 0,
+          "Checked": false,
+          "Disabled": false,
+          "ToggleChanged": false,
+          "InactiveThumbColor": "255;255;255",
+          "IsPressed": false,
+          "ThumbShadowOffsetY": 4,
+          "ThumbShadowOffsetX": 0,
+          "ThumbShadowOpacity": 32,
+          "NeedRedaw": true,
+          "IsHovered": false,
+          "WasHovered": false
+        }
+      ],
+      "fillOpacity": 255,
+      "outlineSize": 1,
+      "outlineOpacity": 255,
+      "fillColor": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "outlineColor": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "absoluteCoordinates": false,
+      "clearBetweenFrames": true,
+      "antialiasing": "none"
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debugText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -61138,6 +61297,12 @@
               },
               {
                 "objectName": "reloading"
+              },
+              {
+                "objectName": "debugToggle"
+              },
+              {
+                "objectName": "debugText"
               },
               {
                 "objectName": "AmmoText"
@@ -61705,6 +61870,39 @@
       "visibility": false,
       "cameras": [],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Debug",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -61755,6 +61953,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "ToggleSwitch",
+      "type": "ToggleSwitch::ToggleSwitch"
     },
     {
       "name": "TopDownMovement",
