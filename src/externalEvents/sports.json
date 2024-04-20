@@ -13,6 +13,18 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Bounce ball off player and objects of static group"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -41,8 +53,32 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Move ball in the direction of the hit"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Body",
+                "sports_equipments_movable",
+                "",
+                "",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "BuiltinCommonInstructions::Once"
@@ -53,13 +89,72 @@
           "actions": [
             {
               "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Body.Angle()",
+                "120",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayAnimation"
               },
               "parameters": [
                 "sports_equipments_movable"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Note - to be imporved in the future - stop the ball after 5 seconds, we could try reducing the force on the ball with time to achieve a smooth stop"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "sports_equipments_movable"
+                  ]
+                }
+              ]
+            }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "stop ball animation when it is not moving"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -81,6 +176,32 @@
               "parameters": [
                 "sports_equipments_movable",
                 "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Arret"
+              },
+              "parameters": [
+                "sports_equipments_movable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "100",
+                ""
               ]
             }
           ]
