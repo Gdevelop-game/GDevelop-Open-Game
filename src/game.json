@@ -1,5 +1,5 @@
 {
-  "firstLayout": "City",
+  "firstLayout": "Intro",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -3023,6 +3023,7 @@
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "Player",
           "type": "structure",
           "children": [
@@ -3076,6 +3077,12 @@
               "value": 0
             }
           ]
+        },
+        {
+          "folded": true,
+          "name": "intro",
+          "type": "boolean",
+          "value": true
         },
         {
           "folded": true,
