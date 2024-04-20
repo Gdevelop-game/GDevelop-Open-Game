@@ -68,7 +68,7 @@ jobs:
       
       - name: Build with GDexport
         run: |
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
+          git clone https://github.com/Declan-Reid/GDevelop-Open-Game Project
           cd Project/build
           npm i
           npm run electron-build
