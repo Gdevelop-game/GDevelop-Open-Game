@@ -1,0 +1,98 @@
+{
+  "associatedLayout": "City",
+  "lastChangeTimeStamp": 0,
+  "name": "Crosshair",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Transform",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Hide cursor and make crosshair folllow the mouse"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "crosshair",
+                "=",
+                "10000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "CacheSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "crosshair",
+                "=",
+                "MouseX(\"\", 0)",
+                "=",
+                "MouseY(\"\", 0)"
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "crosshair",
+                "Body.Angle()",
+                "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

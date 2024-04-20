@@ -1,7 +1,7 @@
 {
   "associatedLayout": "City",
   "lastChangeTimeStamp": 0,
-  "name": "Godmode",
+  "name": "GodMode",
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -18,28 +18,52 @@
       "actions": [],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Activate",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "g"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "g"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "GodMode.active"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "ToggleSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "godmode"
-              ]
-            }
-          ]
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "GodMode.active is a scene variable that checks if the godmode has been activated"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -49,139 +73,121 @@
                 "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "godmode",
+                "GodMode.active",
                 "True"
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "1000"
-              ]
-            },
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::Acceleration"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "1000"
-              ]
-            },
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::Deceleration"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "1400"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Gun1_ammo",
-                "=",
-                "345634656"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Gun2_ammo",
-                "=",
-                "345634656"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Gun3_ammo",
-                "=",
-                "345634656"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarGlobal"
-              },
-              "parameters": [
-                "Gun5_ammo",
-                "=",
-                "345634656"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneVariableAsBoolean"
-              },
-              "parameters": [
-                "godmode",
-                "False"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Speed",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "increase max speed and increase deceleration and acceletion so the \"player\" stops immediately"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement",
+                        "=",
+                        "1000"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::Deceleration"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement",
+                        "=",
+                        "9000"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::Acceleration"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement",
+                        "=",
+                        "9000"
+                      ]
+                    }
+                  ]
+                }
+              ],
               "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "200"
-              ]
             },
             {
-              "type": {
-                "value": "TopDownMovementBehavior::Acceleration"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "400"
-              ]
-            },
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::Deceleration"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "800"
-              ]
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Camera",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Unzoom Camera"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ZoomCamera"
+                      },
+                      "parameters": [
+                        "",
+                        "0.5",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ],
+              "parameters": []
             }
           ]
         }

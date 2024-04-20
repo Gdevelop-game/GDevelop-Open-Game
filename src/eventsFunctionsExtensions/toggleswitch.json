@@ -1,0 +1,3847 @@
+{
+  "author": "Tristan Rhodes (https://victrisgames.itch.io/)",
+  "category": "User interface",
+  "extensionNamespace": "",
+  "fullName": "Toggle switch (for Shape Painter)",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMjIsMUgxMEM2LjEsMSwzLDQuMSwzLDhzMy4xLDcsNyw3aDEyYzMuOSwwLDctMy4xLDctN1MyNS45LDEsMjIsMXogTTIyLDEyYy0yLjIsMC00LTEuOC00LTRzMS44LTQsNC00czQsMS44LDQsNA0KCVMyNC4yLDEyLDIyLDEyeiIvPg0KPHBhdGggZD0iTTIyLDE3SDEwYy0zLjksMC03LDMuMS03LDdzMy4xLDcsNyw3aDEyYzMuOSwwLDctMy4xLDctN1MyNS45LDE3LDIyLDE3eiBNMTAsMjhjLTIuMiwwLTQtMS44LTQtNHMxLjgtNCw0LTRzNCwxLjgsNCw0DQoJUzEyLjIsMjgsMTAsMjh6Ii8+DQo8L3N2Zz4NCg==",
+  "name": "ToggleSwitch",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Glyphster Pack/Master/SVG/Interface Elements/Interface Elements_interface_ui_toggle_switch.svg",
+  "shortDescription": "Toggle switch that users can click or touch.",
+  "version": "0.1.5",
+  "description": [
+    "Add this behavior to a shape painter object.",
+    "",
+    "When the toggle switch is in the *left* position, the condition `Checked` is \"false\". If it is in the *right* position, the condition `Checked` is true.",
+    "A halo appears when the mouse hovers near the toggle switch.",
+    "",
+    "Toggle switch cannot be toggled by users if any of these are true:",
+    "- Toggle switch is hidden",
+    "- Toggle switch's layer is hidden",
+    "- Toggle switch is disabled",
+    "",
+    "Toggle switch can always be changed by an action."
+  ],
+  "origin": {
+    "identifier": "ToggleSwitch",
+    "name": "gdevelop-extension-store"
+  },
+  "tags": [
+    "draggable",
+    "control",
+    "shape painter",
+    "ui",
+    "widget",
+    "toggle",
+    "switch"
+  ],
+  "authorIds": [
+    "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+  ],
+  "dependencies": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [
+    {
+      "description": "Use a shape-painter object to draw a toggle switch that users can click or touch.",
+      "fullName": "Toggle switch",
+      "name": "ToggleSwitch",
+      "objectType": "PrimitiveDrawing::Drawer",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPostEvents",
+          "sentence": "",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Switch logic",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Fix bad inputs that create malformed toggle switches"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyThumbRadius"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "<",
+                        "Object.Behavior::PropertyTrackHeight() / 2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyTrackHeight"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyThumbRadius() * 2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyThumbRadius"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">",
+                        "Object.Behavior::PropertyTrackWidth()/2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbRadius"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyTrackWidth()/2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyHaloRadius"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "<",
+                        "Object.Behavior::PropertyThumbRadius() * 1.5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetHaloRadius"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "Object.Behavior::PropertyThumbRadius() * 1.5",
+                        "Object.Behavior::PropertyTrackWidth()/2"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyThumbShadowOffsetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">",
+                        "Object.Behavior::PropertyThumbRadius() / 3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbShadowOffsetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyThumbRadius() / 3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyThumbShadowOffsetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">",
+                        "Object.Behavior::PropertyThumbRadius() / 3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbShadowOffsetY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyThumbRadius() / 3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Animate the thumb to the right place"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "lerp(Object.Behavior::PropertyThumbOffset(),0,0.25)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyThumbOffset"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            ">",
+                            "0.01"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbOffset"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "lerp(Object.Behavior::PropertyThumbOffset(),Object.Behavior::PropertyTrackWidth(),0.25)"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyThumbOffset"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "<",
+                            "Object.Behavior::PropertyTrackWidth() - 0.01"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Detect hover/touch/click (but only if the layer and object is visible, and the object is not already being dragged)"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "LayerVisible"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Layer()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyDisabled"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "__ToggleSwitchBehavior.IsPressed",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyWasHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyWasHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "no"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SourisX"
+                          },
+                          "parameters": [
+                            "",
+                            ">=",
+                            "Object.X() - max(Object.Behavior::PropertyHaloRadius(),Object.Behavior::PropertyThumbRadius())",
+                            "Object.Layer()",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisX"
+                          },
+                          "parameters": [
+                            "",
+                            "<=",
+                            "Object.X() + Object.Behavior::PropertyTrackWidth() + max(Object.Behavior::PropertyHaloRadius(),Object.Behavior::PropertyThumbRadius())",
+                            "Object.Layer()",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisY"
+                          },
+                          "parameters": [
+                            "",
+                            ">=",
+                            "Object.Y() - (max(Object.Behavior::PropertyHaloRadius(),Object.Behavior::PropertyThumbRadius())*2 -  Object.Behavior::PropertyTrackHeight())/2",
+                            "Object.Layer()",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SourisY"
+                          },
+                          "parameters": [
+                            "",
+                            "<=",
+                            "Object.Y() + (max(Object.Behavior::PropertyHaloRadius(),Object.Behavior::PropertyThumbRadius())*2 + Object.Behavior::PropertyTrackHeight())/2",
+                            "Object.Layer()",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyWasHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyWasHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Detect mouse clicks near track, start dragging"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SourisBouton"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "ToggleSwitch::ToggleSwitch::IsHoveredOver"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ToggleSwitch::ToggleSwitch::ToggleChecked"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "__ToggleSwitchBehavior.IsPressed",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ToggleSwitch::ToggleSwitch::SetPropertyIsPressed"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Behavior",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Reset scene variable"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "__ToggleSwitchBehavior.IsPressed",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyIsPressed"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Switch drawing",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::PropertyNeedRedaw"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::Drawer::ClearShapes"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Set inactive track parameters (by default, use thumb color)"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyInactiveTrackColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveThumbColor()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyInactiveTrackColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyInactiveTrackColor()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyInactiveTrackOpacity()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw half circle at end (optional)"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Arc"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyTrackWidth()",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "270",
+                            "90",
+                            "",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw inactive track"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Rectangle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset()",
+                            "0",
+                            "Object.Behavior::PropertyTrackWidth()",
+                            "Object.Behavior::PropertyTrackHeight()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Set active track parameters (by default, use thumb color)"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyActiveTrackColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveThumbColor()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyActiveTrackColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior",
+                            "=",
+                            "\"\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveTrackColor()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyActiveTrackOpacity()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw half circle at end (optional)"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Arc"
+                          },
+                          "parameters": [
+                            "Object",
+                            "0",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "90",
+                            "270",
+                            "",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw active track"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Rectangle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "0",
+                            "0",
+                            "Object.Behavior::PropertyThumbOffset()",
+                            "Object.Behavior::PropertyTrackHeight()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw halo when the mouse is hovering over thumb "
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyHaloOpacityHover()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveThumbColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Circle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset()",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "Object.Behavior::PropertyHaloRadius()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Use darker halo while being pressed"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyIsPressed"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveThumbColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyHaloOpacityPressed()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Circle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset()",
+                            "Object.Behavior::PropertyTrackHeight()/2",
+                            "Object.Behavior::PropertyHaloRadius()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Drop Shadow"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"50;50;93\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyThumbShadowOpacity()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Circle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset() + Object.Behavior::PropertyThumbShadowOffsetX()",
+                            "Object.Behavior::PropertyTrackHeight() / 2 + Object.Behavior::ThumbShadowOffsetY()",
+                            "Object.Behavior::PropertyThumbRadius()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "\"0;0;0\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyThumbShadowOpacity()/2"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Circle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset() + Object.Behavior::PropertyThumbShadowOffsetX()/4",
+                            "Object.Behavior::PropertyTrackHeight() / 2 + Object.Behavior::ThumbShadowOffsetY()/4",
+                            "Object.Behavior::PropertyThumbRadius()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Prepare thumb settings"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "128"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineSize"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::PropertyThumbOpacity()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveThumbColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyActiveTrackColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::ActiveTrackOpacity()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::FillColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyInactiveThumbColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineColor"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyInactiveTrackColor()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::OutlineOpacity"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "Object.Behavior::InactiveTrackOpacity()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Draw Circle thumb"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PrimitiveDrawing::Circle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Object.Behavior::PropertyThumbOffset()",
+                            "Object.Behavior::PropertyTrackHeight() / 2",
+                            "Object.Behavior::PropertyThumbRadius()"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "onCreated",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Make sure object doesn't get re-drawn every frame"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::ClearBetweenFrames"
+                  },
+                  "parameters": [
+                    "Object",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the track width.",
+          "fullName": "Track width",
+          "functionType": "Action",
+          "name": "SetTrackWidth",
+          "sentence": "Change the track width of _PARAM0_ to _PARAM2_ pixels",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyTrackWidth"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Track width",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the track height.",
+          "fullName": "Track height",
+          "functionType": "Action",
+          "name": "SetTrackHeight",
+          "sentence": "Change the track height of _PARAM0_ to _PARAM2_ pixels",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyTrackHeight"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Track height",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the thumb opacity.",
+          "fullName": "Thumb opacity",
+          "functionType": "Action",
+          "name": "SetThumbOpacity",
+          "sentence": "Change the thumb opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbOpacity"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Thumb opacity",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the inactive track opacity.",
+          "fullName": "Inactive track opacity",
+          "functionType": "Action",
+          "name": "SetInactiveTrackOpacity",
+          "sentence": "Change the inactive track opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyInactiveTrackOpacity"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Inactive track opacity",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the active track opacity.",
+          "fullName": "Active track opacity",
+          "functionType": "Action",
+          "name": "SetActiveTrackOpacity",
+          "sentence": "Change the active track opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyActiveTrackOpacity"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Active track opacity",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the halo opacity when the thumb is pressed.",
+          "fullName": "Halo opacity (pressed)",
+          "functionType": "Action",
+          "name": "SetHaloOpacityPressed",
+          "sentence": "Change the halo opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyHaloOpacityPressed"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Halo opacity (pressed)",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change opacity of the halo when the thumb is hovered.",
+          "fullName": "Halo opacity (hover)",
+          "functionType": "Action",
+          "name": "SetHaloOpacityHover",
+          "sentence": "Change the halo opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyHaloOpacityHover"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Halo opacity (hover)",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the offset on Y axis of the thumb shadow.",
+          "fullName": "Thumb shadow offset on Y axis",
+          "functionType": "Action",
+          "name": "SetThumbShadowOffsetY",
+          "sentence": "Change the offset on Y axis of the thumb shadow of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbShadowOffsetY"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Y offset (pixels)",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the offset on X axis of the thumb shadow.",
+          "fullName": "Thumb shadow offset on X axis",
+          "functionType": "Action",
+          "name": "SetThumbShadowOffsetX",
+          "sentence": "Change the offset on X axis of the thumb shadow of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbShadowOffsetX"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "X offset (pixels)",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the thumb shadow opacity.",
+          "fullName": "Thumb shadow opacity",
+          "functionType": "Action",
+          "name": "SetThumbShadowOpacity",
+          "sentence": "Change the thumb shadow opacity of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbShadowOpacity"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Opacity of shadow on thumb",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the thumb radius.",
+          "fullName": "Thumb radius",
+          "functionType": "Action",
+          "name": "SetThumbRadius",
+          "sentence": "Change the thumb radius of _PARAM0_ to _PARAM2_ pixels",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyThumbRadius"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Thumb radius",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the halo radius.",
+          "fullName": "Halo radius",
+          "functionType": "Action",
+          "name": "SetHaloRadius",
+          "sentence": "Change the halo radius of _PARAM0_ to _PARAM2_ pixels",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyHaloRadius"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsNumber(\"Value\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Halo radius ",
+              "name": "Value",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the active track color (the part on the thumb left).",
+          "fullName": "Active track color",
+          "functionType": "Action",
+          "name": "SetActiveTrackColor",
+          "sentence": "Change the active track color of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyActiveTrackColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"Color\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Color of active track",
+              "name": "Color",
+              "type": "color"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the inactive track color (the part on the thumb right).",
+          "fullName": "Inactive track color",
+          "functionType": "Action",
+          "name": "SetInactiveTrackColor",
+          "sentence": "Change the inactive track color of _PARAM0_ to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyInactiveTrackColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"Color\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Color of inactive track",
+              "name": "Color",
+              "type": "color"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the thumb color (when unchecked).",
+          "fullName": "Thumb color (when unchecked)",
+          "functionType": "Action",
+          "name": "SetInactiveThumbColor",
+          "sentence": "Change the thumb color of _PARAM0_ (when unchecked) to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyInactiveThumbColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"Color\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Thumb color",
+              "name": "Color",
+              "type": "color"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the thumb color (when checked).",
+          "fullName": "Thumb color (when checked)",
+          "functionType": "Action",
+          "name": "SetActiveThumbColor",
+          "sentence": "Change the thumb color of _PARAM0_ (when checked) to _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyActiveThumbColor"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"Color\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Thumb color",
+              "name": "Color",
+              "type": "color"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "If checked, change to unchecked. If unchecked, change to checked.",
+          "fullName": "Toggle the switch",
+          "functionType": "Action",
+          "name": "ToggleChecked",
+          "sentence": "Change _PARAM0_ to opposite state (checked/unchecked)",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyToggleChanged"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyToggleChanged"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyToggleChanged"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Disable (or enable) the toggle switch.",
+          "fullName": "Disable (or enable) the toggle switch",
+          "functionType": "Action",
+          "name": "SetDisabled",
+          "sentence": "Disable _PARAM0_: _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "GetArgumentAsBoolean"
+                  },
+                  "parameters": [
+                    "\"State\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyDisabled"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GetArgumentAsBoolean"
+                  },
+                  "parameters": [
+                    "\"State\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyDisabled"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Disabled",
+              "name": "State",
+              "type": "yesorno"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Check (or uncheck) the toggle switch.",
+          "fullName": "Check (or uncheck) the toggle switch",
+          "functionType": "Action",
+          "name": "SetChecked",
+          "sentence": "Set _PARAM0_ to checked: _PARAM2_ ",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "GetArgumentAsBoolean"
+                  },
+                  "parameters": [
+                    "\"State\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GetArgumentAsBoolean"
+                  },
+                  "parameters": [
+                    "\"State\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::SetPropertyNeedRedaw"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            },
+            {
+              "description": "Checked",
+              "name": "State",
+              "type": "yesorno"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if mouse is hovering over toggle switch.",
+          "fullName": "Is mouse hovered over toggle switch?",
+          "functionType": "Condition",
+          "name": "IsHoveredOver",
+          "sentence": "Mouse is hovering over _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Set default result"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Check position of mouse"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyIsHovered"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Track width.",
+          "fullName": "Track width",
+          "functionType": "Expression",
+          "name": "TrackWidth",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyTrackWidth()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Track height.",
+          "fullName": "Track height",
+          "functionType": "Expression",
+          "name": "TrackHeight",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyTrackHeight()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Offset (Y) of shadow on thumb.",
+          "fullName": "Offset (Y) of shadow on thumb",
+          "functionType": "Expression",
+          "name": "ThumbShadowOffsetY",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyThumbShadowOffsetY()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Offset (X) of shadow on thumb.",
+          "fullName": "Offset (X) of shadow on thumb",
+          "functionType": "Expression",
+          "name": "ThumbShadowOffsetX",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyThumbShadowOffsetX()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Opacity of shadow on thumb.",
+          "fullName": "Opacity of shadow on thumb",
+          "functionType": "Expression",
+          "name": "ThumbShadowOpacity",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyThumbShadowOpacity()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Thumb opacity.",
+          "fullName": "Thumb opacity",
+          "functionType": "Expression",
+          "name": "ThumbOpacity",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyThumbOpacity()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Active track opacity.",
+          "fullName": "Active track opacity",
+          "functionType": "Expression",
+          "name": "ActiveTrackOpacity",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyActiveTrackOpacity()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Inactive track opacity.",
+          "fullName": "Inactive track opacity",
+          "functionType": "Expression",
+          "name": "InactiveTrackOpacity",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyInactiveTrackOpacity()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Halo opacity (pressed).",
+          "fullName": "Halo opacity (pressed)",
+          "functionType": "Expression",
+          "name": "HaloOpacityPressed",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyHaloOpacityPressed()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Halo opacity (hover).",
+          "fullName": "Halo opacity (hover)",
+          "functionType": "Expression",
+          "name": "HaloOpacityHover",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyHaloOpacityHover()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Halo radius (pixels).",
+          "fullName": "Halo radius",
+          "functionType": "Expression",
+          "name": "HaloRadius",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyHaloRadius()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "expression"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Active track color.",
+          "fullName": "Active track color",
+          "functionType": "StringExpression",
+          "name": "ActiveTrackColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyActiveTrackColor()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Inactive track color.",
+          "fullName": "Inactive track color",
+          "functionType": "StringExpression",
+          "name": "InactiveTrackColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyInactiveTrackColor()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Active thumb color.",
+          "fullName": "Active thumb color",
+          "functionType": "StringExpression",
+          "name": "ActiveThumbColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyActiveThumbColor()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if the toggle switch is disabled.",
+          "fullName": "Is disabled",
+          "functionType": "Condition",
+          "name": "IsDisabled",
+          "sentence": "_PARAM0_ is disabled",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyDisabled"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyDisabled"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Check if the toggle switch is checked.",
+          "fullName": "Is checked",
+          "functionType": "Condition",
+          "name": "IsChecked",
+          "sentence": "_PARAM0_ is checked",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ToggleSwitch::ToggleSwitch::PropertyChecked"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Inactive thumb color.",
+          "fullName": "Inactive thumb color",
+          "functionType": "StringExpression",
+          "name": "InactiveThumbColor",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "Object.Behavior::PropertyInactiveThumbColor()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "PrimitiveDrawing::Drawer",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "ToggleSwitch::ToggleSwitch",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "10",
+          "type": "Number",
+          "label": "Radius of the thumb (px) Example: 10",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ThumbRadius"
+        },
+        {
+          "value": "24;119;211",
+          "type": "String",
+          "label": "Active thumb color string. Example:  24;119;211",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ActiveThumbColor"
+        },
+        {
+          "value": "255",
+          "type": "Number",
+          "label": "Opacity of the thumb. Example: 255",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ThumbOpacity"
+        },
+        {
+          "value": "20",
+          "type": "Number",
+          "label": "Width of the track (pixels) Example: 20",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "TrackWidth"
+        },
+        {
+          "value": "14",
+          "type": "Number",
+          "label": "Height of the track (pixels) Example: 14",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "TrackHeight"
+        },
+        {
+          "value": "150;150;150",
+          "type": "String",
+          "label": "Color string for the track that is RIGHT of the thumb. Example:  150;150;150  (Leave blank to use thumb color)",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "InactiveTrackColor"
+        },
+        {
+          "value": "255",
+          "type": "Number",
+          "label": "Opacity of the track that is RIGHT of the thumb.  Example: 255",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "InactiveTrackOpacity"
+        },
+        {
+          "value": "",
+          "type": "String",
+          "label": "Color string for the track that is LEFT of the thumb. Example:  24;119;211 (Leave blank to use thumb color)",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ActiveTrackColor"
+        },
+        {
+          "value": "128",
+          "type": "Number",
+          "label": "Opacity of the track that is LEFT of the thumb.  Example: 128",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ActiveTrackOpacity"
+        },
+        {
+          "value": "24",
+          "type": "Number",
+          "label": "Size of halo when the mouse hovers and clicks on the thumb. Example: 24",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "HaloRadius"
+        },
+        {
+          "value": "32",
+          "type": "Number",
+          "label": "Opacity of halo when the mouse hovers on the thumb. Example: 32",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "HaloOpacityHover"
+        },
+        {
+          "value": "64",
+          "type": "Number",
+          "label": "Opacity of the halo that appears when the toggle switch is pressed. Example: 64",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "HaloOpacityPressed"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Number of pixels the thumb is from the left side of the track.",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "ThumbOffset"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "Checked",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Checked"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "Disabled",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "Disabled"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "State has been changed (used in ToggleChecked function)",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "ToggleChanged"
+        },
+        {
+          "value": "255;255;255",
+          "type": "String",
+          "label": "Inactive thumb color string. Example:  255;255;255",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "InactiveThumbColor"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "Click or press has started on toggle switch",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "IsPressed"
+        },
+        {
+          "value": "4",
+          "type": "Number",
+          "label": "Offset (Y) of shadow on thumb.  Positive numbers move shadow down, negative numbers move shadow up. Example: 4",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ThumbShadowOffsetY"
+        },
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Offset (X) of shadow on thumb.  Positive numbers move shadow right, negative numbers move shadow left. Example: 0",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ThumbShadowOffsetX"
+        },
+        {
+          "value": "32",
+          "type": "Number",
+          "label": "Opacity of shadow on thumb. Example: 32",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "name": "ThumbShadowOpacity"
+        },
+        {
+          "value": "true",
+          "type": "Boolean",
+          "label": "Need redraw",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "NeedRedaw"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "Is hovered",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "IsHovered"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "Was hovered",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "WasHovered"
+        }
+      ],
+      "sharedPropertyDescriptors": []
+    }
+  ],
+  "eventsBasedObjects": []
+}

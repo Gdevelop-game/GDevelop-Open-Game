@@ -4,10 +4,48 @@
   "name": "Sea",
   "events": [
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TiledSpriteObject::XOffset"
+          },
+          "parameters": [
+            "Water",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TiledSpriteObject::YOffset"
+          },
+          "parameters": [
+            "Water",
+            "+",
+            "-1"
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "Water",
+            "Opacity",
+            "=",
+            "150"
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
       "name": "Water",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -144,32 +182,6 @@
             "textR": 0
           },
           "comment": "Sea offset"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TiledSpriteObject::XOffset"
-              },
-              "parameters": [
-                "Water",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "TiledSpriteObject::YOffset"
-              },
-              "parameters": [
-                "Water",
-                "+",
-                "-1"
-              ]
-            }
-          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",

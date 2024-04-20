@@ -8,7 +8,35 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Activate phone",
+      "name": "Phone time",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "phone_time",
+                "=",
+                "TimeFormatter::SecondsToHHMMSS(TimeFromStart())"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Show",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -17,7 +45,31 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"t\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyReleased"
               },
               "parameters": [
                 "",
@@ -26,124 +78,60 @@
             },
             {
               "type": {
-                "value": "VarScene"
+                "value": "SceneInstancesCount"
               },
               "parameters": [
-                "phone",
-                "=",
-                "0"
+                "",
+                "Phone",
+                "<",
+                "1"
               ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "swimming",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Weapon_holding",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
               },
               "parameters": [
                 "",
-                "Phone",
-                "SceneWindowWidth() - 200",
-                "807",
-                "\"GUI\""
+                "\"Phone\"",
+                "0",
+                "ScreenHeight() - 200",
+                "0"
               ]
             },
             {
               "type": {
-                "value": "Create"
+                "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "phone_wifi",
-                "Phone.X() + 125",
-                "848",
-                "\"GUI\""
+                "Game.Player.phone.active",
+                "True"
               ]
             },
             {
               "type": {
-                "value": "Create"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "phone_battery",
-                "Phone.X() + 138",
-                "838",
-                "\"GUI\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "phone_time",
-                "Phone.X() + 10",
-                "836",
-                "\"GUI\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "using_phone",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"switch_on\""
+                "Body",
+                "Phone.active",
+                "True"
               ]
             }
           ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
               "actions": [
                 {
                   "type": {
@@ -153,525 +141,34 @@
                     "Phone",
                     "Tween",
                     "\"phone\"",
-                    "360",
-                    "\"easeInQuad\"",
-                    "0.5",
+                    "SceneWindowHeight() - Phone.Height() - 30",
+                    "\"easeOutQuad\"",
+                    "0.4",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                    "value": "Sticker::Sticker::Stick"
                   },
                   "parameters": [
-                    "phone_wifi",
-                    "Tween",
-                    "\"phone\"",
-                    "405",
-                    "\"easeInQuad\"",
-                    "0.5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "phone_battery",
-                    "Tween",
-                    "\"phone\"",
-                    "394",
-                    "\"easeInQuad\"",
-                    "0.5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "phone_time",
-                    "Tween",
-                    "\"phone\"",
-                    "391.5",
-                    "\"easeInQuad\"",
-                    "0.5",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "360"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Thumb",
-                "Phone.X() + 150",
-                "740",
-                "\"GUI\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "phone_battery",
-                "=",
-                "162673267"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "phone_wifi",
-                "=",
-                "162673267"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "phone_time",
-                "=",
-                "162673267"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "162673"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "Thumb",
-                "+",
-                "Phone.ZOrder()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Timer"
-              },
-              "parameters": [
-                "",
-                "2",
-                "\"t\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "phone_wifi",
-                "=",
-                "RandomFloatInRange(0, 3)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"t\""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Deactivate phone",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "Down"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "phone",
-                        "=",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "swimming",
-                        "!=",
-                        "0"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "using_phone",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "phone_wifi",
-                    "Tween",
-                    "\"phone\"",
-                    "949",
-                    "\"easeOutSine\"",
-                    "0.5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "phone_time",
-                    "Tween",
-                    "\"phone\"",
-                    "936",
-                    "\"easeOutSine\"",
-                    "0.5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
-                    "phone_battery",
-                    "Tween",
-                    "\"phone\"",
-                    "936",
-                    "\"linear\"",
-                    "0.5",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-                  },
-                  "parameters": [
+                    "Phone_status_bar",
+                    "Sticker",
                     "Phone",
-                    "Tween",
-                    "\"phone\"",
-                    "907",
-                    "\"easeOutSine\"",
-                    "0.5",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "Delete"
+                    "value": "Sticker::Sticker::Stick"
                   },
                   "parameters": [
                     "Thumb",
+                    "Sticker",
+                    "Phone",
                     ""
                   ]
                 }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "Phone",
-                ">",
-                "900"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Phone",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "phone_wifi",
-                ">",
-                "942"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "phone_wifi",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "phone_battery",
-                ">",
-                "931"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "phone_battery",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "phone_time",
-                ">",
-                "929"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "phone_time",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
               ]
             }
           ]
@@ -680,40 +177,61 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Phone general",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "VarObjetTxt"
               },
               "parameters": [
+                "Phone",
+                "swipe",
+                "=",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Thumb",
+                "-15",
+                "90",
                 ""
               ]
             }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "Phone",
+                "swipe",
+                "=",
+                "\"Left\""
+              ]
+            }
           ],
           "actions": [
             {
               "type": {
-                "value": "ModVarScene"
+                "value": "RotateTowardAngle"
               },
               "parameters": [
-                "phone",
-                "=",
-                "0"
+                "Thumb",
+                "15",
+                "90",
+                ""
               ]
             }
           ]
@@ -723,41 +241,26 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "VarObjetTxt"
               },
               "parameters": [
-                "using_phone",
+                "Phone",
+                "swipe",
                 "=",
-                "1"
+                "\"None\""
               ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "godmod",
-                "!=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
+                "value": "RotateTowardAngle"
               },
               "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "40"
+                "Thumb",
+                "0",
+                "100",
+                ""
               ]
             }
           ]
@@ -767,407 +270,11 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "using_phone",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "godmod",
-                "!=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "200"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Unlock phone",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "using_phone",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "2",
-                    "\"switch_on\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "phone_page",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Timer"
-                  },
-                  "parameters": [
-                    "",
-                    "2",
-                    "\"switch_on\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "phone_page",
-                    "!=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "KeyReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "KeyReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Right"
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "phone_page",
-                    "=",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetTimer"
+                "value": "KeyReleased"
               },
               "parameters": [
                 "",
-                "\"switch\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Timer"
-              },
-              "parameters": [
-                "",
-                "2",
-                "\"switch\""
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "using_phone",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Animation"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Phone_status_bar"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "!=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Phone_status_bar",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_page",
-                "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Phone",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Pointer",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeWidth"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "42"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeHeight"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "42"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
+                "Left"
               ]
             }
           ],
@@ -1178,34 +285,28 @@
               },
               "parameters": [
                 "phone_app",
-                "=",
-                "10"
+                "+",
+                "1"
               ]
             },
             {
               "type": {
-                "value": "ModVarSceneTxt"
+                "value": "ResetObjectTimer"
               },
               "parameters": [
-                "Swipe",
-                "=",
-                "\"None\""
+                "Thumb",
+                "\"Swipe_timer\""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+            },
             {
               "type": {
-                "value": "ChangePlan"
+                "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Pointer",
-                "+",
-                "Phone.ZOrder()"
+                "Phone",
+                "swipe",
+                "=",
+                "\"Right\""
               ]
             }
           ]
@@ -1230,18 +331,8 @@
               },
               "parameters": [
                 "phone_app",
-                "+",
+                "-",
                 "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"Right\""
               ]
             },
             {
@@ -1252,16 +343,78 @@
                 "Thumb",
                 "\"Swipe_timer\""
               ]
-            }
-          ],
-          "events": [
+            },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Phone",
+                "swipe",
+                "=",
+                "\"Left\""
+              ]
             }
           ]
         },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Thumb",
+                    "=",
+                    "-15"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Thumb",
+                    "=",
+                    "15"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Phone",
+                "swipe",
+                "=",
+                "\"None\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Hide",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -1271,909 +424,50 @@
               },
               "parameters": [
                 "",
-                "Left"
+                "Down"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Thumb",
-                "\"Swipe_timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectTimer"
-              },
-              "parameters": [
-                "Thumb",
-                "\"Swipe_timer\"",
-                "0.3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"None\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "-25",
-                "90",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"None\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "-35",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarSceneTxt"
-              },
-              "parameters": [
-                "Swipe",
-                "=",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "Thumb",
-                "-45",
-                "90",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                ">",
-                "10"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "<",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "10"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Animation"
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
                 "Phone",
-                "=",
-                "2"
+                "Tween",
+                "\"phone\"",
+                "SceneWindowHeight() + 30",
+                "\"easeInQuad\"",
+                "0.4",
+                "yes"
               ]
             },
             {
               "type": {
-                "value": "VarScene"
+                "value": "SetGlobalVariableAsBoolean"
               },
               "parameters": [
-                "phone_page",
-                "=",
-                "2"
+                "Game.Player.phone.active",
+                "False"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
+                "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "Pointer",
-                "Phone.X() + 85",
-                "600",
-                "\"GUI\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Pointer",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 35",
-                "=",
-                "433"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 86",
-                "=",
-                "433"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 138",
-                "=",
-                "433"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "2"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() +35",
-                "=",
-                "487"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 86",
-                "=",
-                "487"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "6"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 138",
-                "=",
-                "487"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "4"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "7"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() +35",
-                "=",
-                "541"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "5"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "8"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 86",
-                "=",
-                "541"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "6"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "9"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 138",
-                "=",
-                "541"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "5"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_app",
-                "=",
-                "10"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "Phone.X() + 86",
-                "=",
-                "595"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Pointer",
-                "=",
-                "6"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Alex animation",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "8"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangeAnimationSpeedScale"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "0.1"
+                "Body",
+                "Phone.active",
+                "False"
               ]
             }
           ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlayAnimation"
-                  },
-                  "parameters": [
-                    "Player"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PauseAnimation"
-                  },
-                  "parameters": [
-                    "Player"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeSprite"
-                  },
-                  "parameters": [
-                    "Player",
-                    "=",
-                    "0"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimationSpeedScale"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "0.7"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Phone time",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Timer"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"phone_timer\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_time",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"phone_timer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "phone_time",
-                "=",
-                "TimeFormatter::SecondsToHHMMSS(Variable(phone_time))"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone_time",
-                ">=",
-                "1440"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "phone_time",
-                "=",
-                "0"
-              ]
+              "conditions": [],
+              "actions": []
             }
           ]
         }

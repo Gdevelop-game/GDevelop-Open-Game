@@ -17,18 +17,6 @@
         },
         {
           "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Placeholder",
-            "door",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
@@ -147,6 +135,20 @@
             "",
             "Variable(RoomID)",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "door"
           ]
         }
       ]

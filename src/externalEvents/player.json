@@ -8,11 +8,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Variables Documentation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -32,11 +34,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Hide",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -58,11 +62,1175 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
+      "name": "Customisation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "WIP"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "GlobalVariable(Player.Customisation.body)"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Leg",
+                "Animation",
+                "=",
+                "GlobalVariable(Player.Customisation.leg)"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Hand",
+                "Animation",
+                "=",
+                "GlobalVariable(Player.Customisation.hand)"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Animation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Position the hands and legs on the \"body\", the legs and hands have variables called \"leg.type\" and \"hand.type\" respectively. "
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Hand",
+                "=",
+                "Body.PointX(\"point\" + Hand.type)",
+                "=",
+                "Body.PointY(\"point\" + Hand.type)"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Leg",
+                "=",
+                "Body.PointX(\"point\" + Leg.type)",
+                "=",
+                "Body.PointY(\"point\" + Leg.type)"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "set angle of the hand and leg to the body angle."
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Hand",
+                "=",
+                "Hand.angle + Body.Angle()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Leg",
+                "=",
+                "Leg.angle + Body.Angle()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "Body.Animation",
+                "\"info\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Set the current state of the object variable \"animation\" of \"body\" to the current animation state, this can be used to get the current animation state of the body"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "Body",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "!=",
+                    "\"phoneHold\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Animation",
+                        "=",
+                        "\"walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Animation",
+                        "=",
+                        "\"run\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "Body",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Body",
+                "Phone.active",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"phoneHold\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Body",
+                "Phone.active",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "The timer is used to handle the hands and legs shuffling"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Body",
+                "\"switchWalkAngle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"run\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"walk\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "we use the body speed divided by 1000 to as a condition to shuffle hands. By adding 180 to the angle of hands and legs we get the direct opposite of the angle that way we have a shuffle"
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Body",
+                    "\"switchWalkAngle\"",
+                    ">=",
+                    "Body.TopDownMovement::Speed() / 1000"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\"",
+                    "0",
+                    "\"easeInQuad\"",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "Tween",
+                    "\"leg\"",
+                    "0",
+                    "\"easeInQuad\"",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDelay"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "angle",
+                    "+",
+                    "180"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "angle",
+                    "+",
+                    "180"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\"",
+                    "35",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "Tween",
+                    "\"leg\"",
+                    "20",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Body",
+                    "\"switchWalkAngle\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "body is not moving set the scale of teh hands and legs to 0 so they are both not visible.x"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+              },
+              "parameters": [
+                "Leg",
+                "Tween",
+                "\"leg\" + Body.Animation",
+                "0",
+                "\"easeOutQuad\"",
+                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+              },
+              "parameters": [
+                "Hand",
+                "Tween",
+                "\"hand\" + Body.Animation",
+                "0",
+                "\"easeOutQuad\"",
+                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if player is holding his  phone bring out right hand and hide left hand "
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "Body",
+                "Animation",
+                "=",
+                "\"phoneHold\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Body",
+                "TopDownMovement",
+                "=",
+                "Body.Movement.TopDownMovement.walk.maxSpeed - 200"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "type",
+                    "=",
+                    "\"R\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\" + Body.Animation",
+                    "35",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "=",
+                    "Body.Angle()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjetTxt"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "type",
+                    "=",
+                    "\"L\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "Tween",
+                    "\"hand\" + Body.Animation",
+                    "0",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player is moving while holding his phone, shuffle legs to simulate walk"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Body",
+                        "\"switchWalkAngle\"",
+                        ">=",
+                        "Body.TopDownMovement::Speed() / Body.Movement.TopDownMovement.walk.shuffleSwitchTime"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "Tween",
+                        "\"leg\"",
+                        "0",
+                        "\"easeInQuad\"",
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDelay"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "angle",
+                        "+",
+                        "180"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                      },
+                      "parameters": [
+                        "Leg",
+                        "Tween",
+                        "\"leg\"",
+                        "20",
+                        "\"easeOutQuad\"",
+                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Body",
+                        "\"switchWalkAngle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player is not moving while holding his phone hide the legs"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectWidthTween2"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "Tween",
+                    "\"leg\" + Body.Animation",
+                    "0",
+                    "\"easeOutQuad\"",
+                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "ZOrder",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "hand should appear below body and legs below hand"
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Hand",
+                    "=",
+                    "Body.ZOrder() - 1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Leg",
+                    "=",
+                    "Hand.ZOrder() - 1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Camera",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "center camera on player"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Body",
+                "Camera.active",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Body",
+                "",
+                "\"\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "set the variable \"Game.Camera.Zoom\" to 1, the camera uses this to set it's zoom level"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Game.Camera.Zoom",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Revert to the \"Game.Camera.Zoom\" variable if GodMode is not active"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "GodMode.active",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "Game.Camera.Zoom",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
       "name": "Separate",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Move \"body\" away from all these objects"
+        },
+        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -71,38 +1239,8 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Placeholder",
-                "road_block",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "Fences",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "foliage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "sports_equipments",
+                "Body",
+                "Static",
                 ""
               ]
             },
@@ -112,7 +1250,7 @@
               },
               "parameters": [
                 "trash_movable",
-                "Placeholder",
+                "Body",
                 ""
               ]
             },
@@ -122,47 +1260,37 @@
               },
               "parameters": [
                 "trash_movable",
-                "Fences",
+                "Static",
                 ""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "In rooms"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
               "type": {
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "trash_movable",
-                "foliage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "trash_movable",
-                "road_block",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "hidden_separate",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "roof_tops",
+                "Body",
+                "kitchen",
                 ""
               ]
             }
@@ -176,56 +1304,21 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
+      "folded": true,
       "name": "Swimming",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
                 "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "grass_tiled",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "road",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "sand",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
+              "parameters": []
             }
           ],
           "actions": [
@@ -242,6 +1335,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -267,76 +1361,15 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "Water",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "road",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "sand",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "grass_tiled",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -351,18 +1384,9 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::IsMoving"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -379,6 +1403,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -402,21 +1427,11 @@
                 "=",
                 "10"
               ]
-            },
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "50"
-              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -440,21 +1455,11 @@
                 "=",
                 "9"
               ]
-            },
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "50"
-              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -516,6 +1521,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -567,19 +1573,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement",
-                "=",
-                "200"
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "parameters": []
@@ -594,17 +1588,29 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Handle movement with \"wasd\" and only move when the object variable \"Movement.canMove\" of player is possible"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "VarScene"
+                "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "niko_movement",
-                "=",
-                "0"
+                "Body",
+                "Movement.canMove",
+                "True"
               ]
             }
           ],
@@ -615,23 +1621,150 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
-                    "",
-                    "a"
+                    "debug.cameraControlType",
+                    "True"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "a"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() - 90",
+                        "200",
+                        ""
+                      ]
+                    }
                   ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() + 90",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "w"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle()",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Body",
+                        "Body.Angle() + 180",
+                        "200",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "RotateTowardPosition"
+                      },
+                      "parameters": [
+                        "Body",
+                        "CursorX()",
+                        "CursorY()",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ]
             },
@@ -640,575 +1773,199 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
-                    "",
-                    "d"
+                    "debug.cameraControlType",
+                    "False"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateRightKey"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "a"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "w"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateUpKey"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "w"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "s"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateDownKey"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement"
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateDownKey"
+                      },
+                      "parameters": [
+                        "Body",
+                        "TopDownMovement"
+                      ]
+                    }
                   ]
                 }
               ]
             }
           ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Animation",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Reveert to values set in the body ovject variable \"Body.Movement.TopDownMovement.*****\""
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
+                "value": "SceneVariableAsBoolean"
               },
               "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Weapon_holding",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "swimming",
-                "=",
-                "0"
+                "GodMode.active",
+                "False"
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlayAnimation"
-              },
-              "parameters": [
-                "Player"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Weapon_holding",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "phone",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "swimming",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlayAnimation"
-              },
-              "parameters": [
-                "Player"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Collisions",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "kitchen",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "furniture",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "walls",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Placeholder",
-                "flower",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Placeholders",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Placeholder"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "Placeholder.X()",
-                "=",
-                "Placeholder.Y()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Player",
-                "=",
-                "Placeholder.Angle()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "flame_thrower_fire",
-                "=",
-                "Player.ZOrder()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Leaves",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Placeholder",
-                    "foliage",
-                    "",
-                    "",
-                    ""
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"walk\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.walk.maxSpeed"
                   ]
                 },
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "TopDownMovementBehavior::Deceleration"
                   },
                   "parameters": [
-                    "bullet",
-                    "foliage",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "foliage",
-                    "!=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "green_leaves_particle",
-                    "foliage.X()",
-                    "foliage.Y()",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Animation"
-                  },
-                  "parameters": [
-                    "foliage",
+                    "Body",
+                    "TopDownMovement",
                     "=",
-                    "3"
+                    "Body.Movement.TopDownMovement.walk.Deceleration"
                   ]
-                }
-              ],
-              "actions": [
+                },
                 {
                   "type": {
-                    "value": "Create"
+                    "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
-                    "",
-                    "brown_leaves_particle",
-                    "foliage.X()",
-                    "foliage.Y()",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Death screen",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Health",
-                "=",
-                "\"0\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "You_lose",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "EnableLayerEffect"
-              },
-              "parameters": [
-                "",
-                "\"\"",
-                "\"BlackAndWhite\"",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "EnableLayerEffect"
-              },
-              "parameters": [
-                "",
-                "\"\"",
-                "\"ZoomBlur\"",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetLayerEffectParameter"
-              },
-              "parameters": [
-                "",
-                "\"\"",
-                "\"LightNight\"",
-                "\"opacity\"",
-                "Variable(Died_effects_tween)"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::AddObjectOpacityTween"
-              },
-              "parameters": [
-                "You_lose",
-                "Tween",
-                "\"Effect\"",
-                "255",
-                "\"easeInCubic\"",
-                "3000",
-                ""
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Died_effects_tween",
-                    "<",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Died_effects_tween",
-                    "+",
-                    "0.1"
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.walk.Acceleration"
                   ]
                 }
               ]
@@ -1218,341 +1975,64 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "VarScene"
+                    "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Died_effects_tween",
-                    "<",
-                    "0.5"
+                    "Body",
+                    "Animation",
+                    "=",
+                    "\"run\""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "SetLayerEffectParameter"
+                    "value": "TopDownMovementBehavior::MaxSpeed"
                   },
                   "parameters": [
-                    "",
-                    "\"\"",
-                    "\"Effect2\"",
-                    "\"strength\"",
-                    "Variable(Died_effects_tween)"
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.maxSpeed"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Deceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.Deceleration"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::Acceleration"
+                  },
+                  "parameters": [
+                    "Body",
+                    "TopDownMovement",
+                    "=",
+                    "Body.Movement.TopDownMovement.run.Acceleration"
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "You_lose"
-              ]
-            },
-            {
-              "type": {
-                "value": "EnableLayerEffect"
-              },
-              "parameters": [
-                "",
-                "\"\"",
-                "\"BlackAndWhite\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "EnableLayerEffect"
-              },
-              "parameters": [
-                "",
-                "\"\"",
-                "\"ZoomBlur\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": []
-    },
-    {
-      "colorB": 228,
-      "colorG": 176,
-      "colorR": 74,
-      "creationTime": 0,
-      "name": "Camera",
-      "source": "",
-      "type": "BuiltinCommonInstructions::Group",
-      "events": [
-        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "CentreCamera"
-              },
-              "parameters": [
-                "",
-                "Placeholder",
-                "",
-                "\"\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "Camera_zoom",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "godmod",
-                "!=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "Variable(Camera_zoom)",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarScene"
-              },
-              "parameters": [
-                "godmod",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "0.5",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Gun_holding",
-                "!=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    ">",
-                    "0.9"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    "-",
-                    "0.0005"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "TopDownMovementBehavior::IsMoving"
-              },
-              "parameters": [
-                "Placeholder",
-                "TopDownMovement"
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Weapon_holding",
-                "!=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    "<",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    "+",
-                    "0.0005"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobal"
-              },
-              "parameters": [
-                "Weapon_holding",
-                "=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    ">",
-                    "0.8"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "Camera_zoom",
-                    "-",
-                    "0.005"
-                  ]
-                }
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "parameters": []
@@ -1562,11 +2042,14 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
+      "folded": true,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1654,6 +2137,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -1668,30 +2152,11 @@
                 "=",
                 "Player.PointY(\"f_t_collision\")"
               ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "flame_thrower_fire_collision",
-                "=",
-                "Placeholder.Angle()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "flame_thrower_fire",
-                "=",
-                "Placeholder.Angle()"
-              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -1721,6 +2186,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1733,6 +2199,7 @@
               "comment": "Top down veiw movment rotate = False"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1742,18 +2209,7 @@
                   "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::RotateObject"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement",
-                    "yes"
-                  ]
-                }
-              ]
+              "actions": []
             }
           ]
         },
@@ -1772,22 +2228,10 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "RotateTowardPosition"
-              },
-              "parameters": [
-                "Placeholder",
-                "MouseX(\"\", 0)",
-                "MouseY(\"\", 0)",
-                "0",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -1800,6 +2244,7 @@
               "comment": "Top down veiw movment rotate = False"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1809,22 +2254,12 @@
                   "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::RotateObject"
-                  },
-                  "parameters": [
-                    "Placeholder",
-                    "TopDownMovement",
-                    "no"
-                  ]
-                }
-              ]
+              "actions": []
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -1837,20 +2272,9 @@
           "comment": "Pick up the gun"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "gun1",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -1910,20 +2334,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "gun2",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -1983,20 +2396,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "gun3",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2046,20 +2448,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "gun4",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2119,20 +2510,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "gun5",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2192,20 +2572,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "mele1",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2265,20 +2634,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "mele1",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2338,20 +2696,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "mele2",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -2411,6 +2758,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -2459,6 +2807,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -2471,6 +2820,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2522,7 +2872,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "0"
                   ]
@@ -2550,7 +2900,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2587,6 +2936,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -2599,6 +2949,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2643,7 +2994,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "4"
                   ]
@@ -2651,6 +3002,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -2663,6 +3015,7 @@
               "comment": "Shoot gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2699,19 +3052,6 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -2751,27 +3091,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "Placeholder.Angle()",
-                    "800",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -2805,16 +3124,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "shooting_effect",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ChangePlan"
                   },
                   "parameters": [
@@ -2826,6 +3135,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -2838,6 +3148,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2847,17 +3158,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")"
                   ]
                 },
                 {
@@ -2892,16 +3192,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "gun1",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -2915,7 +3205,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2952,6 +3241,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2976,6 +3266,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -2988,6 +3279,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3032,7 +3324,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "0"
                   ]
@@ -3040,6 +3332,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3052,6 +3345,7 @@
               "comment": "Shoot gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3092,19 +3386,6 @@
                     "0.1",
                     "\"gun2_shoot\""
                   ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -3128,27 +3409,6 @@
                     "bullet",
                     "=",
                     "70000"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "Placeholder.Angle()",
-                    "800",
-                    "1"
                   ]
                 },
                 {
@@ -3195,16 +3455,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "shooting_effect",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ChangePlan"
                   },
                   "parameters": [
@@ -3216,6 +3466,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3228,6 +3479,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3237,17 +3489,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")"
                   ]
                 },
                 {
@@ -3282,16 +3523,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "gun2",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3305,7 +3536,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3342,6 +3572,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3354,6 +3585,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3398,7 +3630,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "3"
                   ]
@@ -3406,6 +3638,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3449,19 +3682,6 @@
                     "!=",
                     "0"
                   ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -3477,6 +3697,7 @@
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3507,6 +3728,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3543,6 +3765,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
                     "b": 109,
@@ -3555,33 +3778,9 @@
                   "comment": "If fire in collision with burnable object, set it on fire"
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "flame_thrower_fire_collision",
-                        "bullet_obstacles",
-                        "",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "Player",
-                        "bullet_obstacles",
-                        "78",
-                        ""
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
@@ -3605,22 +3804,13 @@
                         "=",
                         "222"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "flame_thrower_fire_secondary",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
                     }
                   ]
                 }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3656,19 +3846,6 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
               "actions": [
@@ -3683,6 +3860,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3695,6 +3873,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3704,17 +3883,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")"
                   ]
                 },
                 {
@@ -3749,16 +3917,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "gun3",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3778,6 +3936,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3790,6 +3949,7 @@
               "comment": "Put actual fire over hitbox"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
@@ -3810,7 +3970,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3857,6 +4016,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3869,6 +4029,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3913,7 +4074,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "1"
                   ]
@@ -3921,6 +4082,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -3970,24 +4132,12 @@
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
-                  ]
                 }
               ],
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4036,27 +4186,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "Placeholder.Angle()",
-                        "800",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
@@ -4099,16 +4228,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "shooting_effect_sniper",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4120,6 +4239,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4154,27 +4274,6 @@
                         "bullet",
                         "=",
                         "70000"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "Placeholder.Angle()",
-                        "800",
-                        "1"
                       ]
                     },
                     {
@@ -4231,16 +4330,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "shooting_effect_sniper",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4254,6 +4343,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -4266,6 +4356,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4275,17 +4366,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")"
                   ]
                 },
                 {
@@ -4320,16 +4400,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "gun4",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -4349,6 +4419,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -4361,6 +4432,7 @@
               "comment": "reloading"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4404,6 +4476,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4445,6 +4518,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4524,6 +4598,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -4536,6 +4611,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4580,7 +4656,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "2"
                   ]
@@ -4588,6 +4664,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -4642,6 +4719,7 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4690,27 +4768,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "Placeholder.Angle()",
-                        "800",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
@@ -4753,16 +4810,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "shooting_effect_rocket",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4774,6 +4821,7 @@
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4808,27 +4856,6 @@
                         "bullet",
                         "=",
                         "70000"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "Placeholder.Angle()",
-                        "800",
-                        "1"
                       ]
                     },
                     {
@@ -4885,16 +4912,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "shooting_effect_rocket",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4908,6 +4925,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -4920,6 +4938,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4929,17 +4948,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")"
                   ]
                 },
                 {
@@ -4966,19 +4974,6 @@
                     "gun5_shoot",
                     "=",
                     "\"True\""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire_collision",
-                    "bullet_obstacles",
-                    "",
-                    "",
-                    ""
                   ]
                 }
               ],
@@ -5017,16 +5012,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "gun5",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -5046,6 +5031,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5058,6 +5044,7 @@
               "comment": "reloading"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5153,6 +5140,7 @@
               ],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5182,6 +5170,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5271,6 +5260,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5283,6 +5273,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5327,7 +5318,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "0"
                   ]
@@ -5335,6 +5326,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5383,19 +5375,10 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "tazer_hitbox",
-                        "=",
-                        "Placeholder.Angle()"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "MettreXY"
@@ -5421,6 +5404,7 @@
                   ],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5455,6 +5439,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5495,6 +5480,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5538,6 +5524,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5550,6 +5537,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5559,17 +5547,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"hitbox\")",
-                    "Player.PointY(\"hitbox\")"
                   ]
                 },
                 {
@@ -5600,16 +5577,6 @@
                     "mele1",
                     "=",
                     "70000"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "mele1",
-                    "=",
-                    "Placeholder.Angle()"
                   ]
                 },
                 {
@@ -5663,6 +5630,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5678,16 +5646,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "=",
-                    "Placeholder.Angle() + 100"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "MettreXY"
                   },
                   "parameters": [
@@ -5701,6 +5659,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5713,6 +5672,7 @@
               "comment": "Change animation and `Rotate_mouse` "
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5748,7 +5708,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crossair",
+                    "crosshair",
                     "=",
                     "0"
                   ]
@@ -5756,6 +5716,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -5804,6 +5765,7 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5896,19 +5858,10 @@
               "actions": [],
               "events": [
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetAngle"
-                      },
-                      "parameters": [
-                        "Slash1",
-                        "=",
-                        "Placeholder.Angle() + 100"
-                      ]
-                    },
                     {
                       "type": {
                         "value": "MettreXY"
@@ -5924,6 +5877,7 @@
                   ],
                   "events": [
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -5962,6 +5916,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6005,6 +5960,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -6017,6 +5973,7 @@
               "comment": "Drop gun"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6026,17 +5983,6 @@
                   "parameters": [
                     "",
                     "q"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionPoint"
-                  },
-                  "parameters": [
-                    "bullet_obstacles",
-                    "Player.PointX(\"Center\")",
-                    "Player.PointY(\"Center\")"
                   ]
                 },
                 {
@@ -6071,16 +6017,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetAngle"
-                  },
-                  "parameters": [
-                    "mele2",
-                    "=",
-                    "Placeholder.Angle()"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -6103,6 +6039,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -6115,20 +6052,9 @@
           "comment": "if bullets collide with \"bullet obstacles\""
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "bullet_obstacles",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -6185,20 +6111,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "bullet_obstacles",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -6255,20 +6170,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "bullet_obstacles",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -6325,20 +6229,9 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "bullet_obstacles",
-                "",
-                "",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -6413,6 +6306,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6439,6 +6333,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6476,6 +6371,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -6488,6 +6384,7 @@
           "comment": "Ammo"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6511,18 +6408,6 @@
             },
             {
               "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "ammo",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -6541,6 +6426,7 @@
           ],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6568,6 +6454,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6595,6 +6482,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6622,6 +6510,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6649,6 +6538,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6676,6 +6566,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6705,6 +6596,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6732,6 +6624,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6759,6 +6652,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6786,6 +6680,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6813,6 +6708,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6840,6 +6736,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6867,6 +6764,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -6879,12 +6777,14 @@
           "comment": "bullet"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "bullet",
           "conditions": [],
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6907,6 +6807,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6935,6 +6836,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6963,6 +6865,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7000,6 +6903,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7037,6 +6941,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7074,6 +6979,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7120,11 +7026,14 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "disabled": true,
+      "folded": true,
       "name": "Weapon system wheel",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -7141,6 +7050,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7182,6 +7092,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7239,6 +7150,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7276,6 +7188,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7299,6 +7212,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7335,6 +7249,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7391,6 +7306,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7427,6 +7343,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7481,6 +7398,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7562,6 +7480,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7585,6 +7504,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7621,6 +7541,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7677,6 +7598,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7713,6 +7635,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7767,6 +7690,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7848,6 +7772,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7871,6 +7796,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7907,6 +7833,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7963,6 +7890,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -7999,6 +7927,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8053,6 +7982,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8134,6 +8064,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8157,6 +8088,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8193,6 +8125,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8249,6 +8182,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8285,6 +8219,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8323,7 +8258,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8340,6 +8274,7 @@
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8377,6 +8312,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8400,6 +8336,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8446,6 +8383,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8502,6 +8440,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8538,6 +8477,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8576,6 +8516,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8608,6 +8549,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8640,6 +8582,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8672,6 +8615,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8704,6 +8648,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8736,6 +8681,17 @@
           ]
         }
       ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Cursor",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [],
       "parameters": []
     }
   ]
