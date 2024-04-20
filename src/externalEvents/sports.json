@@ -1,0 +1,126 @@
+{
+  "associatedLayout": "City",
+  "lastChangeTimeStamp": 0,
+  "name": "Sports",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Basket ball",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Bounce::Bounce::BounceOff"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Bounce",
+                "Placeholder",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Bounce::Bounce::BounceOff"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Bounce",
+                "Fences",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Bounce::Bounce::BounceOff"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Bounce",
+                "roof_tops",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Placeholder",
+                "sports_equipments_movable",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Placeholder.Angle()",
+                "120",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayAnimation"
+              },
+              "parameters": [
+                "sports_equipments_movable"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Arret"
+              },
+              "parameters": [
+                "sports_equipments_movable"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "sports_equipments_movable",
+                "Animation"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}

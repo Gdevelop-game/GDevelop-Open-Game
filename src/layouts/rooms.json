@@ -28997,6 +28997,26 @@
         "b": 156,
         "g": 156,
         "r": 156
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Wheel using: [number]",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 30,
+        "color": "156;156;156"
       }
     },
     {
@@ -29750,6 +29770,26 @@
         "b": 255,
         "g": 255,
         "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "00:00",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 14,
+        "color": "255;255;255"
       }
     },
     {
@@ -29771,6 +29811,26 @@
         "b": 112,
         "g": 112,
         "r": 112
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "reloading",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 50,
+        "color": "112;112;112"
       }
     },
     {
@@ -29792,6 +29852,26 @@
         "b": 156,
         "g": 156,
         "r": 156
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Ammo: [number]",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 30,
+        "color": "156;156;156"
       }
     },
     {
@@ -30016,6 +30096,26 @@
         "b": 255,
         "g": 255,
         "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "1",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 50,
+        "color": "255;255;255"
       }
     },
     {
@@ -30433,6 +30533,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "TopDownMovement",

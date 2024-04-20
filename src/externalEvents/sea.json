@@ -1,0 +1,183 @@
+{
+  "associatedLayout": "City",
+  "lastChangeTimeStamp": 0,
+  "name": "Sea",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Water",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "Water_cover",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Water",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "Water_cover",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "Water",
+                "Water",
+                "<",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Water",
+                "Player.CenterX() - Water.Width() / 2",
+                "Player.CenterY() - Water.Height() / 2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "Water",
+                "Resizable",
+                "=",
+                "SceneWindowHeight() + 500"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "Water",
+                "Resizable",
+                "=",
+                "SceneWindowWidth() + 500"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Water",
+                "=",
+                "Player.CenterX() - Water.Width() / 2",
+                "=",
+                "Player.CenterY() - Water.Height() / 2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Sea offset"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TiledSpriteObject::XOffset"
+              },
+              "parameters": [
+                "Water",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "TiledSpriteObject::YOffset"
+              },
+              "parameters": [
+                "Water",
+                "+",
+                "-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}
