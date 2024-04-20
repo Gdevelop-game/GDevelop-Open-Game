@@ -64,9 +64,10 @@ jobs:
         
     steps:
 
-      - name: Alias Python
-        run: |
-          sudo ln -s /usr/bin/python3 /usr/bin/python
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
       
       - name: Build with GDexport
         run: |
