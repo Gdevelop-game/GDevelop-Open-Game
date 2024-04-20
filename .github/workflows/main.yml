@@ -66,7 +66,7 @@ jobs:
 
       - name: Alias Python
         run: |
-          ln -s /usr/bin/python3 /usr/bin/python
+          sudo ln -s /usr/bin/python3 /usr/bin/python
       
       - name: Build with GDexport
         run: |
