@@ -28,13 +28,11 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 700,
+      "height": 1080,
       "layer": "",
-      "locked": true,
       "name": "bg",
       "persistentUuid": "6f3762d0-afeb-40cb-b5df-311e031d8b5e",
-      "sealed": true,
-      "width": 1500,
+      "width": 1920,
       "x": 0,
       "y": 0,
       "zOrder": 1,
@@ -369,6 +367,44 @@
           "parameters": [
             "",
             "GlobalVariableString(sceneLoad)",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Center align"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "AlignObject::ToSceneCenter"
+          },
+          "parameters": [
+            "",
+            "RedFlatBarw",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AlignObject::ToSceneCenter"
+          },
+          "parameters": [
+            "",
+            "NewText",
             ""
           ]
         }

@@ -23,17 +23,6 @@
               "parameters": [
                 "sports_equipments_movable",
                 "Bounce",
-                "Placeholder",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Bounce::Bounce::BounceOff"
-              },
-              "parameters": [
-                "sports_equipments_movable",
-                "Bounce",
                 "Fences",
                 ""
               ]
@@ -45,7 +34,7 @@
               "parameters": [
                 "sports_equipments_movable",
                 "Bounce",
-                "roof_tops",
+                "roofTops",
                 ""
               ]
             }
@@ -56,35 +45,12 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Placeholder",
-                "sports_equipments_movable",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "sports_equipments_movable",
-                "Placeholder.Angle()",
-                "120",
-                "1"
-              ]
-            },
             {
               "type": {
                 "value": "PlayAnimation"
