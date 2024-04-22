@@ -1,0 +1,577 @@
+{
+  "associatedLayout": "City",
+  "lastChangeTimeStamp": 0,
+  "name": "WeaponWheel",
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Select",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "bar",
+                "Resizable",
+                "=",
+                "SceneWindowWidth() + 4"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"WeaponWheel\"",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "WeaponWheel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MontreSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "weaponWheelSticker",
+                    "Tween",
+                    "\"weaponWheelStickerAlign\"",
+                    "SceneWindowWidth()/2 - weaponWheelSticker.Width()/2",
+                    "\"easeOutQuad\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenNumberEffectPropertyTween"
+                  },
+                  "parameters": [
+                    "",
+                    "\"weaponWheelFade\"",
+                    "20",
+                    "",
+                    "\"weaponwhe\"",
+                    "\"blur\"",
+                    "\"easeOutQuad\"",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "bar",
+                    "Tween",
+                    "\"bar\"",
+                    "255",
+                    "\"linear\"",
+                    "0.1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MontreSouris"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Tab"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CacheSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenNumberEffectPropertyTween"
+                  },
+                  "parameters": [
+                    "",
+                    "\"weaponWheelFade\"",
+                    "0",
+                    "",
+                    "\"weaponwhe\"",
+                    "\"blur\"",
+                    "\"easeInQuad\"",
+                    "0.3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "weaponWheelSticker",
+                    "Tween",
+                    "\"weaponWheelStickerAlign\"",
+                    "SceneWindowWidth()/2 - weaponWheelSticker.Width()/2 + 50",
+                    "\"easeOutQuad\"",
+                    "0.3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "bar",
+                    "Tween",
+                    "\"bar\"",
+                    "0",
+                    "\"linear\"",
+                    "0.3",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "WeaponWheel"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "icons",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "icons",
+                "Tween",
+                "\"weaponWheelHoverScale\"",
+                "1",
+                "\"easeInQuad\"",
+                "0.05",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "icons",
+                "Tween",
+                "\"weaponWheelHoverRotate\"",
+                "0.8",
+                "\"easeInQuad\"",
+                "0.05",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "icons",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "icons",
+                "Tween",
+                "\"weaponWheelHoverScale\"",
+                "1.2",
+                "\"easeInQuad\"",
+                "0.2",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "icons",
+                "Tween",
+                "\"weaponWheelHoverRotate\"",
+                "-45",
+                "\"easeInQuad\"",
+                "0.2",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "Player.Weapons.Active",
+          "valueIteratorVariableName": "child",
+          "keyIteratorVariableName": "i",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "Player.Weapons.Active[VariableString(i)].active",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Player.Weapons.Slot.current",
+                "<",
+                "Player.Weapons.Slot.max"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "icons",
+                "weaponWheelSticker.CenterX() + Player.WeaponWheel.adder",
+                "bar.CenterY()",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Player.WeaponWheel.adder",
+                "+",
+                "icons.Width() + 50"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "weaponWheelSticker",
+                "Resizable",
+                "=",
+                "Player.WeaponWheel.adder"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "weaponWheelSticker",
+                "Resizable",
+                "=",
+                "bar.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "icons",
+                "Animation",
+                "=",
+                "VariableString(i)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Player.Weapons.Slot.current",
+                "+",
+                "Player.Weapons.Active[VariableString(i)].slot"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "icons",
+                "Sticker",
+                "weaponWheelSticker",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "weaponWheelSticker",
+                "Tween",
+                "\"weaponWheelStickerAlign\"",
+                "SceneWindowWidth()/2 - weaponWheelSticker.Width()/2 + 50",
+                "\"linear\"",
+                "0.5",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "weaponWheelSticker"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "WeaponWheel"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "icons",
+                "=",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Player.Weapons.Selected",
+                "=",
+                "icons.Animation::Name()"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "AmmoText",
+                "Text",
+                "=",
+                "Player.Weapons.Selected"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ]
+}
