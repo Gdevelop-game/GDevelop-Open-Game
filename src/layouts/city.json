@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.24113360125461827,
+    "zoomFactor": 0.3250014140240832,
     "windowMask": false
   },
   "objectsGroups": [
@@ -66,64 +66,23 @@
           "name": "Fences"
         }
       ]
+    },
+    {
+      "name": "WeaponWheel",
+      "objects": [
+        {
+          "name": "icons"
+        },
+        {
+          "name": "bar"
+        },
+        {
+          "name": "weaponWheelSticker"
+        }
+      ]
     }
   ],
   "variables": [
-    {
-      "name": "fade",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "walk_in_west",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "walk_in_north",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "separate",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "walk_in_south",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "walk_in_east",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "basketball",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "phone",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "using_phone",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "phone_time",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "Died_effects_tween",
-      "type": "string",
-      "value": ""
-    },
     {
       "folded": true,
       "name": "DebugVariables",
@@ -165,6 +124,223 @@
           "name": "active",
           "type": "boolean",
           "value": false
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "type": "structure",
+      "children": [
+        {
+          "name": "WeaponWheel",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "adder",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "Weapons",
+          "persistentUuid": "156e00a8-0565-4399-b01a-2d67f7dd2aea",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Active",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "pistolSilencer",
+                  "persistentUuid": "ca505ad0-64b4-44ee-b4b4-20ba640dd356",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "rocketLauncher",
+                  "persistentUuid": "a8cbcdb0-769a-42ec-97ba-2d4452a2f44c",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "name": "slot",
+                      "type": "number",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "name": "rocketLauncherModern",
+                  "persistentUuid": "c25e6f18-b9d3-4077-badd-9e7fe02d7289",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "folded": true,
+                      "name": "slot",
+                      "type": "number",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "name": "shotgunLong",
+                  "persistentUuid": "1ea7f09e-67e9-446c-b924-8b7841d8c706",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "folded": true,
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "sniper",
+                  "persistentUuid": "fd26e664-81a2-41e1-b99d-eb5b6f68fd1f",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "folded": true,
+                      "name": "slot",
+                      "type": "number",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "name": "uzi",
+                  "persistentUuid": "8042baed-2539-4ca7-a163-86635a6c0c14",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "folded": true,
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "uziLong",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "uziLongSilencer",
+                  "persistentUuid": "f1e60af4-7996-42a0-b4ec-fa7e985445ea",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": true
+                    },
+                    {
+                      "folded": true,
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "uziSilencer",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "active",
+                      "type": "boolean",
+                      "value": false
+                    },
+                    {
+                      "name": "slot",
+                      "type": "number",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Selected",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Slot",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "current",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "max",
+                  "type": "number",
+                  "value": 4
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -53907,26 +54083,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "UI",
-      "name": "weapon_icons",
-      "persistentUuid": "e1f10fa7-78d4-4f19-91f7-1e2a6439f087",
-      "width": 0,
-      "x": 1823,
-      "y": 32,
-      "zOrder": 12643489,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 210,
       "layer": "",
@@ -54786,6 +54942,22 @@
           "value": "shadow"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "AmmoText",
+      "persistentUuid": "1d0de529-1976-49aa-995b-d6a7e22f8a7c",
+      "width": 0,
+      "x": 1671,
+      "y": 19,
+      "zOrder": 12643570,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -57486,7 +57658,18 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 0,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "string": "Ammo: [number]",
       "font": "",
       "textAlignment": "",
@@ -60079,6 +60262,7 @@
           "value": ""
         },
         {
+          "folded": true,
           "name": "Movement",
           "type": "structure",
           "children": [
@@ -60224,6 +60408,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Phone",
           "type": "structure",
           "children": [
@@ -60232,6 +60417,28 @@
               "name": "active",
               "type": "boolean",
               "value": false
+            }
+          ]
+        },
+        {
+          "name": "Weapons",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Active",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "uziLong",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "uziSilencer",
+                  "type": "boolean",
+                  "value": false
+                }
+              ]
             }
           ]
         }
@@ -61635,6 +61842,1244 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "icons",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "uziSilencer",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/uziSilencer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 85,
+                    "y": 65
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "uziLongSilencer",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/uziLongSilencer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 64.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "uziLong",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/uziLong.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 85,
+                    "y": 65
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "uzi",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/uzi.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 52.5,
+                    "y": 65
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sniper",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/sniper.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 200.5,
+                    "y": 54.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shotgunShort",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/shotgunShort.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 98,
+                    "y": 26
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "shotgun",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/shotgun.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97.5,
+                    "y": 26
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rocketLauncherModern",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/rocketlauncherModern.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 152.5,
+                    "y": 65
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rocketLauncher",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/rocketlauncher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 199.5,
+                    "y": 71
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pistolSilencer",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/pistolSilencer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 79.5,
+                    "y": 45
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pistol",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/pistol.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 57.5,
+                    "y": 45
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/machinegunLauncher.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 116,
+                    "y": 51.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/machinegun.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 116.5,
+                    "y": 52
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/knifeRound_smooth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15.5,
+                    "y": 68.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/knifeRound_sharp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 17.5,
+                    "y": 68
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/knife_smooth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 17.5,
+                    "y": 69
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/knife_sharp.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 15,
+                    "y": 68.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/grenadeVintage.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 19.5,
+                    "y": 74
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/grenadeSmoke.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 18.5,
+                    "y": 38.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/grenadeFlash.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 17.5,
+                    "y": 38.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/grenade.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 22.5,
+                    "y": 34
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/flamethrower_short.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 106.5,
+                    "y": 41
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/flamethrower_long.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 114,
+                    "y": 40.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 1
+                      },
+                      {
+                        "x": 169,
+                        "y": 129
+                      },
+                      {
+                        "x": 0,
+                        "y": 129
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapons/icons/bar.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 112,
+                        "y": 0
+                      },
+                      {
+                        "x": 1807,
+                        "y": 0
+                      },
+                      {
+                        "x": 1807,
+                        "y": 296
+                      },
+                      {
+                        "x": 112,
+                        "y": 296
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "weaponWheelSticker",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "hidden_separate",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\sprite_objects\\hidden_separate-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -61839,6 +63284,17 @@
         "folderName": "Weapons",
         "children": [
           {
+            "folderName": "Icons",
+            "children": [
+              {
+                "objectName": "icons"
+              },
+              {
+                "objectName": "bar"
+              }
+            ]
+          },
+          {
             "folderName": "particles",
             "children": [
               {
@@ -61972,6 +63428,9 @@
           },
           {
             "objectName": "hidden_separate"
+          },
+          {
+            "objectName": "weaponWheelSticker"
           }
         ]
       }
@@ -62009,7 +63468,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -62425,6 +63883,16 @@
             "vignetting": 0.3,
             "vignettingAlpha": 0.5,
             "vignettingBlur": 0.3
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "TiltShift",
+          "name": "weaponwhe",
+          "doubleParameters": {
+            "blur": 0,
+            "gradientBlur": 0
           },
           "stringParameters": {},
           "booleanParameters": {}
