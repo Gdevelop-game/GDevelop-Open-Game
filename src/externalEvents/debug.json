@@ -157,7 +157,7 @@
                 "fps",
                 "Text",
                 "=",
-                "ToString(round(FPS::FPS()))"
+                "\"FPS \" + ToString(round(FPS::FPS())) +NewLine() + \"Rank \" + GlobalVariableString(System.rank)"
               ]
             }
           ]
