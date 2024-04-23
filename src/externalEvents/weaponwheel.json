@@ -72,19 +72,21 @@
           "actions": [
             {
               "type": {
-                "value": "Montre"
+                "value": "MontreSouris"
               },
               "parameters": [
-                "WeaponWheel",
                 ""
               ]
             },
             {
               "type": {
-                "value": "MontreSouris"
+                "value": "EnableLayerEffect"
               },
               "parameters": [
-                ""
+                "",
+                "",
+                "\"weaponwhe\"",
+                "yes"
               ]
             }
           ],
@@ -100,6 +102,15 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "WeaponWheel",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
@@ -121,7 +132,7 @@
                   "parameters": [
                     "",
                     "\"weaponWheelFade\"",
-                    "20",
+                    "10",
                     "",
                     "\"weaponwhe\"",
                     "\"blur\"",
@@ -175,6 +186,17 @@
                 "value": "CacheSouris"
               },
               "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EnableLayerEffect"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"weaponwhe\"",
                 ""
               ]
             }

@@ -2482,6 +2482,51 @@
         "name": "assets/weapons/icons/bar.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/map_edge/tile_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Road/map_edge/tile_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/map_edge/tile_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Road/map_edge/tile_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/sand/dirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Road/sand/dirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Road/side_walk/sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Road/side_walk/sand.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bridge/bridge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/bridge/bridge.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2837,6 +2882,10 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/fps"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/extendedvariables"
