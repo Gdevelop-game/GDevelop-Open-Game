@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.1327402696985414,
+    "zoomFactor": 0.6102999644497129,
     "windowMask": false
   },
   "objectsGroups": [
@@ -39544,6 +39544,23 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "fps",
+      "persistentUuid": "7a76b0af-6c17-4bb9-b114-4c8700fe0ab5",
+      "width": 419,
+      "x": 280,
+      "y": 70,
+      "zOrder": 12643597,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -47284,6 +47301,47 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "fps",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "fps",
+      "font": "",
+      "textAlignment": "",
+      "characterSize": 30,
+      "color": {
+        "b": 112,
+        "g": 112,
+        "r": 112
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "fps",
+        "font": "",
+        "textAlignment": "",
+        "characterSize": 30,
+        "color": "112;112;112"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -47346,6 +47404,9 @@
               },
               {
                 "objectName": "reloading"
+              },
+              {
+                "objectName": "fps"
               },
               {
                 "objectName": "debugToggle"

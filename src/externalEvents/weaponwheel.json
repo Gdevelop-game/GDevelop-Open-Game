@@ -72,15 +72,6 @@
           "actions": [
             {
               "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "WeaponWheel",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "MontreSouris"
               },
               "parameters": [
@@ -113,6 +104,15 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "WeaponWheel",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
                   },
                   "parameters": [
@@ -132,7 +132,7 @@
                   "parameters": [
                     "",
                     "\"weaponWheelFade\"",
-                    "20",
+                    "10",
                     "",
                     "\"weaponwhe\"",
                     "\"blur\"",
