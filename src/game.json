@@ -2799,6 +2799,18 @@
           "value": ""
         }
       ]
+    },
+    {
+      "name": "System",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "rank",
+          "type": "string",
+          "value": ""
+        }
+      ]
     }
   ],
   "layouts": [
@@ -2825,6 +2837,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/loading"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/firstlaunch"
     }
   ],
   "externalEvents": [
