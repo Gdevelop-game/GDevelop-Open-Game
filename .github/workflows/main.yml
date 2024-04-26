@@ -81,14 +81,14 @@ jobs:
           cd Project/build/gdExport
           npm i --save-dev electron-builder
           export PYTHON_PATH=/usr/bin/python3
-          ./node_modules/.bin/electron-builder -m dmg
+          ./node_modules/.bin/electron-builder
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
           # Upload all potential executables
           name: mac
-          path: Project/build/gdExport/dist/*.dmg
+          path: Project/build/gdExport/dist/*
           
   build_for_windows:
     runs-on: windows-latest
