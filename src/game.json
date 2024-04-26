@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Intro",
+  "firstLayout": "Game_Intro",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -26,7 +26,7 @@
     "windowWidth": 1920,
     "windowHeight": 1080,
     "latestCompilationDirectory": "",
-    "maxFPS": 60,
+    "maxFPS": 120,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {},
@@ -44,11 +44,11 @@
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
       "showGDevelopSplash": false,
-      "showProgressBar": true
+      "showProgressBar": false
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
@@ -2527,6 +2527,5019 @@
         "name": "assets/bridge/bridge.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/crosshair/crosshair_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/crosshair/crosshair_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_19.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_20.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_21.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_22.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_23.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_24.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_25.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_26.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_27.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_28.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_29.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_30.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_31.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_32.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_33.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_34.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_35.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_36.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_37.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_38.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_39.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_40.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_41.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_42.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_43.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_44.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_45.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_46.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_47.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_47.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_48.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_49.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_50.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/body_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/body_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/phone/wifi_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/phone/wifi_0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/phone/wifi_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/phone/wifi_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/phone/wifi_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/phone/wifi_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/body/phone/wifi_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/body/phone/wifi_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/frame/frame_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/frame/frame_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/frame/frame_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/frame/frame_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/bridge/bridge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/bridge/bridge.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/decoration/decoration_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/decoration/decoration_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/flower/flower_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/flower/flower_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/flower/flower_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/flower/flower_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/grass/grass_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/grass/grass_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/grass/grass_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/grass/grass_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/grass/grass_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/grass/grass_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/grass/grass_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/grass/grass_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/leaves/leaf_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/leaves/leaf_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/leaves/leaf_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/leaves/leaf_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/electronic/electronic_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/electronic/electronic_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_19.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_20.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/floor/floor_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/floor/floor_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_19.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/bed/bed_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/bed/bed_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/carpet/carpet_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/carpet/carpet_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/carpet/carpet_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/carpet/carpet_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/chair/chair_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/chair/chair_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/furniture/table/table6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/furniture/table/table6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/kitchen/kitchen_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/kitchen/kitchen_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_101.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_101.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_102.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_102.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_103.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_103.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_104.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_104.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_105.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_105.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_106.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_106.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_107.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_107.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_108.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_108.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_109.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_109.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_110.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_110.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_111.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_111.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_112.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_112.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_113.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_113.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_114.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_115.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_115.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_116.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_116.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_117.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_117.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_118.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_118.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_119.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_119.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_120.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_121.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_121.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_122.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_122.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_123.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_123.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_124.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_124.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_125.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_125.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_126.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_126.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_127.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_127.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_128.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_128.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_129.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_129.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_130.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_130.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_131.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_131.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_132.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_132.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_133.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_133.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_134.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_134.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_135.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_135.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_136.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_136.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_137.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_137.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_138.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_138.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_139.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_139.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_140.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_140.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_141.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_141.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_142.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_142.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_143.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_143.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_144.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_145.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_145.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_146.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_146.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_147.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_147.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_148.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_148.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_149.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_149.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_150.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_150.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_151.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_151.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_152.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_153.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_153.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_154.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_154.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_155.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_155.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_156.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_156.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_157.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_157.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_158.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_158.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_159.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_159.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_16.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_160.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_160.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_161.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_161.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_162.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_162.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_163.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_163.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_164.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_164.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_165.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_165.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_166.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_166.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_167.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_168.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_168.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_169.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_169.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_17.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_170.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_170.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_171.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_171.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_172.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_172.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_173.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_173.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_174.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_174.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_175.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_175.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_176.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_176.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_177.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_177.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_178.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_178.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_179.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_179.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_18.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_180.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_181.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_181.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_182.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_182.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_183.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_183.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_184.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_184.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_185.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_185.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_186.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_186.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_187.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_187.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_188.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_188.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_189.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_189.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_19.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_190.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_190.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_191.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_191.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_192.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_193.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_193.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_194.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_194.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_195.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_195.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_196.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_196.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_197.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_197.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_198.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_198.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_199.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_199.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_20.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_200.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_200.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_201.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_201.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_202.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_202.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_203.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_203.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_204.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_204.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_205.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_205.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_206.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_206.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_207.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_207.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_208.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_208.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_209.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_209.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_21.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_210.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_210.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_211.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_211.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_212.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_212.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_213.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_213.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_214.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_214.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_215.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_215.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_216.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_216.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_217.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_217.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_218.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_218.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_219.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_219.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_22.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_23.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_24.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_25.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_26.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_27.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_28.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_29.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_30.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_31.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_32.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_33.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_34.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_35.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_36.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_37.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_38.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_39.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_40.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_41.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_42.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_43.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_44.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_45.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_46.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_47.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_47.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_48.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_49.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_50.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_51.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_51.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_52.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_52.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_53.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_53.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_54.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_54.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_55.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_55.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_56.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_56.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_57.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_58.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_59.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_59.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_60.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_61.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_61.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_62.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_63.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_64.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_64.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_65.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_65.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_66.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_66.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_67.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_67.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_68.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_68.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_69.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_69.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_70.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_70.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_71.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_71.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_73.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_73.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_74.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_74.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_75.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_75.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_76.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_77.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_77.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_78.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_78.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_79.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_79.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_80.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_81.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_81.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_82.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_82.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_83.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_83.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_84.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_84.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_85.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_85.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_86.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_86.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_87.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_88.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_88.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_89.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_89.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_90.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_90.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_91.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_91.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_92.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_92.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_93.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_93.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_94.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_94.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_95.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_95.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_96.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_97.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_97.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_98.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_98.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/interior/walls/walls_99.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/interior/walls/walls_99.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/props/props_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/props/props_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ball/basketball_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ball/basketball_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ball/basketball_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ball/basketball_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ground_elements/element_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ground_elements/element_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ground/ground_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ground/ground_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/hoop/hoop.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/hoop/hoop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_17.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_18.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_20.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/concrete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/concrete.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/dirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/dirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/sand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road_block/block_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road_block/block_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road_block/block_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road_block/block_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_17.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_18.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_19.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_20.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_21.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_22.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_23.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_24.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_25.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_26.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_27.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_28.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_29.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_30.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_31.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_32.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_33.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_34.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_35.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_36.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_37.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_38.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_39.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_40.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_41.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_42.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_43.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_44.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_45.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/water/water_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/water/water_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/placeholder/black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/door.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/placeholder/door.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/green_checked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/placeholder/green_checked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/placeholder/white.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/placeholder/white.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Flat Bar Red Fill Bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Flat Bar White Border.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Border.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Fill Bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Thumb.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/crosshair/crosshair_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/crosshair/crosshair_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/crosshair/crosshair_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/crosshair/crosshair_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/crosshair/crosshair_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/crosshair/crosshair_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/crosshair/crosshair_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/crosshair/crosshair_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_machinegun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_machinegun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_machinegunLauncher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_machinegunLauncher.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_pistol.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_rocket.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_rocket.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_rocketModern.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_rocketModern.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_shotgun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_shotgun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_sniper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_sniper.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/ammo_uzi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/ammo_uzi.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/flamethrower_long.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/flamethrower_long.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/flamethrower_short.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/flamethrower_short.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenade.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenade.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeFlash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeFlash.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeSmoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeSmoke.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeVintage.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeVintage.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knife_sharp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knife_sharp.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knife_smooth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knife_smooth.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knifeRound_sharp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knifeRound_sharp.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knifeRound_smooth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knifeRound_smooth.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/machinegun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/machinegun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/machinegunLauncher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/machinegunLauncher.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/pistol.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/pistolSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/pistolSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/rocketlauncher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/rocketlauncher.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/rocketlauncherModern.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/rocketlauncherModern.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/shotgun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/shotgun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/shotgunShort.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/shotgunShort.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/sniper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/sniper.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uzi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uzi.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziLong.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziLong.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziLongSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziLongSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/particle/fire_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/particle/fire_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_environment_tile_road_road_15.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets/environment/tile/road/road_15.png2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2552,36 +7565,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crossair_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "crosshair010",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crosshair_2.png",
+                  "image": "assets/weapon/crosshair/crosshair_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2615,8 +7599,7 @@
           "Timer": 1,
           "Color": "255;255;255",
           "Type": "",
-          "Backward": false,
-          "Forward": false,
+          "Direction": "",
           "MaxOpacity": 255
         }
       ],
@@ -2816,31 +7799,27 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/intro"
+      "referenceTo": "/layouts/game_intro"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/customisation"
+      "referenceTo": "/layouts/game_customisation_wip"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/city"
+      "referenceTo": "/layouts/game_map"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/rooms"
+      "referenceTo": "/layouts/game_room"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/functionsincludes"
+      "referenceTo": "/layouts/game_loading"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/loading"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/firstlaunch"
+      "referenceTo": "/layouts/game_firstlaunch"
     }
   ],
   "externalEvents": [
