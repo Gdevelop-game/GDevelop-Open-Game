@@ -58,7 +58,7 @@
           "parameters": [
             "sceneLoad",
             "=",
-            "\"City\""
+            "\"FirstLaunch\""
           ]
         },
         {
@@ -69,6 +69,16 @@
             "",
             "\"Loading\"",
             "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetFullScreen"
+          },
+          "parameters": [
+            "",
+            "yes",
+            ""
           ]
         }
       ]

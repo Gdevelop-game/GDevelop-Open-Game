@@ -17,6 +17,13 @@
           "include": {
             "includeConfig": 0
           },
+          "target": "WeaponWheel"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
           "target": "Foliage"
         },
         {
@@ -233,6 +240,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Global Time",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -293,7 +301,7 @@
                   "parameters": [
                     "foliage",
                     "Effect",
-                    "\"Effect\"",
+                    "\"Shadow\"",
                     "\"rotation\"",
                     "GlobalVariable(Game.globalTime.shadowTime)"
                   ]

@@ -141,6 +141,35 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "name": "fps",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "fps",
+                "Text",
+                "=",
+                "\"FPS \" + ToString(round(FPS::FPS())) +NewLine() + \"Rank \" + GlobalVariableString(System.rank)"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
       "name": "Sea",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",

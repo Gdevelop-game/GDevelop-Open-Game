@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4279352201621799,
+    "zoomFactor": 1.666876379799323,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -139,7 +139,7 @@
         "BarBottomPadding": 6,
         "BarLeftPadding": 4,
         "BarRightPadding": 4,
-        "MaxValue": 1,
+        "MaxValue": 100,
         "InitialValue": 0
       },
       "childrenContent": {
@@ -328,7 +328,7 @@
           "parameters": [
             "RedFlatBarw",
             "=",
-            "SceneLoadingProgress(GlobalVariableString(sceneLoad))",
+            "SceneLoadingProgress(GlobalVariableString(sceneLoad)) * 100",
             ""
           ]
         }
@@ -360,6 +360,14 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
