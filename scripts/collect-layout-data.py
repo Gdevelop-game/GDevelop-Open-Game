@@ -7,7 +7,7 @@
 #   To run this script, invoke it from the root of the repo as such:
 #   $ python3 scripts/collect-layout-data.py src/layouts/{scene}.json
 #   For example:
-#   $ python3 scripts/collect-layout-data.py src/layouts/city1.json
+#   $ python3 scripts/collect-layout-data.py src/layouts/city.json
 #   This will generate a new version of the file in the root of the repo.
 #   You can then open this file and use the data to your heart's content.
 #
