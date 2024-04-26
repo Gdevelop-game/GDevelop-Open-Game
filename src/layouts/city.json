@@ -39538,8 +39538,8 @@
       "name": "crosshair",
       "persistentUuid": "808484fa-24aa-4068-9347-4591d049c015",
       "width": 0,
-      "x": -210,
-      "y": 1190,
+      "x": -366,
+      "y": 1384,
       "zOrder": 12643596,
       "numberProperties": [],
       "stringProperties": [],
@@ -48099,6 +48099,36 @@
                 "=",
                 "1"
               ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "console.time();",
+                "for (var i = 0; i < 100000; i++) {",
+                "  let square = i ** 2;",
+                "}",
+                "console.timeEnd();"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
