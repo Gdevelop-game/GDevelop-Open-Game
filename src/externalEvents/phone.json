@@ -82,7 +82,7 @@
               },
               "parameters": [
                 "",
-                "phoneFrame",
+                "phone_frame",
                 "<",
                 "1"
               ]
@@ -115,7 +115,7 @@
                 "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "True"
               ]
@@ -138,10 +138,10 @@
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
-                    "phoneFrame",
+                    "phone_frame",
                     "Tween",
                     "\"phone\"",
-                    "SceneWindowHeight() - phoneFrame.Height() - 30",
+                    "SceneWindowHeight() - phone_frame.Height() - 30",
                     "\"easeOutQuad\"",
                     "0.4",
                     ""
@@ -154,7 +154,7 @@
                   "parameters": [
                     "Phone_status_bar",
                     "Sticker",
-                    "phoneFrame",
+                    "phone_frame",
                     ""
                   ]
                 },
@@ -163,7 +163,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
                   },
                   "parameters": [
-                    "phoneWallpaper",
+                    "phone_wallpaper",
                     "Animation"
                   ]
                 },
@@ -172,9 +172,9 @@
                     "value": "ChangeSprite"
                   },
                   "parameters": [
-                    "phoneWallpaper",
+                    "phone_wallpaper",
                     "=",
-                    "Random(phoneWallpaper.AnimationFrameCount() - 1)"
+                    "Random(phone_wallpaper.AnimationFrameCount() - 1)"
                   ]
                 }
               ]
@@ -217,7 +217,7 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "phoneFrame",
+                "phone_frame",
                 "Tween",
                 "\"phone\"",
                 "SceneWindowHeight() + 30",
@@ -240,7 +240,7 @@
                 "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "False"
               ]
@@ -256,7 +256,7 @@
               },
               "parameters": [
                 "",
-                "phoneFrame",
+                "phone_frame",
                 "<",
                 "1"
               ]
@@ -268,7 +268,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneIcons",
+                "phone_icon",
                 ""
               ]
             },
@@ -277,7 +277,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneMask",
+                "phone_mask",
                 ""
               ]
             },
@@ -286,7 +286,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneWallpaper",
+                "phone_wallpaper",
                 ""
               ]
             }
@@ -318,11 +318,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "phoneIcons",
+                "phone_icon",
                 "=",
-                "phoneFrame.PointX(phoneIcons.id)",
+                "phone_frame.PointX(phone_icon.id)",
                 "=",
-                "phoneFrame.PointY(phoneIcons.id)"
+                "phone_frame.PointY(phone_icon.id)"
               ]
             },
             {
@@ -330,11 +330,11 @@
                 "value": "SetCenter"
               },
               "parameters": [
-                "phoneMask",
+                "phone_mask",
                 "=",
-                "phoneFrame.CenterX()",
+                "phone_frame.CenterX()",
                 "=",
-                "phoneFrame.CenterY()"
+                "phone_frame.CenterY()"
               ]
             }
           ]
@@ -347,7 +347,7 @@
                 "value": "Tween::IsPlaying"
               },
               "parameters": [
-                "phoneFrame",
+                "phone_frame",
                 "Tween",
                 "\"phone\""
               ]
@@ -359,11 +359,11 @@
                 "value": "SetCenter"
               },
               "parameters": [
-                "phoneWallpaper",
+                "phone_wallpaper",
                 "=",
-                "phoneFrame.CenterX()",
+                "phone_frame.CenterX()",
                 "=",
-                "phoneFrame.CenterY() - 20"
+                "phone_frame.CenterY() - 20"
               ]
             }
           ]
@@ -384,8 +384,8 @@
               },
               "parameters": [
                 "",
-                "phoneWallpaper",
-                "phoneMask",
+                "phone_wallpaper",
+                "phone_mask",
                 ""
               ]
             }

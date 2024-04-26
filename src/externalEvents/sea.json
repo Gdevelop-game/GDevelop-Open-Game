@@ -12,7 +12,7 @@
             "value": "TiledSpriteObject::XOffset"
           },
           "parameters": [
-            "Water",
+            "sea_tiled_water",
             "+",
             "1"
           ]
@@ -22,7 +22,7 @@
             "value": "TiledSpriteObject::YOffset"
           },
           "parameters": [
-            "Water",
+            "sea_tiled_water",
             "+",
             "-1"
           ]
@@ -32,7 +32,7 @@
             "value": "OpacityCapability::OpacityBehavior::SetValue"
           },
           "parameters": [
-            "Water",
+            "sea_tiled_water",
             "Opacity",
             "=",
             "150"
@@ -71,7 +71,7 @@
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "Water_cover",
+                "sea_tiled_water_cover",
                 "InOnScreen",
                 "0",
                 ""
@@ -84,7 +84,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "Water",
+                "sea_tiled_water",
                 ""
               ]
             }
@@ -98,7 +98,7 @@
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
-                "Water_cover",
+                "sea_tiled_water_cover",
                 "InOnScreen",
                 "0",
                 ""
@@ -110,7 +110,7 @@
               },
               "parameters": [
                 "Water",
-                "Water",
+                "sea_tiled_water",
                 "<",
                 "1"
               ]
@@ -123,7 +123,7 @@
               },
               "parameters": [
                 "",
-                "Water",
+                "sea_tiled_water",
                 "Player.CenterX() - Water.Width() / 2",
                 "Player.CenterY() - Water.Height() / 2",
                 ""
@@ -134,7 +134,7 @@
                 "value": "ResizableCapability::ResizableBehavior::SetHeight"
               },
               "parameters": [
-                "Water",
+                "sea_tiled_water",
                 "Resizable",
                 "=",
                 "SceneWindowHeight() + 500"
@@ -145,7 +145,7 @@
                 "value": "ResizableCapability::ResizableBehavior::SetWidth"
               },
               "parameters": [
-                "Water",
+                "sea_tiled_water",
                 "Resizable",
                 "=",
                 "SceneWindowWidth() + 500"
@@ -162,7 +162,7 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Water",
+                "sea_tiled_water",
                 "=",
                 "Player.CenterX() - Water.Width() / 2",
                 "=",

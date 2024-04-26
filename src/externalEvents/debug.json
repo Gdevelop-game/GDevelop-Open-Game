@@ -98,7 +98,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "debugToggle",
+          "object": "debug_toggle",
           "conditions": [
             {
               "type": {
@@ -114,9 +114,9 @@
               },
               "parameters": [
                 "",
-                "debugText",
-                "debugToggle.X() + 40 ",
-                "debugToggle.Y() - 7",
+                "debug_text",
+                "debug_toggle.X() + 40",
+                "debug_toggle.Y() - 7",
                 "\"Debug\""
               ]
             },
@@ -125,10 +125,10 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "debugText",
+                "debug_text",
                 "Text",
                 "=",
-                "debugToggle.info"
+                "debug_toggle.info"
               ]
             }
           ]
@@ -154,7 +154,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "fps",
+                "debug_fps",
                 "Text",
                 "=",
                 "\"FPS \" + ToString(round(FPS::FPS())) +NewLine() + \"Rank \" + GlobalVariableString(System.rank)"
@@ -182,7 +182,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "debugToggle",
+                "debug_toggle",
                 "id",
                 "=",
                 "\"sea\""
@@ -200,7 +200,7 @@
                     "value": "ToggleSwitch::ToggleSwitch::IsChecked"
                   },
                   "parameters": [
-                    "debugToggle",
+                    "debug_toggle",
                     "ToggleSwitch",
                     ""
                   ]
@@ -212,7 +212,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "Water",
+                    "sea_tiled_water",
                     ""
                   ]
                 }
@@ -226,7 +226,7 @@
                     "value": "ToggleSwitch::ToggleSwitch::IsChecked"
                   },
                   "parameters": [
-                    "debugToggle",
+                    "debug_toggle",
                     "ToggleSwitch",
                     ""
                   ]
@@ -238,7 +238,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "Water"
+                    "sea_tiled_water"
                   ]
                 }
               ]
@@ -265,7 +265,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "debugToggle",
+                "debug_toggle",
                 "id",
                 "=",
                 "\"shadow\""
@@ -283,7 +283,7 @@
                     "value": "ToggleSwitch::ToggleSwitch::IsChecked"
                   },
                   "parameters": [
-                    "debugToggle",
+                    "debug_toggle",
                     "ToggleSwitch",
                     ""
                   ]
@@ -295,7 +295,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "roofTops",
+                    "building_rooftop",
                     "Effect",
                     "\"Effect\"",
                     ""
@@ -306,7 +306,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "deco",
+                    "props_decorations",
                     "Effect",
                     "\"Effect\"",
                     ""
@@ -317,7 +317,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "foliage",
+                    "props_foliage",
                     "Effect",
                     "\"Shadow\"",
                     ""
@@ -328,7 +328,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "sports_equipments_movable",
+                    "basketball",
                     "Effect",
                     "\"Shadow\"",
                     ""
@@ -339,7 +339,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "sports_equipments",
+                    "basketball_hoop",
                     "Effect",
                     "\"Shadow\"",
                     ""
@@ -350,7 +350,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "road_block",
+                    "props_roadblock",
                     "Effect",
                     "\"Shadow\"",
                     ""
@@ -366,7 +366,7 @@
                     "value": "ToggleSwitch::ToggleSwitch::IsChecked"
                   },
                   "parameters": [
-                    "debugToggle",
+                    "debug_toggle",
                     "ToggleSwitch",
                     ""
                   ]
@@ -378,7 +378,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "roofTops",
+                    "building_rooftop",
                     "Effect",
                     "\"Effect\"",
                     "yes"
@@ -389,7 +389,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "deco",
+                    "props_decorations",
                     "Effect",
                     "\"Effect\"",
                     "yes"
@@ -400,7 +400,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "foliage",
+                    "props_foliage",
                     "Effect",
                     "\"Shadow\"",
                     "yes"
@@ -411,7 +411,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "road_block",
+                    "props_roadblock",
                     "Effect",
                     "\"Shadow\"",
                     "yes"
@@ -422,7 +422,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "sports_equipments",
+                    "basketball_hoop",
                     "Effect",
                     "\"Shadow\"",
                     "yes"
@@ -433,7 +433,7 @@
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
-                    "sports_equipments_movable",
+                    "basketball",
                     "Effect",
                     "\"Shadow\"",
                     "yes"

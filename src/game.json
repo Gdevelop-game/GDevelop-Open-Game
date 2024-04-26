@@ -2535,7 +2535,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "crosshairw",
+      "name": "game_crosshair",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2604,7 +2604,7 @@
     },
     {
       "assetStoreId": "",
-      "name": "Transitions",
+      "name": "game_transition",
       "type": "PrimitiveDrawing::Drawer",
       "variables": [],
       "effects": [],
@@ -2642,10 +2642,10 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "crosshairw"
+        "objectName": "game_crosshair"
       },
       {
-        "objectName": "Transitions"
+        "objectName": "game_transition"
       }
     ]
   },
@@ -2900,6 +2900,18 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/bounce"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/fps"
     },
     {
@@ -2952,27 +2964,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/camerashake"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/timeformatter"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/button"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/bounce"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/fade"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,

@@ -143,7 +143,7 @@
                 "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Transitions",
+                "game_transition",
                 "FlashTransitionPainter",
                 "\"0;0;0\"",
                 "1.5",
@@ -263,7 +263,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Effect",
                     "\"Effect\"",
                     "\"rotation\"",
@@ -275,7 +275,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Effect",
                     "\"Effect\"",
                     "\"rotation\"",
@@ -287,7 +287,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "roofTops",
+                    "building_rooftop",
                     "Effect",
                     "\"Effect\"",
                     "\"rotation\"",
@@ -299,7 +299,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "foliage",
+                    "props_foliage",
                     "Effect",
                     "\"Shadow\"",
                     "\"rotation\"",
@@ -311,7 +311,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Effect",
                     "\"Effect\"",
                     "\"rotation\"",
@@ -323,7 +323,7 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Fences",
+                    "props_fences",
                     "Effect",
                     "\"Effect\"",
                     "\"rotation\"",

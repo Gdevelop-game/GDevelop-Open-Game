@@ -99,7 +99,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.body)"
@@ -110,7 +110,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.leg)"
@@ -121,7 +121,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.hand)"
@@ -171,11 +171,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "=",
-                "Body.PointX(\"point\" + Hand.type)",
+                "player_body.PointX(\"point\" + player_hand.type)",
                 "=",
-                "Body.PointY(\"point\" + Hand.type)"
+                "player_body.PointY(\"point\" + player_hand.type)"
               ]
             },
             {
@@ -183,11 +183,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "=",
-                "Body.PointX(\"point\" + Leg.type)",
+                "player_body.PointX(\"point\" + player_leg.type)",
                 "=",
-                "Body.PointY(\"point\" + Leg.type)"
+                "player_body.PointY(\"point\" + player_leg.type)"
               ]
             }
           ]
@@ -215,9 +215,9 @@
                 "value": "SetAngle"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "=",
-                "Hand.angle + Body.Angle()"
+                "player_hand.angle + player_body.Angle()"
               ]
             },
             {
@@ -225,9 +225,9 @@
                 "value": "SetAngle"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "=",
-                "Leg.angle + Body.Angle()"
+                "player_leg.angle + player_body.Angle()"
               ]
             }
           ]
@@ -241,7 +241,7 @@
                 "value": "DebuggerTools::ConsoleLog"
               },
               "parameters": [
-                "Body.Animation",
+                "player_body.Animation",
                 "\"info\"",
                 ""
               ]
@@ -269,7 +269,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement"
               ]
             }
@@ -284,7 +284,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "!=",
                     "\"phoneHold\""
@@ -313,7 +313,7 @@
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "Animation",
                         "=",
                         "\"walk\""
@@ -340,7 +340,7 @@
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "Animation",
                         "=",
                         "\"run\""
@@ -362,7 +362,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement"
               ]
             },
@@ -379,7 +379,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -395,7 +395,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "True"
               ]
@@ -407,7 +407,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"phoneHold\""
@@ -423,7 +423,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "False"
               ]
@@ -441,7 +441,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -481,7 +481,7 @@
                 "value": "ResetObjectTimer"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "\"switchWalkAngle\""
               ]
             }
@@ -501,7 +501,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"run\""
@@ -512,7 +512,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"walk\""
@@ -545,10 +545,10 @@
                     "value": "CompareObjectTimer"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "\"switchWalkAngle\"",
                     ">=",
-                    "Body.TopDownMovement::Speed() / 1000"
+                    "player_body.TopDownMovement::Speed() / 1000"
                   ]
                 },
                 {
@@ -564,12 +564,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
                     "\"hand\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -578,12 +578,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
                     "\"leg\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -592,7 +592,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDelay"
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDelay"
                   ]
                 },
                 {
@@ -600,7 +600,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "angle",
                     "+",
                     "180"
@@ -611,7 +611,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "angle",
                     "+",
                     "180"
@@ -622,12 +622,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
                     "\"hand\"",
                     "35",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -636,12 +636,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
                     "\"leg\"",
                     "20",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -650,7 +650,7 @@
                     "value": "ResetObjectTimer"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "\"switchWalkAngle\""
                   ]
                 }
@@ -680,7 +680,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -693,12 +693,12 @@
                 "value": "Tween::TweenBehavior::AddObjectWidthTween2"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "Tween",
-                "\"leg\" + Body.Animation",
+                "\"leg\" + player_body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
               ]
             },
@@ -707,12 +707,12 @@
                 "value": "Tween::TweenBehavior::AddObjectWidthTween2"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "Tween",
-                "\"hand\" + Body.Animation",
+                "\"hand\" + player_body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
               ]
             }
@@ -745,7 +745,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"phoneHold\""
@@ -758,10 +758,10 @@
                 "value": "TopDownMovementBehavior::MaxSpeed"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement",
                 "=",
-                "Body.Movement.TopDownMovement.walk.maxSpeed - 200"
+                "player_body.Movement.TopDownMovement.walk.maxSpeed - 200"
               ]
             }
           ],
@@ -774,7 +774,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "type",
                     "=",
                     "\"R\""
@@ -787,12 +787,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
-                    "\"hand\" + Body.Animation",
+                    "\"hand\" + player_body.Animation",
                     "35",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -801,9 +801,9 @@
                     "value": "SetAngle"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "=",
-                    "Body.Angle()"
+                    "player_body.Angle()"
                   ]
                 }
               ]
@@ -816,7 +816,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "type",
                     "=",
                     "\"L\""
@@ -829,12 +829,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
-                    "\"hand\" + Body.Animation",
+                    "\"hand\" + player_body.Animation",
                     "0",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 }
@@ -860,7 +860,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -876,10 +876,10 @@
                         "value": "CompareObjectTimer"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "\"switchWalkAngle\"",
                         ">=",
-                        "Body.TopDownMovement::Speed() / Body.Movement.TopDownMovement.walk.shuffleSwitchTime"
+                        "player_body.TopDownMovement::Speed() / player_body.Movement.TopDownMovement.walk.shuffleSwitchTime"
                       ]
                     },
                     {
@@ -895,12 +895,12 @@
                         "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "Tween",
                         "\"leg\"",
                         "0",
                         "\"easeInQuad\"",
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                         ""
                       ]
                     },
@@ -909,7 +909,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDelay"
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDelay"
                       ]
                     },
                     {
@@ -917,7 +917,7 @@
                         "value": "ModVarObjet"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "angle",
                         "+",
                         "180"
@@ -928,12 +928,12 @@
                         "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "Tween",
                         "\"leg\"",
                         "20",
                         "\"easeOutQuad\"",
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                         ""
                       ]
                     },
@@ -942,7 +942,7 @@
                         "value": "ResetObjectTimer"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "\"switchWalkAngle\""
                       ]
                     }
@@ -976,7 +976,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -987,12 +987,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
-                    "\"leg\" + Body.Animation",
+                    "\"leg\" + player_body.Animation",
                     "0",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 }
@@ -1042,9 +1042,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "=",
-                    "Body.ZOrder() - 1"
+                    "player_body.ZOrder() - 1"
                   ]
                 },
                 {
@@ -1052,9 +1052,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "=",
-                    "Hand.ZOrder() - 1"
+                    "player_hand.ZOrder() - 1"
                   ]
                 }
               ]
@@ -1096,7 +1096,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Camera.active",
                 "True"
               ]
@@ -1109,7 +1109,7 @@
               },
               "parameters": [
                 "",
-                "Body",
+                "player_body",
                 "",
                 "\"\"",
                 ""
@@ -1181,7 +1181,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -1210,7 +1210,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -1321,7 +1321,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Static",
                 ""
               ]
@@ -1331,8 +1331,8 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "trash_movable",
-                "Body",
+                "props_moveable",
+                "player_body",
                 ""
               ]
             },
@@ -1341,7 +1341,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "trash_movable",
+                "props_moveable",
                 "Static",
                 ""
               ]
@@ -1371,7 +1371,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "kitchen",
                 ""
               ]
@@ -1690,7 +1690,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Movement.canMove",
                 "True"
               ]
@@ -1753,8 +1753,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() - 90",
+                        "player_body",
+                        "player_body.Angle() - 90",
                         "200",
                         ""
                       ]
@@ -1801,8 +1801,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() + 90",
+                        "player_body",
+                        "player_body.Angle() + 90",
                         "200",
                         ""
                       ]
@@ -1849,8 +1849,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle()",
+                        "player_body",
+                        "player_body.Angle()",
                         "200",
                         ""
                       ]
@@ -1897,8 +1897,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() + 180",
+                        "player_body",
+                        "player_body.Angle() + 180",
                         "200",
                         ""
                       ]
@@ -1914,7 +1914,7 @@
                         "value": "RotateTowardPosition"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "CursorX()",
                         "CursorY()",
                         "0",
@@ -1985,7 +1985,7 @@
                         "value": "TopDownMovementBehavior::SimulateLeftKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2031,7 +2031,7 @@
                         "value": "TopDownMovementBehavior::SimulateRightKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2077,7 +2077,7 @@
                         "value": "TopDownMovementBehavior::SimulateUpKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2123,7 +2123,7 @@
                         "value": "TopDownMovementBehavior::SimulateDownKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2198,7 +2198,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"walk\""
@@ -2211,10 +2211,10 @@
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.maxSpeed"
+                    "player_body.Movement.TopDownMovement.walk.maxSpeed"
                   ]
                 },
                 {
@@ -2222,10 +2222,10 @@
                     "value": "TopDownMovementBehavior::Deceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.Deceleration"
+                    "player_body.Movement.TopDownMovement.walk.Deceleration"
                   ]
                 },
                 {
@@ -2233,10 +2233,10 @@
                     "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.Acceleration"
+                    "player_body.Movement.TopDownMovement.walk.Acceleration"
                   ]
                 }
               ]
@@ -2249,7 +2249,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"run\""
@@ -2262,10 +2262,10 @@
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.maxSpeed"
+                    "player_body.Movement.TopDownMovement.run.maxSpeed"
                   ]
                 },
                 {
@@ -2273,10 +2273,10 @@
                     "value": "TopDownMovementBehavior::Deceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.Deceleration"
+                    "player_body.Movement.TopDownMovement.run.Deceleration"
                   ]
                 },
                 {
@@ -2284,10 +2284,10 @@
                     "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.Acceleration"
+                    "player_body.Movement.TopDownMovement.run.Acceleration"
                   ]
                 }
               ]
@@ -2336,7 +2336,7 @@
               },
               "parameters": [
                 "",
-                "reloading"
+                "weapon_reloading"
               ]
             }
           ],
@@ -2362,7 +2362,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "reloading"
+                "weapon_reloading"
               ]
             },
             {
@@ -3070,7 +3070,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "weaponholding"
+                "weapon_holding"
               ]
             }
           ],
@@ -3125,7 +3125,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "AmmoText"
+                    "debug_ammo_text"
                   ]
                 },
                 {
@@ -3133,7 +3133,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 },
                 {
@@ -3141,7 +3141,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -3188,7 +3188,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3197,7 +3197,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun1\""
               ]
@@ -3254,7 +3254,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3263,7 +3263,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "4"
                   ]
@@ -3493,7 +3493,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3502,7 +3502,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun2\""
               ]
@@ -3584,7 +3584,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3593,7 +3593,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -3824,7 +3824,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3833,7 +3833,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun3\""
               ]
@@ -3890,7 +3890,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3899,7 +3899,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "3"
                   ]
@@ -4268,7 +4268,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -4277,7 +4277,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun4\""
               ]
@@ -4334,7 +4334,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -4343,7 +4343,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "1"
                   ]
@@ -4682,7 +4682,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4738,7 +4738,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "reloading",
+                    "weapon_reloading",
                     ""
                   ]
                 }
@@ -4781,7 +4781,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4813,7 +4813,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4850,7 +4850,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -4859,7 +4859,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun5\""
               ]
@@ -4916,7 +4916,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -4925,7 +4925,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "2"
                   ]
@@ -5294,7 +5294,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -5350,7 +5350,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "reloading",
+                    "weapon_reloading",
                     ""
                   ]
                 },
@@ -5403,7 +5403,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ],
@@ -5475,7 +5475,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -5512,7 +5512,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -5521,7 +5521,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: mele1\""
               ]
@@ -5578,7 +5578,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -5587,7 +5587,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -5882,7 +5882,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -5891,7 +5891,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: mele2\""
               ]
@@ -5977,7 +5977,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -6584,7 +6584,7 @@
               },
               "parameters": [
                 "bullet",
-                "Fences",
+                "props_fences",
                 "15",
                 ""
               ]
@@ -6619,7 +6619,7 @@
               },
               "parameters": [
                 "bullet",
-                "Fences",
+                "props_fences",
                 "",
                 "",
                 ""
@@ -6885,7 +6885,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun1_ammo)"
               ]
@@ -6913,7 +6913,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun2_ammo)"
               ]
@@ -6941,7 +6941,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Gas: \" + GlobalVariableString(Gun3_ammo)"
               ]
@@ -6969,7 +6969,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun4_ammo)"
               ]
@@ -6997,7 +6997,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun5_ammo)"
               ]
@@ -7025,7 +7025,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Energy: \" + GlobalVariableString(mele1_energy)"
               ]
@@ -7311,7 +7311,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "Wheel_info",
+                "wheel_info",
                 "=",
                 "\"Wheel using: \" + GlobalVariableString(Wheel_stuff.wheel)"
               ]

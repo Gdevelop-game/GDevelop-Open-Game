@@ -110,7 +110,7 @@
                         "value": "TopDownMovementBehavior::MaxSpeed"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement",
                         "=",
                         "1000"
@@ -121,7 +121,7 @@
                         "value": "TopDownMovementBehavior::Deceleration"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement",
                         "=",
                         "9000"
@@ -132,7 +132,7 @@
                         "value": "TopDownMovementBehavior::Acceleration"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement",
                         "=",
                         "9000"

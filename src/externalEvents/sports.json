@@ -33,7 +33,7 @@
                 "value": "Bounce::Bounce::BounceOff"
               },
               "parameters": [
-                "sports_equipments_movable",
+                "basketball",
                 "Bounce",
                 "Static",
                 ""
@@ -44,9 +44,9 @@
                 "value": "Bounce::Bounce::BounceOff"
               },
               "parameters": [
-                "sports_equipments_movable",
+                "basketball",
                 "Bounce",
-                "Body",
+                "player_body",
                 ""
               ]
             }
@@ -72,8 +72,8 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "Body",
-                "sports_equipments_movable",
+                "player_body",
+                "basketball",
                 "",
                 "",
                 ""
@@ -92,8 +92,8 @@
                 "value": "AddForceAL"
               },
               "parameters": [
-                "sports_equipments_movable",
-                "Body.Angle()",
+                "basketball",
+                "player_body.Angle()",
                 "120",
                 "1"
               ]
@@ -103,7 +103,7 @@
                 "value": "PlayAnimation"
               },
               "parameters": [
-                "sports_equipments_movable"
+                "basketball"
               ]
             }
           ],
@@ -137,7 +137,7 @@
                     "value": "Arreter"
                   },
                   "parameters": [
-                    "sports_equipments_movable"
+                    "basketball"
                   ]
                 }
               ]
@@ -164,7 +164,7 @@
                 "value": "Arret"
               },
               "parameters": [
-                "sports_equipments_movable"
+                "basketball"
               ]
             }
           ],
@@ -174,7 +174,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
               },
               "parameters": [
-                "sports_equipments_movable",
+                "basketball",
                 "Animation"
               ]
             }
@@ -189,7 +189,7 @@
                 "value": "Arret"
               },
               "parameters": [
-                "sports_equipments_movable"
+                "basketball"
               ]
             }
           ],
@@ -199,7 +199,7 @@
                 "value": "Rotate"
               },
               "parameters": [
-                "sports_equipments_movable",
+                "basketball",
                 "100",
                 ""
               ]

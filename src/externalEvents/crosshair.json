@@ -42,7 +42,7 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "crosshair",
+                "player_crosshair",
                 "=",
                 "10000000"
               ]
@@ -78,7 +78,7 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "crosshair",
+                "player_crosshair",
                 "=",
                 "MouseX(\"\", 0)",
                 "=",
@@ -90,8 +90,8 @@
                 "value": "RotateTowardAngle"
               },
               "parameters": [
-                "crosshair",
-                "Body.Angle()",
+                "player_crosshair",
+                "player_body.Angle()",
                 "0",
                 ""
               ]
@@ -136,7 +136,7 @@
                 "value": "AddForceAL"
               },
               "parameters": [
-                "crosshair",
+                "player_crosshair",
                 "Gamepads::StickAngle(1, \"Right\")",
                 "10",
                 "0"
