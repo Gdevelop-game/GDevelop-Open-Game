@@ -110,13 +110,20 @@ except KeyError:
 print("Time to iterate!")
 
 try:
+    changedThings = False
+
     for instance in instances:
         if instance["name"] in values:
-            instance["zOrder"] = values[instance["name"]]
-            print('Changed the zOrder of %s with uuid %s to %s' % (instance["name"], instance["persistentUuid"], values[instance["name"]]))
+            if not instance["zOrder"] == values[instance["name"]]:
+                instance["zOrder"] = values[instance["name"]]
+                changedThings = True
+                print('Changed the zOrder of %s with uuid %s to %s' % (instance["name"], instance["persistentUuid"], values[instance["name"]]))
         else:
             print('Instance of %s and uuid %s did not have a set value and was not changed.' % (instance["name"], instance["persistentUuid"]))
     
+    if not changedThings:
+        print('Nothing changed! Exiting...')
+        exit()
 
 except Exception as e:
     print('An exception occured while iterating through instances.')
