@@ -2589,15 +2589,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2651,15 +2642,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun2",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2701,15 +2683,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun3",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -2765,15 +2738,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun4",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2825,15 +2789,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun5",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -2889,15 +2844,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2951,15 +2897,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -3011,15 +2948,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele2",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -3444,28 +3372,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun1",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun1",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3773,28 +3679,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun2",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun2",
-                    "=",
-                    "70000"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarGlobal"
@@ -4167,28 +4051,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun3",
-                    "Player.PointX(\"f_t_collision\")",
-                    "Player.PointY(\"f_t_collision\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun3",
-                    "=",
-                    "70000"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarGlobal"
@@ -4650,28 +4512,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun4",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun4",
-                    "=",
-                    "70000"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarGlobal"
@@ -5254,38 +5094,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun5",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "gun5",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun5",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -5833,28 +5641,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "mele1",
-                    "Player.PointX(\"hitbox\")",
-                    "Player.PointY(\"hitbox\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "mele1",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -6267,28 +6053,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "mele2",
-                    "Player.PointX(\"Center\")",
-                    "Player.PointY(\"Center\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "mele2",
-                    "=",
-                    "70000"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarGlobal"
