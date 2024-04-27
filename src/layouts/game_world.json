@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4838624738782947,
+    "zoomFactor": 0.09527349998529244,
     "windowMask": false
   },
   "objectsGroups": [
@@ -309,7 +309,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -328,7 +328,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": false
+                      "value": true
                     },
                     {
                       "folded": true,
@@ -14051,7 +14051,7 @@
       "width": 1680,
       "x": -910,
       "y": 350,
-      "zOrder": 12643670,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14553,14 +14553,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 420,
+      "height": 490,
       "keepRatio": true,
       "layer": "",
       "name": "sand_tiled_2",
       "persistentUuid": "a7b2b557-d4e4-4f5b-9fa8-6b43642ed1db",
       "width": 140,
       "x": -280,
-      "y": 700,
+      "y": 630,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -19445,13 +19445,13 @@
       ],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 200,
           "angularMaxSpeed": 200,
           "deceleration": 200,
           "ignoreDefaultControls": true,
           "maxSpeed": 200,
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "allowDiagonals": true,
           "angleOffset": 0,
           "customIsometryAngle": 30,
@@ -21898,35 +21898,20 @@
           "effectType": "LightNight",
           "name": "LightNight",
           "doubleParameters": {
-            "opacity": 0.5
+            "opacity": 0
           },
           "stringParameters": {},
           "booleanParameters": {}
         },
         {
-          "effectType": "OldFilm",
-          "name": "Vignetting",
+          "effectType": "KawaseBlur",
+          "name": "weaponbar",
           "doubleParameters": {
-            "animationFrequency": 0,
-            "noise": 0,
-            "noiseSize": 0,
-            "scratch": 0,
-            "scratchDensity": 0.3,
-            "scratchWidth": 1,
-            "sepia": 0,
-            "vignetting": 0.3,
-            "vignettingAlpha": 0.5,
-            "vignettingBlur": 0.3
-          },
-          "stringParameters": {},
-          "booleanParameters": {}
-        },
-        {
-          "effectType": "TiltShift",
-          "name": "weaponwhe",
-          "doubleParameters": {
-            "blur": 0,
-            "gradientBlur": 0
+            "blur": 0.5,
+            "padding": 0,
+            "pixelizeX": 0,
+            "pixelizeY": 0,
+            "quality": 3
           },
           "stringParameters": {},
           "booleanParameters": {}
@@ -21982,23 +21967,7 @@
       "renderingType": "",
       "visibility": true,
       "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     }
   ],
   "behaviorsSharedData": [
