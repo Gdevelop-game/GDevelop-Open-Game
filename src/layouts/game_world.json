@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.09527349998529244,
+    "zoomFactor": 0.14662629757786494,
     "windowMask": false
   },
   "objectsGroups": [
@@ -19273,7 +19273,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "Movement",
           "type": "structure",
           "children": [
@@ -19290,13 +19289,13 @@
                       "folded": true,
                       "name": "Acceleration",
                       "type": "number",
-                      "value": 600
+                      "value": 5000
                     },
                     {
                       "folded": true,
                       "name": "Deceleration",
                       "type": "number",
-                      "value": 1000
+                      "value": 5000
                     },
                     {
                       "folded": true,
@@ -19333,13 +19332,13 @@
                       "folded": true,
                       "name": "Acceleration",
                       "type": "number",
-                      "value": 400
+                      "value": 5000
                     },
                     {
                       "folded": true,
                       "name": "Deceleration",
                       "type": "number",
-                      "value": 800
+                      "value": 5000
                     },
                     {
                       "folded": true,
@@ -19445,10 +19444,10 @@
       ],
       "behaviors": [
         {
+          "angularMaxSpeed": 500,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 200,
-          "angularMaxSpeed": 200,
           "deceleration": 200,
           "ignoreDefaultControls": true,
           "maxSpeed": 200,
@@ -21491,17 +21490,251 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Links",
+      "folded": true,
+      "name": "IntroZoom",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Game"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "0.35",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"introSepia\"",
+                "\"opacity\"",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"brightness\"",
+                "\"brightness\"",
+                "0.7"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.35",
+                "",
+                "\"elastic\"",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"introSepia\"",
+                "\"opacity\"",
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"brightness\"",
+                "\"brightness\"",
+                "0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.5",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"introSepia\"",
+                "\"opacity\"",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"brightness\"",
+                "\"brightness\"",
+                "0.9"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "0.75",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"introSepia\"",
+                "\"opacity\"",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"brightness\"",
+                "\"brightness\"",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenCameraZoom2"
+              },
+              "parameters": [
+                "",
+                "\"introZoom\"",
+                "1",
+                "",
+                "\"elastic\"",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ToggleGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Game.intro"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Game.Camera.Zoom",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectBooleanParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"introSepia\"",
+                "\"opacity\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
@@ -21511,6 +21744,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "ZOrders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -21626,6 +21860,16 @@
                 "=",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Beach_Sand",
+                "=",
+                "1"
+              ]
             }
           ]
         }
@@ -21637,220 +21881,17 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "IntroZoom",
+      "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ZoomCamera"
-              },
-              "parameters": [
-                "",
-                "0.35",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetLayerEffectParameter"
-              },
-              "parameters": [
-                "",
-                "",
-                "\"Vignetting\"",
-                "\"sepia\"",
-                "0.3"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"introZoom\"",
-                "0.35",
-                "",
-                "\"elastic\"",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetLayerEffectParameter"
-              },
-              "parameters": [
-                "",
-                "",
-                "\"Vignetting\"",
-                "\"sepia\"",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"introZoom\"",
-                "0.5",
-                "",
-                "\"elastic\"",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetLayerEffectParameter"
-              },
-              "parameters": [
-                "",
-                "",
-                "\"Vignetting\"",
-                "\"sepia\"",
-                "0.1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"introZoom\"",
-                "0.75",
-                "",
-                "\"elastic\"",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetLayerEffectParameter"
-              },
-              "parameters": [
-                "",
-                "",
-                "\"Vignetting\"",
-                "\"sepia\"",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenCameraZoom2"
-              },
-              "parameters": [
-                "",
-                "\"introZoom\"",
-                "1",
-                "",
-                "\"elastic\"",
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ToggleGlobalVariableAsBoolean"
-              },
-              "parameters": [
-                "Game.intro"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "Game.Camera.Zoom",
-                "=",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "console.time();",
-                "for (var i = 0; i < 100000; i++) {",
-                "  let square = i ** 2;",
-                "}",
-                "console.timeEnd();"
-              ],
-              "parameterObjects": "",
-              "useStrict": true,
-              "eventsSheetExpanded": false
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Game"
         }
       ],
       "parameters": []
@@ -21895,8 +21936,30 @@
       ],
       "effects": [
         {
+          "effectType": "Sepia",
+          "name": "introSepia",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "KawaseBlur",
+          "name": "weaponBar",
+          "doubleParameters": {
+            "blur": 0.5,
+            "padding": 0,
+            "pixelizeX": 0,
+            "pixelizeY": 0,
+            "quality": 3
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
           "effectType": "LightNight",
-          "name": "LightNight",
+          "name": "nightDayCycle",
           "doubleParameters": {
             "opacity": 0
           },
@@ -21904,14 +21967,10 @@
           "booleanParameters": {}
         },
         {
-          "effectType": "KawaseBlur",
-          "name": "weaponbar",
+          "effectType": "Brightness",
+          "name": "brightness",
           "doubleParameters": {
-            "blur": 0.5,
-            "padding": 0,
-            "pixelizeX": 0,
-            "pixelizeY": 0,
-            "quality": 3
+            "brightness": 0
           },
           "stringParameters": {},
           "booleanParameters": {}

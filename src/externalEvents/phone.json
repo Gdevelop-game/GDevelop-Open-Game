@@ -23,7 +23,7 @@
               "parameters": [
                 "phone_time",
                 "=",
-                "TimeFormatter::SecondsToHHMMSS(TimeFromStart())"
+                "TimeFormatter::SecondsToHHMMSS(GlobalVariable(Game.globalTime.shadowTime.value))"
               ]
             }
           ]
