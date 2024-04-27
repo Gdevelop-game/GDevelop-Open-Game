@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.14662629757786494,
+    "zoomFactor": 0.45280980919801384,
     "windowMask": false
   },
   "objectsGroups": [
@@ -19444,9 +19444,9 @@
       ],
       "behaviors": [
         {
-          "angularMaxSpeed": 500,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "angularMaxSpeed": 500,
           "acceleration": 200,
           "deceleration": 200,
           "ignoreDefaultControls": true,
@@ -21490,7 +21490,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "IntroZoom",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -21728,6 +21727,18 @@
                 "\"opacity\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetLayerEffectBooleanParameter"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"brightness\"",
+                "\"opacity\"",
+                ""
+              ]
             }
           ]
         },
@@ -21744,7 +21755,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "ZOrders",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -22007,7 +22017,7 @@
       "isLocked": false,
       "name": "Fade",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": []
     },
