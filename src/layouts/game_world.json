@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.45280980919801384,
+    "zoomFactor": 0.19762386410678406,
     "windowMask": false
   },
   "objectsGroups": [
@@ -11364,13 +11364,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "player_crosshair",
       "persistentUuid": "808484fa-24aa-4068-9347-4591d049c015",
       "width": 0,
-      "x": -366,
-      "y": 1384,
-      "zOrder": 12643596,
+      "x": 808,
+      "y": 630,
+      "zOrder": 126,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14973,8 +14973,28 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
-      "behaviors": [],
+      "effects": [
+        {
+          "effectType": "BlendingMode",
+          "name": "Effect",
+          "doubleParameters": {
+            "blendmode": 2,
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen",
+          "MarginTop": 0,
+          "MarginBottom": 0,
+          "MarginLeft": 0,
+          "MarginRight": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -22083,6 +22103,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Sticker",
