@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World",
   "lastChangeTimeStamp": 0,
   "name": "WeaponWheel",
   "events": [
@@ -21,7 +21,7 @@
                 "value": "ResizableCapability::ResizableBehavior::SetWidth"
               },
               "parameters": [
-                "bar",
+                "weapon_bar",
                 "Resizable",
                 "=",
                 "SceneWindowWidth() + 4"
@@ -107,7 +107,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "WeaponWheel",
+                    "Weapon_Bar",
                     ""
                   ]
                 },
@@ -145,7 +145,7 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "bar",
+                    "weapon_bar",
                     "Tween",
                     "\"bar\"",
                     "255",
@@ -247,7 +247,7 @@
                     "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
                   },
                   "parameters": [
-                    "bar",
+                    "weapon_bar",
                     "Tween",
                     "\"bar\"",
                     "0",
@@ -269,7 +269,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "WeaponWheel"
+                    "Weapon_Bar"
                   ]
                 }
               ]
@@ -290,7 +290,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "",
                 "",
                 ""
@@ -303,7 +303,7 @@
                 "value": "Tween::TweenBehavior::AddObjectScaleTween3"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Tween",
                 "\"weaponWheelHoverScale\"",
                 "1",
@@ -318,7 +318,7 @@
                 "value": "Tween::TweenBehavior::AddObjectAngleTween2"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Tween",
                 "\"weaponWheelHoverRotate\"",
                 "0.8",
@@ -337,7 +337,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "",
                 "",
                 ""
@@ -356,7 +356,7 @@
                 "value": "Tween::TweenBehavior::AddObjectScaleTween3"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Tween",
                 "\"weaponWheelHoverScale\"",
                 "1.2",
@@ -371,7 +371,7 @@
                 "value": "Tween::TweenBehavior::AddObjectAngleTween2"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Tween",
                 "\"weaponWheelHoverRotate\"",
                 "-45",
@@ -421,9 +421,9 @@
               },
               "parameters": [
                 "",
-                "icons",
+                "weapon_icon",
                 "weaponWheelSticker.CenterX() + Player.WeaponWheel.adder",
-                "bar.CenterY()",
+                "weapon_bar.CenterY()",
                 "\"UI\""
               ]
             },
@@ -434,7 +434,7 @@
               "parameters": [
                 "Player.WeaponWheel.adder",
                 "+",
-                "icons.Width() + 50"
+                "weapon_icon.Width() + 50"
               ]
             },
             {
@@ -456,7 +456,7 @@
                 "weaponWheelSticker",
                 "Resizable",
                 "=",
-                "bar.Height()"
+                "weapon_bar.Height()"
               ]
             },
             {
@@ -464,7 +464,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Animation",
                 "=",
                 "VariableString(i)"
@@ -485,7 +485,7 @@
                 "value": "Sticker::Sticker::Stick"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "Sticker",
                 "weaponWheelSticker",
                 ""
@@ -539,7 +539,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "WeaponWheel"
+                "Weapon_Bar"
               ]
             }
           ]
@@ -552,7 +552,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "icons",
+                "weapon_icon",
                 "=",
                 "",
                 ""
@@ -576,7 +576,7 @@
               "parameters": [
                 "Player.Weapons.Selected",
                 "=",
-                "icons.Animation::Name()"
+                "weapon_icon.Animation::Name()"
               ]
             },
             {
@@ -584,7 +584,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "Text",
                 "=",
                 "Player.Weapons.Selected"

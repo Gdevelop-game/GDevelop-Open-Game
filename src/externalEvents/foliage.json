@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World",
   "lastChangeTimeStamp": 0,
   "name": "Foliage",
   "events": [
@@ -38,20 +38,8 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Body",
-                    "foliage",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "foliage",
+                    "player_body",
+                    "props_foliage",
                     "",
                     "",
                     ""
@@ -76,7 +64,7 @@
                     "value": "Animation"
                   },
                   "parameters": [
-                    "foliage",
+                    "props_foliage",
                     "!=",
                     "3"
                   ]
@@ -90,8 +78,8 @@
                   "parameters": [
                     "",
                     "green_leaves_particle",
-                    "foliage.X()",
-                    "foliage.Y()",
+                    "props_foliage.X()",
+                    "props_foliage.Y()",
                     ""
                   ]
                 },
@@ -102,7 +90,7 @@
                   "parameters": [
                     "green_leaves_particle",
                     "=",
-                    "foliage.ZOrder() - 1"
+                    "props_foliage.ZOrder() - 1"
                   ]
                 }
               ]
@@ -115,7 +103,7 @@
                     "value": "Animation"
                   },
                   "parameters": [
-                    "foliage",
+                    "props_foliage",
                     "=",
                     "3"
                   ]
@@ -129,8 +117,8 @@
                   "parameters": [
                     "",
                     "brown_leaves_particle",
-                    "foliage.X()",
-                    "foliage.Y()",
+                    "props_foliage.X()",
+                    "props_foliage.Y()",
                     ""
                   ]
                 },
@@ -141,7 +129,7 @@
                   "parameters": [
                     "green_leaves_particle",
                     "=",
-                    "foliage.ZOrder() - 1"
+                    "props_foliage.ZOrder() - 1"
                   ]
                 }
               ]

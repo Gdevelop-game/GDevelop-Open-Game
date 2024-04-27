@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World",
   "lastChangeTimeStamp": 0,
   "name": "Player",
   "events": [
@@ -99,7 +99,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.body)"
@@ -110,7 +110,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.leg)"
@@ -121,7 +121,7 @@
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "Animation",
                 "=",
                 "GlobalVariable(Player.Customisation.hand)"
@@ -171,11 +171,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "=",
-                "Body.PointX(\"point\" + Hand.type)",
+                "player_body.PointX(\"point\" + player_hand.type)",
                 "=",
-                "Body.PointY(\"point\" + Hand.type)"
+                "player_body.PointY(\"point\" + player_hand.type)"
               ]
             },
             {
@@ -183,11 +183,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "=",
-                "Body.PointX(\"point\" + Leg.type)",
+                "player_body.PointX(\"point\" + player_leg.type)",
                 "=",
-                "Body.PointY(\"point\" + Leg.type)"
+                "player_body.PointY(\"point\" + player_leg.type)"
               ]
             }
           ]
@@ -215,9 +215,9 @@
                 "value": "SetAngle"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "=",
-                "Hand.angle + Body.Angle()"
+                "player_hand.angle + player_body.Angle()"
               ]
             },
             {
@@ -225,9 +225,9 @@
                 "value": "SetAngle"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "=",
-                "Leg.angle + Body.Angle()"
+                "player_leg.angle + player_body.Angle()"
               ]
             }
           ]
@@ -241,7 +241,7 @@
                 "value": "DebuggerTools::ConsoleLog"
               },
               "parameters": [
-                "Body.Animation",
+                "player_body.Animation",
                 "\"info\"",
                 ""
               ]
@@ -269,7 +269,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement"
               ]
             }
@@ -284,7 +284,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "!=",
                     "\"phoneHold\""
@@ -313,7 +313,7 @@
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "Animation",
                         "=",
                         "\"walk\""
@@ -340,7 +340,7 @@
                         "value": "ModVarObjetTxt"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "Animation",
                         "=",
                         "\"run\""
@@ -362,7 +362,7 @@
                 "value": "TopDownMovementBehavior::IsMoving"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement"
               ]
             },
@@ -379,7 +379,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -395,7 +395,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "True"
               ]
@@ -407,7 +407,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"phoneHold\""
@@ -423,7 +423,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "False"
               ]
@@ -441,7 +441,7 @@
                 "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -481,7 +481,7 @@
                 "value": "ResetObjectTimer"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "\"switchWalkAngle\""
               ]
             }
@@ -501,7 +501,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"run\""
@@ -512,7 +512,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"walk\""
@@ -545,10 +545,10 @@
                     "value": "CompareObjectTimer"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "\"switchWalkAngle\"",
                     ">=",
-                    "Body.TopDownMovement::Speed() / 1000"
+                    "player_body.TopDownMovement::Speed() / 1000"
                   ]
                 },
                 {
@@ -564,12 +564,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
                     "\"hand\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -578,12 +578,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
                     "\"leg\"",
                     "0",
                     "\"easeInQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -592,7 +592,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDelay"
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDelay"
                   ]
                 },
                 {
@@ -600,7 +600,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "angle",
                     "+",
                     "180"
@@ -611,7 +611,7 @@
                     "value": "ModVarObjet"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "angle",
                     "+",
                     "180"
@@ -622,12 +622,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
                     "\"hand\"",
                     "35",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -636,12 +636,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
                     "\"leg\"",
                     "20",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement[Body.Animation].shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement[player_body.Animation].shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -650,7 +650,7 @@
                     "value": "ResetObjectTimer"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "\"switchWalkAngle\""
                   ]
                 }
@@ -680,7 +680,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"idle\""
@@ -693,12 +693,12 @@
                 "value": "Tween::TweenBehavior::AddObjectWidthTween2"
               },
               "parameters": [
-                "Leg",
+                "player_leg",
                 "Tween",
-                "\"leg\" + Body.Animation",
+                "\"leg\" + player_body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
               ]
             },
@@ -707,12 +707,12 @@
                 "value": "Tween::TweenBehavior::AddObjectWidthTween2"
               },
               "parameters": [
-                "Hand",
+                "player_hand",
                 "Tween",
-                "\"hand\" + Body.Animation",
+                "\"hand\" + player_body.Animation",
                 "0",
                 "\"easeOutQuad\"",
-                "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                 ""
               ]
             }
@@ -745,7 +745,7 @@
                 "value": "VarObjetTxt"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Animation",
                 "=",
                 "\"phoneHold\""
@@ -758,10 +758,10 @@
                 "value": "TopDownMovementBehavior::MaxSpeed"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "TopDownMovement",
                 "=",
-                "Body.Movement.TopDownMovement.walk.maxSpeed - 200"
+                "player_body.Movement.TopDownMovement.walk.maxSpeed - 200"
               ]
             }
           ],
@@ -774,7 +774,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "type",
                     "=",
                     "\"R\""
@@ -787,12 +787,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
-                    "\"hand\" + Body.Animation",
+                    "\"hand\" + player_body.Animation",
                     "35",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 },
@@ -801,9 +801,9 @@
                     "value": "SetAngle"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "=",
-                    "Body.Angle()"
+                    "player_body.Angle()"
                   ]
                 }
               ]
@@ -816,7 +816,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "type",
                     "=",
                     "\"L\""
@@ -829,12 +829,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "Tween",
-                    "\"hand\" + Body.Animation",
+                    "\"hand\" + player_body.Animation",
                     "0",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 }
@@ -860,7 +860,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -876,10 +876,10 @@
                         "value": "CompareObjectTimer"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "\"switchWalkAngle\"",
                         ">=",
-                        "Body.TopDownMovement::Speed() / Body.Movement.TopDownMovement.walk.shuffleSwitchTime"
+                        "player_body.TopDownMovement::Speed() / player_body.Movement.TopDownMovement.walk.shuffleSwitchTime"
                       ]
                     },
                     {
@@ -895,12 +895,12 @@
                         "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "Tween",
                         "\"leg\"",
                         "0",
                         "\"easeInQuad\"",
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                         ""
                       ]
                     },
@@ -909,7 +909,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDelay"
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDelay"
                       ]
                     },
                     {
@@ -917,7 +917,7 @@
                         "value": "ModVarObjet"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "angle",
                         "+",
                         "180"
@@ -928,12 +928,12 @@
                         "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                       },
                       "parameters": [
-                        "Leg",
+                        "player_leg",
                         "Tween",
                         "\"leg\"",
                         "20",
                         "\"easeOutQuad\"",
-                        "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                        "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                         ""
                       ]
                     },
@@ -942,7 +942,7 @@
                         "value": "ResetObjectTimer"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "\"switchWalkAngle\""
                       ]
                     }
@@ -976,7 +976,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -987,12 +987,12 @@
                     "value": "Tween::TweenBehavior::AddObjectWidthTween2"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "Tween",
-                    "\"leg\" + Body.Animation",
+                    "\"leg\" + player_body.Animation",
                     "0",
                     "\"easeOutQuad\"",
-                    "Body.Movement.TopDownMovement.walk.shuffleTweenDuration",
+                    "player_body.Movement.TopDownMovement.walk.shuffleTweenDuration",
                     ""
                   ]
                 }
@@ -1042,9 +1042,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_hand",
                     "=",
-                    "Body.ZOrder() - 1"
+                    "player_body.ZOrder() - 1"
                   ]
                 },
                 {
@@ -1052,9 +1052,9 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "Leg",
+                    "player_leg",
                     "=",
-                    "Hand.ZOrder() - 1"
+                    "player_hand.ZOrder() - 1"
                   ]
                 }
               ]
@@ -1096,7 +1096,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Camera.active",
                 "True"
               ]
@@ -1109,13 +1109,18 @@
               },
               "parameters": [
                 "",
-                "Body",
+                "player_body",
                 "",
                 "\"\"",
                 ""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "folded": true,
@@ -1181,7 +1186,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -1210,7 +1215,7 @@
                     "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement"
                   ]
                 }
@@ -1321,8 +1326,8 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Body",
-                "Static",
+                "player_body",
+                "Game_Static",
                 ""
               ]
             },
@@ -1331,8 +1336,8 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "trash_movable",
-                "Body",
+                "props_moveable",
+                "player_body",
                 ""
               ]
             },
@@ -1341,8 +1346,8 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "trash_movable",
-                "Static",
+                "props_moveable",
+                "Game_Static",
                 ""
               ]
             }
@@ -1371,7 +1376,7 @@
                 "value": "SeparateFromObjects"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "kitchen",
                 ""
               ]
@@ -1690,7 +1695,7 @@
                 "value": "ObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Movement.canMove",
                 "True"
               ]
@@ -1753,8 +1758,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() - 90",
+                        "player_body",
+                        "player_body.Angle() - 90",
                         "200",
                         ""
                       ]
@@ -1801,8 +1806,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() + 90",
+                        "player_body",
+                        "player_body.Angle() + 90",
                         "200",
                         ""
                       ]
@@ -1849,8 +1854,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle()",
+                        "player_body",
+                        "player_body.Angle()",
                         "200",
                         ""
                       ]
@@ -1897,8 +1902,8 @@
                         "value": "AddForceAL"
                       },
                       "parameters": [
-                        "Body",
-                        "Body.Angle() + 180",
+                        "player_body",
+                        "player_body.Angle() + 180",
                         "200",
                         ""
                       ]
@@ -1914,7 +1919,7 @@
                         "value": "RotateTowardPosition"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "CursorX()",
                         "CursorY()",
                         "0",
@@ -1951,11 +1956,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        "a"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "a"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Left\"",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1965,7 +1990,7 @@
                         "value": "TopDownMovementBehavior::SimulateLeftKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -1977,11 +2002,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        "d"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "d"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Right\"",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -1991,7 +2036,7 @@
                         "value": "TopDownMovementBehavior::SimulateRightKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2003,11 +2048,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        "w"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "w"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Up\"",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -2017,7 +2082,7 @@
                         "value": "TopDownMovementBehavior::SimulateUpKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
@@ -2029,11 +2094,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyPressed"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "",
-                        "s"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "s"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Down\"",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -2043,12 +2128,41 @@
                         "value": "TopDownMovementBehavior::SimulateDownKey"
                       },
                       "parameters": [
-                        "Body",
+                        "player_body",
                         "TopDownMovement"
                       ]
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Axis_pushed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\"",
+                "\"Right\"",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DebuggerTools::ConsoleLog"
+              },
+              "parameters": [
+                "\"lol\"",
+                "\"info\"",
+                ""
               ]
             }
           ]
@@ -2089,7 +2203,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"walk\""
@@ -2102,10 +2216,10 @@
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.maxSpeed"
+                    "player_body.Movement.TopDownMovement.walk.maxSpeed"
                   ]
                 },
                 {
@@ -2113,10 +2227,10 @@
                     "value": "TopDownMovementBehavior::Deceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.Deceleration"
+                    "player_body.Movement.TopDownMovement.walk.Deceleration"
                   ]
                 },
                 {
@@ -2124,10 +2238,10 @@
                     "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.walk.Acceleration"
+                    "player_body.Movement.TopDownMovement.walk.Acceleration"
                   ]
                 }
               ]
@@ -2140,7 +2254,7 @@
                     "value": "VarObjetTxt"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "Animation",
                     "=",
                     "\"run\""
@@ -2153,10 +2267,10 @@
                     "value": "TopDownMovementBehavior::MaxSpeed"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.maxSpeed"
+                    "player_body.Movement.TopDownMovement.run.maxSpeed"
                   ]
                 },
                 {
@@ -2164,10 +2278,10 @@
                     "value": "TopDownMovementBehavior::Deceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.Deceleration"
+                    "player_body.Movement.TopDownMovement.run.Deceleration"
                   ]
                 },
                 {
@@ -2175,10 +2289,10 @@
                     "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
-                    "Body",
+                    "player_body",
                     "TopDownMovement",
                     "=",
-                    "Body.Movement.TopDownMovement.run.Acceleration"
+                    "player_body.Movement.TopDownMovement.run.Acceleration"
                   ]
                 }
               ]
@@ -2205,7 +2319,6 @@
       "colorR": 74,
       "creationTime": 0,
       "disabled": true,
-      "folded": true,
       "name": "Weapon system",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2228,19 +2341,11 @@
               },
               "parameters": [
                 "",
-                "reloading"
+                "weapon_reloading"
               ]
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "flame_thrower_fire_collision"
-              ]
-            },
             {
               "type": {
                 "value": "Cache"
@@ -2254,7 +2359,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "reloading"
+                "weapon_reloading"
               ]
             },
             {
@@ -2302,20 +2407,7 @@
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "flame_thrower_fire_collision",
-                "=",
-                "Player.PointX(\"f_t_collision\")",
-                "=",
-                "Player.PointY(\"f_t_collision\")"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "folded": true,
@@ -2476,15 +2568,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2538,15 +2621,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun2",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2588,15 +2662,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun3",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -2652,15 +2717,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun4",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2712,15 +2768,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "gun5",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -2776,15 +2823,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2838,15 +2876,6 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele1",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "ModVarGlobal"
               },
               "parameters": [
@@ -2898,15 +2927,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "mele2",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "ModVarGlobal"
@@ -2933,7 +2953,6 @@
           "comment": "If holding an gun(0 is not holding) do ...."
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2963,7 +2982,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "weaponholding"
+                "weapon_holding"
               ]
             }
           ],
@@ -3018,7 +3037,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "AmmoText"
+                    "debug_ammo_text"
                   ]
                 },
                 {
@@ -3026,7 +3045,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 },
                 {
@@ -3034,27 +3053,9 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "tazer_hitbox",
-                    ""
                   ]
                 }
               ]
@@ -3081,7 +3082,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3090,7 +3091,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun1\""
               ]
@@ -3147,7 +3148,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3156,7 +3157,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "4"
                   ]
@@ -3219,18 +3220,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
@@ -3243,32 +3232,11 @@
                 },
                 {
                   "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
                     "Gun1_ammo",
                     "-",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
                     "1"
                   ]
                 },
@@ -3332,28 +3300,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun1",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun1",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3386,7 +3332,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3395,7 +3341,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun2\""
               ]
@@ -3477,7 +3423,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3486,7 +3432,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -3553,28 +3499,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3590,17 +3514,6 @@
                   "parameters": [
                     "",
                     "\"gun2_shoot\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "2"
                   ]
                 },
                 {
@@ -3663,28 +3576,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun2",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun2",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3717,7 +3608,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -3726,7 +3617,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun3\""
               ]
@@ -3783,7 +3674,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -3792,7 +3683,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "3"
                   ]
@@ -3946,19 +3837,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "CreateByName"
-                      },
-                      "parameters": [
-                        "",
-                        "flame_thrower_fire_secondary",
-                        "\"flame_thrower_fire_secondary\"",
-                        "flame_thrower_fire_collision.PointX(\"CenterBurning\")",
-                        "flame_thrower_fire_collision.PointY(\"CenterBurning\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4057,28 +3935,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun3",
-                    "Player.PointX(\"f_t_collision\")",
-                    "Player.PointY(\"f_t_collision\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun3",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -4114,20 +3970,7 @@
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire",
-                    "=",
-                    "flame_thrower_fire_collision.X()",
-                    "=",
-                    "flame_thrower_fire_collision.Y()"
-                  ]
-                }
-              ]
+              "actions": []
             }
           ]
         },
@@ -4161,7 +4004,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -4170,7 +4013,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun4\""
               ]
@@ -4227,7 +4070,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -4236,7 +4079,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "1"
                   ]
@@ -4326,45 +4169,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun4_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "4"
                       ]
                     },
                     {
@@ -4418,45 +4228,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun4_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "4"
                       ]
                     },
                     {
@@ -4540,28 +4317,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun4",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun4",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -4575,7 +4330,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4631,7 +4386,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "reloading",
+                    "weapon_reloading",
                     ""
                   ]
                 }
@@ -4674,7 +4429,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4706,7 +4461,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -4743,7 +4498,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -4752,7 +4507,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: gun5\""
               ]
@@ -4809,7 +4564,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -4818,7 +4573,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "2"
                   ]
@@ -4908,45 +4663,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun5_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "5"
                       ]
                     },
                     {
@@ -5000,45 +4722,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun5_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "5"
                       ]
                     },
                     {
@@ -5142,38 +4831,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "gun5",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "gun5",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "gun5",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -5187,7 +4844,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -5243,7 +4900,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "reloading",
+                    "weapon_reloading",
                     ""
                   ]
                 },
@@ -5296,7 +4953,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ],
@@ -5368,7 +5025,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "reloading"
+                    "weapon_reloading"
                   ]
                 }
               ]
@@ -5405,7 +5062,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -5414,7 +5071,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: mele1\""
               ]
@@ -5471,7 +5128,7 @@
                     "value": "Montre"
                   },
                   "parameters": [
-                    "AmmoText",
+                    "debug_ammo_text",
                     ""
                   ]
                 },
@@ -5480,7 +5137,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -5543,18 +5200,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "tazer_hitbox",
-                        "=",
-                        "Player.PointX(\"hitbox\")",
-                        "=",
-                        "Player.PointY(\"hitbox\")"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
@@ -5577,18 +5222,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "tazer_hitbox",
-                            "Player.PointX(\"hitbox\")",
-                            "Player.PointY(\"hitbox\")",
-                            "\"\""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ResetTimer"
@@ -5673,17 +5306,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "tazer_hitbox",
-                    "tazer_hitbox"
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
@@ -5721,28 +5344,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "mele1",
-                    "Player.PointX(\"hitbox\")",
-                    "Player.PointY(\"hitbox\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "mele1",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -5775,7 +5376,7 @@
                 "value": "Montre"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 ""
               ]
             },
@@ -5784,7 +5385,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "weaponholding",
+                "weapon_holding",
                 "=",
                 "\"weapon: mele2\""
               ]
@@ -5794,31 +5395,8 @@
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AjoutObjConcern"
-                  },
-                  "parameters": [
-                    "",
-                    "Slash1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "=",
-                    "Player.PointX(\"slash\")",
-                    "=",
-                    "Player.PointY(\"slash\")"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
@@ -5870,7 +5448,7 @@
                     "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "crosshair",
+                    "player_crosshair",
                     "=",
                     "0"
                   ]
@@ -5938,18 +5516,6 @@
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Slash1",
-                        "Player.PointX(\"slash\")",
-                        "Player.PointY(\"slash\")",
-                        "\"\""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "ResetTimer"
@@ -6023,20 +5589,7 @@
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Slash1",
-                        "=",
-                        "Player.PointX(\"slash\")",
-                        "=",
-                        "Player.PointY(\"slash\")"
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "folded": true,
@@ -6050,18 +5603,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Slash1",
-                            "Player.PointX(\"slash\")",
-                            "Player.PointY(\"slash\")",
-                            "\"\""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ResetTimer"
@@ -6109,17 +5650,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "tazer_hitbox"
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
@@ -6157,43 +5688,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "mele2",
-                    "Player.PointX(\"Center\")",
-                    "Player.PointY(\"Center\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "mele2",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
                     "Weapon_holding",
                     "=",
                     "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "tazer_hitbox"
                   ]
                 }
               ]
@@ -6231,43 +5731,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_pistol",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_pistol",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_pistol",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6290,43 +5759,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_machine",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_machine",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_machine",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6349,43 +5787,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_sniper",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_sniper",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_sniper",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6408,43 +5815,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_rocket",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_rocket",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_rocket",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             },
             {
@@ -6470,67 +5846,14 @@
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "bullet",
-                "Fences",
-                "15",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "bullet"
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Arret"
-              },
-              "parameters": [
-                "bullet"
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "Fences",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "bullet",
-                "=",
-                "-200"
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "folded": true,
@@ -6560,32 +5883,12 @@
             },
             {
               "type": {
-                "value": "Animation"
-              },
-              "parameters": [
-                "ammo",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "ammo",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "folded": true,
@@ -6778,7 +6081,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun1_ammo)"
               ]
@@ -6806,7 +6109,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun2_ammo)"
               ]
@@ -6834,7 +6137,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Gas: \" + GlobalVariableString(Gun3_ammo)"
               ]
@@ -6862,7 +6165,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun4_ammo)"
               ]
@@ -6890,7 +6193,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Ammo: \" + GlobalVariableString(Gun5_ammo)"
               ]
@@ -6918,7 +6221,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "AmmoText",
+                "debug_ammo_text",
                 "=",
                 "\"Energy: \" + GlobalVariableString(mele1_energy)"
               ]
@@ -6956,227 +6259,43 @@
                   "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\""
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "4"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "1"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "5"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "2"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "4"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             }
           ]
         }
@@ -7204,7 +6323,7 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "Wheel_info",
+                "wheel_info",
                 "=",
                 "\"Wheel using: \" + GlobalVariableString(Wheel_stuff.wheel)"
               ]

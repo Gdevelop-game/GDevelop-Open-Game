@@ -1,28 +1,32 @@
 {
   "author": "Westboy31",
-  "category": "",
+  "category": "Visual effect",
   "extensionNamespace": "",
   "fullName": "Flash and transition painter",
   "helpPath": "",
   "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLW1vdmllLWZpbHRlciIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xOCA0TDIwIDdIMTdMMTUgNEgxM0wxNSA3SDEyTDEwIDRIOEwxMCA3SDdMNSA0SDRDMi45IDQgMiA0LjkgMiA2TDIgMThDMiAxOS4xIDIuOSAyMCA0IDIwSDIwQzIxLjEgMjAgMjIgMTkuMSAyMiAxOFY0SDE4TTExLjI1IDE1LjI1TDEwIDE4TDguNzUgMTUuMjVMNiAxNEw4Ljc1IDEyLjc1TDEwIDEwTDExLjI1IDEyLjc1TDE0IDE0TDExLjI1IDE1LjI1TTE2Ljk0IDExLjk0TDE2IDE0TDE1LjA2IDExLjk0TDEzIDExTDE1LjA2IDEwLjA2TDE2IDhMMTYuOTQgMTAuMDZMMTkgMTFMMTYuOTQgMTEuOTRaIiAvPjwvc3ZnPg==",
   "name": "FlashTransitionPainter",
   "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/movie-filter.svg",
-  "shortDescription": "behavior for shape painter allows you to paint a color all over the screen for period of time with an effect (useful for simulate flash and transition effect).",
-  "version": "1.0",
+  "shortDescription": "Behavior for shape painter allows you to paint a color all over the screen for period of time with an effect (useful for simulate flash and transition effect).",
+  "version": "0.1.0",
   "description": [
-    "* __Paint effect:__Action to paint a color all over the screen for a period of time with specific effect.",
+    "* __Paint effect:__ Action to paint a color all over the screen for a period of time with specific effect.",
     "effect type:",
-    "  * __Flash:__ is a monochrome color appear with fade then disappear with fade out.",
-    "  * __Vertical:__ is a monochrome color comes from right side then comes back.",
-    "  * __Horizontal:__ is a monochrome color come from top side then comes back.",
-    "  * __Circular:__ is a circle which increases from the center and narrows.",
+    "    * __Flash:__ is a monochrome color appear with fade then disappear with fade out.",
+    "    * __Vertical:__ is a monochrome color comes from right side then comes back.",
+    "    * __Horizontal:__ is a monochrome color come from top side then comes back.",
+    "    * __Circular:__ is a circle which increases from the center and narrows.",
     "* __Paint effect ended:__ event when the paint effect ends."
   ],
+  "origin": {
+    "identifier": "FlashTransitionPainter",
+    "name": "gdevelop-extension-store"
+  },
   "tags": [
-    "Shape Painter",
-    "Flash",
-    "Transition",
-    "Effect"
+    "shape painter",
+    "flash",
+    "transition",
+    "effect"
   ],
   "authorIds": [],
   "dependencies": [],
@@ -50,7 +54,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "we don't want the effect starts when the game starts ."
+              "comment": "Disable effect when the game starts."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -64,6 +68,15 @@
                     "Object",
                     "Behavior",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseObjectTimer"
+                  },
+                  "parameters": [
+                    "Object",
+                    "\"__FlashTransitionPainter_timerEffect\""
                   ]
                 }
               ]
@@ -101,7 +114,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "avoid base parameter of painter that could make the extension doesn't work"
+              "comment": "Avoid default parameter of painter that could make the extension doesn't work."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -139,7 +152,16 @@
                   },
                   "parameters": [
                     "Object",
-                    "\"_TimerEffect\""
+                    "\"__FlashTransitionPainter_timerEffect\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "UnPauseObjectTimer"
+                  },
+                  "parameters": [
+                    "Object",
+                    "\"__FlashTransitionPainter_timerEffect\""
                   ]
                 }
               ]
@@ -154,7 +176,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Initialise position of painter \nincrement or decrement _TimeProgressionEffect depending on direction"
+              "comment": "Initialise position of painter. \nIncrement or decrement \"_TimeProgressionEffect\" depending on direction."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -187,9 +209,9 @@
                   },
                   "parameters": [
                     "Object",
-                    "_TimeProgressionEffect",
+                    "__FlashTransitionPainter_TimeProgressionEffect",
                     "+",
-                    "(TimeDelta() / Object.Behavior::PropertyTimer())*Object.Variable(_ReverseDirection)"
+                    "(TimeDelta() / Object.Behavior::PropertyTimer())*Object.Variable(__FlashTransitionPainter_ReverseDirection)"
                   ]
                 }
               ]
@@ -204,7 +226,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "here this the paints functions of different effect depending on the type chosen by the user\nwe try to detect the direction of the animation and its end"
+              "comment": "Here this the paints functions of different effect depending on the type chosen by the user.\nDetect the direction of the animation and its end."
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -216,7 +238,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 1 : it's the flash effect "
+              "comment": "Type 1 : flash effect. "
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -263,7 +285,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_OpacityFlash",
+                        "__FlashTransitionPainter_OpacityFlash",
                         ">=",
                         "Object.Behavior::PropertyMaxOpacity()"
                       ]
@@ -276,7 +298,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ReverseDirection",
+                        "__FlashTransitionPainter_ReverseDirection",
                         "=",
                         "-1"
                       ]
@@ -288,12 +310,13 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
+                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
                           },
                           "parameters": [
                             "Object",
-                            "Behavior"
+                            "Behavior",
+                            "=",
+                            "\"Forward\""
                           ]
                         }
                       ],
@@ -321,7 +344,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_OpacityFlash",
+                        "__FlashTransitionPainter_OpacityFlash",
                         "<",
                         "0"
                       ]
@@ -350,9 +373,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "_OpacityFlash",
+                        "__FlashTransitionPainter_OpacityFlash",
                         "=",
-                        "lerp(0, Object.Behavior::PropertyMaxOpacity(), Object.Variable(_TimeProgressionEffect))"
+                        "lerp(0, Object.Behavior::PropertyMaxOpacity(), Object.Variable(__FlashTransitionPainter_TimeProgressionEffect))"
                       ]
                     },
                     {
@@ -362,7 +385,7 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "Object.Variable(_OpacityFlash)"
+                        "Object.Variable(__FlashTransitionPainter_OpacityFlash)"
                       ]
                     },
                     {
@@ -391,7 +414,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 2 : screen come from top then return"
+              "comment": "Type 2 : screen come from top then return."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -419,7 +442,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         ">=",
                         "SceneWindowWidth()"
                       ]
@@ -432,7 +455,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ReverseDirection",
+                        "__FlashTransitionPainter_ReverseDirection",
                         "=",
                         "-1"
                       ]
@@ -444,12 +467,13 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
+                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
                           },
                           "parameters": [
                             "Object",
-                            "Behavior"
+                            "Behavior",
+                            "=",
+                            "\"Forward\""
                           ]
                         }
                       ],
@@ -477,7 +501,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         "<",
                         "0"
                       ]
@@ -506,7 +530,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "=",
                         "10"
                       ]
@@ -517,7 +541,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "=",
                         "0"
                       ]
@@ -528,9 +552,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         "=",
-                        "lerp(0,SceneWindowWidth(),Object.Variable(_TimeProgressionEffect))"
+                        "lerp(0,SceneWindowWidth(),Object.Variable(__FlashTransitionPainter_TimeProgressionEffect))"
                       ]
                     }
                   ]
@@ -546,7 +570,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "-",
                         "2"
                       ]
@@ -557,7 +581,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "+",
                         "51"
                       ]
@@ -569,7 +593,7 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "Object.Variable(_SmoothEdgeOpacity)"
+                        "Object.Variable(__FlashTransitionPainter_SmoothEdgeOpacity)"
                       ]
                     },
                     {
@@ -580,7 +604,7 @@
                         "Object",
                         "0",
                         "0",
-                        "Object.Variable(_ProgressiveWidth) + Object.Variable(_SmoothEdge)",
+                        "Object.Variable(__FlashTransitionPainter_ProgressiveWidth) + Object.Variable(__FlashTransitionPainter_SmoothEdge)",
                         "SceneWindowHeight()"
                       ]
                     }
@@ -598,7 +622,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 3 : screen come from left then return"
+              "comment": "Type 3 : screen come from left then return."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -618,7 +642,6 @@
               "actions": [],
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -627,7 +650,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveHeight",
+                        "__FlashTransitionPainter_ProgressiveHeight",
                         ">=",
                         "SceneWindowHeight()"
                       ]
@@ -640,7 +663,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ReverseDirection",
+                        "__FlashTransitionPainter_ReverseDirection",
                         "=",
                         "-1"
                       ]
@@ -652,12 +675,13 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
+                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
                           },
                           "parameters": [
                             "Object",
-                            "Behavior"
+                            "Behavior",
+                            "=",
+                            "\"Forward\""
                           ]
                         }
                       ],
@@ -685,7 +709,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveHeight",
+                        "__FlashTransitionPainter_ProgressiveHeight",
                         "<",
                         "0"
                       ]
@@ -714,7 +738,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "=",
                         "10"
                       ]
@@ -725,7 +749,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "=",
                         "0"
                       ]
@@ -736,9 +760,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveHeight",
+                        "__FlashTransitionPainter_ProgressiveHeight",
                         "=",
-                        "lerp(0,SceneWindowHeight(),Object.Variable(_TimeProgressionEffect))"
+                        "lerp(0,SceneWindowHeight(),Object.Variable(__FlashTransitionPainter_TimeProgressionEffect))"
                       ]
                     }
                   ]
@@ -754,7 +778,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "-",
                         "2"
                       ]
@@ -765,7 +789,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "+",
                         "51"
                       ]
@@ -777,7 +801,7 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "Object.Variable(_SmoothEdgeOpacity)"
+                        "Object.Variable(__FlashTransitionPainter_SmoothEdgeOpacity)"
                       ]
                     },
                     {
@@ -789,7 +813,7 @@
                         "0",
                         "0",
                         "SceneWindowWidth()",
-                        "Object.Variable(_ProgressiveHeight) + Object.Variable(_SmoothEdge)"
+                        "Object.Variable(__FlashTransitionPainter_ProgressiveHeight) + Object.Variable(__FlashTransitionPainter_SmoothEdge)"
                       ]
                     }
                   ]
@@ -806,7 +830,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "type 4 : a circle scale up from the middle then scal down"
+              "comment": "Type 4 : a circle scale up from the middle then scale down."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -834,7 +858,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         ">=",
                         "(sqrt (pow(SceneWindowHeight(),2) + pow(SceneWindowWidth(),2) )) /2    "
                       ]
@@ -847,7 +871,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ReverseDirection",
+                        "__FlashTransitionPainter_ReverseDirection",
                         "=",
                         "-1"
                       ]
@@ -859,12 +883,13 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
+                            "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
                           },
                           "parameters": [
                             "Object",
-                            "Behavior"
+                            "Behavior",
+                            "=",
+                            "\"Forward\""
                           ]
                         }
                       ],
@@ -892,7 +917,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         "<",
                         "0"
                       ]
@@ -921,7 +946,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "=",
                         "1"
                       ]
@@ -932,7 +957,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "=",
                         "0"
                       ]
@@ -943,9 +968,9 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ProgressiveWidth",
+                        "__FlashTransitionPainter_ProgressiveWidth",
                         "=",
-                        "lerp(0,(sqrt (pow(SceneWindowHeight(),2) + pow(SceneWindowWidth(),2) ))/2    ,Object.Variable(_TimeProgressionEffect))"
+                        "lerp(0,(sqrt (pow(SceneWindowHeight(),2) + pow(SceneWindowWidth(),2) ))/2    ,Object.Variable(__FlashTransitionPainter_TimeProgressionEffect))"
                       ]
                     }
                   ]
@@ -961,7 +986,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdge",
+                        "__FlashTransitionPainter_SmoothEdge",
                         "-",
                         "0.2"
                       ]
@@ -972,7 +997,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_SmoothEdgeOpacity",
+                        "__FlashTransitionPainter_SmoothEdgeOpacity",
                         "+",
                         "51"
                       ]
@@ -984,7 +1009,7 @@
                       "parameters": [
                         "Object",
                         "=",
-                        "Object.Variable(_SmoothEdgeOpacity)"
+                        "Object.Variable(__FlashTransitionPainter_SmoothEdgeOpacity)"
                       ]
                     },
                     {
@@ -995,7 +1020,7 @@
                         "Object",
                         "SceneWindowWidth()/2",
                         "SceneWindowHeight()/2",
-                        "Object.Variable(_ProgressiveWidth) + Object.Variable(_SmoothEdge)"
+                        "Object.Variable(__FlashTransitionPainter_ProgressiveWidth) + Object.Variable(__FlashTransitionPainter_SmoothEdge)"
                       ]
                     }
                   ]
@@ -1012,7 +1037,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "The repeat 5 times is used to have clean and smooth edge , especially for circle\n"
+              "comment": "The repeat 5 times is used to have clean and smooth edges , especially for circle.\n"
             }
           ],
           "parameters": [
@@ -1047,7 +1072,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Reset variable"
+              "comment": "Reset variables."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1059,7 +1084,7 @@
                   },
                   "parameters": [
                     "Object",
-                    "_OpacityFlash",
+                    "__FlashTransitionPainter_OpacityFlash",
                     "=",
                     "0"
                   ]
@@ -1070,7 +1095,7 @@
                   },
                   "parameters": [
                     "Object",
-                    "_ReverseDirection",
+                    "__FlashTransitionPainter_ReverseDirection",
                     "=",
                     "1"
                   ]
@@ -1081,7 +1106,7 @@
                   },
                   "parameters": [
                     "Object",
-                    "_TimeProgressionEffect",
+                    "__FlashTransitionPainter_TimeProgressionEffect",
                     "=",
                     "0"
                   ]
@@ -1110,7 +1135,7 @@
           "fullName": "Paint Effect",
           "functionType": "Action",
           "name": "PaintEffect",
-          "sentence": "Paint effect type _PARAM4_ of _PARAM0_ with Color _PARAM2_ for _PARAM3_ seconds",
+          "sentence": "Paint effect type _PARAM4_ of _PARAM0_ with direction _PARAM5_ and color _PARAM2_ for _PARAM3_ seconds",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -1122,7 +1147,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "initialise all variables and then activate the behavior .\nif user doesn't assign value to color and type , we take the last value registred .\nif user doesn't assign value to timer we take a default value (0.2) ."
+              "comment": "Initialise all variables and then activate the behavior.\nIf user doesn't assign value to color and type , we take the last value registred.\nIf user doesn't assign value to timer we take a default value (0.2)."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1153,7 +1178,7 @@
                     "Object",
                     "Behavior",
                     "=",
-                    "GetArgumentAsNumber(\"Timer\")"
+                    "GetArgumentAsNumber(\"Timer\") + (3*TimeDelta())"
                   ]
                 },
                 {
@@ -1162,7 +1187,18 @@
                   },
                   "parameters": [
                     "Object",
-                    "\"_TimerEffect\""
+                    "\"__FlashTransitionPainter_timerEffect\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyDirection"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "GetArgumentAsString(\"Direction\")"
                   ]
                 }
               ],
@@ -1228,144 +1264,6 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "GetArgumentAsBoolean"
-                      },
-                      "parameters": [
-                        "\"Forward\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyForward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "yes"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "GetArgumentAsBoolean"
-                      },
-                      "parameters": [
-                        "\"Forward\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyForward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "GetArgumentAsBoolean"
-                      },
-                      "parameters": [
-                        "\"Backward\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyBackward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "yes"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "GetArgumentAsBoolean"
-                      },
-                      "parameters": [
-                        "\"Backward\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyBackward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyForward"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "GetArgumentAsNumber(\"Timer\")/2"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
                         "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyTimer"
                       },
                       "parameters": [
@@ -1395,21 +1293,41 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyForward"
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
                       },
                       "parameters": [
                         "Object",
-                        "Behavior"
+                        "Behavior",
+                        "=",
+                        "\"Both\""
                       ]
-                    },
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
-                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyBackward"
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::SetPropertyTimer"
                       },
                       "parameters": [
                         "Object",
-                        "Behavior"
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"Timer\")/2 + (3*TimeDelta())"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StrEqual"
+                      },
+                      "parameters": [
+                        "GetArgumentAsString(\"Direction\")",
+                        "=",
+                        "\"Backward\""
                       ]
                     }
                   ],
@@ -1420,7 +1338,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_ReverseDirection",
+                        "__FlashTransitionPainter_ReverseDirection",
                         "=",
                         "-1"
                       ]
@@ -1431,7 +1349,7 @@
                       },
                       "parameters": [
                         "Object",
-                        "_TimeProgressionEffect",
+                        "__FlashTransitionPainter_TimeProgressionEffect",
                         "=",
                         "1"
                       ]
@@ -1499,32 +1417,29 @@
               "type": "behavior"
             },
             {
-              "description": "Color.",
+              "description": "Color",
               "name": "Color",
               "type": "color"
             },
             {
-              "description": "How long time the color keep on screen.",
+              "description": "Duration",
               "name": "Timer",
               "type": "expression"
             },
             {
-              "description": "Type of effect (Flash , Horizontal ,  Vertical , Circular).",
+              "description": "Type of effect ",
               "name": "Type",
-              "type": "string"
+              "supplementaryInformation": "[\"Flash\",\"Horizontal\",\"Vertical\",\"Circular\"]",
+              "type": "stringWithSelector"
             },
             {
-              "description": "Enable forward direction of the effect. ",
-              "name": "Forward",
-              "type": "yesorno"
+              "description": "Direction transition",
+              "name": "Direction",
+              "supplementaryInformation": "[\"Both\",\"Forward\",\"Backward\"]",
+              "type": "stringWithSelector"
             },
             {
-              "description": "Enable backward direction of the effect.",
-              "name": "Backward",
-              "type": "yesorno"
-            },
-            {
-              "description": "The maximum of the opacity only for flash.",
+              "description": "End opacity (only for flash)",
               "name": "MaxOpacity",
               "type": "expression"
             }
@@ -1536,7 +1451,7 @@
           "fullName": "Paint effect ended ",
           "functionType": "Condition",
           "name": "PaintEffectIsEnd",
-          "sentence": "When paint effect of _PARAM0_ ends.",
+          "sentence": "When paint effect of _PARAM0_ ends",
           "events": [
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -1548,19 +1463,85 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "detect when the animation ends with a timer which is initialised in PaintEffect function"
+              "comment": "Detect when the animation ends with a timer which is initialised in PaintEffect function."
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Backward\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "\"Forward\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ObjectTimer"
                   },
                   "parameters": [
                     "Object",
-                    "\"_TimerEffect\"",
-                    "Object.Behavior::PropertyTimer() - TimeDelta()"
+                    "\"__FlashTransitionPainter_timerEffect\"",
+                    "Object.Behavior::PropertyTimer() - (3*TimeDelta())"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "FlashTransitionPainter::FlashTransitionPainter::PropertyDirection"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "=",
+                    "\"Both\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "Object",
+                    "\"__FlashTransitionPainter_timerEffect\"",
+                    "Object.Behavior::PropertyTimer()*2 - (3*TimeDelta())"
                   ]
                 }
               ],
@@ -1625,24 +1606,14 @@
           "name": "Type"
         },
         {
-          "value": "false",
-          "type": "Boolean",
-          "label": "Backward",
+          "value": "",
+          "type": "String",
+          "label": "Direction of transition",
           "description": "",
           "group": "",
           "extraInformation": [],
           "hidden": true,
-          "name": "Backward"
-        },
-        {
-          "value": "false",
-          "type": "Boolean",
-          "label": "Forward",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
-          "hidden": true,
-          "name": "Forward"
+          "name": "Direction"
         },
         {
           "value": "255",
