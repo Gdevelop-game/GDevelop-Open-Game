@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.12841023421512995,
+    "zoomFactor": 0.2846249846342898,
     "windowMask": false
   },
   "objectsGroups": [
@@ -78,6 +78,61 @@
         },
         {
           "name": "weaponWheelSticker"
+        }
+      ]
+    },
+    {
+      "name": "Road",
+      "objects": [
+        {
+          "name": "road_tiled_white_N"
+        },
+        {
+          "name": "road_tiled_white_NE"
+        },
+        {
+          "name": "road_tiled_white_NW"
+        },
+        {
+          "name": "road_tiled_white_W"
+        },
+        {
+          "name": "road_tiled_white_E"
+        },
+        {
+          "name": "road_tiled_white_center"
+        },
+        {
+          "name": "road_tiled_white_S"
+        },
+        {
+          "name": "road_tiled_white_SE"
+        },
+        {
+          "name": "road_tiled_white_SW"
+        },
+        {
+          "name": "road_tiled_white_inner"
+        },
+        {
+          "name": "road_tiled_white_curve_right"
+        },
+        {
+          "name": "road_tiled_white_curve_left"
+        },
+        {
+          "name": "road_tiled_white_end"
+        }
+      ]
+    },
+    {
+      "name": "Sea",
+      "objects": [
+        {
+          "name": "sea_tiled_water_cover"
+        },
+        {
+          "name": "sea_tiled_water"
         }
       ]
     }
@@ -11347,7 +11402,7 @@
       "width": 0,
       "x": -280,
       "y": 1680,
-      "zOrder": 12643598,
+      "zOrder": 70,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -11363,10 +11418,16 @@
       "width": 0,
       "x": -210,
       "y": 1766,
-      "zOrder": 12643599,
+      "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
+        {
+          "folded": true,
+          "name": "angle",
+          "type": "number",
+          "value": 180
+        },
         {
           "folded": true,
           "name": "type",
@@ -11517,8 +11578,10 @@
       "height": 1400,
       "keepRatio": true,
       "layer": "",
+      "locked": true,
       "name": "road_tiled_white_center",
       "persistentUuid": "d811e2a1-bde1-452d-a503-3841e3c51d3a",
+      "sealed": true,
       "width": 210,
       "x": -420,
       "y": 1610,
@@ -11568,8 +11631,10 @@
       "height": 210,
       "keepRatio": true,
       "layer": "",
+      "locked": true,
       "name": "road_tiled_white_center",
       "persistentUuid": "e5223d12-e55d-419a-9522-9ff29737bea0",
+      "sealed": true,
       "width": 1680,
       "x": -210,
       "y": 1610,
@@ -11604,8 +11669,8 @@
       "layer": "",
       "name": "road_tiled_white_center",
       "persistentUuid": "58b0eefc-1506-4df8-acd7-bb313f3ccaa2",
-      "width": 140,
-      "x": -2940,
+      "width": 210,
+      "x": -3010,
       "y": 210,
       "zOrder": 1,
       "numberProperties": [],
@@ -11723,7 +11788,7 @@
       "layer": "",
       "name": "road_tiled_white_N",
       "persistentUuid": "24716a88-c015-41e5-84e9-e31201b39ca7",
-      "width": 420,
+      "width": 350,
       "x": -3430,
       "y": 2450,
       "zOrder": 1,
@@ -11758,7 +11823,7 @@
       "name": "road_tiled_white_W",
       "persistentUuid": "6d5fbd31-2f18-4a05-95cf-c5a45a1c74ae",
       "width": 70,
-      "x": -3010,
+      "x": -3080,
       "y": 210,
       "zOrder": 1,
       "numberProperties": [],
@@ -11791,7 +11856,7 @@
       "name": "road_tiled_white_NW",
       "persistentUuid": "d2ccc137-8250-4f9a-a9d3-950726041243",
       "width": 0,
-      "x": -3010,
+      "x": -3080,
       "y": 140,
       "zOrder": 12643605,
       "numberProperties": [],
@@ -12825,7 +12890,7 @@
       "width": 0,
       "x": -210,
       "y": 1696,
-      "zOrder": 12643599,
+      "zOrder": 60,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
@@ -12879,8 +12944,8 @@
       "layer": "",
       "name": "road_tiled_white_N",
       "persistentUuid": "5e0b5d6d-7464-4d5c-b82f-81b18ef928c1",
-      "width": 1890,
-      "x": -2940,
+      "width": 1960,
+      "x": -3010,
       "y": 140,
       "zOrder": 1,
       "numberProperties": [],
@@ -13079,7 +13144,7 @@
       "name": "road_tiled_white_curve_right",
       "persistentUuid": "d6566d3a-f722-40a0-a793-2702678a9b2b",
       "width": 0,
-      "x": -3010,
+      "x": -3080,
       "y": 2450,
       "zOrder": 12643623,
       "numberProperties": [],
@@ -13822,6 +13887,58 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_leg",
+      "persistentUuid": "0785b352-857d-4c8c-8af7-a3c952462be9",
+      "width": 0,
+      "x": -140,
+      "y": 1766,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_leg",
+      "persistentUuid": "6450cd42-b025-47ca-9dd0-f49cdae0eb97",
+      "width": 0,
+      "x": -140,
+      "y": 1680,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "angle",
+          "type": "number",
+          "value": 180
+        },
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "R"
+        }
+      ]
     }
   ],
   "objects": [
@@ -14971,11 +15088,11 @@
                     [
                       {
                         "x": 26,
-                        "y": 0
+                        "y": 27.5
                       },
                       {
                         "x": 37,
-                        "y": 0
+                        "y": 27.5
                       },
                       {
                         "x": 37,
@@ -14984,6 +15101,24 @@
                       {
                         "x": 26,
                         "y": 64
+                      }
+                    ],
+                    [
+                      {
+                        "x": 0,
+                        "y": 27.5
+                      },
+                      {
+                        "x": 25,
+                        "y": 27.5
+                      },
+                      {
+                        "x": 25,
+                        "y": 36.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 36.5
                       }
                     ]
                   ]
@@ -15066,38 +15201,38 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 26
+                        "x": 64,
+                        "y": 27.5
                       },
                       {
                         "x": 37,
-                        "y": 26
+                        "y": 27.5
                       },
                       {
-                        "x": 37,
-                        "y": 37
+                        "x": 37.5,
+                        "y": 36.5
                       },
                       {
-                        "x": 0,
-                        "y": 37
+                        "x": 64,
+                        "y": 36.5
                       }
                     ],
                     [
                       {
-                        "x": 26,
-                        "y": 0
+                        "x": 27.5,
+                        "y": 27.5
                       },
                       {
                         "x": 37,
-                        "y": 0
+                        "y": 27.5
                       },
                       {
                         "x": 37,
-                        "y": 26
+                        "y": 64
                       },
                       {
-                        "x": 26,
-                        "y": 26
+                        "x": 28,
+                        "y": 64
                       }
                     ]
                   ]
@@ -15132,20 +15267,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26.121299743652344,
-                        "y": 26.470600128173828
+                        "x": 27.5,
+                        "y": 0
                       },
                       {
-                        "x": 63.474300384521484,
-                        "y": 26.470600128173828
+                        "x": 36,
+                        "y": 0
                       },
                       {
-                        "x": 63.76839828491211,
-                        "y": 37.058799743652344
+                        "x": 36,
+                        "y": 64
                       },
                       {
-                        "x": 26.7096004486084,
-                        "y": 37.647098541259766
+                        "x": 28,
+                        "y": 64
                       }
                     ]
                   ]
@@ -15180,25 +15315,7 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26,
-                        "y": 26
-                      },
-                      {
-                        "x": 37,
-                        "y": 26
-                      },
-                      {
-                        "x": 37,
-                        "y": 64
-                      },
-                      {
-                        "x": 26,
-                        "y": 64
-                      }
-                    ],
-                    [
-                      {
-                        "x": 0,
+                        "x": 64,
                         "y": 26
                       },
                       {
@@ -15210,7 +15327,7 @@
                         "y": 37
                       },
                       {
-                        "x": 0,
+                        "x": 64,
                         "y": 37
                       }
                     ]
@@ -15246,38 +15363,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 26,
+                        "x": 0,
                         "y": 26
                       },
                       {
-                        "x": 64,
+                        "x": 38,
                         "y": 26
                       },
                       {
-                        "x": 64,
+                        "x": 38.5,
                         "y": 37
                       },
                       {
-                        "x": 26,
+                        "x": 0,
                         "y": 37
-                      }
-                    ],
-                    [
-                      {
-                        "x": 26,
-                        "y": 40
-                      },
-                      {
-                        "x": 37,
-                        "y": 40
-                      },
-                      {
-                        "x": 37,
-                        "y": 64
-                      },
-                      {
-                        "x": 26,
-                        "y": 64
                       }
                     ]
                   ]
@@ -15392,6 +15491,24 @@
                       {
                         "x": 0,
                         "y": 37
+                      }
+                    ],
+                    [
+                      {
+                        "x": 26.5,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 0
+                      },
+                      {
+                        "x": 37,
+                        "y": 25.5
+                      },
+                      {
+                        "x": 26.5,
+                        "y": 25.5
                       }
                     ]
                   ]
@@ -18466,7 +18583,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/uziSilencer.png",
+                  "image": "assets/weapon/icon/uziSilencer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18495,7 +18612,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/uziLongSilencer.png",
+                  "image": "assets/weapon/icon/uziLongSilencer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18524,7 +18641,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/uziLong.png",
+                  "image": "assets/weapon/icon/uziLong.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18553,7 +18670,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/uzi.png",
+                  "image": "assets/weapon/icon/uzi.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18582,7 +18699,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/sniper.png",
+                  "image": "assets/weapon/icon/sniper.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18611,7 +18728,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/shotgunShort.png",
+                  "image": "assets/weapon/icon/shotgunShort.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18640,7 +18757,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/shotgun.png",
+                  "image": "assets/weapon/icon/shotgun.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18669,7 +18786,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/rocketlauncherModern.png",
+                  "image": "assets/weapon/icon/rocketlauncher.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18698,7 +18815,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/rocketlauncher.png",
+                  "image": "assets/weapon/icon/rocketlauncher.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18727,7 +18844,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/pistolSilencer.png",
+                  "image": "assets/weapon/icon/pistolSilencer.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18756,7 +18873,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/pistol.png",
+                  "image": "assets/weapon/icon/pistol.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18785,7 +18902,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/machinegunLauncher.png",
+                  "image": "assets/weapon/icon/machinegunLauncher.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18814,7 +18931,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/machinegun.png",
+                  "image": "assets/weapon/icon/machinegun.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18840,25 +18957,7 @@
             {
               "looping": false,
               "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/knifeRound_smooth.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 15.5,
-                    "y": 68.5
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
+              "sprites": []
             }
           ]
         },
@@ -18872,7 +18971,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/knifeRound_sharp.png",
+                  "image": "assets/weapon/icon/knifeRound_sharp.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18901,7 +19000,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/knife_smooth.png",
+                  "image": "assets/weapon/icon/knifeRound_smooth.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18930,7 +19029,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/knife_sharp.png",
+                  "image": "assets/weapon/icon/knife_sharp.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18959,7 +19058,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/grenadeVintage.png",
+                  "image": "assets/weapon/icon/grenadeVintage.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -18988,7 +19087,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/grenadeSmoke.png",
+                  "image": "assets/weapon/icon/grenadeSmoke.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19017,7 +19116,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/grenadeFlash.png",
+                  "image": "assets/weapon/icon/grenadeFlash.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19046,7 +19145,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/grenade.png",
+                  "image": "assets/weapon/icon/grenade.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19075,7 +19174,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/flamethrower_short.png",
+                  "image": "assets/weapon/icon/flamethrower_short.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19104,7 +19203,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/weapons/icons/flamethrower_long.png",
+                  "image": "assets/weapon/icon/flamethrower_long.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19150,7 +19249,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/weapons/icons/bar.png",
+                  "image": "assets/weapon/icon/bar.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -19346,24 +19445,6 @@
           "value": ""
         },
         {
-          "name": "Movement",
-          "type": "structure",
-          "children": [
-            {
-              "folded": true,
-              "name": "handTweenDuration",
-              "type": "number",
-              "value": 0.5
-            },
-            {
-              "folded": true,
-              "name": "legTweenDuration",
-              "type": "number",
-              "value": 0.5
-            }
-          ]
-        },
-        {
           "name": "Customisation",
           "type": "structure",
           "children": [
@@ -19384,6 +19465,138 @@
               "name": "leg",
               "type": "number",
               "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Movement",
+          "type": "structure",
+          "children": [
+            {
+              "name": "TopDownMovement",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "run",
+                  "persistentUuid": "dbe1965b-d1af-415d-9e83-2e4312af1344",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Acceleration",
+                      "type": "number",
+                      "value": 600
+                    },
+                    {
+                      "folded": true,
+                      "name": "Deceleration",
+                      "type": "number",
+                      "value": 1000
+                    },
+                    {
+                      "folded": true,
+                      "name": "maxSpeed",
+                      "persistentUuid": "951b3641-c7f3-4740-be3a-9ce2e9e0f693",
+                      "type": "number",
+                      "value": 400
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleSwitchTime",
+                      "type": "number",
+                      "value": 200
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDelay",
+                      "type": "number",
+                      "value": 0.1
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDuration",
+                      "type": "number",
+                      "value": 0.2
+                    }
+                  ]
+                },
+                {
+                  "name": "walk",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "folded": true,
+                      "name": "Acceleration",
+                      "type": "number",
+                      "value": 400
+                    },
+                    {
+                      "folded": true,
+                      "name": "Deceleration",
+                      "type": "number",
+                      "value": 800
+                    },
+                    {
+                      "folded": true,
+                      "name": "maxSpeed",
+                      "persistentUuid": "951b3641-c7f3-4740-be3a-9ce2e9e0f693",
+                      "type": "number",
+                      "value": 300
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleSwitchTime",
+                      "persistentUuid": "c6a43fd0-3cef-4009-bdcb-974b49edf1d1",
+                      "type": "number",
+                      "value": 1000
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDelay",
+                      "persistentUuid": "e725550c-0f72-4304-99c6-c8bb804277bb",
+                      "type": "number",
+                      "value": 0.2
+                    },
+                    {
+                      "folded": true,
+                      "name": "shuffleTweenDuration",
+                      "persistentUuid": "5b2ef896-624b-46b8-9e33-3419d81e02eb",
+                      "type": "number",
+                      "value": 0.3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "canMove",
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "Camera",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "active",
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "name": "Phone",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "active",
+              "type": "boolean",
+              "value": false
             }
           ]
         }
@@ -20397,13 +20610,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 15.5
+                    "y": 12.5
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 15.5
+                    "y": 12.5
                   },
                   "customCollisionMask": [
                     [
@@ -20445,13 +20658,13 @@
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
-                    "y": 15.5
+                    "y": 13
                   },
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
                     "x": 0,
-                    "y": 15.5
+                    "y": 13
                   },
                   "customCollisionMask": [
                     [
@@ -21450,113 +21663,6 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "grass_tiled",
-                "=",
-                "-50"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "sand",
-                "=",
-                "-10"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "sea_tiled_water",
-                "=",
-                "-100"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "sand_2",
-                "=",
-                "-11"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "beach_sand_SW",
-                "=",
-                "-11"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "edge_sand_NW",
-                "=",
-                "-11"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "beach_sand_W",
-                "=",
-                "-11"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "sea_tiled_water_cover",
-                "=",
-                "-100"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "road_sprite_all",
-                "=",
-                "-10"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "beach_sand_NE",
-                "=",
-                "-11"
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
                 "building_rooftop",
                 "=",
                 "120"
@@ -21578,6 +21684,47 @@
               },
               "parameters": [
                 "sea_tiled_water_cover"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Road",
+                "=",
+                "-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Sea",
+                "=",
+                "-2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "grass_tiled",
+                "=",
+                "0"
               ]
             }
           ]
