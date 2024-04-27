@@ -69,11 +69,13 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "VarObjetTxt"
               },
               "parameters": [
-                "",
-                "Up"
+                "player_body",
+                "Animation",
+                "!=",
+                "\"weaponHold\""
               ]
             },
             {
@@ -85,6 +87,34 @@
                 "phone_frame",
                 "<",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Up\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -203,11 +233,30 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Down"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Down"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Down\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],

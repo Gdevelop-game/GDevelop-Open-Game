@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.45280980919801384,
+    "zoomFactor": 0.5344795761132777,
     "windowMask": false
   },
   "objectsGroups": [
@@ -156,6 +156,25 @@
           "name": "beach_sand_E"
         }
       ]
+    },
+    {
+      "name": "Weapon_Pick",
+      "objects": [
+        {
+          "name": "uziLong_pick"
+        }
+      ]
+    },
+    {
+      "name": "Weapon_Hold",
+      "objects": [
+        {
+          "name": "uziGold_hold"
+        },
+        {
+          "name": "uziLong_hold"
+        }
+      ]
     }
   ],
   "variables": [
@@ -208,6 +227,7 @@
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "WeaponWheel",
           "type": "structure",
           "children": [
@@ -237,7 +257,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "name": "slot",
@@ -290,7 +310,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -328,7 +348,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -364,7 +384,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -400,6 +420,7 @@
               "value": ""
             },
             {
+              "folded": true,
               "name": "Slot",
               "type": "structure",
               "children": [
@@ -11015,7 +11036,7 @@
       "width": 70,
       "x": -3570,
       "y": 3640,
-      "zOrder": -2,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -11030,7 +11051,7 @@
       "width": 70,
       "x": -2870,
       "y": 3640,
-      "zOrder": -2,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -11368,9 +11389,9 @@
       "name": "player_crosshair",
       "persistentUuid": "808484fa-24aa-4068-9347-4591d049c015",
       "width": 0,
-      "x": -366,
-      "y": 1384,
-      "zOrder": 12643596,
+      "x": 808,
+      "y": 630,
+      "zOrder": 1260,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -12110,13 +12131,14 @@
     },
     {
       "angle": 90,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_end",
       "persistentUuid": "b6a835a7-261c-46d2-971e-59fff8abd689",
-      "width": 0,
+      "width": 70,
       "x": -350,
       "y": 1540,
       "zOrder": 12643610,
@@ -12193,31 +12215,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 140,
+      "height": 70,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_center",
       "persistentUuid": "2b721e53-25dd-40a9-addf-71d5ce7023fd",
       "width": 70,
-      "x": 1190,
-      "y": 1470,
-      "zOrder": 12643616,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "road_tiled_white_center",
-      "persistentUuid": "a059b481-1225-4e46-8fdd-ac876181fa40",
-      "width": 0,
       "x": 1120,
       "y": 1540,
-      "zOrder": 12643617,
+      "zOrder": 12643616,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14306,7 +14312,7 @@
       "width": 140,
       "x": 770,
       "y": -350,
-      "zOrder": 12643668,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14684,6 +14690,39 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "uziLong_pick",
+      "persistentUuid": "3133f8c5-fdf8-4e87-ba01-b00fcbef57a2",
+      "width": 0,
+      "x": 70,
+      "y": 1190,
+      "zOrder": 12643682,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_center",
+      "persistentUuid": "ef489ea3-e0b9-4c3c-ae35-99a135f7cc5d",
+      "width": 70,
+      "x": 1190,
+      "y": 1470,
+      "zOrder": 12643616,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -14973,8 +15012,28 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
-      "behaviors": [],
+      "effects": [
+        {
+          "effectType": "BlendingMode",
+          "name": "Effect",
+          "doubleParameters": {
+            "blendmode": 2,
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen",
+          "MarginTop": 0,
+          "MarginBottom": 0,
+          "MarginLeft": 0,
+          "MarginRight": 0
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -19249,6 +19308,7 @@
           "value": ""
         },
         {
+          "folded": true,
           "name": "Customisation",
           "type": "structure",
           "children": [
@@ -19273,6 +19333,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Movement",
           "type": "structure",
           "children": [
@@ -19380,6 +19441,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Camera",
           "type": "structure",
           "children": [
@@ -19392,6 +19454,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Phone",
           "type": "structure",
           "children": [
@@ -19400,6 +19463,24 @@
               "name": "active",
               "type": "boolean",
               "value": false
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "active",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "equipped",
+              "type": "string",
+              "value": ""
             }
           ]
         }
@@ -19443,6 +19524,40 @@
         }
       ],
       "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 3,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        },
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
@@ -20449,6 +20564,10 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -20465,7 +20584,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/character/hand/hand_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "finger",
+                      "x": 29.5,
+                      "y": 12.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -21111,6 +21236,423 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziGold_hold",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "properties",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "angle",
+              "type": "number",
+              "value": 270
+            },
+            {
+              "folded": true,
+              "name": "height",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "folded": true,
+              "name": "pushBackStrength",
+              "persistentUuid": "4f3e2c10-41c8-4036-ad79-5ccc09bfb98a",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "folded": true,
+              "name": "variance",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "folded": true,
+              "name": "width",
+              "type": "number",
+              "value": 100
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziGold.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 45,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 59
+                      },
+                      {
+                        "x": 45,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziLong_hold",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "properties",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "angle",
+              "type": "number",
+              "value": 270
+            },
+            {
+              "folded": true,
+              "name": "height",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "folded": true,
+              "name": "pushBackStrength",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "folded": true,
+              "name": "variance",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "width",
+              "type": "number",
+              "value": 100
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        },
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziLong.png",
+                  "points": [
+                    {
+                      "name": "spawn",
+                      "x": 50,
+                      "y": 70
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 50,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 50,
+                    "y": 32
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 86
+                      },
+                      {
+                        "x": 44,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziLong_pick",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 10,
+          "RadiusY": 10,
+          "LoopDuration": 6,
+          "InitialTurningLeft": true,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": true,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 2.0247e-320,
+          "OldY": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziLong.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 50,
+                    "y": 30
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 86
+                      },
+                      {
+                        "x": 44,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uzi_ammo",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/ammo/ammo_uzi.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 10,
+                    "y": 13
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 19,
+                        "y": 5
+                      },
+                      {
+                        "x": 31,
+                        "y": 5
+                      },
+                      {
+                        "x": 31,
+                        "y": 33
+                      },
+                      {
+                        "x": 19,
+                        "y": 33
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -21397,7 +21939,28 @@
                 "folderName": "melee"
               },
               {
-                "folderName": "gun"
+                "folderName": "gun",
+                "children": [
+                  {
+                    "folderName": "hold",
+                    "children": [
+                      {
+                        "objectName": "uziGold_hold"
+                      },
+                      {
+                        "objectName": "uziLong_hold"
+                      }
+                    ]
+                  },
+                  {
+                    "folderName": "pick",
+                    "children": [
+                      {
+                        "objectName": "uziLong_pick"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -21412,6 +21975,9 @@
               },
               {
                 "objectName": "flame_thrower_fire_secondary"
+              },
+              {
+                "objectName": "uzi_ammo"
               }
             ]
           }
@@ -22061,6 +22627,10 @@
       "type": "EllipseMovement::EllipseMovement"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
       "name": "FlashTransitionPainter",
       "type": "FlashTransitionPainter::FlashTransitionPainter"
     },
@@ -22083,6 +22653,14 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
     },
     {
       "name": "Sticker",

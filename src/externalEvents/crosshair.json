@@ -75,6 +75,25 @@
           "actions": [
             {
               "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player_crosshair",
+                "StayOnScreen",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "MettreXY"
               },
               "parameters": [
@@ -112,25 +131,26 @@
               ]
             }
           ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "actions": [
             {
               "type": {
-                "value": "Gamepads::C_Axis_pushed"
+                "value": "ActivateBehavior"
               },
               "parameters": [
-                "",
-                "1",
-                "\"Right\"",
-                "\"Right\"",
+                "player_crosshair",
+                "StayOnScreen",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
                 ""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "AddForceAL"
@@ -138,114 +158,16 @@
               "parameters": [
                 "player_crosshair",
                 "Gamepads::StickAngle(1, \"Right\")",
-                "10",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Gamepads::C_Axis_pushed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Right\"",
-                "\"Left\"",
-                ""
-              ]
-            }
-          ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Gamepads::C_Axis_pushed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Right\"",
-                "\"Up\"",
-                ""
-              ]
-            }
-          ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Gamepads::C_Axis_pushed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Right\"",
-                "\"Down\"",
-                ""
-              ]
-            }
-          ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ModVarSceneTxt"
-              },
-              "parameters": [
-                "",
-                "=",
-                "gamepads"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "ToString(Gamepads::StickForceX(1, \"Right\"))",
-                "\"info\"",
+                "Gamepads::StickForce(1, \"Right\") * 1000",
                 ""
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "parameters": []
