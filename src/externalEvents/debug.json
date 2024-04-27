@@ -355,6 +355,28 @@
                     "\"Shadow\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Weapon_Hold",
+                    "Effect",
+                    "\"shadow\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Weapon_Pick",
+                    "Effect",
+                    "\"shadow\"",
+                    ""
+                  ]
                 }
               ]
             },
@@ -436,6 +458,28 @@
                     "basketball",
                     "Effect",
                     "\"Shadow\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Weapon_Hold",
+                    "Effect",
+                    "\"shadow\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Weapon_Pick",
+                    "Effect",
+                    "\"shadow\"",
                     "yes"
                   ]
                 }

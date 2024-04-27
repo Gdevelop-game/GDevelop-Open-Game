@@ -69,6 +69,17 @@
           "conditions": [
             {
               "type": {
+                "value": "VarObjetTxt"
+              },
+              "parameters": [
+                "player_body",
+                "Animation",
+                "!=",
+                "\"weaponHold\""
+              ]
+            },
+            {
+              "type": {
                 "value": "SceneInstancesCount"
               },
               "parameters": [

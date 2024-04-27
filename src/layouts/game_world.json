@@ -12215,31 +12215,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 140,
+      "height": 70,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_center",
       "persistentUuid": "2b721e53-25dd-40a9-addf-71d5ce7023fd",
       "width": 70,
-      "x": 1190,
-      "y": 1470,
-      "zOrder": 12643616,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "road_tiled_white_center",
-      "persistentUuid": "a059b481-1225-4e46-8fdd-ac876181fa40",
-      "width": 0,
       "x": 1120,
       "y": 1540,
-      "zOrder": 12643617,
+      "zOrder": 12643616,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14708,23 +14692,6 @@
       "initialVariables": []
     },
     {
-      "angle": 90,
-      "customSize": true,
-      "depth": 1,
-      "height": 1330,
-      "keepRatio": true,
-      "layer": "",
-      "name": "road_tiled_white_inner",
-      "persistentUuid": "744534f5-1a53-49b6-8528-510ba87c75b5",
-      "width": 70,
-      "x": 360,
-      "y": 920,
-      "zOrder": 12643609,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
       "angle": 0,
       "customSize": false,
       "height": 0,
@@ -14736,6 +14703,23 @@
       "x": 70,
       "y": 1190,
       "zOrder": 12643682,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_center",
+      "persistentUuid": "ef489ea3-e0b9-4c3c-ae35-99a135f7cc5d",
+      "width": 70,
+      "x": 1190,
+      "y": 1470,
+      "zOrder": 12643616,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -19548,7 +19532,7 @@
           "RotateBullet": true,
           "FiringArc": 45,
           "BulletQuantity": 1,
-          "AngleVariance": 0,
+          "AngleVariance": 3,
           "BulletSpeedVariance": 0,
           "AmmoQuantity": 0,
           "ShotsPerReload": 0,
@@ -19569,6 +19553,10 @@
           "ExponentialCoolingRate": 0.3,
           "BulletLayer": "",
           "RandomizedAngle": 0
+        },
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
         },
         {
           "name": "TopDownMovement",
@@ -20576,6 +20564,10 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -21270,6 +21262,19 @@
             },
             {
               "folded": true,
+              "name": "pushBackStrength",
+              "persistentUuid": "4f3e2c10-41c8-4036-ad79-5ccc09bfb98a",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "folded": true,
+              "name": "variance",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "folded": true,
               "name": "width",
               "type": "number",
               "value": 100
@@ -21277,8 +21282,32 @@
           ]
         }
       ],
-      "effects": [],
-      "behaviors": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -21355,6 +21384,18 @@
             },
             {
               "folded": true,
+              "name": "pushBackStrength",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "folded": true,
+              "name": "variance",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
               "name": "width",
               "type": "number",
               "value": 100
@@ -21362,8 +21403,31 @@
           ]
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        },
         {
           "name": "Sticker",
           "type": "Sticker::Sticker",
@@ -21383,7 +21447,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/weapon/gun/uziLong.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "spawn",
+                      "x": 50,
+                      "y": 70
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 50,
@@ -21429,8 +21499,44 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
-      "behaviors": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement",
+          "RadiusX": 10,
+          "RadiusY": 10,
+          "LoopDuration": 6,
+          "InitialTurningLeft": true,
+          "InitialDirectionAngle": 0,
+          "ShouldRotate": true,
+          "RotationOffset": 0,
+          "CenterX": 0,
+          "CenterY": 0,
+          "MovementAngle": 0,
+          "OldX": 2.0247e-320,
+          "OldY": 2.0247e-320
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -21490,7 +21596,13 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "extraBorder": 0,
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -21506,8 +21618,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 10,
+                    "y": 13
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -22541,6 +22653,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "StayOnScreen",

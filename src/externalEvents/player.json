@@ -1095,6 +1095,15 @@
                 "=",
                 "player_body.Movement.TopDownMovement.walk.maxSpeed"
               ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "debug.cameraControlType",
+                "True"
+              ]
             }
           ],
           "events": [
@@ -1468,7 +1477,6 @@
           "actions": []
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1659,27 +1667,190 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyReleased"
+                    "inverted": true,
+                    "value": "Distance"
                   },
                   "parameters": [
-                    "",
-                    "t"
+                    "player_body",
+                    "player_crosshair",
+                    "100",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "player_body",
+                    "Weapon.active",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Controller_X_is_connected"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"R2\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Gamepads::C_Controller_X_is_connected"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "FireBullet::FireBullet::FireTowardObject"
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
                   },
                   "parameters": [
                     "player_body",
                     "FireBullet",
-                    "Weapon_Hold.CenterX()",
-                    "Weapon_Hold.CenterY()",
+                    "Weapon_Hold.PointX(\"spawn\")",
+                    "Weapon_Hold.PointY(\"spawn\")",
                     "uzi_ammo",
-                    "player_crosshair",
-                    "400",
+                    "player_crosshair.CenterX()",
+                    "player_crosshair.CenterY()",
+                    "1500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "player_body",
+                    "player_body.Angle() + 180",
+                    "Weapon_Hold.properties.pushBackStrength",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetAngleVarianceOp"
+                  },
+                  "parameters": [
+                    "player_body",
+                    "FireBullet",
+                    "=",
+                    "Weapon_Hold.properties.variance",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "uzi_ammo",
+                    "=",
+                    "Weapon_Hold.ZOrder() -2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "player_hand",
+                    "ShakeObject_PositionAngle",
+                    "0.1",
+                    "-1",
+                    "-2",
+                    "0",
+                    "0.08",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "player_body",
+                    "ShakeObject_PositionAngle",
+                    "0.1",
+                    "-1",
+                    "-2",
+                    "0",
+                    "0.08",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CameraShake::ShakeCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "0.05",
+                    "0",
+                    "0",
                     ""
                   ]
                 }
@@ -2345,6 +2516,7 @@
               "actions": [],
               "events": [
                 {
+                  "disabled": true,
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -2393,6 +2565,7 @@
                   ]
                 },
                 {
+                  "disabled": true,
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -2441,6 +2614,7 @@
                   ]
                 },
                 {
+                  "disabled": true,
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -2489,6 +2663,7 @@
                   ]
                 },
                 {
+                  "disabled": true,
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -2546,10 +2721,194 @@
                       },
                       "parameters": [
                         "player_body",
-                        "CursorX()",
-                        "CursorY()",
+                        "player_crosshair.CenterX()",
+                        "player_crosshair.CenterY()",
                         "0",
                         ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "a"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Left\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
+                        "player_body",
+                        "TopDownMovement"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "d"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Right\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "player_body",
+                        "TopDownMovement"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "w"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Up\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "player_body",
+                        "TopDownMovement"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "s"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Axis_pushed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"Left\"",
+                            "\"Down\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateDownKey"
+                      },
+                      "parameters": [
+                        "player_body",
+                        "TopDownMovement"
                       ]
                     }
                   ]
@@ -2560,6 +2919,11 @@
                   "actions": []
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
