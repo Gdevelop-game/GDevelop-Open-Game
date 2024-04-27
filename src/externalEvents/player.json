@@ -1327,7 +1327,7 @@
               },
               "parameters": [
                 "player_body",
-                "Static",
+                "Game_Static",
                 ""
               ]
             },
@@ -1347,7 +1347,7 @@
               },
               "parameters": [
                 "props_moveable",
-                "Static",
+                "Game_Static",
                 ""
               ]
             }
@@ -2351,14 +2351,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "flame_thrower_fire_collision"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "flame_thrower_fire"
               ]
             },
@@ -2415,20 +2407,7 @@
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "flame_thrower_fire_collision",
-                "=",
-                "Player.PointX(\"f_t_collision\")",
-                "=",
-                "Player.PointY(\"f_t_collision\")"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "folded": true,
@@ -3078,24 +3057,6 @@
                     "=",
                     "0"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "tazer_hitbox",
-                    ""
-                  ]
                 }
               ]
             }
@@ -3259,18 +3220,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "PlaySound"
                   },
                   "parameters": [
@@ -3283,32 +3232,11 @@
                 },
                 {
                   "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
                     "Gun1_ammo",
                     "-",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
                     "1"
                   ]
                 },
@@ -3571,28 +3499,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "bullet",
-                    "Player.PointX(\"shoot\")",
-                    "Player.PointY(\"shoot\")",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "70000"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3608,17 +3514,6 @@
                   "parameters": [
                     "",
                     "\"gun2_shoot\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "2"
                   ]
                 },
                 {
@@ -3942,19 +3837,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "CreateByName"
-                      },
-                      "parameters": [
-                        "",
-                        "flame_thrower_fire_secondary",
-                        "\"flame_thrower_fire_secondary\"",
-                        "flame_thrower_fire_collision.PointX(\"CenterBurning\")",
-                        "flame_thrower_fire_collision.PointY(\"CenterBurning\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ChangePlan"
                       },
                       "parameters": [
@@ -4088,20 +3970,7 @@
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "flame_thrower_fire",
-                    "=",
-                    "flame_thrower_fire_collision.X()",
-                    "=",
-                    "flame_thrower_fire_collision.Y()"
-                  ]
-                }
-              ]
+              "actions": []
             }
           ]
         },
@@ -4300,45 +4169,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun4_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "4"
                       ]
                     },
                     {
@@ -4392,45 +4228,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun4_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "4"
                       ]
                     },
                     {
@@ -4860,45 +4663,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun5_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "5"
                       ]
                     },
                     {
@@ -4952,45 +4722,12 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "bullet",
-                        "Player.PointX(\"shoot\")",
-                        "Player.PointY(\"shoot\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangePlan"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "=",
-                        "70000"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
                         "Gun5_ammo",
                         "-",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "bullet",
-                        "bullet",
-                        "=",
-                        "5"
                       ]
                     },
                     {
@@ -5463,18 +5200,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "tazer_hitbox",
-                        "=",
-                        "Player.PointX(\"hitbox\")",
-                        "=",
-                        "Player.PointY(\"hitbox\")"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarSceneTxt"
                       },
                       "parameters": [
@@ -5497,18 +5222,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "tazer_hitbox",
-                            "Player.PointX(\"hitbox\")",
-                            "Player.PointY(\"hitbox\")",
-                            "\"\""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ResetTimer"
@@ -5593,17 +5306,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "tazer_hitbox",
-                    "tazer_hitbox"
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
@@ -5692,31 +5395,8 @@
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "AjoutObjConcern"
-                  },
-                  "parameters": [
-                    "",
-                    "Slash1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "MettreXY"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "=",
-                    "Player.PointX(\"slash\")",
-                    "=",
-                    "Player.PointY(\"slash\")"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
@@ -5838,18 +5518,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Slash1",
-                        "Player.PointX(\"slash\")",
-                        "Player.PointY(\"slash\")",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ResetTimer"
                       },
                       "parameters": [
@@ -5921,20 +5589,7 @@
                   "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Slash1",
-                        "=",
-                        "Player.PointX(\"slash\")",
-                        "=",
-                        "Player.PointY(\"slash\")"
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "folded": true,
@@ -5948,18 +5603,6 @@
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "value": "Create"
-                          },
-                          "parameters": [
-                            "",
-                            "Slash1",
-                            "Player.PointX(\"slash\")",
-                            "Player.PointY(\"slash\")",
-                            "\"\""
-                          ]
-                        },
                         {
                           "type": {
                             "value": "ResetTimer"
@@ -6007,17 +5650,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "tazer_hitbox"
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
@@ -6062,15 +5695,6 @@
                     "=",
                     "0"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Slash1",
-                    "tazer_hitbox"
-                  ]
                 }
               ]
             }
@@ -6107,43 +5731,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_pistol",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_pistol",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_pistol",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6166,43 +5759,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_machine",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_machine",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_machine",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6225,43 +5787,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_sniper",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_sniper",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_sniper",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             }
           ]
@@ -6284,43 +5815,12 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "bullet_destroy_rocket",
-                "bullet.PointX(\"effects_bullet\")",
-                "bullet.PointY(\"effects_bullet\")",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "bullet_destroy_rocket",
-                "=",
-                "(bullet.Angle())-180"
-              ]
-            },
-            {
-              "type": {
                 "value": "ChangePlan"
               },
               "parameters": [
                 "bullet_destroy_rocket",
                 "=",
                 "2000"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
               ]
             },
             {
@@ -6346,67 +5846,14 @@
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "bullet",
-                "props_fences",
-                "15",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "bullet"
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Arret"
-              },
-              "parameters": [
-                "bullet"
-              ]
-            },
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "bullet",
-                "props_fences",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "bullet",
-                "=",
-                "-200"
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "folded": true,
@@ -6436,32 +5883,12 @@
             },
             {
               "type": {
-                "value": "Animation"
-              },
-              "parameters": [
-                "ammo",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "ammo",
-                ""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "folded": true,
@@ -6832,227 +6259,43 @@
                   "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\""
-                  ]
-                }
-              ]
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "4"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "1"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "5"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "=",
-                    "2"
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "4"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             },
             {
               "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "bullet",
-                    "=",
-                    "5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ObjectTimer"
-                  },
-                  "parameters": [
-                    "bullet",
-                    "\"delete1\"",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "bullet",
-                    ""
-                  ]
-                }
-              ]
+              "conditions": [],
+              "actions": []
             }
           ]
         }

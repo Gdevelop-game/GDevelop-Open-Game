@@ -18,20 +18,12 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2846249846342898,
+    "zoomFactor": 0.4838624738782947,
     "windowMask": false
   },
   "objectsGroups": [
     {
-      "name": "doors",
-      "objects": [
-        {
-          "name": "door"
-        }
-      ]
-    },
-    {
-      "name": "Phone_status_bar",
+      "name": "Phone_Status_Bar",
       "objects": [
         {
           "name": "phone_battery"
@@ -45,7 +37,7 @@
       ]
     },
     {
-      "name": "Static",
+      "name": "Game_Static",
       "objects": [
         {
           "name": "building_rooftop"
@@ -68,7 +60,7 @@
       ]
     },
     {
-      "name": "WeaponWheel",
+      "name": "Weapon_Bar",
       "objects": [
         {
           "name": "weapon_icon"
@@ -133,6 +125,35 @@
         },
         {
           "name": "sea_tiled_water"
+        }
+      ]
+    },
+    {
+      "name": "Beach_Sand",
+      "objects": [
+        {
+          "name": "beach_sand_W"
+        },
+        {
+          "name": "beach_sand_SW"
+        },
+        {
+          "name": "beach_sand_N"
+        },
+        {
+          "name": "beach_sand_SE"
+        },
+        {
+          "name": "beach_sand_NE"
+        },
+        {
+          "name": "beach_sand_S"
+        },
+        {
+          "name": "beach_sand_inner_SW"
+        },
+        {
+          "name": "beach_sand_E"
         }
       ]
     }
@@ -4977,7 +4998,7 @@
       "persistentUuid": "d1dc9fa8-2e2b-47e6-8f0b-11d1963eb546",
       "width": 70,
       "x": -2030,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5694,26 +5715,6 @@
       "height": 70,
       "layer": "",
       "name": "props_fences",
-      "persistentUuid": "1bd7cddc-ce3a-4c47-9e98-faf17ad6c354",
-      "width": 70,
-      "x": -2660,
-      "y": 490,
-      "zOrder": 115,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 3
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 70,
-      "layer": "",
-      "name": "props_fences",
       "persistentUuid": "3ebfdf6b-ee64-4783-b30c-f3a493ec99b0",
       "width": 70,
       "x": -2660,
@@ -5737,7 +5738,7 @@
       "persistentUuid": "f35751fc-3c1c-4739-ba50-da2a57d86ea1",
       "width": 70,
       "x": -2660,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5757,7 +5758,7 @@
       "persistentUuid": "21a88a9f-05f7-4e39-8803-947fadfb3839",
       "width": 70,
       "x": -2590,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5777,7 +5778,7 @@
       "persistentUuid": "9e513a7d-2786-422c-8eb5-72ce2fe4ca37",
       "width": 70,
       "x": -2520,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5797,7 +5798,7 @@
       "persistentUuid": "ac9fc40e-aa9b-4d9a-b61a-4b65b7e24800",
       "width": 70,
       "x": -2450,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5817,7 +5818,7 @@
       "persistentUuid": "a5038e6f-0852-42d8-8cdc-558e7cd25239",
       "width": 70,
       "x": -2380,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5837,7 +5838,7 @@
       "persistentUuid": "ac119b0c-9c9c-49e9-8c26-71fdd2ab8f00",
       "width": 70,
       "x": -2310,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5857,7 +5858,7 @@
       "persistentUuid": "70be2bc3-3c03-456f-aad4-c08bb4e8c3bd",
       "width": 70,
       "x": -2240,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5877,7 +5878,7 @@
       "persistentUuid": "1920a97f-b817-4e74-ba95-db9d4d4f0309",
       "width": 70,
       "x": -2170,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -5897,7 +5898,7 @@
       "persistentUuid": "bd069cfa-41fe-4eef-ac63-2808b2f86309",
       "width": 70,
       "x": -2100,
-      "y": 420,
+      "y": 490,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -6057,7 +6058,7 @@
       "persistentUuid": "8bcdc884-58dc-4aec-94b6-d7db214e4fea",
       "width": 70,
       "x": -2030,
-      "y": 490,
+      "y": 560,
       "zOrder": 115,
       "numberProperties": [
         {
@@ -11403,9 +11404,39 @@
       "x": -280,
       "y": 1680,
       "zOrder": 70,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "Customisation",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "body",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "hand",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "leg",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ]
     },
     {
       "angle": 0,
@@ -11490,7 +11521,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1050,
+      "height": 5110,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_W",
@@ -11507,7 +11538,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 490,
+      "height": 4550,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_E",
@@ -11611,7 +11642,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 910,
+      "height": 4900,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_center",
@@ -11681,7 +11712,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 630,
+      "height": 4620,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_center",
@@ -11966,7 +11997,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 700,
+      "height": 4690,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_inner",
@@ -11974,7 +12005,7 @@
       "width": 70,
       "x": -3220,
       "y": 2940,
-      "zOrder": 12643609,
+      "zOrder": 126,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -12501,13 +12532,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 1470,
+      "depth": 1.0285714285714287,
+      "height": 1512,
       "keepRatio": true,
       "layer": "",
       "name": "beach_sand_E",
       "persistentUuid": "317d9cde-3d96-4b38-9f56-6d879bf4843f",
-      "width": 70,
+      "width": 72,
       "x": 3360,
       "y": -490,
       "zOrder": 12643634,
@@ -12551,13 +12582,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 1610,
+      "depth": 1.0285714285714285,
+      "height": 1656,
       "keepRatio": true,
       "layer": "",
       "name": "beach_sand_E",
       "persistentUuid": "89c61eed-80cc-440c-94c9-e350811a7949",
-      "width": 70,
+      "width": 72,
       "x": 3220,
       "y": 1540,
       "zOrder": 12643637,
@@ -13323,13 +13354,13 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 420,
+      "depth": 1.0285714285714287,
+      "height": 432.00000000000006,
       "keepRatio": true,
       "layer": "",
       "name": "beach_sand_E",
       "persistentUuid": "e4b9f3ef-dc1d-4ff6-b8c5-aedafeee4f00",
-      "width": 70,
+      "width": 72,
       "x": 2800,
       "y": 1050,
       "zOrder": 12643664,
@@ -13875,14 +13906,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1890,
+      "height": 1820,
       "keepRatio": true,
       "layer": "",
       "name": "grass_tiled",
       "persistentUuid": "8d26b06e-df59-476b-a244-52c3f1d5a443",
       "width": 770,
       "x": -2660,
-      "y": 420,
+      "y": 490,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -13939,6 +13970,720 @@
           "value": "R"
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "d3c5f97b-6735-4e4f-8f54-f07d24d79c09",
+      "width": 1820,
+      "x": -1050,
+      "y": -350,
+      "zOrder": 12643667,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1330,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "14e558bf-783b-4d84-a968-20799f1b9a3a",
+      "width": 140,
+      "x": 2940,
+      "y": 1540,
+      "zOrder": 12643668,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "a53dcfc8-4709-4fcc-8d3a-627f624d8896",
+      "width": 140,
+      "x": 2800,
+      "y": 1540,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 350,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "abb4418b-02a3-48ad-b923-062f8f2b2948",
+      "width": 140,
+      "x": -1050,
+      "y": -210,
+      "zOrder": 12643669,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "d229e9f7-b20a-46b0-be10-342c1bb857e0",
+      "width": 1680,
+      "x": -910,
+      "y": 350,
+      "zOrder": 12643670,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 840,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "de811fed-d71f-4c48-ac9d-e57dbeee15be",
+      "width": 70,
+      "x": -980,
+      "y": 140,
+      "zOrder": 12643671,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "c5aae110-3685-47db-9692-e8513f48a122",
+      "width": 700,
+      "x": -1680,
+      "y": 910,
+      "zOrder": 12643672,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "14e9a161-7426-4504-afd3-840e48e2d95d",
+      "width": 2100,
+      "x": -3150,
+      "y": 0,
+      "zOrder": 12643673,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2030,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "8bc49b17-f0d2-49c8-a923-13119fcfb44f",
+      "width": 70,
+      "x": -2730,
+      "y": 420,
+      "zOrder": 12643674,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2310,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "6c5704dc-93a0-42c1-bb48-7ae770b557ac",
+      "width": 70,
+      "x": -3150,
+      "y": 140,
+      "zOrder": 12643674,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "5532afef-b128-4ba3-9dab-f6cbfde7320d",
+      "width": 770,
+      "x": -2660,
+      "y": 420,
+      "zOrder": 12643675,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "144cd8a3-81fe-453c-ad44-43bcbd84e522",
+      "width": 1890,
+      "x": -2660,
+      "y": 2310,
+      "zOrder": 12643676,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1120,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "2a3c1709-7b04-404a-805c-f26ca75b9619",
+      "width": 140,
+      "x": -3640,
+      "y": 2450,
+      "zOrder": 12643677,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "6bbe9c08-a607-463a-bdf8-92003459199d",
+      "width": 490,
+      "x": -3640,
+      "y": 2310,
+      "zOrder": 12643676,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "2e6da1a0-425c-446e-8891-b1ab96e08003",
+      "width": 140,
+      "x": 1680,
+      "y": 3010,
+      "zOrder": 12643678,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "b048617e-5ba0-47c6-a406-e4bc6eed5dc0",
+      "width": 2870,
+      "x": -2870,
+      "y": 3080,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 350,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "22ba06ca-5059-450e-9042-ff83ebb269a6",
+      "width": 140,
+      "x": -2870,
+      "y": 3220,
+      "zOrder": 12643679,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1050,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "a8d8a7cd-f077-4357-9068-fb73511c2055",
+      "width": 140,
+      "x": -910,
+      "y": 1260,
+      "zOrder": 12643678,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "3b39aaee-fa9c-47d2-a58c-24d92172efc5",
+      "width": 1820,
+      "x": -910,
+      "y": 1120,
+      "zOrder": 12643667,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1470,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "b6b4e057-051b-439e-9bdf-5ffcab009098",
+      "width": 140,
+      "x": 770,
+      "y": -350,
+      "zOrder": 12643668,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "0e344f80-8b2f-468b-9ff8-3d47ad326551",
+      "width": 1680,
+      "x": 0,
+      "y": 1890,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "5b16034d-c7a9-4777-8936-0235d3adf9aa",
+      "width": 1960,
+      "x": -140,
+      "y": 3220,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2240,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "70d05402-6f7b-4dac-80ed-5d9eda9cd194",
+      "width": 140,
+      "x": 1540,
+      "y": -350,
+      "zOrder": 12643668,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1190,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "d5f1bb40-1f3c-4c01-91e5-a8a8e09e2a52",
+      "width": 140,
+      "x": 3080,
+      "y": -210,
+      "zOrder": 12643668,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "c1172909-7196-4a21-9fec-fb51da62ca5f",
+      "width": 1540,
+      "x": 1680,
+      "y": -350,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 840,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "3bb3ff70-09de-4889-b65d-386bf0762088",
+      "width": 140,
+      "x": 2660,
+      "y": 840,
+      "zOrder": 12643668,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "d9b34795-39e0-48b8-b0f5-e7299921c6d6",
+      "width": 280,
+      "x": 2800,
+      "y": 840,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "be5b11eb-e662-4bce-a01f-ff11e49782a2",
+      "width": 1400,
+      "x": 1680,
+      "y": 2870,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1190,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "799f6dc4-040d-48f2-a9e0-a25706bb2fd7",
+      "width": 140,
+      "x": -140,
+      "y": 1890,
+      "zOrder": 12643678,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1400,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "196daab6-2cc0-4b53-bef7-29e723904330",
+      "width": 210,
+      "x": -1890,
+      "y": 910,
+      "zOrder": 12643680,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "5ed98d63-b650-47ea-8c73-67105d0aa136",
+      "width": 490,
+      "x": 1680,
+      "y": 280,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "27e3f1ce-1e1c-414f-adb8-71d3ed65b45d",
+      "width": 140,
+      "x": -2380,
+      "y": 2100,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "87587bed-2a52-4f12-9577-8c0086472a91",
+      "width": 210,
+      "x": -2450,
+      "y": 770,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "b7e13995-ff48-4cdd-bf08-4e49c768ac16",
+      "width": 560,
+      "x": -2450,
+      "y": 630,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 420,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "a7b2b557-d4e4-4f5b-9fa8-6b43642ed1db",
+      "width": 140,
+      "x": -280,
+      "y": 700,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "a63215e1-c3e8-48ad-9877-2a9dfa641089",
+      "width": 140,
+      "x": 420,
+      "y": 910,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "54b4bb76-1acf-45e4-9201-5a98719b8e7e",
+      "width": 210,
+      "x": -1120,
+      "y": 1330,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "03a4bf2c-a99f-43fa-b7e5-bbbdad763ddc",
+      "width": 420,
+      "x": 1680,
+      "y": 1120,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 280,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "71484182-530a-40e5-ab79-c7a492ab150d",
+      "width": 210,
+      "x": 420,
+      "y": 2030,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_2",
+      "persistentUuid": "22819bc0-8140-4679-bf91-4139c2e44406",
+      "width": 210,
+      "x": -1120,
+      "y": 1960,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 210,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "53a9990f-2d1e-44f4-afd5-766b33831dab",
+      "width": 70,
+      "x": -1960,
+      "y": 770,
+      "zOrder": 12643681,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 140,
+      "keepRatio": true,
+      "layer": "",
+      "name": "sand_tiled_1",
+      "persistentUuid": "d03a10be-5fe6-46df-886e-3c49d3f92268",
+      "width": 70,
+      "x": -1960,
+      "y": 490,
+      "zOrder": 12643681,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -13956,424 +14701,6 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "road_sprite_all",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_40.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_37.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_41.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_91.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_62.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_36.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_35.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_93.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_66.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_63.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_64.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_95.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_38.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\Road\\road\\tile_68.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
       "name": "building_rooftop",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -14381,11 +14708,11 @@
       "effects": [
         {
           "effectType": "DropShadow",
-          "name": "Effect",
+          "name": "shadow",
           "doubleParameters": {
-            "alpha": 0.5,
-            "blur": 2,
-            "distance": 20,
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
             "padding": 0,
             "quality": 3,
             "rotation": 0
@@ -14549,7 +14876,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "sand",
+      "name": "sand_sprite",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -14642,53 +14969,6 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "flame_thrower_fire_collision",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\flame thrower fire collision.png",
-                  "points": [
-                    {
-                      "name": "CenterBurning",
-                      "x": 50,
-                      "y": 16
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 16
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 16
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
       "name": "player_crosshair",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -14718,318 +14998,6 @@
                     "name": "centre",
                     "x": 0,
                     "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "tazer_hitbox",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.1429,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=0.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 2.5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "Slash1",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets\\weapons\\slash.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 31.77560043334961,
-                    "y": 12.954500198364258
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 31.320999145507812,
-                    "y": 12.954500198364258
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 15.028800010681152,
-                        "y": 3.6842100620269775
-                      },
-                      {
-                        "x": 34.76559829711914,
-                        "y": 0
-                      },
-                      {
-                        "x": 58.18669891357422,
-                        "y": 15
-                      },
-                      {
-                        "x": 33.976200103759766,
-                        "y": 4.473680019378662
-                      },
-                      {
-                        "x": 19.765600204467773,
-                        "y": 6.8421101570129395
-                      },
-                      {
-                        "x": 3.9761500358581543,
-                        "y": 18.157899856567383
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "ammo",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "ammo1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletBlueSilver_outline.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "ammo4",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\Rocket_ammo.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "energy",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "ammo1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\energy.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 3
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 3
                   },
                   "customCollisionMask": []
                 }
@@ -15609,129 +15577,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "bullet",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "bullet",
-          "type": "string",
-          "value": "0"
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "bullet1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
-                  "points": [
-                    {
-                      "name": "effects_bullet",
-                      "x": 18.113399505615234,
-                      "y": 2.9629600048065186
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "bullet2",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-                  "points": [
-                    {
-                      "name": "effects_bullet",
-                      "x": 18.113399505615234,
-                      "y": 2.9629600048065186
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "bullet3",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\weapons\\bullet\\rocket_launcher_bullet.png",
-                  "points": [
-                    {
-                      "name": "effects_bullet",
-                      "x": 31.95669937133789,
-                      "y": 3.863640069961548
-                    }
-                  ],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "centerPoint": {
-                    "automatic": false,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 5
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "bold": false,
       "italic": false,
@@ -15834,7 +15679,7 @@
       "effects": [
         {
           "effectType": "DropShadow",
-          "name": "Shadow",
+          "name": "shadow",
           "doubleParameters": {
             "alpha": 0.2,
             "blur": 0,
@@ -16474,7 +16319,7 @@
       "effects": [
         {
           "effectType": "DropShadow",
-          "name": "Shadow",
+          "name": "shadow",
           "doubleParameters": {
             "alpha": 0.2,
             "blur": 0,
@@ -16963,47 +16808,6 @@
       "variables": [],
       "effects": [],
       "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": false,
-      "assetStoreId": "",
-      "name": "bridge_sprite_1",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\bridge\\bridge.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "",
@@ -19383,7 +19187,7 @@
       "assetStoreId": "",
       "height": 302,
       "name": "bridge_tiled_1",
-      "texture": "assets/bridge/bridge.png",
+      "texture": "assets/environment/bridge/bridge.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 300,
       "variables": [],
@@ -19601,19 +19405,56 @@
           ]
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.1,
+            "blur": 0,
+            "distance": 6,
+            "padding": 0,
+            "quality": 4,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        },
+        {
+          "effectType": "Reflection",
+          "name": "breathing",
+          "doubleParameters": {
+            "alphaEnding": 1,
+            "alphaStart": 1,
+            "amplitudeEnding": 3,
+            "amplitudeStart": 0,
+            "animationSpeed": 1,
+            "boundary": 0,
+            "waveLengthEnding": 100,
+            "waveLengthStart": 60
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "mirror": false
+          }
+        }
+      ],
       "behaviors": [
         {
+          "acceleration": 200,
+          "angularMaxSpeed": 200,
+          "deceleration": 200,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
-          "angularMaxSpeed": 400,
           "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
-          "maxSpeed": 200,
           "movementAngleOffset": 0,
           "rotateObject": true,
           "viewpoint": "TopDown"
@@ -20173,7 +20014,26 @@
           "value": 0
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 6,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [
         {
           "name": "Tween",
@@ -21230,6 +21090,28 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 70,
+      "name": "sand_tiled_1",
+      "texture": "assets/environment/tile/path/sand.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 70,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 70,
+      "name": "sand_tiled_2",
+      "texture": "assets/environment/tile/path/dirt.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 70,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -21409,7 +21291,13 @@
             "objectName": "concrete_1"
           },
           {
-            "objectName": "sand"
+            "objectName": "sand_tiled_1"
+          },
+          {
+            "objectName": "sand_tiled_2"
+          },
+          {
+            "objectName": "sand_sprite"
           },
           {
             "objectName": "grass_tiled"
@@ -21459,13 +21347,7 @@
             "objectName": "road_tiled_white_curve_left"
           },
           {
-            "objectName": "bridge_sprite_1"
-          },
-          {
             "objectName": "bridge_tiled_1"
-          },
-          {
-            "objectName": "road_sprite_all"
           }
         ]
       },
@@ -21521,18 +21403,7 @@
             ]
           },
           {
-            "folderName": "hitbox",
-            "children": [
-              {
-                "objectName": "flame_thrower_fire_collision"
-              },
-              {
-                "objectName": "tazer_hitbox"
-              },
-              {
-                "objectName": "Slash1"
-              }
-            ]
+            "folderName": "hitbox"
           },
           {
             "folderName": "ammo",
@@ -21542,15 +21413,6 @@
               },
               {
                 "objectName": "flame_thrower_fire_secondary"
-              },
-              {
-                "objectName": "bullet"
-              },
-              {
-                "objectName": "energy"
-              },
-              {
-                "objectName": "ammo"
               }
             ]
           }
@@ -21656,7 +21518,16 @@
         {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -21695,7 +21566,16 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -21725,6 +21605,26 @@
                 "grass_tiled",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "sand_tiled_1",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "sand_tiled_2",
+                "=",
+                "1"
               ]
             }
           ]

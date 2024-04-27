@@ -26,7 +26,7 @@
     "windowWidth": 1920,
     "windowHeight": 1080,
     "latestCompilationDirectory": "",
-    "maxFPS": 120,
+    "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {},
@@ -7576,6 +7576,15 @@
         "name": "../../../../Downloads/kenney_weapon-pack/Sprites/Render/shotgunShort.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/misc/green_checked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/misc/green_checked.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -7698,7 +7707,6 @@
       "type": "structure",
       "children": [
         {
-          "folded": true,
           "name": "Customisation",
           "persistentUuid": "6f3e9e87-d6f3-44d0-a02a-6c8089850a4a",
           "type": "structure",
@@ -7707,7 +7715,7 @@
               "folded": true,
               "name": "body",
               "type": "number",
-              "value": 0
+              "value": 8
             },
             {
               "folded": true,
