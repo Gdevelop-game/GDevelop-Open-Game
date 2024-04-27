@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.7062321847949167,
+    "zoomFactor": 3.5392023750002357,
     "windowMask": false
   },
   "objectsGroups": [
@@ -237,7 +237,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "name": "slot",
@@ -290,7 +290,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -328,7 +328,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -346,7 +346,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": false
+                      "value": true
                     },
                     {
                       "name": "slot",
@@ -14702,6 +14702,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "uziGold",
+      "persistentUuid": "c9b6f2b0-1dd8-431b-8acf-2ca452ad798a",
+      "width": 0,
+      "x": 840,
+      "y": 630,
+      "zOrder": 12643682,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -21149,6 +21165,66 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziGold",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziGold.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 45,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 16
+                      },
+                      {
+                        "x": 55,
+                        "y": 59
+                      },
+                      {
+                        "x": 45,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -21435,7 +21511,12 @@
                 "folderName": "melee"
               },
               {
-                "folderName": "gun"
+                "folderName": "gun",
+                "children": [
+                  {
+                    "objectName": "uziGold"
+                  }
+                ]
               }
             ]
           },
