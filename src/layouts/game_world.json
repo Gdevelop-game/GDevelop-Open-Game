@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.19762386410678406,
+    "zoomFactor": 1.7062321847949167,
     "windowMask": false
   },
   "objectsGroups": [
@@ -11015,7 +11015,7 @@
       "width": 70,
       "x": -3570,
       "y": 3640,
-      "zOrder": -2,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -11030,7 +11030,7 @@
       "width": 70,
       "x": -2870,
       "y": 3640,
-      "zOrder": -2,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -12110,13 +12110,14 @@
     },
     {
       "angle": 90,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 70,
       "keepRatio": true,
       "layer": "",
       "name": "road_tiled_white_end",
       "persistentUuid": "b6a835a7-261c-46d2-971e-59fff8abd689",
-      "width": 0,
+      "width": 70,
       "x": -350,
       "y": 1540,
       "zOrder": 12643610,
@@ -14681,6 +14682,23 @@
       "x": -1960,
       "y": 490,
       "zOrder": 12643681,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 1,
+      "height": 1330,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_inner",
+      "persistentUuid": "744534f5-1a53-49b6-8528-510ba87c75b5",
+      "width": 70,
+      "x": 360,
+      "y": 920,
+      "zOrder": 12643609,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
