@@ -75,6 +75,25 @@
           "actions": [
             {
               "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player_crosshair",
+                "StayOnScreen",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "MettreXY"
               },
               "parameters": [
@@ -113,6 +132,25 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player_crosshair",
+                "StayOnScreen",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
+                "\"UI\""
+              ]
+            },
             {
               "type": {
                 "value": "AddForceAL"

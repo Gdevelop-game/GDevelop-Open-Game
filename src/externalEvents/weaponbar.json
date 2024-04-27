@@ -545,28 +545,6 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "weapon_icon",
-                "weaponWheelSticker.CenterX() + Player.WeaponWheel.adder",
-                "weapon_bar.CenterY()",
-                "\"UI\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "Player.WeaponWheel.adder",
-                "+",
-                "weapon_icon.Width() + 50"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResizableCapability::ResizableBehavior::SetWidth"
               },
               "parameters": [
@@ -585,6 +563,28 @@
                 "Resizable",
                 "=",
                 "weapon_bar.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "weapon_icon",
+                "weaponWheelSticker.CenterX() + Player.WeaponWheel.adder",
+                "weapon_bar.CenterY()",
+                "\"UI\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Player.WeaponWheel.adder",
+                "+",
+                "weapon_icon.Width() + 50"
               ]
             },
             {
@@ -637,6 +637,61 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerEffectEnabled"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"weaponBar\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "weapon_icon"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "OpacityCapability::OpacityBehavior::Value"
+              },
+              "parameters": [
+                "weapon_bar",
+                "Opacity",
+                ">",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "weapon_icon"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -674,28 +729,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "weapon_icon",
-                "=",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
@@ -704,7 +738,7 @@
               "parameters": [
                 "Player.Weapons.Selected",
                 "=",
-                "weapon_icon.Animation::Name()"
+                "player_body.Weapon.equipped"
               ]
             },
             {

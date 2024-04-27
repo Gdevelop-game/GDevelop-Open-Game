@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 3.5392023750002357,
+    "zoomFactor": 0.5344795761132777,
     "windowMask": false
   },
   "objectsGroups": [
@@ -156,6 +156,25 @@
           "name": "beach_sand_E"
         }
       ]
+    },
+    {
+      "name": "Weapon_Pick",
+      "objects": [
+        {
+          "name": "uziLong_pick"
+        }
+      ]
+    },
+    {
+      "name": "Weapon_Hold",
+      "objects": [
+        {
+          "name": "uziGold_hold"
+        },
+        {
+          "name": "uziLong_hold"
+        }
+      ]
     }
   ],
   "variables": [
@@ -208,6 +227,7 @@
       "type": "structure",
       "children": [
         {
+          "folded": true,
           "name": "WeaponWheel",
           "type": "structure",
           "children": [
@@ -346,7 +366,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "name": "slot",
@@ -364,7 +384,7 @@
                       "folded": true,
                       "name": "active",
                       "type": "boolean",
-                      "value": true
+                      "value": false
                     },
                     {
                       "folded": true,
@@ -400,6 +420,7 @@
               "value": ""
             },
             {
+              "folded": true,
               "name": "Slot",
               "type": "structure",
               "children": [
@@ -11364,13 +11385,13 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "UI",
+      "layer": "",
       "name": "player_crosshair",
       "persistentUuid": "808484fa-24aa-4068-9347-4591d049c015",
       "width": 0,
       "x": 808,
       "y": 630,
-      "zOrder": 126,
+      "zOrder": 1260,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14307,7 +14328,7 @@
       "width": 140,
       "x": 770,
       "y": -350,
-      "zOrder": 12643668,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -14709,11 +14730,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "uziGold",
-      "persistentUuid": "c9b6f2b0-1dd8-431b-8acf-2ca452ad798a",
+      "name": "uziLong_pick",
+      "persistentUuid": "3133f8c5-fdf8-4e87-ba01-b00fcbef57a2",
       "width": 0,
-      "x": 840,
-      "y": 630,
+      "x": 70,
+      "y": 1190,
       "zOrder": 12643682,
       "numberProperties": [],
       "stringProperties": [],
@@ -19303,6 +19324,7 @@
           "value": ""
         },
         {
+          "folded": true,
           "name": "Customisation",
           "type": "structure",
           "children": [
@@ -19327,6 +19349,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Movement",
           "type": "structure",
           "children": [
@@ -19434,6 +19457,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Camera",
           "type": "structure",
           "children": [
@@ -19446,6 +19470,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "Phone",
           "type": "structure",
           "children": [
@@ -19454,6 +19479,24 @@
               "name": "active",
               "type": "boolean",
               "value": false
+            }
+          ]
+        },
+        {
+          "name": "Weapon",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "active",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "equipped",
+              "type": "string",
+              "value": ""
             }
           ]
         }
@@ -20519,7 +20562,13 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "assets/character/hand/hand_2.png",
-                  "points": [],
+                  "points": [
+                    {
+                      "name": "finger",
+                      "x": 29.5,
+                      "y": 12.5
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
                     "x": 0,
@@ -21169,10 +21218,35 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "uziGold",
+      "name": "uziGold_hold",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "properties",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "angle",
+              "type": "number",
+              "value": 270
+            },
+            {
+              "folded": true,
+              "name": "height",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "folded": true,
+              "name": "width",
+              "type": "number",
+              "value": 100
+            }
+          ]
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -21216,6 +21290,158 @@
                       {
                         "x": 45,
                         "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziLong_hold",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "properties",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "angle",
+              "type": "number",
+              "value": 270
+            },
+            {
+              "folded": true,
+              "name": "height",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "folded": true,
+              "name": "width",
+              "type": "number",
+              "value": 100
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziLong.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 50,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 50,
+                    "y": 32
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 86
+                      },
+                      {
+                        "x": 44,
+                        "y": 86
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "uziLong_pick",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/weapon/gun/uziLong.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 50,
+                    "y": 30
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 44,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 14
+                      },
+                      {
+                        "x": 56,
+                        "y": 86
+                      },
+                      {
+                        "x": 44,
+                        "y": 86
                       }
                     ]
                   ]
@@ -21514,7 +21740,23 @@
                 "folderName": "gun",
                 "children": [
                   {
-                    "objectName": "uziGold"
+                    "folderName": "hold",
+                    "children": [
+                      {
+                        "objectName": "uziGold_hold"
+                      },
+                      {
+                        "objectName": "uziLong_hold"
+                      }
+                    ]
+                  },
+                  {
+                    "folderName": "pick",
+                    "children": [
+                      {
+                        "objectName": "uziLong_pick"
+                      }
+                    ]
                   }
                 ]
               }
