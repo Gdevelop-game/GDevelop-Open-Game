@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.1849410297969828,
+    "zoomFactor": 0.10524010981636138,
     "windowMask": false
   },
   "objectsGroups": [
@@ -462,14 +462,732 @@
       "angle": 0,
       "customSize": false,
       "height": 0,
+      "layer": "Debug",
+      "name": "weapon_reloading",
+      "persistentUuid": "e6e95d11-2c24-4feb-97b7-26db247638a4",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1243,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "367b9fb5-f764-47a9-abf0-b4bca3be3e64",
+      "width": 0,
+      "x": -15412,
+      "y": 5740,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "5f5776b6-0228-4b20-b536-48c3a449edf8",
+      "width": 0,
+      "x": -15412,
+      "y": 5950,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "699a89e0-f262-4922-94f4-06b677b1690e",
+      "width": 0,
+      "x": -15412,
+      "y": 6160,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "9343d17c-7821-403e-bec3-1ea7e8c34047",
+      "width": 0,
+      "x": -15415,
+      "y": 6370,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "aa4ebfe0-4339-402d-a4a2-3f3f9aa09888",
+      "width": 0,
+      "x": -15411,
+      "y": 6580,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "e50ff460-d090-4876-b460-3e13f875d7ea",
+      "width": 0,
+      "x": -15413,
+      "y": 6790,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "e12d6482-65fc-4eec-bb1c-af70e2f5b587",
+      "width": 0,
+      "x": -15412,
+      "y": 7000,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "eeeff3f5-f20b-4b65-a8ca-ef0a18a694dc",
+      "width": 0,
+      "x": -15414,
+      "y": 7210,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "d9cf91a6-0d2d-481e-9d5f-3c76bc9fb8d3",
+      "width": 0,
+      "x": -15413,
+      "y": 7420,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "6889692b-bb8a-42f5-b92e-7d05884c3956",
+      "width": 0,
+      "x": -15413,
+      "y": 7630,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "9b1b9e09-c7d4-44b3-9099-cc28987bc93d",
+      "width": 0,
+      "x": -15413,
+      "y": 7840,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "99b93efe-61bd-4898-a661-f4f073ff5daf",
+      "width": 0,
+      "x": -15412,
+      "y": 8050,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "d161e608-d6a7-4475-b6b1-c724d1ec524d",
+      "width": 0,
+      "x": -15412,
+      "y": 8260,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "d061e83a-2103-444d-a61e-36eee1a38700",
+      "width": 0,
+      "x": -15413,
+      "y": 8470,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "1e5c958a-d494-4bf4-b1dd-efcb1c13d9aa",
+      "width": 0,
+      "x": -15415,
+      "y": 8680,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "props_roadblock",
+      "persistentUuid": "121f7e40-428d-47c7-9fdf-13924d15c77c",
+      "width": 0,
+      "x": -15414,
+      "y": 8890,
+      "zOrder": 12610,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3920,
+      "layer": "",
+      "name": "concrete_1",
+      "persistentUuid": "e50b3ae6-01f4-498f-a424-fbe09e890138",
+      "width": 70,
+      "x": -15750,
+      "y": 5390,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3920,
+      "layer": "",
+      "name": "concrete_1",
+      "persistentUuid": "9c82384e-7f20-4090-9104-2af969cc37d2",
+      "width": 70,
+      "x": -15050,
+      "y": 5390,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3845,
+      "layer": "",
+      "name": "hidden_separate",
+      "persistentUuid": "0ef98db6-7d9e-4b22-b706-6a5abfdfdf6b",
+      "width": 15,
+      "x": -14994,
+      "y": 5390,
+      "zOrder": 12615,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 3845,
+      "layer": "",
+      "name": "hidden_separate",
+      "persistentUuid": "1b7bf7dc-0ec4-4303-ae2e-d04e742028db",
+      "width": 15,
+      "x": -15747,
+      "y": 5390,
+      "zOrder": 12615,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1289,
+      "layer": "Fade",
+      "name": "game_transition",
+      "persistentUuid": "d9fdfe8f-cca3-408f-ada5-d6011fc9140a",
+      "width": 1994,
+      "x": 0,
+      "y": 0,
+      "zOrder": 12643568,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debug_toggle",
+      "persistentUuid": "405d6ded-99e2-4121-a8b1-1443f2202568",
+      "width": 0,
+      "x": 18,
+      "y": 96,
+      "zOrder": 12643569,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "info",
+          "type": "string",
+          "value": "hide Sea"
+        },
+        {
+          "folded": true,
+          "name": "id",
+          "type": "string",
+          "value": "sea"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debug_toggle",
+      "persistentUuid": "f0e1911b-a40a-4d17-b752-4c88c231f1ac",
+      "width": 0,
+      "x": 18,
+      "y": 54,
+      "zOrder": 12643569,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "id",
+          "type": "string",
+          "value": "shadow"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "debug_ammo_text",
+      "persistentUuid": "1d0de529-1976-49aa-995b-d6a7e22f8a7c",
+      "width": 0,
+      "x": 1671,
+      "y": 19,
+      "zOrder": 12643570,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 3850,
       "keepRatio": true,
       "layer": "",
-      "name": "map",
-      "persistentUuid": "67c4e34b-f7f1-4ec9-b7b2-0d677de2ea49",
+      "name": "bridge_tiled_1",
+      "persistentUuid": "837f7806-c647-44c3-9868-98ff6e4a4a4f",
+      "width": 300,
+      "x": -15280,
+      "y": 5460,
+      "zOrder": 12643595,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 3850,
+      "keepRatio": true,
+      "layer": "",
+      "name": "bridge_tiled_1",
+      "persistentUuid": "1dbb9dd6-901b-42f3-983f-a71c727b0001",
+      "width": 300,
+      "x": -15750,
+      "y": 5460,
+      "zOrder": 12643595,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "Debug",
+      "name": "debug_fps",
+      "persistentUuid": "7a76b0af-6c17-4bb9-b114-4c8700fe0ab5",
+      "width": 419,
+      "x": 630,
+      "y": 0,
+      "zOrder": 12643597,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_body",
+      "persistentUuid": "c90152c3-f5fd-4840-8342-c22364a67001",
       "width": 0,
-      "x": -9660,
-      "y": -10220,
-      "zOrder": 0,
+      "x": -280,
+      "y": 1680,
+      "zOrder": 70,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 8
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Customisation",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "body",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "hand",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "leg",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_hand",
+      "persistentUuid": "f56fa6f9-776f-432c-a128-396ffc5439fd",
+      "width": 0,
+      "x": -210,
+      "y": 1766,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "angle",
+          "type": "number",
+          "value": 180
+        },
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 5110,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_W",
+      "persistentUuid": "1a05da90-9fa7-459e-86e5-0e94b0f5e85f",
+      "width": 70,
+      "x": -15680,
+      "y": 4270,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 4550,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_E",
+      "persistentUuid": "159ea2d7-8a30-4d9e-8b96-b75581e57f6f",
+      "width": 70,
+      "x": -15120,
+      "y": 4830,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 4900,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_center",
+      "persistentUuid": "c2032357-ff3d-4576-a252-f16cdfbf28ab",
+      "width": 210,
+      "x": -15610,
+      "y": 4480,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 4620,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_center",
+      "persistentUuid": "07f62aa9-1cd2-458c-a781-e0a00d1528da",
+      "width": 210,
+      "x": -15330,
+      "y": 4760,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 4690,
+      "keepRatio": true,
+      "layer": "",
+      "name": "road_tiled_white_inner",
+      "persistentUuid": "2cbc5947-de6c-431e-980a-1cc9446c5194",
+      "width": 70,
+      "x": -15400,
+      "y": 4690,
+      "zOrder": 126,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_hand",
+      "persistentUuid": "7892f520-8b5e-4869-8843-1786d6a4e453",
+      "width": 0,
+      "x": -210,
+      "y": 1696,
+      "zOrder": 60,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "R"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_leg",
+      "persistentUuid": "0785b352-857d-4c8c-8af7-a3c952462be9",
+      "width": 0,
+      "x": -140,
+      "y": 1766,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_leg",
+      "persistentUuid": "6450cd42-b025-47ca-9dd0-f49cdae0eb97",
+      "width": 0,
+      "x": -140,
+      "y": 1680,
+      "zOrder": 50,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "folded": true,
+          "name": "angle",
+          "type": "number",
+          "value": 180
+        },
+        {
+          "folded": true,
+          "name": "type",
+          "type": "string",
+          "value": "R"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "uziLong_pick",
+      "persistentUuid": "3133f8c5-fdf8-4e87-ba01-b00fcbef57a2",
+      "width": 0,
+      "x": -20,
+      "y": 1680,
+      "zOrder": 12643682,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "map",
+      "persistentUuid": "95f776bb-0279-4e37-80fc-cbeb09e6a0ef",
+      "sealed": true,
+      "width": 0,
+      "x": -9450,
+      "y": -10360,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "player_crosshair",
+      "persistentUuid": "b63e83ca-eee3-4b84-9329-96f6683772fc",
+      "width": 0,
+      "x": 630,
+      "y": 210,
+      "zOrder": 1264,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7345,7 +8063,26 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "shadow",
+          "doubleParameters": {
+            "alpha": 0.2,
+            "blur": 0,
+            "distance": 10,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
       "behaviors": [
         {
           "name": "DestroyOutside",
@@ -7806,6 +8543,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Note - Important Information",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8235,7 +8973,16 @@
       "name": "Links",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
-      "events": [],
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Game"
+        }
+      ],
       "parameters": []
     }
   ],
@@ -8276,7 +9023,48 @@
           "width": 0
         }
       ],
-      "effects": []
+      "effects": [
+        {
+          "effectType": "Sepia",
+          "name": "introSepia",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "KawaseBlur",
+          "name": "weaponBar",
+          "doubleParameters": {
+            "blur": 0.5,
+            "padding": 0,
+            "pixelizeX": 0,
+            "pixelizeY": 0,
+            "quality": 3
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "LightNight",
+          "name": "nightDayCycle",
+          "doubleParameters": {
+            "opacity": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Brightness",
+          "name": "brightness",
+          "doubleParameters": {
+            "brightness": 0
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
     },
     {
       "ambientLightColorB": 200,
@@ -8291,7 +9079,7 @@
       "isLocked": false,
       "name": "UI",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": []
     },
@@ -8308,7 +9096,7 @@
       "isLocked": false,
       "name": "Fade",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": []
     },
@@ -8325,7 +9113,7 @@
       "isLocked": false,
       "name": "Debug",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": []
     }
