@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "Game_World",
+  "associatedLayout": "Game_World_old",
   "lastChangeTimeStamp": 0,
   "name": "Debug",
   "events": [
@@ -158,6 +158,30 @@
                 "Text",
                 "=",
                 "\"FPS \" + ToString(round(FPS::FPS())) +NewLine() + \"Rank \" + GlobalVariableString(System.rank)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "props_fences",
+                ""
               ]
             }
           ]

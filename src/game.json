@@ -2441,6 +2441,23 @@
         "name": "assets/weapon/ammo/ammo_uzi.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/environment/map/city1.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/environment/map/city1.json",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/map/city1/spritesheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/map/city1/spritesheet.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2712,6 +2729,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game_customisation_wip"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game_world_old"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
