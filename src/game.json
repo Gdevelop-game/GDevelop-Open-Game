@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Intro",
+  "firstLayout": "Game_Intro",
   "gdVersion": {
     "build": 99,
     "major": 4,
@@ -26,7 +26,7 @@
     "windowWidth": 1920,
     "windowHeight": 1080,
     "latestCompilationDirectory": "",
-    "maxFPS": 60,
+    "maxFPS": 0,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {},
@@ -44,11 +44,11 @@
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
       "showGDevelopSplash": false,
-      "showProgressBar": true
+      "showProgressBar": false
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
@@ -64,42 +64,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/grass/tile_01.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\grass\\tile_01.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/grass/tile_02.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\grass\\tile_02.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/grass/tile_03.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\grass\\tile_03.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/grass/tile_04.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\grass\\tile_04.png",
-        "smoothed": true,
-        "userAdded": false
-      },
       {
         "alwaysLoaded": false,
         "file": "assets/character/Player/placeholder.png",
@@ -129,159 +93,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_40.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_40.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_37.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_37.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_41.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_41.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_91.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_91.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_62.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_62.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_36.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_36.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_35.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_35.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_93.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_93.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_66.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_66.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_63.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_63.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_64.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_64.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_38.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_38.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_68.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_68.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_95.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_95.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/sand/tile_06.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\sand\\tile_06.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/sand/tile_05.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\sand\\tile_05.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/side_walk/sand.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\side_walk\\sand.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprite_objects/door.png",
         "kind": "image",
         "metadata": "",
@@ -295,123 +106,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\crossair\\crossair_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (21).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (21).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (2).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (2).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (27).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (27).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (1).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (1).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (9).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (9).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (5).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (5).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (23).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (23).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/fence/element (22).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fence\\element (22).png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road_block/fenceRed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road_block\\fenceRed.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road_block/fenceYellow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road_block\\fenceYellow.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/tree/treeLarge.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\tree\\treeLarge.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/tree/treeSmall.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\tree\\treeSmall.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/water/water_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\water\\water_1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -786,24 +480,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/foliage/tree/tile_183.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\tree\\tile_183.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/tree/tile_186.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\tree\\tile_186.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprite_objects/flame thrower fire collision.png",
         "kind": "image",
         "metadata": "",
@@ -817,24 +493,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\weapons\\gun\\flamethrower.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sport/ground/ground_beige.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sport\\ground\\ground_beige.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sport/ground_elements/element_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sport\\ground_elements\\element_1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -891,15 +549,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\character\\Player\\manBlue_sniper.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/crossair/crosshair_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\crossair\\crosshair_2.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -1049,15 +698,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Road/sand/dirt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\sand\\dirt.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/weapons/bullet/bulletYellowSilver_outline.png",
         "kind": "image",
         "metadata": "",
@@ -1193,114 +833,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/deco/deco_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\deco\\deco_1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/sandbagBeige.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\sandbagBeige.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/oil.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\oil.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelRed_up.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelRed_up.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelRed_side.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelRed_side.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGrey_up.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGrey_up.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGrey_side.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGrey_side.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGrey_sde_rust.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGrey_sde_rust.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGreen_up.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGreen_up.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGreen_side_damaged.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGreen_side_damaged.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/barrelGreen_side.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\barrelGreen_side.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/multipurpose/sandbagBrown.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\multipurpose\\sandbagBrown.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/foliage/leaves/treeGreen_leaf.png",
         "kind": "image",
         "metadata": "",
@@ -1314,114 +846,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\foliage\\leaves\\treeBrown_leaf.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/crossair/crosshair_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\crossair\\crosshair_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/crossair/crosshair_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\crossair\\crosshair_4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/crossair/crosshair_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\crossair\\crosshair_5.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_35-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_35-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/bridge/bridge.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\bridge\\bridge.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/concrete/concrete.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\concrete\\concrete.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/hidden_separate-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprite_objects\\hidden_separate-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_6.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_5.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_14.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_37-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_37-1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1487,69 +911,6 @@
         "name": "assets\\character\\Player\\manBlue_phone_1.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/road/tile_63-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\road\\tile_63-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_15.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_19.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_19.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_18.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_18.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_17.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_17.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_20.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_20.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_16.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Road\\map_edge\\tile_16.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -1769,15 +1130,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/weapons/gun/Rocket_launcher_item - rocket out.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\gun\\Rocket_launcher_item - rocket out.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Interior/floor/tile_100.png",
         "kind": "image",
         "metadata": "",
@@ -1811,290 +1163,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/thumb_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\thumb_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_5.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_6.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_7.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/rocket_launcher_bullet.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\bullet\\rocket_launcher_bullet.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/placeholder/tiledGreen.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\placeholder\\tiledGreen.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Flat Bar Red Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar Red Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/212e9679eaae4753beaa5d595d7c80ea66df3235485c6a3963e88b0d936a1798_Flat Bar Red Fill Bar.png",
-          "name": "Flat Bar Red Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Flat Bar White Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar White Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
-          "name": "Flat Bar White Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g499.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g499.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g574.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g574.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g571.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g571.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g527.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g527.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g503.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g503.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g578.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g578.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g569.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g569.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g575.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g575.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g576.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g576.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
-          "name": "Square White Slider Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
-          "name": "Square White Slider Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Thumb.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
-          "name": "Square White Slider Thumb.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g492.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g492.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/test/characters_g568.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/test/characters_g568.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/White Decorated Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Decorated Button_Hovered.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/aac119ea43bd2b8fdb1f04a469420d61103b5199ddb715aa4904d093816d65dc_White Decorated Button_Hovered.png",
-          "name": "White Decorated Button_Hovered.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/White Decorated Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Decorated Button_Idle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d2c7cafab0f5538ed6e2d9352ea2d138330c26408736202425d978e72fbb3904_White Decorated Button_Idle.png",
-          "name": "White Decorated Button_Idle.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/White Decorated Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Decorated Button_Pressed.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3d78d9f253b7ba4f1af9cd54ebcc27ce44d761cfdb2854ea6179fb449e290d64_White Decorated Button_Pressed.png",
-          "name": "White Decorated Button_Pressed.png"
-        }
-      },
-      {
         "file": "assets/ArchitectsDaughter.ttf",
         "kind": "font",
         "metadata": "",
@@ -2107,424 +1175,1287 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/buildings/rooftops/roof_1.png",
+        "file": "assets/weapon/crosshair/crosshair_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/buildings/rooftops/roof_1.png",
+        "name": "assets/weapon/crosshair/crosshair_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/buildings/rooftops/roof_2.png",
+        "file": "assets/character/body/body_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/buildings/rooftops/roof_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/buildings/rooftops/roof_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/buildings/rooftops/roof_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sport/post/elements_g361_copy_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sport/post/elements_g361_copy_1.png",
+        "name": "assets/character/body/body_1.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sport/ball/charactersEquipment_g483.png",
+        "file": "assets/character/body/body_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/sport/ball/charactersEquipment_g483.png",
+        "name": "assets/character/body/body_2.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sport/ball/charactersEquipment_g553.png",
+        "file": "assets/character/body/body_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/sport/ball/charactersEquipment_g553.png",
+        "name": "assets/character/body/body_3.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/phone/apps/1.png",
+        "file": "assets/character/body/body_4.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/phone/apps/1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/apps/2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/apps/2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/apps/3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/apps/3.png",
+        "name": "assets/character/body/body_4.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/phone/frame/1.png",
+        "file": "assets/character/body/body_5.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/phone/frame/1.png",
+        "name": "assets/character/body/body_5.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/phone/frame/2.png",
+        "file": "assets/character/body/body_6.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/phone/frame/2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/battery/1_g16.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/battery/1_g16.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/battery/1_g15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/battery/1_g15.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/battery/1_g14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/battery/1_g14.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/wallpaper/1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/wallpaper/1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/wallpaper/2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/wallpaper/2.png",
+        "name": "assets/character/body/body_6.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/phone/wallpaper/3.png",
+        "file": "assets/character/body/body_7.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/phone/wallpaper/3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/phone/wallpaper/4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/phone/wallpaper/4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/uziSilencer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/uziSilencer.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/uziLongSilencer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/uziLongSilencer.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/uziLong.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/uziLong.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/uzi.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/uzi.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/sniper.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/sniper.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/shotgunShort.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/shotgunShort.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/shotgun.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/shotgun.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/rocketlauncherModern.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/rocketlauncherModern.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/rocketlauncher.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/rocketlauncher.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/pistolSilencer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/pistolSilencer.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/pistol.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/pistol.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/machinegunLauncher.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/machinegunLauncher.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/machinegun.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/machinegun.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/knifeRound_smooth.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/knifeRound_smooth.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/knifeRound_sharp.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/knifeRound_sharp.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/knife_smooth.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/knife_smooth.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/knife_sharp.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/knife_sharp.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/grenadeVintage.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/grenadeVintage.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/grenadeSmoke.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/grenadeSmoke.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/grenadeFlash.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/grenadeFlash.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/grenade.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/grenade.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/flamethrower_short.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/flamethrower_short.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/flamethrower_long.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/flamethrower_long.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/icons/bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/weapons/icons/bar.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/Road/map_edge/tile_12.png",
+        "name": "assets/character/body/body_7.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Road/map_edge/tile_11.png",
+        "file": "assets/character/body/body_8.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/Road/map_edge/tile_11.png",
+        "name": "assets/character/body/body_8.png",
         "smoothed": true,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Road/sand/dirt.png",
+        "file": "assets/character/body/body_9.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/Road/sand/dirt.png",
+        "name": "assets/character/body/body_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/hand/hand_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/hand/hand_9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/leg/leg_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/leg/leg_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/apps/app_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/apps/app_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/battery/battery_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/battery/battery_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/frame/frame_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/frame/frame_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/frame/frame_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/frame/frame_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wallpaper/wallpaper_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wallpaper/wallpaper_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/bridge/bridge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/bridge/bridge.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/building/rooftop/roof_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/building/rooftop/roof_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/decoration/decoration_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/decoration/decoration_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/fence/fence_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/fence/fence_8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/grass/grass_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/grass/grass_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/foliage/tree/tree_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/foliage/tree/tree_4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ball/basketball_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ball/basketball_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ball/basketball_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ball/basketball_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/sport/basketball/ground_elements/element_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/sport/basketball/ground_elements/element_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Road/side_walk/sand.png",
+        "file": "assets/environment/sport/basketball/ground/ground_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/Road/side_walk/sand.png",
+        "name": "assets/environment/sport/basketball/ground/ground_1.png",
         "smoothed": true,
-        "userAdded": false
+        "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/bridge/bridge.png",
+        "file": "assets/environment/sport/basketball/hoop/hoop.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/bridge/bridge.png",
+        "name": "assets/environment/sport/basketball/hoop/hoop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_5.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/map_edge/map_edge_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/map_edge/map_edge_9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/concrete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/concrete.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/dirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/dirt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/path/sand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/path/sand.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road_block/block_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road_block/block_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road_block/block_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road_block/block_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_14.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_15.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_16.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_24.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_27.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_30.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_31.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_39.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_43.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/tile/road/road_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/tile/road/road_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/water/water_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/water/water_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Flat Bar Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Flat Bar Red Fill Bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Flat Bar White Border.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Border.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Fill Bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/bar/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/bar/Square White Slider Thumb.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Idle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/UI/button/White Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/UI/button/White Decorated Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/bar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/flamethrower_long.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/flamethrower_long.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/flamethrower_short.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/flamethrower_short.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenade.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenade.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeFlash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeFlash.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeSmoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeSmoke.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/grenadeVintage.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/grenadeVintage.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knife_sharp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knife_sharp.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knifeRound_sharp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knifeRound_sharp.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/knifeRound_smooth.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/knifeRound_smooth.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/machinegun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/machinegun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/machinegunLauncher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/machinegunLauncher.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/pistol.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/pistolSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/pistolSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/rocketlauncher.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/rocketlauncher.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/shotgun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/shotgun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/shotgunShort.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/shotgunShort.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/sniper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/sniper.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uzi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uzi.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziLong.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziLong.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziLongSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziLongSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/icon/uziSilencer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/icon/uziSilencer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/character/phone/wifi/wifi_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/character/phone/wifi/wifi_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/prop/props_11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/prop/props_11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/misc/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/misc/black.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/misc/door.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/misc/door.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/misc/green_checked.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/misc/green_checked.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/gun/uziGold.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/gun/uziGold.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/gun/uziLong.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/gun/uziLong.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/weapon/ammo/ammo_uzi.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/weapon/ammo/ammo_uzi.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/environment/map/city1.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "assets/environment/map/city1.json",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/environment/map/city1/spritesheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/environment/map/city1/spritesheet.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -2535,7 +2466,7 @@
     {
       "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "crosshairw",
+      "name": "game_crosshair",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2552,36 +2483,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crossair_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "crosshair010",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\crossair\\crosshair_2.png",
+                  "image": "assets/weapon/crosshair/crosshair_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2604,7 +2506,7 @@
     },
     {
       "assetStoreId": "",
-      "name": "Transitions",
+      "name": "game_transition",
       "type": "PrimitiveDrawing::Drawer",
       "variables": [],
       "effects": [],
@@ -2615,8 +2517,7 @@
           "Timer": 1,
           "Color": "255;255;255",
           "Type": "",
-          "Backward": false,
-          "Forward": false,
+          "Direction": "",
           "MaxOpacity": 255
         }
       ],
@@ -2642,10 +2543,10 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "crosshairw"
+        "objectName": "game_crosshair"
       },
       {
-        "objectName": "Transitions"
+        "objectName": "game_transition"
       }
     ]
   },
@@ -2679,7 +2580,6 @@
       "type": "structure",
       "children": [
         {
-          "folded": true,
           "name": "Customisation",
           "persistentUuid": "6f3e9e87-d6f3-44d0-a02a-6c8089850a4a",
           "type": "structure",
@@ -2688,7 +2588,7 @@
               "folded": true,
               "name": "body",
               "type": "number",
-              "value": 0
+              "value": 8
             },
             {
               "folded": true,
@@ -2725,12 +2625,10 @@
       ]
     },
     {
-      "folded": true,
       "name": "Game",
       "type": "structure",
       "children": [
         {
-          "folded": true,
           "name": "Player",
           "type": "structure",
           "children": [
@@ -2748,7 +2646,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "Settings",
           "type": "structure",
           "children": [
@@ -2767,7 +2664,6 @@
           "value": true
         },
         {
-          "folded": true,
           "name": "globalTime",
           "type": "structure",
           "children": [
@@ -2778,10 +2674,22 @@
               "value": ""
             },
             {
-              "folded": true,
               "name": "shadowTime",
-              "type": "number",
-              "value": 0
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "adder",
+                  "type": "number",
+                  "value": 0.01
+                },
+                {
+                  "folded": true,
+                  "name": "value",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
             }
           ]
         },
@@ -2816,31 +2724,31 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/intro"
+      "referenceTo": "/layouts/game_intro"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/customisation"
+      "referenceTo": "/layouts/game_customisation_wip"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/city"
+      "referenceTo": "/layouts/game_world_old"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/rooms"
+      "referenceTo": "/layouts/game_world"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/functionsincludes"
+      "referenceTo": "/layouts/game_room"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/loading"
+      "referenceTo": "/layouts/game_loading"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/firstlaunch"
+      "referenceTo": "/layouts/game_firstlaunch"
     }
   ],
   "externalEvents": [
@@ -2894,10 +2802,34 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/weaponwheel"
+      "referenceTo": "/externalEvents/weaponbar"
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/bounce"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/fps"
@@ -2952,35 +2884,11 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/camerashake"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/timeformatter"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/button"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/bounce"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/fade"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/roommanager"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/debugmessages"
     }
   ],
   "externalLayouts": [
@@ -2994,7 +2902,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/weaponwheel"
+      "referenceTo": "/externalLayouts/weaponbar"
     }
   ],
   "externalSourceFiles": []

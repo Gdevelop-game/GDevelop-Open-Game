@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World_old",
   "lastChangeTimeStamp": 0,
   "name": "Crosshair",
   "events": [
@@ -42,7 +42,7 @@
                 "value": "ChangePlan"
               },
               "parameters": [
-                "crosshair",
+                "player_crosshair",
                 "=",
                 "10000000"
               ]
@@ -59,14 +59,45 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Gamepads::C_Controller_X_is_connected"
+              },
+              "parameters": [
+                "",
+                "1",
+                ""
+              ]
+            }
+          ],
           "actions": [
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player_crosshair",
+                "StayOnScreen",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "MettreXY"
               },
               "parameters": [
-                "crosshair",
+                "player_crosshair",
                 "=",
                 "MouseX(\"\", 0)",
                 "=",
@@ -78,9 +109,56 @@
                 "value": "RotateTowardAngle"
               },
               "parameters": [
-                "crosshair",
-                "Body.Angle()",
+                "player_crosshair",
+                "player_body.Angle()",
                 "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Controller_X_is_connected"
+              },
+              "parameters": [
+                "",
+                "1",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "player_crosshair",
+                "StayOnScreen",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeLayer"
+              },
+              "parameters": [
+                "player_crosshair",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "player_crosshair",
+                "Gamepads::StickAngle(1, \"Right\")",
+                "Gamepads::StickForce(1, \"Right\") * 1000",
                 ""
               ]
             }

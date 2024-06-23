@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World_old",
   "lastChangeTimeStamp": 0,
   "name": "Phone",
   "events": [
@@ -23,7 +23,7 @@
               "parameters": [
                 "phone_time",
                 "=",
-                "TimeFormatter::SecondsToHHMMSS(TimeFromStart())"
+                "TimeFormatter::SecondsToHHMMSS(GlobalVariable(Game.globalTime.shadowTime.value))"
               ]
             }
           ]
@@ -69,11 +69,13 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "VarObjetTxt"
               },
               "parameters": [
-                "",
-                "Up"
+                "player_body",
+                "Animation",
+                "!=",
+                "\"weaponHold\""
               ]
             },
             {
@@ -82,9 +84,37 @@
               },
               "parameters": [
                 "",
-                "phoneFrame",
+                "phone_frame",
                 "<",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Up\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -115,7 +145,7 @@
                 "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "True"
               ]
@@ -138,10 +168,10 @@
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
-                    "phoneFrame",
+                    "phone_frame",
                     "Tween",
                     "\"phone\"",
-                    "SceneWindowHeight() - phoneFrame.Height() - 30",
+                    "SceneWindowHeight() - phone_frame.Height() - 30",
                     "\"easeOutQuad\"",
                     "0.4",
                     ""
@@ -152,9 +182,9 @@
                     "value": "Sticker::Sticker::Stick"
                   },
                   "parameters": [
-                    "Phone_status_bar",
+                    "Phone_Status_Bar",
                     "Sticker",
-                    "phoneFrame",
+                    "phone_frame",
                     ""
                   ]
                 },
@@ -163,7 +193,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
                   },
                   "parameters": [
-                    "phoneWallpaper",
+                    "phone_wallpaper",
                     "Animation"
                   ]
                 },
@@ -172,9 +202,9 @@
                     "value": "ChangeSprite"
                   },
                   "parameters": [
-                    "phoneWallpaper",
+                    "phone_wallpaper",
                     "=",
-                    "Random(phoneWallpaper.AnimationFrameCount() - 1)"
+                    "Random(phone_wallpaper.AnimationFrameCount() - 1)"
                   ]
                 }
               ]
@@ -203,11 +233,30 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Down"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Down"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Down\"",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -217,7 +266,7 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "phoneFrame",
+                "phone_frame",
                 "Tween",
                 "\"phone\"",
                 "SceneWindowHeight() + 30",
@@ -240,7 +289,7 @@
                 "value": "SetObjectVariableAsBoolean"
               },
               "parameters": [
-                "Body",
+                "player_body",
                 "Phone.active",
                 "False"
               ]
@@ -256,7 +305,7 @@
               },
               "parameters": [
                 "",
-                "phoneFrame",
+                "phone_frame",
                 "<",
                 "1"
               ]
@@ -268,7 +317,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneIcons",
+                "phone_icon",
                 ""
               ]
             },
@@ -277,7 +326,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneMask",
+                "phone_mask",
                 ""
               ]
             },
@@ -286,7 +335,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "phoneWallpaper",
+                "phone_wallpaper",
                 ""
               ]
             }
@@ -318,11 +367,11 @@
                 "value": "MettreXY"
               },
               "parameters": [
-                "phoneIcons",
+                "phone_icon",
                 "=",
-                "phoneFrame.PointX(phoneIcons.id)",
+                "phone_frame.PointX(phone_icon.id)",
                 "=",
-                "phoneFrame.PointY(phoneIcons.id)"
+                "phone_frame.PointY(phone_icon.id)"
               ]
             },
             {
@@ -330,11 +379,11 @@
                 "value": "SetCenter"
               },
               "parameters": [
-                "phoneMask",
+                "phone_mask",
                 "=",
-                "phoneFrame.CenterX()",
+                "phone_frame.CenterX()",
                 "=",
-                "phoneFrame.CenterY()"
+                "phone_frame.CenterY()"
               ]
             }
           ]
@@ -347,7 +396,7 @@
                 "value": "Tween::IsPlaying"
               },
               "parameters": [
-                "phoneFrame",
+                "phone_frame",
                 "Tween",
                 "\"phone\""
               ]
@@ -359,11 +408,11 @@
                 "value": "SetCenter"
               },
               "parameters": [
-                "phoneWallpaper",
+                "phone_wallpaper",
                 "=",
-                "phoneFrame.CenterX()",
+                "phone_frame.CenterX()",
                 "=",
-                "phoneFrame.CenterY() - 20"
+                "phone_frame.CenterY() - 20"
               ]
             }
           ]
@@ -384,8 +433,8 @@
               },
               "parameters": [
                 "",
-                "phoneWallpaper",
-                "phoneMask",
+                "phone_wallpaper",
+                "phone_mask",
                 ""
               ]
             }

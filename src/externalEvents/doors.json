@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World_old",
   "lastChangeTimeStamp": 0,
   "name": "Doors",
   "events": [
@@ -69,7 +69,7 @@
             "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
           },
           "parameters": [
-            "Transitions",
+            "game_transition",
             "FlashTransitionPainter",
             "\"0;0;0\"",
             "1.5",
@@ -99,7 +99,7 @@
             "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffectIsEnd"
           },
           "parameters": [
-            "Transitions",
+            "game_transition",
             "FlashTransitionPainter",
             ""
           ]

@@ -1,5 +1,5 @@
 {
-  "associatedLayout": "City",
+  "associatedLayout": "Game_World_old",
   "lastChangeTimeStamp": 0,
   "name": "Game",
   "events": [
@@ -17,7 +17,7 @@
           "include": {
             "includeConfig": 0
           },
-          "target": "WeaponWheel"
+          "target": "WeaponBar"
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -104,7 +104,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Global misc events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -143,15 +142,14 @@
                 "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Transitions",
+                "game_transition",
                 "FlashTransitionPainter",
                 "\"0;0;0\"",
-                "1.5",
+                "0.5",
                 "\"Flash\"",
-                "no",
+                "\"Backward\"",
                 "yes",
-                "255",
-                ""
+                "255"
               ]
             }
           ]
@@ -240,7 +238,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Global Time",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -250,7 +247,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Shadows",
+          "name": "Day/Night Cycle",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -263,11 +260,11 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Hand",
+                    "player_leg",
                     "Effect",
-                    "\"Effect\"",
+                    "\"shadow\"",
                     "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
+                    "GlobalVariable(Game.globalTime.shadowTime.value)"
                   ]
                 },
                 {
@@ -275,11 +272,11 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "Leg",
+                    "building_rooftop",
                     "Effect",
-                    "\"Effect\"",
+                    "\"shadow\"",
                     "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
+                    "GlobalVariable(Game.globalTime.shadowTime.value)"
                   ]
                 },
                 {
@@ -287,11 +284,11 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "roofTops",
+                    "props_foliage",
                     "Effect",
-                    "\"Effect\"",
+                    "\"shadow\"",
                     "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
+                    "GlobalVariable(Game.globalTime.shadowTime.value)"
                   ]
                 },
                 {
@@ -299,35 +296,11 @@
                     "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
                   },
                   "parameters": [
-                    "foliage",
+                    "player_body",
                     "Effect",
-                    "\"Shadow\"",
+                    "\"shadow\"",
                     "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
-                  },
-                  "parameters": [
-                    "Body",
-                    "Effect",
-                    "\"Effect\"",
-                    "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::SetEffectDoubleParameter"
-                  },
-                  "parameters": [
-                    "Fences",
-                    "Effect",
-                    "\"Effect\"",
-                    "\"rotation\"",
-                    "GlobalVariable(Game.globalTime.shadowTime)"
+                    "GlobalVariable(Game.globalTime.shadowTime.value)"
                   ]
                 }
               ]
@@ -341,9 +314,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Game.globalTime.shadowTime",
+                    "Game.globalTime.shadowTime.value",
                     "+",
-                    "0.01"
+                    "GlobalVariable(Game.globalTime.shadowTime.adder)"
                   ]
                 }
               ]
@@ -356,7 +329,7 @@
                     "value": "VarGlobal"
                   },
                   "parameters": [
-                    "Game.globalTime.shadowTime",
+                    "Game.globalTime.shadowTime.value",
                     ">",
                     "360"
                   ]
@@ -374,12 +347,77 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "Game.globalTime.shadowTime",
+                    "Game.globalTime.shadowTime.value",
                     "=",
                     "0"
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::SceneTweenIsPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "\"nightdaycircle\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenNumberEffectPropertyTween"
+                  },
+                  "parameters": [
+                    "",
+                    "\"nightdaycircle\"",
+                    "1",
+                    "",
+                    "\"nightDayCycle\"",
+                    "\"opacity\"",
+                    "\"linear\"",
+                    "360/(GlobalVariable(Game.globalTime.shadowTime.adder)*60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "360/(GlobalVariable(Game.globalTime.shadowTime.adder)*60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenNumberEffectPropertyTween"
+                  },
+                  "parameters": [
+                    "",
+                    "\"nightdaycircle\"",
+                    "0",
+                    "",
+                    "\"nightDayCycle\"",
+                    "\"opacity\"",
+                    "\"linear\"",
+                    "360/(GlobalVariable(Game.globalTime.shadowTime.adder)*60)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
