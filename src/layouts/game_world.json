@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6741437575981505,
+    "zoomFactor": 0.4237500000000425,
     "windowMask": false
   },
   "objectsGroups": [
@@ -9426,55 +9426,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "building_rooftop",
-                "=",
-                "120"
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "props_foliage",
-                "=",
-                "121"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "sea_tiled_water_cover"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9545,6 +9496,84 @@
                 "Beach_Sand",
                 "=",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "player_body",
+                "=",
+                "95"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "player_leg",
+                "=",
+                "93"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "player_hand",
+                "=",
+                "94"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "uziLong_hold",
+                "=",
+                "96"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "building_rooftop",
+                "=",
+                "120"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "props_foliage",
+                "=",
+                "121"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "props_moveable",
+                "=",
+                "119"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "sea_tiled_water_cover"
               ]
             }
           ]
