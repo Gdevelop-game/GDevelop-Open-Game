@@ -27,7 +27,7 @@ To download the pc version, go on [github actions's auto build workflow](https:/
 
 ### Development Roadmap
 
-* Project Roadmap on [Trello](https://trello.com/b/sdQnetbP/gdevelop-community-game), for a global view of the features that could be added. Please vote and comment here for new features/requests.
+* [GitHub-hosted Project](https://github.com/orgs/Gdevelop-game/projects/1/views/1), for a global view of work to do, work being done and work done by the team.
 * [GitHub issue page](https://github.com/Gdevelop-game/GDevelop-Open-Game/issues), for technical issues and bugs.
 
 
