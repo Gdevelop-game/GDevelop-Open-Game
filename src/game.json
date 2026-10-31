@@ -1,9 +1,9 @@
 {
-  "firstLayout": "Game_Intro",
+  "firstLayout": "Title",
   "gdVersion": {
-    "build": 99,
-    "major": 4,
-    "minor": 0,
+    "build": 269,
+    "major": 5,
+    "minor": 6,
     "revision": 0
   },
   "properties": {
@@ -18,42 +18,46 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
-    "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "useDeprecatedZeroAsDefaultStringVariable": true,
+    "version": "2.0.0",
     "name": "GDevelop Open Game",
-    "description": "",
+    "description": "A 3D open city sandbox made by the GDevelop community.",
     "author": "GDevelop Community",
-    "windowWidth": 1920,
-    "windowHeight": 1080,
+    "windowWidth": 1280,
+    "windowHeight": 720,
     "latestCompilationDirectory": "",
-    "maxFPS": 0,
+    "maxFPS": 60,
     "minFPS": 20,
-    "verticalSync": false,
+    "verticalSync": true,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "backgroundColor": 0,
+      "backgroundColor": 1579564,
       "backgroundFadeInDuration": 0.2,
       "backgroundImageResourceName": "",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
-      "logoAndProgressLogoFadeInDelay": 0.2,
-      "minDuration": 1.5,
-      "progressBarColor": 16777215,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1,
+      "progressBarColor": 16765530,
       "progressBarHeight": 20,
-      "progressBarMaxWidth": 200,
+      "progressBarMaxWidth": 240,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
-      "showGDevelopSplash": false,
-      "showProgressBar": false
+      "showGDevelopSplash": true,
+      "showProgressBar": true
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": false
+      "showWatermark": true
     },
     "authorIds": [],
     "authorUsernames": [],
-    "categories": [],
-    "playableDevices": [],
+    "categories": [
+      "Adventure"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -65,2845 +69,1478 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/placeholder.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\placeholder.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_stand.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_stand.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_hold.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_hold.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/door.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprite_objects\\door.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/crossair/crossair_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\crossair\\crossair_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_260.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_260.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_145.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_145.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_118.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_118.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_147.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_147.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_120.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_120.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_122.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_122.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_233.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_233.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_261.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_261.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_119.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_119.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_146.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_146.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_148.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_148.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_121.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_121.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_149.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_149.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_234.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_234.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_321.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_321.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_297.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_297.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_323.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_323.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_269.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_269.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_270.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_270.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/kitchen/tile_322.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\kitchen\\tile_322.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_102.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_102.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_21.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_21.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_104.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_104.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_49.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_49.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_103.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_103.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_76.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_76.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_77.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_77.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_50.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_50.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_501.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_501.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_502.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_502.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_504.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_504.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_505.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_505.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/table/tile_483.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\table\\tile_483.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/carpet/tile_484.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\carpet\\tile_484.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\floor\\tile_11.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_46.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\floor\\tile_46.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_466.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_466.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_440.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_440.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/walls/tile_441.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\walls\\tile_441.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\floor\\tile_12.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/flower/tile_240.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\foliage\\flower\\tile_240.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/flame thrower fire collision.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprite_objects\\flame thrower fire collision.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/gun/flamethrower.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\gun\\flamethrower.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/particles/FireParticle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\particles\\FireParticle.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/electronic/tile_534.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\electronic\\tile_534.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/electronic/tile_535.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\electronic\\tile_535.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/sound/door_sound/DoorOpening_0.wav",
+        "file": "assets/audio/all_cash.ogg",
         "kind": "audio",
         "metadata": "",
-        "name": "assets\\sound\\door_sound\\DoorOpening_0.wav",
+        "name": "assets/audio/all_cash.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sound/door_sound/DoorClosing_0.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\sound\\door_sound\\DoorClosing_0.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_sniper.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_sniper.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_45.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\floor\\tile_45.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_42.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\floor\\tile_42.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_474.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_474.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_475.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_475.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_476.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_476.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_477.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_477.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/table/tile_507.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\table\\tile_507.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/table/tile_510.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\table\\tile_510.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/chair/tile_529.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\chair\\tile_529.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_48.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_48.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_52.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_52.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_53.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_53.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_79.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_79.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_80.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_80.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_106.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_106.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/furniture/bed/tile_107.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Interior\\furniture\\bed\\tile_107.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/bulletYellowSilver_outline.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\bullet\\bulletYellowSilver_outline.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/bulletYellow_outline.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\bullet\\bulletYellow_outline.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/bulletBlueSilver_outline.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\bullet\\bulletBlueSilver_outline.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/phone_unlock.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\phone_unlock.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/phone_lock.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\phone_lock.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/phone_apps.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\phone_apps.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_tazer.png",
-        "kind": "image",
+        "file": "assets/audio/blaster.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_tazer.png",
-        "smoothed": true,
-        "userAdded": true
+        "name": "assets/audio/blaster.ogg",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/mele/tazer.png",
-        "kind": "image",
+        "file": "assets/audio/blaster_heavy.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\weapons\\mele\\tazer.png",
-        "smoothed": true,
-        "userAdded": true
+        "name": "assets/audio/blaster_heavy.ogg",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/energy.png",
-        "kind": "image",
+        "file": "assets/audio/car_door.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\weapons\\energy.png",
-        "smoothed": true,
+        "name": "assets/audio/car_door.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=0.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=1.png",
-        "kind": "image",
+        "file": "assets/audio/click.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=1.png",
-        "smoothed": true,
+        "name": "assets/audio/click.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/tazer_Hitbox/tazer_hitbox=2.png",
-        "kind": "image",
+        "file": "assets/audio/crash.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\sprite_objects\\tazer_Hitbox\\tazer_hitbox=2.png",
-        "smoothed": true,
+        "name": "assets/audio/crash.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_1.png",
-        "kind": "image",
+        "file": "assets/audio/hit_body.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_1.png",
-        "smoothed": true,
-        "userAdded": true
+        "name": "assets/audio/hit_body.ogg",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/pointer_2.png",
-        "kind": "image",
+        "file": "assets/audio/hit_metal.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\character\\Player\\phone\\pointer_2.png",
-        "smoothed": true,
-        "userAdded": true
+        "name": "assets/audio/hit_metal.ogg",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_flametrhower.png",
-        "kind": "image",
+        "file": "assets/audio/pickup.ogg",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_flametrhower.png",
-        "smoothed": true,
+        "name": "assets/audio/pickup.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/leaves/treeGreen_leaf.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\foliage\\leaves\\treeGreen_leaf.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/foliage/leaves/treeBrown_leaf.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-b.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\foliage\\leaves\\treeBrown_leaf.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-b.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/gun/sniper.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-c.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\gun\\sniper.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-c.glb",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/wifi_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\wifi_0.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/wifi_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\wifi_1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/wifi_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\wifi_2.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/phone/wifi_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\character\\Player\\phone\\wifi_3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_phone_0.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-d.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_phone_0.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-d.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_phone_1.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-e.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_phone_1.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-e.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_0.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-f.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_0.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-f.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_1.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-g.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_1.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-g.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_2.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-h.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_2.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-h.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_3.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-i.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_3.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-i.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_4.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-j.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_4.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-j.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_5.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-k.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_5.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-k.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_6.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-l.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_6.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-l.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/manBlue_swim_7.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-m.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\manBlue_swim_7.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-m.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/Machine_gun_hold.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-n.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\Machine_gun_hold.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-n.glb",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/gun/Machine_gun_item.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\weapons\\gun\\Machine_gun_item.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/Single_pistol.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-skyscraper-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\Single_pistol.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-skyscraper-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/gun/Single_pistol_item.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-skyscraper-b.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\gun\\Single_pistol_item.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-skyscraper-b.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/Rocket_launcher_loaded.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-skyscraper-c.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\Rocket_launcher_loaded.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-skyscraper-c.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/Rocket_launcher_unloaded.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-skyscraper-d.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\Rocket_launcher_unloaded.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-skyscraper-d.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/gun/Rocket_launcher_item.png",
-        "kind": "image",
+        "file": "assets/models/buildings/building-skyscraper-e.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\gun\\Rocket_launcher_item.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/building-skyscraper-e.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/Rocket_ammo.png",
-        "kind": "image",
+        "file": "assets/models/buildings/detail-parasol-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\bullet\\Rocket_ammo.png",
-        "smoothed": true,
+        "name": "assets/models/buildings/detail-parasol-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/bullet/Rocket.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\bullet\\Rocket.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/weapon_icons/tazer_icon.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-b.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\UI\\weapon_icons\\tazer_icon.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-b.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/weapon_icons/sniper_icon.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-c.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\UI\\weapon_icons\\sniper_icon.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-c.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/weapon_icons/rocket_launcher_icon.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-d.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\UI\\weapon_icons\\rocket_launcher_icon.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-d.glb",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprite_objects/mouse_point-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\sprite_objects\\mouse_point-1.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/slash.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-e.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\slash.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-e.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapons/mele/knife.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-female-f.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\weapons\\mele\\knife.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-female-f.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/Player/knife_a1.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-male-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\character\\Player\\knife_a1.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-male-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_100.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-male-b.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/Interior/floor/tile_100.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-male-b.glb",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_46.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/Interior/floor/tile_46.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/Interior/floor/tile_11.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-male-c.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/Interior/floor/tile_11.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-male-c.glb",
         "userAdded": true
       },
       {
-        "file": "assets/fonts/Kenney Rocket Square.ttf",
-        "kind": "font",
+        "file": "assets/models/characters/character-male-d.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets\\fonts\\Kenney Rocket Square.ttf",
+        "name": "assets/models/characters/character-male-d.glb",
         "userAdded": true
-      },
-      {
-        "file": "assets/ArchitectsDaughter.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "ArchitectsDaughter.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
-          "name": "ArchitectsDaughter.ttf"
-        }
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/crosshair/crosshair_1.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-male-e.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/crosshair/crosshair_1.png",
-        "smoothed": true,
+        "name": "assets/models/characters/character-male-e.glb",
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_8.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/body/body_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/body/body_9.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_10.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_8.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/hand/hand_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/hand/hand_9.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/character/leg/leg_7.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/leg/leg_8.png",
-        "kind": "image",
+        "file": "assets/models/characters/character-male-f.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/leg/leg_8.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/characters/character-male-f.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/apps/app_1.png",
-        "kind": "image",
+        "file": "assets/models/food/apple.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/apps/app_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/apple.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/apps/app_2.png",
-        "kind": "image",
+        "file": "assets/models/food/bag.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/apps/app_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/bag.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/apps/app_3.png",
-        "kind": "image",
+        "file": "assets/models/food/banana.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/apps/app_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/banana.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/battery/battery_1.png",
-        "kind": "image",
+        "file": "assets/models/food/barrel.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/battery/battery_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/barrel.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/battery/battery_2.png",
-        "kind": "image",
+        "file": "assets/models/food/bottle-ketchup.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/battery/battery_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/bottle-ketchup.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/battery/battery_3.png",
-        "kind": "image",
+        "file": "assets/models/food/bread.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/battery/battery_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/bread.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/frame/frame_1.png",
-        "kind": "image",
+        "file": "assets/models/food/burger.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/frame/frame_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/burger.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/frame/frame_2.png",
-        "kind": "image",
+        "file": "assets/models/food/cake.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/frame/frame_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/cake.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wallpaper/wallpaper_1.png",
-        "kind": "image",
+        "file": "assets/models/food/can.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wallpaper/wallpaper_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/can.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wallpaper/wallpaper_2.png",
-        "kind": "image",
+        "file": "assets/models/food/carrot.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wallpaper/wallpaper_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/carrot.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wallpaper/wallpaper_3.png",
-        "kind": "image",
+        "file": "assets/models/food/carton.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wallpaper/wallpaper_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/carton.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wallpaper/wallpaper_4.png",
-        "kind": "image",
+        "file": "assets/models/food/cheese.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wallpaper/wallpaper_4.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/cheese.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/bridge/bridge.png",
-        "kind": "image",
+        "file": "assets/models/food/croissant.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/bridge/bridge.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/croissant.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/building/rooftop/roof_1.png",
-        "kind": "image",
+        "file": "assets/models/food/cup-coffee.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/building/rooftop/roof_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/cup-coffee.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/building/rooftop/roof_2.png",
-        "kind": "image",
+        "file": "assets/models/food/cupcake.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/building/rooftop/roof_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/cupcake.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/building/rooftop/roof_3.png",
-        "kind": "image",
+        "file": "assets/models/food/donut-sprinkles.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/building/rooftop/roof_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/donut-sprinkles.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/decoration/decoration_1.png",
-        "kind": "image",
+        "file": "assets/models/food/fries.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/decoration/decoration_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/fries.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_1.png",
-        "kind": "image",
+        "file": "assets/models/food/hot-dog.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/hot-dog.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_2.png",
-        "kind": "image",
+        "file": "assets/models/food/loaf.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/loaf.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_3.png",
-        "kind": "image",
+        "file": "assets/models/food/muffin.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/muffin.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_4.png",
-        "kind": "image",
+        "file": "assets/models/food/orange.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_4.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/orange.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_5.png",
-        "kind": "image",
+        "file": "assets/models/food/pineapple.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_5.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/pineapple.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_6.png",
-        "kind": "image",
+        "file": "assets/models/food/pizza.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_6.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/pizza.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_7.png",
-        "kind": "image",
+        "file": "assets/models/food/plate-dinner.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_7.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/plate-dinner.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/fence/fence_8.png",
-        "kind": "image",
+        "file": "assets/models/food/sandwich.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/fence/fence_8.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/sandwich.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/foliage/grass/grass_1.png",
-        "kind": "image",
+        "file": "assets/models/food/soda-can.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/foliage/grass/grass_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/soda-can.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/foliage/tree/tree_1.png",
-        "kind": "image",
+        "file": "assets/models/food/tomato.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/foliage/tree/tree_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/tomato.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/foliage/tree/tree_2.png",
-        "kind": "image",
+        "file": "assets/models/food/watermelon.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/foliage/tree/tree_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/food/watermelon.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/foliage/tree/tree_3.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bathroom-sink.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/foliage/tree/tree_3.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/furniture/bathroom-sink.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/foliage/tree/tree_4.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bathtub.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/foliage/tree/tree_4.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/furniture/bathtub.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/sport/basketball/ball/basketball_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bed-double.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/sport/basketball/ball/basketball_1.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/furniture/bed-double.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/sport/basketball/ball/basketball_2.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bed-single.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/sport/basketball/ball/basketball_2.png",
-        "smoothed": true,
-        "userAdded": false
+        "name": "assets/models/furniture/bed-single.glb",
+        "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/sport/basketball/ground_elements/element_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bookcase-closed-wide.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/sport/basketball/ground_elements/element_1.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/bookcase-closed-wide.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/sport/basketball/ground/ground_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/bookcase-open.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/sport/basketball/ground/ground_1.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/bookcase-open.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/sport/basketball/hoop/hoop.png",
-        "kind": "image",
+        "file": "assets/models/furniture/cabinet-television.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/sport/basketball/hoop/hoop.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/cabinet-television.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/cardboard-box-closed.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_1.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/cardboard-box-closed.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_10.png",
-        "kind": "image",
+        "file": "assets/models/furniture/chair-cushion.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_10.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/chair-cushion.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_12.png",
-        "kind": "image",
+        "file": "assets/models/furniture/chair-desk.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_12.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/chair-desk.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_14.png",
-        "kind": "image",
+        "file": "assets/models/furniture/chair.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_14.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/chair.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_2.png",
-        "kind": "image",
+        "file": "assets/models/furniture/coat-rack-standing.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_2.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/coat-rack-standing.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_4.png",
-        "kind": "image",
+        "file": "assets/models/furniture/computer-screen.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_4.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/computer-screen.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_5.png",
-        "kind": "image",
+        "file": "assets/models/furniture/desk.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_5.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/desk.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_7.png",
-        "kind": "image",
+        "file": "assets/models/furniture/floor-full.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_7.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/floor-full.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/map_edge/map_edge_9.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-bar-end.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/map_edge/map_edge_9.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-bar-end.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/path/concrete.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-bar.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/path/concrete.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-bar.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/path/dirt.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-cabinet.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/path/dirt.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-cabinet.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/path/sand.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-coffee-machine.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/path/sand.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-coffee-machine.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road_block/block_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-fridge.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road_block/block_1.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-fridge.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road_block/block_2.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-microwave.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road_block/block_2.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-microwave.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_10.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-sink.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_10.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-sink.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_11.png",
-        "kind": "image",
+        "file": "assets/models/furniture/kitchen-stove.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_11.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/kitchen-stove.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_13.png",
-        "kind": "image",
+        "file": "assets/models/furniture/lamp-round-table.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_13.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/lamp-round-table.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_14.png",
-        "kind": "image",
+        "file": "assets/models/furniture/lamp-square-floor.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_14.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/lamp-square-floor.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_15.png",
-        "kind": "image",
+        "file": "assets/models/furniture/lounge-chair.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_15.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/lounge-chair.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_16.png",
-        "kind": "image",
+        "file": "assets/models/furniture/lounge-sofa.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_16.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/lounge-sofa.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_24.png",
-        "kind": "image",
+        "file": "assets/models/furniture/plant-small1.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_24.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/plant-small1.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_27.png",
-        "kind": "image",
+        "file": "assets/models/furniture/potted-plant.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_27.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/potted-plant.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_30.png",
-        "kind": "image",
+        "file": "assets/models/furniture/rug-doormat.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_30.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/rug-doormat.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_31.png",
-        "kind": "image",
+        "file": "assets/models/furniture/rug-rectangle.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_31.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/rug-rectangle.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_39.png",
-        "kind": "image",
+        "file": "assets/models/furniture/rug-round.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_39.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/rug-round.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_43.png",
-        "kind": "image",
+        "file": "assets/models/furniture/side-table.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_43.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/side-table.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/tile/road/road_8.png",
-        "kind": "image",
+        "file": "assets/models/furniture/speaker.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/tile/road/road_8.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/speaker.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/water/water_1.png",
-        "kind": "image",
+        "file": "assets/models/furniture/stool-bar.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/water/water_1.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/stool-bar.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/bar/Flat Bar Red Fill Bar.png",
-        "kind": "image",
+        "file": "assets/models/furniture/table-coffee.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/bar/Flat Bar Red Fill Bar.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/table-coffee.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/bar/Flat Bar White Border.png",
-        "kind": "image",
+        "file": "assets/models/furniture/table-round.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/bar/Flat Bar White Border.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/table-round.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/bar/Square White Slider Border.png",
-        "kind": "image",
+        "file": "assets/models/furniture/table.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/bar/Square White Slider Border.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/table.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/bar/Square White Slider Fill Bar.png",
-        "kind": "image",
+        "file": "assets/models/furniture/television-modern.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/bar/Square White Slider Fill Bar.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/television-modern.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/bar/Square White Slider Thumb.png",
-        "kind": "image",
+        "file": "assets/models/furniture/toilet.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/bar/Square White Slider Thumb.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/toilet.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/button/White Decorated Button_Hovered.png",
-        "kind": "image",
+        "file": "assets/models/furniture/trashcan.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/button/White Decorated Button_Hovered.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/trashcan.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/button/White Decorated Button_Idle.png",
-        "kind": "image",
+        "file": "assets/models/furniture/wall-doorway.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/button/White Decorated Button_Idle.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/wall-doorway.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/UI/button/White Decorated Button_Pressed.png",
-        "kind": "image",
+        "file": "assets/models/furniture/wall-window.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/UI/button/White Decorated Button_Pressed.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/wall-window.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/bar.png",
-        "kind": "image",
+        "file": "assets/models/furniture/wall.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/bar.png",
-        "smoothed": true,
+        "name": "assets/models/furniture/wall.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/flamethrower_long.png",
-        "kind": "image",
+        "file": "assets/models/roads/construction-cone.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/flamethrower_long.png",
-        "smoothed": true,
+        "name": "assets/models/roads/construction-cone.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/flamethrower_short.png",
-        "kind": "image",
+        "file": "assets/models/roads/dumpster.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/flamethrower_short.png",
-        "smoothed": true,
+        "name": "assets/models/roads/dumpster.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/grenade.png",
-        "kind": "image",
+        "file": "assets/models/roads/light-square-double.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/grenade.png",
-        "smoothed": true,
+        "name": "assets/models/roads/light-square-double.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/grenadeFlash.png",
-        "kind": "image",
+        "file": "assets/models/roads/light-square.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/grenadeFlash.png",
-        "smoothed": true,
+        "name": "assets/models/roads/light-square.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/grenadeSmoke.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-bend.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/grenadeSmoke.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-bend.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/grenadeVintage.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-crossing.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/grenadeVintage.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-crossing.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/knife_sharp.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-crossroad.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/knife_sharp.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-crossroad.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/knifeRound_sharp.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-intersection.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/knifeRound_sharp.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-intersection.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/knifeRound_smooth.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-sign-stop.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/knifeRound_smooth.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-sign-stop.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/machinegun.png",
-        "kind": "image",
+        "file": "assets/models/roads/road-straight.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/machinegun.png",
-        "smoothed": true,
+        "name": "assets/models/roads/road-straight.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/machinegunLauncher.png",
-        "kind": "image",
+        "file": "assets/models/roads/traffic-light.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/machinegunLauncher.png",
-        "smoothed": true,
+        "name": "assets/models/roads/traffic-light.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/pistol.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-a.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/pistol.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-a.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/pistolSilencer.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-b.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/pistolSilencer.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-b.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/rocketlauncher.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-c.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/rocketlauncher.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-c.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/shotgun.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-d.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/shotgun.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-d.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/shotgunShort.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-e.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/shotgunShort.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-e.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/sniper.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-f.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/sniper.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-f.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/uzi.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-g.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/uzi.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-g.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/uziLong.png",
-        "kind": "image",
+        "file": "assets/models/suburban/building-type-h.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/uziLong.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/building-type-h.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/uziLongSilencer.png",
-        "kind": "image",
+        "file": "assets/models/suburban/fence-1x3.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/uziLongSilencer.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/fence-1x3.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/icon/uziSilencer.png",
-        "kind": "image",
+        "file": "assets/models/suburban/planter.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/weapon/icon/uziSilencer.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/planter.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wifi/wifi_0.png",
-        "kind": "image",
+        "file": "assets/models/suburban/tree-large.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wifi/wifi_0.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/tree-large.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wifi/wifi_1.png",
-        "kind": "image",
+        "file": "assets/models/suburban/tree-small.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wifi/wifi_1.png",
-        "smoothed": true,
+        "name": "assets/models/suburban/tree-small.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wifi/wifi_2.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/ambulance.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wifi/wifi_2.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/ambulance.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/character/phone/wifi/wifi_3.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/cone.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/character/phone/wifi/wifi_3.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/cone.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_1.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/delivery.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_1.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/delivery.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_2.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/hatchback-sports.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_2.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/hatchback-sports.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_3.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/police.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_3.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/police.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_4.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/sedan-sports.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_4.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/sedan-sports.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_6.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/sedan.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_6.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/sedan.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_7.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/suv.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_7.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/suv.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_8.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/taxi.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_8.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/taxi.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_9.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/truck.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_9.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/truck.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_10.png",
-        "kind": "image",
+        "file": "assets/models/vehicles/van.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_10.png",
-        "smoothed": true,
+        "name": "assets/models/vehicles/van.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/prop/props_11.png",
-        "kind": "image",
+        "file": "assets/models/weapons/blaster-h.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/environment/prop/props_11.png",
-        "smoothed": true,
+        "name": "assets/models/weapons/blaster-h.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/misc/black.png",
-        "kind": "image",
+        "file": "assets/models/weapons/blaster-k.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/misc/black.png",
-        "smoothed": true,
+        "name": "assets/models/weapons/blaster-k.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/misc/door.png",
-        "kind": "image",
+        "file": "assets/models/weapons/blaster-n.glb",
+        "kind": "model3D",
         "metadata": "",
-        "name": "assets/misc/door.png",
-        "smoothed": true,
+        "name": "assets/models/weapons/blaster-n.glb",
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/misc/green_checked.png",
+        "file": "assets/textures/cash.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/misc/green_checked.png",
+        "name": "assets/textures/cash.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/gun/uziGold.png",
+        "file": "assets/textures/grass.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/weapon/gun/uziGold.png",
+        "name": "assets/textures/grass.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/gun/uziLong.png",
+        "file": "assets/textures/laser.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/weapon/gun/uziLong.png",
-        "smoothed": true,
-        "userAdded": true
+        "name": "assets/textures/laser.png",
+        "userAdded": true,
+        "smoothed": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/weapon/ammo/ammo_uzi.png",
+        "file": "assets/textures/pavement.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/weapon/ammo/ammo_uzi.png",
+        "name": "assets/textures/pavement.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "disablePreload": false,
-        "file": "assets/environment/map/city1.json",
-        "kind": "tilemap",
+        "file": "assets/textures/play_button.png",
+        "kind": "image",
         "metadata": "",
-        "name": "assets/environment/map/city1.json",
+        "name": "assets/textures/play_button.png",
+        "smoothed": true,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "assets/environment/map/city1/spritesheet.png",
+        "file": "assets/textures/white.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets/environment/map/city1/spritesheet.png",
+        "name": "assets/textures/white.png",
         "smoothed": true,
         "userAdded": true
       }
-    ],
-    "resourceFolders": []
+    ]
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
-      "name": "game_crosshair",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
+      "name": "Player",
+      "type": "Scene3D::Model3DObject",
+      "variables": [
         {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/weapon/crosshair/crosshair_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
+          "name": "Aiming",
+          "type": "boolean",
+          "value": false
         }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "game_transition",
-      "type": "PrimitiveDrawing::Drawer",
-      "variables": [],
+      ],
       "effects": [],
       "behaviors": [
         {
-          "name": "FlashTransitionPainter",
-          "type": "FlashTransitionPainter::FlashTransitionPainter",
-          "Timer": 1,
-          "Color": "255;255;255",
-          "Type": "",
-          "Direction": "",
-          "MaxOpacity": 255
+          "name": "Physics3D",
+          "type": "Physics3D::Physics3DBehavior",
+          "object3D": "Object3D",
+          "bodyType": "Dynamic",
+          "bullet": false,
+          "fixedRotation": true,
+          "shape": "Capsule",
+          "meshShapeResourceName": "",
+          "shapeOrientation": "Z",
+          "shapeDimensionA": 20,
+          "shapeDimensionB": 78,
+          "shapeDimensionC": 0,
+          "shapeOffsetX": 0,
+          "shapeOffsetY": 0,
+          "shapeOffsetZ": 0,
+          "massCenterOffsetX": 0,
+          "massCenterOffsetY": 0,
+          "massCenterOffsetZ": 0,
+          "massOverride": 70,
+          "density": 1,
+          "friction": 0,
+          "restitution": 0.1,
+          "linearDamping": 0.1,
+          "angularDamping": 0.1,
+          "gravityScale": 1,
+          "layers": 17,
+          "masks": 17
+        },
+        {
+          "name": "PhysicsCharacter3D",
+          "type": "Physics3D::PhysicsCharacter3D",
+          "physics3D": "Physics3D",
+          "jumpHeight": 90,
+          "jumpSustainTime": 0.15,
+          "gravity": 1400,
+          "fallingSpeedMax": 900,
+          "forwardAcceleration": 1400,
+          "forwardDeceleration": 1800,
+          "forwardSpeedMax": 180,
+          "sidewaysAcceleration": 1400,
+          "sidewaysDeceleration": 1800,
+          "sidewaysSpeedMax": 170,
+          "slopeMaxAngle": 50,
+          "stairHeightMax": 14,
+          "shouldBindObjectAndForwardAngle": true,
+          "canBePushed": false
         }
       ],
-      "fillOpacity": 255,
-      "outlineSize": 1,
-      "outlineOpacity": 255,
-      "fillColor": {
-        "b": 255,
-        "g": 255,
+      "content": {
+        "centerLocation": "ObjectCenter",
+        "crossfadeDuration": 0.15,
+        "depth": 90.624,
+        "height": 90.624,
+        "isCastingShadow": true,
+        "isReceivingShadow": true,
+        "keepAspectRatio": true,
+        "materialType": "StandardWithoutMetalness",
+        "modelResourceName": "assets/models/characters/character-male-a.glb",
+        "originLocation": "BottomCenterZ",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 90,
+        "width": 90.624,
+        "animations": [
+          {
+            "loop": true,
+            "name": "idle",
+            "source": "idle"
+          },
+          {
+            "loop": true,
+            "name": "walk",
+            "source": "walk"
+          },
+          {
+            "loop": true,
+            "name": "sprint",
+            "source": "sprint"
+          },
+          {
+            "loop": false,
+            "name": "jump",
+            "source": "jump"
+          },
+          {
+            "loop": true,
+            "name": "fall",
+            "source": "fall"
+          },
+          {
+            "loop": true,
+            "name": "drive",
+            "source": "drive"
+          },
+          {
+            "loop": false,
+            "name": "die",
+            "source": "die"
+          },
+          {
+            "loop": false,
+            "name": "pick-up",
+            "source": "pick-up"
+          },
+          {
+            "loop": true,
+            "name": "holding-right",
+            "source": "holding-right"
+          },
+          {
+            "loop": false,
+            "name": "holding-right-shoot",
+            "source": "holding-right-shoot"
+          }
+        ]
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Cash",
+      "type": "Scene3D::Cube3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "width": 100,
+        "height": 100,
+        "depth": 100,
+        "enableTextureTransparency": false,
+        "facesOrientation": "Y",
+        "frontFaceResourceName": "assets/textures/cash.png",
+        "backFaceResourceName": "assets/textures/cash.png",
+        "backFaceUpThroughWhichAxisRotation": "X",
+        "leftFaceResourceName": "assets/textures/cash.png",
+        "rightFaceResourceName": "assets/textures/cash.png",
+        "topFaceResourceName": "assets/textures/cash.png",
+        "bottomFaceResourceName": "assets/textures/cash.png",
+        "frontFaceVisible": true,
+        "backFaceVisible": false,
+        "leftFaceVisible": true,
+        "rightFaceVisible": true,
+        "topFaceVisible": true,
+        "bottomFaceVisible": false,
+        "frontFaceResourceRepeat": false,
+        "backFaceResourceRepeat": false,
+        "leftFaceResourceRepeat": false,
+        "rightFaceResourceRepeat": false,
+        "topFaceResourceRepeat": false,
+        "bottomFaceResourceRepeat": false,
+        "materialType": "StandardWithoutMetalness",
+        "tint": "255;255;255",
+        "isCastingShadow": true,
+        "isReceivingShadow": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "MoneyText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "MoneyText",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 120,
+        "g": 230,
+        "r": 120
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "20;20;30",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 3,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 3,
+        "shadowOpacity": 110,
+        "smoothed": true,
+        "underlined": false,
+        "text": "MoneyText",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "lineHeight": 0,
+        "color": "120;230;120"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "PromptText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "PromptText",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 28,
+      "color": {
+        "b": 120,
+        "g": 230,
         "r": 255
       },
-      "outlineColor": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "absoluteCoordinates": false,
-      "clearBetweenFrames": true,
-      "antialiasing": "none"
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "20;20;30",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 3,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 3,
+        "shadowOpacity": 110,
+        "smoothed": true,
+        "underlined": false,
+        "text": "PromptText",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "255;230;120"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "game_crosshair"
+        "objectName": "Player"
       },
       {
-        "objectName": "game_transition"
+        "objectName": "Cash"
+      },
+      {
+        "objectName": "MoneyText"
+      },
+      {
+        "objectName": "PromptText"
       }
     ]
   },
   "objectsGroups": [],
   "variables": [
     {
-      "folded": true,
-      "name": "_RoomManager__Rooms",
-      "type": "structure",
-      "children": [
-        {
-          "name": "invalid",
-          "type": "structure",
-          "children": [
-            {
-              "name": "x",
-              "type": "string",
-              "value": "0"
-            },
-            {
-              "name": "y",
-              "type": "string",
-              "value": "0"
-            }
-          ]
-        }
-      ]
+      "name": "Money",
+      "type": "number",
+      "value": 0
     },
     {
-      "name": "Player",
-      "type": "structure",
-      "children": [
-        {
-          "name": "Customisation",
-          "persistentUuid": "6f3e9e87-d6f3-44d0-a02a-6c8089850a4a",
-          "type": "structure",
-          "children": [
-            {
-              "folded": true,
-              "name": "body",
-              "type": "number",
-              "value": 8
-            },
-            {
-              "folded": true,
-              "name": "hand",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "folded": true,
-              "name": "leg",
-              "type": "number",
-              "value": 0
-            }
-          ]
-        }
-      ]
+      "name": "InteriorLayout",
+      "type": "string",
+      "value": ""
     },
     {
-      "folded": true,
-      "name": "debug",
-      "type": "structure",
-      "children": [
-        {
-          "name": "active",
-          "type": "boolean",
-          "value": false
-        },
-        {
-          "folded": true,
-          "name": "cameraControlType",
-          "type": "boolean",
-          "value": false
-        }
-      ]
+      "name": "InteriorId",
+      "type": "number",
+      "value": 0
     },
     {
-      "name": "Game",
+      "name": "InteriorCollected",
       "type": "structure",
-      "children": [
-        {
-          "name": "Player",
-          "type": "structure",
-          "children": [
-            {
-              "name": "phone",
-              "type": "structure",
-              "children": [
-                {
-                  "name": "active",
-                  "type": "boolean",
-                  "value": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Settings",
-          "type": "structure",
-          "children": [
-            {
-              "folded": true,
-              "name": "Shadows",
-              "type": "boolean",
-              "value": false
-            }
-          ]
-        },
-        {
-          "name": "fullscreen",
-          "persistentUuid": "83497f70-c1a7-4f18-8382-0fe6e8b62e2a",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "name": "globalTime",
-          "type": "structure",
-          "children": [
-            {
-              "folded": true,
-              "name": "ChildVariable",
-              "type": "string",
-              "value": ""
-            },
-            {
-              "name": "shadowTime",
-              "type": "structure",
-              "children": [
-                {
-                  "folded": true,
-                  "name": "adder",
-                  "type": "number",
-                  "value": 0.01
-                },
-                {
-                  "folded": true,
-                  "name": "value",
-                  "type": "number",
-                  "value": 0
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "folded": true,
-          "name": "intro",
-          "type": "boolean",
-          "value": true
-        },
-        {
-          "folded": true,
-          "name": "preloadScene",
-          "persistentUuid": "a052a8b7-a27b-4d83-a9ab-043c56878642",
-          "type": "string",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "name": "System",
-      "type": "structure",
-      "children": [
-        {
-          "folded": true,
-          "name": "rank",
-          "type": "string",
-          "value": ""
-        }
-      ]
+      "children": []
     }
   ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_intro"
+      "referenceTo": "/layouts/title"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_customisation_wip"
+      "referenceTo": "/layouts/city"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_world_old"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_world"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_room"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_loading"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game_firstlaunch"
+      "referenceTo": "/layouts/interior"
     }
   ],
   "externalEvents": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/game"
+      "referenceTo": "/externalEvents/onfoot"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/player"
+      "referenceTo": "/externalEvents/camera"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/doors"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/phone"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/appconnection"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/godmode"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/crosshair"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/sea"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/sports"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/houses"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/foliage"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/debug"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalEvents/weaponbar"
+      "referenceTo": "/externalEvents/hud"
     }
   ],
-  "eventsFunctionsExtensions": [
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/firebullet"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/camerashake"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/bounce"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/flashtransitionpainter"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/fps"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/extendedvariables"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/references"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/gamepads"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/spritemasking"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/toggleswitch"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/ellipsemovement"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/sticker"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/alignobject"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/timeformatter"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/roommanager"
-    }
-  ],
+  "eventsFunctionsExtensions": [],
   "externalLayouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/city2"
+      "referenceTo": "/externalLayouts/home1"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/phone"
+      "referenceTo": "/externalLayouts/home2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/externalLayouts/weaponbar"
+      "referenceTo": "/externalLayouts/home3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/diner"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/grocery"
     }
-  ],
-  "externalSourceFiles": []
+  ]
 }

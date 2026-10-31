@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "Build pipeline for GDevelop-Open-Game",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "build": "gdexport -p ../src/game.json -o ./gdExport",
-    "electron-build": "npm run build -- -b electron"
+    "build": "node export.mjs",
+    "electron-build": "node export.mjs --target electron",
+    "migrate": "node migrate.mjs",
+    "check": "node check.mjs"
   },
   "repository": {
     "type": "git",
@@ -18,8 +24,6 @@
   },
   "homepage": "https://github.com/Gdevelop-game/GDevelop-Open-Game#readme",
   "dependencies": {
-    "@gdexporter/plugin-manifest": "^1.0.0",
-    "@gdexporter/plugin-offline": "^1.0.0",
-    "gdexporter": "latest"
+    "gdcore-tools": "2.0.0-gd-v5.6.269-autobuild"
   }
 }

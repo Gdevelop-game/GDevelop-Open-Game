@@ -1,0 +1,47 @@
+{
+  "associatedLayout": "City",
+  "name": "Hud",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "MoneyText",
+            "Text",
+            "=",
+            "\"$\" + ToString(Money)"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "MoneyText",
+            "=",
+            "SceneWindowWidth() - MoneyText.Width() - 28",
+            "=",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "PromptText",
+            "=",
+            "(SceneWindowWidth() - PromptText.Width()) / 2",
+            "=",
+            "SceneWindowHeight() - 120"
+          ]
+        }
+      ]
+    }
+  ]
+}

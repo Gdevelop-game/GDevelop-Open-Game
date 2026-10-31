@@ -1,115 +1,82 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Auto Build
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# Builds the game on every push to master (and checks pull requests).
+# The web build is deployed to GitHub Pages from master only.
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+  pull_request:
+    branches: [master]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+
 jobs:
-  # This workflow contains a single job called "build"
-  build_and_deploy_to_pages:
-    # The type of runner that the job will run on
+  web:
     runs-on: ubuntu-latest
     steps:
-    - name: Build with GDexport
-      run: |
-        git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-        cd Project/build
-        npm i
-        npm run build
-      
-    - name: Upload to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2.0.1
-      with:
-        # Build directory to deploy
-        build_dir: Project/build/gdExport
-        # The committer name and email address
-        committer: Auto Builder
-        # Commit message
-        commit_message: Auto Built nightly game build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-  build_for_linux:
-    runs-on: ubuntu-latest
-        
-    steps:
-      
-      - name: Build with GDexport
-        run: |
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          cd Project/build
-          npm i
-          npm run electron-build
-          
-      - name: Build Electron app
-        run: |
-          cd Project/build/gdExport
-          npm i --save-dev electron-builder
-          ./node_modules/.bin/electron-builder -l AppImage
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          # Upload all potential executables
-          name: linux
-          path: Project/build/gdExport/dist/*.AppImage
-          
-  build_for_mac:
-    runs-on: macos-latest
-        
-    steps:
-
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      - uses: actions/setup-node@v4
         with:
-          python-version: '3.10'
-      
-      - name: Build with GDexport
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: build/package-lock.json
+
+      - name: Export with GDevelop
+        working-directory: build
         run: |
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          cd Project/build
-          npm i
-          npm run electron-build
-          
-      - name: Build Electron app
-        run: |
-          cd Project/build/gdExport
-          npm i --save-dev electron-builder
-          export PYTHON_PATH=/usr/bin/python3
-          ./node_modules/.bin/electron-builder -m dmg
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
+          npm ci
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          # Upload all potential executables
-          name: mac
-          path: Project/build/gdExport/dist/*.dmg
-          
-  build_for_windows:
-    runs-on: windows-latest
-      
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/gdExport
+          commit_message: Auto built nightly game build
+
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            name: linux
+            target: --linux AppImage
+            files: build/gdExport/dist/*.AppImage
+          - os: macos-latest
+            name: mac
+            target: --mac dmg
+            files: build/gdExport/dist/*.dmg
+          - os: windows-latest
+            name: windows
+            target: --win portable
+            files: build/gdExport/dist/*.exe
+    runs-on: ${{ matrix.os }}
     steps:
-      - name: Build with GDexport
-        run: |
-          git clone https://github.com/Gdevelop-game/GDevelop-Open-Game Project
-          cd Project/build
-          npm i
-          npm run electron-build
-          
-      - name: Build Electron app
-        run: |
-          cd Project/build/gdExport
-          npm i --save-dev electron-builder
-          .\node_modules\.bin\electron-builder.cmd -w portable
-          
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          # Upload all potential executables
-          name: windows
-          path: Project/build/gdExport/dist/*.exe
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: build/package-lock.json
+
+      - name: Export with GDevelop
+        working-directory: build
+        run: |
+          npm ci
+          npm run electron-build
+
+      - name: Package Electron app
+        working-directory: build/gdExport
+        run: |
+          npm install
+          npx electron-builder ${{ matrix.target }} --publish never
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: ${{ matrix.files }}
