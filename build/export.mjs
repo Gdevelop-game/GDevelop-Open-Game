@@ -8,7 +8,7 @@
 // To upgrade GDevelop, bump that dependency and run `npm run migrate`.
 import { parseArgs } from "node:util";
 import { resolve } from "node:path";
-import { rm } from "node:fs/promises";
+import { readFile, rm, writeFile } from "node:fs/promises";
 import { loadProject, exportProject } from "gdcore-tools";
 import { checkResources } from "./check.mjs";
 
@@ -37,5 +37,15 @@ console.info(`📦 Exporting for ${values.target || "HTML5"} to ${outDir}`);
 await rm(outDir, { recursive: true, force: true });
 exportProject(project, outDir, values.target);
 project.delete();
+
+if (values.target === "electron") {
+  // GDevelop's Electron template ships its license with "extraFiles", which on macOS puts it loose in
+  // "<app>.app/Contents/" and makes codesign fail. "extraResources" puts it in Contents/Resources instead.
+  const packagePath = resolve(outDir, "package.json");
+  const pkg = JSON.parse(await readFile(packagePath, "utf8"));
+  const { extraFiles = [], ...build } = pkg.build;
+  pkg.build = { ...build, extraResources: [...(build.extraResources || []), ...extraFiles] };
+  await writeFile(packagePath, JSON.stringify(pkg, null, 2) + "\n");
+}
 
 console.info("✅ Done!");
