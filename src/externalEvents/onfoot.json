@@ -33,11 +33,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "w"
+            "\"w\""
           ]
         }
       ],
@@ -59,11 +59,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "s"
+            "\"s\""
           ]
         }
       ],
@@ -85,11 +85,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "d"
+            "\"d\""
           ]
         }
       ],
@@ -111,11 +111,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "a"
+            "\"a\""
           ]
         }
       ],
@@ -197,11 +197,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "LShift"
+            "\"LShift\""
           ]
         }
       ],
@@ -225,11 +225,11 @@
         {
           "type": {
             "inverted": true,
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "LShift"
+            "\"LShift\""
           ]
         }
       ],
@@ -252,11 +252,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyPressed"
+            "value": "KeyFromTextPressed"
           },
           "parameters": [
             "",
-            "Space"
+            "\"Space\""
           ]
         }
       ],
@@ -486,8 +486,8 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name",
-                    "inverted": true
+                    "inverted": true,
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
                     "Player",
@@ -498,8 +498,8 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::Name",
-                    "inverted": true
+                    "inverted": true,
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
                   },
                   "parameters": [
                     "Player",
@@ -558,7 +558,7 @@
           "parameters": [
             "TargetZ",
             "=",
-            "Player.Z() + 70"
+            "Player.Object3D::Z() + 70"
           ]
         }
       ]

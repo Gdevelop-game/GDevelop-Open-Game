@@ -4,11 +4,28 @@
   "mangledName": "Title",
   "name": "Title",
   "r": 24,
+  "renderer3DWorldScale": 100,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
   "v": 26,
-  "uiSettings": {},
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.546875,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
   "objectsGroups": [],
   "variables": [],
   "instances": [
@@ -87,7 +104,7 @@
       "actions": [
         {
           "type": {
-            "value": "MettreXY"
+            "value": "SetXY"
           },
           "parameters": [
             "PlayButton",
@@ -104,7 +121,7 @@
       "conditions": [
         {
           "type": {
-            "value": "SourisSurObjet"
+            "value": "IsCursorOnObject"
           },
           "parameters": [
             "PlayButton",
@@ -134,7 +151,7 @@
         {
           "type": {
             "inverted": true,
-            "value": "SourisSurObjet"
+            "value": "IsCursorOnObject"
           },
           "parameters": [
             "PlayButton",
@@ -163,7 +180,7 @@
       "conditions": [
         {
           "type": {
-            "value": "SourisSurObjet"
+            "value": "IsCursorOnObject"
           },
           "parameters": [
             "PlayButton",
@@ -174,11 +191,11 @@
         },
         {
           "type": {
-            "value": "MouseButtonReleased"
+            "value": "MouseButtonFromTextReleased"
           },
           "parameters": [
             "",
-            "Left"
+            "\"Left\""
           ]
         }
       ],
@@ -212,11 +229,11 @@
       "conditions": [
         {
           "type": {
-            "value": "KeyReleased"
+            "value": "KeyFromTextReleased"
           },
           "parameters": [
             "",
-            "Return"
+            "\"Return\""
           ]
         }
       ],

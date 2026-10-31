@@ -7,7 +7,7 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N61UP36)
 
 A community-made **3D open city sandbox** built with [GDevelop 5](https://gdevelop.io).
-Walk around the city, jump into any parked car, walk into houses and shops, and collect all the cash.
+Walk around a living city (traffic that stops at red lights, people walking the sidewalks and crossing the streets), jump into any car, walk into houses and shops, and collect all the cash.
 
 ### Trying the game out
 
@@ -20,7 +20,7 @@ Desktop builds (Windows, macOS, Linux) are attached to each run of the [Auto Bui
 | Sprint / jump | Shift / Space |
 | Look around | Mouse (click the game to capture it) or arrow keys |
 | Enter / exit a car or building | E |
-| Pick up a blaster / shoot | Walk over it / hold left mouse button |
+| Pick up a blaster / shoot | Walk over it / hold left mouse button (not while sprinting) |
 | Drive / handbrake | WASD / Space |
 | Back to the menu | Esc |
 
@@ -30,11 +30,20 @@ Desktop builds (Windows, macOS, Linux) are attached to each run of the [Auto Bui
 * `Title` is the menu, `City` is the open world and `Interior` is the inside of a building.
   Events shared by both game scenes (on-foot movement, camera, money HUD) are external events
   (`OnFoot`, `Camera`, `Hud`) linked from each scene. `Player`, `Cash` and the HUD texts are global objects.
-* Each house and shop in `City` has an invisible `DoorZone` in front of its door. The instance variables
+* Each house and shop in `City` has an invisible `DoorZone` covering the building plus a small margin: standing next
+  to the building lets you enter it. The instance variables
   `Layout` (the external layout to load: `Home1`, `Home2`, `Home3`, `Diner` or `Grocery`) and `HouseId` are fixed
   in the scene, so the same building always opens the same interior. Cash collected inside a building is remembered
   in the global `InteriorCollected` structure. To add an interior, create an external layout for the `Interior` scene
   with a `Doormat` (exit), a `Player` (spawn), one `Cash`, and invisible `Collider` cubes for the floor and walls.
+* Blasters (Pistol, Rifle, Cannon, Shotgun, Sniper, Minigun) are in the `Guns` group of `City`. Their stats are object
+  variables (`FireRate`, `Damage`, `Spread`, `Pellets`, `BulletSpeed`, ...). The HUD icon is the `WeaponIcon` sprite: one
+  animation per blaster, named like the blaster object.
+* Traffic and pedestrians are driven by the JavaScript event in the `City life` group of `City`. Cars (the `Cars`
+  group) follow the lanes of the road grid, turn at crossings, stop at the traffic lights and for anything in front of
+  them; pedestrians walk around each block and cross at the lights. `CAR_COUNT` and `PED_COUNT` at the top of the
+  script set how many there are (extra ones are created at start). Street furniture (lights, trees, dumpsters) uses its
+  own physics layer, so pedestrians walk past it while cars and the player still collide with it.
 * The city is built from [Kenney](https://kenney.nl) 3D kits (CC0); see [`src/assets/CREDITS.md`](src/assets/CREDITS.md).
   Kenney `.glb` models reference an external `Textures/colormap.png`; embed the texture into the `.glb`
   before adding a new model, or it will render without colors once exported.

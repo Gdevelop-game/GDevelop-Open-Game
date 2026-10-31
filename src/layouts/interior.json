@@ -4,65 +4,120 @@
   "mangledName": "Interior",
   "name": "Interior",
   "r": 30,
+  "renderer3DWorldScale": 100,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
   "title": "",
   "v": 28,
-  "uiSettings": {},
-  "objectsGroups": [],
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.546875,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [
+    {
+      "name": "CameraBlockers",
+      "objects": [
+        {
+          "name": "Wall"
+        },
+        {
+          "name": "WallDoorway"
+        },
+        {
+          "name": "WallWindow"
+        }
+      ]
+    }
+  ],
   "variables": [
     {
       "name": "Driving",
+      "persistentUuid": "7b6d2fd5-91e0-44ce-a1fb-654aa7ddfc92",
       "type": "boolean",
       "value": false
     },
     {
       "name": "WantSwitch",
+      "persistentUuid": "79cb7362-3779-40a7-9092-e2f9f3caa79a",
       "type": "boolean",
       "value": false
     },
     {
       "name": "CamYaw",
+      "persistentUuid": "45c32ac6-7367-447f-a261-facc94ff14d6",
       "type": "number",
       "value": -90
     },
     {
       "name": "CamPitch",
+      "persistentUuid": "8f9b5d31-3500-4bc4-af56-cab171dd514d",
       "type": "number",
       "value": 55
     },
     {
       "name": "CamDist",
+      "persistentUuid": "bda44a71-5e10-4c77-aede-c03bb18cded0",
       "type": "number",
       "value": 640
     },
     {
       "name": "CamDistTarget",
+      "persistentUuid": "c6a36e65-8efe-4db4-bcf5-f46980205986",
       "type": "number",
       "value": 640
     },
     {
       "name": "TargetX",
+      "persistentUuid": "43839c10-7e65-4ce4-a03e-31005b2abab9",
       "type": "number",
       "value": 0
     },
     {
       "name": "TargetY",
+      "persistentUuid": "55662332-247c-47ef-bf63-0834473542d0",
       "type": "number",
       "value": 0
     },
     {
       "name": "TargetZ",
+      "persistentUuid": "02c8b82b-e396-49e3-be29-4ecebeda778f",
       "type": "number",
       "value": 0
     },
     {
       "name": "InputX",
+      "persistentUuid": "a2624c23-18a0-4920-b96e-9e3028c563f4",
       "type": "number",
       "value": 0
     },
     {
       "name": "InputY",
+      "persistentUuid": "6fa9c664-7b11-4476-a3e4-cac93a446d82",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CamDistUsed",
+      "persistentUuid": "dd570404-5d74-4a03-8b10-5c8702f8fdcc",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CamShoulder",
+      "persistentUuid": "f5e8235e-15ee-4254-ad81-c3b00931425e",
       "type": "number",
       "value": 0
     }
@@ -2444,6 +2499,31 @@
         "width": 64.6,
         "animations": []
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "WallDoorway",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "centerLocation": "ObjectCenter",
+        "crossfadeDuration": 0.15,
+        "depth": 180.6,
+        "height": 180.6,
+        "isCastingShadow": true,
+        "isReceivingShadow": true,
+        "keepAspectRatio": true,
+        "materialType": "StandardWithoutMetalness",
+        "modelResourceName": "assets/models/furniture/wall-doorway.glb",
+        "originLocation": "BottomCenterZ",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": 90,
+        "width": 180.6,
+        "animations": []
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2634,6 +2714,9 @@
       },
       {
         "objectName": "Barrel"
+      },
+      {
+        "objectName": "WallDoorway"
       }
     ]
   },
@@ -2664,7 +2747,7 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "SceneJustBegins"
               },
               "parameters": [
                 ""
@@ -2726,7 +2809,7 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "SceneJustBegins"
               },
               "parameters": [
                 ""
@@ -2736,7 +2819,7 @@
           "actions": [
             {
               "type": {
-                "value": "Cache"
+                "value": "Hide"
               },
               "parameters": [
                 "Collider"
@@ -2761,7 +2844,7 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "SceneJustBegins"
               },
               "parameters": [
                 ""
@@ -2818,11 +2901,11 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
-                "e"
+                "\"e\""
               ]
             }
           ],
@@ -2844,11 +2927,11 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyReleased"
+                "value": "KeyFromTextReleased"
               },
               "parameters": [
                 "",
-                "Escape"
+                "\"Escape\""
               ]
             }
           ],
@@ -3191,32 +3274,32 @@
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
-          "name": "Ambient",
+          "name": "Sky",
           "doubleParameters": {
             "elevation": 90,
-            "intensity": 0.8,
+            "intensity": 0.55,
             "rotation": 0
           },
           "stringParameters": {
-            "groundColor": "110;100;90",
-            "skyColor": "255;245;230",
+            "groundColor": "120;110;100",
+            "skyColor": "205;230;255",
             "top": "Z+"
           },
           "booleanParameters": {}
         },
         {
           "effectType": "Scene3D::DirectionalLight",
-          "name": "Lamp",
+          "name": "Sun",
           "doubleParameters": {
-            "distanceFromCamera": 1200,
-            "elevation": 65,
-            "frustumSize": 2400,
-            "intensity": 0.8,
+            "distanceFromCamera": 1500,
+            "elevation": 55,
+            "frustumSize": 3000,
+            "intensity": 1.1,
             "minimumShadowBias": 0,
-            "rotation": 60
+            "rotation": 35
           },
           "stringParameters": {
-            "color": "255;235;205",
+            "color": "255;244;220",
             "shadowQuality": "high",
             "top": "Z+"
           },

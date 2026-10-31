@@ -17,4 +17,5 @@ Each folder keeps the original `License.txt`.
 | `audio` | [Interface Sounds](https://kenney.nl/assets/interface-sounds), [Impact Sounds](https://kenney.nl/assets/impact-sounds), [Music Jingles](https://kenney.nl/assets/music-jingles), [Space Shooter Redux](https://kenney.nl/assets/space-shooter-redux) (blaster sounds) |
 
 The models' textures were embedded into the `.glb` files so each model is a single file.
-`textures/` was made for this project.
+`textures/skybox` is the "day" sky of Kenney [Skyboxes](https://kenney.nl/assets/skyboxes), converted from a panorama
+to the 6 faces used by the GDevelop Skybox effect. `textures/hud` icons are silhouettes rendered from the Blaster Kit models. The other `textures/` were made for this project.

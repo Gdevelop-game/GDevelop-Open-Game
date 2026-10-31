@@ -12,7 +12,7 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Third-person orbit camera around Target. Each scene sets CamDistTarget, CamYaw and CamPitch."
+      "comment": "Third-person orbit camera around Target, CamShoulder to the right of it. Each scene sets CamDistTarget, CamYaw and CamPitch, and has a CameraBlockers group for the objects the camera can't go through."
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
@@ -27,7 +27,101 @@
             "=",
             "lerp(CamDist, CamDistTarget, min(1, 3 * TimeDelta()))"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "// Keep the camera out of walls. The shoulder offset (CamShoulder) is shortened when a wall is",
+        "// right beside the target, then a ray is cast back from the target to where the camera wants to be,",
+        "// and the camera stops just in front of the first CameraBlockers object hit.",
+        "const vars = runtimeScene.getVariables();",
+        "const yaw = gdjs.toRad(vars.get(\"CamYaw\").getAsNumber());",
+        "const pitch = gdjs.toRad(vars.get(\"CamPitch\").getAsNumber());",
+        "const wanted = vars.get(\"CamDist\").getAsNumber();",
+        "let tx = vars.get(\"TargetX\").getAsNumber();",
+        "let ty = vars.get(\"TargetY\").getAsNumber();",
+        "const tz = vars.get(\"TargetZ\").getAsNumber();",
+        "const dx = -Math.cos(yaw) * Math.cos(pitch);",
+        "const dy = -Math.sin(yaw) * Math.cos(pitch);",
+        "const dz = Math.sin(pitch);",
+        "const rightX = -Math.sin(yaw);",
+        "const rightY = Math.cos(yaw);",
+        "const radius = 14;",
+        "let shoulder = vars.get(\"CamShoulder\").getAsNumber();",
+        "let limit = wanted;",
+        "const reach = wanted + shoulder;",
+        "const roots = objects",
+        "  .filter((o) => {",
+        "    const size = reach + Math.max(o.getWidth(), o.getHeight());",
+        "    return Math.abs(o.getCenterXInScene() - tx) < size && Math.abs(o.getCenterYInScene() - ty) < size;",
+        "  })",
+        "  .map((o) => o.get3DRendererObject())",
+        "  .filter((r) => r);",
+        "if (roots.length > 0 && roots[0].parent) {",
+        "  const layerGroup = roots[0].parent;",
+        "  layerGroup.updateWorldMatrix(true, false);",
+        "  const raycaster = new THREE.Raycaster();",
+        "  const cast = (ox, oy, oz, vx, vy, vz, length) => {",
+        "    const from = layerGroup.localToWorld(new THREE.Vector3(ox, oy, oz));",
+        "    const to = layerGroup.localToWorld(new THREE.Vector3(ox + vx * length, oy + vy * length, oz + vz * length));",
+        "    raycaster.set(from, to.sub(from).normalize());",
+        "    raycaster.far = length;",
+        "    const hit = raycaster.intersectObjects(roots, true)[0];",
+        "    return hit ? hit.distance : Infinity;",
+        "  };",
+        "  if (shoulder > 0) shoulder = Math.max(0, Math.min(shoulder, cast(tx, ty, tz, rightX, rightY, 0, shoulder + radius) - radius));",
+        "  tx += rightX * shoulder;",
+        "  ty += rightY * shoulder;",
+        "  // Hits right at the start are the wall the player is touching, not something behind them.",
+        "  const hit = cast(tx + dx * radius, ty + dy * radius, tz + dz * radius, dx, dy, dz, wanted - radius);",
+        "  if (hit < Infinity) limit = Math.max(radius, hit);",
+        "} else {",
+        "  tx += rightX * shoulder;",
+        "  ty += rightY * shoulder;",
+        "}",
+        "vars.get(\"TargetX\").setNumber(tx);",
+        "vars.get(\"TargetY\").setNumber(ty);",
+        "// Move in quickly when something gets in the way, ease back out slowly when it's gone.",
+        "let dist = vars.get(\"CamDistUsed\").getAsNumber();",
+        "const dt = runtimeScene.getElapsedTime() / 1000;",
+        "if (dist <= 0) dist = limit;",
+        "else dist += (limit - dist) * Math.min(1, (limit < dist ? 12 : 3) * dt);",
+        "vars.get(\"CamDistUsed\").setNumber(dist);",
+        "// When the camera is pushed right up against the player (back to a wall), fade the player and the held",
+        "// blaster out so the view isn't just the back of their head.",
+        "const opacity = Math.max(0, Math.min(1, (dist - 30) / 50));",
+        "const faded = [runtimeScene.getObjects(\"Player\") || []];",
+        "const weapon = vars.has(\"Weapon\") ? vars.get(\"Weapon\").getAsString() : \"\";",
+        "if (weapon !== \"\") faded.push((runtimeScene.getObjects(weapon) || []).filter((g) => g.getVariables().get(\"Held\").getAsBoolean()));",
+        "for (const object of faded.flat()) {",
+        "  const root = object.get3DRendererObject();",
+        "  if (!root || root.userData.cameraOpacity === opacity) continue;",
+        "  root.userData.cameraOpacity = opacity;",
+        "  root.traverse((node) => {",
+        "    if (!node.isMesh) return;",
+        "    // Materials are shared with other instances of the same model: give this one its own copies.",
+        "    if (!node.userData.ownMaterial) {",
+        "      node.material = Array.isArray(node.material) ? node.material.map((m) => m.clone()) : node.material.clone();",
+        "      node.userData.ownMaterial = true;",
+        "    }",
+        "    for (const material of [].concat(node.material)) {",
+        "      material.transparent = opacity < 1;",
+        "      material.opacity = opacity;",
+        "      material.visible = opacity > 0.05;",
+        "    }",
+        "  });",
+        "}"
+      ],
+      "parameterObjects": "CameraBlockers",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
         {
           "type": {
             "value": "SetCameraCenterX"
@@ -35,7 +129,7 @@
           "parameters": [
             "",
             "=",
-            "TargetX - cos(ToRad(CamYaw)) * cos(ToRad(CamPitch)) * CamDist",
+            "TargetX - cos(ToRad(CamYaw)) * cos(ToRad(CamPitch)) * CamDistUsed",
             "\"\"",
             ""
           ]
@@ -47,7 +141,7 @@
           "parameters": [
             "",
             "=",
-            "TargetY - sin(ToRad(CamYaw)) * cos(ToRad(CamPitch)) * CamDist",
+            "TargetY - sin(ToRad(CamYaw)) * cos(ToRad(CamPitch)) * CamDistUsed",
             "\"\"",
             ""
           ]
@@ -59,7 +153,7 @@
           "parameters": [
             "",
             "=",
-            "TargetZ + sin(ToRad(CamPitch)) * CamDist",
+            "TargetZ + sin(ToRad(CamPitch)) * CamDistUsed",
             "\"\"",
             ""
           ]

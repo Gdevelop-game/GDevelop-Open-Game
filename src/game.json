@@ -1,7 +1,7 @@
 {
   "firstLayout": "Title",
   "gdVersion": {
-    "build": 269,
+    "build": 284,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -83,20 +83,20 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/audio/blaster.ogg",
-        "userAdded": true,
         "preloadAsMusic": false,
         "preloadAsSound": true,
-        "preloadInCache": false
+        "preloadInCache": false,
+        "userAdded": true
       },
       {
         "file": "assets/audio/blaster_heavy.ogg",
         "kind": "audio",
         "metadata": "",
         "name": "assets/audio/blaster_heavy.ogg",
-        "userAdded": true,
         "preloadAsMusic": false,
         "preloadAsSound": true,
-        "preloadInCache": false
+        "preloadInCache": false,
+        "userAdded": true
       },
       {
         "file": "assets/audio/car_door.ogg",
@@ -133,20 +133,20 @@
         "kind": "audio",
         "metadata": "",
         "name": "assets/audio/hit_body.ogg",
-        "userAdded": true,
         "preloadAsMusic": false,
         "preloadAsSound": true,
-        "preloadInCache": false
+        "preloadInCache": false,
+        "userAdded": true
       },
       {
         "file": "assets/audio/hit_metal.ogg",
         "kind": "audio",
         "metadata": "",
         "name": "assets/audio/hit_metal.ogg",
-        "userAdded": true,
         "preloadAsMusic": false,
         "preloadAsSound": true,
-        "preloadInCache": false
+        "preloadInCache": false,
+        "userAdded": true
       },
       {
         "file": "assets/audio/pickup.ogg",
@@ -1166,8 +1166,8 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/textures/laser.png",
-        "userAdded": true,
-        "smoothed": true
+        "smoothed": true,
+        "userAdded": true
       },
       {
         "file": "assets/textures/pavement.png",
@@ -1190,6 +1190,123 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/textures/white.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/left.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/left.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/right.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/right.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/top.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/top.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/bottom.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/bottom.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/front.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/front.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/skybox/back.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/skybox/back.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/weapons/blaster-l.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets/models/weapons/blaster-l.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/weapons/blaster-e.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets/models/weapons/blaster-e.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/models/weapons/blaster-p.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "assets/models/weapons/blaster-p.glb",
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_pistol.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_rifle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_rifle.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_cannon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_cannon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_shotgun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_shotgun.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_sniper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_sniper.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/textures/hud/weapon_minigun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/textures/hud/weapon_minigun.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -1236,7 +1353,7 @@
           "angularDamping": 0.1,
           "gravityScale": 1,
           "layers": 17,
-          "masks": 17
+          "masks": 19
         },
         {
           "name": "PhysicsCharacter3D",
